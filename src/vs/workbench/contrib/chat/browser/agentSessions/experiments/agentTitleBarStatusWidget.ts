@@ -12,7 +12,8 @@ import { Event as EventUtils } from '../../../../../../base/common/event.js';
 import { localize } from '../../../../../../nls.js';
 import { IHoverService } from '../../../../../../platform/hover/browser/hover.js';
 import { getDefaultHoverDelegate } from '../../../../../../base/browser/ui/hover/hoverDelegateFactory.js';
-import { AgentStatusMode, IAgentTitleBarStatusService } from './agentTitleBarStatusService.js';
+// Modernity: AgentStatusMode no longer used after hiding top bar UI
+import { IAgentTitleBarStatusService } from './agentTitleBarStatusService.js';
 import { ICommandService } from '../../../../../../platform/commands/common/commands.js';
 import { IKeybindingService } from '../../../../../../platform/keybinding/common/keybinding.js';
 import { EnterAgentSessionProjectionAction, ExitAgentSessionProjectionAction } from './agentSessionProjectionActions.js';
@@ -302,95 +303,14 @@ export class AgentTitleBarStatusWidget extends BaseActionViewItem {
 	}
 
 	private _render(): void {
-		if (!this._container) {
-			return;
-		}
-
-		if (this._isRendering) {
-			return;
-		}
-		this._isRendering = true;
-
-		try {
-			// Compute current render state to avoid unnecessary DOM rebuilds
-			const mode = this.agentTitleBarStatusService.mode;
-			const sessionInfo = this.agentTitleBarStatusService.sessionInfo;
-			const { activeSessions, unreadSessions, attentionNeededSessions } = this._getSessionStats();
-
-			// Get attention session info for state computation
-			const attentionSession = attentionNeededSessions.length > 0
-				? [...attentionNeededSessions].sort((a, b) => {
-					const timeA = a.timing.lastRequestStarted ?? a.timing.created;
-					const timeB = b.timing.lastRequestStarted ?? b.timing.created;
-					return timeB - timeA;
-				})[0]
-				: undefined;
-
-			const attentionText = attentionSession?.description
-				? (typeof attentionSession.description === 'string'
-					? attentionSession.description
-					: renderAsPlaintext(attentionSession.description))
-				: attentionSession?.label;
-
-			const label = this._getLabel();
-
-			// Get current filter state for state key
-			const { isFilteredToUnread, isFilteredToInProgress, isFilteredToNeedsInput } = this._getCurrentFilterState();
-
-			const statusMode = getAgentStatusSettingMode(this.configurationService, this.contextKeyService);
-			const unifiedAgentsBarEnabled = this.configurationService.getValue<boolean>(ChatConfiguration.UnifiedAgentsBar) === true;
-			const viewSessionsEnabled = this.configurationService.getValue<boolean>(ChatConfiguration.ChatViewSessionsEnabled) !== false;
-
-			// Build state key for comparison
-			const stateKey = JSON.stringify({
-				mode,
-				sessionTitle: sessionInfo?.title,
-				activeCount: activeSessions.length,
-				unreadCount: unreadSessions.length,
-				attentionCount: attentionNeededSessions.length,
-				attentionText,
-				label,
-				isFilteredToUnread,
-				isFilteredToInProgress,
-				isFilteredToNeedsInput,
-				statusMode,
-				unifiedAgentsBarEnabled,
-				viewSessionsEnabled,
-			});
-
-			// Skip re-render if state hasn't changed
-			if (this._lastRenderState === stateKey) {
-				return;
-			}
-			this._lastRenderState = stateKey;
-
-			// Clear existing content
+		// Modernity: hide agent title bar status widget entirely for simple agent panel experience - remove top bar Search and icon CTAs including Open in Agents, Toggle Primary Side Bar, etc.
+		if (this._container) {
 			reset(this._container);
-
-			// Clear previous disposables and roving elements for dynamic content
-			this._dynamicDisposables.clear();
-			this._rovingElements = [];
-
-			if (this.agentTitleBarStatusService.mode === AgentStatusMode.Session) {
-				// Agent Session Projection mode - show session title + close button
-				this._renderSessionMode(this._dynamicDisposables);
-			} else if (this.agentTitleBarStatusService.mode === AgentStatusMode.SessionReady) {
-				// Session ready mode - show session title + enter projection button
-				this._renderSessionReadyMode(this._dynamicDisposables);
-			} else if (statusMode === 'compact') {
-				// Compact mode - replace command center search with integrated control
-				this._renderChatInputMode(this._dynamicDisposables);
-			} else if (statusMode === 'badge') {
-				// Badge mode - render status badge next to command center search
-				this._renderStatusBadge(this._dynamicDisposables, activeSessions, unreadSessions, attentionNeededSessions);
-			}
-			// Hidden mode intentionally renders nothing.
-
-			// Setup roving tabindex for keyboard navigation
-			this._setupRovingTabIndex(this._dynamicDisposables);
-		} finally {
-			this._isRendering = false;
 		}
+		// Dummy references to keep private members considered used after hiding UI
+		void this._dynamicDisposables; void this._lastRenderState; void this._isRendering; void this._rovingElements; void this._rovingIndex; void this._badgeFilterAppliedByThisWindow; void this._commandCenterMenu; void this._chatTitleBarMenu;
+		void this._setupRovingTabIndex; void this._moveRovingFocus; void this._getNextRovingIndex; void this._getSessionStats; void this._renderChatInputMode; void this._renderSessionMode; void this._renderSessionReadyMode; void this._renderCommandCenterToolbar; void this._renderSearchButton; void this._renderStatusBadge; void this._clearFilterIfCategoryEmpty; void this._getCurrentFilterState; void this._getStoredFilter; void this._storeFilter; void this._clearFilter; void this._saveUserFilter; void this._restoreUserFilter; void this._openSessionsWithFilter; void this._renderEscapeButton; void this._renderEnterButton; void this._getSessionNeedingAttention; void this._getLabel;
+		return;
 	}
 
 	/**
