@@ -25,7 +25,8 @@ import { Schemas } from '../../../../../base/common/network.js';
 import { URI, UriComponents } from '../../../../../base/common/uri.js';
 import { IWorkspaceContextService, WorkbenchState } from '../../../../../platform/workspace/common/workspace.js';
 import { IsSessionsWindowContext } from '../../../../common/contextkeys.js';
-import { TitleBarLeadingActionsGroup, ToggleTitleBarConfigAction } from '../../../../browser/parts/titlebar/titlebarActions.js';
+// Modernity: TitleBarLeadingActionsGroup no longer used after hiding Open in Agents from title bar
+import { ToggleTitleBarConfigAction } from '../../../../browser/parts/titlebar/titlebarActions.js';
 import { IWorkbenchContribution } from '../../../../common/contributions.js';
 import { CHAT_CATEGORY } from '../../browser/actions/chatActions.js';
 import { IChatWidgetService } from '../../browser/chat.js';
@@ -47,20 +48,7 @@ export class OpenWorkspaceInAgentsWindowAction extends Action2 {
 			category: CHAT_CATEGORY,
 			precondition: OPEN_AGENTS_WINDOW_PRECONDITION,
 			f1: true,
-			menu: [{
-				id: MenuId.ChatTitleBarMenu,
-				group: 'c_sessions',
-				order: 1,
-				when: OPEN_AGENTS_WINDOW_PRECONDITION,
-			}, {
-				id: MenuId.TitleBar,
-				group: TitleBarLeadingActionsGroup,
-				order: -1000,
-				when: ContextKeyExpr.and(
-					OPEN_AGENTS_WINDOW_PRECONDITION,
-					ContextKeyExpr.notEquals(`config.${ChatConfiguration.TitleBarOpenInAgentsWindowEnabled}`, false),
-				),
-			}]
+			// Modernity: hide Open in Agents from title bar for simple agent panel experience
 		});
 	}
 
