@@ -31,7 +31,8 @@ import { IHostService } from '../../../services/host/browser/host.js';
 import { WindowTitle } from './windowTitle.js';
 import { CommandCenterControl } from './commandCenterControl.js';
 import { Categories } from '../../../../platform/action/common/actionCommonCategories.js';
-import { HiddenItemStrategy, MenuWorkbenchToolBar, WorkbenchToolBar } from '../../../../platform/actions/browser/toolbar.js';
+// Modernity: HiddenItemStrategy and MenuWorkbenchToolBar no longer used after hiding title bar toolbars
+import { WorkbenchToolBar } from '../../../../platform/actions/browser/toolbar.js';
 import { IActionViewItemService } from '../../../../platform/actions/browser/actionViewItemService.js';
 import { ACCOUNTS_ACTIVITY_ID, GLOBAL_ACTIVITY_ID } from '../../../common/activity.js';
 import { AccountsActivityActionViewItem, isAccountsActionVisible, SimpleAccountActivityActionViewItem, SimpleGlobalActivityActionViewItem } from '../globalCompositeBar.js';
@@ -274,7 +275,7 @@ export class BrowserTitlebarPart extends Part implements ITitlebarPart {
 	private readonly actionToolBarDisposable = this._register(new DisposableStore());
 	private readonly editorActionsChangeDisposable = this._register(new DisposableStore());
 	private actionToolBarElement!: HTMLElement;
-	private readonly centerAdjacentToolBarDisposable = this._register(new DisposableStore());
+	// Modernity: centerAdjacentToolBarDisposable no longer used after hiding title bar toolbars
 	private centerAdjacentToolBarElement: HTMLElement | undefined;
 
 	private globalToolbarMenu: IMenu | undefined;
@@ -492,32 +493,11 @@ export class BrowserTitlebarPart extends Part implements ITitlebarPart {
 		this.title = append(this.centerContent, $('div.window-title'));
 		this.createTitle();
 
-		// Center-Adjacent Toolbar (e.g., update indicator)
-		if (hasCustomTitlebar(this.configurationService, this.titleBarStyle)) {
-			const centerAdjacentToolBarElement = append(this.rightContent, $('div.center-adjacent-toolbar-container'));
-			this.centerAdjacentToolBarElement = centerAdjacentToolBarElement;
-			const centerAdjacentToolBar = this.centerAdjacentToolBarDisposable.add(this.instantiationService.createInstance(MenuWorkbenchToolBar, centerAdjacentToolBarElement, MenuId.TitleBarAdjacentCenter, {
-				contextMenu: MenuId.TitleBarContext,
-				hiddenItemStrategy: HiddenItemStrategy.NoHide,
-				toolbarOptions: {
-					primaryGroup: () => true,
-				},
-				actionViewItemProvider: (action, options) => createActionViewItem(this.instantiationService, action, options),
-				hoverDelegate: this.hoverDelegate
-			}));
+		// Modernity: hide title bar toolbars for simple agent panel experience - remove center adjacent toolbar including Go Back Forward etc.
 
-			// Re-evaluate fit when items change (e.g. the update indicator appears), see #303222.
-			this.centerAdjacentToolBarDisposable.add(centerAdjacentToolBar.onDidChangeMenuItems(() => this.updateCenterAdjacentToolBarOverflow()));
-		}
 
-		// Create Toolbar Actions
-		if (hasCustomTitlebar(this.configurationService, this.titleBarStyle)) {
-			this.actionToolBarElement = append(this.rightContent, $('div.action-toolbar-container'));
-			this.createActionToolBar();
-			this.createActionToolBarMenus();
-		}
+		// Modernity: hide title bar toolbars for simple agent panel experience - remove action toolbar including Go Back Forward, Open in Agents, Toggle Primary Side Bar, Toggle Panel etc.
 
-		// Window Controls Container
 		if (!hasNativeTitlebar(this.configurationService, this.titleBarStyle)) {
 			let primaryWindowControlsLocation = isMacintosh ? 'left' : 'right';
 			if (isMacintosh && isNative) {

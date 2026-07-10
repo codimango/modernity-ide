@@ -597,22 +597,7 @@ class TitleBarAccountWidget extends BaseActionViewItem {
 // Actions registered at module level so Menus.TitleBarRightLayout is non-empty when the
 // toolbar is first constructed. The run() is a no-op — rendering is handled by the custom
 // view items registered in AccountWidgetContribution.
-registerAction2(class extends Action2 {
-	constructor() {
-		super({
-			id: SessionsTitleBarAccountWidgetAction,
-			title: localize2('agentsAccountStatusTitleBar', "Agents Account and Status"),
-			menu: {
-				id: Menus.TitleBarRightLayout,
-				group: 'navigation',
-				order: 100,
-				when: IsAuxiliaryWindowContext.toNegated(),
-			}
-		});
-	}
-
-	run(): void { }
-});
+// Modernity: hide account widget from title bar for simple agent panel experience
 
 class AccountWidgetContribution extends Disposable implements IWorkbenchContribution {
 

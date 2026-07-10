@@ -1440,8 +1440,8 @@ export class NavigateForwardAction extends Action2 {
 				linux: { primary: KeyMod.CtrlCmd | KeyMod.Shift | KeyCode.Minus, secondary: [KeyCode.BrowserForward] }
 			},
 			menu: [
-				{ id: MenuId.MenubarGoMenu, group: '1_history_nav', order: 2 },
-				{ id: MenuId.CommandCenter, order: 2, when: ContextKeyExpr.has('config.workbench.navigationControl.enabled') }
+				{ id: MenuId.MenubarGoMenu, group: '1_history_nav', order: 2 }
+				// Modernity: hide Go Forward from title bar command center for simple agent panel experience
 			]
 		});
 	}
@@ -1475,8 +1475,8 @@ export class NavigateBackwardsAction extends Action2 {
 				linux: { primary: KeyMod.CtrlCmd | KeyMod.Alt | KeyCode.Minus, secondary: [KeyCode.BrowserBack] }
 			},
 			menu: [
-				{ id: MenuId.MenubarGoMenu, group: '1_history_nav', order: 1 },
-				{ id: MenuId.CommandCenter, order: 1, when: ContextKeyExpr.has('config.workbench.navigationControl.enabled') }
+				{ id: MenuId.MenubarGoMenu, group: '1_history_nav', order: 1 }
+				// Modernity: hide Go Back from title bar command center for simple agent panel experience
 			]
 		});
 	}

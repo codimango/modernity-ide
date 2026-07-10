@@ -24,16 +24,15 @@ import { Parts, IWorkbenchLayoutService } from '../../../workbench/services/layo
 
 import { IContextKeyService } from '../../../platform/contextkey/common/contextkey.js';
 import { IHostService } from '../../../workbench/services/host/browser/host.js';
-import { HiddenItemStrategy, MenuWorkbenchToolBar } from '../../../platform/actions/browser/toolbar.js';
+// Modernity: hide title bar toolbars - MenuWorkbenchToolBar no longer used for simple agent panel experience
 import { IEditorGroupsContainer } from '../../../workbench/services/editor/common/editorGroupsService.js';
 import { CodeWindow, mainWindow } from '../../../base/browser/window.js';
 import { safeIntl } from '../../../base/common/date.js';
 import { ITitlebarPart, ITitleProperties, ITitleVariable, IAuxiliaryTitlebarPart } from '../../../workbench/browser/parts/titlebar/titlebarPart.js';
 import { WindowTitle } from '../../../workbench/browser/parts/titlebar/windowTitle.js';
 import { Menus } from '../menus.js';
-import { IsNewChatSessionContext } from '../../common/contextkeys.js';
+// Modernity: hide title bar toolbars - IsNewChatSessionContext no longer used
 
-const commandCenterContextKeys = new Set([IsNewChatSessionContext.key]);
 
 /**
  * Simplified agent sessions titlebar part.
@@ -80,8 +79,8 @@ export class TitlebarPart extends Part implements ITitlebarPart {
 	protected windowControlsContainer: HTMLElement | undefined;
 
 	private leftContent!: HTMLElement;
-	private leftToolbarContainer!: HTMLElement;
-	private centerContent!: HTMLElement;
+	// Modernity: hide title bar toolbars - leftToolbarContainer no longer used
+	// Modernity: hide title bar toolbars - centerContent no longer read for simple agent panel
 	private rightContent!: HTMLElement;
 
 	get leftContainer(): HTMLElement { return this.leftContent; }
@@ -147,7 +146,7 @@ export class TitlebarPart extends Part implements ITitlebarPart {
 		prepend(this.rootContainer, $('div.titlebar-drag-region'));
 
 		this.leftContent = append(this.rootContainer, $('.titlebar-left'));
-		this.centerContent = append(this.rootContainer, $('.titlebar-center'));
+		// Modernity: center content removed for simple agent panel experience - no search bar
 		this.rightContent = append(this.rootContainer, $('.titlebar-right'));
 
 		// Window Controls Container (must be before left toolbar for correct ordering)
@@ -194,71 +193,15 @@ export class TitlebarPart extends Part implements ITitlebarPart {
 			}
 		}
 
-		// Left toolbar (driven by Menus.TitleBarLeft, rendered after window controls via CSS order)
-		this.leftToolbarContainer = append(this.leftContent, $('div.left-toolbar-container'));
-		this._register(this.instantiationService.createInstance(MenuWorkbenchToolBar, this.leftToolbarContainer, Menus.TitleBarLeftLayout, {
-			contextMenu: Menus.TitleBarContext,
-			telemetrySource: 'titlePart.left',
-			hiddenItemStrategy: HiddenItemStrategy.NoHide,
-			toolbarOptions: { primaryGroup: () => true },
-		}));
+		// Modernity: hide title bar toolbars for simple agent panel experience - remove left, center, and right icon CTAs including Search bar, Chat Toggle, Open in Agents, Customize Layout, Toggle Primary Side Bar, Toggle Panel
 
-		// Center section: [nav toolbar] [command center box] [actions toolbar]
-		// All live inside .titlebar-center so the cluster is window-centered.
+		// Modernity: removed center toolbars including Search bar command center
 
-		// Navigation toolbar (Back/Forward), rendered left of the command center.
-		const centerNavContainer = append(this.centerContent, $('div.titlebar-actions-container.titlebar-center-nav-container'));
-		this._register(this.instantiationService.createInstance(MenuWorkbenchToolBar, centerNavContainer, Menus.TitleBarCenterLeft, {
-			contextMenu: Menus.TitleBarContext,
-			hiddenItemStrategy: HiddenItemStrategy.NoHide,
-			telemetrySource: 'titlePart.centerLeft',
-			toolbarOptions: { primaryGroup: () => true },
-		}));
 
-		// Center toolbar - command center (renders session picker via IActionViewItemService)
-		// Uses .window-title > .command-center nesting to match default workbench CSS selectors
-		const windowTitle = append(this.centerContent, $('div.window-title'));
-		const centerToolbarContainer = append(windowTitle, $('div.command-center'));
-		const centerToolbar = this._register(this.instantiationService.createInstance(MenuWorkbenchToolBar, centerToolbarContainer, Menus.CommandCenter, {
-			contextMenu: Menus.TitleBarContext,
-			hiddenItemStrategy: HiddenItemStrategy.NoHide,
-			telemetrySource: 'commandCenter',
-			toolbarOptions: { primaryGroup: () => true },
-		}));
-		this._register(this.contextKeyService.onDidChangeContext(e => {
-			if (e.affectsSome(commandCenterContextKeys)) {
-				centerToolbar.refresh();
-			}
-		}));
 
-		// Actions toolbar (Open in VS Code), rendered right of the command center.
-		const centerActionsContainer = append(this.centerContent, $('div.titlebar-actions-container.titlebar-center-actions-container'));
-		this._register(this.instantiationService.createInstance(MenuWorkbenchToolBar, centerActionsContainer, Menus.TitleBarCenterRight, {
-			contextMenu: Menus.TitleBarContext,
-			hiddenItemStrategy: HiddenItemStrategy.NoHide,
-			telemetrySource: 'titlePart.centerRight',
-			toolbarOptions: { primaryGroup: () => true },
-		}));
 
-		// Right toolbar (driven by Menus.TitleBarRightLayout - includes layout actions)
-		const rightToolbarContainer = prepend(this.rightContent, $('div.titlebar-actions-container.titlebar-right-layout-container'));
-		this._register(this.instantiationService.createInstance(MenuWorkbenchToolBar, rightToolbarContainer, Menus.TitleBarRightLayout, {
-			contextMenu: Menus.TitleBarContext,
-			hiddenItemStrategy: HiddenItemStrategy.NoHide,
-			telemetrySource: 'titlePart.right',
-			toolbarOptions: { primaryGroup: () => true },
-		}));
 
-		// Session title actions toolbar (before right toolbar)
-		const sessionActionsContainer = prepend(this.rightContent, $('div.titlebar-actions-container.titlebar-session-actions-container'));
-		this._register(this.instantiationService.createInstance(MenuWorkbenchToolBar, sessionActionsContainer, Menus.TitleBarSessionMenu, {
-			contextMenu: Menus.TitleBarContext,
-			hiddenItemStrategy: HiddenItemStrategy.NoHide,
-			telemetrySource: 'titlePart.sessionActions',
-			toolbarOptions: { primaryGroup: () => true },
-		}));
 
-		// Context menu on the titlebar
 		this._register(addDisposableListener(this.rootContainer, EventType.CONTEXT_MENU, e => {
 			EventHelper.stop(e);
 			this.onContextMenu(e);
