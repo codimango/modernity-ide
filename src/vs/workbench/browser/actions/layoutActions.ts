@@ -11,53 +11,57 @@ import { alert } from '../../../base/browser/ui/aria/aria.js';
 import { EditorActionsLocation, EditorTabsMode, IWorkbenchLayoutService, LayoutSettings, Parts, Position, ZenModeSettings, positionToString } from '../../services/layout/browser/layoutService.js';
 import { ServicesAccessor, IInstantiationService } from '../../../platform/instantiation/common/instantiation.js';
 import { KeyMod, KeyCode } from '../../../base/common/keyCodes.js';
-import { isWindows, isLinux, isWeb, isMacintosh, isNative } from '../../../base/common/platform.js';
+// Modernity: isMacintosh isNative no longer used after removing Customize Layout action
+import { isWindows, isLinux, isWeb } from '../../../base/common/platform.js';
 import { IsMacNativeContext } from '../../../platform/contextkey/common/contextkeys.js';
 import { KeybindingWeight } from '../../../platform/keybinding/common/keybindingsRegistry.js';
 import { ContextKeyExpr, ContextKeyExpression, IContextKeyService } from '../../../platform/contextkey/common/contextkey.js';
 import { IViewDescriptorService, ViewContainerLocation, IViewDescriptor, ViewContainerLocationToString } from '../../common/views.js';
 import { IViewsService } from '../../services/views/common/viewsService.js';
-import { QuickPickItem, IQuickInputService, IQuickPickItem, IQuickPickSeparator, IQuickPick } from '../../../platform/quickinput/common/quickInput.js';
+import { QuickPickItem, IQuickInputService, IQuickPickItem, IQuickPickSeparator } from '../../../platform/quickinput/common/quickInput.js';
+// Modernity: IQuickPick no longer used after removing Customize Layout action menu
 import { IDialogService } from '../../../platform/dialogs/common/dialogs.js';
 import { IPaneCompositePartService } from '../../services/panecomposite/browser/panecomposite.js';
-import { ToggleAuxiliaryBarAction } from '../parts/auxiliarybar/auxiliaryBarActions.js';
-import { TogglePanelAction } from '../parts/panel/panelActions.js';
-import { ICommandService } from '../../../platform/commands/common/commands.js';
-import { AuxiliaryBarVisibleContext, PanelAlignmentContext, PanelVisibleContext, SideBarVisibleContext, FocusedViewContext, InEditorZenModeContext, IsMainEditorCenteredLayoutContext, MainEditorAreaVisibleContext, IsMainWindowFullscreenContext, PanelPositionContext, IsAuxiliaryWindowFocusedContext, IsSessionsWindowContext, TitleBarStyleContext, IsAuxiliaryWindowContext } from '../../common/contextkeys.js';
-import { Codicon } from '../../../base/common/codicons.js';
-import { ThemeIcon } from '../../../base/common/themables.js';
+// Modernity: ToggleAuxiliaryBarAction no longer used after removing Customize Layout action
+// Modernity: TogglePanelAction no longer used after removing Customize Layout action
+// Modernity: ICommandService no longer used after removing Customize Layout action
+// Modernity: some context keys no longer used after removing Customize Layout action
+// Modernity: IsAuxiliaryWindowContext no longer used after hiding LayoutControlMenu
+import { SideBarVisibleContext, FocusedViewContext, InEditorZenModeContext, IsMainEditorCenteredLayoutContext, MainEditorAreaVisibleContext, IsMainWindowFullscreenContext, PanelPositionContext, IsAuxiliaryWindowFocusedContext, IsSessionsWindowContext, TitleBarStyleContext, PanelAlignmentContext } from '../../common/contextkeys.js';
+// Modernity: Codicon no longer used after hiding LayoutControlMenu icons
+// Modernity: ThemeIcon no longer used after removing Customize Layout action
 import { DisposableStore } from '../../../base/common/lifecycle.js';
-import { registerIcon } from '../../../platform/theme/common/iconRegistry.js';
+// Modernity: registerIcon no longer used after hiding LayoutControlMenu icons
 import { ICommandActionTitle } from '../../../platform/action/common/action.js';
 import { mainWindow } from '../../../base/browser/window.js';
-import { IKeybindingService } from '../../../platform/keybinding/common/keybinding.js';
+// Modernity: IKeybindingService no longer used after removing Customize Layout action
 import { MenuSettings, TitlebarStyle } from '../../../platform/window/common/window.js';
 import { IPreferencesService } from '../../services/preferences/common/preferences.js';
-import { QuickInputAlignmentContextKey } from '../../../platform/quickinput/browser/quickInput.js';
+// Modernity: QuickInputAlignmentContextKey no longer used after removing Customize Layout action
 import { IEditorGroupsService } from '../../services/editor/common/editorGroupsService.js';
 
 // Register Icons
-const menubarIcon = registerIcon('menuBar', Codicon.layoutMenubar, localize('menuBarIcon', "Represents the menu bar"));
-const activityBarLeftIcon = registerIcon('activity-bar-left', Codicon.layoutActivitybarLeft, localize('activityBarLeft', "Represents the activity bar in the left position"));
-const activityBarRightIcon = registerIcon('activity-bar-right', Codicon.layoutActivitybarRight, localize('activityBarRight', "Represents the activity bar in the right position"));
-const panelLeftIcon = registerIcon('panel-left', Codicon.layoutSidebarLeft, localize('panelLeft', "Represents a side bar in the left position"));
-const panelLeftOffIcon = registerIcon('panel-left-off', Codicon.layoutSidebarLeftOff, localize('panelLeftOff', "Represents a side bar in the left position toggled off"));
-const panelRightIcon = registerIcon('panel-right', Codicon.layoutSidebarRight, localize('panelRight', "Represents side bar in the right position"));
-const panelRightOffIcon = registerIcon('panel-right-off', Codicon.layoutSidebarRightOff, localize('panelRightOff', "Represents side bar in the right position toggled off"));
-const panelIcon = registerIcon('panel-bottom', Codicon.layoutPanel, localize('panelBottom', "Represents the bottom panel"));
-const statusBarIcon = registerIcon('statusBar', Codicon.layoutStatusbar, localize('statusBarIcon', "Represents the status bar"));
+// Modernity: icon no longer used after removing Customize Layout action
+// Modernity: icon no longer used after removing Customize Layout action
+// Modernity: icon no longer used after removing Customize Layout action
+// Modernity: icon no longer used after hiding LayoutControlMenu
+// Modernity: icon no longer used after hiding LayoutControlMenu
+// Modernity: icon no longer used after hiding LayoutControlMenu
+// Modernity: icon no longer used after hiding LayoutControlMenu
+// Modernity: icon no longer used after removing Customize Layout action
+// Modernity: icon no longer used after removing Customize Layout action
 
-const panelAlignmentLeftIcon = registerIcon('panel-align-left', Codicon.layoutPanelLeft, localize('panelBottomLeft', "Represents the bottom panel alignment set to the left"));
-const panelAlignmentRightIcon = registerIcon('panel-align-right', Codicon.layoutPanelRight, localize('panelBottomRight', "Represents the bottom panel alignment set to the right"));
-const panelAlignmentCenterIcon = registerIcon('panel-align-center', Codicon.layoutPanelCenter, localize('panelBottomCenter', "Represents the bottom panel alignment set to the center"));
-const panelAlignmentJustifyIcon = registerIcon('panel-align-justify', Codicon.layoutPanelJustify, localize('panelBottomJustify', "Represents the bottom panel alignment set to justified"));
+// Modernity: icon no longer used after removing Customize Layout action
+// Modernity: icon no longer used after removing Customize Layout action
+// Modernity: icon no longer used after removing Customize Layout action
+// Modernity: icon no longer used after removing Customize Layout action
 
-const quickInputAlignmentTopIcon = registerIcon('quickInputAlignmentTop', Codicon.arrowUp, localize('quickInputAlignmentTop', "Represents quick input alignment set to the top"));
-const quickInputAlignmentCenterIcon = registerIcon('quickInputAlignmentCenter', Codicon.circle, localize('quickInputAlignmentCenter', "Represents quick input alignment set to the center"));
+// Modernity: icon no longer used after removing Customize Layout action
+// Modernity: icon no longer used after removing Customize Layout action
 
-const fullscreenIcon = registerIcon('fullscreen', Codicon.screenFull, localize('fullScreenIcon', "Represents full screen"));
-const centerLayoutIcon = registerIcon('centerLayoutIcon', Codicon.layoutCentered, localize('centerLayoutIcon', "Represents centered layout mode"));
-const zenModeIcon = registerIcon('zenMode', Codicon.target, localize('zenModeIcon', "Represents zen mode"));
+// Modernity: icon no longer used after removing Customize Layout action
+// Modernity: icon no longer used after removing Customize Layout action
+// Modernity: icon no longer used after removing Customize Layout action
 
 export const ToggleActivityBarVisibilityActionId = 'workbench.action.toggleActivityBarVisibility';
 
@@ -170,17 +174,8 @@ export class ToggleSidebarPositionAction extends Action2 {
 
 registerAction2(ToggleSidebarPositionAction);
 
-const configureLayoutIcon = registerIcon('configure-layout-icon', Codicon.layout, localize('cofigureLayoutIcon', 'Icon represents workbench layout configuration.'));
-MenuRegistry.appendMenuItem(MenuId.LayoutControlMenu, {
-	submenu: MenuId.LayoutControlMenuSubmenu,
-	title: localize('configureLayout', "Configure Layout"),
-	icon: configureLayoutIcon,
-	group: '1_workbench_layout',
-	when: ContextKeyExpr.and(
-		IsAuxiliaryWindowContext.negate(),
-		ContextKeyExpr.equals('config.workbench.layoutControl.type', 'menu')
-	)
-});
+// Modernity: icon no longer used after hiding LayoutControlMenu
+// Modernity: hide LayoutControlMenu items for simple agent panel experience - remove Toggle Primary Side Bar, Toggle Panel etc from top bar
 
 
 MenuRegistry.appendMenuItems([{
@@ -229,27 +224,10 @@ MenuRegistry.appendMenuItems([{
 	}
 }]);
 
-MenuRegistry.appendMenuItem(MenuId.MenubarAppearanceMenu, {
-	group: '3_workbench_layout_move',
-	command: {
-		id: ToggleSidebarPositionAction.ID,
-		title: localize({ key: 'miMoveSidebarRight', comment: ['&& denotes a mnemonic'] }, "&&Move Primary Side Bar Right")
-	},
-	when: ContextKeyExpr.and(ContextKeyExpr.notEquals('config.workbench.sideBar.location', 'right'), IsSessionsWindowContext.negate()),
-	order: 2
-});
+// Modernity: hide LayoutControlMenu items for simple agent panel experience - remove Toggle Primary Side Bar, Toggle Panel etc from top bar
 
-MenuRegistry.appendMenuItem(MenuId.MenubarAppearanceMenu, {
-	group: '3_workbench_layout_move',
-	command: {
-		id: ToggleSidebarPositionAction.ID,
-		title: localize({ key: 'miMoveSidebarLeft', comment: ['&& denotes a mnemonic'] }, "&&Move Primary Side Bar Left")
-	},
-	when: ContextKeyExpr.and(ContextKeyExpr.equals('config.workbench.sideBar.location', 'right'), IsSessionsWindowContext.negate()),
-	order: 2
-});
+// Modernity: hide LayoutControlMenu items for simple agent panel experience - remove Toggle Primary Side Bar, Toggle Panel etc from top bar
 
-// --- Toggle Editor Visibility
 
 registerAction2(class extends Action2 {
 
@@ -273,15 +251,8 @@ registerAction2(class extends Action2 {
 	}
 });
 
-MenuRegistry.appendMenuItem(MenuId.MenubarViewMenu, {
-	group: '2_appearance',
-	title: localize({ key: 'miAppearance', comment: ['&& denotes a mnemonic'] }, "&&Appearance"),
-	submenu: MenuId.MenubarAppearanceMenu,
-	when: IsSessionsWindowContext.negate(),
-	order: 1
-});
+// Modernity: hide LayoutControlMenu items for simple agent panel experience - remove Toggle Primary Side Bar, Toggle Panel etc from top bar
 
-// Toggle Sidebar Visibility
 
 export class ToggleSidebarVisibilityAction extends Action2 {
 
@@ -337,60 +308,8 @@ export class ToggleSidebarVisibilityAction extends Action2 {
 
 registerAction2(ToggleSidebarVisibilityAction);
 
-MenuRegistry.appendMenuItems([
-	{
-		id: MenuId.ViewContainerTitleContext,
-		item: {
-			group: '3_workbench_layout_move',
-			command: {
-				id: ToggleSidebarVisibilityAction.ID,
-				title: localize('compositePart.hideSideBarLabel', "Hide Primary Side Bar"),
-			},
-			when: ContextKeyExpr.and(SideBarVisibleContext, ContextKeyExpr.equals('viewContainerLocation', ViewContainerLocationToString(ViewContainerLocation.Sidebar))),
-			order: 2
-		}
-	}, {
-		id: MenuId.LayoutControlMenu,
-		item: {
-			group: 'navigation',
-			command: {
-				id: ToggleSidebarVisibilityAction.ID,
-				title: localize('toggleSideBar', "Toggle Primary Side Bar"),
-				icon: panelLeftOffIcon,
-				toggled: { condition: SideBarVisibleContext, icon: panelLeftIcon }
-			},
-			when: ContextKeyExpr.and(
-				IsAuxiliaryWindowContext.negate(),
-				ContextKeyExpr.or(
-					ContextKeyExpr.equals('config.workbench.layoutControl.type', 'toggles'),
-					ContextKeyExpr.equals('config.workbench.layoutControl.type', 'both')),
-				ContextKeyExpr.equals('config.workbench.sideBar.location', 'left')
-			),
-			order: 0
-		}
-	}, {
-		id: MenuId.LayoutControlMenu,
-		item: {
-			group: 'navigation',
-			command: {
-				id: ToggleSidebarVisibilityAction.ID,
-				title: localize('toggleSideBar', "Toggle Primary Side Bar"),
-				icon: panelRightOffIcon,
-				toggled: { condition: SideBarVisibleContext, icon: panelRightIcon }
-			},
-			when: ContextKeyExpr.and(
-				IsAuxiliaryWindowContext.negate(),
-				ContextKeyExpr.or(
-					ContextKeyExpr.equals('config.workbench.layoutControl.type', 'toggles'),
-					ContextKeyExpr.equals('config.workbench.layoutControl.type', 'both')),
-				ContextKeyExpr.equals('config.workbench.sideBar.location', 'right')
-			),
-			order: 2
-		}
-	}
-]);
+// Modernity: hide LayoutControlMenu items for simple agent panel experience - remove Toggle Primary Side Bar, Toggle Panel etc from top bar
 
-// --- Toggle Statusbar Visibility
 
 export class ToggleStatusbarVisibilityAction extends Action2 {
 
@@ -1311,309 +1230,16 @@ registerAction2(class AlignQuickInputCenterAction extends Action2 {
 
 //#endregion
 
-type ContextualLayoutVisualIcon = { iconA: ThemeIcon; iconB: ThemeIcon; whenA: ContextKeyExpression };
-type LayoutVisualIcon = ThemeIcon | ContextualLayoutVisualIcon;
+// Modernity: hide Customize Layout action UI - following types no longer used
 
-function isContextualLayoutVisualIcon(icon: LayoutVisualIcon): icon is ContextualLayoutVisualIcon {
-	return (icon as ContextualLayoutVisualIcon).iconA !== undefined;
-}
 
-interface CustomizeLayoutItem {
-	id: string;
-	active: ContextKeyExpression;
-	label: string;
-	activeIcon: ThemeIcon;
-	visualIcon?: LayoutVisualIcon;
-	activeAriaLabel: string;
-	inactiveIcon?: ThemeIcon;
-	inactiveAriaLabel?: string;
-	useButtons: boolean;
-}
 
-const CreateToggleLayoutItem = (id: string, active: ContextKeyExpression, label: string, visualIcon?: LayoutVisualIcon): CustomizeLayoutItem => {
-	return {
-		id,
-		active,
-		label,
-		visualIcon,
-		activeIcon: Codicon.eye,
-		inactiveIcon: Codicon.eyeClosed,
-		activeAriaLabel: localize('selectToHide', "Select to Hide"),
-		inactiveAriaLabel: localize('selectToShow', "Select to Show"),
-		useButtons: true,
-	};
-};
 
-const CreateOptionLayoutItem = (id: string, active: ContextKeyExpression, label: string, visualIcon?: LayoutVisualIcon): CustomizeLayoutItem => {
-	return {
-		id,
-		active,
-		label,
-		visualIcon,
-		activeIcon: Codicon.check,
-		activeAriaLabel: localize('active', "Active"),
-		useButtons: false
-	};
-};
 
-const MenuBarToggledContext = ContextKeyExpr.and(IsMacNativeContext.toNegated(), ContextKeyExpr.notEquals(`config.${MenuSettings.MenuBarVisibility}`, 'hidden'), ContextKeyExpr.notEquals(`config.${MenuSettings.MenuBarVisibility}`, 'toggle'), ContextKeyExpr.notEquals(`config.${MenuSettings.MenuBarVisibility}`, 'compact')) as ContextKeyExpression;
-const ToggleVisibilityActions: CustomizeLayoutItem[] = [];
-if (!isMacintosh || !isNative) {
-	ToggleVisibilityActions.push(CreateToggleLayoutItem('workbench.action.toggleMenuBar', MenuBarToggledContext, localize('menuBar', "Menu Bar"), menubarIcon));
-}
 
-ToggleVisibilityActions.push(...[
-	CreateToggleLayoutItem(ToggleActivityBarVisibilityActionId, ContextKeyExpr.notEquals('config.workbench.activityBar.location', 'hidden'), localize('activityBar', "Activity Bar"), { whenA: ContextKeyExpr.equals('config.workbench.sideBar.location', 'left'), iconA: activityBarLeftIcon, iconB: activityBarRightIcon }),
-	CreateToggleLayoutItem(ToggleSidebarVisibilityAction.ID, SideBarVisibleContext, localize('sideBar', "Primary Side Bar"), { whenA: ContextKeyExpr.equals('config.workbench.sideBar.location', 'left'), iconA: panelLeftIcon, iconB: panelRightIcon }),
-	CreateToggleLayoutItem(ToggleAuxiliaryBarAction.ID, AuxiliaryBarVisibleContext, localize('secondarySideBar', "Secondary Side Bar"), { whenA: ContextKeyExpr.equals('config.workbench.sideBar.location', 'left'), iconA: panelRightIcon, iconB: panelLeftIcon }),
-	CreateToggleLayoutItem(TogglePanelAction.ID, PanelVisibleContext, localize('panel', "Panel"), panelIcon),
-	CreateToggleLayoutItem(ToggleStatusbarVisibilityAction.ID, ContextKeyExpr.equals('config.workbench.statusBar.visible', true), localize('statusBar', "Status Bar"), statusBarIcon),
-]);
 
-const MoveSideBarActions: CustomizeLayoutItem[] = [
-	CreateOptionLayoutItem(MoveSidebarLeftAction.ID, ContextKeyExpr.equals('config.workbench.sideBar.location', 'left'), localize('leftSideBar', "Left"), panelLeftIcon),
-	CreateOptionLayoutItem(MoveSidebarRightAction.ID, ContextKeyExpr.equals('config.workbench.sideBar.location', 'right'), localize('rightSideBar', "Right"), panelRightIcon),
-];
 
-const AlignPanelActions: CustomizeLayoutItem[] = [
-	CreateOptionLayoutItem('workbench.action.alignPanelLeft', PanelAlignmentContext.isEqualTo('left'), localize('leftPanel', "Left"), panelAlignmentLeftIcon),
-	CreateOptionLayoutItem('workbench.action.alignPanelRight', PanelAlignmentContext.isEqualTo('right'), localize('rightPanel', "Right"), panelAlignmentRightIcon),
-	CreateOptionLayoutItem('workbench.action.alignPanelCenter', PanelAlignmentContext.isEqualTo('center'), localize('centerPanel', "Center"), panelAlignmentCenterIcon),
-	CreateOptionLayoutItem('workbench.action.alignPanelJustify', PanelAlignmentContext.isEqualTo('justify'), localize('justifyPanel', "Justify"), panelAlignmentJustifyIcon),
-];
 
-const QuickInputActions: CustomizeLayoutItem[] = [
-	CreateOptionLayoutItem('workbench.action.alignQuickInputTop', QuickInputAlignmentContextKey.isEqualTo('top'), localize('top', "Top"), quickInputAlignmentTopIcon),
-	CreateOptionLayoutItem('workbench.action.alignQuickInputCenter', QuickInputAlignmentContextKey.isEqualTo('center'), localize('center', "Center"), quickInputAlignmentCenterIcon),
-];
 
-const MiscLayoutOptions: CustomizeLayoutItem[] = [
-	CreateOptionLayoutItem('workbench.action.toggleFullScreen', IsMainWindowFullscreenContext, localize('fullscreen', "Full Screen"), fullscreenIcon),
-	CreateOptionLayoutItem('workbench.action.toggleZenMode', InEditorZenModeContext, localize('zenMode', "Zen Mode"), zenModeIcon),
-	CreateOptionLayoutItem('workbench.action.toggleCenteredLayout', IsMainEditorCenteredLayoutContext, localize('centeredLayout', "Centered Layout"), centerLayoutIcon),
-];
 
-const LayoutContextKeySet = new Set<string>();
-for (const { active } of [...ToggleVisibilityActions, ...MoveSideBarActions, ...AlignPanelActions, ...QuickInputActions, ...MiscLayoutOptions]) {
-	for (const key of active.keys()) {
-		LayoutContextKeySet.add(key);
-	}
-}
 
-/**
- * Matches the title bar's `editorActionsEnabled` getter: true when editor
- * actions render in the title bar (either explicitly, or because tabs are
- * hidden and the location defaults there).
- */
-const EditorActionsInTitleBar = ContextKeyExpr.or(
-	ContextKeyExpr.equals(`config.${LayoutSettings.EDITOR_ACTIONS_LOCATION}`, EditorActionsLocation.TITLEBAR),
-	ContextKeyExpr.and(
-		ContextKeyExpr.equals(`config.${LayoutSettings.EDITOR_ACTIONS_LOCATION}`, EditorActionsLocation.DEFAULT),
-		ContextKeyExpr.equals(`config.${LayoutSettings.EDITOR_TABS_MODE}`, EditorTabsMode.NONE)
-	)
-)!;
-
-registerAction2(class CustomizeLayoutAction extends Action2 {
-
-	private _currentQuickPick?: IQuickPick<IQuickPickItem, { useSeparators: true }>;
-
-	constructor() {
-		super({
-			id: 'workbench.action.customizeLayout',
-			title: localize2('customizeLayout', "Customize Layout..."),
-			f1: true,
-			icon: configureLayoutIcon,
-			menu: [
-				{
-					id: MenuId.LayoutControlMenuSubmenu,
-					group: 'z_end',
-				},
-				{
-					id: MenuId.LayoutControlMenu,
-					when: ContextKeyExpr.and(
-						IsAuxiliaryWindowContext.toNegated(),
-						ContextKeyExpr.equals('config.workbench.layoutControl.type', 'both'),
-						EditorActionsInTitleBar.negate()
-					),
-					group: 'navigation'
-				},
-				{
-					id: MenuId.LayoutControlMenu,
-					when: ContextKeyExpr.and(
-						IsAuxiliaryWindowContext.toNegated(),
-						ContextKeyExpr.equals('config.workbench.layoutControl.type', 'both'),
-						EditorActionsInTitleBar
-					),
-					group: '1_layout'
-				}
-			]
-		});
-	}
-
-	getItems(contextKeyService: IContextKeyService, keybindingService: IKeybindingService): QuickPickItem[] {
-		const toQuickPickItem = (item: CustomizeLayoutItem): IQuickPickItem => {
-			const toggled = item.active.evaluate(contextKeyService.getContext(null));
-			let label = item.useButtons ?
-				item.label :
-				item.label + (toggled && item.activeIcon ? ` $(${item.activeIcon.id})` : (!toggled && item.inactiveIcon ? ` $(${item.inactiveIcon.id})` : ''));
-			const ariaLabel =
-				item.label + (toggled && item.activeAriaLabel ? ` (${item.activeAriaLabel})` : (!toggled && item.inactiveAriaLabel ? ` (${item.inactiveAriaLabel})` : ''));
-
-			if (item.visualIcon) {
-				let icon = item.visualIcon;
-				if (isContextualLayoutVisualIcon(icon)) {
-					const useIconA = icon.whenA.evaluate(contextKeyService.getContext(null));
-					icon = useIconA ? icon.iconA : icon.iconB;
-				}
-
-				label = `$(${icon.id}) ${label}`;
-			}
-
-			const icon = toggled ? item.activeIcon : item.inactiveIcon;
-
-			return {
-				type: 'item',
-				id: item.id,
-				label,
-				ariaLabel,
-				keybinding: keybindingService.lookupKeybinding(item.id, contextKeyService),
-				buttons: !item.useButtons ? undefined : [
-					{
-						alwaysVisible: false,
-						tooltip: ariaLabel,
-						iconClass: icon ? ThemeIcon.asClassName(icon) : undefined
-					}
-				]
-			};
-		};
-		return [
-			{
-				type: 'separator',
-				label: localize('toggleVisibility', "Visibility")
-			},
-			...ToggleVisibilityActions.map(toQuickPickItem),
-			{
-				type: 'separator',
-				label: localize('sideBarPosition', "Primary Side Bar Position")
-			},
-			...MoveSideBarActions.map(toQuickPickItem),
-			{
-				type: 'separator',
-				label: localize('panelAlignment', "Panel Alignment")
-			},
-			...AlignPanelActions.map(toQuickPickItem),
-			{
-				type: 'separator',
-				label: localize('quickOpen', "Quick Input Position")
-			},
-			...QuickInputActions.map(toQuickPickItem),
-			{
-				type: 'separator',
-				label: localize('layoutModes', "Modes"),
-			},
-			...MiscLayoutOptions.map(toQuickPickItem),
-		];
-	}
-
-	run(accessor: ServicesAccessor): void {
-		if (this._currentQuickPick) {
-			this._currentQuickPick.hide();
-			return;
-		}
-
-		const configurationService = accessor.get(IConfigurationService);
-		const contextKeyService = accessor.get(IContextKeyService);
-		const commandService = accessor.get(ICommandService);
-		const quickInputService = accessor.get(IQuickInputService);
-		const keybindingService = accessor.get(IKeybindingService);
-
-		const disposables = new DisposableStore();
-
-		const quickPick = disposables.add(quickInputService.createQuickPick({ useSeparators: true }));
-
-		this._currentQuickPick = quickPick;
-		quickPick.items = this.getItems(contextKeyService, keybindingService);
-		quickPick.ignoreFocusOut = true;
-		quickPick.hideInput = true;
-		quickPick.title = localize('customizeLayoutQuickPickTitle', "Customize Layout");
-
-		const closeButton = {
-			alwaysVisible: true,
-			iconClass: ThemeIcon.asClassName(Codicon.close),
-			tooltip: localize('close', "Close")
-		};
-
-		const resetButton = {
-			alwaysVisible: true,
-			iconClass: ThemeIcon.asClassName(Codicon.discard),
-			tooltip: localize('restore defaults', "Restore Defaults")
-		};
-
-		quickPick.buttons = [
-			resetButton,
-			closeButton
-		];
-
-		let selectedItem: CustomizeLayoutItem | undefined = undefined;
-		disposables.add(contextKeyService.onDidChangeContext(changeEvent => {
-			if (changeEvent.affectsSome(LayoutContextKeySet)) {
-				quickPick.items = this.getItems(contextKeyService, keybindingService);
-				if (selectedItem) {
-					quickPick.activeItems = quickPick.items.filter(item => (item as CustomizeLayoutItem).id === selectedItem?.id) as IQuickPickItem[];
-				}
-
-				setTimeout(() => quickInputService.focus(), 0);
-			}
-		}));
-
-		disposables.add(quickPick.onDidAccept(event => {
-			if (quickPick.selectedItems.length) {
-				selectedItem = quickPick.selectedItems[0] as CustomizeLayoutItem;
-				commandService.executeCommand(selectedItem.id);
-			}
-		}));
-
-		disposables.add(quickPick.onDidTriggerItemButton(event => {
-			if (event.item) {
-				selectedItem = event.item as CustomizeLayoutItem;
-				commandService.executeCommand(selectedItem.id);
-			}
-		}));
-
-		disposables.add(quickPick.onDidTriggerButton((button) => {
-			if (button === closeButton) {
-				quickPick.hide();
-			} else if (button === resetButton) {
-
-				const resetSetting = (id: string) => {
-					const config = configurationService.inspect(id);
-					configurationService.updateValue(id, config.defaultValue);
-				};
-
-				// Reset all layout options
-				resetSetting('workbench.activityBar.location');
-				resetSetting('workbench.sideBar.location');
-				resetSetting('workbench.statusBar.visible');
-				resetSetting('workbench.panel.defaultLocation');
-
-				if (!isMacintosh || !isNative) {
-					resetSetting('window.menuBarVisibility');
-				}
-
-				commandService.executeCommand('workbench.action.alignPanelCenter');
-				commandService.executeCommand('workbench.action.alignQuickInputTop');
-			}
-		}));
-
-		disposables.add(quickPick.onDidHide(() => {
-			quickPick.dispose();
-		}));
-
-		disposables.add(quickPick.onDispose(() => {
-			this._currentQuickPick = undefined;
-			disposables.dispose();
-		}));
-
-		quickPick.show();
-	}
-});
