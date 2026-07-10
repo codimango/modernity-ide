@@ -8,13 +8,13 @@ import { Codicon } from '../../base/common/codicons.js';
 import { KeyCode, KeyMod } from '../../base/common/keyCodes.js';
 import { localize, localize2 } from '../../nls.js';
 import { Categories } from '../../platform/action/common/actionCommonCategories.js';
-import { Action2, MenuId, MenuRegistry, registerAction2 } from '../../platform/actions/common/actions.js';
+import { Action2, MenuRegistry, registerAction2 } from '../../platform/actions/common/actions.js';
 import { ContextKeyExpr } from '../../platform/contextkey/common/contextkey.js';
 import { Menus } from './menus.js';
 import { ServicesAccessor } from '../../platform/instantiation/common/instantiation.js';
 import { KeybindingWeight } from '../../platform/keybinding/common/keybindingsRegistry.js';
 import { registerIcon } from '../../platform/theme/common/iconRegistry.js';
-import { AuxiliaryBarVisibleContext, IsAuxiliaryWindowContext, IsSessionsWindowContext, IsTopRightEditorGroupContext, IsWindowAlwaysOnTopContext, SideBarVisibleContext } from '../../workbench/common/contextkeys.js';
+import { IsAuxiliaryWindowContext, IsWindowAlwaysOnTopContext, SideBarVisibleContext } from '../../workbench/common/contextkeys.js';
 import { IWorkbenchLayoutService, Parts } from '../../workbench/services/layout/browser/layoutService.js';
 import { SessionsWelcomeVisibleContext } from '../common/contextkeys.js';
 
@@ -76,32 +76,7 @@ registerAction2(ToggleSidebarVisibilityAction);
 // command (registered by the workbench auxiliary bar part, which is also loaded in the agents
 // window). Two mutually-exclusive menu items give the state-dependent icon without the
 // checked/highlighted background that a single `toggled` menu item would render.
-const editorTitleAuxiliaryBarWhen = ContextKeyExpr.and(
-	IsSessionsWindowContext,
-	IsAuxiliaryWindowContext.toNegated(),
-	IsTopRightEditorGroupContext);
-
-MenuRegistry.appendMenuItem(MenuId.EditorTitleLayout, {
-	command: {
-		id: 'workbench.action.toggleAuxiliaryBar',
-		title: localize('hideSecondarySideBar', "Hide Secondary Side Bar"),
-		icon: Codicon.rightPanelHide
-	},
-	group: 'navigation',
-	order: 99.5,
-	when: ContextKeyExpr.and(editorTitleAuxiliaryBarWhen, AuxiliaryBarVisibleContext)
-});
-
-MenuRegistry.appendMenuItem(MenuId.EditorTitleLayout, {
-	command: {
-		id: 'workbench.action.toggleAuxiliaryBar',
-		title: localize('showSecondarySideBar', "Show Secondary Side Bar"),
-		icon: Codicon.rightPanelShow
-	},
-	group: 'navigation',
-	order: 99.5,
-	when: ContextKeyExpr.and(editorTitleAuxiliaryBarWhen, AuxiliaryBarVisibleContext.toNegated())
-});
+// Modernity: hide secondary side bar toggle from editor title for simple agent panel experience
 
 MenuRegistry.appendMenuItem(Menus.PanelTitle, {
 	command: {

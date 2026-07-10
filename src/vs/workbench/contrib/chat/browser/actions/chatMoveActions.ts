@@ -5,7 +5,7 @@
 
 import { Codicon } from '../../../../../base/common/codicons.js';
 import { ThemeIcon } from '../../../../../base/common/themables.js';
-import { URI } from '../../../../../base/common/uri.js';
+// Modernity: hide Move Chat actions - URI no longer used
 import { localize, localize2 } from '../../../../../nls.js';
 import { Action2, MenuId, MenuRegistry, registerAction2 } from '../../../../../platform/actions/common/actions.js';
 import { ContextKeyExpr, ContextKeyExpression } from '../../../../../platform/contextkey/common/contextkey.js';
@@ -13,68 +13,24 @@ import { ServicesAccessor } from '../../../../../platform/instantiation/common/i
 import { ActiveEditorContext } from '../../../../common/contextkeys.js';
 import { ViewContainerLocation } from '../../../../common/views.js';
 import { IEditorGroupsService } from '../../../../services/editor/common/editorGroupsService.js';
-import { ACTIVE_GROUP, AUX_WINDOW_GROUP, IEditorService } from '../../../../services/editor/common/editorService.js';
+// Modernity: hide Move Chat actions - ACTIVE_GROUP and AUX_WINDOW_GROUP no longer used
+import { IEditorService } from '../../../../services/editor/common/editorService.js';
 import { IViewsService } from '../../../../services/views/common/viewsService.js';
-import { isChatViewTitleActionContext } from '../../common/actions/chatActions.js';
+// Modernity: hide Move Chat actions - isChatViewTitleActionContext no longer used
 import { ChatContextKeys } from '../../common/actions/chatContextKeys.js';
-import { ChatAgentLocation } from '../../common/constants.js';
-import { ChatViewId, IChatWidgetService } from '../chat.js';
-import { ChatEditor, IChatEditorOptions } from '../widgetHosts/editor/chatEditor.js';
+// Modernity: hide Move Chat actions - ChatAgentLocation no longer used
+import { ChatViewId } from '../chat.js';
+// Modernity: hide Move Chat actions - IChatWidgetService no longer used
+import { ChatEditor } from '../widgetHosts/editor/chatEditor.js';
+// Modernity: hide Move Chat actions - IChatEditorOptions no longer used
 import { ChatEditorInput } from '../widgetHosts/editor/chatEditorInput.js';
 import { ChatViewPane } from '../widgetHosts/viewPane/chatViewPane.js';
 import { CHAT_CATEGORY } from './chatActions.js';
 
-enum MoveToNewLocation {
-	Editor = 'Editor',
-	Window = 'Window'
-}
+// Modernity: hide Move Chat into Editor Area and New Window - MoveToNewLocation no longer used
 
 export function registerMoveActions() {
-	registerAction2(class GlobalMoveToEditorAction extends Action2 {
-		constructor() {
-			super({
-				id: 'workbench.action.chat.openInEditor',
-				title: localize2('chat.openInEditor.label', "Move Chat into Editor Area"),
-				category: CHAT_CATEGORY,
-				precondition: ChatContextKeys.enabled,
-				f1: true,
-				menu: {
-					id: MenuId.ViewTitle,
-					when: ContextKeyExpr.equals('view', ChatViewId),
-					order: 0,
-					group: '1_open'
-				},
-			});
-		}
-
-		async run(accessor: ServicesAccessor, ...args: unknown[]) {
-			const context = args[0];
-			executeMoveToAction(accessor, MoveToNewLocation.Editor, isChatViewTitleActionContext(context) ? context.sessionResource : undefined);
-		}
-	});
-
-	registerAction2(class GlobalMoveToNewWindowAction extends Action2 {
-		constructor() {
-			super({
-				id: 'workbench.action.chat.openInNewWindow',
-				title: localize2('chat.openInNewWindow.label', "Move Chat into New Window"),
-				category: CHAT_CATEGORY,
-				precondition: ChatContextKeys.enabled,
-				f1: true,
-				menu: {
-					id: MenuId.ViewTitle,
-					when: ContextKeyExpr.equals('view', ChatViewId),
-					order: 0,
-					group: '1_open'
-				},
-			});
-		}
-
-		async run(accessor: ServicesAccessor, ...args: unknown[]) {
-			const context = args[0];
-			executeMoveToAction(accessor, MoveToNewLocation.Window, isChatViewTitleActionContext(context) ? context.sessionResource : undefined);
-		}
-	});
+	// Modernity: hide Move Chat into Editor Area and Move Chat into New Window for simple agent panel experience
 
 	registerAction2(class GlobalMoveToSidebarAction extends Action2 {
 		constructor() {
@@ -111,36 +67,7 @@ export function registerMoveActions() {
 	});
 }
 
-async function executeMoveToAction(accessor: ServicesAccessor, moveTo: MoveToNewLocation, sessionResource?: URI) {
-	const widgetService = accessor.get(IChatWidgetService);
-
-	const auxiliary = { compact: true, bounds: { width: 800, height: 640 } };
-
-	const widget = (sessionResource ? widgetService.getWidgetBySessionResource(sessionResource) : undefined)
-		?? widgetService.lastFocusedWidget;
-	if (!widget || !widget.viewModel || widget.location !== ChatAgentLocation.Chat) {
-		await widgetService.openSession(ChatEditorInput.getNewEditorUri(), moveTo === MoveToNewLocation.Window ? AUX_WINDOW_GROUP : ACTIVE_GROUP, { pinned: true, auxiliary });
-		return;
-	}
-
-	const existingWidget = widgetService.getWidgetBySessionResource(widget.viewModel.sessionResource);
-	if (!existingWidget) {
-		// Do NOT attempt to open a session that isn't already open since we cannot guarantee its state.
-		await widgetService.openSession(ChatEditorInput.getNewEditorUri(), moveTo === MoveToNewLocation.Window ? AUX_WINDOW_GROUP : ACTIVE_GROUP, { pinned: true, auxiliary });
-		return;
-	}
-
-	// Save off the session resource before clearing
-	const resourceToOpen = widget.viewModel.sessionResource;
-
-	// Todo: can possibly go away with https://github.com/microsoft/vscode/pull/278476
-	const modelInputState = existingWidget.getViewState();
-
-	await widget.clear();
-
-	const options: IChatEditorOptions = { pinned: true, modelInputState, auxiliary };
-	await widgetService.openSession(resourceToOpen, moveTo === MoveToNewLocation.Window ? AUX_WINDOW_GROUP : ACTIVE_GROUP, options);
-}
+// Modernity: hide Move Chat into Editor Area and New Window - executeMoveToAction no longer used
 
 async function moveToSidebar(accessor: ServicesAccessor): Promise<void> {
 	const viewsService = accessor.get(IViewsService);

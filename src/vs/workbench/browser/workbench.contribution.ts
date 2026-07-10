@@ -594,27 +594,27 @@ const registry = Registry.as<IConfigurationRegistry>(ConfigurationExtensions.Con
 				],
 				agentsWindow: { default: 'never', readOnly: true },
 			},
-			'workbench.secondarySideBar.defaultVisibility': {
-				'type': 'string',
-				'enum': ['hidden', 'visibleInWorkspace', 'visible', 'maximizedInWorkspace', 'maximized'],
-				'default': 'visibleInWorkspace',
-				'description': localize('secondarySideBarDefaultVisibility', "Controls the default visibility of the secondary side bar in workspaces or empty windows that are opened for the first time. Can be overridden by the agent sessions startup editor setting."),
-				'enumDescriptions': [
-					localize('workbench.secondarySideBar.defaultVisibility.hidden', "The secondary side bar is hidden by default."),
-					localize('workbench.secondarySideBar.defaultVisibility.visibleInWorkspace', "The secondary side bar is visible by default if a workspace is opened."),
-					localize('workbench.secondarySideBar.defaultVisibility.visible', "The secondary side bar is visible by default."),
-					localize('workbench.secondarySideBar.defaultVisibility.maximizedInWorkspace', "The secondary side bar is visible and maximized by default if a workspace is opened."),
-					localize('workbench.secondarySideBar.defaultVisibility.maximized', "The secondary side bar is visible and maximized by default.")
-				],
-				agentsWindow: { default: 'visibleInWorkspace', readOnly: true },
-			},
-			'workbench.secondarySideBar.forceMaximized': {
-				'type': 'boolean',
-				'default': false,
-				tags: ['experimental'],
-				'description': localize('secondarySideBarForceMaximized', "Controls whether the secondary side bar is enforced to always show maximized on startup and when there are no open editors, in layouts that support a maximized secondary side bar."),
-				agentsWindow: { default: false, readOnly: true },
-			},
+				'workbench.secondarySideBar.defaultVisibility': {
+					'type': 'string',
+					'enum': ['hidden', 'visibleInWorkspace', 'visible', 'maximizedInWorkspace', 'maximized'],
+					'default': 'visibleInWorkspace',
+					'description': localize('secondarySideBarDefaultVisibility', "Controls the default visibility of the secondary side bar in workspaces or empty windows that are opened for the first time. Can be overridden by the agent sessions startup editor setting."),
+					'enumDescriptions': [
+						localize('workbench.secondarySideBar.defaultVisibility.hidden', "The secondary side bar is hidden by default."),
+						localize('workbench.secondarySideBar.defaultVisibility.visibleInWorkspace', "The secondary side bar is visible by default if a workspace is opened."),
+						localize('workbench.secondarySideBar.defaultVisibility.visible', "The secondary side bar is visible by default."),
+						localize('workbench.secondarySideBar.defaultVisibility.maximizedInWorkspace', "The secondary side bar is visible and maximized by default if a workspace is opened."),
+						localize('workbench.secondarySideBar.defaultVisibility.maximized', "The secondary side bar is visible and maximized by default.")
+					],
+					agentsWindow: { default: 'maximized', readOnly: true },
+				},
+				'workbench.secondarySideBar.forceMaximized': {
+					'type': 'boolean',
+					'default': false,
+					tags: ['experimental'],
+					'description': localize('secondarySideBarForceMaximized', "Controls whether the secondary side bar is enforced to always show maximized on startup and when there are no open editors, in layouts that support a maximized secondary side bar."),
+					agentsWindow: { default: true, readOnly: true },
+				},
 			'workbench.secondarySideBar.showLabels': {
 				'type': 'boolean',
 				'default': true,
@@ -647,19 +647,20 @@ const registry = Registry.as<IConfigurationRegistry>(ConfigurationExtensions.Con
 				'default': true,
 				'description': localize('notificationsButton', "Controls the visibility of the Notifications button in the title bar. Only applies when notifications are positioned at the top right.")
 			},
-			[LayoutSettings.ACTIVITY_BAR_LOCATION]: {
-				'type': 'string',
-				'enum': ['default', 'top', 'bottom', 'hidden'],
-				'default': 'default',
-				'markdownDescription': localize({ comment: ['This is the description for a setting'], key: 'activityBarLocation' }, "Controls the location of the Activity Bar relative to the Primary and Secondary Side Bars."),
-				'enumDescriptions': [
-					localize('workbench.activityBar.location.default', "Show the Activity Bar on the side of the Primary Side Bar and on top of the Secondary Side Bar."),
-					localize('workbench.activityBar.location.top', "Show the Activity Bar on top of the Primary and Secondary Side Bars."),
-					localize('workbench.activityBar.location.bottom', "Show the Activity Bar at the bottom of the Primary and Secondary Side Bars."),
-					localize('workbench.activityBar.location.hide', "Hide the Activity Bar in the Primary and Secondary Side Bars.")
-				],
-				agentsWindow: { default: 'default', readOnly: true },
-			},
+					[LayoutSettings.ACTIVITY_BAR_LOCATION]: {
+							'type': 'string',
+							'enum': ['default', 'top', 'bottom', 'hidden'],
+							'default': 'hidden',
+							'markdownDescription': localize({ comment: ['This is the description for a setting'], key: 'activityBarLocation' }, "Controls the location of the Activity Bar relative to the Primary and Secondary Side Bars."),
+							'enumDescriptions': [
+								localize('workbench.activityBar.location.default', "Show the Activity Bar on the side of the Primary Side Bar and on top of the Secondary Side Bar."),
+								localize('workbench.activityBar.location.top', "Show the Activity Bar on top of the Primary and Secondary Side Bars."),
+								localize('workbench.activityBar.location.bottom', "Show the Activity Bar at the bottom of the Primary and Secondary Side Bars."),
+								localize('workbench.activityBar.location.hide', "Hide the Activity Bar in the Primary and Secondary Side Bars.")
+							],
+							// Modernity: hide activity bar by default for simple agent panel experience
+							agentsWindow: { default: 'hidden', readOnly: true },
+						},
 			[LayoutSettings.ACTIVITY_BAR_AUTO_HIDE]: {
 				'type': 'boolean',
 				'default': false,
