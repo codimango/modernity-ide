@@ -10,7 +10,7 @@ import { autorun, derived, IObservable, ISettableObservable, observableValue, tr
 import { IConfigurationService } from '../../../../platform/configuration/common/configuration.js';
 import { IInstantiationService } from '../../../../platform/instantiation/common/instantiation.js';
 import { ILogService } from '../../../../platform/log/common/log.js';
-import { mcpAutoStartConfig, McpAutoStartValue } from '../../../../platform/mcp/common/mcpManagement.js';
+import { mcpAutoStartConfig, mcpRestartOnStopConfig, McpAutoStartValue } from '../../../../platform/mcp/common/mcpManagement.js';
 import { observableConfigValue } from '../../../../platform/observable/common/platformObservableUtils.js';
 import { IStorageService, StorageScope } from '../../../../platform/storage/common/storage.js';
 import { CollisionEnablementModel, EnablementModel, isContributionEnabled } from '../../chat/common/enablement.js';
@@ -64,6 +64,49 @@ export class McpService extends Disposable implements IMcpService {
 				collection.serverDefinitions.read(reader);
 			}
 			updateThrottle.schedule(500);
+		}));
+
+		// Modernity: auto-restart MCP servers when they stop, if configured.
+		const restartOnStop = observableConfigValue(mcpRestartOnStopConfig, true, configurationService);
+		const restarting = new Set<string>();
+		this._register(autorun(reader => {
+			if (!restartOnStop.read(reader)) {
+				return;
+			}
+			const servers = this.servers.read(reader);
+			for (const server of servers) {
+				const state = server.connectionState.read(reader).state;
+				const enabled = isContributionEnabled(server.enablement.read(reader));
+				if (!enabled) {
+					continue;
+				}
+				if (state === McpConnectionState.Kind.Stopped || state === McpConnectionState.Kind.Error) {
+					const key = `${server.collection.id}/${server.definition.id}`;
+					if (restarting.has(key)) {
+						continue;
+					}
+					// Modernity: restart on stop including Unknown cache to ensure servers start on IDE launch.
+					restarting.add(key);
+					// schedule restart async to avoid re-entrancy in autorun
+					setTimeout(() => {
+						restarting.delete(key);
+						const current = this.configurationService.getValue<boolean>(mcpRestartOnStopConfig);
+						if (!current) {
+							return;
+						}
+						if (!isContributionEnabled(server.enablement.read(undefined))) {
+							return;
+						}
+						const curState = server.connectionState.read(undefined).state;
+						if (curState === McpConnectionState.Kind.Stopped || curState === McpConnectionState.Kind.Error) {
+							this._logService.info(`MCP auto-restart: restarting server ${server.definition.label} after ${curState} state`);
+							server.start().catch(err => {
+								this._logService.warn(`MCP auto-restart failed for ${server.definition.label}:`, err);
+							});
+						}
+					}, 2000);
+				}
+			}
 		}));
 	}
 
