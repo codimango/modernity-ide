@@ -1885,7 +1885,50 @@ configurationRegistry.registerConfiguration({
 			tags: ['preview'],
 			description: nls.localize('chat.customizations.structuredPreview.enabled', "Controls whether the Chat Customizations editor shows a structured preview for markdown customization files (agents, skills, instructions, prompts). When disabled, the editor always opens the raw markdown in the embedded code editor."),
 			default: false,
-		}
+		},
+		// Modernity Dev Settings - extensible, workspace-scoped for paths
+		'modernity.projects.uncompiledCodePath': {
+			type: 'string',
+			description: nls.localize('modernity.projects.uncompiledCodePath', "Directory where uncompiled / intermediate mod code is placed. Workspace setting."),
+			default: '${workspaceFolder}/build/mod',
+			scope: ConfigurationScope.RESOURCE,
+		},
+		'modernity.projects.jarOutputPath': {
+			type: 'string',
+			description: nls.localize('modernity.projects.jarOutputPath', "Directory where final .jar artifacts are written. Workspace setting."),
+			default: '${workspaceFolder}/build/libs',
+			scope: ConfigurationScope.RESOURCE,
+		},
+		'modernity.projects.modTemplatePath': {
+			type: 'string',
+			description: nls.localize('modernity.projects.modTemplatePath', "Path to the NeoForge mod template. Workspace setting."),
+			default: '${workspaceFolder}/minecraft/mod-template/neoforge',
+			scope: ConfigurationScope.RESOURCE,
+		},
+		'modernity.textures.generatedPath': {
+			type: 'string',
+			description: nls.localize('modernity.textures.generatedPath', "Directory where generated textures are stored. Workspace setting. Single path."),
+			default: '${workspaceFolder}/src/generated/resources/assets',
+			scope: ConfigurationScope.RESOURCE,
+		},
+		'modernity.secrets.customKeys': {
+			type: 'array',
+			description: nls.localize('modernity.secrets.customKeys', "List of custom secret keys for Modernity. Values stored securely in keychain."),
+			default: [],
+			scope: ConfigurationScope.APPLICATION,
+		},
+		'modernity.java.path': {
+			type: 'string',
+			description: nls.localize('modernity.java.path', "Absolute path to Java executable. Empty uses system default. Workspace setting."),
+			default: '',
+			scope: ConfigurationScope.RESOURCE,
+		},
+		'modernity.java.home': {
+			type: 'string',
+			description: nls.localize('modernity.java.home', "JAVA_HOME directory. If set, overrides automatic detection. Workspace setting."),
+			default: '',
+			scope: ConfigurationScope.RESOURCE,
+		},
 	}
 });
 Registry.as<IEditorPaneRegistry>(EditorExtensions.EditorPane).registerEditorPane(

@@ -87,7 +87,7 @@ export const mcpServerIcon = registerIcon('ai-customization-mcp-server', Codicon
 /**
  * Icon for Modernity dev settings.
  */
-export const modernityIcon = registerIcon('ai-customization-modernity', Codicon.game, localize('aiCustomizationModernityIcon', "Icon for Modernity dev settings."));
+export const modernityIcon = registerIcon('ai-customization-modernity', Codicon.package, localize('aiCustomizationModernityIcon', "Icon for Modernity settings."));
 
 /**
  * Returns the icon for a given storage type.

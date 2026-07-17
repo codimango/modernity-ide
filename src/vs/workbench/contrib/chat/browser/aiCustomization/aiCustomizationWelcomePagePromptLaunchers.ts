@@ -87,16 +87,16 @@ export class PromptLaunchersAICustomizationWelcomePage extends Disposable implem
 			description: localize('pluginsDesc', "Install and manage agent plugins that add additional tools, skills, and integrations."),
 		},
 		{
-			id: AICustomizationManagementSection.Modernity,
-			label: localize('modernity', "Modernity"),
-			icon: modernityIcon,
-			description: localize('modernityDesc', "Configure Modernity modding environment: projects, Java, textures, and secrets."),
-		},
-		{
 			id: AICustomizationManagementSection.Tools,
 			label: localize('tools', "Tools"),
 			icon: toolsIcon,
 			description: localize('toolsDesc', "Enable or disable the tools available to chat."),
+		},
+		{
+			id: AICustomizationManagementSection.Modernity,
+			label: localize('modernity', "Modernity"),
+			icon: modernityIcon,
+			description: localize('modernityDesc', "Configure Modernity dev settings: keys, project paths, textures, and Java."),
 		},
 	];
 
