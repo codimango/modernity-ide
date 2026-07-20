@@ -13,8 +13,67 @@ else
 	fi
 fi
 
+
+function ensure_sandbox_daemon() {
+	local MOD_ROOT
+	MOD_ROOT="$(cd "$ROOT/../.." && pwd)"
+	local WS="/tmp/modernity-workspace"
+	local RT="$WS/daemon.json"
+	local LOG="$WS/daemon.log"
+	if [[ ! -f "$MOD_ROOT/services/sandbox/daemon.py" ]]; then
+		return 0
+	fi
+	mkdir -p "$WS" 2>/dev/null || true
+	if [[ -d "/tmp/jdks/jdk-25.0.3.jdk/Contents/Home" ]]; then
+		export JAVA_HOME="/tmp/jdks/jdk-25.0.3.jdk/Contents/Home"
+	elif [[ -d "$HOME/AAI/modernity/.jdks/jdk-25.0.3+9/Contents/Home" ]]; then
+		export JAVA_HOME="$HOME/AAI/modernity/.jdks/jdk-25.0.3+9/Contents/Home"
+	else
+		JH=$(/usr/libexec/java_home -v 25 2>/dev/null || true)
+		if [[ -n "$JH" ]]; then
+			export JAVA_HOME="$JH"
+		fi
+	fi
+	export GRADLE_OPTS="-Djava.net.preferIPv4Stack=true"
+	export PATH="$JAVA_HOME/bin:$PATH"
+	PYTHON_CANDIDATES=("/usr/bin/python3" "python3" "python")
+	DAEMON_PY=""
+	for PY in "${PYTHON_CANDIDATES[@]}"; do
+		if (PYTHONPATH="$MOD_ROOT" "$PY" -c "import uvicorn, fastapi" 2>/dev/null); then
+			DAEMON_PY="$PY"
+			break
+		fi
+	done
+	if [[ -z "$DAEMON_PY" ]]; then
+		DAEMON_PY="python3"
+	fi
+	if [[ -f "$RT" ]]; then
+		if (cd "$MOD_ROOT" && PYTHONPATH="$MOD_ROOT" "$DAEMON_PY" -c "from services.sandbox.client import SandboxDaemonClient; c=SandboxDaemonClient.from_runtime_file('$RT'); c.health()" 2>/dev/null); then
+			echo "[code.sh] Sandbox daemon already running ($RT)" >&2
+			return 0
+		fi
+		rm -f "$RT" 2>/dev/null || true
+	fi
+	echo "[code.sh] Starting sandbox daemon: workspace=$WS runtime=$RT log=$LOG python=$DAEMON_PY" >&2
+	(cd "$MOD_ROOT" && PYTHONPATH="$MOD_ROOT" nohup "$DAEMON_PY" -m services.sandbox.daemon start --workspace-root "$WS" --runtime-file "$RT" --host 127.0.0.1 --port 0 > "$LOG" 2>&1 &)
+	for i in {1..20}; do
+		sleep 0.5
+		if [[ -f "$RT" ]]; then
+			if (cd "$MOD_ROOT" && PYTHONPATH="$MOD_ROOT" "$DAEMON_PY" -c "from services.sandbox.client import SandboxDaemonClient; c=SandboxDaemonClient.from_runtime_file('$RT'); c.health()" 2>/dev/null); then
+				echo "[code.sh] Sandbox daemon started (port $(cd "$MOD_ROOT" && PYTHONPATH="$MOD_ROOT" "$DAEMON_PY" -c "import json; print(json.load(open('$RT')).get('port','?'))" 2>/dev/null))" >&2
+				return 0
+			fi
+		fi
+	done
+	echo "[code.sh] Warning: sandbox daemon failed to start quickly, see $LOG" >&2
+	return 0
+}
+
 function code() {
 	cd "$ROOT"
+
+	# T280149056: auto-start sandbox daemon before Electron launch
+	ensure_sandbox_daemon || true
 
 	if [[ "$OSTYPE" == "darwin"* ]]; then
 		NAME=`node -p "require('./product.json').nameLong"`
