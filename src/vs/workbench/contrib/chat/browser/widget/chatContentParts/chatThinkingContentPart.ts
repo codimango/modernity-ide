@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { $, clearNode, DisposableResizeObserver, getWindow, hide, isHTMLElement, scheduleAtNextAnimationFrame } from '../../../../../../base/browser/dom.js';
+import { $, clearNode, DisposableResizeObserver, disposableWindowInterval, getWindow, hide, isHTMLElement, scheduleAtNextAnimationFrame } from '../../../../../../base/browser/dom.js';
 import { alert } from '../../../../../../base/browser/ui/aria/aria.js';
 import { DomScrollableElement } from '../../../../../../base/browser/ui/scrollbar/scrollableElement.js';
 import { ScrollbarVisibility } from '../../../../../../base/common/scrollable.js';
@@ -330,7 +330,30 @@ export class ChatThinkingContentPart extends ChatCollapsibleContentPart implemen
 	private readonly diffStatsByPartId = new Map<string, IEditSessionDiffStats>();
 	private _aggregatedDiff: IEditSessionDiffStats = { added: 0, removed: 0 };
 
+	// --- Modernity: high-level agent turn progress tracking ---
+	private _agentTurnCount: number = 1;
+	private _sessionStartTime: number = Date.now();
+	private _progressInterval: IDisposable | undefined;
+
 	get aggregatedDiff(): IEditSessionDiffStats { return this._aggregatedDiff; }
+
+	private _formatElapsed(): string {
+		const elapsedSec = Math.floor((Date.now() - this._sessionStartTime) / 1000);
+		if (elapsedSec < 60) {
+			return `${elapsedSec}s`;
+		}
+		const min = Math.floor(elapsedSec / 60);
+		const sec = elapsedSec % 60;
+		return `${min}m ${sec}s`;
+	}
+
+	private _getHighLevelProgressMessage(): string {
+		// High-level, non-technical progress that conveys activity without exposing low-level tool names.
+		if (this._agentTurnCount <= 1) {
+			return localize('chat.thinking.progress.working', 'Working… {0}', this._formatElapsed());
+		}
+		return localize('chat.thinking.progress.turn', 'Working — Turn {0} • {1}', this._agentTurnCount, this._formatElapsed());
+	}
 
 	private getRandomWorkingMessage(category: WorkingMessageCategory = WorkingMessageCategory.Tool): string {
 		const fun = maybePickFunWorkingMessage(this.configurationService);
@@ -556,10 +579,34 @@ export class ChatThinkingContentPart extends ChatCollapsibleContentPart implemen
 			const spinnerIcon = createThinkingIcon(Codicon.circleFilled);
 			this.workingSpinnerElement.appendChild(spinnerIcon);
 			this.workingSpinnerLabel = $('span.chat-thinking-spinner-label');
-			this.workingSpinnerLabel.textContent = this.getRandomWorkingMessage(WorkingMessageCategory.Thinking);
+			// Modernity: surface high-level progress (turn + elapsed) immediately so user
+			// knows agent is working, rather than only low-level tool names.
+			this.workingSpinnerLabel.textContent = this._getHighLevelProgressMessage();
 			this.workingSpinnerElement.appendChild(this.workingSpinnerLabel);
 			this.wrapper.appendChild(this.workingSpinnerElement);
 			this.updateWorkingSpinnerVisibility();
+
+			// Update progress every second while streaming — keeps elapsed time fresh
+			// and shows that the agent is still active during long LLM gaps.
+			this._progressInterval = disposableWindowInterval(
+				getWindow(this.wrapper),
+				() => {
+					if (this._store.isDisposed || this.streamingCompleted || this.element.isComplete) {
+						this._progressInterval?.dispose();
+						this._progressInterval = undefined;
+						return;
+					}
+					if (this.workingSpinnerLabel) {
+						this.workingSpinnerLabel.textContent = this._getHighLevelProgressMessage();
+					}
+					// Also keep collapsed title shimmer in sync for high-level awareness.
+					if (this.titleShimmerSpan && !this._isExpanded.get()) {
+						this.titleShimmerSpan.textContent = this._getHighLevelProgressMessage();
+					}
+				},
+				1000
+			);
+			this._register(this._progressInterval);
 		}
 
 		// wrap content in scrollable element for fixed scrolling mode
@@ -1039,6 +1086,10 @@ export class ChatThinkingContentPart extends ChatCollapsibleContentPart implemen
 		this.domNode.classList.remove('chat-thinking-active');
 		this.domNode.classList.remove('chat-thinking-fade-top', 'chat-thinking-fade-bottom');
 		this.processPendingRemovals();
+		if (this._progressInterval) {
+			this._progressInterval.dispose();
+			this._progressInterval = undefined;
+		}
 		if (this.workingSpinnerElement) {
 			this.workingSpinnerElement.remove();
 			this.workingSpinnerElement = undefined;
@@ -1070,6 +1121,11 @@ export class ChatThinkingContentPart extends ChatCollapsibleContentPart implemen
 		if (this.wrapperResizeObserverDisposable) {
 			this.wrapperResizeObserverDisposable.dispose();
 			this.wrapperResizeObserverDisposable = undefined;
+		}
+
+		if (this._progressInterval) {
+			this._progressInterval.dispose();
+			this._progressInterval = undefined;
 		}
 
 		if (this.workingSpinnerElement) {
@@ -1788,6 +1844,17 @@ ${this.hookCount > 0 ? `EXAMPLES WITH BLOCKED CONTENT (from hooks):
 			this.hookCount++;
 		} else {
 			this.toolInvocationCount++;
+			// Modernity: each new tool invocation is considered progress in agent turns.
+			// Increment high-level turn counter for UI feedback (not low-level tool names).
+			if (this.toolInvocationCount > 1) {
+				this._agentTurnCount = Math.max(this._agentTurnCount, this.toolInvocationCount);
+				if (this.workingSpinnerLabel && !this.streamingCompleted) {
+					this.workingSpinnerLabel.textContent = this._getHighLevelProgressMessage();
+				}
+				if (this.titleShimmerSpan && !this._isExpanded.get()) {
+					this.titleShimmerSpan.textContent = this._getHighLevelProgressMessage();
+				}
+			}
 		}
 
 		// Shift default title from 'Thinking' to 'Working' once we have tool calls
