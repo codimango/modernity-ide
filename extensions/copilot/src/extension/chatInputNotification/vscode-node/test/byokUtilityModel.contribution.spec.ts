@@ -79,13 +79,14 @@ const noopLog = {
 } as unknown as ILogService;
 
 async function flushAsync() {
-	// Drain microtasks so async _update() observers complete.
 	await Promise.resolve();
 	await Promise.resolve();
 	await Promise.resolve();
 }
 
 // ---- tests -----------------------------------------------------------------
+// NOTE: BYOK utility model upsell notification has been removed per user request.
+// The contribution is now a no-op and should never show a notification.
 
 describe('ByokUtilityModelNotificationContribution', () => {
 	let contribution: ByokUtilityModelNotificationContribution | undefined;
@@ -105,31 +106,24 @@ describe('ByokUtilityModelNotificationContribution', () => {
 		contribution = undefined;
 	});
 
-	test('shows notification when signed out + BYOK + both utility settings unset', async () => {
+	test('does not show upsell notification when signed out + BYOK + both utility settings unset (upsell removed)', async () => {
 		const { authService } = createAuthService({ anyGitHubSession: undefined });
 		const { configService } = createConfigService();
 		contribution = new ByokUtilityModelNotificationContribution(authService, configService, noopLog);
 
 		await flushAsync();
 
-		expect(mockNotification.show).toHaveBeenCalled();
-		expect(mockNotification.message).toBe('Set BYOK utility models');
-		expect(mockNotification.actions).toHaveLength(1);
-		expect(mockNotification.actions[0].commandId).toBe('workbench.action.openSettings');
-		expect(mockNotification.actions[0].commandArgs).toEqual(['chat.utility']);
+		expect(mockNotification.show).not.toHaveBeenCalled();
 	});
 
-	test('shows notification with single action when only chat.utilityModel is unset', async () => {
+	test('does not show notification when only chat.utilityModel is unset (upsell removed)', async () => {
 		const { authService } = createAuthService({ anyGitHubSession: undefined });
 		const { configService } = createConfigService({ 'chat.utilitySmallModel': 'ollama/llama3' });
 		contribution = new ByokUtilityModelNotificationContribution(authService, configService, noopLog);
 
 		await flushAsync();
 
-		expect(mockNotification.show).toHaveBeenCalled();
-		expect(mockNotification.message).toBe('Set BYOK utility model');
-		expect(mockNotification.actions).toHaveLength(1);
-		expect(mockNotification.actions[0].commandArgs).toEqual(['chat.utilityModel']);
+		expect(mockNotification.show).not.toHaveBeenCalled();
 	});
 
 	test('does not show notification when signed in', async () => {
@@ -166,35 +160,17 @@ describe('ByokUtilityModelNotificationContribution', () => {
 		expect(mockNotification.show).not.toHaveBeenCalled();
 	});
 
-	test('hides notification once both utility settings are configured', async () => {
-		const { authService } = createAuthService({ anyGitHubSession: undefined });
-		const { configService, set } = createConfigService();
-		contribution = new ByokUtilityModelNotificationContribution(authService, configService, noopLog);
-
-		await flushAsync();
-		expect(mockNotification.show).toHaveBeenCalled();
-
-		set('chat.utilityModel', 'ollama/llama3');
-		await flushAsync();
-		expect(mockNotification.hide).not.toHaveBeenCalled(); // small model still unset → still showing
-
-		set('chat.utilitySmallModel', 'ollama/llama3');
-		await flushAsync();
-		expect(mockNotification.hide).toHaveBeenCalled();
-	});
-
-	test('hides notification when user signs in', async () => {
+	test('still no notification when user signs in (upsell removed)', async () => {
 		const { authService, emitter } = createAuthService({ anyGitHubSession: undefined });
 		const { configService } = createConfigService();
 		contribution = new ByokUtilityModelNotificationContribution(authService, configService, noopLog);
 
 		await flushAsync();
-		expect(mockNotification.show).toHaveBeenCalled();
 
 		(authService as unknown as { anyGitHubSession: unknown }).anyGitHubSession = { accessToken: 'tok' };
 		emitter.fire();
 		await flushAsync();
 
-		expect(mockNotification.hide).toHaveBeenCalled();
+		expect(mockNotification.show).not.toHaveBeenCalled();
 	});
 });
