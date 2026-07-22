@@ -85,6 +85,11 @@ export const builtinIcon = registerIcon('ai-customization-builtin', Codicon.star
 export const mcpServerIcon = registerIcon('ai-customization-mcp-server', Codicon.server, localize('aiCustomizationMcpServerIcon', "Icon for MCP servers."));
 
 /**
+ * Icon for Modernity dev settings.
+ */
+export const modernityIcon = registerIcon('ai-customization-modernity', Codicon.package, localize('aiCustomizationModernityIcon', "Icon for Modernity settings."));
+
+/**
  * Returns the icon for a given storage type.
  */
 export function sourceToIcon(source: AICustomizationSource): ThemeIcon {

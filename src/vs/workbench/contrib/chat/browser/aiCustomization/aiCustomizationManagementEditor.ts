@@ -56,8 +56,9 @@ import {
 	SIDEBAR_MAX_WIDTH,
 	CONTENT_MIN_WIDTH,
 } from './aiCustomizationManagement.js';
-import { agentIcon, instructionsIcon, promptIcon, skillIcon, hookIcon, pluginIcon, toolsIcon } from './aiCustomizationIcons.js';
+import { agentIcon, instructionsIcon, promptIcon, skillIcon, hookIcon, pluginIcon, toolsIcon, modernityIcon } from './aiCustomizationIcons.js';
 import { ChatModelsWidget } from '../chatManagement/chatModelsWidget.js';
+import { ModernitySettingsWidget } from './modernitySettingsWidget.js';
 import { PromptsType, Target } from '../../common/promptSyntax/promptTypes.js';
 import { IPromptsService, PromptsStorage } from '../../common/promptSyntax/service/promptsService.js';
 import { IHeaderAttribute, IValue, ParsedPromptFile } from '../../common/promptSyntax/promptFileParser.js';
@@ -268,11 +269,13 @@ export class AICustomizationManagementEditor extends EditorPane {
 	private pluginListWidget: PluginListWidget | undefined;
 	private modelsWidget: ChatModelsWidget | undefined;
 	private toolsListWidget: ToolsListWidget | undefined;
+	private modernityWidget: ModernitySettingsWidget | undefined;
 	private promptsContentContainer!: HTMLElement;
 	private mcpContentContainer: HTMLElement | undefined;
 	private pluginContentContainer: HTMLElement | undefined;
 	private modelsContentContainer: HTMLElement | undefined;
 	private toolsContentContainer: HTMLElement | undefined;
+	private modernityContentContainer: HTMLElement | undefined;
 	private modelsFooterElement: HTMLElement | undefined;
 
 	// Embedded editor state
@@ -391,17 +394,18 @@ export class AICustomizationManagementEditor extends EditorPane {
 		this._register(toDisposable(() => this.disposeBuiltinEditingSessions()));
 
 		// Build sections from the workspace service configuration
-		const sectionInfo: Record<string, { label: string; icon: ThemeIcon; description: string }> = {
-			[AICustomizationManagementSection.Agents]: { label: localize('agents', "Agents"), icon: agentIcon, description: localize('agentsDesc', "Define custom agents with specialized personas, tool access, and instructions for specific tasks.") },
-			[AICustomizationManagementSection.Skills]: { label: localize('skills', "Skills"), icon: skillIcon, description: localize('skillsDesc', "Create reusable skill files that provide domain-specific knowledge and workflows.") },
-			[AICustomizationManagementSection.Instructions]: { label: localize('instructions', "Instructions"), icon: instructionsIcon, description: localize('instructionsDesc', "Set always-on instructions that guide AI behavior across your workspace or user profile.") },
-			[AICustomizationManagementSection.Prompts]: { label: localize('prompts', "Prompts"), icon: promptIcon, description: localize('promptsDesc', "Reusable prompt templates that can be invoked as slash commands.") },
-			[AICustomizationManagementSection.Hooks]: { label: localize('hooks', "Hooks"), icon: hookIcon, description: localize('hooksDesc', "Configure automated actions triggered by events like saving files or running tasks.") },
-			[AICustomizationManagementSection.McpServers]: { label: localize('mcpServers', "MCP Servers"), icon: Codicon.server, description: localize('mcpServersDesc', "Connect external tool servers that extend AI capabilities with custom tools and data sources.") },
-			[AICustomizationManagementSection.Plugins]: { label: localize('plugins', "Plugins"), icon: pluginIcon, description: localize('pluginsDesc', "Install and manage agent plugins that add additional tools, skills, and integrations.") },
-			[AICustomizationManagementSection.Models]: { label: localize('models', "Models"), icon: Codicon.vm, description: localize('modelsDesc', "Configure and manage language models available for use.") },
-			[AICustomizationManagementSection.Tools]: { label: localize('tools', "Tools"), icon: toolsIcon, description: localize('toolsDesc', "Enable or disable groups of language model tools available to chat.") },
-		};
+			const sectionInfo: Record<string, { label: string; icon: ThemeIcon; description: string }> = {
+				[AICustomizationManagementSection.Agents]: { label: localize('agents', "Agents"), icon: agentIcon, description: localize('agentsDesc', "Define custom agents with specialized personas, tool access, and instructions for specific tasks.") },
+				[AICustomizationManagementSection.Skills]: { label: localize('skills', "Skills"), icon: skillIcon, description: localize('skillsDesc', "Create reusable skill files that provide domain-specific knowledge and workflows.") },
+				[AICustomizationManagementSection.Instructions]: { label: localize('instructions', "Instructions"), icon: instructionsIcon, description: localize('instructionsDesc', "Set always-on instructions that guide AI behavior across your workspace or user profile.") },
+				[AICustomizationManagementSection.Prompts]: { label: localize('prompts', "Prompts"), icon: promptIcon, description: localize('promptsDesc', "Reusable prompt templates that can be invoked as slash commands.") },
+				[AICustomizationManagementSection.Hooks]: { label: localize('hooks', "Hooks"), icon: hookIcon, description: localize('hooksDesc', "Configure automated actions triggered by events like saving files or running tasks.") },
+				[AICustomizationManagementSection.McpServers]: { label: localize('mcpServers', "MCP Servers"), icon: Codicon.server, description: localize('mcpServersDesc', "Connect external tool servers that extend AI capabilities with custom tools and data sources.") },
+				[AICustomizationManagementSection.Plugins]: { label: localize('plugins', "Plugins"), icon: pluginIcon, description: localize('pluginsDesc', "Install and manage agent plugins that add additional tools, skills, and integrations.") },
+				[AICustomizationManagementSection.Models]: { label: localize('models', "Models"), icon: Codicon.vm, description: localize('modelsDesc', "Configure and manage language models available for use.") },
+				[AICustomizationManagementSection.Tools]: { label: localize('tools', "Tools"), icon: toolsIcon, description: localize('toolsDesc', "Enable or disable groups of language model tools available to chat.") },
+				[AICustomizationManagementSection.Modernity]: { label: localize('modernity', "Modernity"), icon: modernityIcon, description: localize('modernityDesc', "Configure Modernity Minecraft modding IDE: keys, projects, textures, and Java settings.") },
+			};
 		for (const id of this.workspaceService.managementSections) {
 			const info = sectionInfo[id];
 			if (info) {
@@ -474,6 +478,7 @@ export class AICustomizationManagementEditor extends EditorPane {
 					this.mcpListWidget?.layout(height - 16, width - 24);
 					this.pluginListWidget?.layout(height - 16, width - 24);
 					this.toolsListWidget?.layout(height - 16, width - 24);
+					this.modernityWidget?.layout(height - 16, width - 24);
 					const modelsFooterHeight = this.modelsFooterElement?.offsetHeight || 80;
 					this.modelsWidget?.layout(height - 16 - modelsFooterHeight, width);
 					if (this.viewMode === 'editor' && this.embeddedEditor && this.embeddedEditorContainer) {
@@ -828,22 +833,35 @@ export class AICustomizationManagementEditor extends EditorPane {
 		}
 
 		// Container for Tools content.
-		if (hasSections.has(AICustomizationManagementSection.Tools)) {
-			this.toolsContentContainer = DOM.append(contentInner, $('.tools-content-container'));
-			// Tools customizations only target the agent host (Copilot CLI), in both windows.
-			this.toolsListWidget = this.editorDisposables.add(this.instantiationService.createInstance(ToolsListWidget, AGENT_HOST_COPILOT_CLI_SESSION_TYPE));
-			this.toolsContentContainer.appendChild(this.toolsListWidget.element);
+			if (hasSections.has(AICustomizationManagementSection.Tools)) {
+				this.toolsContentContainer = DOM.append(contentInner, $('.tools-content-container'));
+				// Tools customizations only target the agent host (Copilot CLI), in both windows.
+				this.toolsListWidget = this.editorDisposables.add(this.instantiationService.createInstance(ToolsListWidget, AGENT_HOST_COPILOT_CLI_SESSION_TYPE));
+				this.toolsContentContainer.appendChild(this.toolsListWidget.element);
 
-			// Embedded tool-contributing extension detail view
-			this.toolsDetailContainer = DOM.append(contentInner, $('.tools-detail-container'));
-			this.createEmbeddedToolDetail();
+				// Embedded tool-contributing extension detail view
+				this.toolsDetailContainer = DOM.append(contentInner, $('.tools-detail-container'));
+				this.createEmbeddedToolDetail();
 
-			this.editorDisposables.add(this.toolsListWidget.onDidSelectExtension(extension => {
-				this.showEmbeddedToolDetail(extension);
-			}));
-		}
+				this.editorDisposables.add(this.toolsListWidget.onDidSelectExtension(extension => {
+					this.showEmbeddedToolDetail(extension);
+				}));
+			}
 
-		// Embedded editor container
+			// Container for Modernity settings content
+			if (hasSections.has(AICustomizationManagementSection.Modernity)) {
+				this.modernityContentContainer = DOM.append(contentInner, $('.modernity-content-container'));
+				const modernityBackBar = DOM.append(this.modernityContentContainer, $('.section-back-bar'));
+				modernityBackBar.appendChild(this.createBackArrowButton());
+				this.modernityWidget = this.editorDisposables.add(this.instantiationService.createInstance(ModernitySettingsWidget));
+				this.modernityContentContainer.appendChild(this.modernityWidget.element);
+
+				const modernityFooter = DOM.append(this.modernityContentContainer, $('.section-footer'));
+				const modernityDescription = DOM.append(modernityFooter, $('p.section-footer-description'));
+				modernityDescription.textContent = localize('modernitySectionDescription', "Configure Modernity dev settings: secure secrets via OS keychain, workspace-level project paths, generated textures paths, and Java runtime. Extensible for future use.");
+			}
+
+			// Embedded editor container
 		this.editorContentContainer = DOM.append(contentInner, $('.editor-content-container'));
 		this.createEmbeddedEditor();
 
@@ -877,13 +895,19 @@ export class AICustomizationManagementEditor extends EditorPane {
 			this.modelsWidget.fireItemCount();
 		}
 		if (this.toolsListWidget) {
-			this.editorDisposables.add(this.toolsListWidget.onDidChangeItemCount(count => {
-				this.updateSectionCount(AICustomizationManagementSection.Tools, count);
-			}));
-			this.toolsListWidget.fireItemCount();
-		}
+				this.editorDisposables.add(this.toolsListWidget.onDidChangeItemCount(count => {
+					this.updateSectionCount(AICustomizationManagementSection.Tools, count);
+				}));
+				this.toolsListWidget.fireItemCount();
+			}
+			if (this.modernityWidget) {
+				this.editorDisposables.add(this.modernityWidget.onDidChangeItemCount(count => {
+					this.updateSectionCount(AICustomizationManagementSection.Modernity, count);
+				}));
+				this.modernityWidget.fireItemCount();
+			}
 
-		// Per-prompts-section autoruns: drive sidebar counts from the items model,
+			// Per-prompts-section autoruns: drive sidebar counts from the items model,
 		// the same source the editor list widget renders from.
 		for (const section of ITEMS_MODEL_SECTIONS) {
 			const observable = this.itemsModel.getCount(section);
@@ -1019,6 +1043,8 @@ export class AICustomizationManagementEditor extends EditorPane {
 			this.modelsWidget?.focusSearch();
 		} else if (section === AICustomizationManagementSection.Tools) {
 			this.toolsListWidget?.focusSearch();
+		} else if (section === AICustomizationManagementSection.Modernity) {
+			this.modernityWidget?.focusSearch();
 		} else {
 			this.listWidget?.focusSearch();
 		}
@@ -1064,6 +1090,7 @@ export class AICustomizationManagementEditor extends EditorPane {
 		const isMcpSection = this.selectedSection === AICustomizationManagementSection.McpServers;
 		const isPluginsSection = this.selectedSection === AICustomizationManagementSection.Plugins;
 		const isToolsSection = this.selectedSection === AICustomizationManagementSection.Tools;
+		const isModernitySection = this.selectedSection === AICustomizationManagementSection.Modernity;
 
 		if (this.welcomePage) {
 			this.welcomePage.container.style.display = isWelcome && !isEditorMode && !isDetailMode ? '' : 'none';
@@ -1092,6 +1119,9 @@ export class AICustomizationManagementEditor extends EditorPane {
 		if (this.toolsDetailContainer) {
 			this.toolsDetailContainer.style.display = isToolsDetailMode ? '' : 'none';
 		}
+		if (this.modernityContentContainer) {
+			this.modernityContentContainer.style.display = !isEditorMode && !isDetailMode && isModernitySection ? '' : 'none';
+		}
 		if (this.editorContentContainer) {
 			this.editorContentContainer.style.display = isEditorMode ? '' : 'none';
 		}
@@ -1099,6 +1129,13 @@ export class AICustomizationManagementEditor extends EditorPane {
 		// Render and layout models widget when switching to it
 		if (isModelsSection && this.modelsWidget) {
 			this.modelsWidget.render();
+			if (this.dimension) {
+				this.layout(this.dimension);
+			}
+		}
+		// Render and layout modernity widget when switching to it
+		if (isModernitySection && this.modernityWidget) {
+			this.modernityWidget.render();
 			if (this.dimension) {
 				this.layout(this.dimension);
 			}
@@ -1305,6 +1342,8 @@ export class AICustomizationManagementEditor extends EditorPane {
 			this.modelsWidget?.focusSearch();
 		} else if (this.selectedSection === AICustomizationManagementSection.Tools) {
 			this.toolsListWidget?.focusSearch();
+		} else if (this.selectedSection === AICustomizationManagementSection.Modernity) {
+			this.modernityWidget?.focusSearch();
 		} else {
 			this.listWidget?.focusSearch();
 		}
@@ -1371,6 +1410,8 @@ export class AICustomizationManagementEditor extends EditorPane {
 			this.mcpListWidget?.revealLastItem();
 		} else if (this.selectedSection === AICustomizationManagementSection.Plugins) {
 			this.pluginListWidget?.revealLastItem();
+		} else if (this.selectedSection === AICustomizationManagementSection.Modernity) {
+			this.modernityWidget?.revealLastItem();
 		} else {
 			this.listWidget.revealLastItem();
 		}

@@ -13,7 +13,7 @@ import { ThemeIcon } from '../../../../../base/common/themables.js';
 import { Codicon } from '../../../../../base/common/codicons.js';
 import type { ICommandService } from '../../../../../platform/commands/common/commands.js';
 import { AICustomizationManagementSection } from './aiCustomizationManagement.js';
-import { agentIcon, instructionsIcon, pluginIcon, skillIcon, hookIcon, toolsIcon } from './aiCustomizationIcons.js';
+import { agentIcon, instructionsIcon, pluginIcon, skillIcon, hookIcon, toolsIcon, modernityIcon } from './aiCustomizationIcons.js';
 import { IAICustomizationWorkspaceService, IWelcomePageFeatures } from '../../common/aiCustomizationWorkspaceService.js';
 import { PromptsType } from '../../common/promptSyntax/promptTypes.js';
 import type { IAICustomizationWelcomePageImplementation, IWelcomePageCallbacks } from './aiCustomizationWelcomePage.js';
@@ -91,6 +91,12 @@ export class PromptLaunchersAICustomizationWelcomePage extends Disposable implem
 			label: localize('tools', "Tools"),
 			icon: toolsIcon,
 			description: localize('toolsDesc', "Enable or disable the tools available to chat."),
+		},
+		{
+			id: AICustomizationManagementSection.Modernity,
+			label: localize('modernity', "Modernity"),
+			icon: modernityIcon,
+			description: localize('modernityDesc', "Configure Modernity dev settings: keys, project paths, textures, and Java."),
 		},
 	];
 

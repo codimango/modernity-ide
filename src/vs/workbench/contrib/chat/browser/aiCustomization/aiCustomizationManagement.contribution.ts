@@ -839,3 +839,97 @@ registerWorkbenchContribution2(
 );
 
 //#endregion
+
+//#region Modernity Dev Settings Configuration
+
+import { Extensions as ConfigurationExtensions, IConfigurationRegistry, ConfigurationScope } from '../../../../../platform/configuration/common/configurationRegistry.js';
+
+const modernityConfigurationRegistry = Registry.as<IConfigurationRegistry>(ConfigurationExtensions.Configuration);
+modernityConfigurationRegistry.registerConfiguration({
+	id: 'modernity',
+	title: localize('modernityConfigurationTitle', "Modernity"),
+	properties: {
+		'modernity.dev': {
+			type: 'object',
+			default: {
+				javaPath: '',
+				projectsRoot: '',
+				jarOutputPath: '',
+				generatedTexturesEnabled: true,
+				autoGenerateTextures: false,
+				textureStyle: 'pixel-art',
+				secrets: {},
+				extra: {},
+			},
+			scope: ConfigurationScope.APPLICATION,
+			description: localize('modernity.dev', "Modernity dev settings - Java path, projects, textures, secrets."),
+			additionalProperties: true,
+			properties: {
+				javaPath: {
+					type: 'string',
+					default: '',
+					description: localize('modernity.dev.javaPath', "Absolute path to Java executable or JDK home. Empty = auto-detect."),
+				},
+				projectsRoot: {
+					type: 'string',
+					default: '',
+					description: localize('modernity.dev.projectsRoot', "Root folder where uncompiled Modernity projects live (where uncompiled code goes)."),
+				},
+				jarOutputPath: {
+					type: 'string',
+					default: '',
+					description: localize('modernity.dev.jarOutputPath', "Folder where built .jar files go. Supports placeholders."),
+				},
+				generatedTexturesEnabled: {
+					type: 'boolean',
+					default: true,
+					description: localize('modernity.dev.generatedTexturesEnabled', "Whether generated textures are enabled."),
+				},
+				autoGenerateTextures: {
+					type: 'boolean',
+					default: false,
+					description: localize('modernity.dev.autoGenerateTextures', "Whether to auto-generate textures on build."),
+				},
+				textureStyle: {
+					type: 'string',
+					default: 'pixel-art',
+					description: localize('modernity.dev.textureStyle', "Texture style preset (e.g. pixel-art, realistic)."),
+				},
+				secrets: {
+					type: 'object',
+					default: {},
+					description: localize('modernity.dev.secrets', "Map of secret name to value reference. Avoid committing real secrets."),
+					additionalProperties: { type: 'string' },
+				},
+				extra: {
+					type: 'object',
+					default: {},
+					description: localize('modernity.dev.extra', "Free-form extra config for forward compatibility."),
+					additionalProperties: true,
+				},
+			},
+		},
+	},
+});
+
+// Open Modernity settings command (gear icon entry point)
+registerAction2(class extends Action2 {
+	constructor() {
+		super({
+			id: 'aiCustomization.openModernitySettings',
+			title: localize2('openModernitySettings', "Open Modernity Dev Settings"),
+			category: CHAT_CATEGORY,
+			f1: true,
+		});
+	}
+	async run(accessor: ServicesAccessor): Promise<void> {
+		const editorService = accessor.get(IEditorService);
+		const input = AICustomizationManagementEditorInput.getOrCreate();
+		const pane = await editorService.openEditor(input, { pinned: true });
+		if (pane instanceof AICustomizationManagementEditor) {
+			pane.selectSectionById(AICustomizationManagementSection.Modernity);
+		}
+	}
+});
+
+//#endregion
