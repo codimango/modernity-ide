@@ -81,6 +81,7 @@ export class ProductionEndpointProvider extends Disposable implements IEndpointP
 	private static readonly UTILITY_SMALL_MODEL_CONFIG_KEY = 'chat.utilitySmallModel';
 	private static readonly USE_COPILOT_MODELS_FOR_UTILITY_MODELS_CONFIG_KEY = 'chat.useCopilotModelsForUtilityModels';
 	private _mainModelIsBYOK = false;
+	private _lastBYOKMainEndpoint: IChatEndpoint | undefined;
 
 	/**
 	 * Per-family marker recording that we already emitted a telemetry event
@@ -123,7 +124,11 @@ export class ProductionEndpointProvider extends Disposable implements IEndpointP
 		}
 
 		if (model.vendor !== 'copilot') {
-			return this._instantiationService.createInstance(ExtensionContributedChatEndpoint, model);
+			const byokEndpoint = this._instantiationService.createInstance(ExtensionContributedChatEndpoint, model);
+			// Modernity: remember the last BYOK main endpoint so utility models can fall back to Avocado/Muse Spark
+			// instead of throwing "No utility model is configured for 'copilot-utility-small' while main is BYOK"
+			this._lastBYOKMainEndpoint = byokEndpoint;
+			return byokEndpoint;
 		}
 
 		if (model.id === AutoChatEndpoint.pseudoModelId) {
@@ -179,14 +184,29 @@ export class ProductionEndpointProvider extends Disposable implements IEndpointP
 		}
 
 		if (!this._useCopilotModelsForUtilityModelsByDefault()) {
+			// Modernity: Avocado / Muse Spark - fallback to last BYOK main endpoint instead of throwing
+			// This allows pure BYOK flow without Copilot, using same Avocado model for utility.
+			if (this._lastBYOKMainEndpoint) {
+				this._logService.trace(`[Modernity] Using BYOK main model ${this._lastBYOKMainEndpoint.model} as fallback for utility family '${family}'`);
+				return this._lastBYOKMainEndpoint;
+			}
 			throw new Error(`No utility model is configured for '${family}' while the selected main model is BYOK.`);
 		}
 
-		switch (family) {
-			case 'copilot-utility-small':
-				return CopilotUtilitySmallChatEndpoint.resolve(this._modelFetcher, this._instantiationService);
-			case 'copilot-utility':
-				return CopilotUtilityChatEndpoint.resolve(this._modelFetcher, this._instantiationService);
+		// Modernity: try Copilot utility, but if it fails (no Copilot auth / no model) and we have BYOK fallback, use it
+		try {
+			switch (family) {
+				case 'copilot-utility-small':
+					return await CopilotUtilitySmallChatEndpoint.resolve(this._modelFetcher, this._instantiationService);
+				case 'copilot-utility':
+					return await CopilotUtilityChatEndpoint.resolve(this._modelFetcher, this._instantiationService);
+			}
+		} catch (err) {
+			if (this._lastBYOKMainEndpoint) {
+				this._logService.trace(`[Modernity] Copilot utility resolve failed for '${family}' (${err}), falling back to BYOK main model ${this._lastBYOKMainEndpoint.model}`);
+				return this._lastBYOKMainEndpoint;
+			}
+			throw err;
 		}
 	}
 
