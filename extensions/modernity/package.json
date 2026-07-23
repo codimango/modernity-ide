@@ -1,0 +1,66 @@
+{
+  "name": "modernity",
+  "displayName": "Modernity",
+  "description": "Built-in Modernity language model provider for the distributable IDE",
+  "version": "0.0.1",
+  "publisher": "modernity",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguageModelChatProvider:modernity"
+  ],
+  "enabledApiProposals": [
+    "chatProvider",
+    "languageModelThinkingPart"
+  ],
+  "main": "./out/extension",
+  "scripts": {
+    "compile": "gulp compile-extension:modernity",
+    "watch": "gulp watch-extension:modernity"
+  },
+  "capabilities": {
+    "virtualWorkspaces": true,
+    "untrustedWorkspaces": {
+      "supported": true
+    }
+  },
+  "contributes": {
+    "languageModelChatProviders": [
+      {
+        "vendor": "modernity",
+        "displayName": "Modernity"
+      }
+    ],
+    "configuration": {
+      "title": "Modernity",
+      "properties": {
+        "modernity.gatewayUrl": {
+          "type": "string",
+          "default": "http://127.0.0.1:8000",
+          "description": "Base URL for the private Modernity inference gateway. Development builds default to http://127.0.0.1:8000. Production builds should point to the configured private gateway (e.g. https://modernity.dev).",
+          "scope": "application"
+        },
+        "modernity.chatCompletionsPath": {
+          "type": "string",
+          "default": "/api/inference/v1/chat/completions",
+          "description": "Path for chat completions endpoint relative to gatewayUrl.",
+          "scope": "application"
+        },
+        "modernity.modelsPath": {
+          "type": "string",
+          "default": "/api/inference/v1/models",
+          "description": "Path for models discovery endpoint relative to gatewayUrl.",
+          "scope": "application"
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/node": "24.x"
+  }
+}
