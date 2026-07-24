@@ -1,0 +1,70 @@
+{
+  "name": "modernity",
+  "displayName": "Modernity",
+  "description": "Built-in Modernity language model provider for Minecraft modding IDE",
+  "publisher": "modernity",
+  "version": "0.0.1",
+  "isModernityCore": true,
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onStartupFinished",
+    "onLanguageModelChat:modernity"
+  ],
+  "enabledApiProposals": [
+    "chatProvider",
+    "languageModelSystem",
+    "languageModelCapabilities"
+  ],
+  "contributes": {
+    "languageModelChatProviders": [
+      {
+        "vendor": "modernity",
+        "displayName": "Modernity"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "Modernity",
+        "properties": {
+          "modernity.gatewayUrl": {
+            "type": "string",
+            "description": "Base URL for the Modernity inference gateway. Points to http://127.0.0.1:8000 in development and to the private gateway in packaged builds (e.g. https://modernity.dev).",
+            "default": "http://127.0.0.1:8000",
+            "scope": "application"
+          },
+          "modernity.chatCompletionsUrl": {
+            "type": "string",
+            "description": "Full URL override for chat completions endpoint. If set, takes precedence over gatewayUrl.",
+            "default": "",
+            "scope": "application"
+          },
+          "modernity.modelsUrl": {
+            "type": "string",
+            "description": "Full URL override for models endpoint. If set, takes precedence over gatewayUrl.",
+            "default": "",
+            "scope": "application"
+          }
+        }
+      }
+    ],
+    "configurationDefaults": {
+      "chat.defaultModel": "muse-spark-1.1",
+      "chat.planAgent.defaultModel": "Muse Spark (modernity)",
+      "chat.exploreAgent.defaultModel": "Muse Spark (modernity)",
+      "chat.utilityModel": "modernity/muse-spark-1.1",
+      "chat.utilitySmallModel": "modernity/muse-spark-1.1",
+      "chat.detectParticipant.enabled": true
+    }
+  },
+  "main": "./out/extension",
+  "browser": "./dist/browser/extension",
+  "scripts": {
+    "compile": "gulp compile-extension:modernity",
+    "watch": "gulp watch-extension:modernity",
+    "vscode:prepublish": "npm run compile"
+  }
+}
