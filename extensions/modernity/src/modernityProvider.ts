@@ -325,8 +325,8 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 	}
 
 	private _fallbackModels(base: string): vscode.LanguageModelChatInformation[] {
-		// Muse Spark is primary default, Claude as secondary option (routed by model param)
-		// User task example shows both sharing same endpoint http://127.0.0.1:8000/api/inference/v1/chat/completions
+		// Muse Spark is primary default, Claude AAI as secondary option (routed by model param)
+		// Clarify AAI version per user feedback and ticket example where endpoint shared by model param
 		const models: vscode.LanguageModelChatInformation[] = [
 			{
 				id: 'muse-spark-1.1',
@@ -346,11 +346,11 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 			} as any,
 			{
 				id: 'claude-4-8-opus-gcp-aai-abs-infra',
-				name: 'Claude 4.8 Opus',
+				name: 'Claude 4.8 Opus (AAI ABS Infra)',
 				family: 'claude',
 				version: '4.8',
-				tooltip: `Modernity inference via ${base} (routed by model param)`,
-				detail: base,
+				tooltip: `Claude 4.8 Opus via Modernity gateway - AAI GCP ABS Infra version, routed by model param. Same endpoint ${base}/api/inference/v1/chat/completions as Muse Spark.`,
+				detail: `${base} - AAI GCP ABS Infra`,
 				maxInputTokens: 128000,
 				maxOutputTokens: 16000,
 				capabilities: {
@@ -367,22 +367,26 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 		const id = raw.id;
 		const lower = id.toLowerCase();
 
-		// Support both Muse Spark and Claude - routed by model param per task description example
-		// Skip legacy Avocado ids
 		if (lower.includes('avocado')) {
 			return null;
 		}
 
 		let name = id;
 		let family = 'muse-spark';
+		let version = '1.1';
+		let tooltip = `Modernity via ${base}`;
+
 		if (lower.includes('muse-spark') || lower === 'muse-spark-1.1') {
 			name = 'Muse Spark';
 			family = 'muse-spark';
+			tooltip = `Modernity inference via ${base}`;
 		} else if (lower.includes('claude')) {
-			name = 'Claude 4.8 Opus';
+			// Clarify it's the AAI version per user feedback - GCP AAI ABS Infra
+			name = 'Claude 4.8 Opus (AAI ABS Infra)';
 			family = 'claude';
+			version = '4.8';
+			tooltip = `Claude 4.8 Opus via Modernity gateway - AAI GCP ABS Infra version, routed by model param. Same endpoint ${base}/api/inference/v1/chat/completions as Muse Spark.`;
 		} else {
-			// Allow any model id that gateway returns (future models), keep id as name
 			name = id;
 			family = id.split('/').pop()?.split('-')[0] ?? 'muse-spark';
 		}
@@ -393,9 +397,9 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 			id,
 			name,
 			family,
-			version: '1.1',
-			tooltip: `Modernity via ${base}`,
-			detail: base,
+			version,
+			tooltip,
+			detail: lower.includes('claude') ? `${base} - AAI GCP ABS Infra` : base,
 			maxInputTokens: 128000,
 			maxOutputTokens: 16000,
 			capabilities: {
