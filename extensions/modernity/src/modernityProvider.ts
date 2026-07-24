@@ -325,9 +325,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 	}
 
 	private _fallbackModels(base: string): vscode.LanguageModelChatInformation[] {
-		// Hardcoded endpoint to http://127.0.0.1:8000/api/inference/v1/chat/completions
-		// Fallback ensures agent panel shows up even when gateway not yet reachable.
-		// Only Muse Spark is primary; Avocado alias removed to avoid confusion — users should see Modernity/Muse Spark by default.
+		// Only Muse Spark - user wants single option
 		const models: vscode.LanguageModelChatInformation[] = [
 			{
 				id: 'muse-spark-1.1',
@@ -345,21 +343,6 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 				isUserSelectable: true,
 				isDefault: true,
 			} as any,
-			{
-				id: 'claude-4-8-opus-gcp-aai-abs-infra',
-				name: 'Claude 4.8 Opus',
-				family: 'claude',
-				version: '4.8',
-				tooltip: `Modernity inference via ${base}`,
-				detail: base,
-				maxInputTokens: 128000,
-				maxOutputTokens: 16000,
-				capabilities: {
-					toolCalling: true,
-					imageInput: false,
-				},
-				isUserSelectable: true,
-			} as any,
 		];
 		return models;
 	}
@@ -368,24 +351,17 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 		const id = raw.id;
 		const lower = id.toLowerCase();
 
-		// Skip legacy Avocado ids to ensure Muse Spark is the visible default
-		if (lower.includes('avocado')) {
+		// Only Muse Spark - user wants single option
+		if (lower !== 'muse-spark-1.1' && lower !== 'muse-spark') {
 			return null;
-		}
-
-		let name = id;
-		if (lower.includes('muse-spark') || lower === 'muse-spark-1.1') {
-			name = 'Muse Spark';
-		} else if (lower.includes('claude')) {
-			name = id.replace(/-/g, ' ').replace(/\b\w/g, (c: string) => c.toUpperCase());
 		}
 
 		const caps = raw.capabilities ?? { tool_calling: true, streaming: true, vision: false };
 
 		return {
-			id,
-			name,
-			family: id.split('/').pop()?.split('-')[0] ?? id,
+			id: 'muse-spark-1.1',
+			name: 'Muse Spark',
+			family: 'muse-spark',
 			version: '1.1',
 			tooltip: `Modernity via ${base}`,
 			detail: base,
@@ -396,7 +372,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 				imageInput: caps.vision ?? false,
 			},
 			isUserSelectable: true,
-			isDefault: lower === 'muse-spark-1.1' ? true : undefined,
+			isDefault: true,
 		} as any;
 	}
 
