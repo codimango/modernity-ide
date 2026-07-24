@@ -148,6 +148,7 @@ type SettingInput = {
 	container: HTMLElement;
 	browseButton?: Button;
 	toggleVisibilityButton?: Button;
+	statusBadge?: HTMLElement;
 	disposables: DisposableStore;
 	secretRevealed: boolean;
 };
@@ -744,6 +745,15 @@ export class ModernitySettingsWidget extends Disposable {
 			}
 		}));
 
+		// Status badge for secrets - shows if saved via keychain, .env, or settings secrets map
+		const statusBadge = DOM.append(inputRow, $('span.modernity-secret-status'));
+		statusBadge.style.fontSize = '11px';
+		statusBadge.style.minWidth = '120px';
+		statusBadge.style.textAlign = 'right';
+		statusBadge.style.opacity = '0.8';
+		statusBadge.style.display = 'none';
+		entry.statusBadge = statusBadge;
+
 		// Add to main disposables
 		this.settingDisposables.add(disposables);
 
@@ -785,6 +795,44 @@ export class ModernitySettingsWidget extends Disposable {
 				if (def.isSecret) {
 					const stored = await this.secretStorageService.get(id);
 					entry.inputBox.value = stored ?? '';
+
+					// Show indication if secret saved via any channel
+					let statusText = '';
+					let statusColor = '';
+					if (stored) {
+						statusText = '✓ Saved in keychain';
+						statusColor = 'var(--vscode-terminal-ansiGreen, #89d185)';
+					} else {
+						// Check fallback sources for Muse Spark: modernity.dev.secrets map, .env via config, or custom secret
+						try {
+							const devConfig = this.configurationService.getValue<any>('modernity.dev') as any;
+							const devSecrets = devConfig?.secrets ?? {};
+							const fallbackFromDevSecrets = devSecrets['MODEL_API_KEY'] ?? devSecrets['model_api_key'] ?? devSecrets['LLM_API_KEY'] ?? '';
+							const customKeys = this.configurationService.getValue<string[]>('modernity.secrets.customKeys') || [];
+							let fallbackFromCustom = '';
+							if (customKeys.includes('MODEL_API_KEY')) {
+								fallbackFromCustom = await this.secretStorageService.get('modernity.secrets.custom.MODEL_API_KEY') ?? '';
+							}
+							if (fallbackFromDevSecrets) {
+								statusText = '✓ Saved via settings secrets';
+								statusColor = 'var(--vscode-terminal-ansiGreen, #89d185)';
+							} else if (fallbackFromCustom) {
+								statusText = '✓ Saved via custom secret';
+								statusColor = 'var(--vscode-terminal-ansiGreen, #89d185)';
+							} else {
+								// Also hint about .env for inference gateway
+								statusText = 'Not set — use .env or secrets map';
+								statusColor = 'var(--vscode-descriptionForeground)';
+							}
+						} catch {
+							statusText = stored ? '✓ Saved' : 'Not set';
+						}
+					}
+					if (entry.statusBadge) {
+						entry.statusBadge.textContent = statusText;
+						entry.statusBadge.style.color = statusColor;
+						entry.statusBadge.style.display = statusText ? '' : 'none';
+					}
 				} else {
 					const configValue = this.configurationService.getValue<string>(id);
 					if (configValue !== undefined) {
