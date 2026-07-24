@@ -141,6 +141,8 @@ export const MODERNITY_SETTING_DEFINITIONS: IModernitySettingDefinition[] = [
 ];
 
 export const CUSTOM_SECRETS_CONFIG_KEY = 'modernity.secrets.customKeys';
+const MASKED_SECRET_VALUE = '••••••••••••••••';
+
 
 type SettingInput = {
 	definition: IModernitySettingDefinition;
@@ -148,8 +150,10 @@ type SettingInput = {
 	container: HTMLElement;
 	browseButton?: Button;
 	toggleVisibilityButton?: Button;
+	statusBadge?: HTMLElement;
 	disposables: DisposableStore;
 	secretRevealed: boolean;
+	realValue?: string;
 };
 
 type CustomSecretEntry = {
@@ -701,7 +705,7 @@ export class ModernitySettingsWidget extends Disposable {
 			secretRevealed: false,
 		};
 
-		// Show/hide toggle for secrets
+		// Show/hide toggle for secrets - eye reveals real key
 		if (def.isSecret) {
 			const toggleBtn = disposables.add(new Button(inputRow, {
 				...defaultButtonStyles,
@@ -713,7 +717,19 @@ export class ModernitySettingsWidget extends Disposable {
 			disposables.add(toggleBtn.onDidClick(() => {
 				entry.secretRevealed = !entry.secretRevealed;
 				const inputEl = inputBox.inputElement as HTMLInputElement;
-				inputEl.type = entry.secretRevealed ? 'text' : 'password';
+				if (entry.secretRevealed) {
+					// Show real value if we have it stored
+					if (entry.realValue) {
+						entry.inputBox.value = entry.realValue;
+					}
+					inputEl.type = 'text';
+				} else {
+					// Mask again if secret was saved
+					if (entry.realValue) {
+						entry.inputBox.value = MASKED_SECRET_VALUE;
+					}
+					inputEl.type = 'password';
+				}
 				toggleBtn.element.innerHTML = '';
 				DOM.append(toggleBtn.element, $(`.codicon.codicon-${entry.secretRevealed ? 'eye-closed' : 'eye'}`));
 			}));
@@ -743,6 +759,15 @@ export class ModernitySettingsWidget extends Disposable {
 				inputEl.blur();
 			}
 		}));
+
+		// Status badge for secrets - shows if saved via keychain, .env, or settings secrets map
+		const statusBadge = DOM.append(inputRow, $('span.modernity-secret-status'));
+		statusBadge.style.fontSize = '11px';
+		statusBadge.style.minWidth = '120px';
+		statusBadge.style.textAlign = 'right';
+		statusBadge.style.opacity = '0.8';
+		statusBadge.style.display = 'none';
+		entry.statusBadge = statusBadge;
 
 		// Add to main disposables
 		this.settingDisposables.add(disposables);
@@ -784,7 +809,37 @@ export class ModernitySettingsWidget extends Disposable {
 			try {
 				if (def.isSecret) {
 					const stored = await this.secretStorageService.get(id);
-					entry.inputBox.value = stored ?? '';
+					let realVal = stored ?? '';
+					if (!realVal) {
+						try {
+							const devConfig = this.configurationService.getValue<any>('modernity.dev') as any;
+							const devSecrets = devConfig?.secrets ?? {};
+							const fallbackFromDevSecrets = devSecrets['MODEL_API_KEY'] ?? devSecrets['model_api_key'] ?? devSecrets['LLM_API_KEY'] ?? devSecrets['META_API_KEY'] ?? '';
+							const customKeys = this.configurationService.getValue<string[]>('modernity.secrets.customKeys') || [];
+							let fallbackFromCustom = '';
+							if (customKeys.includes('MODEL_API_KEY')) {
+								fallbackFromCustom = await this.secretStorageService.get('modernity.secrets.custom.MODEL_API_KEY') ?? '';
+							}
+							if (fallbackFromDevSecrets) {
+								realVal = fallbackFromDevSecrets;
+							} else if (fallbackFromCustom) {
+								realVal = fallbackFromCustom;
+							}
+						} catch { }
+					}
+					// Store real value for eye toggle, but display masked asterisks per user preference
+					entry.realValue = realVal || undefined;
+					if (realVal) {
+						entry.inputBox.value = MASKED_SECRET_VALUE;
+						entry.secretRevealed = false;
+						const inputEl = entry.inputBox.inputElement as HTMLInputElement;
+						inputEl.type = 'password';
+					} else {
+						entry.inputBox.value = '';
+					}
+					if (entry.statusBadge) {
+						entry.statusBadge.style.display = 'none';
+					}
 				} else {
 					const configValue = this.configurationService.getValue<string>(id);
 					if (configValue !== undefined) {
@@ -801,9 +856,20 @@ export class ModernitySettingsWidget extends Disposable {
 	}
 
 	private async saveSetting(def: IModernitySettingDefinition, entry: SettingInput): Promise<void> {
-		const value = entry.inputBox.value.trim();
+		const rawValue = entry.inputBox.value;
+		// If showing masked asterisks, don't overwrite - user didn't change it
+		if (rawValue === MASKED_SECRET_VALUE || /^[•*]+$/.test(rawValue)) {
+			return;
+		}
+		const value = rawValue.trim();
 		try {
 			if (def.isSecret) {
+				// Update cached real value for eye toggle
+				if (value) {
+					entry.realValue = value;
+				} else {
+					entry.realValue = undefined;
+				}
 				if (value) {
 					await this.secretStorageService.set(def.id, value);
 				} else {

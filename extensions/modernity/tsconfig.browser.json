@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out/browser",
+    "lib": ["ES2024", "DOM"],
+    "module": "ES2022"
+  }
+}

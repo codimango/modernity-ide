@@ -1,0 +1,7 @@
+src/**
+out/**
+esbuild.mts
+esbuild.browser.mts
+tsconfig.json
+tsconfig.browser.json
+*.tsbuildinfo

@@ -115,11 +115,88 @@ function ensure_sandbox_daemon() {
 	return 0
 }
 
+
+function ensure_inference_gateway() {
+	local MOD_ROOT
+	MOD_ROOT="$(cd "$ROOT/../.." && pwd)"
+	local GW_PORT=8000
+	local GW_LOG="/tmp/modernity-workspace/inference.log"
+	local GW_PIDFILE="/tmp/modernity-workspace/inference.pid"
+
+	if lsof -i :${GW_PORT} -sTCP:LISTEN >/dev/null 2>&1; then
+		if curl -s http://127.0.0.1:${GW_PORT}/api/inference/v1/models >/dev/null 2>&1 || curl -s http://127.0.0.1:${GW_PORT}/health >/dev/null 2>&1; then
+			echo "[code.sh] Inference gateway already running on :${GW_PORT}" >&2
+			return 0
+		fi
+	fi
+
+	local API_KEY="${MODEL_API_KEY:-}"
+	if [[ -z "$API_KEY" && -f "$MOD_ROOT/.env" ]]; then
+		API_KEY=$(grep -E "^MODEL_API_KEY=" "$MOD_ROOT/.env" 2>/dev/null | cut -d= -f2- | tr -d '"'"'")
+	fi
+	if [[ -z "$API_KEY" ]]; then
+		for SETTINGS in "$HOME/Library/Application Support/Modernity/User/settings.json" "$HOME/Library/Application Support/code-oss-dev/User/settings.json"; do
+			if [[ -f "$SETTINGS" ]]; then
+				API_KEY=$(python3 -c "import json,sys; p=sys.argv[1];
+try:
+    d=json.load(open(p))
+    sec=d.get('modernity.dev',{}).get('secrets',{})
+    print(sec.get('MODEL_API_KEY','') or sec.get('LLM_API_KEY','') or '')
+except Exception:
+    print('')" "$SETTINGS" 2>/dev/null)
+				if [[ -n "$API_KEY" ]]; then
+					echo "[code.sh] Found MODEL_API_KEY in $SETTINGS" >&2
+					break
+				fi
+			fi
+		done
+	fi
+
+	if [[ -z "$API_KEY" ]]; then
+		API_KEY="dummy-dev-key"
+		echo "[code.sh] MODEL_API_KEY not found, using dummy (mock fallback)" >&2
+	fi
+
+	local PY_CANDIDATES=("python3" "python3.12" "python3.11" "/usr/local/bin/python3.12" "/Applications/Xcode_26.2.0_17C52_fb.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python")
+	local GW_PY=""
+	for PY in "${PY_CANDIDATES[@]}"; do
+		if [[ "$PY" == /* ]]; then [[ -x "$PY" ]] || continue; else command -v "$PY" >/dev/null 2>&1 || continue; fi
+		if ! "$PY" -c "import sys; sys.exit(0 if sys.version_info >= (3,11) else 1)" 2>/dev/null; then continue; fi
+		if (PYTHONPATH="$MOD_ROOT" "$PY" -c "import fastapi, uvicorn, openai" 2>/dev/null); then GW_PY="$PY"; break; fi
+	done
+	if [[ -z "$GW_PY" ]]; then GW_PY="/Applications/Xcode_26.2.0_17C52_fb.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python"; fi
+
+	mkdir -p "$(dirname "$GW_LOG")" 2>/dev/null || true
+
+	local APP_MODULE="services.backend.api.minimal_inference_gateway:app"
+	local APP_DIR="$MOD_ROOT"
+
+	# Fallback to /tmp/minimal_inference:app if repo module missing
+	if [[ ! -f "$MOD_ROOT/services/backend/api/minimal_inference_gateway.py" && -f "/tmp/minimal_inference.py" ]]; then
+		APP_MODULE="minimal_inference:app"
+		APP_DIR="/tmp"
+	fi
+
+	echo "[code.sh] Starting inference gateway :${GW_PORT} via $GW_PY $APP_MODULE" >&2
+	(MODEL_API_KEY="$API_KEY" MODEL_BASE_URL="${MODEL_BASE_URL:-https://api.meta.ai/v1}" PYTHONPATH="$MOD_ROOT" nohup "$GW_PY" -m uvicorn "$APP_MODULE" --app-dir "$APP_DIR" --host 127.0.0.1 --port $GW_PORT --log-level info > "$GW_LOG" 2>&1 & echo $! > "$GW_PIDFILE")
+	for i in {1..20}; do
+		sleep 0.5
+		if curl -s http://127.0.0.1:${GW_PORT}/api/inference/v1/models >/dev/null 2>&1; then
+			echo "[code.sh] Inference gateway started on :${GW_PORT}" >&2
+			return 0
+		fi
+	done
+	echo "[code.sh] Warning: inference gateway failed to start, see $GW_LOG" >&2
+	return 0
+}
+
+
 function code() {
 	cd "$ROOT"
 
 	# T280149056: auto-start sandbox daemon before Electron launch
 	ensure_sandbox_daemon || true
+	ensure_inference_gateway || true
 
 	if [[ "$OSTYPE" == "darwin"* ]]; then
 		NAME=`node -p "require('./product.json').nameLong"`
