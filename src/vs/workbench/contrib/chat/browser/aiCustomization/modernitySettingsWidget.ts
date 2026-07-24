@@ -153,6 +153,7 @@ type SettingInput = {
 	statusBadge?: HTMLElement;
 	disposables: DisposableStore;
 	secretRevealed: boolean;
+	realValue?: string;
 };
 
 type CustomSecretEntry = {
@@ -704,7 +705,7 @@ export class ModernitySettingsWidget extends Disposable {
 			secretRevealed: false,
 		};
 
-		// Show/hide toggle for secrets
+		// Show/hide toggle for secrets - eye reveals real key
 		if (def.isSecret) {
 			const toggleBtn = disposables.add(new Button(inputRow, {
 				...defaultButtonStyles,
@@ -716,7 +717,19 @@ export class ModernitySettingsWidget extends Disposable {
 			disposables.add(toggleBtn.onDidClick(() => {
 				entry.secretRevealed = !entry.secretRevealed;
 				const inputEl = inputBox.inputElement as HTMLInputElement;
-				inputEl.type = entry.secretRevealed ? 'text' : 'password';
+				if (entry.secretRevealed) {
+					// Show real value if we have it stored
+					if (entry.realValue) {
+						entry.inputBox.value = entry.realValue;
+					}
+					inputEl.type = 'text';
+				} else {
+					// Mask again if secret was saved
+					if (entry.realValue) {
+						entry.inputBox.value = MASKED_SECRET_VALUE;
+					}
+					inputEl.type = 'password';
+				}
 				toggleBtn.element.innerHTML = '';
 				DOM.append(toggleBtn.element, $(`.codicon.codicon-${entry.secretRevealed ? 'eye-closed' : 'eye'}`));
 			}));
@@ -796,31 +809,34 @@ export class ModernitySettingsWidget extends Disposable {
 			try {
 				if (def.isSecret) {
 					const stored = await this.secretStorageService.get(id);
-					if (stored) {
-						// Show as asterisks when saved - user expects to see masked value, not empty
-						entry.inputBox.value = MASKED_SECRET_VALUE;
-					} else {
-						// Check fallback sources (modernity.dev.secrets map, custom secrets) for Muse Spark key
-						let hasFallback = false;
+					let realVal = stored ?? '';
+					if (!realVal) {
 						try {
 							const devConfig = this.configurationService.getValue<any>('modernity.dev') as any;
 							const devSecrets = devConfig?.secrets ?? {};
-							const fallbackFromDevSecrets = devSecrets['MODEL_API_KEY'] ?? devSecrets['model_api_key'] ?? devSecrets['LLM_API_KEY'] ?? '';
+							const fallbackFromDevSecrets = devSecrets['MODEL_API_KEY'] ?? devSecrets['model_api_key'] ?? devSecrets['LLM_API_KEY'] ?? devSecrets['META_API_KEY'] ?? '';
 							const customKeys = this.configurationService.getValue<string[]>('modernity.secrets.customKeys') || [];
 							let fallbackFromCustom = '';
 							if (customKeys.includes('MODEL_API_KEY')) {
 								fallbackFromCustom = await this.secretStorageService.get('modernity.secrets.custom.MODEL_API_KEY') ?? '';
 							}
-							hasFallback = !!(fallbackFromDevSecrets || fallbackFromCustom);
+							if (fallbackFromDevSecrets) {
+								realVal = fallbackFromDevSecrets;
+							} else if (fallbackFromCustom) {
+								realVal = fallbackFromCustom;
+							}
 						} catch { }
-						if (hasFallback) {
-							// Saved via alternative channel (settings secrets map) - show asterisks as indication
-							entry.inputBox.value = MASKED_SECRET_VALUE;
-						} else {
-							entry.inputBox.value = '';
-						}
 					}
-					// Hide status badge if we are using asterisks approach (user prefers asterisks over badge)
+					// Store real value for eye toggle, but display masked asterisks per user preference
+					entry.realValue = realVal || undefined;
+					if (realVal) {
+						entry.inputBox.value = MASKED_SECRET_VALUE;
+						entry.secretRevealed = false;
+						const inputEl = entry.inputBox.inputElement as HTMLInputElement;
+						inputEl.type = 'password';
+					} else {
+						entry.inputBox.value = '';
+					}
 					if (entry.statusBadge) {
 						entry.statusBadge.style.display = 'none';
 					}
@@ -848,6 +864,12 @@ export class ModernitySettingsWidget extends Disposable {
 		const value = rawValue.trim();
 		try {
 			if (def.isSecret) {
+				// Update cached real value for eye toggle
+				if (value) {
+					entry.realValue = value;
+				} else {
+					entry.realValue = undefined;
+				}
 				if (value) {
 					await this.secretStorageService.set(def.id, value);
 				} else {
