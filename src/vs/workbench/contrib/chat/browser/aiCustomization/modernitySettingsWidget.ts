@@ -141,6 +141,8 @@ export const MODERNITY_SETTING_DEFINITIONS: IModernitySettingDefinition[] = [
 ];
 
 export const CUSTOM_SECRETS_CONFIG_KEY = 'modernity.secrets.customKeys';
+const MASKED_SECRET_VALUE = '••••••••••••••••';
+
 
 type SettingInput = {
 	definition: IModernitySettingDefinition;
@@ -794,16 +796,12 @@ export class ModernitySettingsWidget extends Disposable {
 			try {
 				if (def.isSecret) {
 					const stored = await this.secretStorageService.get(id);
-					entry.inputBox.value = stored ?? '';
-
-					// Show indication if secret saved via any channel
-					let statusText = '';
-					let statusColor = '';
 					if (stored) {
-						statusText = '✓ Saved in keychain';
-						statusColor = 'var(--vscode-terminal-ansiGreen, #89d185)';
+						// Show as asterisks when saved - user expects to see masked value, not empty
+						entry.inputBox.value = MASKED_SECRET_VALUE;
 					} else {
-						// Check fallback sources for Muse Spark: modernity.dev.secrets map, .env via config, or custom secret
+						// Check fallback sources (modernity.dev.secrets map, custom secrets) for Muse Spark key
+						let hasFallback = false;
 						try {
 							const devConfig = this.configurationService.getValue<any>('modernity.dev') as any;
 							const devSecrets = devConfig?.secrets ?? {};
@@ -813,25 +811,18 @@ export class ModernitySettingsWidget extends Disposable {
 							if (customKeys.includes('MODEL_API_KEY')) {
 								fallbackFromCustom = await this.secretStorageService.get('modernity.secrets.custom.MODEL_API_KEY') ?? '';
 							}
-							if (fallbackFromDevSecrets) {
-								statusText = '✓ Saved via settings secrets';
-								statusColor = 'var(--vscode-terminal-ansiGreen, #89d185)';
-							} else if (fallbackFromCustom) {
-								statusText = '✓ Saved via custom secret';
-								statusColor = 'var(--vscode-terminal-ansiGreen, #89d185)';
-							} else {
-								// Also hint about .env for inference gateway
-								statusText = 'Not set — use .env or secrets map';
-								statusColor = 'var(--vscode-descriptionForeground)';
-							}
-						} catch {
-							statusText = stored ? '✓ Saved' : 'Not set';
+							hasFallback = !!(fallbackFromDevSecrets || fallbackFromCustom);
+						} catch { }
+						if (hasFallback) {
+							// Saved via alternative channel (settings secrets map) - show asterisks as indication
+							entry.inputBox.value = MASKED_SECRET_VALUE;
+						} else {
+							entry.inputBox.value = '';
 						}
 					}
+					// Hide status badge if we are using asterisks approach (user prefers asterisks over badge)
 					if (entry.statusBadge) {
-						entry.statusBadge.textContent = statusText;
-						entry.statusBadge.style.color = statusColor;
-						entry.statusBadge.style.display = statusText ? '' : 'none';
+						entry.statusBadge.style.display = 'none';
 					}
 				} else {
 					const configValue = this.configurationService.getValue<string>(id);
@@ -849,7 +840,12 @@ export class ModernitySettingsWidget extends Disposable {
 	}
 
 	private async saveSetting(def: IModernitySettingDefinition, entry: SettingInput): Promise<void> {
-		const value = entry.inputBox.value.trim();
+		const rawValue = entry.inputBox.value;
+		// If showing masked asterisks, don't overwrite - user didn't change it
+		if (rawValue === MASKED_SECRET_VALUE || /^[•*]+$/.test(rawValue)) {
+			return;
+		}
+		const value = rawValue.trim();
 		try {
 			if (def.isSecret) {
 				if (value) {
