@@ -52,7 +52,6 @@
       }
     ],
     "configurationDefaults": {
-      "chat.defaultModel": "muse-spark-1.1",
       "chat.planAgent.defaultModel": "Muse Spark (modernity)",
       "chat.exploreAgent.defaultModel": "Muse Spark (modernity)",
       "chat.utilityModel": "modernity/muse-spark-1.1",
