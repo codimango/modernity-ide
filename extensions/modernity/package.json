@@ -26,6 +26,12 @@
         "displayName": "Modernity"
       }
     ],
+    "mcpServerDefinitionProviders": [
+      {
+        "id": "modernity-sandbox",
+        "label": "Modernity Sandbox Tools"
+      }
+    ],
     "configuration": [
       {
         "title": "Modernity",

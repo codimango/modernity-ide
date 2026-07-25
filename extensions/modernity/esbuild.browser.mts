@@ -12,6 +12,8 @@ run({
 	srcDir,
 	outdir: outDir,
 	additionalOptions: {
-		external: ['vscode'],
+		// Node-only sandbox tooling is dynamically imported and guarded at runtime, but the
+		// bundler still resolves the chunk, so keep Node builtins external for the browser build.
+		external: ['vscode', 'child_process', 'net', 'fs', 'path', 'os'],
 	},
 }, process.argv);
