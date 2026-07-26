@@ -270,7 +270,9 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 	}
 
 	async provideLanguageModelChatInformation(_options: vscode.PrepareLanguageModelChatModelOptions, token: vscode.CancellationToken): Promise<vscode.LanguageModelChatInformation[]> {
+		console.log(`[Modernity-Provider] provideLanguageModelChatInformation called silent=${_options.silent} time=${Date.now()} isCancellation=${token.isCancellationRequested}`);
 		const { modelsUrl, base } = getEndpointUrls((this._context as any).extensionMode);
+		console.log(`[Modernity-Provider] fetching models from ${modelsUrl} base=${base}`);
 		const controller = new AbortController();
 		const disposable = token.onCancellationRequested(() => controller.abort());
 
@@ -325,8 +327,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 	}
 
 	private _fallbackModels(base: string): vscode.LanguageModelChatInformation[] {
-		// Muse Spark is primary default, Claude AAI as secondary option (routed by model param)
-		// Clarify AAI version per user feedback and ticket example where endpoint shared by model param
+		// Both Muse Spark (default) + Claude Opus AAI (selectable) per review kipiler - routed by model param same endpoint
 		const models: vscode.LanguageModelChatInformation[] = [
 			{
 				id: 'muse-spark-1.1',
@@ -343,13 +344,13 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 				},
 				isUserSelectable: true,
 				isDefault: true,
-			} as any,
+		} as any,
 			{
 				id: 'claude-4-8-opus-gcp-aai-abs-infra',
 				name: 'Claude 4.8 Opus (AAI ABS Infra)',
 				family: 'claude',
 				version: '4.8',
-				tooltip: `Claude 4.8 Opus via Modernity gateway - AAI GCP ABS Infra version, routed by model param. Same endpoint ${base}/api/inference/v1/chat/completions as Muse Spark.`,
+				tooltip: `Claude 4.8 Opus via Modernity gateway - AAI GCP ABS Infra version, routed by model param same endpoint ${base}/api/inference/v1/chat/completions as Muse Spark.`,
 				detail: `${base} - AAI GCP ABS Infra`,
 				maxInputTokens: 128000,
 				maxOutputTokens: 16000,
@@ -381,11 +382,10 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 			family = 'muse-spark';
 			tooltip = `Modernity inference via ${base}`;
 		} else if (lower.includes('claude')) {
-			// Clarify it's the AAI version per user feedback - GCP AAI ABS Infra
 			name = 'Claude 4.8 Opus (AAI ABS Infra)';
 			family = 'claude';
 			version = '4.8';
-			tooltip = `Claude 4.8 Opus via Modernity gateway - AAI GCP ABS Infra version, routed by model param. Same endpoint ${base}/api/inference/v1/chat/completions as Muse Spark.`;
+			tooltip = `Claude 4.8 Opus via Modernity gateway - AAI GCP ABS Infra version, routed by model param same endpoint ${base}/api/inference/v1/chat/completions as Muse Spark.`;
 		} else {
 			name = id;
 			family = id.split('/').pop()?.split('-')[0] ?? 'muse-spark';
@@ -412,7 +412,9 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 	}
 
 	async provideLanguageModelChatResponse(model: vscode.LanguageModelChatInformation, messages: readonly vscode.LanguageModelChatRequestMessage[], options: vscode.ProvideLanguageModelChatResponseOptions, progress: vscode.Progress<vscode.LanguageModelResponsePart>, token: vscode.CancellationToken): Promise<void> {
+		console.log(`[Modernity-Provider] provideLanguageModelChatResponse called model=${model.id} ${model.name} messages=${messages.length} tools=${options.tools?.length ?? 0} time=${Date.now()}`);
 		const urls = getEndpointUrls((this._context as any).extensionMode);
+		console.log(`[Modernity-Provider] using chatCompletionsUrl=${urls.chatCompletionsUrl}`);
 		const requestId = randomUUID();
 		this._turnCounter += 1;
 		const turnId = `${this._turnCounter}`;
