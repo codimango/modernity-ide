@@ -9,7 +9,9 @@
   "engines": {
     "vscode": "^1.95.0"
   },
-  "categories": ["Other"],
+  "categories": [
+    "Other"
+  ],
   "activationEvents": [
     "onStartupFinished",
     "onLanguageModelChat:modernity"
@@ -58,11 +60,6 @@
       }
     ],
     "configurationDefaults": {
-      "chat.defaultModel": "muse-spark-1.1",
-      "chat.planAgent.defaultModel": "Muse Spark (modernity)",
-      "chat.exploreAgent.defaultModel": "Muse Spark (modernity)",
-      "chat.utilityModel": "modernity/muse-spark-1.1",
-      "chat.utilitySmallModel": "modernity/muse-spark-1.1",
       "chat.detectParticipant.enabled": true
     }
   },
