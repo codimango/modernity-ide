@@ -1,6 +1,6 @@
 /*---------------------------------------------------------------------------------------------
- *  Copyright (c) Modernity. All rights reserved.
- *  Licensed under the MIT License.
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
 import * as vscode from 'vscode';
@@ -28,6 +28,14 @@ interface GatewayModel {
 interface GatewayModelList {
 	object: string;
 	data: GatewayModel[];
+}
+
+interface GatewayErrorBody {
+	error?: {
+		message?: string;
+		code?: string;
+	};
+	message?: string;
 }
 
 interface ChatCompletionsToolCall {
@@ -64,34 +72,132 @@ interface ChatCompletionsChunk {
 	};
 }
 
+interface ChatCompletionsTextContentPart {
+	type: 'text';
+	text: string;
+}
+
+interface ChatCompletionsImageContentPart {
+	type: 'image_url';
+	image_url: {
+		url: string;
+		detail: 'auto';
+	};
+}
+
+type ChatCompletionsContentPart = ChatCompletionsTextContentPart | ChatCompletionsImageContentPart;
+
+interface ChatCompletionsTool {
+	type: 'function';
+	function: {
+		name: string;
+		description?: string;
+		parameters: object;
+	};
+}
+
+interface ChatCompletionsFunctionCall {
+	id: string;
+	type: 'function';
+	function: {
+		name: string;
+		arguments: string;
+	};
+}
+
+interface ChatCompletionsMessage {
+	role: 'user' | 'assistant' | 'tool';
+	content: string | ChatCompletionsContentPart[] | null;
+	name?: string;
+	tool_call_id?: string;
+	tool_calls?: ChatCompletionsFunctionCall[];
+}
+
+type ModernityModelInformation = vscode.LanguageModelChatInformation & {
+	readonly isDefault?: boolean;
+	readonly isUserSelectable?: boolean;
+};
+
+interface ChatCompletionsRequestBody {
+	model: string;
+	messages: ChatCompletionsMessage[];
+	stream: true;
+	stream_options: { include_usage: false };
+	tools?: ChatCompletionsTool[];
+	tool_choice?: 'auto';
+	parallel_tool_calls?: boolean;
+	temperature?: number;
+	top_p?: number;
+	max_tokens?: number;
+	reasoning_effort?: string;
+}
+
+const supportedImageMimeTypes = new Set([
+	'image/gif',
+	'image/jpeg',
+	'image/png',
+	'image/webp',
+]);
+
 function randomUUID(): string {
-	try {
-		// @ts-ignore - crypto may be available globally in node 19+ and browser
-		const c = (globalThis as any).crypto;
-		if (c && typeof c.randomUUID === 'function') {
-			return c.randomUUID();
-		}
-	} catch { }
+	if (typeof globalThis.crypto?.randomUUID === 'function') {
+		return globalThis.crypto.randomUUID();
+	}
 	return `${Date.now().toString(16)}-${Math.random().toString(16).slice(2)}-${Math.random().toString(16).slice(2)}`;
 }
 
-function isTextPart(part: any): part is vscode.LanguageModelTextPart {
-	return !!part && typeof part.value === 'string' && typeof part.callId === 'undefined' && typeof part.name === 'undefined' && typeof (part as any).input === 'undefined' && typeof (part as any).mimeType === 'undefined';
+function isRecord(value: unknown): value is Record<string, unknown> {
+	return typeof value === 'object' && value !== null;
 }
 
-function isToolCallPart(part: any): part is vscode.LanguageModelToolCallPart {
-	return !!part && typeof part.callId === 'string' && typeof part.name === 'string' && typeof (part as any).input !== 'undefined';
+function isTextPart(part: unknown): part is vscode.LanguageModelTextPart {
+	return isRecord(part) && typeof part.value === 'string' && typeof part.callId === 'undefined' && typeof part.name === 'undefined' && typeof part.input === 'undefined' && typeof part.mimeType === 'undefined';
 }
 
-function isToolResultPart(part: any): part is vscode.LanguageModelToolResultPart {
-	return !!part && typeof part.callId === 'string' && Array.isArray(part.content);
+function isToolCallPart(part: unknown): part is vscode.LanguageModelToolCallPart {
+	return isRecord(part) && typeof part.callId === 'string' && typeof part.name === 'string' && typeof part.input !== 'undefined';
 }
 
-function isDataPart(part: any): boolean {
-	return !!part && typeof part.mimeType === 'string' && part.data instanceof Uint8Array;
+function isToolResultPart(part: unknown): part is vscode.LanguageModelToolResultPart {
+	return isRecord(part) && typeof part.callId === 'string' && Array.isArray(part.content);
 }
 
-function extractTextFromResultContent(content: ReadonlyArray<any>): string {
+function isDataPart(part: unknown): part is vscode.LanguageModelDataPart {
+	return isRecord(part) && typeof part.mimeType === 'string' && part.data instanceof Uint8Array;
+}
+
+function isImageDataPart(part: unknown): part is vscode.LanguageModelDataPart {
+	return isDataPart(part) && supportedImageMimeTypes.has(part.mimeType.toLowerCase());
+}
+
+function convertUserContent(parts: readonly unknown[]): string | ChatCompletionsContentPart[] | null {
+	const contentParts: ChatCompletionsContentPart[] = [];
+	let hasImages = false;
+
+	for (const part of parts) {
+		if (isTextPart(part)) {
+			contentParts.push({ type: 'text', text: part.value });
+		} else if (isImageDataPart(part)) {
+			hasImages = true;
+			contentParts.push({
+				type: 'image_url',
+				image_url: {
+					url: `data:${part.mimeType.toLowerCase()};base64,${Buffer.from(part.data).toString('base64')}`,
+					detail: 'auto',
+				},
+			});
+		}
+	}
+
+	if (hasImages) {
+		return contentParts;
+	}
+
+	const text = contentParts.map(part => part.type === 'text' ? part.text : '').join('');
+	return text || extractTextFromResultContent(parts) || null;
+}
+
+function extractTextFromResultContent(content: readonly unknown[]): string {
 	let out = '';
 	for (const p of content) {
 		if (isTextPart(p)) {
@@ -108,8 +214,8 @@ function extractTextFromResultContent(content: ReadonlyArray<any>): string {
 			} catch {
 				// ignore
 			}
-		} else if (typeof (p as any).value === 'string') {
-			out += (p as any).value;
+		} else if (isRecord(p) && typeof p.value === 'string') {
+			out += p.value;
 		}
 	}
 	return out;
@@ -127,7 +233,7 @@ function getBaseUrlFromConfig(extensionMode?: number): string {
 
 	// 2. Environment variables (useful for dev and for packaged builds with env injection)
 	try {
-		const env = (typeof process !== 'undefined' ? (process as any).env : undefined) as Record<string, string> | undefined;
+		const env = typeof process !== 'undefined' ? process.env : undefined;
 		if (env) {
 			const candidates = [
 				env['MODERNITY_GATEWAY_URL'],
@@ -166,7 +272,7 @@ function getBaseUrlFromConfig(extensionMode?: number): string {
 			if (prodUrl && prodUrl.trim() && prodUrl.trim() !== 'http://127.0.0.1:8000') {
 				return prodUrl.trim().replace(/\/+$/, '');
 			}
-		} catch {}
+		} catch { }
 		// Private gateway URL for production - can be overridden via MODERNITY_GATEWAY_URL env or settings
 		// TODO: change to https://modernity.dev when production gateway is ready
 		return 'https://modernity.dev';
@@ -177,7 +283,7 @@ function getBaseUrlFromConfig(extensionMode?: number): string {
 }
 
 function getEndpointUrls(extensionMode?: number): { base: string; modelsUrl: string; chatCompletionsUrl: string } {
-	let base = getBaseUrlFromConfig(extensionMode);
+	const base = getBaseUrlFromConfig(extensionMode);
 
 	// Allow full URL overrides via settings
 	let modelsUrlOverride: string | undefined;
@@ -193,7 +299,7 @@ function getEndpointUrls(extensionMode?: number): { base: string; modelsUrl: str
 
 	// Environment overrides for full URLs
 	try {
-		const env = (typeof process !== 'undefined' ? (process as any).env : undefined) as Record<string, string> | undefined;
+		const env = typeof process !== 'undefined' ? process.env : undefined;
 		if (env) {
 			if (!modelsUrlOverride) {
 				const m = env['MODERNITY_MODELS_URL']?.trim();
@@ -217,14 +323,14 @@ function getEndpointUrls(extensionMode?: number): { base: string; modelsUrl: str
 }
 
 function makeLMError(message: string, code?: string): vscode.LanguageModelError {
-	const err = new (vscode as any).LanguageModelError(message) as vscode.LanguageModelError;
+	const err = new vscode.LanguageModelError(message);
 	if (code) {
-		try { (err as any).code = code; } catch {}
+		Object.defineProperty(err, 'code', { value: code });
 	}
 	return err;
 }
 
-function mapGatewayError(status: number, body: any): never {
+function mapGatewayError(status: number, body: GatewayErrorBody): never {
 	const errorObj = body?.error;
 	const message = errorObj?.message || body?.message || `Gateway error ${status}`;
 	let code: string;
@@ -256,7 +362,8 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 	constructor(private readonly _context: vscode.ExtensionContext) {
 		this.onDidChangeLanguageModelChatInformation = this._onDidChange.event;
 		this._sessionId = randomUUID();
-		this._clientVersion = (_context.extension.packageJSON as any)?.version ?? '0.0.1';
+		const packageJson = _context.extension.packageJSON;
+		this._clientVersion = isRecord(packageJson) && typeof packageJson.version === 'string' ? packageJson.version : '0.0.1';
 
 		// In a real packaged build, we could fetch product.json's gateway URL or use configurationDefaults.
 		// For now, dev builds point to localhost via getEndpointUrls().
@@ -269,8 +376,8 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 		}));
 	}
 
-	async provideLanguageModelChatInformation(_options: vscode.PrepareLanguageModelChatModelOptions, token: vscode.CancellationToken): Promise<vscode.LanguageModelChatInformation[]> {
-		const { modelsUrl, base } = getEndpointUrls((this._context as any).extensionMode);
+	async provideLanguageModelChatInformation(_options: vscode.PrepareLanguageModelChatModelOptions, token: vscode.CancellationToken): Promise<ModernityModelInformation[]> {
+		const { modelsUrl, base } = getEndpointUrls(this._context.extensionMode);
 		const controller = new AbortController();
 		const disposable = token.onCancellationRequested(() => controller.abort());
 
@@ -283,12 +390,12 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 					'X-Modernity-Client-Version': this._clientVersion,
 					'X-Modernity-Request-ID': randomUUID(),
 				},
-				signal: controller.signal as any,
+				signal: controller.signal,
 			});
 
 			if (!response.ok) {
-				let body: any;
-				try { body = await response.json(); } catch { body = await response.text(); }
+				let body: GatewayErrorBody;
+				try { body = await response.json() as GatewayErrorBody; } catch { body = { message: await response.text() }; }
 				if (!token.isCancellationRequested) {
 					// If gateway not ready or unreachable, fallback to default model instead of hard failing in silent mode
 					if (_options.silent) {
@@ -300,7 +407,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 			}
 
 			const json = await response.json() as GatewayModelList;
-			const data = (json as any).data ?? (json as any).models ?? [];
+			const data = json.data ?? [];
 			if (!Array.isArray(data) || data.length === 0) {
 				return this._fallbackModels(base);
 			}
@@ -308,8 +415,8 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 			const mapped = data.map(m => this._toChatInfo(m, base)).filter((x): x is vscode.LanguageModelChatInformation => !!x);
 			if (mapped.length === 0) { return this._fallbackModels(base); }
 			return mapped;
-		} catch (err: any) {
-			if (err?.name === 'AbortError' || token.isCancellationRequested) {
+		} catch (err: unknown) {
+			if ((err instanceof Error && err.name === 'AbortError') || token.isCancellationRequested) {
 				return [];
 			}
 			// On network failure, return fallback so agent panel still shows model
@@ -324,10 +431,10 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 		}
 	}
 
-	private _fallbackModels(base: string): vscode.LanguageModelChatInformation[] {
+	private _fallbackModels(base: string): ModernityModelInformation[] {
 		// Muse Spark is primary default, Claude as secondary option (routed by model param)
 		// User task example shows both sharing same endpoint http://127.0.0.1:8000/api/inference/v1/chat/completions
-		const models: vscode.LanguageModelChatInformation[] = [
+		const models: ModernityModelInformation[] = [
 			{
 				id: 'muse-spark-1.1',
 				name: 'Muse Spark',
@@ -343,7 +450,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 				},
 				isUserSelectable: true,
 				isDefault: true,
-			} as any,
+			},
 			{
 				id: 'claude-4-8-opus-gcp-aai-abs-infra',
 				name: 'Claude 4.8 Opus',
@@ -355,15 +462,15 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 				maxOutputTokens: 16000,
 				capabilities: {
 					toolCalling: true,
-					imageInput: false,
+					imageInput: true,
 				},
 				isUserSelectable: true,
-			} as any,
+			},
 		];
 		return models;
 	}
 
-	private _toChatInfo(raw: GatewayModel, base: string): vscode.LanguageModelChatInformation | null {
+	private _toChatInfo(raw: GatewayModel, base: string): ModernityModelInformation | null {
 		const id = raw.id;
 		const lower = id.toLowerCase();
 
@@ -404,11 +511,11 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 			},
 			isUserSelectable: true,
 			isDefault: lower === 'muse-spark-1.1' ? true : undefined,
-		} as any;
+		};
 	}
 
 	async provideLanguageModelChatResponse(model: vscode.LanguageModelChatInformation, messages: readonly vscode.LanguageModelChatRequestMessage[], options: vscode.ProvideLanguageModelChatResponseOptions, progress: vscode.Progress<vscode.LanguageModelResponsePart>, token: vscode.CancellationToken): Promise<void> {
-		const urls = getEndpointUrls((this._context as any).extensionMode);
+		const urls = getEndpointUrls(this._context.extensionMode);
 		const requestId = randomUUID();
 		this._turnCounter += 1;
 		const turnId = `${this._turnCounter}`;
@@ -417,7 +524,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 		const chatMessages = this._convertMessages(messages);
 		const tools = this._convertTools(options.tools ?? []);
 
-		const body: any = {
+		const body: ChatCompletionsRequestBody = {
 			model: model.id,
 			messages: chatMessages,
 			stream: true,
@@ -428,7 +535,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 			body.tools = tools;
 			// Gateway currently supports only "auto" for tool_choice
 			// Map Required -> auto to avoid UnsupportedInferenceFeature
-			if (options.toolMode === (vscode as any).LanguageModelChatToolMode?.Required) {
+			if (options.toolMode === vscode.LanguageModelChatToolMode.Required) {
 				body.tool_choice = 'auto';
 				// Alternatively, if only one tool, could force that tool, but gateway rejects non-auto
 				// So we keep auto.
@@ -439,7 +546,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 		}
 
 		// Forward model options like temperature if present
-		const modelOptions = (options as any).modelOptions ?? {};
+		const modelOptions = options.modelOptions ?? {};
 		if (typeof modelOptions.temperature === 'number') { body.temperature = modelOptions.temperature; }
 		if (typeof modelOptions.top_p === 'number') { body.top_p = modelOptions.top_p; }
 		if (typeof modelOptions.max_tokens === 'number') { body.max_tokens = modelOptions.max_tokens; }
@@ -465,15 +572,15 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 				method: 'POST',
 				headers,
 				body: JSON.stringify(body),
-				signal: controller.signal as any,
+				signal: controller.signal,
 			});
 
 			if (!response.ok) {
-				let errorBody: any;
+				let errorBody: GatewayErrorBody;
 				const contentType = response.headers.get('content-type') ?? '';
 				try {
 					if (contentType.includes('application/json')) {
-						errorBody = await response.json();
+						errorBody = await response.json() as GatewayErrorBody;
 					} else {
 						errorBody = { error: { message: await response.text() } };
 					}
@@ -491,8 +598,8 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 			// Parse SSE text and tool-call argument deltas
 			await this._parseSSE(response, progress, token);
 
-		} catch (err: any) {
-			if (err?.name === 'AbortError' || token.isCancellationRequested) {
+		} catch (err: unknown) {
+			if ((err instanceof Error && err.name === 'AbortError') || token.isCancellationRequested) {
 				// Cancellation is not an error - just return
 				return;
 			}
@@ -500,7 +607,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 				throw err;
 			}
 			// Network or parsing errors -> map to server busy / timeout where appropriate
-			const msg = err?.message ?? String(err);
+			const msg = err instanceof Error ? err.message : String(err);
 			if (msg.includes('Failed to fetch') || msg.includes('ECONNREFUSED') || msg.includes('fetch failed')) {
 				throw makeLMError(`Modernity gateway unreachable at ${urls.base}. Is the inference server running? (python -m uvicorn services.backend.api.main:app --host 127.0.0.1 --port 8000) - ${msg}`, 'server_busy');
 			}
@@ -510,15 +617,14 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 		}
 	}
 
-	private _convertMessages(vscodeMessages: readonly vscode.LanguageModelChatRequestMessage[]): any[] {
-		const out: any[] = [];
+	private _convertMessages(vscodeMessages: readonly vscode.LanguageModelChatRequestMessage[]): ChatCompletionsMessage[] {
+		const out: ChatCompletionsMessage[] = [];
 
 		for (const vm of vscodeMessages) {
-			const roleNum = (vm as any).role as number;
-			const roleStr = roleNum === 1 ? 'user' : 'assistant';
+			const roleStr = vm.role === vscode.LanguageModelChatMessageRole.User ? 'user' : 'assistant';
 			const name = vm.name;
 
-			const parts = (vm.content ?? []) as any[];
+			const parts = vm.content ?? [];
 
 			const textParts = parts.filter(isTextPart) as vscode.LanguageModelTextPart[];
 			const toolCallParts = parts.filter(isToolCallPart) as vscode.LanguageModelToolCallPart[];
@@ -526,30 +632,21 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 
 			if (roleStr === 'user') {
 				if (toolResultParts.length === 0) {
-					const text = textParts.map(p => p.value).join('');
-					// Even if empty, push a user message to keep turn alignment (unless completely empty)
-					if (text || parts.length === 0) {
+					const content = convertUserContent(parts);
+					if (content !== null || parts.length === 0) {
 						out.push({
 							role: 'user',
-							content: text || '',
+							content: content ?? '',
 							...(name ? { name } : {}),
 						});
-					} else {
-						// If there are only data parts treated as text, convert
-						const fallback = extractTextFromResultContent(parts as any);
-						if (fallback) {
-							out.push({ role: 'user', content: fallback, ...(name ? { name } : {}) });
-						}
 					}
 				} else {
-					// User message may have text + tool results.
-					// Emit user text first, then each tool result as separate "tool" role messages.
-					const userText = textParts.map(p => p.value).join('');
-					if (userText) {
-						out.push({ role: 'user', content: userText, ...(name ? { name } : {}) });
+					const userContent = convertUserContent(parts);
+					if (userContent !== null) {
+						out.push({ role: 'user', content: userContent, ...(name ? { name } : {}) });
 					}
 					for (const trp of toolResultParts) {
-						const toolContent = extractTextFromResultContent(trp.content as any);
+						const toolContent = extractTextFromResultContent(trp.content);
 						out.push({
 							role: 'tool',
 							tool_call_id: trp.callId,
@@ -567,7 +664,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 						...(name ? { name } : {}),
 					});
 				} else {
-					const tool_calls = toolCallParts.map(tcp => ({
+					const tool_calls: ChatCompletionsFunctionCall[] = toolCallParts.map(tcp => ({
 						id: tcp.callId,
 						type: 'function',
 						function: {
@@ -588,40 +685,20 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 		return out;
 	}
 
-	private _convertTools(vsTools: readonly vscode.LanguageModelChatTool[]): any[] {
+	private _convertTools(vsTools: readonly vscode.LanguageModelChatTool[]): ChatCompletionsTool[] {
 		return vsTools.map(t => ({
 			type: 'function',
 			function: {
 				name: t.name,
 				description: t.description,
-				parameters: (t as any).inputSchema ?? { type: 'object', properties: {} },
+				parameters: t.inputSchema ?? { type: 'object', properties: {} },
 			},
 		}));
 	}
 
 	private async _parseSSE(response: Response, progress: vscode.Progress<vscode.LanguageModelResponsePart>, token: vscode.CancellationToken): Promise<void> {
 		// Use streaming reader to parse SSE
-		const body = response.body as any;
-		// Compatibility: body may be Node ReadableStream or Web ReadableStream
-		let reader: { read: () => Promise<{ done: boolean; value?: Uint8Array }> };
-		if (body.getReader) {
-			reader = body.getReader();
-		} else {
-			// Node stream fallback - wrap as async iterator
-			const nodeStream = body as NodeJS.ReadableStream & AsyncIterable<Buffer>;
-			const iterator = nodeStream[Symbol.asyncIterator]();
-			reader = {
-				read: async () => {
-					try {
-						const { value, done } = await iterator.next();
-						if (done) { return { done: true }; }
-						return { done: false, value: value as unknown as Uint8Array };
-					} catch {
-						return { done: true };
-					}
-				}
-			};
-		}
+		const reader = response.body!.getReader();
 
 		const decoder = new TextDecoder('utf-8');
 		let buffer = '';
@@ -679,8 +756,8 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 					}
 
 					// Check for error envelope yielded by inference service during streaming
-					if ((json as any).error) {
-						const err = (json as any).error;
+					if (json.error) {
+						const err = json.error;
 						const message = err.message ?? 'Gateway streaming error';
 						// Map error codes from stream to IDE errors
 						const code = err.code ?? '';
@@ -767,11 +844,8 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 
 		} finally {
 			try {
-				// Close reader if possible
-				// @ts-ignore
-				if (typeof reader.cancel === 'function') { await (reader as any).cancel(); }
-				// @ts-ignore
-				if (typeof reader.releaseLock === 'function') { (reader as any).releaseLock(); }
+				await reader.cancel();
+				reader.releaseLock();
 			} catch { }
 		}
 	}
@@ -783,7 +857,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 			return Math.ceil(text.length / 4);
 		}
 		// text is a chat request message
-		const parts = (text as any).content as ReadonlyArray<any> ?? [];
+		const parts = text.content ?? [];
 		let total = 0;
 		for (const p of parts) {
 			if (isTextPart(p)) {
@@ -791,7 +865,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 			} else if (isToolCallPart(p)) {
 				total += Math.ceil((p.name.length + JSON.stringify(p.input).length) / 4) + 4;
 			} else if (isToolResultPart(p)) {
-				total += extractTextFromResultContent(p.content as any).length / 4;
+				total += extractTextFromResultContent(p.content).length / 4;
 			}
 		}
 		// overhead per message

@@ -51,7 +51,7 @@ export class HistoricalImage extends PromptElement<HistoricalImageProps, unknown
 
 	override async render(_state: unknown, sizing: PromptSizing) {
 		// If the model doesn't support vision, omit historical images
-		if (!this.promptEndpoint.supportsVision || !this.authService.copilotToken?.isEditorPreviewFeaturesEnabled()) {
+		if (!canRenderImages(this.promptEndpoint, this.authService)) {
 			return undefined;
 		}
 
@@ -78,7 +78,7 @@ export class Image extends PromptElement<ImageProps, unknown> {
 		const fillerUri: Uri = this.props.reference ?? Uri.parse('Attached Image');
 
 		try {
-			if (!this.promptEndpoint.supportsVision || !this.authService.copilotToken?.isEditorPreviewFeaturesEnabled()) {
+			if (!canRenderImages(this.promptEndpoint, this.authService)) {
 				if (this.props.omitReferences) {
 					return;
 				}
@@ -128,4 +128,11 @@ export class Image extends PromptElement<ImageProps, unknown> {
 				</>);
 		}
 	}
+}
+
+function canRenderImages(endpoint: IPromptEndpoint, authService: IAuthenticationService): boolean {
+	return endpoint.supportsVision && (
+		endpoint.isExtensionContributed === true
+		|| authService.copilotToken?.isEditorPreviewFeaturesEnabled() === true
+	);
 }
