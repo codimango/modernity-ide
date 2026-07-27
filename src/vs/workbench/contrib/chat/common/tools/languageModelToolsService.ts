@@ -205,6 +205,18 @@ export interface IToolInvocation {
 	traceparent?: string;
 	/** Optional W3C trace context `tracestate` value paired with {@link traceparent}. */
 	tracestate?: string;
+	/** Canonical Modernity correlation carried separately from tool arguments. */
+	traceContext?: ITraceInvocationContext;
+}
+
+export interface ITraceInvocationContext {
+	readonly sessionId: string;
+	readonly turnId: string;
+	readonly modelRequestId?: string;
+	readonly toolCallId?: string;
+	readonly projectId?: string;
+	readonly checkoutId?: string;
+	readonly machineId?: string;
 }
 
 export interface IToolInvocationContext {

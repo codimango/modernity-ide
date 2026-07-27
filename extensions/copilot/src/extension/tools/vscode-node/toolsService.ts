@@ -13,6 +13,7 @@ import { IOTelService, SpanKind, SpanStatusCode } from '../../../platform/otel/c
 import { extractToolParameters } from '../../../platform/otel/node/extractToolParameters';
 import { getCurrentCapturingToken } from '../../../platform/requestLogger/node/requestLogger';
 import { IExperimentationService } from '../../../platform/telemetry/common/nullExperimentationService';
+import { IModelRequestTraceService } from '../../../platform/trace/common/trace';
 import { equals as arraysEqual } from '../../../util/vs/base/common/arrays';
 import { Iterable } from '../../../util/vs/base/common/iterator';
 import { Lazy } from '../../../util/vs/base/common/lazy';
@@ -92,6 +93,7 @@ export class ToolsService extends BaseToolsService {
 		@IOTelService private readonly _otelService: IOTelService,
 		@IConfigurationService private readonly _configurationService: IConfigurationService,
 		@IExperimentationService private readonly _experimentationService: IExperimentationService,
+		@IModelRequestTraceService private readonly _modelRequestTraceService: IModelRequestTraceService,
 	) {
 		super(logService);
 		this._copilotTools = new Lazy(() => new Map(ToolRegistry.getTools().map(t => [t.toolName, _instantiationService.createInstance(t)] as const)));
@@ -170,6 +172,10 @@ export class ToolsService extends BaseToolsService {
 		// For runSubagent tool, store this execute_tool span's trace context so the subagent's
 		// invoke_agent span can be parented to THIS tool call (not the grandparent invoke_agent).
 		const chatStreamToolCallId = (options as { chatStreamToolCallId?: string }).chatStreamToolCallId;
+		const optionsWithModernityTrace = options as vscode.LanguageModelToolInvocationOptions<Object> & { traceContext?: vscode.TraceInvocationContext };
+		if (!optionsWithModernityTrace.traceContext && chatSessionId && chatStreamToolCallId) {
+			optionsWithModernityTrace.traceContext = this._modelRequestTraceService.getToolCallContext(chatSessionId, chatStreamToolCallId);
+		}
 		const chatRequestId = (options as { chatRequestId?: string }).chatRequestId;
 		const subAgentInvocationId = (options as { subAgentInvocationId?: string }).subAgentInvocationId;
 		if (String(name) === 'runSubagent') {

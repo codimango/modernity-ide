@@ -80,6 +80,7 @@ import { ISettingsEditorSearchService } from '../../../platform/settingsEditor/c
 import { IExperimentationService, NullExperimentationService } from '../../../platform/telemetry/common/nullExperimentationService';
 import { NullTelemetryService } from '../../../platform/telemetry/common/nullTelemetryService';
 import { ITelemetryService, ITelemetryUserConfig, TelemetryUserConfigImpl } from '../../../platform/telemetry/common/telemetry';
+import { IModelRequestTraceService, ITraceEventOutbox } from '../../../platform/trace/common/trace';
 import { APP_INSIGHTS_KEY_ENHANCED, APP_INSIGHTS_KEY_STANDARD } from '../../../platform/telemetry/node/azureInsights';
 import { MicrosoftExperimentationService } from '../../../platform/telemetry/vscode-node/microsoftExperimentationService';
 import { TelemetryService } from '../../../platform/telemetry/vscode-node/telemetryServiceImpl';
@@ -101,6 +102,8 @@ import { ChatDebugFileLoggerService } from '../../chat/vscode-node/chatDebugFile
 import { ChatHookService } from '../../chat/vscode-node/chatHookService';
 import { HooksOutputChannel } from '../../chat/vscode-node/hooksOutputChannel';
 import { SessionTranscriptService } from '../../chat/vscode-node/sessionTranscriptService';
+import { DaemonTraceEventOutbox } from '../../trace/vscode-node/daemonTraceEventOutbox';
+import { ModelRequestTraceService } from '../../trace/vscode-node/modelRequestTraceService';
 import { CommandServiceImpl, ICommandService } from '../../commands/node/commandService';
 import { ICopilotInlineCompletionItemProviderService } from '../../completions/common/copilotInlineCompletionItemProviderService';
 import { CopilotInlineCompletionItemProviderService } from '../../completions/vscode-node/copilotInlineCompletionItemProviderService';
@@ -163,6 +166,8 @@ export function registerServices(builder: IInstantiationServiceBuilder, extensio
 	const isTestMode = extensionContext.extensionMode === ExtensionMode.Test;
 
 	registerCommonServices(builder, extensionContext);
+	builder.define(ITraceEventOutbox, new SyncDescriptor(DaemonTraceEventOutbox));
+	builder.define(IModelRequestTraceService, new SyncDescriptor(ModelRequestTraceService));
 
 	builder.define(IAutomodeService, new SyncDescriptor(AutomodeService));
 	builder.define(IConversationStore, new SyncDescriptor(ConversationStore));

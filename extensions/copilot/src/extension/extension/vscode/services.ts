@@ -75,6 +75,7 @@ import { SnippyService } from '../../../platform/snippy/common/snippyServiceImpl
 import { ISurveyService } from '../../../platform/survey/common/surveyService';
 import { SurveyService } from '../../../platform/survey/vscode/surveyServiceImpl';
 import { ITabsAndEditorsService } from '../../../platform/tabs/common/tabsAndEditorsService';
+import { IModelRequestTraceService, ITraceEventOutbox, NullModelRequestTraceService, NullTraceEventOutbox } from '../../../platform/trace/common/trace';
 import { TabsAndEditorsServiceImpl } from '../../../platform/tabs/vscode/tabsAndEditorsServiceImpl';
 import { ITasksService } from '../../../platform/tasks/common/tasksService';
 import { TasksService } from '../../../platform/tasks/vscode/tasksService';
@@ -122,6 +123,8 @@ export function registerServices(builder: IInstantiationServiceBuilder, extensio
 	builder.define(IAlternativeNotebookContentEditGenerator, new SyncDescriptor(AlternativeNotebookContentEditGenerator));
 	builder.define(IRemoteRepositoriesService, new RemoteRepositoriesService());
 	builder.define(ITabsAndEditorsService, new TabsAndEditorsServiceImpl());
+	builder.define(ITraceEventOutbox, new NullTraceEventOutbox());
+	builder.define(IModelRequestTraceService, new NullModelRequestTraceService());
 	builder.define(ITerminalService, new SyncDescriptor(TerminalServiceImpl));
 	builder.define(ITestProvider, new SyncDescriptor(TestProvider));
 	builder.define(IUrlOpener, isTestMode && !isScenarioAutomation ? new NullUrlOpener() : new RealUrlOpener());

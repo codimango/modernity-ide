@@ -7,6 +7,7 @@ import * as l10n from '@vscode/l10n';
 import { Raw } from '@vscode/prompt-tsx';
 import type { CancellationToken, ChatRequest, ChatResponseProgressPart, ChatResponseReferencePart, ChatResponseStream, ChatResult, LanguageModelToolInformation, Progress } from 'vscode';
 import { IAuthenticationChatUpgradeService } from '../../../platform/authentication/common/authenticationUpgrade';
+import { isBYOKModel } from '../../byok/node/openAIEndpoint';
 import { IChatDebugFileLoggerService } from '../../../platform/chat/common/chatDebugFileLoggerService';
 import { IChatHookService, SessionStartHookInput, SessionStartHookOutput, StopHookInput, StopHookOutput, SubagentStartHookInput, SubagentStartHookOutput, SubagentStopHookInput, SubagentStopHookOutput } from '../../../platform/chat/common/chatHookService';
 import { FetchStreamSource, IResponsePart } from '../../../platform/chat/common/chatMLFetcher';
@@ -28,6 +29,7 @@ import { IRequestLogger } from '../../../platform/requestLogger/common/requestLo
 import { getCurrentCapturingToken } from '../../../platform/requestLogger/node/requestLogger';
 import { IExperimentationService } from '../../../platform/telemetry/common/nullExperimentationService';
 import { ITelemetryService } from '../../../platform/telemetry/common/telemetry';
+import { IModelRequestTraceHandle, IModelRequestTraceService } from '../../../platform/trace/common/trace';
 import { computePromptTokenDetails } from '../../../platform/tokenizer/node/promptTokenDetails';
 import { tryFinalizeResponseStream } from '../../../util/common/chatResponseStreamImpl';
 import { ChatExtPerfMark, markChatExt } from '../../../util/common/performance';
@@ -241,6 +243,7 @@ export abstract class ToolCallingLoop<TOptions extends IToolCallingLoopOptions =
 		@IExperimentationService protected readonly _experimentationService: IExperimentationService,
 		@IChatHookService private readonly _chatHookService: IChatHookService,
 		@ISessionTranscriptService protected readonly _sessionTranscriptService: ISessionTranscriptService,
+		@IModelRequestTraceService private readonly _modelRequestTraceService: IModelRequestTraceService,
 		@IFileSystemService private readonly _fileSystemService: IFileSystemService,
 		@IOTelService protected readonly _otelService: IOTelService,
 		@IGitService private readonly _gitService: IGitService,
@@ -871,8 +874,6 @@ export abstract class ToolCallingLoop<TOptions extends IToolCallingLoopOptions =
 	 */
 	public async runStartHooks(outputStream: ChatResponseStream | undefined, token: CancellationToken): Promise<void> {
 		const sessionId = this.options.conversation.sessionId;
-		const hasHooks = this.options.request.hasHooksEnabled;
-
 		// Report which hooks are configured for this request
 		this._chatHookService.logConfiguredHooks(this.options.request.hooks);
 
@@ -889,29 +890,28 @@ export abstract class ToolCallingLoop<TOptions extends IToolCallingLoopOptions =
 		} else {
 			const isFirstTurn = this.options.conversation.turns.length === 1;
 
-			if (hasHooks) {
-				// Build history from prior turns (excluding the current one) for transcript replay
-				const priorTurns = this.options.conversation.turns.slice(0, -1);
-				const history: IHistoricalTurn[] = priorTurns.map(turn => ({
-					userMessage: turn.request.message,
-					timestamp: turn.startTime,
-					rounds: turn.rounds.map(round => ({
-						response: round.response,
-						toolCalls: round.toolCalls.map(tc => ({
-							name: tc.name,
-							arguments: tc.arguments,
-							id: tc.id,
-						})),
-						reasoningText: round.thinking
-							? (Array.isArray(round.thinking.text) ? round.thinking.text.join('') : round.thinking.text)
-							: undefined,
-						timestamp: round.timestamp,
+			// Build history from prior turns (excluding the current one) for transcript replay.
+			// Trace recovery uses the transcript even when user hooks are disabled.
+			const priorTurns = this.options.conversation.turns.slice(0, -1);
+			const history: IHistoricalTurn[] = priorTurns.map(turn => ({
+				userMessage: turn.request.message,
+				timestamp: turn.startTime,
+				rounds: turn.rounds.map(round => ({
+					response: round.response,
+					toolCalls: round.toolCalls.map(tc => ({
+						name: tc.name,
+						arguments: tc.arguments,
+						id: tc.id,
 					})),
-				}));
+					reasoningText: round.thinking
+						? (Array.isArray(round.thinking.text) ? round.thinking.text.join('') : round.thinking.text)
+						: undefined,
+					timestamp: round.timestamp,
+				})),
+			}));
 
-				// Start the transcript (will replay history if no file exists yet)
-				await this._sessionTranscriptService.startSession(sessionId, undefined, history.length > 0 ? history : undefined);
-			}
+			// Start the transcript (will replay history if no file exists yet).
+			await this._sessionTranscriptService.startSession(sessionId, undefined, history.length > 0 ? history : undefined);
 
 			if (isFirstTurn) {
 				const startHookResult = await this.executeSessionStartHook({
@@ -1622,9 +1622,31 @@ export abstract class ToolCallingLoop<TOptions extends IToolCallingLoopOptions =
 				enableThinking,
 			},
 		};
-		const fetchResult = await this.fetch(fetchOptions, token).finally(() => {
-			this.stopHookUserInitiated = false;
+		const traceHandle = this._modelRequestTraceService.begin({
+			sessionId: this.options.conversation.sessionId,
+			turnId: String(iterationNumber),
+			provider: isBYOKModel(endpoint) > 0 ? 'openai_compatible' : 'copilot',
+			model: endpoint.model,
 		});
+		const traceStartedAt = Date.now();
+		let fetchResult: ChatResponse;
+		try {
+			fetchResult = await this.fetch(fetchOptions, token);
+		} catch (error) {
+			const durationMs = Date.now() - traceStartedAt;
+			if (token.isCancellationRequested || isCancellationError(error)) {
+				traceHandle.cancel({ durationMs });
+			} else {
+				traceHandle.fail({ code: error instanceof Error ? error.name : 'FETCH_ERROR', retryable: true, durationMs });
+			}
+			throw error;
+		} finally {
+			this.stopHookUserInitiated = false;
+		}
+		this._finishModelRequestTrace(traceHandle, fetchResult, Date.now() - traceStartedAt);
+		for (const toolCall of toolCalls) {
+			traceHandle.bindToolCall(toolCall.id);
+		}
 		markChatExt(this.options.conversation.sessionId, ChatExtPerfMark.DidFetch);
 
 		// Store the server-echoed headerRequestId from the fetch response for subagent telemetry linking.
@@ -1721,6 +1743,11 @@ export abstract class ToolCallingLoop<TOptions extends IToolCallingLoopOptions =
 				fetchResult.value,
 				transcriptToolRequests,
 				thinkingItem ? (Array.isArray(thinkingItem.text) ? thinkingItem.text.join('') : thinkingItem.text) : undefined,
+				{
+					sessionId: this.options.conversation.sessionId,
+					turnId: String(iterationNumber),
+					modelRequestId: traceHandle.modelRequestId,
+				},
 			);
 
 			return {
@@ -1749,6 +1776,26 @@ export abstract class ToolCallingLoop<TOptions extends IToolCallingLoopOptions =
 			availableTools,
 			round: new ToolCallRound('', toolCalls, toolInputRetry),
 		};
+	}
+
+	private _finishModelRequestTrace(handle: IModelRequestTraceHandle, response: ChatResponse, durationMs: number): void {
+		if (response.type === ChatFetchResponseType.Success) {
+			handle.complete({
+				durationMs,
+				usage: response.usage ? {
+					inputTokens: response.usage.prompt_tokens,
+					outputTokens: response.usage.completion_tokens,
+				} : undefined,
+			});
+		} else if (response.type === ChatFetchResponseType.Canceled) {
+			handle.cancel({ durationMs });
+		} else {
+			handle.fail({
+				code: response.type.toUpperCase(),
+				retryable: this.shouldAutoRetry(response),
+				durationMs,
+			});
+		}
 	}
 
 	/**

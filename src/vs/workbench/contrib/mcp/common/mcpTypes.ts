@@ -29,7 +29,7 @@ import { StorageScope } from '../../../../platform/storage/common/storage.js';
 import { IWorkspaceFolder, IWorkspaceFolderData } from '../../../../platform/workspace/common/workspace.js';
 import { IWorkbenchLocalMcpServer, IWorkbencMcpServerInstallOptions } from '../../../services/mcp/common/mcpWorkbenchManagementService.js';
 import { ContributionEnablementState, IEnablementModel } from '../../chat/common/enablement.js';
-import { ToolProgress } from '../../chat/common/tools/languageModelToolsService.js';
+import { ITraceInvocationContext, ToolProgress } from '../../chat/common/tools/languageModelToolsService.js';
 import { IMcpServerSamplingConfiguration } from './mcpConfiguration.js';
 import { McpServerRequestHandler } from './mcpServerRequestHandler.js';
 import { MCP } from './modelContextProtocol.js';
@@ -460,6 +460,7 @@ export interface IMcpToolCallContext {
 	traceparent?: string;
 	/** Optional W3C trace context `tracestate` value paired with {@link traceparent}. */
 	tracestate?: string;
+	traceContext?: ITraceInvocationContext;
 }
 
 /**

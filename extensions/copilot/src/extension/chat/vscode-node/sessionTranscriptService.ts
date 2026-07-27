@@ -14,6 +14,7 @@ import { IEnvService } from '../../../platform/env/common/envService';
 import { IVSCodeExtensionContext } from '../../../platform/extContext/common/extensionContext';
 import { IFileSystemService, createDirectoryIfNotExists } from '../../../platform/filesystem/common/fileSystemService';
 import { ILogService } from '../../../platform/log/common/logService';
+import { ITraceEventOutbox, mapTranscriptEntryToTraceEvent, type IRecoverableTraceEventOutbox, type ITraceInvocationContext } from '../../../platform/trace/common/trace';
 import { extUriBiasedIgnorePathCase } from '../../../util/vs/base/common/resources';
 import { URI } from '../../../util/vs/base/common/uri';
 import { generateUuid } from '../../../util/vs/base/common/uuid';
@@ -40,6 +41,7 @@ interface IActiveSession {
 	flushPromise: Promise<void>;
 	/** Running count of lines in the transcript (flushed + buffered). */
 	lineCount: number;
+	traceRecoveryPromise: Promise<void>;
 }
 
 export class SessionTranscriptService implements ISessionTranscriptService {
@@ -53,6 +55,7 @@ export class SessionTranscriptService implements ISessionTranscriptService {
 		@IVSCodeExtensionContext private readonly _extensionContext: IVSCodeExtensionContext,
 		@IEnvService private readonly _envService: IEnvService,
 		@ILogService private readonly _logService: ILogService,
+		@ITraceEventOutbox private readonly _traceOutbox: ITraceEventOutbox,
 	) { }
 
 	private _getTranscriptsDir(): URI | undefined {
@@ -92,6 +95,7 @@ export class SessionTranscriptService implements ISessionTranscriptService {
 			buffer: [],
 			flushPromise: Promise.resolve(),
 			lineCount: 0,
+			traceRecoveryPromise: Promise.resolve(),
 		};
 		this._activeSessions.set(sessionId, session);
 
@@ -108,9 +112,13 @@ export class SessionTranscriptService implements ISessionTranscriptService {
 			// Session file exists — we're resuming; count existing lines so getLineCount stays accurate
 			try {
 				const content = await fs.promises.readFile(fileUri.fsPath, 'utf-8');
-				session.lineCount = content.split('\n').filter(l => l.length > 0).length;
+				const lines = content.split('\n').filter(l => l.length > 0);
+				session.lineCount = lines.length;
+				const lastEntry = lines.length > 0 ? JSON.parse(lines[lines.length - 1]) as { id?: string } : undefined;
+				session.lastEntryId = lastEntry?.id ?? null;
 			} catch {
 			}
+			this._scheduleTraceRecovery(sessionId, session);
 			return;
 		}
 
@@ -157,7 +165,7 @@ export class SessionTranscriptService implements ISessionTranscriptService {
 		});
 	}
 
-	logAssistantMessage(sessionId: string, content: string, toolRequests: readonly ToolRequest[], reasoningText?: string): void {
+	logAssistantMessage(sessionId: string, content: string, toolRequests: readonly ToolRequest[], reasoningText?: string, traceContext?: ITraceInvocationContext): void {
 		this._bufferEntry(sessionId, {
 			type: 'assistant.message',
 			data: {
@@ -165,29 +173,53 @@ export class SessionTranscriptService implements ISessionTranscriptService {
 				content,
 				toolRequests: toolRequests.map(tr => ({ ...tr, toolCallId: stripInternalToolCallId(tr.toolCallId) })),
 				...(reasoningText !== undefined ? { reasoningText } : {}),
+				...(traceContext !== undefined ? { traceContext } : {}),
 			},
 		});
 	}
 
-	logToolExecutionStart(sessionId: string, toolCallId: string, toolName: string, args: unknown): void {
+	logToolExecutionStart(sessionId: string, toolCallId: string, toolName: string, args: unknown, traceContext?: ITraceInvocationContext): void {
 		this._bufferEntry(sessionId, {
 			type: 'tool.execution_start',
 			data: {
 				toolCallId: stripInternalToolCallId(toolCallId),
 				toolName,
 				arguments: args,
+				...(traceContext !== undefined ? { traceContext } : {}),
 			},
 		});
 	}
 
-	logToolExecutionComplete(sessionId: string, toolCallId: string, success: boolean, resultContent?: string): void {
+	logToolExecutionComplete(sessionId: string, toolCallId: string, success: boolean, resultContent?: string, traceContext?: ITraceInvocationContext): void {
 		this._bufferEntry(sessionId, {
 			type: 'tool.execution_complete',
 			data: {
 				toolCallId: stripInternalToolCallId(toolCallId),
 				success,
 				...(resultContent !== undefined ? { result: { content: resultContent } } : {}),
+				...(traceContext !== undefined ? { traceContext } : {}),
 			},
+		});
+	}
+
+	logModelRequestStarted(sessionId: string, provider: 'copilot' | 'openai_compatible', model: string, traceContext: ITraceInvocationContext, entryId: string, parentEventId?: string): void {
+		this._bufferEntry(sessionId, {
+			type: 'model.request.started',
+			data: { provider, model, traceContext },
+		}, undefined, entryId, parentEventId);
+	}
+
+	logModelResponseCompleted(sessionId: string, durationMs: number, traceContext: ITraceInvocationContext, usage?: { readonly inputTokens?: number; readonly outputTokens?: number }): void {
+		this._bufferEntry(sessionId, {
+			type: 'model.response.completed',
+			data: { durationMs, traceContext, ...usage },
+		});
+	}
+
+	logModelResponseFailed(sessionId: string, code: string, retryable: boolean, cancelled: boolean, durationMs: number, traceContext: ITraceInvocationContext): void {
+		this._bufferEntry(sessionId, {
+			type: 'model.response.failed',
+			data: { code, retryable, cancelled, durationMs, traceContext },
 		});
 	}
 
@@ -209,13 +241,17 @@ export class SessionTranscriptService implements ISessionTranscriptService {
 		const content = lines.join('');
 
 		session.flushPromise = session.flushPromise.then(
-			() => this._writeToFile(session, content),
-			() => this._writeToFile(session, content), // still write even if prior flush failed
+			() => this._writeToFile(sessionId, session, content),
+			() => this._writeToFile(sessionId, session, content), // still write even if prior flush failed
 		);
 		return session.flushPromise;
 	}
 
 	async endSession(sessionId: string): Promise<void> {
+		this._bufferEntry(sessionId, {
+			type: 'session.end',
+			data: { status: 'complete' },
+		});
 		await this.flush(sessionId);
 		this._activeSessions.delete(sessionId);
 	}
@@ -349,33 +385,53 @@ export class SessionTranscriptService implements ISessionTranscriptService {
 	 *
 	 * @param timestampOverride Optional ISO 8601 timestamp; defaults to now.
 	 */
-	private _bufferEntry(sessionId: string, entry: Omit<TranscriptEntry, 'id' | 'timestamp' | 'parentId'>, timestampOverride?: string): void {
+	private _bufferEntry(sessionId: string, entry: Omit<TranscriptEntry, 'id' | 'timestamp' | 'parentId'>, timestampOverride?: string, entryId?: string, parentEventId?: string): void {
 		const session = this._activeSessions.get(sessionId);
 		if (!session) {
 			return;
 		}
 
-		const id = generateUuid();
+		const id = entryId ?? generateUuid();
 		const fullEntry: TranscriptEntry = {
 			...entry,
 			id,
 			timestamp: timestampOverride ?? new Date().toISOString(),
-			parentId: session.lastEntryId,
+			parentId: parentEventId ?? session.lastEntryId,
 		} as TranscriptEntry;
 
 		session.lastEntryId = id;
 		session.lineCount++;
 		session.buffer.push(JSON.stringify(fullEntry) + '\n');
+		const traceEvent = mapTranscriptEntryToTraceEvent(sessionId, fullEntry, session.lineCount);
+		if (traceEvent) {
+			this._traceOutbox.enqueue(traceEvent).catch(error => {
+				this._logService.debug(`[SessionTranscript] Trace enqueue deferred to recovery: ${error instanceof Error ? error.message : String(error)}`);
+			});
+		}
 	}
 
 	/**
 	 * Append pre-serialized JSONL content to the session's transcript file.
 	 */
-	private async _writeToFile(session: IActiveSession, content: string): Promise<void> {
+	private async _writeToFile(sessionId: string, session: IActiveSession, content: string): Promise<void> {
 		try {
 			await fs.promises.appendFile(session.uri.fsPath, content, 'utf-8');
+			this._scheduleTraceRecovery(sessionId, session);
 		} catch (err) {
 			this._logService.error('[SessionTranscript] Failed to write transcript entries', err);
 		}
+	}
+
+	private _scheduleTraceRecovery(sessionId: string, session: IActiveSession): void {
+		const recoverable = this._traceOutbox as Partial<IRecoverableTraceEventOutbox>;
+		if (!sessionId || typeof recoverable.recoverTranscript !== 'function') {
+			return;
+		}
+		session.traceRecoveryPromise = session.traceRecoveryPromise.then(
+			() => recoverable.recoverTranscript!(sessionId, session.uri),
+			() => recoverable.recoverTranscript!(sessionId, session.uri),
+		).catch(error => {
+			this._logService.debug(`[SessionTranscript] Trace recovery deferred: ${error instanceof Error ? error.message : String(error)}`);
+		});
 	}
 }
