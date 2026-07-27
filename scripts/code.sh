@@ -36,61 +36,15 @@ function ensure_sandbox_daemon() {
 	fi
 	export GRADLE_OPTS="-Djava.net.preferIPv4Stack=true"
 	export PATH="$JAVA_HOME/bin:$PATH"
-	PYTHON_CANDIDATES=(
-		"python3"
-		"python3.12" "python3.11" "python3.13"
-		"/opt/homebrew/bin/python3.12" "/opt/homebrew/bin/python3.11" "/opt/homebrew/bin/python3"
-		"/usr/local/bin/python3.12" "/usr/local/bin/python3.11" "/usr/local/bin/python3"
-		"/usr/bin/python3.12" "/usr/bin/python3.11" "/usr/bin/python3"
-		"python"
-	)
+	PYTHON_CANDIDATES=("/usr/bin/python3" "python3" "python")
 	DAEMON_PY=""
 	for PY in "${PYTHON_CANDIDATES[@]}"; do
-		# Check binary exists (file or in PATH)
-		if [[ "$PY" == /* ]]; then
-			[[ -x "$PY" ]] || continue
-		else
-			command -v "$PY" >/dev/null 2>&1 || continue
-		fi
-		# Require Python 3.11+ for datetime.UTC
-		if ! "$PY" -c "import sys; sys.exit(0 if sys.version_info >= (3,11) else 1)" 2>/dev/null; then
-			echo "[code.sh] Skipping $PY: requires Python 3.11+ (has $("$PY" -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}')" 2>/dev/null || echo unknown))" >&2
-			continue
-		fi
 		if (PYTHONPATH="$MOD_ROOT" "$PY" -c "import uvicorn, fastapi" 2>/dev/null); then
 			DAEMON_PY="$PY"
-			echo "[code.sh] Selected daemon python: $PY ($("$PY" -c "import sys; print(f'{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}')" 2>/dev/null)) with uvicorn/fastapi" >&2
 			break
-		else
-			echo "[code.sh] $PY is 3.11+ but missing uvicorn/fastapi, attempting pip install..." >&2
-			# Try to install deps for this interpreter
-			if "$PY" -m pip install --quiet fastapi uvicorn 2>/dev/null; then
-				if (PYTHONPATH="$MOD_ROOT" "$PY" -c "import uvicorn, fastapi" 2>/dev/null); then
-					DAEMON_PY="$PY"
-					echo "[code.sh] Selected daemon python after pip install: $PY" >&2
-					break
-				fi
-			fi
-			# Also try pip3 if python -m pip fails (fbcode fbpython)
-			if command -v pip3 >/dev/null 2>&1 && pip3 install --quiet --target "$("$PY" -c "import site; print(site.getusersitepackages())" 2>/dev/null)" fastapi uvicorn 2>/dev/null; then
-				if (PYTHONPATH="$MOD_ROOT" "$PY" -c "import uvicorn, fastapi" 2>/dev/null); then
-					DAEMON_PY="$PY"
-					break
-				fi
-			fi
-			# Remember this as fallback candidate with correct version even if no deps yet
-			if [[ -z "$DAEMON_PY" ]]; then
-				DAEMON_PY_FALLBACK="$PY"
-			fi
 		fi
 	done
-	# If no interpreter had deps, use the newest 3.11+ we found and try to run anyway (will log error)
-	if [[ -z "$DAEMON_PY" && -n "${DAEMON_PY_FALLBACK:-}" ]]; then
-		echo "[code.sh] Warning: no Python 3.11+ with uvicorn/fastapi found, will try $DAEMON_PY_FALLBACK and rely on error in log" >&2
-		DAEMON_PY="$DAEMON_PY_FALLBACK"
-	fi
 	if [[ -z "$DAEMON_PY" ]]; then
-		echo "[code.sh] Error: No Python 3.11+ found. Daemon requires Python >=3.11 with fastapi and uvicorn. Install via: pip3 install fastapi uvicorn" >&2
 		DAEMON_PY="python3"
 	fi
 	if [[ -f "$RT" ]]; then
