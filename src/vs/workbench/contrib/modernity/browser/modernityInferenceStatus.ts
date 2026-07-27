@@ -20,8 +20,7 @@ export class ModernityInferenceStatusBarEntry extends Disposable implements IWor
 	) {
 		super();
 		this.update();
-		// Reduced polling to 10s to avoid contributing to 3-click race (was 2s causing many GET /models)
-		this.intervalId = setInterval(() => this.update(), 10000);
+		this.intervalId = setInterval(() => this.update(), 2000);
 		this._register({
 			dispose: () => {
 				if (this.intervalId) {
@@ -34,7 +33,6 @@ export class ModernityInferenceStatusBarEntry extends Disposable implements IWor
 	private async update(): Promise<void> {
 		const gatewayUrl = 'http://127.0.0.1:8000';
 		const modelsUrl = `${gatewayUrl}/api/inference/v1/models`;
-		console.log(`[Modernity-Inference-Status] polling ${modelsUrl} time=${Date.now()}`);
 		try {
 			// Try to fetch models to verify gateway is up (dev) or prod gateway reachable
 			const controller = new AbortController();

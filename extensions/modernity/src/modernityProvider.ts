@@ -275,12 +275,9 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 	async provideLanguageModelChatInformation(_options: vscode.PrepareLanguageModelChatModelOptions, token: vscode.CancellationToken): Promise<vscode.LanguageModelChatInformation[]> {
 		const now = Date.now();
 		if (this._cachedModels && now < this._cacheExpiry) {
-			console.log(`[Modernity-Provider] provideLanguageModelChatInformation returning cached ${this._cachedModels.length} models (expires in ${this._cacheExpiry - now}ms) time=${now}`);
 			return this._cachedModels;
 		}
-		console.log(`[Modernity-Provider] provideLanguageModelChatInformation called silent=${_options.silent} time=${now} isCancellation=${token.isCancellationRequested}`);
 		const { modelsUrl, base } = getEndpointUrls((this._context as any).extensionMode);
-		console.log(`[Modernity-Provider] fetching models from ${modelsUrl} base=${base}`);
 		const controller = new AbortController();
 		const disposable = token.onCancellationRequested(() => controller.abort());
 
@@ -332,7 +329,6 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 			}
 			this._cachedModels = mapped;
 			this._cacheExpiry = Date.now() + this._cacheTtlMs;
-			console.log(`[Modernity-Provider] fetched ${mapped.length} models, caching for ${this._cacheTtlMs}ms`);
 			return mapped;
 		} catch (err: any) {
 			if (err?.name === 'AbortError' || token.isCancellationRequested) {
@@ -440,9 +436,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 	}
 
 	async provideLanguageModelChatResponse(model: vscode.LanguageModelChatInformation, messages: readonly vscode.LanguageModelChatRequestMessage[], options: vscode.ProvideLanguageModelChatResponseOptions, progress: vscode.Progress<vscode.LanguageModelResponsePart>, token: vscode.CancellationToken): Promise<void> {
-		console.log(`[Modernity-Provider] provideLanguageModelChatResponse called model=${model.id} ${model.name} messages=${messages.length} tools=${options.tools?.length ?? 0} time=${Date.now()}`);
 		const urls = getEndpointUrls((this._context as any).extensionMode);
-		console.log(`[Modernity-Provider] using chatCompletionsUrl=${urls.chatCompletionsUrl}`);
 		const requestId = randomUUID();
 		this._turnCounter += 1;
 		const turnId = `${this._turnCounter}`;

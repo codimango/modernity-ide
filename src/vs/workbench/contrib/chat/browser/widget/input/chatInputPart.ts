@@ -790,7 +790,6 @@ export class ChatInputPart extends Disposable implements IHistoryNavigationWidge
 		const resetCurrentLanguageModelIfUnavailable = () => {
 			const modelIdentifier = this._currentLanguageModel.get()?.identifier;
 			const models = this.getModels();
-			console.log(`[Modernity-Model-Click] resetCurrentLanguageModelIfUnavailable triggered: current=${modelIdentifier} available=[${models.map(m=>m.identifier).join(',')}] time=${Date.now()} empty=${this._chatSessionIsEmpty} userExplicit=${this._userExplicitlySelectedModel}`);
 			if (canLog(this.logService.getLevel(), LogLevel.Debug)) {
 				const mergedModels = this.getAllMergedModels();
 				const filteredModels = filterModelsForSession(models, this.getCurrentSessionType(), this.currentModeKind, this.location);
@@ -944,7 +943,6 @@ export class ChatInputPart extends Disposable implements IHistoryNavigationWidge
 		// pending wait below), and reopened conversations re-apply their saved
 		// per-conversation model later via `_syncFromModel`.
 		const configuredValue = this.getConfiguredModelValue();
-		console.log(`[Modernity-Model-Click] initSelectedModel configuredValue=${configuredValue} models=[${this.getModels().map(m=>m.identifier).join(',')}] time=${Date.now()}`);
 		if (configuredValue) {
 			const configuredModel = resolveConfiguredModel(configuredValue, this.getModels());
 			if (configuredModel) {
@@ -1572,14 +1570,11 @@ export class ChatInputPart extends Disposable implements IHistoryNavigationWidge
 	}
 
 	public setCurrentLanguageModel(model: ILanguageModelChatMetadataAndIdentifier, isUserAction = false) {
-		// Log click for debugging 3-click issue - user has to select 3 times
-		console.log(`[Modernity-Model-Click] setCurrentLanguageModel to ${model.identifier} name=${model.metadata.name} vendor=${model.metadata.vendor} id=${model.metadata.id} isUserAction=${isUserAction} userExplicitly=${this._userExplicitlySelectedModel} time=${Date.now()} stack=${new Error().stack?.split('\n')[2]?.trim()}`);
 		if (isUserAction) {
 			// An explicit user pick must survive subsequent automatic re-evaluations
 			// (model-list changes, late configured-default arrival) so the configured
 			// default does not clobber the in-conversation selection.
 			this._userExplicitlySelectedModel = true;
-			console.log(`[Modernity-Model-Click] User explicitly selected model, set _userExplicitlySelectedModel=true, storageKey=${this.getSelectedModelStorageKey()} will store ${model.identifier}`);
 		}
 		const modelDetails = this.getModels().map(m => `${m.identifier} (${m.metadata.id})`).join(', ');
 		const selectedModelStorageKey = this.getSelectedModelStorageKey();
@@ -1608,11 +1603,7 @@ export class ChatInputPart extends Disposable implements IHistoryNavigationWidge
 			currentModeKind: this.currentModeKind,
 			sessionType: this.getCurrentSessionType(),
 		}, allModels);
-		console.log(`[Modernity-Model-Click] checkModelSupported lm=${lm?.identifier} willReset=${willReset} time=${Date.now()} models=${this.getModels().map(m=>m.identifier).join(',')} allMerged=${allModels.map(m=>m.identifier).join(',')}`);
 		logChangesToStateModel(this._inputModel, `[CMS] checkModelSupported lm=${lm?.identifier} mode=${this.currentModeKind} sessionType=${this.getCurrentSessionType()} willReset=${willReset} in ${this._currentSessionKey}`, undefined, this._inputModel?.state.get(), this.logService);
-		if (willReset) {
-			console.log(`[Modernity-Model-Click] checkModelSupported resetting to default because willReset=true, current=${lm?.identifier}`);
-		}
 		if (shouldResetModelToDefault(lm, this.getModels(), {
 			location: this.location,
 			currentModeKind: this.currentModeKind,
