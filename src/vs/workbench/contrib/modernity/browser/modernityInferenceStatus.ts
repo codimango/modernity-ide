@@ -20,7 +20,8 @@ export class ModernityInferenceStatusBarEntry extends Disposable implements IWor
 	) {
 		super();
 		this.update();
-		this.intervalId = setInterval(() => this.update(), 2000);
+		// Reduced polling to 10s to avoid contributing to 3-click race (was 2s causing many GET /models)
+		this.intervalId = setInterval(() => this.update(), 10000);
 		this._register({
 			dispose: () => {
 				if (this.intervalId) {

@@ -252,6 +252,9 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 	private readonly _sessionId: string;
 	private _turnCounter: number = 0;
 	private readonly _clientVersion: string;
+	private _cachedModels: vscode.LanguageModelChatInformation[] | undefined;
+	private _cacheExpiry: number = 0;
+	private readonly _cacheTtlMs = 10000; // 10s cache to avoid 3-click race from frequent discovery
 
 	constructor(private readonly _context: vscode.ExtensionContext) {
 		this.onDidChangeLanguageModelChatInformation = this._onDidChange.event;
@@ -270,7 +273,12 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 	}
 
 	async provideLanguageModelChatInformation(_options: vscode.PrepareLanguageModelChatModelOptions, token: vscode.CancellationToken): Promise<vscode.LanguageModelChatInformation[]> {
-		console.log(`[Modernity-Provider] provideLanguageModelChatInformation called silent=${_options.silent} time=${Date.now()} isCancellation=${token.isCancellationRequested}`);
+		const now = Date.now();
+		if (this._cachedModels && now < this._cacheExpiry) {
+			console.log(`[Modernity-Provider] provideLanguageModelChatInformation returning cached ${this._cachedModels.length} models (expires in ${this._cacheExpiry - now}ms) time=${now}`);
+			return this._cachedModels;
+		}
+		console.log(`[Modernity-Provider] provideLanguageModelChatInformation called silent=${_options.silent} time=${now} isCancellation=${token.isCancellationRequested}`);
 		const { modelsUrl, base } = getEndpointUrls((this._context as any).extensionMode);
 		console.log(`[Modernity-Provider] fetching models from ${modelsUrl} base=${base}`);
 		const controller = new AbortController();
@@ -292,35 +300,55 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 				let body: any;
 				try { body = await response.json(); } catch { body = await response.text(); }
 				if (!token.isCancellationRequested) {
-					// If gateway not ready or unreachable, fallback to default model instead of hard failing in silent mode
 					if (_options.silent) {
-						return this._fallbackModels(base);
+						const fallback = this._fallbackModels(base);
+						this._cachedModels = fallback;
+						this._cacheExpiry = Date.now() + this._cacheTtlMs;
+						return fallback;
 					}
 					mapGatewayError(response.status, body);
 				}
-				return this._fallbackModels(base);
+				const fallback = this._fallbackModels(base);
+				this._cachedModels = fallback;
+				this._cacheExpiry = Date.now() + this._cacheTtlMs;
+				return fallback;
 			}
 
 			const json = await response.json() as GatewayModelList;
 			const data = (json as any).data ?? (json as any).models ?? [];
 			if (!Array.isArray(data) || data.length === 0) {
-				return this._fallbackModels(base);
+				const fallback = this._fallbackModels(base);
+				this._cachedModels = fallback;
+				this._cacheExpiry = Date.now() + this._cacheTtlMs;
+				return fallback;
 			}
 
 			const mapped = data.map(m => this._toChatInfo(m, base)).filter((x): x is vscode.LanguageModelChatInformation => !!x);
-			if (mapped.length === 0) { return this._fallbackModels(base); }
+			if (mapped.length === 0) {
+				const fallback = this._fallbackModels(base);
+				this._cachedModels = fallback;
+				this._cacheExpiry = Date.now() + this._cacheTtlMs;
+				return fallback;
+			}
+			this._cachedModels = mapped;
+			this._cacheExpiry = Date.now() + this._cacheTtlMs;
+			console.log(`[Modernity-Provider] fetched ${mapped.length} models, caching for ${this._cacheTtlMs}ms`);
 			return mapped;
 		} catch (err: any) {
 			if (err?.name === 'AbortError' || token.isCancellationRequested) {
 				return [];
 			}
-			// On network failure, return fallback so agent panel still shows model
 			if (_options.silent) {
-				return this._fallbackModels(base);
+				const fallback = this._fallbackModels(base);
+				this._cachedModels = fallback;
+				this._cacheExpiry = Date.now() + this._cacheTtlMs;
+				return fallback;
 			}
-			// For non-silent, still return fallback but log
 			console.warn('[Modernity] Failed to fetch models, using fallback', err);
-			return this._fallbackModels(base);
+			const fallback = this._fallbackModels(base);
+			this._cachedModels = fallback;
+			this._cacheExpiry = Date.now() + this._cacheTtlMs;
+			return fallback;
 		} finally {
 			disposable.dispose();
 		}
