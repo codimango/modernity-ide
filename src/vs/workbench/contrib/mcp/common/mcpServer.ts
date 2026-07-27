@@ -1265,6 +1265,7 @@ export class McpTool implements IMcpTool {
 					meta['tracestate'] = context.tracestate;
 				}
 			}
+			addModernityTraceMetadata(meta, context);
 
 			const taskHint = this._definition.execution?.taskSupport;
 			const serverSupportsTasksForTools = h.capabilities.tasks?.requests?.tools?.call !== undefined;
@@ -1324,6 +1325,30 @@ export class McpTool implements IMcpTool {
 
 	compare(other: IMcpTool): number {
 		return this._definition.name.localeCompare(other.definition.name);
+	}
+}
+
+export function addModernityTraceMetadata(meta: Record<string, unknown>, context: IMcpToolCallContext | undefined): void {
+	const modernityContext = context?.traceContext;
+	if (!modernityContext) {
+		return;
+	}
+	meta['modernity/sessionId'] = modernityContext.sessionId;
+	meta['modernity/turnId'] = modernityContext.turnId;
+	if (modernityContext.modelRequestId) {
+		meta['modernity/modelRequestId'] = modernityContext.modelRequestId;
+	}
+	if (modernityContext.toolCallId) {
+		meta['modernity/toolCallId'] = modernityContext.toolCallId;
+	}
+	if (modernityContext.projectId) {
+		meta['modernity/projectId'] = modernityContext.projectId;
+	}
+	if (modernityContext.checkoutId) {
+		meta['modernity/checkoutId'] = modernityContext.checkoutId;
+	}
+	if (modernityContext.machineId) {
+		meta['modernity/machineId'] = modernityContext.machineId;
 	}
 }
 

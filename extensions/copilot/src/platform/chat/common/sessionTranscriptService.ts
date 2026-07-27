@@ -5,6 +5,7 @@
 
 import { createServiceIdentifier } from '../../../util/common/services';
 import { URI } from '../../../util/vs/base/common/uri';
+import type { ITraceInvocationContext } from '../../trace/common/trace';
 
 export const ISessionTranscriptService = createServiceIdentifier<ISessionTranscriptService>('ISessionTranscriptService');
 
@@ -13,7 +14,7 @@ export const ISessionTranscriptService = createServiceIdentifier<ISessionTranscr
 /**
  * Common fields shared by all transcript entries.
  */
-interface TranscriptEntryBase {
+export interface TranscriptEntryBase {
 	/** Entry type discriminator. */
 	readonly type: string;
 	/** Entry-specific data payload. */
@@ -74,6 +75,7 @@ export interface AssistantMessageData {
 	readonly content: string;
 	readonly toolRequests: readonly ToolRequest[];
 	readonly reasoningText?: string;
+	readonly traceContext?: ITraceInvocationContext;
 }
 
 export interface AssistantMessageEntry extends TranscriptEntryBase {
@@ -85,6 +87,7 @@ export interface ToolExecutionStartData {
 	readonly toolCallId: string;
 	readonly toolName: string;
 	readonly arguments: unknown;
+	readonly traceContext?: ITraceInvocationContext;
 }
 
 export interface ToolExecutionStartEntry extends TranscriptEntryBase {
@@ -98,6 +101,7 @@ export interface ToolExecutionCompleteData {
 	readonly result?: {
 		readonly content: string;
 	};
+	readonly traceContext?: ITraceInvocationContext;
 }
 
 export interface ToolExecutionCompleteEntry extends TranscriptEntryBase {
@@ -114,6 +118,41 @@ export interface AssistantTurnEndEntry extends TranscriptEntryBase {
 	readonly data: AssistantTurnEndData;
 }
 
+export interface SessionEndEntry extends TranscriptEntryBase {
+	readonly type: 'session.end';
+	readonly data: { readonly status: 'complete' | 'failed' | 'abandoned' };
+}
+
+export interface ModelRequestStartedEntry extends TranscriptEntryBase {
+	readonly type: 'model.request.started';
+	readonly data: {
+		readonly provider: 'copilot' | 'openai_compatible';
+		readonly model: string;
+		readonly traceContext: ITraceInvocationContext;
+	};
+}
+
+export interface ModelResponseCompletedEntry extends TranscriptEntryBase {
+	readonly type: 'model.response.completed';
+	readonly data: {
+		readonly durationMs: number;
+		readonly inputTokens?: number;
+		readonly outputTokens?: number;
+		readonly traceContext: ITraceInvocationContext;
+	};
+}
+
+export interface ModelResponseFailedEntry extends TranscriptEntryBase {
+	readonly type: 'model.response.failed';
+	readonly data: {
+		readonly code: string;
+		readonly retryable: boolean;
+		readonly cancelled: boolean;
+		readonly durationMs: number;
+		readonly traceContext: ITraceInvocationContext;
+	};
+}
+
 export type TranscriptEntry =
 	| SessionStartEntry
 	| UserMessageEntry
@@ -121,7 +160,11 @@ export type TranscriptEntry =
 	| AssistantMessageEntry
 	| ToolExecutionStartEntry
 	| ToolExecutionCompleteEntry
-	| AssistantTurnEndEntry;
+	| AssistantTurnEndEntry
+	| SessionEndEntry
+	| ModelRequestStartedEntry
+	| ModelResponseCompletedEntry
+	| ModelResponseFailedEntry;
 
 // #endregion
 
@@ -200,19 +243,25 @@ export interface ISessionTranscriptService {
 	 * Record an assistant message containing text and/or tool call requests.
 	 * Entries are buffered; call {@link flush} to write to disk.
 	 */
-	logAssistantMessage(sessionId: string, content: string, toolRequests: readonly ToolRequest[], reasoningText?: string): void;
+	logAssistantMessage(sessionId: string, content: string, toolRequests: readonly ToolRequest[], reasoningText?: string, traceContext?: ITraceInvocationContext): void;
 
 	/**
 	 * Record the start of a tool execution.
 	 * Entries are buffered; call {@link flush} to write to disk.
 	 */
-	logToolExecutionStart(sessionId: string, toolCallId: string, toolName: string, args: unknown): void;
+	logToolExecutionStart(sessionId: string, toolCallId: string, toolName: string, args: unknown, traceContext?: ITraceInvocationContext): void;
 
 	/**
 	 * Record the completion of a tool execution.
 	 * Entries are buffered; call {@link flush} to write to disk.
 	 */
-	logToolExecutionComplete(sessionId: string, toolCallId: string, success: boolean, resultContent?: string): void;
+	logToolExecutionComplete(sessionId: string, toolCallId: string, success: boolean, resultContent?: string, traceContext?: ITraceInvocationContext): void;
+
+	logModelRequestStarted(sessionId: string, provider: 'copilot' | 'openai_compatible', model: string, traceContext: ITraceInvocationContext, entryId: string, parentEventId?: string): void;
+
+	logModelResponseCompleted(sessionId: string, durationMs: number, traceContext: ITraceInvocationContext, usage?: { readonly inputTokens?: number; readonly outputTokens?: number }): void;
+
+	logModelResponseFailed(sessionId: string, code: string, retryable: boolean, cancelled: boolean, durationMs: number, traceContext: ITraceInvocationContext): void;
 
 	/**
 	 * Record the end of an assistant turn.
@@ -262,9 +311,12 @@ export class NullSessionTranscriptService implements ISessionTranscriptService {
 	async startSession(): Promise<void> { }
 	logUserMessage(): void { }
 	logAssistantTurnStart(): void { }
-	logAssistantMessage(): void { }
-	logToolExecutionStart(): void { }
-	logToolExecutionComplete(): void { }
+	logAssistantMessage(_sessionId: string, _content: string, _toolRequests: readonly ToolRequest[], _reasoningText?: string, _traceContext?: ITraceInvocationContext): void { }
+	logToolExecutionStart(_sessionId: string, _toolCallId: string, _toolName: string, _args: unknown, _traceContext?: ITraceInvocationContext): void { }
+	logToolExecutionComplete(_sessionId: string, _toolCallId: string, _success: boolean, _resultContent?: string, _traceContext?: ITraceInvocationContext): void { }
+	logModelRequestStarted(_sessionId: string, _provider: 'copilot' | 'openai_compatible', _model: string, _traceContext: ITraceInvocationContext, _entryId: string, _parentEventId?: string): void { }
+	logModelResponseCompleted(_sessionId: string, _durationMs: number, _traceContext: ITraceInvocationContext, _usage?: { readonly inputTokens?: number; readonly outputTokens?: number }): void { }
+	logModelResponseFailed(_sessionId: string, _code: string, _retryable: boolean, _cancelled: boolean, _durationMs: number, _traceContext: ITraceInvocationContext): void { }
 	logAssistantTurnEnd(): void { }
 	async flush(): Promise<void> { }
 	async endSession(): Promise<void> { }

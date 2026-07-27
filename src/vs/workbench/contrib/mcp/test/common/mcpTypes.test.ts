@@ -7,6 +7,7 @@ import { ensureNoDisposablesAreLeakedInTestSuite } from '../../../../../base/tes
 import { McpResourceURI, McpServerDefinition, McpServerTransportType } from '../../common/mcpTypes.js';
 import * as assert from 'assert';
 import { URI } from '../../../../../base/common/uri.js';
+import { addModernityTraceMetadata } from '../../common/mcpServer.js';
 
 suite('MCP Types', () => {
 	ensureNoDisposablesAreLeakedInTestSuite();
@@ -27,6 +28,39 @@ suite('MCP Types', () => {
 
 		roundTrip('custom-scheme:///my-path');
 		roundTrip('custom-scheme:///my-path/foo/?with=query&params=here');
+	});
+
+	test('Modernity trace context is added only to MCP metadata', () => {
+		const meta: Record<string, unknown> = {
+			progressToken: 'progress',
+			'vscode.requestId': 'request',
+			traceparent: '00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-01',
+		};
+		addModernityTraceMetadata(meta, {
+			chatSessionResource: undefined,
+			traceContext: {
+				sessionId: '095baf79-0e1b-4c71-b698-67e8167291ce',
+				turnId: '3',
+				modelRequestId: '10000000-0000-4000-8000-000000000001',
+				toolCallId: 'native-call',
+				projectId: '20000000-0000-4000-8000-000000000001',
+				checkoutId: '30000000-0000-4000-8000-000000000001',
+				machineId: '40000000-0000-4000-8000-000000000001',
+			},
+		});
+
+		assert.deepStrictEqual(meta, {
+			progressToken: 'progress',
+			'vscode.requestId': 'request',
+			traceparent: '00-0af7651916cd43dd8448eb211c80319c-b7ad6b7169203331-01',
+			'modernity/sessionId': '095baf79-0e1b-4c71-b698-67e8167291ce',
+			'modernity/turnId': '3',
+			'modernity/modelRequestId': '10000000-0000-4000-8000-000000000001',
+			'modernity/toolCallId': 'native-call',
+			'modernity/projectId': '20000000-0000-4000-8000-000000000001',
+			'modernity/checkoutId': '30000000-0000-4000-8000-000000000001',
+			'modernity/machineId': '40000000-0000-4000-8000-000000000001',
+		});
 	});
 
 	suite('McpServerDefinition.equals', () => {

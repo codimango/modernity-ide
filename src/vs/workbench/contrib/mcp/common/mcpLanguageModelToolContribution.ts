@@ -273,6 +273,7 @@ class McpToolImplementation implements IToolImpl {
 			chatSessionResource: invocation.context?.sessionResource,
 			traceparent: invocation.traceparent,
 			tracestate: invocation.tracestate,
+			traceContext: invocation.traceContext,
 		}, token);
 		const details: Mutable<IToolResultInputOutputDetails> = {
 			input: JSON.stringify(invocation.parameters, undefined, 2),

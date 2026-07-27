@@ -25,6 +25,7 @@ import { IChatEndpoint } from '../../../../platform/networking/common/networking
 import { IOTelService } from '../../../../platform/otel/common/otelService';
 import { IExperimentationService } from '../../../../platform/telemetry/common/nullExperimentationService';
 import { ITelemetryService } from '../../../../platform/telemetry/common/telemetry';
+import { IModelRequestTraceService } from '../../../../platform/trace/common/trace';
 import { toErrorMessage } from '../../../../util/common/errorMessage';
 import { CancellationToken } from '../../../../util/vs/base/common/cancellation';
 import { isCancellationError } from '../../../../util/vs/base/common/errors';
@@ -233,6 +234,7 @@ function buildToolResultElement(accessor: ServicesAccessor, props: ToolResultOpt
 	const chatHookService = accessor.get(IChatHookService);
 	const otelService = accessor.get(IOTelService);
 	const instantiationService = accessor.get(IInstantiationService);
+	const modelRequestTraceService = accessor.get(IModelRequestTraceService);
 	const tool = toolsService.getTool(props.toolCall.name);
 
 	async function getToolResult(sizing: PromptSizing) {
@@ -267,6 +269,9 @@ function buildToolResultElement(accessor: ServicesAccessor, props: ToolResultOpt
 			}
 
 			let outcome: ToolInvocationOutcome = toolResult === undefined ? ToolInvocationOutcome.Success : ToolInvocationOutcome.InvalidInput;
+			const traceContext = promptContext.conversation?.sessionId
+				? modelRequestTraceService.getToolCallContext(promptContext.conversation.sessionId, props.toolCall.id)
+				: undefined;
 			if (toolResult === undefined) {
 				try {
 					if (promptContext.tools && !promptContext.tools.availableTools.find(t => t.name === props.toolCall.name)) {
@@ -310,6 +315,7 @@ function buildToolResultElement(accessor: ServicesAccessor, props: ToolResultOpt
 							permissionDecisionReason: hookResult.permissionDecisionReason,
 							updatedInput: hookResult.updatedInput,
 						} : undefined,
+						traceContext,
 					};
 					// Attach trace context for span parenting (not in the VS Code API type)
 					(invocationOptions as { parentTraceContext?: { traceId: string; spanId: string } }).parentTraceContext = parentTraceContext;
@@ -318,7 +324,7 @@ function buildToolResultElement(accessor: ServicesAccessor, props: ToolResultOpt
 					if (transcriptSessionId) {
 						let parsedArgs: unknown;
 						try { parsedArgs = JSON.parse(props.toolCall.arguments); } catch { parsedArgs = props.toolCall.arguments; }
-						sessionTranscriptService.logToolExecutionStart(transcriptSessionId, props.toolCall.id, props.toolCall.name, parsedArgs);
+						sessionTranscriptService.logToolExecutionStart(transcriptSessionId, props.toolCall.id, props.toolCall.name, parsedArgs, traceContext);
 					}
 
 					toolResult = await toolsService.invokeToolWithEndpoint(props.toolCall.name, invocationOptions, promptEndpoint, props.token);
@@ -331,7 +337,7 @@ function buildToolResultElement(accessor: ServicesAccessor, props: ToolResultOpt
 					appendHookContext(toolResult, hookResult, chatHookService, props, inputObj, promptContext);
 
 					if (transcriptSessionId) {
-						sessionTranscriptService.logToolExecutionComplete(transcriptSessionId, props.toolCall.id, true);
+						sessionTranscriptService.logToolExecutionComplete(transcriptSessionId, props.toolCall.id, true, undefined, traceContext);
 					}
 				} catch (err) {
 					const errResult = toolCallErrorToResult(err);
@@ -345,7 +351,7 @@ function buildToolResultElement(accessor: ServicesAccessor, props: ToolResultOpt
 						logService.error(`Error from tool ${props.toolCall.name} with args ${props.toolCall.arguments}`, toErrorMessage(err, true));
 					}
 					if (promptContext.conversation?.sessionId) {
-						sessionTranscriptService.logToolExecutionComplete(promptContext.conversation.sessionId, props.toolCall.id, false);
+						sessionTranscriptService.logToolExecutionComplete(promptContext.conversation.sessionId, props.toolCall.id, false, undefined, traceContext);
 					}
 				}
 			}

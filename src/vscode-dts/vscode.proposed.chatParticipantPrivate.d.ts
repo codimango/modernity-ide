@@ -318,6 +318,8 @@ declare module 'vscode' {
 		 * Optional W3C trace context `tracestate` header value paired with `traceparent`.
 		 */
 		tracestate?: string;
+		/** Canonical Modernity correlation carried outside tool arguments. */
+		traceContext?: TraceInvocationContext;
 		/**
 		 * Pre-tool-use hook result, if the hook was already executed by the caller.
 		 * When provided, the tools service will skip executing its own preToolUse hook
@@ -328,6 +330,16 @@ declare module 'vscode' {
 			permissionDecisionReason?: string;
 			updatedInput?: object;
 		};
+	}
+
+	export interface TraceInvocationContext {
+		readonly sessionId: string;
+		readonly turnId: string;
+		readonly modelRequestId?: string;
+		readonly toolCallId?: string;
+		readonly projectId?: string;
+		readonly checkoutId?: string;
+		readonly machineId?: string;
 	}
 
 	export interface LanguageModelToolInvocationPrepareOptions<T> {
