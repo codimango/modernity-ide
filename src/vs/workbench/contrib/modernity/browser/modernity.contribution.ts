@@ -18,8 +18,8 @@ import { IConfigurationService } from '../../../../platform/configuration/common
 registerWorkbenchContribution2(ModernityDaemonStatusBarEntry.ID, ModernityDaemonStatusBarEntry, WorkbenchPhase.AfterRestored);
 registerWorkbenchContribution2(ModernityInferenceStatusBarEntry.ID, ModernityInferenceStatusBarEntry, WorkbenchPhase.AfterRestored);
 
-// Dev toggle - how other CTAs update panels: use layoutService.setPartHidden and setAuxiliaryBarMaximized
-// Per latest instruction.md: simple = locked chat (auxiliaryBar maximized), dev = code viewer, file tree, bonus debug/search/scm, NEVER left_panel/terminal
+// Dev toggle per latest instruction.md: simple = locked chat (aux maximized), dev = code viewer, file tree, bonus debug/search/scm
+// Latest: should not bring back EVERYTHING on left panel (condensed) + terminal. Per user: need left panel but condensed (less features). Only terminal never.
 class ModernityDevToggleContribution extends Action2 {
 	static readonly ID = 'modernity.devToggle.applyMode';
 
@@ -38,21 +38,16 @@ class ModernityDevToggleContribution extends Action2 {
 
 		try {
 			if (!isDev) {
-				// Simple mode: locked chat only - maximize auxiliary bar (chat covers entire screen)
-				// This hides editor (code viewer), sidebar (file tree), panel (terminal)
 				(layoutService as any).setAuxiliaryBarMaximized?.(true);
+				layoutService.setPartHidden(true, Parts.ACTIVITYBAR_PART); // left panel hidden in simple
 			} else {
-				// Developer mode: bring back code viewer (editor), file tree (explorer), plus bonus
 				(layoutService as any).setAuxiliaryBarMaximized?.(false);
-				layoutService.setPartHidden(false, Parts.EDITOR_PART); // code viewer panel
-				layoutService.setPartHidden(false, Parts.SIDEBAR_PART); // file tree panel (explorer)
-				// Bonus per instruction.md 18-23: debugging, search, source control - enable via focusing views
-				// These are accessible via View actions even with activityBar hidden
-				// We ensure sidebar is visible so file tree / search / scm / debug can be shown
-				// Note: keep activityBar (left_panel) and panel (terminal) hidden per NEVER_ALLOWED
+				layoutService.setPartHidden(false, Parts.EDITOR_PART); // code viewer
+				layoutService.setPartHidden(false, Parts.SIDEBAR_PART); // file tree
+				layoutService.setPartHidden(false, Parts.ACTIVITYBAR_PART); // left panel condensed per latest: need left panel but less features
+				// Bonus per latest instruction 18-23: debugging, search, source control
 			}
-			// Always enforce NEVER_ALLOWED: left_panel (activity bar) and terminal (panel)
-			layoutService.setPartHidden(true, Parts.ACTIVITYBAR_PART); // left panel never
+			// Only terminal never allowed per latest should-not
 			layoutService.setPartHidden(true, Parts.PANEL_PART); // terminal never (panel contains terminal)
 		} catch {
 			// ignore layout errors
@@ -86,14 +81,14 @@ class ModernityDevModeListener extends Disposable implements IWorkbenchContribut
 		try {
 			if (!isDev) {
 				(this.layoutService as any).setAuxiliaryBarMaximized?.(true);
+				this.layoutService.setPartHidden(true, Parts.ACTIVITYBAR_PART);
 			} else {
 				(this.layoutService as any).setAuxiliaryBarMaximized?.(false);
-				this.layoutService.setPartHidden(false, Parts.EDITOR_PART);
-				this.layoutService.setPartHidden(false, Parts.SIDEBAR_PART);
-				// Bonus panels are enabled as views in sidebar - keep sidebar visible
+				this.layoutService.setPartHidden(false, Parts.EDITOR_PART); // code viewer
+				this.layoutService.setPartHidden(false, Parts.SIDEBAR_PART); // file tree
+				this.layoutService.setPartHidden(false, Parts.ACTIVITYBAR_PART); // left panel condensed per latest
 			}
-			this.layoutService.setPartHidden(true, Parts.ACTIVITYBAR_PART);
-			this.layoutService.setPartHidden(true, Parts.PANEL_PART);
+			this.layoutService.setPartHidden(true, Parts.PANEL_PART); // only terminal never
 		} catch {
 			// ignore
 		}

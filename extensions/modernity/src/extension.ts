@@ -17,8 +17,9 @@ export const SIMPLE_MODE = 'simple';
 export const DEVELOPER_MODE = 'developer';
 export const SIMPLE_PANELS = ['chat'] as const;
 export const DEV_PANELS = ['chat', 'code_viewer', 'file_tree', 'settings', 'debug', 'search', 'source_control'] as const;
-export const NEVER_ALLOWED = ['left_panel', 'terminal'] as const;
+export const NEVER_ALLOWED = ['terminal'] as const; // per latest: only terminal never, left panel condensed (less features) per user update
 export const BONUS_DEV_FEATURES = ['debug', 'search', 'source_control'] as const;
+export const CONDENSED_LEFT_PANEL = ['file_tree', 'debug', 'search', 'source_control'] as const; // per latest: need left panel but condensed, not everything
 
 export class PanelManager {
 	private _mode: typeof SIMPLE_MODE | typeof DEVELOPER_MODE;
@@ -117,35 +118,31 @@ export function activate(context: vscode.ExtensionContext): void {
 	statusBar.show();
 	context.subscriptions.push(statusBar);
 
-	const applyMode = async (): Promise<void> => {
-		// Modernity simple mode uses layout.ts applyAuxiliaryBarMaximizedOverride()
-		// Other CTAs use workbench.action.maximizeAuxiliaryBar / restoreAuxiliaryBar
-		// Per instruction.md bonus: also reveal debugging, search, source control (no maintenance cost)
-		// Spec NEVER: left_panel (activityBar) and terminal must stay hidden even in dev
+		const applyMode = async (): Promise<void> => {
+		// Per latest instruction.md: should not bring back EVERYTHING on left panel (condensed) and terminal
+		// Per user: need left panel but condensed (less features). Only terminal never.
+		// How other CTAs update panels: layout.ts applyAuxiliaryBarMaximizedOverride hides EDITOR/SIDEBAR/PANEL, maximizes AUXILIARYBAR (simple locked chat)
+		// Dev mode: restoreAuxiliaryBar + setPartHidden false for EDITOR (code viewer) + SIDEBAR (file tree) + show activityBar condensed
 		try {
 			if (panelManager.isSimpleMode()) {
-				// Simple: locked chat only — maximize auxiliary bar (agent panel covers screen)
+				// Simple: locked chat only
 				await vscode.commands.executeCommand('workbench.action.maximizeAuxiliaryBar');
-				await vscode.commands.executeCommand('workbench.view.extension.chat').then(() => {}, () => {});
+				await vscode.commands.executeCommand('workbench.action.activityBar.hide'); // left panel hidden in simple
 			} else {
-				// Developer: restore auxiliary bar — brings back editor (code viewer) + sidebar
+				// Developer: restore - brings back editor (code viewer) and sidebar
 				await vscode.commands.executeCommand('workbench.action.restoreAuxiliaryBar');
-				// File tree panel — explorer view (spec: show a file tree panel)
-				await vscode.commands.executeCommand('workbench.view.explorer').then(() => {}, () => {});
-				// Bonus dev features per instruction.md bonus: debugging, search, source control
-				// These have no maintenance cost impact per spec, so enable in dev mode
-				// We show each briefly to ensure they are created, then return to explorer
+				await vscode.commands.executeCommand('workbench.view.explorer').then(() => {}, () => {}); // file tree panel
+				// Bonus per latest instruction 18-23: debugging, search, source control
 				await vscode.commands.executeCommand('workbench.view.search').then(() => {}, () => {});
 				await vscode.commands.executeCommand('workbench.view.scm').then(() => {}, () => {});
 				await vscode.commands.executeCommand('workbench.view.debug').then(() => {}, () => {});
-				// Settings UI is available via command, not a view — ensure settings are accessible
-				// Return to file tree as primary dev panel
-				await vscode.commands.executeCommand('workbench.view.explorer').then(() => {}, () => {});
-				// Ensure editor (code viewer panel) is visible
+				// Left panel condensed: show activityBar but only with file_tree, debug, search, scm (not everything like extensions)
+				// Per latest: need left panel but condensed (less features)
+				await vscode.commands.executeCommand('workbench.action.activityBar.show');
+				await vscode.commands.executeCommand('workbench.view.explorer').then(() => {}, () => {}); // back to file tree as primary
 				await vscode.commands.executeCommand('workbench.action.focusFirstEditorGroup').then(() => {}, () => {});
 			}
-			// Always enforce NEVER_ALLOWED regardless of mode
-			await vscode.commands.executeCommand('workbench.action.activityBar.hide');
+			// Always enforce terminal never allowed per should-not
 			await vscode.commands.executeCommand('workbench.action.terminal.hide');
 			await vscode.commands.executeCommand('workbench.action.closePanel').then(() => {}, () => {});
 		} catch (err) {
