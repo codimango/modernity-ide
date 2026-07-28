@@ -120,7 +120,7 @@ export function activate(context: vscode.ExtensionContext): void {
 	const applyMode = async (): Promise<void> => {
 		// Modernity simple mode uses layout.ts applyAuxiliaryBarMaximizedOverride()
 		// Other CTAs use workbench.action.maximizeAuxiliaryBar / restoreAuxiliaryBar
-		// Per instruction.md TBD: also reveal debugging, search, source control (no maintenance cost)
+		// Per instruction.md bonus: also reveal debugging, search, source control (no maintenance cost)
 		// Spec NEVER: left_panel (activityBar) and terminal must stay hidden even in dev
 		try {
 			if (panelManager.isSimpleMode()) {
@@ -132,7 +132,7 @@ export function activate(context: vscode.ExtensionContext): void {
 				await vscode.commands.executeCommand('workbench.action.restoreAuxiliaryBar');
 				// File tree panel — explorer view (spec: show a file tree panel)
 				await vscode.commands.executeCommand('workbench.view.explorer').then(() => {}, () => {});
-				// Bonus dev features per instruction.md TBD: debugging, search, source control
+				// Bonus dev features per instruction.md bonus: debugging, search, source control
 				// These have no maintenance cost impact per spec, so enable in dev mode
 				// We show each briefly to ensure they are created, then return to explorer
 				await vscode.commands.executeCommand('workbench.view.search').then(() => {}, () => {});
