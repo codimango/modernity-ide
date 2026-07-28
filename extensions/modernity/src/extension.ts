@@ -117,32 +117,67 @@ export function activate(context: vscode.ExtensionContext): void {
 	statusBar.show();
 	context.subscriptions.push(statusBar);
 
-	const updateUI = (): void => {
+	const applyMode = async (): Promise<void> => {
+		// Modernity simple mode uses layout.ts applyAuxiliaryBarMaximizedOverride() 
+		// which hides editor/sideBar/panel and maximizes auxiliaryBar (chat covers screen)
+		// Other CTAs toggle via workbench.action.maximizeAuxiliaryBar / restoreAuxiliaryBar
+		// Per spec: NEVER left_panel (activityBar) and terminal
+		try {
+			if (panelManager.isSimpleMode()) {
+				await vscode.commands.executeCommand('workbench.action.maximizeAuxiliaryBar');
+			} else {
+				await vscode.commands.executeCommand('workbench.action.restoreAuxiliaryBar');
+				await vscode.commands.executeCommand('workbench.view.explorer').then(() => {}, () => {});
+				// Bonus dev features with no maintenance cost: debug, search, scm
+				// Keep activityBar and terminal hidden per NEVER_ALLOWED
+				await vscode.commands.executeCommand('workbench.action.activityBar.hide');
+				await vscode.commands.executeCommand('workbench.action.terminal.hide');
+			}
+			// Always enforce NEVER_ALLOWED
+			await vscode.commands.executeCommand('workbench.action.activityBar.hide');
+			await vscode.commands.executeCommand('workbench.action.terminal.hide');
+		} catch (err) {
+			output.warn(`Dev toggle applyMode failed: ${err}`);
+		}
+	};
+
+	const updateUI = async (): Promise<void> => {
 		void vscode.commands.executeCommand('setContext', 'modernity.developerMode', panelManager.isDeveloperMode());
 		statusBar.text = panelManager.getToggleLabel();
 		output.info(`Dev toggle: mode=${panelManager.getMode()} visible=${panelManager.getVisiblePanels().join(',')}`);
+		await applyMode();
 	};
 
 	const toggleCommand = vscode.commands.registerCommand('modernity.toggleDeveloperMode', async () => {
 		const newMode = panelManager.toggle();
 		await config.update('developerMode', newMode === DEVELOPER_MODE, vscode.ConfigurationTarget.Global);
-		updateUI();
-		void vscode.window.showInformationMessage(`Modernity: ${newMode === DEVELOPER_MODE ? 'Developer mode enabled - code viewer, file tree, debug, search, scm' : 'Simple mode - locked chat panel only'}. Terminal and left panel never allowed per spec.`);
+		await updateUI();
+		void vscode.window.showInformationMessage(`Modernity: ${newMode === DEVELOPER_MODE ? 'Developer mode enabled - code viewer, file tree, debug, search, scm' : 'Simple mode - locked chat panel only'}. Terminal and left panel never allowed. Visible: ${panelManager.getVisiblePanels().join(', ')}`);
 	});
 
 	const enableCommand = vscode.commands.registerCommand('modernity.enableDeveloperMode', async () => {
 		panelManager.setMode(DEVELOPER_MODE);
 		await config.update('developerMode', true, vscode.ConfigurationTarget.Global);
-		updateUI();
+		await updateUI();
 	});
 
 	const disableCommand = vscode.commands.registerCommand('modernity.disableDeveloperMode', async () => {
 		panelManager.setMode(SIMPLE_MODE);
 		await config.update('developerMode', false, vscode.ConfigurationTarget.Global);
-		updateUI();
+		await updateUI();
 	});
 
 	context.subscriptions.push(toggleCommand, enableCommand, disableCommand);
+
+	context.subscriptions.push(vscode.workspace.onDidChangeConfiguration(e => {
+		if (e.affectsConfiguration('modernity.developerMode')) {
+			const isDev = vscode.workspace.getConfiguration('modernity').get<boolean>('developerMode') ?? false;
+			panelManager.setMode(isDev ? DEVELOPER_MODE : SIMPLE_MODE);
+			void updateUI();
+		}
+	}));
+
+	void applyMode();
 
 	// Expose the sandbox/tooling MCP server (compile / boot / create_sandbox / gametest /
 	// rcon / ...) to the agent, and ensure the sandbox daemon it depends on is running.
