@@ -59,7 +59,7 @@
           "modernity.developerMode": {
             "type": "boolean",
             "default": false,
-            "description": "Enable developer mode: bring back code viewer panel, file tree panel, and bonus dev features (debugging, search, source control). Simple mode is locked chat panel only. Left panel (activity bar) and terminal are never allowed per spec to avoid false positives.",
+            "description": "Enable developer mode per latest instruction: code viewer, file tree, more settings + bonus debug/search/source_control. Simple = locked chat only. Left panel condensed (less features, not everything) per should-not, terminal never.",
             "scope": "application"
           }
         }
