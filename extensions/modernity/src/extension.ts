@@ -118,24 +118,36 @@ export function activate(context: vscode.ExtensionContext): void {
 	context.subscriptions.push(statusBar);
 
 	const applyMode = async (): Promise<void> => {
-		// Modernity simple mode uses layout.ts applyAuxiliaryBarMaximizedOverride() 
-		// which hides editor/sideBar/panel and maximizes auxiliaryBar (chat covers screen)
-		// Other CTAs toggle via workbench.action.maximizeAuxiliaryBar / restoreAuxiliaryBar
-		// Per spec: NEVER left_panel (activityBar) and terminal
+		// Modernity simple mode uses layout.ts applyAuxiliaryBarMaximizedOverride()
+		// Other CTAs use workbench.action.maximizeAuxiliaryBar / restoreAuxiliaryBar
+		// Per instruction.md TBD: also reveal debugging, search, source control (no maintenance cost)
+		// Spec NEVER: left_panel (activityBar) and terminal must stay hidden even in dev
 		try {
 			if (panelManager.isSimpleMode()) {
+				// Simple: locked chat only — maximize auxiliary bar (agent panel covers screen)
 				await vscode.commands.executeCommand('workbench.action.maximizeAuxiliaryBar');
+				await vscode.commands.executeCommand('workbench.view.extension.chat').then(() => {}, () => {});
 			} else {
+				// Developer: restore auxiliary bar — brings back editor (code viewer) + sidebar
 				await vscode.commands.executeCommand('workbench.action.restoreAuxiliaryBar');
+				// File tree panel — explorer view (spec: show a file tree panel)
 				await vscode.commands.executeCommand('workbench.view.explorer').then(() => {}, () => {});
-				// Bonus dev features with no maintenance cost: debug, search, scm
-				// Keep activityBar and terminal hidden per NEVER_ALLOWED
-				await vscode.commands.executeCommand('workbench.action.activityBar.hide');
-				await vscode.commands.executeCommand('workbench.action.terminal.hide');
+				// Bonus dev features per instruction.md TBD: debugging, search, source control
+				// These have no maintenance cost impact per spec, so enable in dev mode
+				// We show each briefly to ensure they are created, then return to explorer
+				await vscode.commands.executeCommand('workbench.view.search').then(() => {}, () => {});
+				await vscode.commands.executeCommand('workbench.view.scm').then(() => {}, () => {});
+				await vscode.commands.executeCommand('workbench.view.debug').then(() => {}, () => {});
+				// Settings UI is available via command, not a view — ensure settings are accessible
+				// Return to file tree as primary dev panel
+				await vscode.commands.executeCommand('workbench.view.explorer').then(() => {}, () => {});
+				// Ensure editor (code viewer panel) is visible
+				await vscode.commands.executeCommand('workbench.action.focusFirstEditorGroup').then(() => {}, () => {});
 			}
-			// Always enforce NEVER_ALLOWED
+			// Always enforce NEVER_ALLOWED regardless of mode
 			await vscode.commands.executeCommand('workbench.action.activityBar.hide');
 			await vscode.commands.executeCommand('workbench.action.terminal.hide');
+			await vscode.commands.executeCommand('workbench.action.closePanel').then(() => {}, () => {});
 		} catch (err) {
 			output.warn(`Dev toggle applyMode failed: ${err}`);
 		}
