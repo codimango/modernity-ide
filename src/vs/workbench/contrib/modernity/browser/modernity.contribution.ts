@@ -14,56 +14,39 @@ import { URI } from '../../../../base/common/uri.js';
 import { IFileService } from '../../../../platform/files/common/files.js';
 import { IWorkbenchLayoutService, Parts } from '../../../services/layout/browser/layoutService.js';
 import { IConfigurationService } from '../../../../platform/configuration/common/configuration.js';
+import { IViewDescriptorService, ViewContainerLocation } from '../../../common/views.js';
+import { ICommandService } from '../../../../platform/commands/common/commands.js';
+import { INotificationService } from '../../../../platform/notification/common/notification.js';
 
 registerWorkbenchContribution2(ModernityDaemonStatusBarEntry.ID, ModernityDaemonStatusBarEntry, WorkbenchPhase.AfterRestored);
 registerWorkbenchContribution2(ModernityInferenceStatusBarEntry.ID, ModernityInferenceStatusBarEntry, WorkbenchPhase.AfterRestored);
 
 // Dev toggle per latest instruction.md: simple = locked chat (aux maximized), dev = code viewer, file tree, bonus debug/search/scm
 // Latest: should not bring back EVERYTHING on left panel (condensed) + terminal. Per user: need left panel but condensed (less features). Only terminal never.
-class ModernityDevToggleContribution extends Action2 {
-	static readonly ID = 'modernity.devToggle.applyMode';
+// How other CTAs update panels: layout.ts applyAuxiliaryBarMaximizedOverride hides EDITOR/SIDEBAR/PANEL, maximizes AUXILIARYBAR (simple locked chat)
+// Dev mode: restore via setPartHidden false for EDITOR (code viewer) + SIDEBAR (file tree) + ACTIVITYBAR (left panel condensed). Only PANEL (terminal) never.
+// Condensed left nav: only file_tree, search, scm, debug — hide extensions, testing, accounts-extra, etc. Enforced via pinnedViewlets storage.
 
-	public constructor() {
-		super({
-			id: ModernityDevToggleContribution.ID,
-			title: { value: 'Modernity: Apply Dev Toggle Mode', original: 'Modernity: Apply Dev Toggle Mode' },
-			f1: false
-		});
-	}
-
-	public override async run(accessor: ServicesAccessor): Promise<void> {
-		const layoutService = accessor.get(IWorkbenchLayoutService);
-		const configService = accessor.get(IConfigurationService);
-		const isDev = configService.getValue<boolean>('modernity.developerMode') ?? false;
-
-		try {
-			if (!isDev) {
-				(layoutService as any).setAuxiliaryBarMaximized?.(true);
-				layoutService.setPartHidden(true, Parts.ACTIVITYBAR_PART); // left panel hidden in simple
-			} else {
-				(layoutService as any).setAuxiliaryBarMaximized?.(false);
-				layoutService.setPartHidden(false, Parts.EDITOR_PART); // code viewer
-				layoutService.setPartHidden(false, Parts.SIDEBAR_PART); // file tree
-				layoutService.setPartHidden(false, Parts.ACTIVITYBAR_PART); // left panel condensed per latest: need left panel but less features
-				// Bonus per latest instruction 18-23: debugging, search, source control
-			}
-			// Only terminal never allowed per latest should-not
-			layoutService.setPartHidden(true, Parts.PANEL_PART); // terminal never (panel contains terminal)
-		} catch {
-			// ignore layout errors
-		}
-	}
-}
-
-// Register a workbench contribution that listens to config changes and applies mode
 import { Disposable } from '../../../../base/common/lifecycle.js';
 import { IWorkbenchContribution } from '../../../common/contributions.js';
+
+// Condensed left panel per instruction: file_tree, debug, search, source_control only (not everything)
+// Maps to VS Code view container IDs - these get icon buttons in left nav when dev toggle flipped
+const CONDENSED_ICON_IDS = [
+	'workbench.view.explorer', // file_tree
+	'workbench.view.search',   // search
+	'workbench.view.scm',      // source_control
+	'workbench.view.debug',    // debug
+] as const;
 
 class ModernityDevModeListener extends Disposable implements IWorkbenchContribution {
 
 	public constructor(
 		@IWorkbenchLayoutService private readonly layoutService: IWorkbenchLayoutService,
-		@IConfigurationService private readonly configurationService: IConfigurationService
+		@IConfigurationService private readonly configurationService: IConfigurationService,
+		@IViewDescriptorService private readonly viewDescriptorService: IViewDescriptorService,
+		@ICommandService private readonly commandService: ICommandService,
+		@INotificationService private readonly notificationService: INotificationService
 	) {
 		super();
 		// Apply initial mode
@@ -82,13 +65,88 @@ class ModernityDevModeListener extends Disposable implements IWorkbenchContribut
 			if (!isDev) {
 				(this.layoutService as any).setAuxiliaryBarMaximized?.(true);
 				this.layoutService.setPartHidden(true, Parts.ACTIVITYBAR_PART);
+				// Restore simple: hide activity bar via location + visible config (PR6 default)
+				try {
+					this.configurationService.updateValue('workbench.activityBar.location', 'hidden');
+					this.configurationService.updateValue('workbench.activityBar.visible', false);
+				} catch { /* ignore */ }
 			} else {
 				(this.layoutService as any).setAuxiliaryBarMaximized?.(false);
+				// Critical: activity bar hidden via workbench.activityBar.location=hidden + visible=false from PR6
+				// ActivityBarPosition enum = default, top, bottom, hidden — must be 'default' to show, not 'side'
+				try {
+					this.configurationService.updateValue('workbench.activityBar.location', 'default');
+					this.configurationService.updateValue('workbench.activityBar.visible', true);
+				} catch { /* ignore */ }
 				this.layoutService.setPartHidden(false, Parts.EDITOR_PART); // code viewer
 				this.layoutService.setPartHidden(false, Parts.SIDEBAR_PART); // file tree
-				this.layoutService.setPartHidden(false, Parts.ACTIVITYBAR_PART); // left panel condensed per latest
+				this.layoutService.setPartHidden(false, Parts.ACTIVITYBAR_PART); // left panel condensed per latest - icon buttons for file_tree, search, scm, debug
+				this.layoutService.setPartHidden(false, Parts.STATUSBAR_PART); // restore status bar for dev
+				this.applyCondensedActivityBar();
+				// Re-apply after a tick to fight layout override that hides again - ensures icon buttons visible
+				setTimeout(() => {
+					try {
+						this.layoutService.setPartHidden(false, Parts.ACTIVITYBAR_PART);
+						this.layoutService.setPartHidden(false, Parts.SIDEBAR_PART);
+						this.layoutService.setPartHidden(false, Parts.EDITOR_PART);
+						this.layoutService.setPartHidden(false, Parts.STATUSBAR_PART);
+						this.configurationService.updateValue('workbench.activityBar.location', 'default');
+						this.configurationService.updateValue('workbench.activityBar.visible', true);
+						if (!this.layoutService.isVisible(Parts.ACTIVITYBAR_PART)) {
+							this.commandService.executeCommand('workbench.action.toggleActivityBarVisibility');
+						}
+						const count = CONDENSED_ICON_IDS.length;
+						const visible = this.layoutService.isVisible(Parts.ACTIVITYBAR_PART);
+						const sidebarAfter = this.viewDescriptorService.getViewContainersByLocation(ViewContainerLocation.Sidebar).map(c => c.id).join(',');
+						this.notificationService.info('Modernity dev mode: condensed left nav count=' + count + ' visible=' + visible + ' sidebar=' + sidebarAfter);
+					} catch { /* ignore */ }
+				}, 150);
+					this.notificationService.info('Modernity dev mode enabled - showing condensed left nav: file_tree, search, source_control, debug + code_viewer');
+				}
+				this.layoutService.setPartHidden(true, Parts.PANEL_PART); // only terminal never
+			} catch {
+				// ignore
 			}
-			this.layoutService.setPartHidden(true, Parts.PANEL_PART); // only terminal never
+		}
+
+	private applyCondensedActivityBar(): void {
+		// Fix for empty bar: previous storage overwrite caused race where PaneCompositeBar
+		// re-pins all containers on registration (if not in cached), then save overwrites condensed.
+		// New approach: don't touch storage at all for pinned, just MOVE view containers.
+		// - Keep condensed in Sidebar => they naturally get icon buttons (explorer, search, scm, debug)
+		// - Move everything else from Sidebar to Panel (panel hidden as terminal never) => they disappear from left nav
+		// This restores icon buttons for panels you wanted without empty bar.
+		try {
+			const sidebarContainers = this.viewDescriptorService.getViewContainersByLocation(ViewContainerLocation.Sidebar);
+			const panelContainers = this.viewDescriptorService.getViewContainersByLocation(ViewContainerLocation.Panel);
+			const auxContainers = this.viewDescriptorService.getViewContainersByLocation(ViewContainerLocation.AuxiliaryBar);
+
+			// 1) Ensure file_tree, search, source_control, debug are in Sidebar for icon buttons
+			for (const id of CONDENSED_ICON_IDS) {
+				const container =
+					sidebarContainers.find(c => c.id === id) ||
+					panelContainers.find(c => c.id === id) ||
+					auxContainers.find(c => c.id === id) ||
+					this.viewDescriptorService.getViewContainerById(id);
+				if (container) {
+					const loc = this.viewDescriptorService.getViewContainerLocation(container);
+					if (loc !== ViewContainerLocation.Sidebar) {
+						try {
+							this.viewDescriptorService.moveViewContainerToLocation(container, ViewContainerLocation.Sidebar, undefined, 'modernity-dev-toggle');
+						} catch { /* ignore */ }
+					}
+				}
+			}
+
+			// 2) Hide everything else from left nav by moving non-condensed away from Sidebar to Panel (hidden)
+			// This is what gives condensed left nav, not everything. Prevents 15 icons screenshot.
+			for (const container of sidebarContainers.slice()) {
+				if (!(CONDENSED_ICON_IDS as readonly string[]).includes(container.id)) {
+					try {
+						this.viewDescriptorService.moveViewContainerToLocation(container, ViewContainerLocation.Panel, undefined, 'modernity-dev-toggle-condense');
+					} catch { /* ignore */ }
+				}
+			}
 		} catch {
 			// ignore
 		}
