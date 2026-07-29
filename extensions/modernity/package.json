@@ -55,13 +55,36 @@
             "description": "Full URL override for models endpoint. If set, takes precedence over gatewayUrl.",
             "default": "",
             "scope": "application"
+          },
+          "modernity.developerMode": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable developer mode per latest instruction: code viewer, file tree, more settings + bonus debug/search/source_control. Simple = locked chat only. Left panel condensed (less features, not everything) per should-not, terminal never.",
+            "scope": "application"
           }
         }
       }
     ],
     "configurationDefaults": {
       "chat.detectParticipant.enabled": true
-    }
+    },
+    "commands": [
+      {
+        "command": "modernity.toggleDeveloperMode",
+        "title": "Toggle Developer Mode",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.enableDeveloperMode",
+        "title": "Enable Developer Mode",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.disableDeveloperMode",
+        "title": "Disable Developer Mode (Simple Mode)",
+        "category": "Modernity"
+      }
+    ]
   },
   "main": "./out/extension",
   "browser": "./dist/browser/extension",

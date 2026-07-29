@@ -228,6 +228,32 @@ export class ModernitySettingsWidget extends Disposable {
 		actionsRow.style.display = 'flex';
 		actionsRow.style.gap = '6px';
 
+		// Dev toggle - UI Button in Modernity Settings - simple (locked chat) vs developer mode
+		// Per spec: simple = only chat, dev = code viewer, file tree, debug, search, scm, NEVER left_panel/terminal
+		const devToggleButton = this._register(new Button(actionsRow, {
+			...defaultButtonStyles,
+			title: localize('modernity.devToggle', "Toggle between simple (locked chat) and developer mode. Dev mode brings back code viewer, file tree, debug, search, source control. Left panel and terminal never allowed per spec."),
+		}));
+		const updateDevToggleLabel = (): void => {
+			const isDev = this.configurationService.getValue<boolean>('modernity.developerMode') ?? false;
+			devToggleButton.label = isDev ? localize('modernity.devToggle.simple', "Switch to Simple Mode") : localize('modernity.devToggle.dev', "Switch to Developer Mode");
+			// Highlight when in dev mode
+			devToggleButton.element.style.background = isDev ? 'var(--vscode-button-background)' : '';
+			devToggleButton.element.dataset['testid'] = 'dev-mode-toggle';
+		};
+		updateDevToggleLabel();
+		this._register(devToggleButton.onDidClick(async () => {
+			const isDev = this.configurationService.getValue<boolean>('modernity.developerMode') ?? false;
+			await this.configurationService.updateValue('modernity.developerMode', !isDev, ConfigurationTarget.USER);
+			updateDevToggleLabel();
+		}));
+		// Update label when config changes externally (e.g., via command palette toggle)
+		this._register(this.configurationService.onDidChangeConfiguration(e => {
+			if (e.affectsConfiguration('modernity.developerMode')) {
+				updateDevToggleLabel();
+			}
+		}));
+
 		// Export / Import JSON buttons
 		const exportButton = this._register(new Button(actionsRow, {
 			...defaultButtonStyles,
