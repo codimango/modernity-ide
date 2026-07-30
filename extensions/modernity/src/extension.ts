@@ -9,10 +9,13 @@ import { ModernityCloudClient } from './platform/project/cloudClient';
 import { ModernityDaemonClient } from './platform/project/daemonClient';
 import { VsCodeGitAdapter } from './platform/project/gitAdapter';
 import { ModernityProjectService } from './platform/project/projectService';
+import { ConversationHistory, createTitlePreview } from './conversationHistory';
 
 // Node-only sandbox tooling is loaded lazily so the browser bundle never runs it.
 let stopSandbox: (() => void) | undefined;
 let projectService: ModernityProjectService | undefined;
+let chatProvider: ModernityLanguageModelProvider | undefined;
+let conversationHistory: ConversationHistory | undefined;
 
 // Dev toggle panel IDE - constants per spec
 // Simple mode = locked chat panel only
@@ -95,7 +98,11 @@ export function getDeveloperModePanels(): string[] {
 }
 
 export function activate(context: vscode.ExtensionContext): void {
-	const provider = new ModernityLanguageModelProvider(context);
+	// Phase 0: Simple Local History - account for previous conversations
+	conversationHistory = new ConversationHistory(context);
+	const lastSessionId = conversationHistory.getLastSessionId();
+	const provider = new ModernityLanguageModelProvider(context, lastSessionId);
+	chatProvider = provider;
 
 	// Register vendor modernity through languageModelChatProviders
 	const registration = vscode.lm.registerLanguageModelChatProvider('modernity', provider);
@@ -103,7 +110,10 @@ export function activate(context: vscode.ExtensionContext): void {
 
 	// Optional: log activation so users know provider is ready
 	const output = vscode.window.createOutputChannel('Modernity', { log: true });
-	output.info(`Modernity model provider activated (session ${ (provider as any)._sessionId ?? 'unknown' })`);
+	output.info(`Modernity model provider activated (session ${provider.sessionId}) - Phase 0 local history: ${conversationHistory!.getConversations().length} conversations, file ${conversationHistory!.getFilePath()}`);
+	if (lastSessionId) {
+		output.info(`Auto-restore lastSessionId=${lastSessionId} for conversation persistence on reopen`);
+	}
 
 	context.subscriptions.push(output);
 
@@ -122,6 +132,14 @@ export function activate(context: vscode.ExtensionContext): void {
 	// Show status bar item as UI button in Modernity Settings area (status bar)
 	statusBar.show();
 	context.subscriptions.push(statusBar);
+
+	// Phase 0: History button in Modernity Settings header (status bar second button) - shows previous conversations
+	const historyStatusBar = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 99);
+	historyStatusBar.text = '$(history) Chat History';
+	historyStatusBar.tooltip = 'View and resume previous conversations (Phase 0 local history)';
+	historyStatusBar.command = 'modernity.openConversationHistory';
+	historyStatusBar.show();
+	context.subscriptions.push(historyStatusBar);
 
 		const applyMode = async (): Promise<void> => {
 		// Per latest instruction.md: should not bring back EVERYTHING on left panel (condensed) and terminal
@@ -182,6 +200,80 @@ export function activate(context: vscode.ExtensionContext): void {
 	});
 
 	context.subscriptions.push(toggleCommand, enableCommand, disableCommand);
+
+	// Phase 0: Conversation History - simple local history + resume
+	const resumeConversation = async (conversationId: string): Promise<void> => {
+		if (!conversationHistory || !chatProvider) { return; }
+		const conv = conversationHistory.getConversation(conversationId);
+		if (!conv) {
+			void vscode.window.showWarningMessage(`Conversation ${conversationId} not found`);
+			return;
+		}
+		chatProvider.setSessionId(conversationId);
+		conversationHistory.setLastSessionId(conversationId);
+		output.info(`Resumed conversation ${conversationId} - title: ${conv.title}, messages: ${conv.messages.length}, file: ${conversationHistory.getFilePath()}`);
+		output.show(true);
+		for (const msg of conv.messages) {
+			output.info(`[${msg.timestamp}] ${msg.role}: ${msg.text.slice(0, 500)}`);
+		}
+		void vscode.window.showInformationMessage(`Resumed: ${conv.title} (${conv.messages.length} messages) - session ${conversationId}`);
+		try { await vscode.commands.executeCommand('workbench.action.chat.open'); } catch { }
+	};
+
+	const openHistoryCommand = vscode.commands.registerCommand('modernity.openConversationHistory', async () => {
+		if (!conversationHistory) { return; }
+		const conversations = conversationHistory.getConversations();
+		if (conversations.length === 0) {
+			void vscode.window.showInformationMessage('No previous conversations found (Phase 0 local history). Send a message first.');
+			return;
+		}
+		type QuickPickItem = vscode.QuickPickItem & { conversationId: string };
+		const items: QuickPickItem[] = conversations.map(conv => ({
+			label: conv.title,
+			description: new Date(conv.lastMessageAt).toLocaleString(),
+			// Use preview 100 chars + count for verification
+			detail: createTitlePreview(conv.messages[conv.messages.length - 1]?.text || conv.title, 100) + ` (${conv.messages.length} msgs) - ${conv.conversationId.slice(0, 8)}`,
+			conversationId: conv.conversationId
+		}));
+		const selected = await vscode.window.showQuickPick(items, {
+			placeHolder: 'Select a conversation to resume (Phase 0 local history - sorted by last_message_at desc)',
+			matchOnDescription: true,
+			matchOnDetail: true
+		});
+		if (selected) {
+			await resumeConversation(selected.conversationId);
+		}
+	});
+
+	const resumeCommand = vscode.commands.registerCommand('modernity.resumeConversation', async (conversationId?: string) => {
+		if (typeof conversationId === 'string' && conversationId) {
+			await resumeConversation(conversationId);
+			return;
+		}
+		await vscode.commands.executeCommand('modernity.openConversationHistory');
+	});
+
+	const newConversationCommand = vscode.commands.registerCommand('modernity.newConversation', async () => {
+		if (!conversationHistory || !chatProvider) { return; }
+		const newId = (globalThis as any).crypto?.randomUUID?.() ?? `${Date.now().toString(16)}-${Math.random().toString(16).slice(2)}`;
+		chatProvider.setSessionId(newId);
+		conversationHistory.setLastSessionId(newId);
+		output.info(`Started new conversation ${newId}`);
+		void vscode.window.showInformationMessage(`Started new conversation ${newId.slice(0, 8)}`);
+		try { await vscode.commands.executeCommand('workbench.action.chat.open'); } catch { }
+	});
+
+	const clearHistoryCommand = vscode.commands.registerCommand('modernity.clearConversationHistory', async () => {
+		if (!conversationHistory) { return; }
+		const confirm = await vscode.window.showWarningMessage('Clear all local conversation history (Phase 0)? This deletes globalState and ~/.modernity/conversations.json', { modal: true }, 'Clear');
+		if (confirm === 'Clear') {
+			await conversationHistory.clear();
+			void vscode.window.showInformationMessage('Conversation history cleared');
+			output.info('Cleared all local conversation history');
+		}
+	});
+
+	context.subscriptions.push(openHistoryCommand, resumeCommand, newConversationCommand, clearHistoryCommand);
 
 	context.subscriptions.push(vscode.workspace.onDidChangeConfiguration(e => {
 		if (e.affectsConfiguration('modernity.developerMode')) {
@@ -325,5 +417,7 @@ export function activate(context: vscode.ExtensionContext): void {
 export function deactivate(): void {
 	try { projectService?.dispose(); } catch {}
 	projectService = undefined;
+	chatProvider = undefined;
+	conversationHistory = undefined;
 	stopSandbox?.();
 }

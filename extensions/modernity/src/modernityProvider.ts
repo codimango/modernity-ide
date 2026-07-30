@@ -4,6 +4,7 @@
  *--------------------------------------------------------------------------------------------*/
 
 import * as vscode from 'vscode';
+import { ConversationHistory } from './conversationHistory';
 
 /*
  * Built-in Modernity language-model provider.
@@ -355,13 +356,18 @@ function mapGatewayError(status: number, body: GatewayErrorBody): never {
 export class ModernityLanguageModelProvider implements vscode.LanguageModelChatProvider {
 	readonly onDidChangeLanguageModelChatInformation?: vscode.Event<void>;
 	private readonly _onDidChange = new vscode.EventEmitter<void>();
-	private readonly _sessionId: string;
+	private _sessionId: string;
 	private _turnCounter: number = 0;
 	private readonly _clientVersion: string;
+	private readonly _history: ConversationHistory;
 
-	constructor(private readonly _context: vscode.ExtensionContext) {
+	constructor(private readonly _context: vscode.ExtensionContext, initialSessionId?: string) {
 		this.onDidChangeLanguageModelChatInformation = this._onDidChange.event;
-		this._sessionId = randomUUID();
+		this._history = new ConversationHistory(_context);
+		let lastId: string | undefined;
+		try { lastId = _context.globalState.get<string>('modernity.lastSessionId'); } catch { }
+		this._sessionId = initialSessionId || lastId || randomUUID();
+		try { void _context.globalState.update('modernity.lastSessionId', this._sessionId); } catch { }
 		const packageJson = _context.extension.packageJSON;
 		this._clientVersion = isRecord(packageJson) && typeof packageJson.version === 'string' ? packageJson.version : '0.0.1';
 
@@ -515,11 +521,31 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 		};
 	}
 
+	public get sessionId(): string { return this._sessionId; }
+	public get history(): ConversationHistory { return this._history; }
+	public setSessionId(newId: string): void {
+		this._sessionId = newId;
+		try { void this._context.globalState.update('modernity.lastSessionId', newId); } catch { }
+	}
+
 	async provideLanguageModelChatResponse(model: vscode.LanguageModelChatInformation, messages: readonly vscode.LanguageModelChatRequestMessage[], options: vscode.ProvideLanguageModelChatResponseOptions, progress: vscode.Progress<vscode.LanguageModelResponsePart>, token: vscode.CancellationToken): Promise<void> {
 		const urls = getEndpointUrls(this._context.extensionMode);
 		const requestId = randomUUID();
 		this._turnCounter += 1;
 		const turnId = `${this._turnCounter}`;
+
+		try {
+			const lastUser = [...messages].reverse().find(m => m.role === vscode.LanguageModelChatMessageRole.User);
+			if (lastUser) {
+				let userText = '';
+				for (const p of lastUser.content ?? []) {
+					if (isTextPart(p)) { userText += p.value; }
+				}
+				if (userText.trim()) {
+					void this._history.addMessage(this._sessionId, 'user', userText);
+				}
+			}
+		} catch { }
 
 		// Convert IDE messages and tools into Chat Completions requests
 		const chatMessages = this._convertMessages(messages);
@@ -698,11 +724,10 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 	}
 
 	private async _parseSSE(response: Response, progress: vscode.Progress<vscode.LanguageModelResponsePart>, token: vscode.CancellationToken): Promise<void> {
-		// Use streaming reader to parse SSE
 		const reader = response.body!.getReader();
-
 		const decoder = new TextDecoder('utf-8');
 		let buffer = '';
+		let fullAssistantText = '';
 		const toolCallsAcc = new Map<number, { id: string; name: string; args: string }>();
 
 		const emitToolCalls = () => {
@@ -779,12 +804,12 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 
 					const delta = choice.delta;
 					if (delta) {
-						// Emit LanguageModelTextPart
 						if (typeof delta.content === 'string' && delta.content.length > 0) {
+							fullAssistantText += delta.content;
 							progress.report(new vscode.LanguageModelTextPart(delta.content));
 						}
-						// Handle refusal as text as well (optional)
 						if (typeof delta.refusal === 'string' && delta.refusal.length > 0) {
+							fullAssistantText += delta.refusal;
 							progress.report(new vscode.LanguageModelTextPart(delta.refusal));
 						}
 						// Parse SSE text and tool-call argument deltas
@@ -829,7 +854,6 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 				emitToolCalls();
 			}
 
-			// Flush any remaining buffer that might contain a final data line without newline
 			if (buffer.trim().startsWith('data:')) {
 				const dataStr = buffer.trim().slice(5).trim();
 				if (dataStr && dataStr !== '[DONE]') {
@@ -837,6 +861,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 						const json = JSON.parse(dataStr) as ChatCompletionsChunk;
 						const choice = json.choices?.[0];
 						if (choice?.delta?.content) {
+							fullAssistantText += choice.delta.content;
 							progress.report(new vscode.LanguageModelTextPart(choice.delta.content));
 						}
 					} catch { }
@@ -844,9 +869,11 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 			}
 
 		} finally {
+			try { await reader.cancel(); reader.releaseLock(); } catch { }
 			try {
-				await reader.cancel();
-				reader.releaseLock();
+				if (fullAssistantText.trim()) {
+					void this._history.addMessage(this._sessionId, 'assistant', fullAssistantText);
+				}
 			} catch { }
 		}
 	}

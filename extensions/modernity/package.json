@@ -150,6 +150,26 @@
         "command": "modernity.machine.manage",
         "title": "Manage Machines",
         "category": "Modernity"
+      },
+      {
+        "command": "modernity.openConversationHistory",
+        "title": "Open Chat History (Phase 0 - Local)",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.resumeConversation",
+        "title": "Resume Conversation",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.newConversation",
+        "title": "New Conversation",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.clearConversationHistory",
+        "title": "Clear Chat History (Local)",
+        "category": "Modernity"
       }
     ],
     "viewsContainers": {
