@@ -46,6 +46,7 @@ export const AICustomizationManagementSection = {
 	Models: 'models',
 	Tools: 'tools',
 	Modernity: 'modernity',
+	Account: 'account',
 } as const;
 
 export type AICustomizationManagementSection = typeof AICustomizationManagementSection[keyof typeof AICustomizationManagementSection];

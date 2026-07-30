@@ -59,6 +59,7 @@ import './services/mcp/electron-browser/mcpWorkbenchManagementService.js';
 import './services/encryption/electron-browser/encryptionService.js';
 import './services/imageResize/electron-browser/imageResizeService.js';
 import './services/secrets/electron-browser/secretStorageService.js';
+import '../platform/modernityAuth/electron-browser/modernityAuthService.js';
 import './services/localization/electron-browser/languagePackService.js';
 import './services/telemetry/electron-browser/telemetryService.js';
 import './services/extensions/electron-browser/extensionHostStarter.js';
@@ -111,6 +112,9 @@ registerSingleton(IUserDataInitializationService, new SyncDescriptor(UserDataIni
 
 // Logs
 import './contrib/logs/electron-browser/logs.contribution.js';
+
+// Modernity authentication
+import './contrib/modernity/electron-browser/modernityAuth.contribution.js';
 
 // Localizations
 import './contrib/localization/electron-browser/localization.contribution.js';

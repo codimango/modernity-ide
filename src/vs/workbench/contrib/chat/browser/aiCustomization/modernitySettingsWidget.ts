@@ -7,6 +7,7 @@ import './media/aiCustomizationManagement.css';
 import * as DOM from '../../../../../base/browser/dom.js';
 import { Disposable, DisposableStore } from '../../../../../base/common/lifecycle.js';
 import { Emitter } from '../../../../../base/common/event.js';
+import { getErrorMessage } from '../../../../../base/common/errors.js';
 import { localize } from '../../../../../nls.js';
 import { IConfigurationService, ConfigurationTarget } from '../../../../../platform/configuration/common/configuration.js';
 import { ISecretStorageService } from '../../../../../platform/secrets/common/secrets.js';
@@ -21,6 +22,8 @@ import { ThemeIcon } from '../../../../../base/common/themables.js';
 import { INotificationService } from '../../../../../platform/notification/common/notification.js';
 import { IFileService } from '../../../../../platform/files/common/files.js';
 import { VSBuffer } from '../../../../../base/common/buffer.js';
+import { IModernityAuthService, IModernityGithubInstallation, ModernityAuthState } from '../../../../../platform/modernityAuth/common/modernityAuth.js';
+import { IOpenerService } from '../../../../../platform/opener/common/opener.js';
 
 const $ = DOM.$;
 
@@ -40,9 +43,10 @@ export interface IModernitySettingDefinition {
 	readonly isSecret?: boolean;
 }
 
-export type ModernitySettingCategory = 'secrets' | 'projects' | 'textures' | 'java' | 'general';
+export type ModernitySettingCategory = 'account' | 'secrets' | 'projects' | 'textures' | 'java' | 'general';
 
 export const ModernitySettingCategoryLabels: Record<ModernitySettingCategory, string> = {
+	account: localize('modernity.category.account', "Account"),
 	secrets: localize('modernity.category.secrets', "Keys & Secrets"),
 	projects: localize('modernity.category.projects', "Projects"),
 	textures: localize('modernity.category.textures', "Generated Textures"),
@@ -51,6 +55,7 @@ export const ModernitySettingCategoryLabels: Record<ModernitySettingCategory, st
 };
 
 export const ModernitySettingCategoryDescriptions: Record<ModernitySettingCategory, string> = {
+	account: localize('modernity.category.account.desc', "Manage your Modernity identity and GitHub connection."),
 	secrets: localize('modernity.category.secrets.desc', "Manage API keys and secrets. Generic list starting with Meta API Key. Stored securely via OS keychain."),
 	projects: localize('modernity.category.projects.desc', "Configure where compiled and uncompiled mod artifacts are stored. Workspace-level. 3 paths: uncompiled, jar, template."),
 	textures: localize('modernity.category.textures.desc', "Single path for generated textures. Workspace-level."),
@@ -143,6 +148,13 @@ export const MODERNITY_SETTING_DEFINITIONS: IModernitySettingDefinition[] = [
 export const CUSTOM_SECRETS_CONFIG_KEY = 'modernity.secrets.customKeys';
 const MASKED_SECRET_VALUE = '••••••••••••••••';
 
+interface IModernityDevConfiguration {
+	readonly secrets?: Readonly<Record<string, string>>;
+}
+
+function isStringKeyedObject(value: unknown): value is Record<string, unknown> {
+	return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
 
 type SettingInput = {
 	definition: IModernitySettingDefinition;
@@ -176,19 +188,27 @@ export class ModernitySettingsWidget extends Disposable {
 	private readonly contentContainer: HTMLElement;
 	private readonly settingsById = new Map<string, SettingInput>();
 	private readonly customSecrets = new Map<string, CustomSecretEntry>();
+	private readonly categorySections: HTMLElement[] = [];
 	private customSecretsListContainer: HTMLElement | undefined;
 	private readonly searchInputContainer: HTMLElement | undefined;
 	private searchInputBox: InputBox | undefined;
+	private accountContainer: HTMLElement | undefined;
+	private accountPrimaryAction: HTMLElement | undefined;
+	private accountRenderVersion = 0;
 
 	private readonly settingDisposables = this._register(new DisposableStore());
+	private readonly accountDisposables = this._register(new DisposableStore());
 
 	constructor(
+		private readonly mode: 'settings' | 'account',
 		@IConfigurationService private readonly configurationService: IConfigurationService,
 		@ISecretStorageService private readonly secretStorageService: ISecretStorageService,
 		@IFileDialogService private readonly fileDialogService: IFileDialogService,
 		@IContextViewService private readonly contextViewService: IContextViewService,
 		@INotificationService private readonly notificationService: INotificationService,
 		@IFileService private readonly fileService: IFileService,
+		@IOpenerService private readonly openerService: IOpenerService,
+		@IModernityAuthService private readonly authService: IModernityAuthService,
 	) {
 		super();
 
@@ -220,29 +240,33 @@ export class ModernitySettingsWidget extends Disposable {
 		title.style.gap = '6px';
 
 		const titleIcon = DOM.append(title, $('span')) as HTMLElement;
-		titleIcon.className = ThemeIcon.asClassName(Codicon.package);
+		titleIcon.className = ThemeIcon.asClassName(this.mode === 'account' ? Codicon.account : Codicon.package);
 		titleIcon.style.fontSize = '14px';
-		DOM.append(title, document.createTextNode(localize('modernity.title', "Modernity Dev Settings")));
+		DOM.append(title, document.createTextNode(this.mode === 'account'
+			? localize('modernity.account.title', "Account")
+			: localize('modernity.title', "Modernity Dev Settings")));
 
 		const actionsRow = DOM.append(titleRow, $('.modernity-settings-actions'));
 		actionsRow.style.display = 'flex';
 		actionsRow.style.gap = '6px';
 
 		// Export / Import JSON buttons
-		const exportButton = this._register(new Button(actionsRow, {
-			...defaultButtonStyles,
-			title: localize('modernity.export', "Export settings as JSON"),
-		}));
-		exportButton.label = localize('modernity.export.label', "Export JSON");
-		this._register(exportButton.onDidClick(() => this.exportAsJson()));
+		if (this.mode === 'settings') {
+			const exportButton = this._register(new Button(actionsRow, {
+				...defaultButtonStyles,
+				title: localize('modernity.export', "Export settings as JSON"),
+			}));
+			exportButton.label = localize('modernity.export.label', "Export JSON");
+			this._register(exportButton.onDidClick(() => this.exportAsJson()));
 
-		const importButton = this._register(new Button(actionsRow, {
-			...defaultButtonStyles,
-			secondary: true,
-			title: localize('modernity.import', "Import settings from JSON"),
-		}));
-		importButton.label = localize('modernity.import.label', "Import");
-		this._register(importButton.onDidClick(() => this.importFromJson()));
+			const importButton = this._register(new Button(actionsRow, {
+				...defaultButtonStyles,
+				secondary: true,
+				title: localize('modernity.import', "Import settings from JSON"),
+			}));
+			importButton.label = localize('modernity.import.label', "Import");
+			this._register(importButton.onDidClick(() => this.importFromJson()));
+		}
 
 		// Search
 		const searchRow = DOM.append(this.headerContainer, $('.modernity-settings-search-row'));
@@ -252,6 +276,7 @@ export class ModernitySettingsWidget extends Disposable {
 
 		this.searchInputContainer = DOM.append(searchRow, $('.modernity-search-container'));
 		this.searchInputContainer.style.flex = '1';
+		searchRow.style.display = this.mode === 'settings' ? 'flex' : 'none';
 
 		// Scrollable content
 		this.scrollContainer = DOM.append(this.element, $('.modernity-settings-scroll'));
@@ -267,6 +292,10 @@ export class ModernitySettingsWidget extends Disposable {
 
 		this.createSearchBox();
 		this.renderSettings();
+		if (this.mode === 'account') {
+			this._register(this.authService.onDidChangeState(state => this.renderAccountState(state)));
+			void this.authService.getState().then(state => this.renderAccountState(state));
+		}
 
 		// Listen to configuration changes
 		this._register(this.configurationService.onDidChangeConfiguration(e => {
@@ -275,7 +304,7 @@ export class ModernitySettingsWidget extends Disposable {
 			}
 		}));
 
-		this._onDidChangeItemCount.fire(MODERNITY_SETTING_DEFINITIONS.length);
+		this._onDidChangeItemCount.fire(this.mode === 'settings' ? MODERNITY_SETTING_DEFINITIONS.length : 0);
 	}
 
 	private createSearchBox(): void {
@@ -297,6 +326,10 @@ export class ModernitySettingsWidget extends Disposable {
 		this.searchInputBox?.focus();
 	}
 
+	focusAccount(): void {
+		this.accountPrimaryAction?.focus();
+	}
+
 	private filterSettings(query: string): void {
 		const lower = query.toLowerCase().trim();
 		if (!lower) {
@@ -308,14 +341,17 @@ export class ModernitySettingsWidget extends Disposable {
 				entry.container.style.display = '';
 			}
 			// Show all category sections
-			for (const section of this.contentContainer.querySelectorAll('.modernity-settings-category')) {
-				(section as HTMLElement).style.display = '';
+			for (const section of this.categorySections) {
+				section.style.display = '';
 			}
 			return;
 		}
 
 		// Group visibility tracking
 		const categoryVisibility = new Map<string, boolean>();
+		if ('account github sync profile name email logout'.includes(lower)) {
+			categoryVisibility.set('account', true);
+		}
 
 		for (const [, entry] of this.settingsById) {
 			const def = entry.definition;
@@ -336,11 +372,11 @@ export class ModernitySettingsWidget extends Disposable {
 			}
 		}
 
-		for (const section of this.contentContainer.querySelectorAll('.modernity-settings-category')) {
-			const cat = (section as HTMLElement).dataset['category'];
+		for (const section of this.categorySections) {
+			const cat = section.dataset['category'];
 			if (!cat) { continue; }
 			const hasVisible = categoryVisibility.get(cat as ModernitySettingCategory);
-			(section as HTMLElement).style.display = hasVisible ? '' : 'none';
+			section.style.display = hasVisible ? '' : 'none';
 		}
 	}
 
@@ -354,14 +390,18 @@ export class ModernitySettingsWidget extends Disposable {
 			byCategory.get(def.category)!.push(def);
 		}
 
-		const orderedCategories: ModernitySettingCategory[] = ['secrets', 'projects', 'textures', 'java', 'general'];
+		const orderedCategories: ModernitySettingCategory[] = this.mode === 'account'
+			? ['account']
+			: ['secrets', 'projects', 'textures', 'java', 'general'];
 
 		for (const category of orderedCategories) {
-			const defs = byCategory.get(category);
-			if (!defs || defs.length === 0) { continue; }
+			const defs = byCategory.get(category) ?? [];
+			if (category !== 'account' && defs.length === 0) { continue; }
 
 			const categorySection = DOM.append(this.contentContainer, $('.modernity-settings-category'));
+			this.categorySections.push(categorySection);
 			categorySection.dataset['category'] = category;
+			categorySection.classList.toggle('modernity-account-root', category === 'account');
 			categorySection.style.display = 'flex';
 			categorySection.style.flexDirection = 'column';
 			categorySection.style.gap = '8px';
@@ -375,6 +415,7 @@ export class ModernitySettingsWidget extends Disposable {
 			categoryHeader.style.flexDirection = 'column';
 			categoryHeader.style.gap = '2px';
 			categoryHeader.style.marginBottom = '4px';
+			categoryHeader.style.display = category === 'account' ? 'none' : 'flex';
 
 			const categoryTitle = DOM.append(categoryHeader, $('h3.modernity-category-title'));
 			categoryTitle.style.margin = '0';
@@ -393,6 +434,11 @@ export class ModernitySettingsWidget extends Disposable {
 			settingsList.style.display = 'flex';
 			settingsList.style.flexDirection = 'column';
 			settingsList.style.gap = '12px';
+
+			if (category === 'account') {
+				this.accountContainer = DOM.append(settingsList, $('.modernity-account'));
+				continue;
+			}
 
 			for (const def of defs) {
 				const entry = this.createSettingRow(settingsList, def);
@@ -436,19 +482,232 @@ export class ModernitySettingsWidget extends Disposable {
 			}
 		}
 
-		// Footer with help text
-		const footer = DOM.append(this.contentContainer, $('.modernity-settings-footer'));
-		footer.style.marginTop = '8px';
-		footer.style.padding = '8px';
-		footer.style.fontSize = '11px';
-		footer.style.opacity = '0.7';
-		footer.style.borderTop = '1px solid var(--vscode-widget-border)';
+		if (this.mode === 'settings') {
+			const footer = DOM.append(this.contentContainer, $('.modernity-settings-footer'));
+			footer.style.marginTop = '8px';
+			footer.style.padding = '8px';
+			footer.style.fontSize = '11px';
+			footer.style.opacity = '0.7';
+			footer.style.borderTop = '1px solid var(--vscode-widget-border)';
 
-		const footerText = DOM.append(footer, $('span'));
-		footerText.textContent = localize('modernity.footer', "Settings stored in settings.json (workspace for paths) + OS keychain for secrets. Generic secrets start with Meta API Key. Use + Add Secret for any custom key. Export saves all as JSON. Extend via MODERNITY_SETTING_DEFINITIONS.");
+			const footerText = DOM.append(footer, $('span'));
+			footerText.textContent = localize('modernity.footer', "Settings stored in settings.json (workspace for paths) + OS keychain for secrets. Generic secrets start with Meta API Key. Use + Add Secret for any custom key. Export saves all as JSON. Extend via MODERNITY_SETTING_DEFINITIONS.");
+			void this.refreshFromConfiguration();
+		}
+	}
 
-		// Load current values async
-		void this.refreshFromConfiguration();
+	private renderAccountState(state: ModernityAuthState): void {
+		if (!this.accountContainer) {
+			return;
+		}
+		this.accountDisposables.clear();
+		DOM.clearNode(this.accountContainer);
+		const renderVersion = ++this.accountRenderVersion;
+
+		if (state.status !== 'signedIn') {
+			const status = DOM.append(this.accountContainer, $('.modernity-account-empty'));
+			status.textContent = state.status === 'loading'
+				? localize('modernity.account.loading', "Loading account...")
+				: localize('modernity.account.signedOut', "Not signed in to Modernity.");
+			return;
+		}
+
+		const profile = DOM.append(this.accountContainer, $('.modernity-account-profile'));
+		if (state.user.avatarUrl) {
+			const avatar = DOM.append(profile, $('img.modernity-account-avatar')) as HTMLImageElement;
+			avatar.src = state.user.avatarUrl;
+			avatar.alt = '';
+		} else {
+			const avatar = DOM.append(profile, $('span.modernity-account-avatar.modernity-account-avatar-fallback'));
+			avatar.classList.add(...ThemeIcon.asClassNameArray(Codicon.github));
+			avatar.setAttribute('aria-hidden', 'true');
+		}
+
+		const identity = DOM.append(profile, $('.modernity-account-identity'));
+		const kicker = DOM.append(identity, $('.modernity-account-kicker'));
+		kicker.textContent = localize('modernity.account.yourProfile', "Your Profile");
+		const name = DOM.append(identity, $('.modernity-account-name'));
+		name.textContent = state.user.displayName ?? state.user.login;
+		const login = DOM.append(identity, $('.modernity-account-login'));
+		login.textContent = `@${state.user.login}`;
+
+		const logoutButton = this.accountDisposables.add(new Button(profile, {
+			...defaultButtonStyles,
+			secondary: true,
+			supportIcons: true,
+			title: localize('modernity.account.logoutTitle', "Sign out of Modernity on this device"),
+		}));
+		logoutButton.label = `$(sign-out) ${localize('modernity.account.logout', "Sign Out")}`;
+		logoutButton.element.classList.add('modernity-account-logout');
+		this.accountPrimaryAction = logoutButton.element;
+		this.accountDisposables.add(logoutButton.onDidClick(async () => {
+			logoutButton.enabled = false;
+			try {
+				await this.authService.logout();
+			} catch {
+				logoutButton.enabled = true;
+				this.notificationService.error(localize('modernity.account.logoutFailed', "Modernity could not complete logout."));
+			}
+		}));
+
+		const identityDetails = this.createAccountSection(
+			Codicon.github,
+			localize('modernity.account.githubIdentity', "GitHub Identity"),
+			localize('modernity.account.githubIdentityDescription', "Account used to sign in to Modernity."),
+		);
+		this.createAccountDetail(identityDetails, localize('modernity.account.username', "Username"), state.user.login);
+		this.createAccountDetail(identityDetails, localize('modernity.account.email', "Email"), state.user.email ?? localize('modernity.account.privateEmail', "Private on GitHub"));
+		this.createAccountDetail(identityDetails, localize('modernity.account.githubId', "GitHub ID"), state.user.githubUserId);
+		this.createAccountDetail(identityDetails, localize('modernity.account.status', "Status"), localize('modernity.account.verified', "Verified"), Codicon.verified);
+
+		const repositoryAccess = this.createAccountSection(
+			Codicon.repo,
+			localize('modernity.account.repositoryAccess', "Repository Access"),
+			localize('modernity.account.repositoryAccessDescription', "Access granted through the Modernity GitHub App."),
+		);
+		void this.renderRepositoryAccess(repositoryAccess, state, renderVersion);
+
+		const sessionDetails = this.createAccountSection(
+			Codicon.deviceDesktop,
+			localize('modernity.account.currentSession', "Current Session"),
+			localize('modernity.account.currentSessionDescription', "This IDE session is backed by a rotating refresh credential."),
+		);
+		this.createAccountDetail(sessionDetails, localize('modernity.account.client', "Client"), state.session.client);
+		this.createAccountDetail(sessionDetails, localize('modernity.account.created', "Created"), this.formatAccountDate(state.session.createdAt));
+		this.createAccountDetail(sessionDetails, localize('modernity.account.accessRenews', "Access renews by"), this.formatAccountDate(state.accessExpiresAt));
+		this.createAccountDetail(sessionDetails, localize('modernity.account.sessionExpires', "Session expires"), this.formatAccountDate(state.session.expiresAt), Codicon.clock);
+	}
+
+	private createAccountSection(icon: ThemeIcon, title: string, description: string): HTMLElement {
+		if (!this.accountContainer) {
+			throw new Error('Account container not initialized');
+		}
+		const section = DOM.append(this.accountContainer, $('.modernity-account-section'));
+		const heading = DOM.append(section, $('.modernity-account-section-heading'));
+		const iconElement = DOM.append(heading, $('span'));
+		iconElement.classList.add(...ThemeIcon.asClassNameArray(icon));
+		iconElement.setAttribute('aria-hidden', 'true');
+		const headingText = DOM.append(heading, $('.modernity-account-section-heading-text'));
+		DOM.append(headingText, $('h4')).textContent = title;
+		DOM.append(headingText, $('p')).textContent = description;
+		return DOM.append(section, $('.modernity-account-details'));
+	}
+
+	private createAccountDetail(container: HTMLElement, label: string, value: string, icon?: ThemeIcon): void {
+		const row = DOM.append(container, $('.modernity-account-detail'));
+		DOM.append(row, $('span.modernity-account-detail-label')).textContent = label;
+		const valueElement = DOM.append(row, $('span.modernity-account-detail-value'));
+		if (icon) {
+			const iconElement = DOM.append(valueElement, $('span'));
+			iconElement.classList.add(...ThemeIcon.asClassNameArray(icon));
+			iconElement.setAttribute('aria-hidden', 'true');
+		}
+		DOM.append(valueElement, $('span')).textContent = value;
+	}
+
+	private async renderRepositoryAccess(container: HTMLElement, state: Extract<ModernityAuthState, { status: 'signedIn' }>, renderVersion: number): Promise<void> {
+		DOM.append(container, $('.modernity-account-loading')).textContent = localize('modernity.account.loadingRepositories', "Loading...");
+		try {
+			const page = await this.authService.getGithubInstallations();
+			if (renderVersion !== this.accountRenderVersion || !container.isConnected) {
+				return;
+			}
+			DOM.clearNode(container);
+			const installation = page.items.find(item => item.isDefault)
+				?? page.items.find(item => item.status === 'active')
+				?? page.items[0];
+			if (!installation) {
+				this.renderDisconnectedRepositoryAccess(container, state);
+				return;
+			}
+			this.renderConnectedRepositoryAccess(container, state, installation);
+		} catch {
+			if (renderVersion !== this.accountRenderVersion || !container.isConnected) {
+				return;
+			}
+			DOM.clearNode(container);
+			const error = DOM.append(container, $('.modernity-account-repository-error'));
+			error.setAttribute('role', 'alert');
+			error.textContent = localize('modernity.account.repositoryLoadFailed', "Repository access could not be loaded.");
+			const retry = this.accountDisposables.add(new Button(container, { ...defaultButtonStyles, secondary: true }));
+			retry.label = localize('modernity.account.tryAgain', "Try Again");
+			this.accountDisposables.add(retry.onDidClick(() => this.renderAccountState(state)));
+		}
+	}
+
+	private renderDisconnectedRepositoryAccess(container: HTMLElement, state: Extract<ModernityAuthState, { status: 'signedIn' }>): void {
+		const empty = DOM.append(container, $('.modernity-account-repository-empty'));
+		DOM.append(empty, $('strong')).textContent = localize('modernity.account.notConnected', "Not Connected");
+		DOM.append(empty, $('span')).textContent = localize('modernity.account.noInstallation', "No GitHub App installation is linked to this account.");
+		const connect = this.accountDisposables.add(new Button(container, { ...defaultButtonStyles, supportIcons: true }));
+		connect.label = `$(link-external) ${localize('modernity.account.connectRepositories', "Connect Repositories")}`;
+		this.accountDisposables.add(connect.onDidClick(async () => {
+			connect.enabled = false;
+			try {
+				const started = await this.authService.startGithubInstallation();
+				await this.openerService.open(URI.parse(started.authorizationUrl), { openExternal: true });
+			} catch {
+				connect.enabled = true;
+				this.notificationService.error(localize('modernity.account.connectFailed', "Modernity could not open GitHub repository access."));
+				this.renderAccountState(state);
+			}
+		}));
+	}
+
+	private renderConnectedRepositoryAccess(container: HTMLElement, state: Extract<ModernityAuthState, { status: 'signedIn' }>, installation: IModernityGithubInstallation): void {
+		this.createAccountDetail(container, localize('modernity.account.repositoryAccount', "Account"), installation.accountLogin);
+		this.createAccountDetail(
+			container,
+			localize('modernity.account.repositoryScope', "Repository Scope"),
+			installation.repositorySelection === 'all'
+				? localize('modernity.account.allRepositories', "All Repositories")
+				: localize('modernity.account.selectedRepositories', "Selected Repositories"),
+		);
+		this.createAccountDetail(
+			container,
+			localize('modernity.account.permissions', "Permissions"),
+			Object.entries(installation.permissions).map(([name, level]) => `${name}: ${level}`).join(', '),
+		);
+		this.createAccountDetail(container, localize('modernity.account.status', "Status"), this.installationStatusLabel(installation.status), this.installationStatusIcon(installation.status));
+
+		const actions = DOM.append(container, $('.modernity-account-repository-actions'));
+		const manage = this.accountDisposables.add(new Button(actions, { ...defaultButtonStyles, secondary: true, supportIcons: true }));
+		manage.label = `$(link-external) ${localize('modernity.account.manageGithub', "Manage on GitHub")}`;
+		this.accountDisposables.add(manage.onDidClick(() => this.openerService.open(
+			URI.parse(`https://github.com/settings/installations/${installation.githubInstallationId}`),
+			{ openExternal: true },
+		)));
+
+		const refresh = this.accountDisposables.add(new Button(actions, { ...defaultButtonStyles, secondary: true, supportIcons: true }));
+		refresh.label = `$(refresh) ${localize('modernity.account.refreshStatus', "Refresh Status")}`;
+		this.accountDisposables.add(refresh.onDidClick(async () => {
+			refresh.enabled = false;
+			try {
+				await this.authService.refreshGithubInstallation(installation.id, installation.version);
+				this.renderAccountState(state);
+			} catch {
+				refresh.enabled = true;
+				this.notificationService.error(localize('modernity.account.refreshFailed', "Repository status could not be refreshed."));
+			}
+		}));
+	}
+
+	private installationStatusLabel(status: IModernityGithubInstallation['status']): string {
+		switch (status) {
+			case 'active': return localize('modernity.account.statusActive', "Active");
+			case 'permission_missing': return localize('modernity.account.statusMissingPermissions', "Missing Permissions");
+			case 'suspended': return localize('modernity.account.statusSuspended', "Suspended");
+			case 'revoked': return localize('modernity.account.statusDisconnected', "Disconnected");
+		}
+	}
+
+	private installationStatusIcon(status: IModernityGithubInstallation['status']): ThemeIcon {
+		return status === 'active' ? Codicon.check : status === 'permission_missing' ? Codicon.warning : Codicon.error;
+	}
+
+	private formatAccountDate(value: string): string {
+		const date = new Date(value);
+		return Number.isNaN(date.getTime()) ? localize('modernity.account.unavailable', "Unavailable") : date.toLocaleString();
 	}
 
 	private async loadCustomSecrets(): Promise<void> {
@@ -812,7 +1071,7 @@ export class ModernitySettingsWidget extends Disposable {
 					let realVal = stored ?? '';
 					if (!realVal) {
 						try {
-							const devConfig = this.configurationService.getValue<any>('modernity.dev') as any;
+							const devConfig = this.configurationService.getValue<IModernityDevConfiguration>('modernity.dev');
 							const devSecrets = devConfig?.secrets ?? {};
 							const fallbackFromDevSecrets = devSecrets['MODEL_API_KEY'] ?? devSecrets['model_api_key'] ?? devSecrets['LLM_API_KEY'] ?? devSecrets['META_API_KEY'] ?? '';
 							const customKeys = this.configurationService.getValue<string[]>('modernity.secrets.customKeys') || [];
@@ -886,14 +1145,14 @@ export class ModernitySettingsWidget extends Disposable {
 					await this.configurationService.updateValue(def.id, undefined, target);
 				}
 			}
-		} catch (err: any) {
-			this.notificationService.error(localize('modernity.save.error', "Failed to save {0}: {1}", def.label, err?.message ?? String(err)));
+		} catch (err) {
+			this.notificationService.error(localize('modernity.save.error', "Failed to save {0}: {1}", def.label, getErrorMessage(err)));
 		}
 	}
 
 	private async exportAsJson(): Promise<void> {
 		try {
-			const exportData: Record<string, string> = {};
+			const exportData: Record<string, string | string[]> = {};
 			for (const [id, entry] of this.settingsById) {
 				const def = entry.definition;
 				if (def.isSecret) {
@@ -919,7 +1178,7 @@ export class ModernitySettingsWidget extends Disposable {
 			// Include custom keys list
 			const customKeys = this.configurationService.getValue<string[]>(CUSTOM_SECRETS_CONFIG_KEY) || [];
 			if (customKeys.length > 0) {
-				(exportData as any)[CUSTOM_SECRETS_CONFIG_KEY] = customKeys;
+				exportData[CUSTOM_SECRETS_CONFIG_KEY] = customKeys;
 			}
 
 			const jsonStr = JSON.stringify(exportData, null, 2);
@@ -935,8 +1194,8 @@ export class ModernitySettingsWidget extends Disposable {
 				await this.fileService.writeFile(result, VSBuffer.fromString(jsonStr));
 				this.notificationService.info(localize('modernity.export.success', "Modernity settings exported to {0}", result.fsPath));
 			}
-		} catch (err: any) {
-			this.notificationService.error(localize('modernity.export.error', "Failed to export settings: {0}", err?.message ?? String(err)));
+		} catch (err) {
+			this.notificationService.error(localize('modernity.export.error', "Failed to export settings: {0}", getErrorMessage(err)));
 		}
 	}
 
@@ -957,15 +1216,16 @@ export class ModernitySettingsWidget extends Disposable {
 			const fileUri = result[0];
 			const content = await this.fileService.readFile(fileUri);
 			const jsonStr = content.value.toString();
-			const data = JSON.parse(jsonStr) as Record<string, any>;
+			const parsed: unknown = JSON.parse(jsonStr);
 
-			if (typeof data !== 'object' || Array.isArray(data)) {
+			if (!isStringKeyedObject(parsed)) {
 				throw new Error('Invalid JSON format - expected object');
 			}
+			const data = parsed;
 
 			let imported = 0;
 			for (const [key, value] of Object.entries(data)) {
-				if (key === CUSTOM_SECRETS_CONFIG_KEY && Array.isArray(value)) {
+				if (key === CUSTOM_SECRETS_CONFIG_KEY && Array.isArray(value) && value.every(item => typeof item === 'string')) {
 					await this.configurationService.updateValue(key, value, ConfigurationTarget.USER);
 					continue;
 				}
@@ -1004,8 +1264,8 @@ export class ModernitySettingsWidget extends Disposable {
 			// Reload custom secrets list
 			await this.loadCustomSecrets();
 
-		} catch (err: any) {
-			this.notificationService.error(localize('modernity.import.error', "Failed to import settings: {0}", err?.message ?? String(err)));
+		} catch (err) {
+			this.notificationService.error(localize('modernity.import.error', "Failed to import settings: {0}", getErrorMessage(err)));
 		}
 	}
 
@@ -1019,7 +1279,7 @@ export class ModernitySettingsWidget extends Disposable {
 	}
 
 	public fireItemCount(): void {
-		this._onDidChangeItemCount.fire(MODERNITY_SETTING_DEFINITIONS.length + this.customSecrets.size);
+		this._onDidChangeItemCount.fire(this.mode === 'settings' ? MODERNITY_SETTING_DEFINITIONS.length + this.customSecrets.size : 0);
 	}
 
 	public revealLastItem(): void {

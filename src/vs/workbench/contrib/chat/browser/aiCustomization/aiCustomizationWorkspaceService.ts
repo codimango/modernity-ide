@@ -56,6 +56,7 @@ class AICustomizationWorkspaceService implements IAICustomizationWorkspaceServic
 		AICustomizationManagementSection.Plugins,
 		AICustomizationManagementSection.Tools,
 		AICustomizationManagementSection.Modernity,
+		AICustomizationManagementSection.Account,
 	];
 
 	readonly isSessionsWindow = false;

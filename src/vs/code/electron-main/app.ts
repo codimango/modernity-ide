@@ -69,6 +69,8 @@ import { METERED_CONNECTION_CHANNEL } from '../../platform/meteredConnection/com
 import { MeteredConnectionChannel } from '../../platform/meteredConnection/electron-main/meteredConnectionChannel.js';
 import { MeteredConnectionMainService } from '../../platform/meteredConnection/electron-main/meteredConnectionMainService.js';
 import { IProductService } from '../../platform/product/common/productService.js';
+import { IModernityAuthService, MODERNITY_AUTH_CHANNEL } from '../../platform/modernityAuth/common/modernityAuth.js';
+import { ModernityAuthMainService } from '../../platform/modernityAuth/electron-main/modernityAuthMainService.js';
 import { getRemoteAuthority } from '../../platform/remote/common/remoteHosts.js';
 import { SharedProcess } from '../../platform/sharedProcess/electron-main/sharedProcess.js';
 import { ISignService } from '../../platform/sign/common/sign.js';
@@ -1151,6 +1153,7 @@ export class CodeApplication extends Disposable {
 		// Storage
 		services.set(IStorageMainService, new SyncDescriptor(StorageMainService));
 		services.set(IApplicationStorageMainService, new SyncDescriptor(ApplicationStorageMainService));
+		services.set(IModernityAuthService, new SyncDescriptor(ModernityAuthMainService, undefined, false));
 
 		// Terminal
 		const ptyHostStarter = new ElectronPtyHostStarter({
@@ -1298,6 +1301,9 @@ export class CodeApplication extends Disposable {
 		// Encryption
 		const encryptionChannel = ProxyChannel.fromService(accessor.get(IEncryptionMainService), disposables);
 		mainProcessElectronServer.registerChannel('encryption', encryptionChannel);
+
+		const modernityAuthChannel = ProxyChannel.fromService(accessor.get(IModernityAuthService), disposables);
+		mainProcessElectronServer.registerChannel(MODERNITY_AUTH_CHANNEL, modernityAuthChannel);
 
 		// Browser View
 		const browserViewChannel = ProxyChannel.fromService(accessor.get(IBrowserViewMainService), disposables);

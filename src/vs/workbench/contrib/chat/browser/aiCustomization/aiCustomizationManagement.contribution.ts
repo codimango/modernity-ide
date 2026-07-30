@@ -709,6 +709,25 @@ MenuRegistry.appendMenuItem(AICustomizationManagementItemMenuId, {
 	),
 });
 
+registerAction2(class extends Action2 {
+	constructor() {
+		super({
+			id: 'aiCustomization.openModernityAccount',
+			title: localize2('openModernityAccount', "Open Modernity Account"),
+			category: CHAT_CATEGORY,
+			f1: true,
+		});
+	}
+	async run(accessor: ServicesAccessor): Promise<void> {
+		const editorService = accessor.get(IEditorService);
+		const input = AICustomizationManagementEditorInput.getOrCreate();
+		const pane = await editorService.openEditor(input, { pinned: true });
+		if (pane instanceof AICustomizationManagementEditor) {
+			pane.selectSectionById(AICustomizationManagementSection.Account);
+		}
+	}
+});
+
 //#endregion
 
 //#region Actions

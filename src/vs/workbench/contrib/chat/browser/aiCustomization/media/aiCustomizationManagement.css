@@ -897,6 +897,192 @@
 	font-size: 14px;
 }
 
+.modernity-settings-widget .modernity-account {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.modernity-settings-widget .modernity-account-profile {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding-bottom: 4px;
+}
+
+.modernity-settings-widget .modernity-account-avatar {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.modernity-settings-widget .modernity-account-avatar-fallback {
+	display: grid;
+	place-items: center;
+	background: var(--vscode-editor-background);
+	font-size: 22px;
+}
+
+.modernity-settings-widget .modernity-account-identity {
+	flex: 1;
+	min-width: 0;
+}
+
+.modernity-settings-widget .modernity-account-kicker {
+	display: block;
+	color: var(--vscode-textLink-foreground);
+	font-size: 10px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.modernity-settings-widget .modernity-account-name {
+	overflow: hidden;
+	font-size: 13px;
+	font-weight: 600;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.modernity-settings-widget .modernity-account-login,
+.modernity-settings-widget .modernity-account-empty {
+	color: var(--vscode-descriptionForeground);
+	font-size: 11px;
+}
+
+.modernity-settings-widget .modernity-account-details {
+	display: grid;
+}
+
+.modernity-settings-widget .modernity-account-detail {
+	display: grid;
+	grid-template-columns: minmax(90px, 0.35fr) minmax(0, 1fr);
+	align-items: center;
+	gap: 12px;
+	min-height: 36px;
+	border-bottom: 1px solid var(--vscode-widget-border, transparent);
+	font-size: 12px;
+}
+
+.modernity-settings-widget .modernity-account-detail:last-of-type {
+	border-bottom: 0;
+}
+
+.modernity-settings-widget .modernity-account-detail-label {
+	color: var(--vscode-descriptionForeground);
+}
+
+.modernity-settings-widget .modernity-account-detail-value {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	min-width: 0;
+	overflow-wrap: anywhere;
+}
+
+.modernity-settings-widget .modernity-account-detail-value .codicon-check,
+.modernity-settings-widget .modernity-account-detail-value .codicon-verified {
+	color: var(--vscode-testing-iconPassed);
+}
+
+.modernity-settings-widget .modernity-account-detail-value .codicon-warning {
+	color: var(--vscode-editorWarning-foreground);
+}
+
+.modernity-settings-widget .modernity-account-detail-value .codicon-error {
+	color: var(--vscode-editorError-foreground);
+}
+
+.modernity-settings-widget .modernity-account-logout {
+	flex: 0 0 auto;
+	align-self: center;
+	min-width: 96px;
+	width: auto !important;
+}
+
+.modernity-settings-widget .modernity-settings-category.modernity-account-root {
+	padding: 4px 0 0;
+	border: 0;
+	background: transparent;
+}
+
+.modernity-settings-widget .modernity-account-section {
+	display: grid;
+	grid-template-columns: minmax(150px, 0.65fr) minmax(0, 1.35fr);
+	gap: 24px;
+	padding-top: 18px;
+	border-top: 1px solid var(--vscode-widget-border, transparent);
+}
+
+.modernity-settings-widget .modernity-account-section-heading {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.modernity-settings-widget .modernity-account-section-heading > .codicon {
+	margin-top: 2px;
+	color: var(--vscode-descriptionForeground);
+}
+
+.modernity-settings-widget .modernity-account-section-heading-text h4 {
+	margin: 0;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.modernity-settings-widget .modernity-account-section-heading-text p {
+	margin: 3px 0 0;
+	color: var(--vscode-descriptionForeground);
+	font-size: 11px;
+	line-height: 1.4;
+}
+
+.modernity-settings-widget .modernity-account-loading,
+.modernity-settings-widget .modernity-account-repository-empty {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 4px;
+	min-height: 36px;
+	color: var(--vscode-descriptionForeground);
+	font-size: 11px;
+}
+
+.modernity-settings-widget .modernity-account-repository-empty strong {
+	color: var(--vscode-foreground);
+	font-size: 12px;
+}
+
+.modernity-settings-widget .modernity-account-repository-error {
+	color: var(--vscode-errorForeground);
+	font-size: 11px;
+}
+
+.modernity-settings-widget .modernity-account-repository-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-top: 10px;
+}
+
+@media (max-width: 720px) {
+	.modernity-settings-widget .modernity-account-section {
+		grid-template-columns: 1fr;
+		gap: 12px;
+	}
+
+	.modernity-settings-widget .modernity-account-profile {
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	.modernity-settings-widget .modernity-account-logout {
+		width: 100%;
+	}
+}
+
 /* Tools section list widget */
 .ai-customization-management-editor .tools-list-widget {
 	height: 100%;
