@@ -1,6 +1,6 @@
 /*---------------------------------------------------------------------------------------------
- *  Copyright (c) Modernity. All rights reserved.
- *  Licensed under the MIT License.
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
 import * as vscode from 'vscode';
@@ -18,7 +18,7 @@ export function activate(context: vscode.ExtensionContext): void {
 
 	// Optional: log activation so users know provider is ready
 	const output = vscode.window.createOutputChannel('Modernity', { log: true });
-	output.info(`Modernity model provider activated (session ${ (provider as any)._sessionId ?? 'unknown' })`);
+	output.info('Modernity model provider activated');
 
 	context.subscriptions.push(output);
 
@@ -30,7 +30,7 @@ export function activate(context: vscode.ExtensionContext): void {
 		void import('./sandboxTools').then(sandbox => {
 			context.subscriptions.push(sandbox.registerSandboxMcpProvider(context));
 			stopSandbox = sandbox.stopSandboxDaemon;
-			return sandbox.ensureSandboxDaemon(context);
+			return sandbox.ensureSandboxDaemon();
 		}).catch(err => output.warn(`Sandbox tooling unavailable: ${err?.message ?? err}`));
 	}
 }
