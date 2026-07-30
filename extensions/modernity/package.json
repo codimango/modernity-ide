@@ -61,6 +61,18 @@
             "default": false,
             "description": "Enable developer mode per latest instruction: code viewer, file tree, more settings + bonus debug/search/source_control. Simple = locked chat only. Left panel condensed (less features, not everything) per should-not, terminal never.",
             "scope": "application"
+          },
+          "modernity.accessToken": {
+            "type": "string",
+            "description": "Bearer token for platform service (T23, fallback for dev, prefer SecretStorage modernity.accessToken). T11 will supply via SecretStorage.",
+            "default": "",
+            "scope": "application"
+          },
+          "modernity.platformUrl": {
+            "type": "string",
+            "description": "Base URL override for platform service (projects API), defaults to gatewayUrl.",
+            "default": "",
+            "scope": "application"
           }
         }
       }
@@ -83,8 +95,159 @@
         "command": "modernity.disableDeveloperMode",
         "title": "Disable Developer Mode (Simple Mode)",
         "category": "Modernity"
+      },
+      {
+        "command": "modernity.refreshProjects",
+        "title": "Modernity: Refresh Projects (T23)",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.cancelRefreshProjects",
+        "title": "Modernity: Cancel Refresh Projects (T23)",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.project.create",
+        "title": "Create Project",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.project.open",
+        "title": "Open Project",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.project.clone",
+        "title": "Clone Project",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.project.fetch",
+        "title": "Fetch",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.project.pull",
+        "title": "Pull",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.project.push",
+        "title": "Push",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.project.sandbox",
+        "title": "Sandbox Commands",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.project.refresh",
+        "title": "Refresh Projects",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.machine.manage",
+        "title": "Manage Machines",
+        "category": "Modernity"
       }
-    ]
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "modernity",
+          "title": "Modernity",
+          "icon": "$(project)"
+        }
+      ]
+    },
+    "views": {
+      "modernity": [
+        {
+          "type": "tree",
+          "id": "modernity.projectList",
+          "name": "Projects",
+          "when": "true",
+          "icon": "$(project)"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "modernity.project.create",
+          "when": "view == modernity.projectList",
+          "group": "navigation@1"
+        },
+        {
+          "command": "modernity.project.refresh",
+          "when": "view == modernity.projectList",
+          "group": "navigation@2"
+        },
+        {
+          "command": "modernity.machine.manage",
+          "when": "view == modernity.projectList",
+          "group": "navigation@3"
+        },
+        {
+          "command": "modernity.refreshProjects",
+          "when": "view == modernity.projectList",
+          "group": "navigation@4"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "modernity.project.open",
+          "when": "view == modernity.projectList && viewItem == modernityProject",
+          "group": "inline@1"
+        },
+        {
+          "command": "modernity.project.fetch",
+          "when": "view == modernity.projectList && viewItem == modernityProject",
+          "group": "inline@2"
+        },
+        {
+          "command": "modernity.project.sandbox",
+          "when": "view == modernity.projectList && viewItem == modernityProject",
+          "group": "inline@3"
+        },
+        {
+          "command": "modernity.project.open",
+          "when": "view == modernity.projectList && viewItem == modernityProject",
+          "group": "0_modernity@1"
+        },
+        {
+          "command": "modernity.project.clone",
+          "when": "view == modernity.projectList && viewItem == modernityProject",
+          "group": "0_modernity@2"
+        },
+        {
+          "command": "modernity.project.fetch",
+          "when": "view == modernity.projectList && viewItem == modernityProject",
+          "group": "0_modernity@3"
+        },
+        {
+          "command": "modernity.project.pull",
+          "when": "view == modernity.projectList && viewItem == modernityProject",
+          "group": "0_modernity@4"
+        },
+        {
+          "command": "modernity.project.push",
+          "when": "view == modernity.projectList && viewItem == modernityProject",
+          "group": "0_modernity@5"
+        },
+        {
+          "command": "modernity.project.sandbox",
+          "when": "view == modernity.projectList && viewItem == modernityProject",
+          "group": "0_modernity@6"
+        },
+        {
+          "command": "modernity.project.refresh",
+          "when": "view == modernity.projectList",
+          "group": "0_modernity@7"
+        }
+      ]
+    }
   },
   "main": "./out/extension",
   "browser": "./dist/browser/extension",

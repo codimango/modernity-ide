@@ -10,5 +10,9 @@
   "include": [
     "src/**/*",
     "../../src/vscode-dts/vscode.d.ts"
+  ],
+  "exclude": [
+    "src/platform/project/tests",
+    "**/*.test.ts"
   ]
 }

@@ -5,9 +5,14 @@
 
 import * as vscode from 'vscode';
 import { ModernityLanguageModelProvider } from './modernityProvider';
+import { ModernityCloudClient } from './platform/project/cloudClient';
+import { ModernityDaemonClient } from './platform/project/daemonClient';
+import { VsCodeGitAdapter } from './platform/project/gitAdapter';
+import { ModernityProjectService } from './platform/project/projectService';
 
 // Node-only sandbox tooling is loaded lazily so the browser bundle never runs it.
 let stopSandbox: (() => void) | undefined;
+let projectService: ModernityProjectService | undefined;
 
 // Dev toggle panel IDE - constants per spec
 // Simple mode = locked chat panel only
@@ -188,6 +193,122 @@ export function activate(context: vscode.ExtensionContext): void {
 
 	void applyMode();
 
+	// T23: modernityProject platform service — owns project state, refresh events, cancellation, disposables, injected coordinators.
+	// Cloud: Bearer, envelope {code,message,request_id,retryable,details}, 401→signed_out, 403→unauthorized, 404→missing, 409→conflict, 422→validation, 429→rate_limited, 503/offline preserves cache.
+	// Daemon: owner-only runtime JSON {host,port,token,workspace_root}, loopback only, no fallback, health ok, create/getStatus/postOperation.
+	// Git: injected via vscode.git extension + credential provider, safe contract status/init/clone/import/fetch/ff-pull/push.
+	try {
+		const getAccessToken = async (): Promise<string | undefined> => {
+			try {
+				const secret = await context.secrets.get('modernity.accessToken');
+				if (secret) { return secret; }
+			} catch {}
+			try {
+				const cfgTok = vscode.workspace.getConfiguration('modernity').get<string>('accessToken');
+				if (cfgTok && cfgTok.trim()) { return cfgTok.trim(); }
+			} catch {}
+			return undefined;
+		};
+
+		const gatewayUrl = vscode.workspace.getConfiguration('modernity').get<string>('gatewayUrl')?.trim() || 'http://127.0.0.1:8000';
+
+		const cloudClient = new ModernityCloudClient({
+			baseUrl: gatewayUrl,
+			getAccessToken,
+			onRequestSnapshot: (snap) => {
+				output.trace?.(`[T23][cloud] ${snap.method} ${snap.url}`);
+			},
+		});
+
+		const daemonClient = new ModernityDaemonClient({
+			onSnapshot: (snap) => {
+				output.trace?.(`[T23][daemon] ${snap.method} ${snap.url}`);
+			},
+		});
+
+		const gitAdapter = new VsCodeGitAdapter();
+
+		const service = new ModernityProjectService({
+			cloudClient,
+			daemonClient,
+			gitAdapter,
+		});
+
+		projectService = service;
+		context.subscriptions.push(service);
+		context.subscriptions.push(service.onDidChangeProjects(state => {
+			output.trace?.(`[T23] projects changed: count=${state.projects.size} offline=${state.cloudOffline} daemon=${state.daemonAvailable} err=${state.lastError ?? 'none'}`);
+		}));
+		context.subscriptions.push(service.onDidChangeDaemonAvailability(avail => {
+			output.info(`[T23] daemon availability: ${avail}`);
+		}));
+
+		context.subscriptions.push(vscode.commands.registerCommand('modernity.refreshProjects', async () => {
+			await service.refresh();
+			void vscode.window.showInformationMessage(`Modernity projects: ${service.getProjects().length} (offline=${service.getState().cloudOffline} daemon=${service.getState().daemonAvailable})`);
+		}));
+		context.subscriptions.push(vscode.commands.registerCommand('modernity.cancelRefreshProjects', () => {
+			service.cancelRefresh();
+		}));
+
+		void service.refresh().then(() => {
+			output.info(`[T23] initial refresh done: ${service.getProjects().length} projects`);
+		}).catch(err => {
+			if (err instanceof vscode.CancellationError) { return; }
+			output.warn(`[T23] initial refresh failed: ${err?.message ?? err}`);
+		});
+
+		output.info('[T23] modernityProject platform service registered (T23)');
+
+		// T24: compact project list and project-level command entry points
+		// Uses T23 service + cloudClient + gitAdapter. First-screen IDE view with all required fields and states.
+		try {
+			void (async () => {
+				try {
+					const { ProjectListProvider } = await import('./platform/project/list/provider');
+					const { registerProjectListCommands } = await import('./platform/project/list/commands');
+
+					const provider = new ProjectListProvider(
+						service,
+						cloudClient,
+						gitAdapter,
+						output,
+					);
+					context.subscriptions.push(provider as any);
+
+					const treeView = vscode.window.createTreeView('modernity.projectList', {
+						treeDataProvider: provider,
+						showCollapseAll: false,
+					});
+					context.subscriptions.push(treeView);
+					treeView.onDidChangeVisibility(e => {
+						if (e.visible) {
+							void vscode.commands.executeCommand('setContext', 'modernity.isProjectListVisible', true);
+						}
+					});
+					context.subscriptions.push(vscode.window.onDidChangeWindowState(state => {
+						if (state.focused && provider.getState().kind !== 'loading') {
+							void provider.refresh();
+						}
+					}));
+
+					registerProjectListCommands(context, cloudClient, service, gitAdapter, provider, output);
+
+					void provider.buildFromServiceState();
+
+					output.info('[T24] compact project list activated — name, repo, checkout basename (never other machine full path), local Git independent from cached GitHub head/observed time, lifecycle, last-opened, all states loading/empty/offline/unauthorized/partial/archived/recoverable (401/409/429/503), commands create/open/clone/fetch/pull/push/sandbox/refresh/manageMachines, a11y focus/keyboard, restrained density, desktop/narrow checks');
+				} catch (err: any) {
+					output.warn(`[T24] project list init failed: ${err?.message ?? err}`);
+				}
+			})();
+		} catch (err: any) {
+			output.warn(`[T24] project list init scheduling failed: ${err?.message ?? err}`);
+		}
+
+	} catch (err: any) {
+		output.warn(`[T23] project service init failed: ${err?.message ?? err}`);
+	}
+
 	// Expose the sandbox/tooling MCP server (compile / boot / create_sandbox / gametest /
 	// rcon / ...) to the agent, and ensure the sandbox daemon it depends on is running.
 	// Desktop (Node) only — the browser extension host has no child processes or sockets.
@@ -202,5 +323,7 @@ export function activate(context: vscode.ExtensionContext): void {
 }
 
 export function deactivate(): void {
+	try { projectService?.dispose(); } catch {}
+	projectService = undefined;
 	stopSandbox?.();
 }
