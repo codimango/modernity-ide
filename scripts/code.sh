@@ -137,13 +137,7 @@ function ensure_inference_gateway() {
 	if [[ -z "$API_KEY" ]]; then
 		for SETTINGS in "$HOME/Library/Application Support/Modernity/User/settings.json" "$HOME/Library/Application Support/code-oss-dev/User/settings.json"; do
 			if [[ -f "$SETTINGS" ]]; then
-				API_KEY=$(python3 -c "import json,sys; p=sys.argv[1];
-try:
-    d=json.load(open(p))
-    sec=d.get('modernity.dev',{}).get('secrets',{})
-    print(sec.get('MODEL_API_KEY','') or sec.get('LLM_API_KEY','') or '')
-except Exception:
-    print('')" "$SETTINGS" 2>/dev/null)
+				API_KEY=$(python3 -c "import json,sys; d=json.load(open(sys.argv[1])); sec=d.get('modernity.dev',{}).get('secrets',{}); print(sec.get('MODEL_API_KEY','') or sec.get('LLM_API_KEY','') or '')" "$SETTINGS" 2>/dev/null || true)
 				if [[ -n "$API_KEY" ]]; then
 					echo "[code.sh] Found MODEL_API_KEY in $SETTINGS" >&2
 					break
@@ -230,8 +224,13 @@ function code() {
 		DISABLE_TEST_EXTENSION=""
 	fi
 
-	# Launch Code
-	exec "$CODE" . $DISABLE_TEST_EXTENSION "$@"
+	# The first dot is Electron's development app entry. With no user arguments,
+	# force a new empty workbench so Modernity Home owns startup.
+	if [[ $# -eq 0 ]]; then
+		exec "$CODE" . $DISABLE_TEST_EXTENSION --new-window
+	else
+		exec "$CODE" . $DISABLE_TEST_EXTENSION "$@"
+	fi
 }
 
 function code-wsl()

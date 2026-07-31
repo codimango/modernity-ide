@@ -20,8 +20,10 @@ import { IApplicationStorageMainService } from '../../storage/electron-main/stor
 import {
 	IModernityCreateProjectRequest,
 	IModernityCreateProjectResult,
+	IModernityCheckoutProjectRequest,
 	IModernityProjectProvisionProgress,
 	IModernityProjectService,
+	IModernityProjectSummary,
 	ModernityProjectProvisionPhase,
 } from '../common/modernityProject.js';
 
@@ -35,14 +37,27 @@ interface ApiMachineResponse {
 
 interface ApiRepository {
 	readonly github_repository_id: string;
+	readonly owner: string;
+	readonly name: string;
+	readonly full_name: string;
 	readonly clone_url: string;
 	readonly html_url: string;
 	readonly default_branch: string;
+	readonly head_sha: string | null;
 }
 
 interface ApiProject {
 	readonly id: string;
+	readonly name: string;
 	readonly mod_id: string;
+	readonly mod_name: string;
+	readonly group_id: string;
+	readonly mod_version: string;
+	readonly license: string | null;
+	readonly template_id: string | null;
+	readonly template_version: string | null;
+	readonly lifecycle_status: string;
+	readonly last_opened_at: string | null;
 	readonly repository: ApiRepository | null;
 }
 
@@ -52,6 +67,7 @@ interface ApiProjectResponse {
 
 interface ApiProjectPage {
 	readonly items: readonly ApiProject[];
+	readonly next_cursor: string | null;
 }
 
 interface ApiRepositoryResponse {
@@ -62,6 +78,17 @@ interface ApiGitCredentialResponse {
 	readonly username: string;
 	readonly password: string;
 	readonly expires_at: string;
+}
+
+interface ApiCheckout {
+	readonly machine: { readonly id: string };
+	readonly absolute_path?: string;
+	readonly state: string;
+}
+
+interface ApiCheckoutPage {
+	readonly items: readonly ApiCheckout[];
+	readonly next_cursor: string | null;
 }
 
 interface DaemonRuntime {
@@ -127,10 +154,8 @@ export class ModernityProjectMainService extends Disposable implements IModernit
 		const machine = await this.registerCurrentMachine(accessToken);
 
 		this.report('project', 'Creating or resuming project metadata');
-		const projects = await this.backendRequest<ApiProjectPage>(
-			'GET', '/api/v1/projects?limit=100', undefined, accessToken
-		);
-		const existingProject = projects.items.find(item => item.mod_id === modId);
+		const projects = await this.listAllProjects(accessToken);
+		const existingProject = projects.find(item => item.mod_id === modId);
 		const project: ApiProjectResponse = existingProject
 			? { project: existingProject }
 			: await this.backendRequest<ApiProjectResponse>(
@@ -238,6 +263,189 @@ export class ModernityProjectMainService extends Disposable implements IModernit
 			repositoryUrl: repository.repository.html_url,
 			commitSha: provisioned.commit_sha,
 		};
+	}
+
+	async listProjects(): Promise<readonly IModernityProjectSummary[]> {
+		const accessToken = await this.requireAccessToken();
+		const machine = await this.registerCurrentMachine(accessToken);
+		const projects = await this.listAllProjects(accessToken);
+		const summaries = await Promise.all(projects.map(async project => {
+			const checkouts = await this.listAllCheckouts(project.id, accessToken);
+			const currentCheckout = checkouts.find(checkout =>
+				checkout.machine.id === machine.machine.id
+				&& checkout.state === 'present'
+				&& typeof checkout.absolute_path === 'string'
+			);
+			const checkoutPath = currentCheckout?.absolute_path
+				&& await this.fileService.exists(URI.file(currentCheckout.absolute_path))
+				? currentCheckout.absolute_path
+				: undefined;
+			return {
+				projectId: project.id,
+				name: project.name,
+				modId: project.mod_id,
+				lifecycleStatus: project.lifecycle_status,
+				repositoryFullName: project.repository?.full_name,
+				checkoutPath,
+			} satisfies IModernityProjectSummary;
+		}));
+		return summaries.sort((first, second) => first.name.localeCompare(second.name));
+	}
+
+	async checkoutProject(request: IModernityCheckoutProjectRequest): Promise<IModernityCreateProjectResult> {
+		const accessToken = await this.requireAccessToken();
+		this.report('machine', 'Syncing this machine');
+		const machine = await this.registerCurrentMachine(accessToken);
+		const response = await this.backendRequest<ApiProjectResponse>(
+			'GET',
+			`/api/v1/projects/${encodeURIComponent(request.projectId)}`,
+			undefined,
+			accessToken,
+		);
+		const project = response.project;
+		const repository = project.repository;
+		if (!repository) {
+			throw new Error('This project does not have a GitHub repository yet.');
+		}
+		if (project.template_id !== 'neoforge' || project.template_version !== '26.2') {
+			throw new Error('Only NeoForge 26.2 projects can be checked out.');
+		}
+		const repositoryName = this.validateRepositoryName(repository.name);
+		const destination = join(request.destinationPath, repositoryName);
+
+		const checkouts = await this.listAllCheckouts(project.id, accessToken);
+		const existing = checkouts.find(checkout =>
+			checkout.machine.id === machine.machine.id
+			&& checkout.state === 'present'
+			&& typeof checkout.absolute_path === 'string'
+		);
+		if (existing?.absolute_path && await this.fileService.exists(URI.file(existing.absolute_path))) {
+			return {
+				projectId: project.id,
+				projectPath: existing.absolute_path,
+				repositoryUrl: repository.html_url,
+				commitSha: repository.head_sha ?? '',
+			};
+		}
+
+		this.report('credential', 'Preparing secure Git access');
+		const credential = await this.backendRequest<ApiGitCredentialResponse>(
+			'POST',
+			`/api/v1/projects/${encodeURIComponent(project.id)}/repository/git-credential`,
+			undefined,
+			accessToken,
+		);
+		const repositoryHasHead = typeof repository.head_sha === 'string' && repository.head_sha.length > 0;
+		this.report(
+			'local',
+			repositoryHasHead ? 'Cloning and verifying the project' : 'Generating and publishing the project',
+		);
+		const checkedOut = repositoryHasHead
+			? await this.daemonRequest<DaemonProvisionResponse>('/v1/projects/checkout', {
+				destination,
+				project_id: project.id,
+				mod_id: project.mod_id,
+				template_id: project.template_id,
+				template_version: project.template_version,
+				repository_id: repository.github_repository_id,
+				repository_url: repository.clone_url,
+				default_branch: repository.default_branch,
+				git_username: credential.username,
+				git_password: credential.password,
+			})
+			: await this.daemonRequest<DaemonProvisionResponse>('/v1/projects/provision', {
+				destination,
+				project_id: project.id,
+				mod_id: project.mod_id,
+				mod_name: project.mod_name,
+				group_id: project.group_id,
+				mod_version: project.mod_version,
+				license: project.license ?? 'All Rights Reserved',
+				template_id: project.template_id,
+				template_version: project.template_version,
+				repository_id: repository.github_repository_id,
+				repository_url: repository.clone_url,
+				default_branch: repository.default_branch,
+				git_username: credential.username,
+				git_password: credential.password,
+				git_author_name: repository.owner,
+			});
+
+		this.report('checkout', 'Registering the local checkout');
+		await this.backendRequest(
+			'POST',
+			`/api/v1/projects/${encodeURIComponent(project.id)}/checkouts`,
+			{
+				machine_id: machine.machine.id,
+				absolute_path: checkedOut.project_path,
+				folder_basename: basename(checkedOut.project_path),
+				manifest_version: checkedOut.manifest_version,
+				repository: {
+					github_repository_id: repository.github_repository_id,
+					remote_url: repository.clone_url,
+				},
+				state: 'present',
+				is_primary: true,
+			},
+			accessToken,
+			{ 'Idempotency-Key': `checkout-${randomUUID()}` },
+		);
+		this.report('refresh', 'Confirming the GitHub repository');
+		await this.backendRequest(
+			'POST',
+			`/api/v1/projects/${encodeURIComponent(project.id)}/repository/refresh`,
+			undefined,
+			accessToken,
+		);
+		this.report('complete', 'Project checked out');
+		return {
+			projectId: project.id,
+			projectPath: checkedOut.project_path,
+			repositoryUrl: repository.html_url,
+			commitSha: checkedOut.commit_sha,
+		};
+	}
+
+	private async requireAccessToken(): Promise<string> {
+		const accessToken = await this.authService.getAccessToken();
+		if (!accessToken) {
+			throw new Error('Sign in to Modernity first.');
+		}
+		return accessToken;
+	}
+
+	private async listAllProjects(accessToken: string): Promise<readonly ApiProject[]> {
+		const projects: ApiProject[] = [];
+		let cursor: string | null = null;
+		do {
+			const suffix: string = cursor ? `&cursor=${encodeURIComponent(cursor)}` : '';
+			const page: ApiProjectPage = await this.backendRequest<ApiProjectPage>(
+				'GET', `/api/v1/projects?limit=100${suffix}`, undefined, accessToken
+			);
+			projects.push(...page.items);
+			cursor = page.next_cursor;
+		} while (cursor);
+		return projects;
+	}
+
+	private async listAllCheckouts(
+		projectId: string,
+		accessToken: string,
+	): Promise<readonly ApiCheckout[]> {
+		const checkouts: ApiCheckout[] = [];
+		let cursor: string | null = null;
+		do {
+			const suffix: string = cursor ? `&cursor=${encodeURIComponent(cursor)}` : '';
+			const page: ApiCheckoutPage = await this.backendRequest<ApiCheckoutPage>(
+				'GET',
+				`/api/v1/projects/${encodeURIComponent(projectId)}/checkouts?limit=100${suffix}`,
+				undefined,
+				accessToken,
+			);
+			checkouts.push(...page.items);
+			cursor = page.next_cursor;
+		} while (cursor);
+		return checkouts;
 	}
 
 	private async registerCurrentMachine(accessToken: string): Promise<ApiMachineResponse> {

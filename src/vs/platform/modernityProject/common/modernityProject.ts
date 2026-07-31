@@ -21,6 +21,20 @@ export interface IModernityCreateProjectResult {
 	readonly commitSha: string;
 }
 
+export interface IModernityProjectSummary {
+	readonly projectId: string;
+	readonly name: string;
+	readonly modId: string;
+	readonly lifecycleStatus: string;
+	readonly repositoryFullName: string | undefined;
+	readonly checkoutPath: string | undefined;
+}
+
+export interface IModernityCheckoutProjectRequest {
+	readonly projectId: string;
+	readonly destinationPath: string;
+}
+
 export type ModernityProjectProvisionPhase =
 	| 'machine'
 	| 'project'
@@ -43,5 +57,7 @@ export interface IModernityProjectService {
 
 	readonly onDidChangeProvisionProgress: Event<IModernityProjectProvisionProgress>;
 
+	listProjects(): Promise<readonly IModernityProjectSummary[]>;
 	createProject(request: IModernityCreateProjectRequest): Promise<IModernityCreateProjectResult>;
+	checkoutProject(request: IModernityCheckoutProjectRequest): Promise<IModernityCreateProjectResult>;
 }

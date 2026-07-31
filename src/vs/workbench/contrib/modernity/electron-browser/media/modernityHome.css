@@ -1,0 +1,312 @@
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.modernity-home {
+	height: 100%;
+	overflow: auto;
+	background: var(--vscode-editor-background);
+	color: var(--vscode-foreground);
+	outline: none;
+}
+
+.modernity-home-content {
+	width: min(1040px, calc(100% - 48px));
+	margin: 0 auto;
+	padding: 42px 0 64px;
+	box-sizing: border-box;
+}
+
+.modernity-home-header {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 24px;
+	padding-bottom: 24px;
+	border-bottom: 1px solid var(--vscode-panel-border);
+}
+
+.modernity-home-brand {
+	margin-bottom: 6px;
+	color: var(--vscode-textLink-foreground);
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.modernity-home-title h1 {
+	margin: 0;
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 1.2;
+	letter-spacing: 0;
+}
+
+.modernity-home-actions,
+.modernity-home-project-toolbar {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.modernity-home-button,
+.modernity-home-icon-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 7px;
+	height: 30px;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	font: inherit;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.modernity-home-button {
+	min-width: 74px;
+	padding: 0 11px;
+}
+
+.modernity-home-icon-button {
+	width: 30px;
+	padding: 0;
+	background: transparent;
+	color: var(--vscode-foreground);
+}
+
+.modernity-home-button.primary {
+	background: var(--vscode-button-background);
+	color: var(--vscode-button-foreground);
+}
+
+.modernity-home-button.primary:hover {
+	background: var(--vscode-button-hoverBackground);
+}
+
+.modernity-home-button.secondary,
+.modernity-home-icon-button:hover {
+	border-color: var(--vscode-button-border, var(--vscode-contrastBorder, transparent));
+	background: var(--vscode-button-secondaryBackground);
+	color: var(--vscode-button-secondaryForeground);
+}
+
+.modernity-home-button.secondary:hover {
+	background: var(--vscode-button-secondaryHoverBackground);
+}
+
+.modernity-home-button:disabled {
+	opacity: 0.45;
+	cursor: default;
+}
+
+.modernity-home-button:focus-visible,
+.modernity-home-icon-button:focus-visible,
+.modernity-home-search input:focus-visible {
+	outline: 1px solid var(--vscode-focusBorder);
+	outline-offset: 2px;
+}
+
+.modernity-home-section {
+	margin-top: 30px;
+}
+
+.modernity-home-section-heading {
+	display: flex;
+	align-items: center;
+	gap: 9px;
+	margin-bottom: 10px;
+}
+
+.modernity-home-section-heading h2 {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 0;
+}
+
+.modernity-home-count {
+	color: var(--vscode-descriptionForeground);
+	font-size: 12px;
+}
+
+.modernity-home-project-toolbar {
+	justify-content: flex-end;
+	margin: -36px 0 10px;
+}
+
+.modernity-home-search {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	width: min(280px, 100%);
+	height: 28px;
+	padding: 0 8px;
+	box-sizing: border-box;
+	border: 1px solid var(--vscode-input-border, transparent);
+	background: var(--vscode-input-background);
+	color: var(--vscode-input-foreground);
+}
+
+.modernity-home-search:focus-within {
+	border-color: var(--vscode-focusBorder);
+}
+
+.modernity-home-search .codicon {
+	color: var(--vscode-descriptionForeground);
+}
+
+.modernity-home-search input {
+	min-width: 0;
+	width: 100%;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	color: inherit;
+	font: inherit;
+}
+
+.modernity-home-search input::placeholder {
+	color: var(--vscode-input-placeholderForeground);
+}
+
+.modernity-home-list {
+	border-top: 1px solid var(--vscode-panel-border);
+}
+
+.modernity-home-row {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(130px, auto) 90px;
+	align-items: center;
+	gap: 20px;
+	min-height: 58px;
+	padding: 8px 10px;
+	box-sizing: border-box;
+	border-bottom: 1px solid var(--vscode-panel-border);
+}
+
+.modernity-home-row:hover {
+	background: var(--vscode-list-hoverBackground);
+}
+
+.modernity-home-identity {
+	display: flex;
+	align-items: center;
+	gap: 11px;
+	min-width: 0;
+}
+
+.modernity-home-identity > .codicon {
+	flex: 0 0 auto;
+	color: var(--vscode-descriptionForeground);
+}
+
+.modernity-home-row-text {
+	min-width: 0;
+}
+
+.modernity-home-row-name,
+.modernity-home-row-detail {
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.modernity-home-row-name {
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.modernity-home-row-detail {
+	margin-top: 3px;
+	color: var(--vscode-descriptionForeground);
+	font-size: 11px;
+}
+
+.modernity-home-status {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	color: var(--vscode-descriptionForeground);
+	font-size: 11px;
+	white-space: nowrap;
+}
+
+.modernity-home-status-dot {
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: var(--vscode-descriptionForeground);
+}
+
+.modernity-home-status.local .modernity-home-status-dot {
+	background: var(--vscode-testing-iconPassed);
+}
+
+.modernity-home-status.remote .modernity-home-status-dot {
+	background: var(--vscode-notificationsWarningIcon-foreground);
+}
+
+.modernity-home-loading,
+.modernity-home-empty,
+.modernity-home-state {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 9px;
+	min-height: 150px;
+	color: var(--vscode-descriptionForeground);
+}
+
+.modernity-home-state {
+	flex-direction: column;
+	text-align: center;
+}
+
+.modernity-home-state h2,
+.modernity-home-state p {
+	margin: 0;
+}
+
+.modernity-home-state h2 {
+	color: var(--vscode-foreground);
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.modernity-home-empty {
+	min-height: 88px;
+	border-bottom: 1px solid var(--vscode-panel-border);
+}
+
+@media (max-width: 680px) {
+	.modernity-home-content {
+		width: calc(100% - 28px);
+		padding-top: 24px;
+	}
+
+	.modernity-home-header {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.modernity-home-project-toolbar {
+		justify-content: stretch;
+		margin: 0 0 10px;
+	}
+
+	.modernity-home-search {
+		width: 100%;
+	}
+
+	.modernity-home-row {
+		grid-template-columns: minmax(0, 1fr) 82px;
+		gap: 10px;
+	}
+
+	.modernity-home-status {
+		display: none;
+	}
+}
