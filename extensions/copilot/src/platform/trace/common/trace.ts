@@ -121,6 +121,7 @@ export function mapTranscriptEntryToTraceEvent(sessionId: string, entry: Transcr
 				copilot_version: bounded(entry.data.copilotVersion),
 				vscode_version: bounded(entry.data.vscodeVersion),
 				has_cwd: entry.data.context?.cwd !== undefined,
+				...(entry.data.context?.cwd !== undefined ? textField('cwd', entry.data.context.cwd, 4_096) : {}),
 			};
 			break;
 		case 'session.end':
@@ -132,6 +133,8 @@ export function mapTranscriptEntryToTraceEvent(sessionId: string, entry: Transcr
 			payload = {
 				content_length: entry.data.content.length,
 				attachment_count: entry.data.attachments?.length ?? 0,
+				...textField('content', entry.data.content, 32_000),
+				...(entry.data.attachments?.length ? serializedField('attachments', entry.data.attachments, 8_000) : {}),
 			};
 			break;
 		case 'assistant.message':
@@ -141,6 +144,9 @@ export function mapTranscriptEntryToTraceEvent(sessionId: string, entry: Transcr
 				content_length: entry.data.content.length,
 				tool_request_count: entry.data.toolRequests.length,
 				has_reasoning: entry.data.reasoningText !== undefined,
+				...textField('content', entry.data.content, 20_000),
+				...(entry.data.reasoningText !== undefined ? textField('reasoning', entry.data.reasoningText, 8_000) : {}),
+				...(entry.data.toolRequests.length ? serializedField('tool_requests', entry.data.toolRequests, 8_000) : {}),
 			};
 			break;
 		case 'model.request.started':
@@ -173,7 +179,10 @@ export function mapTranscriptEntryToTraceEvent(sessionId: string, entry: Transcr
 		case 'tool.execution_start':
 			eventType = 'mcp.tool.started';
 			context = entry.data.traceContext;
-			payload = { tool_name: bounded(entry.data.toolName, 512) };
+			payload = {
+				tool_name: bounded(entry.data.toolName, 512),
+				...serializedField('arguments', entry.data.arguments, 24_000),
+			};
 			break;
 		case 'tool.execution_complete':
 			eventType = entry.data.success ? 'mcp.tool.completed' : 'mcp.tool.failed';
@@ -181,6 +190,7 @@ export function mapTranscriptEntryToTraceEvent(sessionId: string, entry: Transcr
 			payload = {
 				success: entry.data.success,
 				result_length: entry.data.result?.content.length ?? 0,
+				...(entry.data.result !== undefined ? textField('result_content', entry.data.result.content, 24_000) : {}),
 			};
 			break;
 		case 'assistant.turn_start':
@@ -216,6 +226,34 @@ function normalizeTimestamp(value: string): string {
 
 function bounded(value: string, limit = 256): string {
 	return value.length <= limit ? value : value.slice(0, limit);
+}
+
+function textField(name: string, value: string, maxBytes: number): TraceJsonObject {
+	const encoded = new TextEncoder().encode(value);
+	if (encoded.byteLength <= maxBytes) {
+		return { [name]: value, [`${name}_truncated`]: false };
+	}
+	let low = 0;
+	let high = value.length;
+	while (low < high) {
+		const middle = Math.ceil((low + high) / 2);
+		if (new TextEncoder().encode(value.slice(0, middle)).byteLength <= maxBytes) {
+			low = middle;
+		} else {
+			high = middle - 1;
+		}
+	}
+	return { [name]: value.slice(0, low), [`${name}_truncated`]: true };
+}
+
+function serializedField(name: string, value: unknown, maxBytes: number): TraceJsonObject {
+	let serialized: string;
+	try {
+		serialized = JSON.stringify(value) ?? 'null';
+	} catch {
+		serialized = String(value);
+	}
+	return textField(name, serialized, maxBytes);
 }
 
 function nonNegative(value: number): number {

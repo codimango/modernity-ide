@@ -42,7 +42,7 @@ class TestLogService {
 }
 
 describe('Modernity canonical IDE tracing', () => {
-	it('maps transcript entries with stable IDs and metadata-only payloads', () => {
+	it('maps transcript entries with stable IDs and full message payloads', () => {
 		const userEvent = mapTranscriptEntryToTraceEvent(SESSION_ID, {
 			type: 'user.message',
 			id: '10000000-0000-4000-8000-000000000001',
@@ -86,7 +86,14 @@ describe('Modernity canonical IDE tracing', () => {
 				checkout_id: null,
 				machine_id: null,
 				parent_event_id: null,
-				payload: { content_length: 18, attachment_count: 1 },
+				payload: {
+					content_length: 18,
+					attachment_count: 1,
+					content: 'secret prompt body',
+					content_truncated: false,
+					attachments: '[{"secret":true}]',
+					attachments_truncated: false,
+				},
 			},
 			toolEvent: {
 				schema_version: 1,
@@ -105,10 +112,14 @@ describe('Modernity canonical IDE tracing', () => {
 				checkout_id: null,
 				machine_id: null,
 				parent_event_id: '10000000-0000-4000-8000-000000000001',
-				payload: { tool_name: 'read_file' },
+				payload: {
+					tool_name: 'read_file',
+					arguments: '{"apiKey":"do-not-export"}',
+					arguments_truncated: false,
+				},
 			},
-			serializedContainsContent: false,
-			serializedContainsArgument: false,
+			serializedContainsContent: true,
+			serializedContainsArgument: true,
 		});
 	});
 
