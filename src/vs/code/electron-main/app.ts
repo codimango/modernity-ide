@@ -71,6 +71,8 @@ import { MeteredConnectionMainService } from '../../platform/meteredConnection/e
 import { IProductService } from '../../platform/product/common/productService.js';
 import { IModernityAuthService, MODERNITY_AUTH_CHANNEL } from '../../platform/modernityAuth/common/modernityAuth.js';
 import { ModernityAuthMainService } from '../../platform/modernityAuth/electron-main/modernityAuthMainService.js';
+import { IModernityProjectService, MODERNITY_PROJECT_CHANNEL } from '../../platform/modernityProject/common/modernityProject.js';
+import { ModernityProjectMainService } from '../../platform/modernityProject/electron-main/modernityProjectMainService.js';
 import { getRemoteAuthority } from '../../platform/remote/common/remoteHosts.js';
 import { SharedProcess } from '../../platform/sharedProcess/electron-main/sharedProcess.js';
 import { ISignService } from '../../platform/sign/common/sign.js';
@@ -1154,6 +1156,7 @@ export class CodeApplication extends Disposable {
 		services.set(IStorageMainService, new SyncDescriptor(StorageMainService));
 		services.set(IApplicationStorageMainService, new SyncDescriptor(ApplicationStorageMainService));
 		services.set(IModernityAuthService, new SyncDescriptor(ModernityAuthMainService, undefined, false));
+		services.set(IModernityProjectService, new SyncDescriptor(ModernityProjectMainService, undefined, false));
 
 		// Terminal
 		const ptyHostStarter = new ElectronPtyHostStarter({
@@ -1304,6 +1307,8 @@ export class CodeApplication extends Disposable {
 
 		const modernityAuthChannel = ProxyChannel.fromService(accessor.get(IModernityAuthService), disposables);
 		mainProcessElectronServer.registerChannel(MODERNITY_AUTH_CHANNEL, modernityAuthChannel);
+		const modernityProjectChannel = ProxyChannel.fromService(accessor.get(IModernityProjectService), disposables);
+		mainProcessElectronServer.registerChannel(MODERNITY_PROJECT_CHANNEL, modernityProjectChannel);
 
 		// Browser View
 		const browserViewChannel = ProxyChannel.fromService(accessor.get(IBrowserViewMainService), disposables);

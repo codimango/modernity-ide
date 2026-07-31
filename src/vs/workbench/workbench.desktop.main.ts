@@ -60,6 +60,7 @@ import './services/encryption/electron-browser/encryptionService.js';
 import './services/imageResize/electron-browser/imageResizeService.js';
 import './services/secrets/electron-browser/secretStorageService.js';
 import '../platform/modernityAuth/electron-browser/modernityAuthService.js';
+import '../platform/modernityProject/electron-browser/modernityProjectService.js';
 import './services/localization/electron-browser/languagePackService.js';
 import './services/telemetry/electron-browser/telemetryService.js';
 import './services/extensions/electron-browser/extensionHostStarter.js';
@@ -115,6 +116,7 @@ import './contrib/logs/electron-browser/logs.contribution.js';
 
 // Modernity authentication
 import './contrib/modernity/electron-browser/modernityAuth.contribution.js';
+import './contrib/modernity/electron-browser/modernityProject.contribution.js';
 
 // Localizations
 import './contrib/localization/electron-browser/localization.contribution.js';
