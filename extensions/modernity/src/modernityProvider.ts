@@ -63,13 +63,19 @@ interface ChatCompletionsChunk {
 		};
 		finish_reason?: string | null;
 	}>;
-	usage?: unknown;
+	usage?: ChatCompletionsUsage;
 	error?: {
 		message: string;
 		type: string;
 		code?: string;
 		param?: string | null;
 	};
+}
+
+interface ChatCompletionsUsage {
+	prompt_tokens: number;
+	completion_tokens: number;
+	total_tokens: number;
 }
 
 interface ChatCompletionsTextContentPart {
@@ -122,7 +128,7 @@ interface ChatCompletionsRequestBody {
 	model: string;
 	messages: ChatCompletionsMessage[];
 	stream: true;
-	stream_options: { include_usage: false };
+	stream_options: { include_usage: true };
 	tools?: ChatCompletionsTool[];
 	tool_choice?: 'auto';
 	parallel_tool_calls?: boolean;
@@ -148,6 +154,13 @@ function randomUUID(): string {
 
 function isRecord(value: unknown): value is Record<string, unknown> {
 	return typeof value === 'object' && value !== null;
+}
+
+function isChatCompletionsUsage(value: unknown): value is ChatCompletionsUsage {
+	return isRecord(value)
+		&& typeof value.prompt_tokens === 'number'
+		&& typeof value.completion_tokens === 'number'
+		&& typeof value.total_tokens === 'number';
 }
 
 function isTextPart(part: unknown): part is vscode.LanguageModelTextPart {
@@ -529,7 +542,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 			model: model.id,
 			messages: chatMessages,
 			stream: true,
-			stream_options: { include_usage: false },
+			stream_options: { include_usage: true },
 		};
 
 		if (tools.length > 0) {
@@ -772,6 +785,13 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 							throw makeLMError(message, 'server_busy');
 						}
 						throw makeLMError(message, code || err.type || 'server_error');
+					}
+
+					if (isChatCompletionsUsage(json.usage)) {
+						progress.report(new vscode.LanguageModelDataPart(
+							new TextEncoder().encode(JSON.stringify(json.usage)),
+							'usage',
+						));
 					}
 
 					const choice = json.choices?.[0];
