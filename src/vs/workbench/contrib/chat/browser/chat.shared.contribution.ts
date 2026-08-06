@@ -1887,6 +1887,12 @@ configurationRegistry.registerConfiguration({
 			default: false,
 		},
 		// Modernity Dev Settings - extensible, workspace-scoped for paths
+		'modernity.developerMode': {
+			type: 'boolean',
+			description: nls.localize('modernity.developerMode', "Developer mode swaps the locked chat panel (simple mode) for a code viewer, a file tree panel, and debugging, search and source control. The left panel and the terminal stay locked in both modes."),
+			default: false,
+			scope: ConfigurationScope.APPLICATION,
+		},
 		'modernity.projects.uncompiledCodePath': {
 			type: 'string',
 			description: nls.localize('modernity.projects.uncompiledCodePath', "Directory where uncompiled / intermediate mod code is placed. Workspace setting."),
