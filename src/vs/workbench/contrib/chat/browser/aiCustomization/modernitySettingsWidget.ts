@@ -250,6 +250,32 @@ export class ModernitySettingsWidget extends Disposable {
 		actionsRow.style.display = 'flex';
 		actionsRow.style.gap = '6px';
 
+		// Developer mode toggle (T278837441): swaps between the simple locked
+		// chat panel and developer mode (code viewer, file tree, debugging,
+		// search, source control). The left panel and terminal stay locked.
+		if (this.mode === 'settings') {
+			const developerModeButton = this._register(new Button(actionsRow, {
+				...defaultButtonStyles,
+				title: localize('modernity.developerMode.tooltip', "Swap between simple mode (locked chat panel) and developer mode (code viewer, file tree, debugging, search, source control). The left panel and the terminal stay locked in both modes."),
+			}));
+			const updateDeveloperModeButtonLabel = (): void => {
+				const developerMode = this.configurationService.getValue<boolean>('modernity.developerMode') ?? false;
+				developerModeButton.label = developerMode
+					? localize('modernity.developerMode.on', "Developer Mode: On")
+					: localize('modernity.developerMode.off', "Developer Mode: Off");
+			};
+			updateDeveloperModeButtonLabel();
+			this._register(developerModeButton.onDidClick(async () => {
+				const developerMode = this.configurationService.getValue<boolean>('modernity.developerMode') ?? false;
+				await this.configurationService.updateValue('modernity.developerMode', !developerMode, ConfigurationTarget.USER);
+			}));
+			this._register(this.configurationService.onDidChangeConfiguration(e => {
+				if (e.affectsConfiguration('modernity.developerMode')) {
+					updateDeveloperModeButtonLabel();
+				}
+			}));
+		}
+
 		// Export / Import JSON buttons
 		if (this.mode === 'settings') {
 			const exportButton = this._register(new Button(actionsRow, {
