@@ -445,7 +445,7 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 	}
 
 	private _fallbackModels(base: string): ModernityModelInformation[] {
-		// Muse Spark is primary default, Claude AAI is the selectable vision model.
+		// Muse Spark is primary default, Claude AAI models are selectable vision models.
 		const models: ModernityModelInformation[] = [
 			{
 				id: 'muse-spark-1.1',
@@ -478,6 +478,21 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 				},
 				isUserSelectable: true,
 			},
+			{
+				id: 'claude-5-sonnet-gcp-aai-abs-infra',
+				name: 'Claude 5 Sonnet (AAI ABS Infra)',
+				family: 'claude',
+				version: '5',
+				tooltip: `Claude 5 Sonnet via Modernity gateway (${base})`,
+				detail: `${base} - AAI GCP ABS Infra`,
+				maxInputTokens: 128000,
+				maxOutputTokens: 16000,
+				capabilities: {
+					toolCalling: true,
+					imageInput: true,
+				},
+				isUserSelectable: true,
+			},
 		];
 		return models;
 	}
@@ -498,6 +513,11 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 			name = 'Muse Spark';
 			family = 'muse-spark';
 			tooltip = `Modernity inference via ${base}`;
+		} else if (lower.includes('claude-5-sonnet')) {
+			name = 'Claude 5 Sonnet (AAI ABS Infra)';
+			family = 'claude';
+			version = '5';
+			tooltip = `Claude 5 Sonnet via Modernity gateway (${base})`;
 		} else if (lower.includes('claude')) {
 			name = 'Claude 4.8 Opus (AAI ABS Infra)';
 			family = 'claude';
