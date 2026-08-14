@@ -55,13 +55,128 @@
             "description": "Full URL override for models endpoint. If set, takes precedence over gatewayUrl.",
             "default": "",
             "scope": "application"
+          },
+          "modernity.workshop.unixname": {
+            "type": "string",
+            "default": "",
+            "description": "Unixname recorded as the task author. Defaults to the OS user.",
+            "scope": "application"
+          },
+          "modernity.workshop.authorName": {
+            "type": "string",
+            "default": "",
+            "description": "Display name recorded in task.toml.",
+            "scope": "application"
+          },
+          "modernity.workshop.authorEmail": {
+            "type": "string",
+            "default": "",
+            "description": "Contact email recorded in task.toml.",
+            "scope": "application"
+          },
+          "modernity.workshop.outputDirectory": {
+            "type": "string",
+            "default": "",
+            "description": "Where emitted task bundles are written. Defaults to .modernity/workshop-tasks inside the project.",
+            "scope": "application"
+          },
+          "modernity.workshop.githubOwner": {
+            "type": "string",
+            "default": "codimango",
+            "description": "GitHub owner used for a new project's origin remote. The remote is set at creation but never pushed.",
+            "scope": "application"
           }
         }
       }
     ],
     "configurationDefaults": {
       "chat.detectParticipant.enabled": true
-    }
+    },
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "modernity-workshop",
+          "title": "%workshop.container%",
+          "icon": "$(package)"
+        }
+      ]
+    },
+    "views": {
+      "modernity-workshop": [
+        {
+          "type": "webview",
+          "id": "modernity.workshopSubmission",
+          "name": "%workshop.view%",
+          "icon": "$(package)",
+          "contextualTitle": "%workshop.container%",
+          "visibility": "visible"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "modernity.workshop.submit",
+        "title": "%workshop.submit%",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.workshop.openTask",
+        "title": "%workshop.openTask%",
+        "category": "Modernity"
+      },
+      {
+        "command": "modernity.workshop.openInstruction",
+        "title": "%workshop.openInstruction%",
+        "category": "Modernity"
+      }
+    ],
+    "menus": {
+      "view/title": [
+        {
+          "command": "modernity.workshop.submit",
+          "when": "view == modernity.workshopSubmission",
+          "group": "navigation@1"
+        },
+        {
+          "command": "modernity.workshop.openTask",
+          "when": "view == modernity.workshopSubmission",
+          "group": "navigation@2"
+        }
+      ]
+    },
+    "chatParticipants": [
+      {
+        "id": "modernity.workshop",
+        "name": "modernity",
+        "fullName": "Modernity Workshop",
+        "description": "%workshop.participant.description%",
+        "locations": [
+          "panel"
+        ],
+        "commands": [
+          {
+            "name": "start-project",
+            "description": "%workshop.cmd.startProject%"
+          },
+          {
+            "name": "swe-session",
+            "description": "%workshop.cmd.sweSession%"
+          },
+          {
+            "name": "note",
+            "description": "%workshop.cmd.note%"
+          },
+          {
+            "name": "submit",
+            "description": "%workshop.cmd.submit%"
+          },
+          {
+            "name": "status",
+            "description": "%workshop.cmd.status%"
+          }
+        ]
+      }
+    ]
   },
   "main": "./out/extension",
   "browser": "./dist/browser/extension",

@@ -27,6 +27,29 @@ export function activate(context: vscode.ExtensionContext): void {
 	// Desktop (Node) only — the browser extension host has no child processes or sockets.
 	const isNode = typeof process !== 'undefined' && !!process.versions?.node;
 	if (isNode) {
+		// Workshop submission review reads emitted task bundles from disk and
+		// shells out to the workshop CLI, so it is desktop-only too.
+		void import('./workshopPanel').then(async panel => {
+			const view = new panel.WorkshopSubmissionViewProvider();
+			context.subscriptions.push(
+				vscode.window.registerWebviewViewProvider(panel.WORKSHOP_VIEW_ID, view)
+			);
+			const submit = await import('./workshopSubmit');
+			context.subscriptions.push(
+				vscode.commands.registerCommand('modernity.workshop.submit', () =>
+					submit.submitWorkshopSession(context.extensionPath, view)),
+				vscode.commands.registerCommand('modernity.workshop.openTask', () =>
+					submit.openWorkshopTask(view))
+			);
+
+			// `@modernity` slash commands drive the workshop pipeline. They do
+			// setup only — none of them call a language model.
+			const chat = await import('./chatCommands');
+			context.subscriptions.push(...chat.registerChatCommands(context, view));
+			output.info('Workshop submission review and chat commands registered');
+		}).catch(err => output.warn(`Workshop panel unavailable: ${err?.message ?? err}`));
+	}
+	if (isNode) {
 		void import('./sandboxTools').then(sandbox => {
 			context.subscriptions.push(sandbox.registerSandboxMcpProvider(context));
 			stopSandbox = sandbox.stopSandboxDaemon;

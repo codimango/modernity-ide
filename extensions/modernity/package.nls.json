@@ -1,0 +1,13 @@
+{
+	"workshop.container": "Workshop",
+	"workshop.view": "Submission Review",
+	"workshop.submit": "Submit Workshop Session",
+	"workshop.openTask": "Open Emitted Task",
+	"workshop.participant.description": "Set up mod projects and collect SWE-Bench tasks",
+	"workshop.cmd.startProject": "Scaffold a new mod project to farm sessions from",
+	"workshop.cmd.sweSession": "Start collecting this session as a SWE-Bench task",
+	"workshop.cmd.note": "Add a clarification to the session instruction",
+	"workshop.cmd.submit": "Emit the task and open the review panel",
+	"workshop.cmd.status": "Show what the active session has collected",
+	"workshop.openInstruction": "Open Session Instruction"
+}
