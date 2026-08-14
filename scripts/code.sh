@@ -151,7 +151,7 @@ function ensure_inference_gateway() {
 		echo "[code.sh] MODEL_API_KEY not found, using dummy (mock fallback)" >&2
 	fi
 
-	local PY_CANDIDATES=("python3" "python3.12" "python3.11" "/usr/local/bin/python3.12" "/Applications/Xcode_26.2.0_17C52_fb.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python")
+	local PY_CANDIDATES=("$MOD_ROOT/.venv/bin/python" "python3" "python3.12" "python3.11" "/usr/local/bin/python3.12" "/Applications/Xcode_26.2.0_17C52_fb.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python")
 	local GW_PY=""
 	for PY in "${PY_CANDIDATES[@]}"; do
 		if [[ "$PY" == /* ]]; then [[ -x "$PY" ]] || continue; else command -v "$PY" >/dev/null 2>&1 || continue; fi
@@ -162,13 +162,16 @@ function ensure_inference_gateway() {
 
 	mkdir -p "$(dirname "$GW_LOG")" 2>/dev/null || true
 
-	local APP_MODULE="services.backend.api.minimal_inference_gateway:app"
+	local APP_MODULE="services.backend.api.main:app"
 	local APP_DIR="$MOD_ROOT"
 
-	# Fallback to /tmp/minimal_inference:app if repo module missing
-	if [[ ! -f "$MOD_ROOT/services/backend/api/minimal_inference_gateway.py" && -f "/tmp/minimal_inference.py" ]]; then
-		APP_MODULE="minimal_inference:app"
-		APP_DIR="/tmp"
+	# The real backend needs Postgres. If it is not reachable, starting it here
+	# would leave a dead listener on :8000 and no inference, so bail out and
+	# point at the launcher that brings the whole stack up in order.
+	if [[ ! -f "$MOD_ROOT/services/backend/api/main.py" ]]; then
+		echo "[code.sh] Backend app not found at $MOD_ROOT/services/backend/api/main.py; skipping gateway." >&2
+		echo "[code.sh] Start it with: make ide-launch" >&2
+		return 0
 	fi
 
 	echo "[code.sh] Starting inference gateway :${GW_PORT} via $GW_PY $APP_MODULE" >&2
@@ -181,6 +184,7 @@ function ensure_inference_gateway() {
 		fi
 	done
 	echo "[code.sh] Warning: inference gateway failed to start, see $GW_LOG" >&2
+	echo "[code.sh] The backend needs Postgres and migrations; 'make ide-launch' starts them in order." >&2
 	return 0
 }
 

@@ -425,7 +425,11 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 				return this._fallbackModels(base);
 			}
 
-			const mapped = data.map(m => this._toChatInfo(m, base)).filter((x): x is vscode.LanguageModelChatInformation => !!x);
+			const mapped = this._applyDefault(
+				data
+					.map(m => this._toChatInfo(m, base))
+					.filter((x): x is ModernityModelInformation => !!x)
+			);
 			if (mapped.length === 0) { return this._fallbackModels(base); }
 			return mapped;
 		} catch (err: unknown) {
@@ -448,11 +452,11 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 		// Muse Spark is primary default, Claude AAI is the selectable vision model.
 		const models: ModernityModelInformation[] = [
 			{
-				id: 'muse-spark-1.1',
-				name: 'Muse Spark',
+				id: 'rl-muse-spark-1-2-playground',
+				name: 'Muse Spark 1.2 (Playground)',
 				family: 'muse-spark',
-				version: '1.1',
-				tooltip: `Modernity inference via ${base}`,
+				version: '1.2',
+				tooltip: `Muse Spark 1.2 playground build via Modernity (${base})`,
 				detail: base,
 				maxInputTokens: 128000,
 				maxOutputTokens: 16000,
@@ -482,6 +486,18 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 		return models;
 	}
 
+	/**
+	 * Read the Muse Spark version out of a gateway model id.
+	 *
+	 * Ids arrive in two shapes: `muse-spark-1.1` and the playground builds
+	 * `rl-muse-spark-1-2-playground`. Both encode the version, so the picker can
+	 * tell releases apart instead of labelling every one of them 1.1.
+	 */
+	private _museVersion(lower: string): string | undefined {
+		const match = /muse-spark-(\d+)[.-](\d+)/.exec(lower);
+		return match ? `${match[1]}.${match[2]}` : undefined;
+	}
+
 	private _toChatInfo(raw: GatewayModel, base: string): ModernityModelInformation | null {
 		const id = raw.id;
 		const lower = id.toLowerCase();
@@ -494,10 +510,17 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 		let family = 'muse-spark';
 		let version = '1.1';
 		let tooltip = `Modernity via ${base}`;
-		if (lower.includes('muse-spark') || lower === 'muse-spark-1.1') {
-			name = 'Muse Spark';
+		const museVersion = this._museVersion(lower);
+		if (museVersion) {
+			const playground = lower.includes('playground');
+			version = museVersion;
+			// The version belongs in the name too: the picker shows the name
+			// prominently and the version only in some surfaces.
+			name = playground ? `Muse Spark ${museVersion} (Playground)` : `Muse Spark ${museVersion}`;
 			family = 'muse-spark';
-			tooltip = `Modernity inference via ${base}`;
+			tooltip = playground
+				? `Muse Spark ${museVersion} playground build via Modernity (${base})`
+				: `Muse Spark ${museVersion} via Modernity (${base})`;
 		} else if (lower.includes('claude')) {
 			name = 'Claude 4.8 Opus (AAI ABS Infra)';
 			family = 'claude';
@@ -524,8 +547,29 @@ export class ModernityLanguageModelProvider implements vscode.LanguageModelChatP
 				imageInput: caps.vision ?? false,
 			},
 			isUserSelectable: true,
-			isDefault: lower === 'muse-spark-1.1' ? true : undefined,
+			// The default is chosen across the whole set once every model is
+			// mapped, so a single id match cannot leave the picker with none.
+			isDefault: undefined,
 		};
+	}
+
+	/**
+	 * Mark the newest Muse Spark as default, falling back to the first model.
+	 *
+	 * Matching a hardcoded id here used to leave no default at all whenever the
+	 * gateway advertised a different Muse build.
+	 */
+	private _applyDefault(models: ModernityModelInformation[]): ModernityModelInformation[] {
+		if (models.length === 0 || models.some(model => model.isDefault)) {
+			return models;
+		}
+		const muse = [...models]
+			.filter(model => model.family === 'muse-spark')
+			.sort((left, right) =>
+				right.version.localeCompare(left.version, undefined, { numeric: true }));
+		const preferred = muse[0] ?? models[0];
+		return models.map(model =>
+			model === preferred ? { ...model, isDefault: true } : model);
 	}
 
 	async provideLanguageModelChatResponse(model: vscode.LanguageModelChatInformation, messages: readonly vscode.LanguageModelChatRequestMessage[], options: vscode.ProvideLanguageModelChatResponseOptions, progress: vscode.Progress<vscode.LanguageModelResponsePart>, token: vscode.CancellationToken): Promise<void> {
