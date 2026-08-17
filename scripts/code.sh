@@ -20,6 +20,8 @@ function ensure_sandbox_daemon() {
 	local WS="/tmp/modernity-workspace"
 	local RT="$WS/daemon.json"
 	local LOG="$WS/daemon.log"
+	local TEMPLATE_MODE="${MODERNITY_TEMPLATE_MODE:-remote}"
+	local CONTROL_PLANE_URL="${MODERNITY_CONTROL_PLANE_URL:-http://127.0.0.1:8000}"
 	if [[ ! -f "$MOD_ROOT/services/sandbox/daemon.py" ]]; then
 		return 0
 	fi
@@ -94,14 +96,19 @@ function ensure_sandbox_daemon() {
 		DAEMON_PY="python3"
 	fi
 	if [[ -f "$RT" ]]; then
-		if (cd "$MOD_ROOT" && PYTHONPATH="$MOD_ROOT" "$DAEMON_PY" -c "from services.sandbox.client import SandboxDaemonClient; c=SandboxDaemonClient.from_runtime_file('$RT'); c.health()" 2>/dev/null); then
+		if (cd "$MOD_ROOT" && EXPECTED_TEMPLATE_MODE="$TEMPLATE_MODE" EXPECTED_CONTROL_PLANE_URL="$CONTROL_PLANE_URL" PYTHONPATH="$MOD_ROOT" "$DAEMON_PY" -c 'import os, sys; from services.sandbox.client import SandboxDaemonClient; c=SandboxDaemonClient.from_runtime_file(sys.argv[1]); h=c.health(); expected=os.environ["EXPECTED_TEMPLATE_MODE"]; sys.exit(0 if h.get("template_mode") == expected and (expected != "remote" or h.get("control_plane_url") == os.environ["EXPECTED_CONTROL_PLANE_URL"]) else 1)' "$RT" 2>/dev/null); then
 			echo "[code.sh] Sandbox daemon already running ($RT)" >&2
 			return 0
 		fi
+		(cd "$MOD_ROOT" && PYTHONPATH="$MOD_ROOT" "$DAEMON_PY" -c 'import sys; from services.sandbox.client import SandboxDaemonClient; SandboxDaemonClient.from_runtime_file(sys.argv[1]).shutdown()' "$RT" 2>/dev/null) || true
 		rm -f "$RT" 2>/dev/null || true
 	fi
-	echo "[code.sh] Starting sandbox daemon: workspace=$WS runtime=$RT log=$LOG python=$DAEMON_PY" >&2
-	(cd "$MOD_ROOT" && PYTHONPATH="$MOD_ROOT" nohup "$DAEMON_PY" -m services.sandbox.daemon start --workspace-root "$WS" --runtime-file "$RT" --host 127.0.0.1 --port 0 > "$LOG" 2>&1 &)
+	local TEMPLATE_ARGS=(--template-mode "$TEMPLATE_MODE")
+	if [[ "$TEMPLATE_MODE" == "remote" ]]; then
+		TEMPLATE_ARGS+=(--control-plane-url "$CONTROL_PLANE_URL")
+	fi
+	echo "[code.sh] Starting sandbox daemon: workspace=$WS runtime=$RT log=$LOG python=$DAEMON_PY template_mode=$TEMPLATE_MODE" >&2
+	(cd "$MOD_ROOT" && PYTHONPATH="$MOD_ROOT" nohup "$DAEMON_PY" -m services.sandbox.daemon start --workspace-root "$WS" --runtime-file "$RT" --host 127.0.0.1 --port 0 "${TEMPLATE_ARGS[@]}" > "$LOG" 2>&1 &)
 	for i in {1..20}; do
 		sleep 0.5
 		if [[ -f "$RT" ]]; then

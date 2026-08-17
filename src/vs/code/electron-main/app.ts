@@ -71,6 +71,8 @@ import { MeteredConnectionMainService } from '../../platform/meteredConnection/e
 import { IProductService } from '../../platform/product/common/productService.js';
 import { IModernityAuthService, MODERNITY_AUTH_CHANNEL } from '../../platform/modernityAuth/common/modernityAuth.js';
 import { ModernityAuthMainService } from '../../platform/modernityAuth/electron-main/modernityAuthMainService.js';
+import { IModernityDaemonService } from '../../platform/modernityDaemon/common/modernityDaemon.js';
+import { ModernityDaemonMainService } from '../../platform/modernityDaemon/electron-main/modernityDaemonMainService.js';
 import { IModernityProjectService, MODERNITY_PROJECT_CHANNEL } from '../../platform/modernityProject/common/modernityProject.js';
 import { ModernityProjectMainService } from '../../platform/modernityProject/electron-main/modernityProjectMainService.js';
 import { getRemoteAuthority } from '../../platform/remote/common/remoteHosts.js';
@@ -673,6 +675,11 @@ export class CodeApplication extends Disposable {
 
 		// Auth Handler
 		appInstantiationService.invokeFunction(accessor => accessor.get(IProxyAuthService));
+		appInstantiationService.invokeFunction(accessor => {
+			void accessor.get(IModernityDaemonService).ensureRunning().catch(error => {
+				this.logService.warn('[Modernity Daemon] Startup deferred until the daemon is available.', error);
+			});
+		});
 
 		// Transient profiles handler
 		this._register(appInstantiationService.createInstance(UserDataProfilesHandler));
@@ -1156,6 +1163,7 @@ export class CodeApplication extends Disposable {
 		services.set(IStorageMainService, new SyncDescriptor(StorageMainService));
 		services.set(IApplicationStorageMainService, new SyncDescriptor(ApplicationStorageMainService));
 		services.set(IModernityAuthService, new SyncDescriptor(ModernityAuthMainService, undefined, false));
+		services.set(IModernityDaemonService, new SyncDescriptor(ModernityDaemonMainService, undefined, false));
 		services.set(IModernityProjectService, new SyncDescriptor(ModernityProjectMainService, undefined, false));
 
 		// Terminal

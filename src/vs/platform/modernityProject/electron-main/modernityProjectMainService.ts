@@ -13,6 +13,7 @@ import { URI } from '../../../base/common/uri.js';
 import { IRequestContext } from '../../../base/parts/request/common/request.js';
 import { IFileService } from '../../files/common/files.js';
 import { IModernityAuthService } from '../../modernityAuth/common/modernityAuth.js';
+import { IModernityDaemonService } from '../../modernityDaemon/common/modernityDaemon.js';
 import { IProductService } from '../../product/common/productService.js';
 import { asText, IRequestService } from '../../request/common/request.js';
 import { StorageScope, StorageTarget } from '../../storage/common/storage.js';
@@ -28,7 +29,6 @@ import {
 } from '../common/modernityProject.js';
 
 const DEFAULT_API_BASE_URL = 'http://127.0.0.1:8000';
-const DAEMON_RUNTIME_PATH = '/tmp/modernity-workspace/daemon.json';
 const INSTALLATION_ID_STORAGE_KEY = 'modernity.machine.installationId';
 
 interface ApiMachineResponse {
@@ -91,12 +91,6 @@ interface ApiCheckoutPage {
 	readonly next_cursor: string | null;
 }
 
-interface DaemonRuntime {
-	readonly host: string;
-	readonly port: number;
-	readonly token: string;
-}
-
 interface DaemonProvisionResponse {
 	readonly project_path: string;
 	readonly commit_sha: string;
@@ -122,6 +116,7 @@ export class ModernityProjectMainService extends Disposable implements IModernit
 		@IFileService private readonly fileService: IFileService,
 		@IApplicationStorageMainService private readonly storageService: IApplicationStorageMainService,
 		@IModernityAuthService private readonly authService: IModernityAuthService,
+		@IModernityDaemonService private readonly daemonService: IModernityDaemonService,
 		@IProductService private readonly productService: IProductService,
 	) {
 		super();
@@ -227,6 +222,7 @@ export class ModernityProjectMainService extends Disposable implements IModernit
 			git_username: credential.username,
 			git_password: credential.password,
 			git_author_name: installation.accountLogin,
+			cloud_access_token: accessToken,
 		});
 
 		this.report('checkout', 'Registering the local checkout');
@@ -369,6 +365,7 @@ export class ModernityProjectMainService extends Disposable implements IModernit
 				git_username: credential.username,
 				git_password: credential.password,
 				git_author_name: repository.owner,
+				cloud_access_token: accessToken,
 			});
 
 		this.report('checkout', 'Registering the local checkout');
@@ -470,13 +467,7 @@ export class ModernityProjectMainService extends Disposable implements IModernit
 	}
 
 	private async daemonRequest<T>(path: string, body: object): Promise<T> {
-		let runtime: DaemonRuntime;
-		try {
-			const content = await this.fileService.readFile(URI.file(DAEMON_RUNTIME_PATH));
-			runtime = JSON.parse(content.value.toString()) as DaemonRuntime;
-		} catch {
-			throw new Error('The Modernity sandbox daemon is not running.');
-		}
+		const runtime = await this.daemonService.ensureRunning();
 		return this.requestJson<T>(
 			'POST',
 			`http://${runtime.host}:${runtime.port}${path}`,
