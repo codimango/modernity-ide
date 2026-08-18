@@ -334,10 +334,10 @@ function buildToolResultElement(accessor: ServicesAccessor, props: ToolResultOpt
 					});
 
 					// Run hook context handling after tool execution
-					appendHookContext(toolResult, hookResult, chatHookService, props, inputObj, promptContext);
+					await appendHookContext(toolResult, hookResult, chatHookService, props, inputObj, promptContext);
 
 					if (transcriptSessionId) {
-						sessionTranscriptService.logToolExecutionComplete(transcriptSessionId, props.toolCall.id, true, undefined, traceContext);
+						sessionTranscriptService.logToolExecutionComplete(transcriptSessionId, props.toolCall.id, true, toolResultToTraceText(toolResult), traceContext);
 					}
 				} catch (err) {
 					const errResult = toolCallErrorToResult(err);
@@ -351,7 +351,7 @@ function buildToolResultElement(accessor: ServicesAccessor, props: ToolResultOpt
 						logService.error(`Error from tool ${props.toolCall.name} with args ${props.toolCall.arguments}`, toErrorMessage(err, true));
 					}
 					if (promptContext.conversation?.sessionId) {
-						sessionTranscriptService.logToolExecutionComplete(promptContext.conversation.sessionId, props.toolCall.id, false, undefined, traceContext);
+						sessionTranscriptService.logToolExecutionComplete(promptContext.conversation.sessionId, props.toolCall.id, false, toolResultToTraceText(toolResult), traceContext);
 					}
 				}
 			}
@@ -652,6 +652,17 @@ function toolResultToText(result: LanguageModelToolResult2): string {
 			part instanceof LanguageModelTextPart || part instanceof LanguageModelTextPart2)
 		.map(part => part.value)
 		.join('\n');
+}
+
+const MAX_TRANSCRIPT_TOOL_RESULT_LENGTH = 200_000;
+
+/** Return bounded user-visible tool output for the benchmark transcript. */
+export function toolResultToTraceText(result: LanguageModelToolResult2): string {
+	const text = toolResultToText(result);
+	if (text.length <= MAX_TRANSCRIPT_TOOL_RESULT_LENGTH) {
+		return text;
+	}
+	return `${text.slice(0, MAX_TRANSCRIPT_TOOL_RESULT_LENGTH)}\n[Modernity trace truncated ${text.length - MAX_TRANSCRIPT_TOOL_RESULT_LENGTH} characters]`;
 }
 
 function textToolResult(text: string): LanguageModelToolResult {

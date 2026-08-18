@@ -24,6 +24,14 @@ export interface ActiveSession {
 	readonly projectPath: string;
 	readonly sessionId: string;
 	readonly baseCommit: string;
+	/**
+	 * The chat model selected when the session started.
+	 *
+	 * A task's tests may only come from a first-party model, so the pipeline
+	 * needs to know which model drove the work. Recorded here rather than
+	 * inferred later, because the picker can change mid-session.
+	 */
+	readonly model?: string;
 }
 
 export function sessionDirectory(session: ActiveSession): string {

@@ -24,7 +24,7 @@ import { createExtensionUnitTestingServices } from '../../../../test/node/servic
 import { ToolName } from '../../../../tools/common/toolNames';
 import { IToolsService, type IToolValidationResult } from '../../../../tools/common/toolsService';
 import { renderPromptElement } from '../../base/promptRenderer';
-import { ChatToolCalls } from '../toolCalling';
+import { ChatToolCalls, toolResultToTraceText } from '../toolCalling';
 
 class CapturingChatHookService implements IChatHookService {
 	declare readonly _serviceBrand: undefined;
@@ -67,6 +67,27 @@ class CapturingChatHookService implements IChatHookService {
 		return undefined;
 	}
 }
+
+test('bounds visible tool output for episode transcripts', () => {
+	const result = new LanguageModelToolResult([
+		new LanguageModelTextPart('first'),
+		new LanguageModelDataPart(new Uint8Array([1, 2, 3]), 'image/png'),
+		new LanguageModelTextPart('x'.repeat(200_010)),
+	]);
+	const text = toolResultToTraceText(result);
+
+	expect({
+		startsWithVisibleText: text.startsWith('first\n'),
+		containsBinaryData: text.includes('image/png'),
+		bounded: text.length < 200_100,
+		truncated: text.includes('[Modernity trace truncated'),
+	}).toEqual({
+		startsWithVisibleText: true,
+		containsBinaryData: false,
+		bounded: true,
+		truncated: true,
+	});
+});
 
 class CapturingToolsService implements IToolsService {
 	declare readonly _serviceBrand: undefined;

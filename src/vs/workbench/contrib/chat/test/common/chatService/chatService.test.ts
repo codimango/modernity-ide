@@ -149,6 +149,8 @@ suite('ChatService', () => {
 	let editingSessionEntries: ISettableObservable<readonly IModifiedFileEntry[]>;
 
 	let chatAgentService: IChatAgentService;
+	let slashCommandService: ChatSlashCommandService;
+	let defaultAgentMessages: string[];
 	const testServices: ChatService[] = [];
 
 	/**
@@ -190,7 +192,8 @@ suite('ChatService', () => {
 		instantiationService.stub(IContextKeyService, new MockContextKeyService());
 		instantiationService.stub(IViewsService, new TestExtensionService());
 		instantiationService.stub(IWorkspaceContextService, new TestContextService());
-		instantiationService.stub(IChatSlashCommandService, testDisposables.add(instantiationService.createInstance(ChatSlashCommandService)));
+		slashCommandService = testDisposables.add(instantiationService.createInstance(ChatSlashCommandService));
+		instantiationService.stub(IChatSlashCommandService, slashCommandService);
 		instantiationService.stub(IConfigurationService, new TestConfigurationService());
 		instantiationService.stub(IChatService, new MockChatService());
 		instantiationService.stub(IChatSessionsService, new MockChatSessionsService());
@@ -218,8 +221,10 @@ suite('ChatService', () => {
 		chatAgentService = testDisposables.add(instantiationService.createInstance(ChatAgentService));
 		instantiationService.stub(IChatAgentService, chatAgentService);
 
+		defaultAgentMessages = [];
 		const agent: IChatAgentImplementation = {
 			async invoke(request, progress, history, token) {
+				defaultAgentMessages.push(request.message);
 				return {};
 			},
 		};
@@ -315,6 +320,35 @@ suite('ChatService', () => {
 			locations: [ChatAgentLocation.Chat],
 			sessionTypes: ['remote'],
 		}, async () => undefined));
+	});
+
+	test('preflight slash command preserves the normal agent request', async () => {
+		const preflightPrompts: string[] = [];
+		testDisposables.add(chatAgentService.registerAgent('setupAgent', getAgentData('setupAgent')));
+		testDisposables.add(slashCommandService.registerSlashCommand({
+			command: 'collect',
+			detail: 'Begin collection',
+			executeBeforeAgent: true,
+			locations: [ChatAgentLocation.Chat],
+		}, async prompt => {
+			preflightPrompts.push(prompt);
+		}));
+
+		const service = createChatService();
+		const model = startSessionModel(service).object;
+		const response = await service.sendRequest(model.sessionResource, '@setupAgent /collect build a copper lantern');
+		ChatSendResult.assertSent(response);
+		await response.data.responseCompletePromise;
+
+		assert.deepStrictEqual({
+			preflightPrompts,
+			defaultAgentMessages,
+			visibleRequest: model.getRequests()[0].message.text,
+		}, {
+			preflightPrompts: ['build a copper lantern'],
+			defaultAgentMessages: ['build a copper lantern'],
+			visibleRequest: '@setupAgent /collect build a copper lantern',
+		});
 	});
 
 	test('retrieveSession', async () => {

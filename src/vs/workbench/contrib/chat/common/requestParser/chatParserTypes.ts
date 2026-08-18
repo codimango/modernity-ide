@@ -173,7 +173,7 @@ export class ChatRequestSlashCommandPart implements IParsedChatRequestPart {
 	}
 
 	get promptText(): string {
-		return `${chatSubcommandLeader}${this.slashCommand.command}`;
+		return this.slashCommand.executeBeforeAgent ? '' : `${chatSubcommandLeader}${this.slashCommand.command}`;
 	}
 }
 

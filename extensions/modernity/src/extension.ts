@@ -8,8 +8,13 @@ import { ModernityLanguageModelProvider } from './modernityProvider';
 
 // Node-only sandbox tooling is loaded lazily so the browser bundle never runs it.
 let stopSandbox: (() => void) | undefined;
+let episodeWorkflow: (vscode.Disposable & { isBenchmarkEpisodeSession(sessionId: string): boolean }) | undefined;
 
-export function activate(context: vscode.ExtensionContext): void {
+export interface IModernityExtensionApi {
+	isBenchmarkEpisodeSession(sessionId: string): boolean;
+}
+
+export async function activate(context: vscode.ExtensionContext): Promise<IModernityExtensionApi> {
 	const provider = new ModernityLanguageModelProvider(context);
 
 	// Register vendor modernity through languageModelChatProviders
@@ -27,35 +32,32 @@ export function activate(context: vscode.ExtensionContext): void {
 	// Desktop (Node) only — the browser extension host has no child processes or sockets.
 	const isNode = typeof process !== 'undefined' && !!process.versions?.node;
 	if (isNode) {
-		// Workshop submission review reads emitted task bundles from disk and
-		// shells out to the workshop CLI, so it is desktop-only too.
-		void import('./workshopPanel').then(async panel => {
-			const view = new panel.WorkshopSubmissionViewProvider();
-			context.subscriptions.push(
-				vscode.window.registerWebviewViewProvider(panel.WORKSHOP_VIEW_ID, view)
-			);
-			const submit = await import('./workshopSubmit');
-			context.subscriptions.push(
-				vscode.commands.registerCommand('modernity.workshop.submit', () =>
-					submit.submitWorkshopSession(context.extensionPath, view)),
-				vscode.commands.registerCommand('modernity.workshop.openTask', () =>
-					submit.openWorkshopTask(view))
-			);
-
-			// `@modernity` slash commands drive the workshop pipeline. They do
-			// setup only — none of them call a language model.
-			const chat = await import('./chatCommands');
-			context.subscriptions.push(...chat.registerChatCommands(context, view));
-			output.info('Workshop submission review and chat commands registered');
-		}).catch(err => output.warn(`Workshop panel unavailable: ${err?.message ?? err}`));
-	}
-	if (isNode) {
-		void import('./sandboxTools').then(sandbox => {
+		try {
+			const episodes = await import('./episodeWorkflow');
+			episodeWorkflow = episodes.registerEpisodeWorkflow(context, output);
+			context.subscriptions.push(episodeWorkflow);
+		} catch (err) {
+			output.warn(`Benchmark episode workflow unavailable: ${err instanceof Error ? err.message : err}`);
+		}
+		void import('./sandboxTools').then(async sandbox => {
+			const auth = await import('./backendAuth');
 			context.subscriptions.push(sandbox.registerSandboxMcpProvider(context));
+			context.subscriptions.push(sandbox.startSandboxDaemonTraceTokenRefresh(
+				context,
+				() => auth.getModernityBackendAccessToken(context),
+			));
+			context.subscriptions.push(vscode.commands.registerCommand(
+				'modernity.restartSandboxDaemon',
+				() => sandbox.restartSandboxDaemon(context),
+			));
 			stopSandbox = sandbox.stopSandboxDaemon;
-			return sandbox.ensureSandboxDaemon();
+			return sandbox.ensureSandboxDaemon(context);
 		}).catch(err => output.warn(`Sandbox tooling unavailable: ${err?.message ?? err}`));
 	}
+
+	return {
+		isBenchmarkEpisodeSession: sessionId => episodeWorkflow?.isBenchmarkEpisodeSession(sessionId) === true,
+	};
 }
 
 export function deactivate(): void {

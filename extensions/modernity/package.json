@@ -14,10 +14,22 @@
   ],
   "activationEvents": [
     "onStartupFinished",
-    "onLanguageModelChat:modernity"
+    "onLanguageModelChat:modernity",
+    "onChatParticipant:modernity.episodes",
+    "onCommand:modernity.beginSweSession",
+    "onCommand:modernity.sweSession",
+    "onCommand:modernity.acceptFeature",
+    "onCommand:modernity.submitFeature",
+    "onCommand:modernity.gradeFeature",
+    "onCommand:modernity.syncAcceptedFeature",
+    "onCommand:modernity.toggleCollectData",
+    "onCommand:modernity.createProject",
+    "onCommand:modernity.addHint"
   ],
   "enabledApiProposals": [
     "chatProvider",
+    "chatParticipantAdditions",
+    "chatParticipantPrivate",
     "languageModelSystem",
     "languageModelCapabilities"
   ],
@@ -34,56 +46,181 @@
         "label": "Modernity Sandbox Tools"
       }
     ],
+    "chatParticipants": [
+      {
+        "id": "modernity.episodes",
+        "name": "modernity",
+        "fullName": "%episodes.participant.name%",
+        "description": "%episodes.participant.description%",
+        "commands": [
+          {
+            "name": "start-project",
+            "description": "%episodes.cmd.startProject%"
+          },
+          {
+            "name": "hint",
+            "description": "%episodes.cmd.hint%"
+          }
+        ],
+        "modes": [
+          "agent"
+        ]
+      }
+    ],
+    "commands": [
+      {
+        "command": "modernity.sweSession",
+        "title": "%episodes.sweSession%",
+        "icon": "$(beaker)"
+      },
+      {
+        "command": "modernity.enableBenchmarkEpisodes",
+        "title": "%episodes.enable%"
+      },
+      {
+        "command": "modernity.toggleCollectData",
+        "title": "%episodes.toggle%",
+        "icon": "$(record)"
+      },
+      {
+        "command": "modernity.createProject",
+        "title": "%episodes.createProject%",
+        "icon": "$(new-folder)"
+      },
+      {
+        "command": "modernity.restartSandboxDaemon",
+        "title": "%episodes.restartDaemon%",
+        "icon": "$(debug-restart)"
+      },
+      {
+        "command": "modernity.addHint",
+        "title": "%episodes.hint%",
+        "icon": "$(lightbulb)"
+      },
+      {
+        "command": "modernity.acceptFeature",
+        "title": "%episodes.submit%",
+        "icon": "$(check-all)"
+      },
+      {
+        "command": "modernity.submitFeature",
+        "title": "%episodes.submitTask%",
+        "icon": "$(package)"
+      },
+      {
+        "command": "modernity.gradeFeature",
+        "title": "%episodes.gradeTask%",
+        "icon": "$(pass-filled)"
+      },
+      {
+        "command": "modernity.syncAcceptedFeature",
+        "title": "%episodes.sync%",
+        "icon": "$(cloud-upload)"
+      },
+      {
+        "command": "modernity.continueFeature",
+        "title": "%episodes.continue%",
+        "icon": "$(sparkle)"
+      },
+      {
+        "command": "modernity.openProjectViewer",
+        "title": "%episodes.openProject%",
+        "icon": "$(type-hierarchy)"
+      },
+      {
+        "command": "modernity.openEpisodeTrace",
+        "title": "%episodes.openTrace%",
+        "icon": "$(pulse)"
+      },
+      {
+        "command": "modernity.setBackendAccessToken",
+        "title": "%episodes.setToken%"
+      }
+    ],
+    "menus": {
+      "chat/input/status": [
+        {
+          "command": "modernity.gradeFeature",
+          "when": "config.modernity.benchmarkEpisodes.enabled && modernity.episode.active && modernity.episode.session && !modernity.episode.submittable",
+          "group": "navigation@1"
+        },
+        {
+          "command": "modernity.submitFeature",
+          "when": "config.modernity.benchmarkEpisodes.enabled && modernity.episode.submittable && modernity.episode.session",
+          "group": "navigation@1"
+        },
+        {
+          "command": "modernity.addHint",
+          "when": "config.modernity.benchmarkEpisodes.enabled && modernity.episode.active && modernity.episode.session",
+          "group": "navigation@2"
+        },
+        {
+          "command": "modernity.toggleCollectData",
+          "when": "modernity.project.active || config.modernity.benchmarkEpisodes.enabled",
+          "group": "navigation@5"
+        },
+        {
+          "command": "modernity.openProjectViewer",
+          "when": "config.modernity.benchmarkEpisodes.enabled && modernity.project.active",
+          "group": "navigation@4"
+        },
+        {
+          "command": "modernity.syncAcceptedFeature",
+          "when": "config.modernity.benchmarkEpisodes.enabled && modernity.episode.syncPending",
+          "group": "navigation@1"
+        }
+      ]
+    },
     "configuration": [
       {
         "title": "Modernity",
         "properties": {
+          "modernity.benchmarkEpisodes.enabled": {
+            "type": "boolean",
+            "markdownDescription": "%episodes.config.enabled%",
+            "default": false,
+            "scope": "application"
+          },
+          "modernity.benchmarkEpisodes.exportBundle": {
+            "type": "boolean",
+            "markdownDescription": "%episodes.config.exportBundle%",
+            "default": true,
+            "scope": "application"
+          },
+          "modernity.benchmarkEpisodes.publishRepositoryPath": {
+            "type": "string",
+            "markdownDescription": "%episodes.config.publishRepositoryPath%",
+            "default": "",
+            "scope": "application"
+          },
+          "modernity.benchmarkEpisodes.publishBranch": {
+            "type": "string",
+            "markdownDescription": "%episodes.config.publishBranch%",
+            "default": "main",
+            "scope": "application"
+          },
+          "modernity.webUrl": {
+            "type": "string",
+            "description": "%episodes.config.webUrl%",
+            "default": "",
+            "scope": "application"
+          },
           "modernity.gatewayUrl": {
             "type": "string",
-            "description": "Base URL for the Modernity inference gateway when MODERNITY_API_BASE_URL is not set.",
+            "description": "%episodes.config.gatewayUrl%",
             "default": "http://127.0.0.1:8000",
             "scope": "application"
           },
           "modernity.chatCompletionsUrl": {
             "type": "string",
-            "description": "Full URL override for chat completions endpoint. If set, takes precedence over gatewayUrl.",
+            "description": "%episodes.config.chatCompletionsUrl%",
             "default": "",
             "scope": "application"
           },
           "modernity.modelsUrl": {
             "type": "string",
-            "description": "Full URL override for models endpoint. If set, takes precedence over gatewayUrl.",
+            "description": "%episodes.config.modelsUrl%",
             "default": "",
-            "scope": "application"
-          },
-          "modernity.workshop.unixname": {
-            "type": "string",
-            "default": "",
-            "description": "Unixname recorded as the task author. Defaults to the OS user.",
-            "scope": "application"
-          },
-          "modernity.workshop.authorName": {
-            "type": "string",
-            "default": "",
-            "description": "Display name recorded in task.toml.",
-            "scope": "application"
-          },
-          "modernity.workshop.authorEmail": {
-            "type": "string",
-            "default": "",
-            "description": "Contact email recorded in task.toml.",
-            "scope": "application"
-          },
-          "modernity.workshop.outputDirectory": {
-            "type": "string",
-            "default": "",
-            "description": "Where emitted task bundles are written. Defaults to .modernity/workshop-tasks inside the project.",
-            "scope": "application"
-          },
-          "modernity.workshop.githubOwner": {
-            "type": "string",
-            "default": "codimango",
-            "description": "GitHub owner used for a new project's origin remote. The remote is set at creation but never pushed.",
             "scope": "application"
           }
         }
@@ -91,92 +228,7 @@
     ],
     "configurationDefaults": {
       "chat.detectParticipant.enabled": true
-    },
-    "viewsContainers": {
-      "activitybar": [
-        {
-          "id": "modernity-workshop",
-          "title": "%workshop.container%",
-          "icon": "$(package)"
-        }
-      ]
-    },
-    "views": {
-      "modernity-workshop": [
-        {
-          "type": "webview",
-          "id": "modernity.workshopSubmission",
-          "name": "%workshop.view%",
-          "icon": "$(package)",
-          "contextualTitle": "%workshop.container%",
-          "visibility": "visible"
-        }
-      ]
-    },
-    "commands": [
-      {
-        "command": "modernity.workshop.submit",
-        "title": "%workshop.submit%",
-        "category": "Modernity"
-      },
-      {
-        "command": "modernity.workshop.openTask",
-        "title": "%workshop.openTask%",
-        "category": "Modernity"
-      },
-      {
-        "command": "modernity.workshop.openInstruction",
-        "title": "%workshop.openInstruction%",
-        "category": "Modernity"
-      }
-    ],
-    "menus": {
-      "view/title": [
-        {
-          "command": "modernity.workshop.submit",
-          "when": "view == modernity.workshopSubmission",
-          "group": "navigation@1"
-        },
-        {
-          "command": "modernity.workshop.openTask",
-          "when": "view == modernity.workshopSubmission",
-          "group": "navigation@2"
-        }
-      ]
-    },
-    "chatParticipants": [
-      {
-        "id": "modernity.workshop",
-        "name": "modernity",
-        "fullName": "Modernity Workshop",
-        "description": "%workshop.participant.description%",
-        "locations": [
-          "panel"
-        ],
-        "commands": [
-          {
-            "name": "start-project",
-            "description": "%workshop.cmd.startProject%"
-          },
-          {
-            "name": "swe-session",
-            "description": "%workshop.cmd.sweSession%"
-          },
-          {
-            "name": "note",
-            "description": "%workshop.cmd.note%"
-          },
-          {
-            "name": "submit",
-            "description": "%workshop.cmd.submit%"
-          },
-          {
-            "name": "status",
-            "description": "%workshop.cmd.status%"
-          }
-        ]
-      }
-    ]
+    }
   },
   "main": "./out/extension",
   "browser": "./dist/browser/extension",

@@ -23,7 +23,7 @@ import { IChatSlashCommandService } from '../common/participants/chatSlashComman
 import { IChatService } from '../common/chatService/chatService.js';
 import { IChatSessionsService, IChatSessionProviderOptionGroup, IChatSessionProviderOptionItem, SessionType } from '../common/chatSessionsService.js';
 import { ChatAgentLocation, ChatConfiguration, ChatModeKind, ChatPermissionLevel } from '../common/constants.js';
-import { getChatSessionType, isUntitledChatSession } from '../common/model/chatUri.js';
+import { chatSessionResourceToId, getChatSessionType, isUntitledChatSession } from '../common/model/chatUri.js';
 import { ACTION_ID_NEW_CHAT } from './actions/chatActions.js';
 import { ChatSubmitAction, OpenModePickerAction, OpenModelPickerAction } from './actions/chatExecuteActions.js';
 import { ManagePluginsAction } from './actions/chatPluginActions.js';
@@ -62,6 +62,66 @@ export class ChatSlashCommandsContribution extends Disposable {
 		@IWorkbenchEnvironmentService private readonly environmentService: IWorkbenchEnvironmentService,
 	) {
 		super();
+
+		this._store.add(slashCommandService.registerSlashCommand({
+			command: 'start-project',
+			detail: nls.localize('modernity.startProject', "Create a mod project from Modernity's pinned NeoForge template"),
+			silent: true,
+			locations: [ChatAgentLocation.Chat],
+		}, async prompt => {
+			await commandService.executeCommand('modernity.createProject', prompt.trim());
+		}));
+		this._store.add(slashCommandService.registerSlashCommand({
+			command: 'swe-session',
+			detail: nls.localize('modernity.sweSession', "Collect this normal Agent task as benchmark data"),
+			executeBeforeAgent: true,
+			locations: [ChatAgentLocation.Chat],
+			modes: [ChatModeKind.Agent],
+		}, async (prompt, _progress, _history, _location, sessionResource, _token, options) => {
+			if (!prompt.trim()) {
+				throw new Error(nls.localize('modernity.sweSession.promptRequired', "Describe the feature after /swe-session."));
+			}
+			await commandService.executeCommand('modernity.beginSweSession', {
+				prompt,
+				sessionId: chatSessionResourceToId(sessionResource),
+				modelId: options?.userSelectedModelId,
+			});
+		}));
+		const gradeEpisodeCommand = ContextKeyExpr.and(
+			ContextKeyExpr.or(
+				ContextKeyExpr.has('modernity.episode.active'),
+				ContextKeyExpr.has('modernity.episode.taskReady'),
+			),
+			ContextKeyExpr.has('modernity.episode.session'),
+		);
+		this._store.add(slashCommandService.registerSlashCommand({
+			command: 'grade',
+			detail: nls.localize('modernity.grade', "Build and benchmark this SWE session's current task candidate"),
+			executeImmediately: true,
+			silent: true,
+			locations: [ChatAgentLocation.Chat],
+			modes: [ChatModeKind.Agent],
+			sessionTypes: [SessionType.Local],
+			when: gradeEpisodeCommand,
+		}, async (_prompt, _progress, _history, _location, sessionResource) => {
+			await commandService.executeCommand('modernity.gradeFeature', {
+				sessionId: chatSessionResourceToId(sessionResource),
+			});
+		}));
+		this._store.add(slashCommandService.registerSlashCommand({
+			command: 'submit',
+			detail: nls.localize('modernity.submit', "Seal this locally-passed SWE benchmark candidate"),
+			executeImmediately: true,
+			silent: true,
+			locations: [ChatAgentLocation.Chat],
+			modes: [ChatModeKind.Agent],
+			sessionTypes: [SessionType.Local],
+			when: gradeEpisodeCommand,
+		}, async (_prompt, _progress, _history, _location, sessionResource) => {
+			await commandService.executeCommand('modernity.submitFeature', {
+				sessionId: chatSessionResourceToId(sessionResource),
+			});
+		}));
 
 		this._store.add(slashCommandService.registerSlashCommand({
 			command: 'clear',

@@ -17,6 +17,18 @@ export interface CliResult {
 
 export class WorkshopCliError extends Error { }
 
+/** Return the diagnostic emitted by a failed workshop command, when one is available. */
+export function workshopCommandFailureDetail(
+	result: CliResult,
+	payload: Record<string, unknown>,
+): string | undefined {
+	if (result.exitCode === 0) {
+		return undefined;
+	}
+	const payloadError = typeof payload.error === 'string' ? payload.error.trim() : '';
+	return payloadError || result.stderr.trim() || undefined;
+}
+
 /**
  * Resolve the Modernity repository that holds `services.workshop`.
  *

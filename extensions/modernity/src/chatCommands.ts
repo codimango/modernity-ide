@@ -96,7 +96,8 @@ async function startSession(
 	store: WorkshopSessionStore,
 	view: WorkshopSubmissionViewProvider,
 	stream: vscode.ChatResponseStream,
-	prompt: string
+	prompt: string,
+	model: string
 ): Promise<void> {
 	const projectPath = activeProject();
 	if (!projectPath) {
@@ -113,7 +114,7 @@ async function startSession(
 	}
 
 	stream.progress('Pinning the repository for a new session…');
-	const result = await runWorkshop(extensionPath, ['begin', projectPath]);
+	const result = await runWorkshop(extensionPath, ['begin', projectPath, '--model', model]);
 	const begun = parseCliJson(result.stdout);
 	const sessionId = text(begun.session_id);
 	const baseCommit = text(begun.base_commit);
@@ -121,7 +122,7 @@ async function startSession(
 		throw new WorkshopCliError('workshop begin did not report a session');
 	}
 
-	const session: ActiveSession = { projectPath, sessionId, baseCommit };
+	const session: ActiveSession = { projectPath, sessionId, baseCommit, model };
 	await store.set(session);
 	if (prompt.trim().length > 0) {
 		appendInstruction(session, prompt);
@@ -138,10 +139,11 @@ async function startSession(
 		`- Session: \`${sessionId}\`\n` +
 		`- Base commit: \`${baseCommit.slice(0, 10)}\`` +
 		(dirty && dirty !== 'clean' ? ` (pre-existing work: ${dirty.replace(/_/g, ' ')})` : '') +
-		'\n\n' +
-		'Everything you build from here becomes one task. `instruction.md` is open — it is the ' +
-		'prompt the evaluated model will see, so keep it in your own words. Add to it with ' +
-		'`/note`, and finish with `/submit`.'
+		`\n- Model: \`${model}\`\n\n` +
+		'Carry on exactly as normal — streaming chat, the sandbox daemon and the visual ' +
+		'capture tools are all unchanged. Everything you build from here becomes one task. ' +
+		'`instruction.md` is open; it is the prompt the evaluated model will see, so keep it ' +
+		'in your own words. Add to it with `/note`, and finish with `/submit`.'
 	);
 }
 
@@ -174,7 +176,8 @@ async function submit(
 	extensionPath: string,
 	store: WorkshopSessionStore,
 	view: WorkshopSubmissionViewProvider,
-	stream: vscode.ChatResponseStream
+	stream: vscode.ChatResponseStream,
+	model: string
 ): Promise<void> {
 	const session = store.get();
 	if (!session) {
@@ -190,12 +193,28 @@ async function submit(
 		stream.button({ command: 'modernity.workshop.openInstruction', title: vscode.l10n.t('Open Instruction') });
 		return;
 	}
-	stream.progress('Emitting the task…');
-	const emitted = await submitWorkshopSession(extensionPath, view, {
-		projectPath: session.projectPath,
-		sessionId: session.sessionId,
-		promptFile: path.join(session.projectPath, '.modernity', 'workshop', session.sessionId, 'instruction.md')
-	});
+	if (session.model && session.model !== model) {
+		// Whether the tests may ship depends on who wrote them, so a mid-session
+		// model switch is worth surfacing rather than silently recording the
+		// model the session started with.
+		stream.markdown(
+			`Note: this session was started on \`${session.model}\` but the picker is now ` +
+			`\`${model}\`. The session model decides whether its tests can ship; rerun ` +
+			'`/swe-session` if the recorded one is wrong.\n\n'
+		);
+	}
+	const emitted = await submitWorkshopSession(
+		extensionPath,
+		view,
+		{
+			projectPath: session.projectPath,
+			sessionId: session.sessionId,
+			promptFile: path.join(
+				session.projectPath, '.modernity', 'workshop', session.sessionId, 'instruction.md'
+			)
+		},
+		stream
+	);
 	if (!emitted) {
 		stream.markdown('Submission cancelled.');
 		return;
@@ -210,7 +229,7 @@ async function submit(
 }
 
 /** `/status` — what is being collected right now. */
-function status(store: WorkshopSessionStore, stream: vscode.ChatResponseStream): void {
+function status(store: WorkshopSessionStore, stream: vscode.ChatResponseStream, model: string): void {
 	const session = store.get();
 	if (!session) {
 		stream.markdown('No active session. `/swe-session` starts one, `/start-project` creates a project.');
@@ -221,6 +240,9 @@ function status(store: WorkshopSessionStore, stream: vscode.ChatResponseStream):
 		`Collecting session \`${session.sessionId}\`\n\n` +
 		`- Project: \`${session.projectPath}\`\n` +
 		`- Base commit: \`${session.baseCommit.slice(0, 10)}\`\n` +
+		`- Session model: \`${session.model ?? 'unrecorded'}\`` +
+		(session.model && session.model !== model ? ` (picker is now \`${model}\`)` : '') +
+		'\n' +
 		`- Instruction: ${instruction.length > 0 ? `${instruction.length} chars` : '_empty_'}\n`
 	);
 }
@@ -239,16 +261,20 @@ export function registerChatCommands(
 					await startProject(context.extensionPath, stream, request.prompt);
 					return;
 				case 'swe-session':
-					await startSession(context.extensionPath, store, view, stream, request.prompt);
+					// `request.model` is whatever the user has selected in the chat
+					// model picker for this request.
+					await startSession(
+						context.extensionPath, store, view, stream, request.prompt, request.model.id
+					);
 					return;
 				case 'note':
 					await addNote(store, stream, request.prompt);
 					return;
 				case 'submit':
-					await submit(context.extensionPath, store, view, stream);
+					await submit(context.extensionPath, store, view, stream, request.model.id);
 					return;
 				case 'status':
-					status(store, stream);
+					status(store, stream, request.model.id);
 					return;
 				default:
 					stream.markdown(

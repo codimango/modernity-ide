@@ -7,7 +7,7 @@ import * as fs from 'fs';
 import * as os from 'os';
 import * as path from 'path';
 import * as vscode from 'vscode';
-import { runWorkshop, WorkshopCliError } from './workshopCli';
+import { parseCliJson, runWorkshop, WorkshopCliError } from './workshopCli';
 import { WorkshopSubmissionViewProvider } from './workshopPanel';
 import { findLatestTaskDirectory, readTaskBundle, WorkshopTaskBundle, WorkshopTaskError } from './workshopTask';
 
@@ -31,6 +31,41 @@ interface SubmitAnswers {
 	readonly categoryUsecase: string;
 	readonly failToPass: string[];
 	readonly passToPass: string[];
+}
+
+interface DerivedTests {
+	readonly failToPass: string[];
+	readonly passToPass: string[];
+	readonly gradeable: boolean;
+	readonly rejected: Record<string, string>;
+}
+
+function asList(value: unknown): string[] {
+	return Array.isArray(value) ? value.filter((x): x is string => typeof x === 'string') : [];
+}
+
+/**
+ * Run the tests at base and at final to work out which ones the fix changes.
+ *
+ * Typing these lists by hand is guesswork: a test that already passes without
+ * the fix proves nothing, and only running both sides can tell the difference.
+ */
+async function deriveTests(
+	extensionPath: string,
+	context: SubmitContext,
+	stream: vscode.ChatResponseStream | undefined
+): Promise<DerivedTests | undefined> {
+	stream?.progress('Running the tests at base and final to derive fail_to_pass…');
+	const result = await runWorkshop(extensionPath, [
+		'test-matrix', context.projectPath, '--session-id', context.sessionId
+	]);
+	const payload = parseCliJson(result.stdout);
+	return {
+		failToPass: asList(payload.fail_to_pass),
+		passToPass: asList(payload.pass_to_pass),
+		gradeable: payload.gradeable === true,
+		rejected: (payload.rejected ?? {}) as Record<string, string>
+	};
 }
 
 /** Read every recorded workshop session for a project, newest first. */
@@ -64,7 +99,7 @@ function readSessions(projectPath: string): SessionRecord[] {
 	return sessions.sort((left, right) => right.startedAt.localeCompare(left.startedAt));
 }
 
-async function askSubmitAnswers(): Promise<SubmitAnswers | undefined> {
+async function askSubmitAnswers(derived?: DerivedTests): Promise<SubmitAnswers | undefined> {
 	const categoryUsecase = await vscode.window.showInputBox({
 		title: 'Submit Workshop Session',
 		prompt: 'Taxonomy use case (Layer 2). Run validate_task_toml.py --list for valid values.',
@@ -76,7 +111,10 @@ async function askSubmitAnswers(): Promise<SubmitAnswers | undefined> {
 	}
 	const failToPass = await vscode.window.showInputBox({
 		title: 'Submit Workshop Session',
-		prompt: 'GameTests that fail before the fix and pass after, comma separated.',
+		prompt: derived
+			? 'fail_to_pass, derived by running both sides. Edit only if you disagree.'
+			: 'GameTests that fail before the fix and pass after, comma separated.',
+		value: derived?.failToPass.join(', '),
 		placeHolder: 'mymod:feature_works',
 		ignoreFocusOut: true
 	});
@@ -85,7 +123,10 @@ async function askSubmitAnswers(): Promise<SubmitAnswers | undefined> {
 	}
 	const passToPass = await vscode.window.showInputBox({
 		title: 'Submit Workshop Session',
-		prompt: 'Regression GameTests that pass on both sides, comma separated. Optional.',
+		prompt: derived
+			? 'pass_to_pass, derived by running both sides.'
+			: 'Regression GameTests that pass on both sides, comma separated. Optional.',
+		value: derived?.passToPass.join(', '),
 		placeHolder: 'mymod:mod_loads',
 		ignoreFocusOut: true
 	});
@@ -171,13 +212,37 @@ async function resolveContext(context: SubmitContext | undefined): Promise<Submi
 export async function submitWorkshopSession(
 	extensionPath: string,
 	view: WorkshopSubmissionViewProvider,
-	context?: SubmitContext
+	context?: SubmitContext,
+	stream?: vscode.ChatResponseStream
 ): Promise<WorkshopTaskBundle | undefined> {
 	const resolved = await resolveContext(context);
 	if (!resolved) {
 		return undefined;
 	}
-	const answers = await askSubmitAnswers();
+
+	let derived: DerivedTests | undefined;
+	try {
+		derived = await deriveTests(extensionPath, resolved, stream);
+	} catch (error) {
+		// The matrix needs Docker and the toolchain image. Losing it costs the
+		// derivation, not the submission, so fall back to asking.
+		const message = error instanceof Error ? error.message : String(error);
+		stream?.markdown(`Could not derive the test lists (${message}); enter them by hand.\n\n`);
+	}
+	if (derived && !derived.gradeable) {
+		const detail = Object.entries(derived.rejected)
+			.map(([test, why]) => `- \`${test}\`: ${why}`)
+			.join('\n');
+		stream?.markdown(
+			'**This session is not gradeable.** No test fails before the fix and passes after, ' +
+			'so the reference solution cannot be told apart from doing nothing.\n\n' +
+			(detail || '- no test changed behaviour between the base and final commits') +
+			'\n\nAdd a test that exercises the change, then run `/submit` again.'
+		);
+		return undefined;
+	}
+
+	const answers = await askSubmitAnswers(derived);
 	if (!answers) {
 		return undefined;
 	}

@@ -10,6 +10,17 @@ import { URI } from '../../../util/vs/base/common/uri';
 export type TraceJsonValue = string | number | boolean | null | TraceJsonObject | readonly TraceJsonValue[];
 export interface TraceJsonObject { readonly [key: string]: TraceJsonValue }
 
+const MAX_VISIBLE_CONTENT_BYTES = 48 * 1024;
+const MAX_SINGLE_VISIBLE_VALUE_BYTES = MAX_VISIBLE_CONTENT_BYTES - 512;
+const MAX_ASSISTANT_VISIBLE_VALUE_BYTES = 23 * 1024;
+const TRACE_TEXT_ENCODER = new TextEncoder();
+const TRACE_SENSITIVE_KEY = /^(?:authorization|api[_-]?key|(?:access|auth|bearer|refresh)?[_-]?token|password|secret|client[_-]?secret)$/i;
+
+export interface ITraceMappingOptions {
+	/** Include user-visible messages and tool I/O. Hidden reasoning is always omitted. */
+	readonly includeVisibleContent?: boolean;
+}
+
 export interface ITraceInvocationContext {
 	readonly sessionId: string;
 	readonly turnId: string;
@@ -107,10 +118,11 @@ export class NullModelRequestTraceService implements IModelRequestTraceService {
 	}
 }
 
-export function mapTranscriptEntryToTraceEvent(sessionId: string, entry: TranscriptEntry, sourceSequence: number): CanonicalTraceEventV1 | undefined {
+export function mapTranscriptEntryToTraceEvent(sessionId: string, entry: TranscriptEntry, sourceSequence: number, options?: ITraceMappingOptions): CanonicalTraceEventV1 | undefined {
 	let eventType: CanonicalTraceEventV1['event_type'];
 	let payload: TraceJsonObject;
 	let context: ITraceInvocationContext | undefined;
+	const includeVisibleContent = options?.includeVisibleContent === true;
 
 	switch (entry.type) {
 		case 'session.start':
@@ -121,7 +133,6 @@ export function mapTranscriptEntryToTraceEvent(sessionId: string, entry: Transcr
 				copilot_version: bounded(entry.data.copilotVersion),
 				vscode_version: bounded(entry.data.vscodeVersion),
 				has_cwd: entry.data.context?.cwd !== undefined,
-				...(entry.data.context?.cwd !== undefined ? textField('cwd', entry.data.context.cwd, 4_096) : {}),
 			};
 			break;
 		case 'session.end':
@@ -133,8 +144,7 @@ export function mapTranscriptEntryToTraceEvent(sessionId: string, entry: Transcr
 			payload = {
 				content_length: entry.data.content.length,
 				attachment_count: entry.data.attachments?.length ?? 0,
-				...textField('content', entry.data.content, 32_000),
-				...(entry.data.attachments?.length ? serializedField('attachments', entry.data.attachments, 8_000) : {}),
+				...(includeVisibleContent ? visibleTraceFields({ content: boundedVisibleText(entry.data.content, MAX_SINGLE_VISIBLE_VALUE_BYTES) }) : {}),
 			};
 			break;
 		case 'assistant.message':
@@ -144,9 +154,10 @@ export function mapTranscriptEntryToTraceEvent(sessionId: string, entry: Transcr
 				content_length: entry.data.content.length,
 				tool_request_count: entry.data.toolRequests.length,
 				has_reasoning: entry.data.reasoningText !== undefined,
-				...textField('content', entry.data.content, 20_000),
-				...(entry.data.reasoningText !== undefined ? textField('reasoning', entry.data.reasoningText, 8_000) : {}),
-				...(entry.data.toolRequests.length ? serializedField('tool_requests', entry.data.toolRequests, 8_000) : {}),
+				...(includeVisibleContent ? visibleTraceFields({
+					content: boundedVisibleText(entry.data.content, MAX_ASSISTANT_VISIBLE_VALUE_BYTES),
+					tool_requests: safeTraceValue(entry.data.toolRequests, MAX_ASSISTANT_VISIBLE_VALUE_BYTES),
+				}) : {}),
 			};
 			break;
 		case 'model.request.started':
@@ -181,7 +192,7 @@ export function mapTranscriptEntryToTraceEvent(sessionId: string, entry: Transcr
 			context = entry.data.traceContext;
 			payload = {
 				tool_name: bounded(entry.data.toolName, 512),
-				...serializedField('arguments', entry.data.arguments, 24_000),
+				...(includeVisibleContent ? visibleTraceFields({ arguments: safeTraceValue(entry.data.arguments, MAX_SINGLE_VISIBLE_VALUE_BYTES) }) : {}),
 			};
 			break;
 		case 'tool.execution_complete':
@@ -190,7 +201,9 @@ export function mapTranscriptEntryToTraceEvent(sessionId: string, entry: Transcr
 			payload = {
 				success: entry.data.success,
 				result_length: entry.data.result?.content.length ?? 0,
-				...(entry.data.result !== undefined ? textField('result_content', entry.data.result.content, 24_000) : {}),
+				...(includeVisibleContent && entry.data.result?.content !== undefined
+					? visibleTraceFields({ result_content: boundedVisibleText(entry.data.result.content, MAX_SINGLE_VISIBLE_VALUE_BYTES) })
+					: {}),
 			};
 			break;
 		case 'assistant.turn_start':
@@ -228,34 +241,78 @@ function bounded(value: string, limit = 256): string {
 	return value.length <= limit ? value : value.slice(0, limit);
 }
 
-function textField(name: string, value: string, maxBytes: number): TraceJsonObject {
-	const encoded = new TextEncoder().encode(value);
-	if (encoded.byteLength <= maxBytes) {
-		return { [name]: value, [`${name}_truncated`]: false };
-	}
-	let low = 0;
-	let high = value.length;
-	while (low < high) {
-		const middle = Math.ceil((low + high) / 2);
-		if (new TextEncoder().encode(value.slice(0, middle)).byteLength <= maxBytes) {
-			low = middle;
-		} else {
-			high = middle - 1;
-		}
-	}
-	return { [name]: value.slice(0, low), [`${name}_truncated`]: true };
-}
-
-function serializedField(name: string, value: unknown, maxBytes: number): TraceJsonObject {
-	let serialized: string;
-	try {
-		serialized = JSON.stringify(value) ?? 'null';
-	} catch {
-		serialized = String(value);
-	}
-	return textField(name, serialized, maxBytes);
-}
-
 function nonNegative(value: number): number {
 	return Number.isFinite(value) ? Math.max(0, Math.round(value)) : 0;
+}
+
+function safeTraceValue(value: unknown, maxSerializedBytes: number): TraceJsonValue {
+	try {
+		const encoded = JSON.stringify(value, (key, item) => {
+			if (key && TRACE_SENSITIVE_KEY.test(key)) {
+				return '[REDACTED]';
+			}
+			return typeof item === 'string' ? redactSensitiveText(item) : item;
+		});
+		if (encoded === undefined) {
+			return null;
+		}
+		const encodedBytes = utf8ByteLength(encoded);
+		if (encodedBytes > maxSerializedBytes) {
+			return { truncated: true, encoded_length_bytes: encodedBytes };
+		}
+		return JSON.parse(encoded) as TraceJsonValue;
+	} catch {
+		return { serialization_failed: true };
+	}
+}
+
+function visibleTraceFields(fields: TraceJsonObject): TraceJsonObject {
+	const encodedBytes = jsonByteLength(fields);
+	if (encodedBytes <= MAX_VISIBLE_CONTENT_BYTES) {
+		return fields;
+	}
+	return { content_truncated: true, encoded_length_bytes: encodedBytes };
+}
+
+function boundedVisibleText(value: string, maxSerializedBytes: number): string {
+	const redacted = redactSensitiveText(value);
+	if (jsonByteLength(redacted) <= maxSerializedBytes) {
+		return redacted;
+	}
+
+	const marker = '\n[Modernity trace truncated]';
+	const availableInnerBytes = Math.max(0, maxSerializedBytes - 2);
+	let usedBytes = jsonStringInnerByteLength(marker);
+	if (usedBytes > availableInnerBytes) {
+		return '';
+	}
+	const chunks: string[] = [];
+	for (const character of redacted) {
+		const characterBytes = jsonStringInnerByteLength(character);
+		if (usedBytes + characterBytes > availableInnerBytes) {
+			break;
+		}
+		chunks.push(character);
+		usedBytes += characterBytes;
+	}
+	return chunks.join('') + marker;
+}
+
+function jsonStringInnerByteLength(value: string): number {
+	return utf8ByteLength(JSON.stringify(value)) - 2;
+}
+
+function jsonByteLength(value: TraceJsonValue | TraceJsonObject): number {
+	return utf8ByteLength(JSON.stringify(value));
+}
+
+function utf8ByteLength(value: string): number {
+	return TRACE_TEXT_ENCODER.encode(value).byteLength;
+}
+
+function redactSensitiveText(value: string): string {
+	return value
+		.replace(/(authorization\s*:\s*bearer\s+)[a-z0-9._~+\/-]{12,}/gi, '$1[REDACTED]')
+		.replace(/\b(?:github_pat_|ghp_|gho_|ghu_|ghs_|ghr_)[a-z0-9_]{12,}\b/gi, '[REDACTED_GITHUB_TOKEN]')
+		.replace(/((?:api[_-]?key|access[_-]?token|password|secret)\s*[=:]\s*["']?)[^\s,"'}]{4,}/gi, '$1[REDACTED]');
 }

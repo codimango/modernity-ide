@@ -10,6 +10,7 @@ import {
 	ToolRequest,
 	TranscriptEntry,
 } from '../../../platform/chat/common/sessionTranscriptService';
+import { IConfigurationService } from '../../../platform/configuration/common/configurationService';
 import { IEnvService } from '../../../platform/env/common/envService';
 import { IVSCodeExtensionContext } from '../../../platform/extContext/common/extensionContext';
 import { IFileSystemService, createDirectoryIfNotExists } from '../../../platform/filesystem/common/fileSystemService';
@@ -18,6 +19,7 @@ import { ITraceEventOutbox, mapTranscriptEntryToTraceEvent, type IRecoverableTra
 import { extUriBiasedIgnorePathCase } from '../../../util/vs/base/common/resources';
 import { URI } from '../../../util/vs/base/common/uri';
 import { generateUuid } from '../../../util/vs/base/common/uuid';
+import { isModernityBenchmarkEpisode } from '../../trace/vscode-node/modernityEpisodeTrace';
 
 const TRANSCRIPT_VERSION = 1;
 const TRANSCRIPT_PRODUCER = 'copilot-agent';
@@ -56,6 +58,7 @@ export class SessionTranscriptService implements ISessionTranscriptService {
 		@IEnvService private readonly _envService: IEnvService,
 		@ILogService private readonly _logService: ILogService,
 		@ITraceEventOutbox private readonly _traceOutbox: ITraceEventOutbox,
+		@IConfigurationService private readonly _configurationService: IConfigurationService,
 	) { }
 
 	private _getTranscriptsDir(): URI | undefined {
@@ -402,7 +405,9 @@ export class SessionTranscriptService implements ISessionTranscriptService {
 		session.lastEntryId = id;
 		session.lineCount++;
 		session.buffer.push(JSON.stringify(fullEntry) + '\n');
-		const traceEvent = mapTranscriptEntryToTraceEvent(sessionId, fullEntry, session.lineCount);
+		const traceEvent = mapTranscriptEntryToTraceEvent(sessionId, fullEntry, session.lineCount, {
+			includeVisibleContent: isModernityBenchmarkEpisode(this._configurationService, sessionId),
+		});
 		if (traceEvent) {
 			this._traceOutbox.enqueue(traceEvent).catch(error => {
 				this._logService.debug(`[SessionTranscript] Trace enqueue deferred to recovery: ${error instanceof Error ? error.message : String(error)}`);

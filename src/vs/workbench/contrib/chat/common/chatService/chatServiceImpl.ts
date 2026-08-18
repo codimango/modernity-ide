@@ -1213,6 +1213,8 @@ export class ChatService extends Disposable implements IChatService {
 		const agentPart = parsedRequest.parts.find((r): r is ChatRequestAgentPart => r instanceof ChatRequestAgentPart);
 		const agentSlashCommandPart = parsedRequest.parts.find((r): r is ChatRequestAgentSubcommandPart => r instanceof ChatRequestAgentSubcommandPart);
 		const commandPart = parsedRequest.parts.find((r): r is ChatRequestSlashCommandPart => r instanceof ChatRequestSlashCommandPart);
+		const preflightCommandPart = commandPart?.slashCommand.executeBeforeAgent ? commandPart : undefined;
+		const effectiveAgentPart = preflightCommandPart ? undefined : agentPart;
 		const requests = [...model.getRequests()];
 		const requestTelemetry = this.instantiationService.createInstance(ChatRequestTelemetry, {
 			agent: agentPart?.agent ?? defaultAgent,
@@ -1225,7 +1227,7 @@ export class ChatService extends Disposable implements IChatService {
 		});
 
 		let gotProgress = false;
-		const requestType = commandPart ? 'slashCommand' : 'string';
+		const requestType = commandPart && !preflightCommandPart ? 'slashCommand' : 'string';
 
 		const responseCreated = new DeferredPromise<IChatResponseModel>();
 		let responseCreatedComplete = false;
@@ -1386,15 +1388,32 @@ export class ChatService extends Disposable implements IChatService {
 			try {
 				let rawResult: IChatAgentResult | null | undefined;
 				let agentOrCommandFollowups: Promise<IChatFollowup[] | undefined> | undefined = undefined;
-				if (agentPart || (defaultAgent && !commandPart)) {
+				if (effectiveAgentPart || (defaultAgent && (!commandPart || preflightCommandPart))) {
 					// --- Step 1: Create the request model immediately (before any awaits) ---
 					// This fires RequestUiUpdated synchronously so the user sees their message right away.
-					const initialAgent = agentPart?.agent ?? defaultAgent;
+					const initialAgent = effectiveAgentPart?.agent ?? defaultAgent;
 					const initialCommand = agentSlashCommandPart?.command;
 					const initVariableData: IChatRequestVariableData = { variables: [] };
 					request = model.addRequest(parsedRequest, initVariableData, attempt, options?.modeInfo, initialAgent, initialCommand, options?.confirmation, options?.locationData, options?.attachedContext, undefined, options?.userSelectedModelId, options?.userSelectedTools?.get(), undefined, options?.isSystemInitiated, options?.systemInitiatedLabel, options?.terminalExecutionId);
 					const thisRequest = request;
 					completeResponseCreated();
+
+					if (preflightCommandPart) {
+						const commandPrompt = parsedRequest.text.substring(preflightCommandPart.range.endExclusive).trimStart();
+						await this.chatSlashCommandService.executeCommand(
+							preflightCommandPart.slashCommand.command,
+							commandPrompt,
+							new Progress<IChatProgress>(progress => progressCallback([progress])),
+							[],
+							location,
+							model.sessionResource,
+							token,
+							options,
+						);
+						if (token.isCancellationRequested) {
+							return;
+						}
+					}
 
 					// --- Step 2: Collect hooks + instructions in parallel (after UI is shown) ---
 					const [hooksResult, instructionEntries] = await Promise.all([
@@ -1483,7 +1502,7 @@ export class ChatService extends Disposable implements IChatService {
 					if (
 						this.configurationService.getValue('chat.detectParticipant.enabled') !== false &&
 						this.chatAgentService.hasChatParticipantDetectionProviders() &&
-						!agentPart &&
+						!effectiveAgentPart &&
 						!commandPart &&
 						!agentSlashCommandPart &&
 						enableCommandDetection &&
@@ -1505,7 +1524,7 @@ export class ChatService extends Disposable implements IChatService {
 						}
 					}
 
-					const agent = (detectedAgent ?? agentPart?.agent ?? defaultAgent)!;
+					const agent = (detectedAgent ?? effectiveAgentPart?.agent ?? defaultAgent)!;
 					const command = detectedCommand ?? agentSlashCommandPart?.command;
 
 					await this.extensionService.activateByEvent(`onChatParticipant:${agent.id}`);

@@ -42,7 +42,7 @@ class TestLogService {
 }
 
 describe('Modernity canonical IDE tracing', () => {
-	it('maps transcript entries with stable IDs and full message payloads', () => {
+	it('maps transcript entries with stable IDs and hides visible content by default', () => {
 		const userEvent = mapTranscriptEntryToTraceEvent(SESSION_ID, {
 			type: 'user.message',
 			id: '10000000-0000-4000-8000-000000000001',
@@ -89,10 +89,6 @@ describe('Modernity canonical IDE tracing', () => {
 				payload: {
 					content_length: 18,
 					attachment_count: 1,
-					content: 'secret prompt body',
-					content_truncated: false,
-					attachments: '[{"secret":true}]',
-					attachments_truncated: false,
 				},
 			},
 			toolEvent: {
@@ -114,12 +110,117 @@ describe('Modernity canonical IDE tracing', () => {
 				parent_event_id: '10000000-0000-4000-8000-000000000001',
 				payload: {
 					tool_name: 'read_file',
-					arguments: '{"apiKey":"do-not-export"}',
-					arguments_truncated: false,
 				},
 			},
-			serializedContainsContent: true,
-			serializedContainsArgument: true,
+			serializedContainsContent: false,
+			serializedContainsArgument: false,
+		});
+	});
+
+	it('redacts sensitive keys from opted-in tool arguments', () => {
+		const event = mapTranscriptEntryToTraceEvent(SESSION_ID, {
+			type: 'tool.execution_start',
+			id: '10000000-0000-4000-8000-000000000004',
+			timestamp: '2026-07-27T12:00:03.000Z',
+			parentId: null,
+			data: {
+				toolCallId: 'call-sensitive',
+				toolName: 'write_file',
+				arguments: { apiKey: 'do-not-export', path: 'Mana.java' },
+			},
+		}, 4, { includeVisibleContent: true });
+
+		expect({
+			arguments: event?.payload.arguments,
+			containsSecret: JSON.stringify(event).includes('do-not-export'),
+		}).toEqual({
+			arguments: { apiKey: '[REDACTED]', path: 'Mana.java' },
+			containsSecret: false,
+		});
+	});
+
+	it('includes opted-in visible content without exporting hidden reasoning', () => {
+		const event = mapTranscriptEntryToTraceEvent(SESSION_ID, {
+			type: 'assistant.message',
+			id: '10000000-0000-4000-8000-000000000003',
+			timestamp: '2026-07-27T12:00:02.000Z',
+			parentId: null,
+			data: {
+				messageId: 'message-1',
+				content: 'Visible answer',
+				reasoningText: 'Hidden chain of thought',
+				toolRequests: [{ toolCallId: 'call-1', name: 'write_file', arguments: '{"path":"Mana.java"}', type: 'function' }],
+			},
+		}, 3, { includeVisibleContent: true });
+
+		expect({
+			payload: event?.payload,
+			containsHiddenReasoning: JSON.stringify(event).includes('Hidden chain of thought'),
+		}).toEqual({
+			payload: {
+				content_length: 14,
+				tool_request_count: 1,
+				has_reasoning: true,
+				content: 'Visible answer',
+				tool_requests: [{ toolCallId: 'call-1', name: 'write_file', arguments: '{"path":"Mana.java"}', type: 'function' }],
+			},
+			containsHiddenReasoning: false,
+		});
+	});
+
+	it('keeps multibyte visible content below the durable event limit', () => {
+		const huge = '😀"\\\n'.repeat(20_000);
+		const entries = [
+			{
+				type: 'user.message' as const,
+				id: '10000000-0000-4000-8000-000000000010',
+				timestamp: '2026-07-27T12:00:10.000Z',
+				parentId: null,
+				data: { content: huge, attachments: [] },
+			},
+			{
+				type: 'assistant.message' as const,
+				id: '10000000-0000-4000-8000-000000000011',
+				timestamp: '2026-07-27T12:00:11.000Z',
+				parentId: null,
+				data: {
+					messageId: 'message-large',
+					content: huge,
+					toolRequests: [{ toolCallId: 'call-large', name: 'write_file', arguments: huge, type: 'function' as const }],
+				},
+			},
+			{
+				type: 'tool.execution_start' as const,
+				id: '10000000-0000-4000-8000-000000000012',
+				timestamp: '2026-07-27T12:00:12.000Z',
+				parentId: null,
+				data: { toolCallId: 'call-large', toolName: 'write_file', arguments: { content: huge } },
+			},
+			{
+				type: 'tool.execution_complete' as const,
+				id: '10000000-0000-4000-8000-000000000013',
+				timestamp: '2026-07-27T12:00:13.000Z',
+				parentId: null,
+				data: { toolCallId: 'call-large', success: true, result: { content: huge } },
+			},
+		];
+		const events = entries.map((entry, index) => mapTranscriptEntryToTraceEvent(
+			SESSION_ID,
+			entry,
+			index + 10,
+			{ includeVisibleContent: true },
+		)!);
+		const eventBytes = events.map(event => Buffer.byteLength(JSON.stringify(event), 'utf8'));
+		const payloadBytes = events.map(event => Buffer.byteLength(JSON.stringify(event.payload), 'utf8'));
+
+		expect({
+			allEventsBelow64KiB: eventBytes.every(bytes => bytes < 64 * 1024),
+			allPayloadsBelow50KiB: payloadBytes.every(bytes => bytes < 50 * 1024),
+			allValuesTruncated: events.every(event => JSON.stringify(event.payload).includes('truncated')),
+		}).toEqual({
+			allEventsBelow64KiB: true,
+			allPayloadsBelow50KiB: true,
+			allValuesTruncated: true,
 		});
 	});
 

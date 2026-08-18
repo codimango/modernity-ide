@@ -235,7 +235,7 @@ export class ChatRequestParser {
 		// If there is an agent, we let
 		// * silent ones go through since they are only UI-facing and don't influence chat history
 		// * slash commands that support prompt attachments, since those are meant to be used in conjunction with an agent and we can assume the agent can handle them.
-		if (!usedAgent || slashCommand?.silent || capabilities?.supportsPromptAttachments) {
+		if (!usedAgent || slashCommand?.silent || slashCommand?.executeBeforeAgent || capabilities?.supportsPromptAttachments) {
 			if (slashCommand) {
 				// Valid standalone slash command
 				return new ChatRequestSlashCommandPart(slashRange, slashEditorRange, slashCommand);

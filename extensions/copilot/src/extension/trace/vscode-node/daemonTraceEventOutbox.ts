@@ -7,10 +7,12 @@ import { createHash } from 'crypto';
 import * as fs from 'fs';
 import * as os from 'os';
 import * as path from 'path';
+import { IConfigurationService } from '../../../platform/configuration/common/configurationService';
 import { IVSCodeExtensionContext } from '../../../platform/extContext/common/extensionContext';
 import { CanonicalTraceEventV1, IRecoverableTraceEventOutbox, mapTranscriptEntryToTraceEvent } from '../../../platform/trace/common/trace';
 import { URI } from '../../../util/vs/base/common/uri';
 import type { TranscriptEntry } from '../../../platform/chat/common/sessionTranscriptService';
+import { activateModernityEpisodeProvider, isModernityBenchmarkEpisode } from './modernityEpisodeTrace';
 
 const MAX_BATCH_EVENTS = 100;
 const MAX_BATCH_BYTES = 1024 * 1024;
@@ -48,6 +50,7 @@ export class DaemonTraceEventOutbox implements IRecoverableTraceEventOutbox {
 
 	constructor(
 		@IVSCodeExtensionContext extensionContext: IVSCodeExtensionContext,
+		@IConfigurationService private readonly _configurationService: IConfigurationService,
 	) {
 		this._checkpointDirectory = path.join(extensionContext.globalStorageUri.fsPath, 'modernity.trace', 'transcript-checkpoints');
 	}
@@ -81,6 +84,7 @@ export class DaemonTraceEventOutbox implements IRecoverableTraceEventOutbox {
 		if (!UUID_PATTERN.test(sessionId)) {
 			return;
 		}
+		await activateModernityEpisodeProvider(this._configurationService);
 		const handle = await fs.promises.open(transcriptPath, 'r');
 		try {
 			const stat = await handle.stat();
@@ -105,7 +109,9 @@ export class DaemonTraceEventOutbox implements IRecoverableTraceEventOutbox {
 				}
 				sourceSequence++;
 				const entry = JSON.parse(line) as TranscriptEntry;
-				const event = mapTranscriptEntryToTraceEvent(sessionId, entry, sourceSequence);
+				const event = mapTranscriptEntryToTraceEvent(sessionId, entry, sourceSequence, {
+					includeVisibleContent: isModernityBenchmarkEpisode(this._configurationService, sessionId),
+				});
 				if (event) {
 					events.push(event);
 				}

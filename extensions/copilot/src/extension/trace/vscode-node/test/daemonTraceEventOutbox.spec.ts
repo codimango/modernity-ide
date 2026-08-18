@@ -9,6 +9,7 @@ import * as os from 'os';
 import * as path from 'path';
 import { AddressInfo } from 'net';
 import { afterEach, describe, expect, it } from 'vitest';
+import { DefaultsOnlyConfigurationService } from '../../../../platform/configuration/common/defaultsOnlyConfigurationService';
 import { IVSCodeExtensionContext } from '../../../../platform/extContext/common/extensionContext';
 import { URI } from '../../../../util/vs/base/common/uri';
 import { DaemonTraceEventOutbox } from '../daemonTraceEventOutbox';
@@ -49,7 +50,7 @@ describe('DaemonTraceEventOutbox', () => {
 			const transcriptPath = path.join(root, `${SESSION_ID}.jsonl`);
 			await fs.promises.writeFile(transcriptPath, transcriptLine('10000000-0000-4000-8000-000000000001', 'first'));
 			const context = { globalStorageUri: URI.file(path.join(root, 'global')) } as IVSCodeExtensionContext;
-			const outbox = new DaemonTraceEventOutbox(context);
+			const outbox = new DaemonTraceEventOutbox(context, new DefaultsOnlyConfigurationService());
 
 			await outbox.recoverTranscript(SESSION_ID, URI.file(transcriptPath));
 			await outbox.recoverTranscript(SESSION_ID, URI.file(transcriptPath));

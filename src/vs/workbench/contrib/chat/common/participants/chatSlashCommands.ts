@@ -38,6 +38,12 @@ export interface IChatSlashData {
 	 */
 	silent?: boolean;
 
+	/**
+	 * Run this command as setup, then send the remaining prompt through the
+	 * normal default agent in the same request.
+	 */
+	executeBeforeAgent?: boolean;
+
 	locations: ChatAgentLocation[];
 	modes?: ChatModeKind[];
 	sessionTypes?: string[];

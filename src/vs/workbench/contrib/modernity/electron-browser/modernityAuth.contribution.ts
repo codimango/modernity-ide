@@ -11,7 +11,7 @@ import { URI } from '../../../../base/common/uri.js';
 import { localize, localize2 } from '../../../../nls.js';
 import { Action2, MenuId, registerAction2 } from '../../../../platform/actions/common/actions.js';
 import { IClipboardService } from '../../../../platform/clipboard/common/clipboardService.js';
-import { ICommandService } from '../../../../platform/commands/common/commands.js';
+import { CommandsRegistry, ICommandService } from '../../../../platform/commands/common/commands.js';
 import { ContextKeyExpr, IContextKey, IContextKeyService, RawContextKey } from '../../../../platform/contextkey/common/contextkey.js';
 import { ServicesAccessor } from '../../../../platform/instantiation/common/instantiation.js';
 import { IModernityAuthService, ModernityAuthState } from '../../../../platform/modernityAuth/common/modernityAuth.js';
@@ -440,6 +440,19 @@ class ModernityManageAccountAction extends Action2 {
 		await accessor.get(ICommandService).executeCommand('aiCustomization.openModernityAccount');
 	}
 }
+
+/**
+ * Hand the signed-in Modernity bearer to built-in Modernity extensions.
+ *
+ * The account session already refreshes itself, so extensions must read the token
+ * per request through this command instead of caching one. It is intentionally an
+ * internal (underscore-prefixed) command and stays out of the command palette;
+ * like the sandbox daemon bearer, it is scoped to the trust boundary of this
+ * window's extensions.
+ */
+CommandsRegistry.registerCommand('_modernity.auth.getAccessToken', async (accessor: ServicesAccessor): Promise<string | undefined> => {
+	return accessor.get(IModernityAuthService).getAccessToken();
+});
 
 registerAction2(ModernityManageAccountAction);
 registerAction2(ModernityLogoutAction);
