@@ -12,6 +12,8 @@ import { IOpenerService } from '../../../../platform/opener/common/opener.js';
 import { URI } from '../../../../base/common/uri.js';
 import { IFileService } from '../../../../platform/files/common/files.js';
 import { IEnvironmentService } from '../../../../platform/environment/common/environment.js';
+import { resolveModernityApiBaseUrl } from '../../../../platform/product/common/modernityApi.js';
+import { IProductService } from '../../../../platform/product/common/productService.js';
 
 registerWorkbenchContribution2(ModernityDaemonStatusBarEntry.ID, ModernityDaemonStatusBarEntry, WorkbenchPhase.AfterRestored);
 registerWorkbenchContribution2(ModernityInferenceStatusBarEntry.ID, ModernityInferenceStatusBarEntry, WorkbenchPhase.AfterRestored);
@@ -52,8 +54,9 @@ class OpenModernityInferenceStatusAction extends Action2 {
 
 	async run(accessor: ServicesAccessor): Promise<void> {
 		const openerService = accessor.get(IOpenerService);
+		const productService = accessor.get(IProductService);
 		try {
-			const url = 'http://127.0.0.1:8000/health';
+			const url = `${resolveModernityApiBaseUrl(productService.modernityApiBaseUrl)}/health`;
 			await openerService.open(URI.parse(url), { openExternal: true });
 		} catch {
 			// ignore

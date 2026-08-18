@@ -285,20 +285,22 @@ class CreateModernityProjectAction extends Action2 {
 			const installations = await authService.getGithubInstallations();
 			if (!installations.items.some(installation => installation.status === 'active')) {
 				const setup = await authService.startGithubInstallation();
-				await openerService.open(URI.parse(setup.authorizationUrl), { openExternal: true });
-				const { confirmed } = await dialogService.confirm({
-					message: localize('modernity.createProject.githubAccessTitle', "Finish GitHub Repository Access"),
-					detail: localize('modernity.createProject.githubAccessDetail', "Approve the Modernity GitHub App in your browser, then return here and continue."),
-					primaryButton: localize('modernity.createProject.githubAccessContinue', "Continue"),
-					cancelButton: localize('modernity.createProject.githubAccessCancel', "Cancel"),
-				});
-				if (!confirmed) {
-					return;
-				}
-				const refreshed = await authService.getGithubInstallations();
-				if (!refreshed.items.some(installation => installation.status === 'active')) {
-					notificationService.warn(localize('modernity.createProject.githubAccessPending', "GitHub repository access is not active yet. Finish the browser setup and try again."));
-					return;
+				if (setup.installation?.status !== 'active') {
+					await openerService.open(URI.parse(setup.authorizationUrl), { openExternal: true });
+					const { confirmed } = await dialogService.confirm({
+						message: localize('modernity.createProject.githubAccessTitle', "Finish GitHub Repository Access"),
+						detail: localize('modernity.createProject.githubAccessDetail', "Approve the Modernity GitHub App in your browser, then return here and continue."),
+						primaryButton: localize('modernity.createProject.githubAccessContinue', "Continue"),
+						cancelButton: localize('modernity.createProject.githubAccessCancel', "Cancel"),
+					});
+					if (!confirmed) {
+						return;
+					}
+					const refreshed = await authService.getGithubInstallations();
+					if (!refreshed.items.some(installation => installation.status === 'active')) {
+						notificationService.warn(localize('modernity.createProject.githubAccessPending', "GitHub repository access is not active yet. Finish the browser setup and try again."));
+						return;
+					}
 				}
 			}
 		} catch (error) {

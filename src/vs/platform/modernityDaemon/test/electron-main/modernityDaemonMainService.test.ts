@@ -46,11 +46,12 @@ suite('ModernityDaemonMainService', () => {
 		} as IProductService;
 		const templateMode = process.env['MODERNITY_TEMPLATE_MODE'] ?? 'remote';
 		const controlPlaneUrl = templateMode === 'remote'
-			? process.env['MODERNITY_CONTROL_PLANE_URL'] ?? productService.modernityApiBaseUrl
+			? productService.modernityApiBaseUrl
 			: null;
 		const requests = disposables.add(new TestRequestService({
 			template_mode: templateMode,
 			control_plane_url: controlPlaneUrl,
+			trace_ingestion_url: productService.modernityApiBaseUrl,
 		}));
 		const fileService = {
 			async readFile() {

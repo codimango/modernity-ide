@@ -6,6 +6,7 @@
 import { env } from '../../../base/common/process.js';
 import { IProductConfiguration } from '../../../base/common/product.js';
 import { ISandboxConfiguration } from '../../../base/parts/sandbox/common/sandboxTypes.js';
+import { resolveModernityApiBaseUrl } from './modernityApi.js';
 
 /**
  * @deprecated It is preferred that you use `IProductService` if you can. This
@@ -88,6 +89,13 @@ else {
 			}
 		});
 	}
+}
+
+const modernityApiBaseUrlOverride = env['MODERNITY_API_BASE_URL']?.trim();
+if (modernityApiBaseUrlOverride) {
+	Object.assign(product, {
+		modernityApiBaseUrl: resolveModernityApiBaseUrl(modernityApiBaseUrlOverride),
+	});
 }
 
 export default product;

@@ -14,6 +14,7 @@ import { IRequestContext } from '../../../base/parts/request/common/request.js';
 import { IFileService } from '../../files/common/files.js';
 import { IModernityAuthService } from '../../modernityAuth/common/modernityAuth.js';
 import { IModernityDaemonService } from '../../modernityDaemon/common/modernityDaemon.js';
+import { resolveModernityApiBaseUrl } from '../../product/common/modernityApi.js';
 import { IProductService } from '../../product/common/productService.js';
 import { asText, IRequestService } from '../../request/common/request.js';
 import { StorageScope, StorageTarget } from '../../storage/common/storage.js';
@@ -28,7 +29,6 @@ import {
 	ModernityProjectProvisionPhase,
 } from '../common/modernityProject.js';
 
-const DEFAULT_API_BASE_URL = 'http://127.0.0.1:8000';
 const INSTALLATION_ID_STORAGE_KEY = 'modernity.machine.installationId';
 
 interface ApiMachineResponse {
@@ -120,7 +120,7 @@ export class ModernityProjectMainService extends Disposable implements IModernit
 		@IProductService private readonly productService: IProductService,
 	) {
 		super();
-		this.apiBaseUrl = (productService.modernityApiBaseUrl ?? DEFAULT_API_BASE_URL).replace(/\/+$/, '');
+		this.apiBaseUrl = resolveModernityApiBaseUrl(productService.modernityApiBaseUrl);
 	}
 
 	async createProject(request: IModernityCreateProjectRequest): Promise<IModernityCreateProjectResult> {

@@ -47,6 +47,7 @@ export interface IModernityGithubInstallationPage {
 export interface IModernityGithubInstallStart {
 	readonly authorizationUrl: string;
 	readonly expiresAt: string;
+	readonly installation?: IModernityGithubInstallation;
 }
 
 export interface IModernityDeviceAuthorization {

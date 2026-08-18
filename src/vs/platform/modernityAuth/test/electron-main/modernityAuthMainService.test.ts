@@ -154,6 +154,22 @@ suite('ModernityAuthMainService', () => {
 							version: 3,
 						},
 					});
+				case '/api/v1/github/installations/start':
+					return response(200, {
+						authorization_url: 'https://github.com/apps/modernity/installations/new',
+						expires_at: '2026-01-04T00:00:00Z',
+						installation: {
+							id: 'installation-id',
+							github_installation_id: '9001',
+							account: { login: 'builder' },
+							permissions: { contents: 'write' },
+							repository_selection: 'selected',
+							is_default: true,
+							status: 'active',
+							last_refreshed_at: '2026-01-04T00:00:00Z',
+							version: 4,
+						},
+					});
 				default:
 					return response(404);
 			}
@@ -163,11 +179,13 @@ suite('ModernityAuthMainService', () => {
 		const state = await service.initialize();
 		const installations = await service.getGithubInstallations();
 		const refreshed = await service.refreshGithubInstallation('installation-id', 2);
+		const started = await service.startGithubInstallation();
 
 		assert.deepStrictEqual({
 			state,
 			installations,
 			refreshed,
+			started,
 			storedRefresh: storage.get(REFRESH_TOKEN_STORAGE_KEY, StorageScope.APPLICATION),
 			paths: requests.requests.map(requestPath),
 			refreshHeaders: requests.requests[3].headers,
@@ -216,12 +234,28 @@ suite('ModernityAuthMainService', () => {
 				lastRefreshedAt: '2026-01-03T00:00:00Z',
 				version: 3,
 			},
+			started: {
+				authorizationUrl: 'https://github.com/apps/modernity/installations/new',
+				expiresAt: '2026-01-04T00:00:00Z',
+				installation: {
+					id: 'installation-id',
+					githubInstallationId: '9001',
+					accountLogin: 'builder',
+					permissions: { contents: 'write' },
+					repositorySelection: 'selected',
+					isDefault: true,
+					status: 'active',
+					lastRefreshedAt: '2026-01-04T00:00:00Z',
+					version: 4,
+				},
+			},
 			storedRefresh: 'encrypted:new-refresh',
 			paths: [
 				'/api/v1/auth/refresh',
 				'/api/v1/auth/me',
 				'/api/v1/github/installations',
 				'/api/v1/github/installations/installation-id/refresh',
+				'/api/v1/github/installations/start',
 			],
 			refreshHeaders: {
 				'Content-Type': 'application/json',

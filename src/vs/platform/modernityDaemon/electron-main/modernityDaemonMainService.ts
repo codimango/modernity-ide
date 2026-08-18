@@ -12,6 +12,7 @@ import { URI } from '../../../base/common/uri.js';
 import { IEnvironmentMainService } from '../../environment/electron-main/environmentMainService.js';
 import { IFileService } from '../../files/common/files.js';
 import { ILogService } from '../../log/common/log.js';
+import { resolveModernityApiBaseUrl } from '../../product/common/modernityApi.js';
 import { IProductService } from '../../product/common/productService.js';
 import { asText, IRequestService } from '../../request/common/request.js';
 import {
@@ -33,6 +34,7 @@ interface DaemonRuntimeFile {
 interface DaemonHealthResponse {
 	readonly template_mode: ModernityTemplateMode;
 	readonly control_plane_url: string | null;
+	readonly trace_ingestion_url: string | null;
 }
 
 export class ModernityDaemonMainService extends Disposable implements IModernityDaemonService {
@@ -81,6 +83,7 @@ export class ModernityDaemonMainService extends Disposable implements IModernity
 		const templateCacheRoot = join(this.environmentService.userDataPath, 'templates');
 		const logFile = join(this.environmentService.userDataPath, 'daemon.log');
 		const templateMode = this.templateMode();
+		const apiBaseUrl = resolveModernityApiBaseUrl(this.productService.modernityApiBaseUrl);
 		const controlPlaneUrl = this.controlPlaneUrl(templateMode);
 		await this.fileService.createFolder(URI.file(this.environmentService.userDataPath));
 
@@ -100,6 +103,8 @@ export class ModernityDaemonMainService extends Disposable implements IModernity
 			templateMode,
 			'--template-cache-root',
 			templateCacheRoot,
+			'--trace-ingestion-url',
+			apiBaseUrl,
 		];
 		if (controlPlaneUrl) {
 			daemonArguments.push('--control-plane-url', controlPlaneUrl);
@@ -183,12 +188,7 @@ export class ModernityDaemonMainService extends Disposable implements IModernity
 		if (templateMode === 'local') {
 			return undefined;
 		}
-		const configured = process.env['MODERNITY_CONTROL_PLANE_URL']
-			?? this.productService.modernityApiBaseUrl;
-		if (!configured) {
-			throw new Error('Remote template mode requires the Modernity API URL.');
-		}
-		return configured.replace(/\/+$/, '');
+		return resolveModernityApiBaseUrl(this.productService.modernityApiBaseUrl);
 	}
 
 	private gradleOptions(): string {
@@ -231,9 +231,11 @@ export class ModernityDaemonMainService extends Disposable implements IModernity
 			return undefined;
 		}
 		const expectedMode = this.templateMode();
+		const expectedApiBaseUrl = resolveModernityApiBaseUrl(this.productService.modernityApiBaseUrl);
 		const expectedControlPlaneUrl = this.controlPlaneUrl(expectedMode);
 		if (
 			health.template_mode !== expectedMode
+			|| health.trace_ingestion_url?.replace(/\/+$/, '') !== expectedApiBaseUrl
 			|| (expectedMode === 'remote'
 				&& health.control_plane_url?.replace(/\/+$/, '') !== expectedControlPlaneUrl)
 		) {

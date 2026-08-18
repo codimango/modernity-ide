@@ -21,7 +21,7 @@ function ensure_sandbox_daemon() {
 	local RT="$WS/daemon.json"
 	local LOG="$WS/daemon.log"
 	local TEMPLATE_MODE="${MODERNITY_TEMPLATE_MODE:-remote}"
-	local CONTROL_PLANE_URL="${MODERNITY_CONTROL_PLANE_URL:-http://127.0.0.1:8000}"
+	local API_BASE_URL="$MODERNITY_API_BASE_URL"
 	if [[ ! -f "$MOD_ROOT/services/sandbox/daemon.py" ]]; then
 		return 0
 	fi
@@ -96,7 +96,7 @@ function ensure_sandbox_daemon() {
 		DAEMON_PY="python3"
 	fi
 	if [[ -f "$RT" ]]; then
-		if (cd "$MOD_ROOT" && EXPECTED_TEMPLATE_MODE="$TEMPLATE_MODE" EXPECTED_CONTROL_PLANE_URL="$CONTROL_PLANE_URL" PYTHONPATH="$MOD_ROOT" "$DAEMON_PY" -c 'import os, sys; from services.sandbox.client import SandboxDaemonClient; c=SandboxDaemonClient.from_runtime_file(sys.argv[1]); h=c.health(); expected=os.environ["EXPECTED_TEMPLATE_MODE"]; sys.exit(0 if h.get("template_mode") == expected and (expected != "remote" or h.get("control_plane_url") == os.environ["EXPECTED_CONTROL_PLANE_URL"]) else 1)' "$RT" 2>/dev/null); then
+		if (cd "$MOD_ROOT" && EXPECTED_TEMPLATE_MODE="$TEMPLATE_MODE" EXPECTED_API_BASE_URL="$API_BASE_URL" PYTHONPATH="$MOD_ROOT" "$DAEMON_PY" -c 'import os, sys; from services.sandbox.client import SandboxDaemonClient; c=SandboxDaemonClient.from_runtime_file(sys.argv[1]); h=c.health(); expected_mode=os.environ["EXPECTED_TEMPLATE_MODE"]; expected_url=os.environ["EXPECTED_API_BASE_URL"]; compatible=h.get("template_mode") == expected_mode and h.get("trace_ingestion_url") == expected_url and (expected_mode != "remote" or h.get("control_plane_url") == expected_url); sys.exit(0 if compatible else 1)' "$RT" 2>/dev/null); then
 			echo "[code.sh] Sandbox daemon already running ($RT)" >&2
 			return 0
 		fi
@@ -105,7 +105,7 @@ function ensure_sandbox_daemon() {
 	fi
 	local TEMPLATE_ARGS=(--template-mode "$TEMPLATE_MODE")
 	if [[ "$TEMPLATE_MODE" == "remote" ]]; then
-		TEMPLATE_ARGS+=(--control-plane-url "$CONTROL_PLANE_URL")
+		TEMPLATE_ARGS+=(--control-plane-url "$API_BASE_URL")
 	fi
 	echo "[code.sh] Starting sandbox daemon: workspace=$WS runtime=$RT log=$LOG python=$DAEMON_PY template_mode=$TEMPLATE_MODE" >&2
 	(cd "$MOD_ROOT" && PYTHONPATH="$MOD_ROOT" nohup "$DAEMON_PY" -m services.sandbox.daemon start --workspace-root "$WS" --runtime-file "$RT" --host 127.0.0.1 --port 0 "${TEMPLATE_ARGS[@]}" > "$LOG" 2>&1 &)
@@ -129,6 +129,12 @@ function ensure_inference_gateway() {
 	local GW_PORT=8000
 	local GW_LOG="/tmp/modernity-workspace/inference.log"
 	local GW_PIDFILE="/tmp/modernity-workspace/inference.pid"
+	local API_BASE_URL="${MODERNITY_API_BASE_URL%/}"
+
+	if [[ "$API_BASE_URL" != "http://127.0.0.1:${GW_PORT}" && "$API_BASE_URL" != "http://localhost:${GW_PORT}" ]]; then
+		echo "[code.sh] Using configured Modernity API at $API_BASE_URL" >&2
+		return 0
+	fi
 
 	if lsof -i :${GW_PORT} -sTCP:LISTEN >/dev/null 2>&1; then
 		if curl -s http://127.0.0.1:${GW_PORT}/api/inference/v1/models >/dev/null 2>&1 || curl -s http://127.0.0.1:${GW_PORT}/health >/dev/null 2>&1; then
@@ -194,6 +200,12 @@ function ensure_inference_gateway() {
 
 function code() {
 	cd "$ROOT"
+	local PRODUCT_API_BASE_URL
+	PRODUCT_API_BASE_URL=$(node -p "require('./product.json').modernityApiBaseUrl || ''")
+	export MODERNITY_API_BASE_URL="${MODERNITY_API_BASE_URL:-$PRODUCT_API_BASE_URL}"
+	while [[ "$MODERNITY_API_BASE_URL" == */ ]]; do
+		export MODERNITY_API_BASE_URL="${MODERNITY_API_BASE_URL%/}"
+	done
 
 	# T280149056: auto-start sandbox daemon before Electron launch
 	ensure_sandbox_daemon || true

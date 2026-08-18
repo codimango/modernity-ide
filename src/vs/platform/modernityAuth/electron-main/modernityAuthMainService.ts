@@ -19,6 +19,7 @@ import {
 	ModernityGithubInstallationStatus,
 	ModernityAuthState,
 } from '../common/modernityAuth.js';
+import { resolveModernityApiBaseUrl } from '../../product/common/modernityApi.js';
 import { IProductService } from '../../product/common/productService.js';
 import { asText, IRequestService } from '../../request/common/request.js';
 import { StorageScope, StorageTarget } from '../../storage/common/storage.js';
@@ -28,7 +29,6 @@ const REFRESH_TOKEN_STORAGE_KEY = 'modernity.auth.refreshToken';
 const REFRESH_MARGIN_MS = 60_000;
 const REFRESH_RETRY_MS = 15_000;
 const MAX_TIMER_DELAY_MS = 2_147_483_647;
-const DEFAULT_API_BASE_URL = 'http://127.0.0.1:8000';
 
 interface ApiErrorBody {
 	readonly code?: string;
@@ -109,6 +109,7 @@ interface GithubInstallationResponse {
 interface GithubInstallStartResponse {
 	readonly authorization_url: string;
 	readonly expires_at: string;
+	readonly installation?: ApiGithubInstallation | null;
 }
 
 class ModernityAuthRequestError extends Error {
@@ -152,7 +153,7 @@ export class ModernityAuthMainService extends Disposable implements IModernityAu
 		@ILogService private readonly logService: ILogService,
 	) {
 		super();
-		this.apiBaseUrl = (productService.modernityApiBaseUrl ?? DEFAULT_API_BASE_URL).replace(/\/+$/, '');
+		this.apiBaseUrl = resolveModernityApiBaseUrl(productService.modernityApiBaseUrl);
 	}
 
 	initialize(): Promise<ModernityAuthState> {
@@ -368,7 +369,11 @@ export class ModernityAuthMainService extends Disposable implements IModernityAu
 			[200],
 			accessToken,
 		);
-		return { authorizationUrl: response.authorization_url, expiresAt: response.expires_at };
+		return {
+			authorizationUrl: response.authorization_url,
+			expiresAt: response.expires_at,
+			installation: response.installation ? this.toGithubInstallation(response.installation) : undefined,
+		};
 	}
 
 	async refreshGithubInstallation(installationId: string, version: number): Promise<IModernityGithubInstallation> {

@@ -234,8 +234,19 @@ function extractTextFromResultContent(content: readonly unknown[]): string {
 	return out;
 }
 
+/** Returns the shared Modernity API override inherited by the extension host. */
+function getApiBaseUrlOverride(): string | undefined {
+	try {
+		const configured = typeof process !== 'undefined' ? process.env?.['MODERNITY_API_BASE_URL'] : undefined;
+		if (configured?.trim()) {
+			return configured.trim().replace(/\/+$/, '');
+		}
+	} catch { }
+	return undefined;
+}
+
 function getBaseUrlFromConfig(extensionMode?: number): string {
-	// 1. VS Code setting modernity.gatewayUrl
+	// VS Code setting modernity.gatewayUrl
 	try {
 		const config = vscode.workspace.getConfiguration('modernity');
 		const configured = config.get<string>('gatewayUrl');
@@ -244,39 +255,13 @@ function getBaseUrlFromConfig(extensionMode?: number): string {
 		}
 	} catch { }
 
-	// 2. Environment variables (useful for dev and for packaged builds with env injection)
-	try {
-		const env = typeof process !== 'undefined' ? process.env : undefined;
-		if (env) {
-			const candidates = [
-				env['MODERNITY_GATEWAY_URL'],
-				env['MODERNITY_API_BASE_URL'],
-				env['MODERNITY_INFERENCE_BASE_URL'],
-				env['MODERNITY_API_URL'],
-			];
-			for (const c of candidates) {
-				if (c && c.trim()) {
-					return c.trim().replace(/\/+$/, '');
-				}
-			}
-			const chatEnv = env['MODERNITY_CHAT_COMPLETIONS_URL'];
-			if (chatEnv && chatEnv.trim()) {
-				const trimmed = chatEnv.trim();
-				if (trimmed.includes('/api/inference/')) {
-					return trimmed.split('/api/inference/')[0].replace(/\/+$/, '');
-				}
-				return trimmed.replace(/\/+$/, '');
-			}
-		}
-	} catch { }
-
-	// 3. Distinguish development vs packaged builds
+	// Distinguish development vs packaged builds.
 	// Development builds (ExtensionMode.Development or Test) point to localhost
 	// Packaged builds (Production) point to configured private gateway URL, fallback to modernity.dev
 	// VS Code ExtensionMode: 1=Production, 2=Development, 3=Test (enum values)
 	const isProd = extensionMode === 1; // vscode.ExtensionMode.Production == 1
 	if (isProd) {
-		// In packaged builds, try to read private gateway URL from config or env, fallback to modernity.dev
+		// In packaged builds, try to read the private gateway URL from config, then fall back to modernity.dev.
 		// When we have production we will change hardcoded string -> modernity.dev/v1/chat/completions
 		// For now, keep localhost as fallback but allow override via settings for private gateway
 		try {
@@ -286,7 +271,7 @@ function getBaseUrlFromConfig(extensionMode?: number): string {
 				return prodUrl.trim().replace(/\/+$/, '');
 			}
 		} catch { }
-		// Private gateway URL for production - can be overridden via MODERNITY_GATEWAY_URL env or settings
+		// Private gateway URL for production can be overridden through the setting above.
 		// TODO: change to https://modernity.dev when production gateway is ready
 		return 'https://modernity.dev';
 	}
@@ -296,9 +281,17 @@ function getBaseUrlFromConfig(extensionMode?: number): string {
 }
 
 function getEndpointUrls(extensionMode?: number): { base: string; modelsUrl: string; chatCompletionsUrl: string } {
-	const base = getBaseUrlFromConfig(extensionMode);
+	const apiBaseUrlOverride = getApiBaseUrlOverride();
+	const base = apiBaseUrlOverride ?? getBaseUrlFromConfig(extensionMode);
+	if (apiBaseUrlOverride) {
+		return {
+			base,
+			modelsUrl: `${base}/api/inference/v1/models`,
+			chatCompletionsUrl: `${base}/api/inference/v1/chat/completions`,
+		};
+	}
 
-	// Allow full URL overrides via settings
+	// Preserve feature-specific overrides when the shared API override is unset.
 	let modelsUrlOverride: string | undefined;
 	let chatUrlOverride: string | undefined;
 	try {
@@ -309,25 +302,6 @@ function getEndpointUrls(extensionMode?: number): { base: string; modelsUrl: str
 		if (modelsUrlOverride === '') { modelsUrlOverride = undefined; }
 		if (chatUrlOverride === '') { chatUrlOverride = undefined; }
 	} catch { }
-
-	// Environment overrides for full URLs
-	try {
-		const env = typeof process !== 'undefined' ? process.env : undefined;
-		if (env) {
-			if (!modelsUrlOverride) {
-				const m = env['MODERNITY_MODELS_URL']?.trim();
-				if (m) { modelsUrlOverride = m; }
-			}
-			if (!chatUrlOverride) {
-				const c = env['MODERNITY_CHAT_COMPLETIONS_URL']?.trim();
-				if (c) { chatUrlOverride = c; }
-			}
-		}
-	} catch { }
-
-	// Production gateway detection: if base contains modernity.dev or custom domain, use it.
-	// For packaged builds, the configured private gateway URL will be supplied via settings or env above.
-	// Otherwise fallback to localhost for development builds.
 
 	const modelsUrl = modelsUrlOverride || `${base}/api/inference/v1/models`;
 	const chatCompletionsUrl = chatUrlOverride || `${base}/api/inference/v1/chat/completions`;

@@ -645,6 +645,10 @@ export class ModernitySettingsWidget extends Disposable {
 			connect.enabled = false;
 			try {
 				const started = await this.authService.startGithubInstallation();
+				if (started.installation?.status === 'active') {
+					this.renderAccountState(state);
+					return;
+				}
 				await this.openerService.open(URI.parse(started.authorizationUrl), { openExternal: true });
 			} catch {
 				connect.enabled = true;

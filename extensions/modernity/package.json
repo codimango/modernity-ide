@@ -40,7 +40,7 @@
         "properties": {
           "modernity.gatewayUrl": {
             "type": "string",
-            "description": "Base URL for the Modernity inference gateway. Points to http://127.0.0.1:8000 in development and to the private gateway in packaged builds (e.g. https://modernity.dev).",
+            "description": "Base URL for the Modernity inference gateway when MODERNITY_API_BASE_URL is not set.",
             "default": "http://127.0.0.1:8000",
             "scope": "application"
           },
