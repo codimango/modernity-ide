@@ -1,0 +1,9 @@
+interface:
+  display_name: "Modernity Tooling"
+  short_description: "Build and verify Minecraft mods in sandboxes"
+  default_prompt: "Use $modernity-tooling to compile and verify this Minecraft mod in a Modernity sandbox."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "modernity-sandbox"
+      description: "Modernity Sandbox Tools"

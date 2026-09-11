@@ -5,3 +5,7 @@ esbuild.browser.mts
 tsconfig.json
 tsconfig.browser.json
 *.tsbuildinfo
+**/__pycache__/**
+**/*.py[cod]
+**/*.egg-info/**
+**/.DS_Store

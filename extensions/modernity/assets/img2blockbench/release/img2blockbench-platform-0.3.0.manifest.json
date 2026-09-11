@@ -1,0 +1,225 @@
+{
+  "artifact_contract": [
+    ".bbmodel",
+    ".png texture atlas",
+    ".geo.json",
+    ".model-spec.json",
+    ".audit.json",
+    ".manifest.json",
+    ".zip",
+    "optional seven-angle review manifest and PNGs"
+  ],
+  "bundle": {
+    "archive_root": "img2blockbench-platform-0.3.0",
+    "bytes": 166238,
+    "path": "img2blockbench-platform-0.3.0.zip",
+    "sha256": "9d01e7e248a062427023bb32fab61aa9e89b8dccadd36a2efa6a7d55ffe71b2c"
+  },
+  "capabilities": [
+    "agent-authored semantic cuboid models",
+    "single-image native relief",
+    "six-axis mesh ray reconstruction",
+    "calibrated multi-view and clip visual hulls",
+    "seven-angle holistic model review",
+    "calibrated Minecraft-style texture baking",
+    "Three.js import and preview",
+    "player-wearable shell export",
+    "deterministic Blockbench and Bedrock bundles"
+  ],
+  "cli_commands": [
+    "probe",
+    "new",
+    "validate",
+    "review",
+    "build",
+    "bake-reference-textures",
+    "preview-threejs",
+    "from-threejs",
+    "from-image",
+    "from-mesh",
+    "from-views",
+    "extract-clip-views",
+    "render-relief",
+    "audit"
+  ],
+  "contents": [
+    {
+      "bytes": 1084,
+      "path": "CHANGELOG.md",
+      "sha256": "defe8a0faa161dae8803c94382bc34950f4116308d5ce6935f2b666c9e58eedb"
+    },
+    {
+      "bytes": 1084,
+      "path": "LICENSE",
+      "sha256": "9c3625a5adfb2957fa1a3c409c205d814103ad09883a096ce1e9cb1a47ed2a15"
+    },
+    {
+      "bytes": 6898,
+      "path": "README.md",
+      "sha256": "436410dd3c1f47a381a8dd2ab4cc880c5d47b53314ba10990b2732088a2f6183"
+    },
+    {
+      "bytes": 475,
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "b80250ee1a99bead739ce7e3be39eb67d6a3d13d62223bd8efd8c64d34a2afdc"
+    },
+    {
+      "bytes": 2569,
+      "path": "docs/AUTORESEARCH.md",
+      "sha256": "fb2acafbe061499bc456e4e28e547728f7a18f78d6654654bcabca206d430b5a"
+    },
+    {
+      "bytes": 37532,
+      "path": "docs/AUTORESEARCH_CYCLES.md",
+      "sha256": "0ad8a8d51037946f186a3e9601d8d4c01ca5c4cbef5d26da257b9c6225401d0b"
+    },
+    {
+      "bytes": 12887,
+      "path": "docs/METRICS_AND_REGRESSIONS.md",
+      "sha256": "4811c2f0f926aa91f83a63892a993b0ebd3ff4b8f472466c2543e6a91e245901"
+    },
+    {
+      "bytes": 3031,
+      "path": "docs/PLATFORM.md",
+      "sha256": "5f68936d7971073fae0669f9eb8056a16045bd0b4d1de31a4cb32b095a1f0eb9"
+    },
+    {
+      "bytes": 16486,
+      "path": "docs/TECHNICAL_DESIGN.md",
+      "sha256": "75c46f2c83af5908f7aee77c92f70c01f9245bb5a5b288e418bcc557439e54ec"
+    },
+    {
+      "bytes": 1720,
+      "path": "pyproject.toml",
+      "sha256": "b8c01eab2be62abea5c3fcf90867129b91761018e28cda1c27f1172df6a30abf"
+    },
+    {
+      "bytes": 2848,
+      "path": "release/manifest.json",
+      "sha256": "3d0a308654f4abc4eebb5d44de76b97226811e30cf604278c85d49b6ec6c2235"
+    },
+    {
+      "bytes": 11450,
+      "path": "skill/img2blockbench/SKILL.md",
+      "sha256": "4fe90470938170aea84a5269349ff81c77d25267b4e8ecfab99535f202f53a6c"
+    },
+    {
+      "bytes": 247,
+      "path": "skill/img2blockbench/agents/openai.yaml",
+      "sha256": "fd0cbdcc1c458e073c68ae8c319eb593ce210d1ae2a27309f1c98939547cdc9d"
+    },
+    {
+      "bytes": 11601,
+      "path": "skill/img2blockbench/references/model-spec.md",
+      "sha256": "95ff1c12690a356405345f31c1e96b0d90eb3f2d40181b72e4b78dafde311b29"
+    },
+    {
+      "bytes": 6556,
+      "path": "skill/img2blockbench/references/quality-rubric.md",
+      "sha256": "03284e7fb7f123fd38ef185835253355916365a2c6b76527b980fafa89a11639"
+    },
+    {
+      "bytes": 10838,
+      "path": "skill/img2blockbench/scripts/audit_source_overlap.py",
+      "sha256": "fd598b7f397664a517beb49560a6532bf0677f553e4e02d5a0c71db3aead890f"
+    },
+    {
+      "bytes": 132420,
+      "path": "skill/img2blockbench/scripts/img2blockbench.py",
+      "sha256": "e5b3c3ad2fe7a137fddd5236e3713a88e254ad9c756ddc4561a97b35be28cf13"
+    },
+    {
+      "bytes": 73861,
+      "path": "skill/img2blockbench/scripts/mesh_reconstruction.py",
+      "sha256": "5e3bedb0b401fd674b5571e2fc8d7b71fbab7cc3fbb0faaff55b4955747dde66"
+    },
+    {
+      "bytes": 1629,
+      "path": "skill/img2blockbench/scripts/model_provenance.py",
+      "sha256": "6d32ebc90229bf6be0409833833e5a150c65e18febe181b8b589a80d18ef6f9e"
+    },
+    {
+      "bytes": 11917,
+      "path": "skill/img2blockbench/scripts/model_review.py",
+      "sha256": "9f4f1de4ccd50b09d3a2ecef9ead7363310ba0bad57f88465f0221104260bf21"
+    },
+    {
+      "bytes": 73158,
+      "path": "skill/img2blockbench/scripts/photo_reconstruction.py",
+      "sha256": "27b618ff3cd365c72fc4fcc72ca288dd9db00a72bcf9e667b7ae4268c266ba64"
+    },
+    {
+      "bytes": 31490,
+      "path": "skill/img2blockbench/scripts/reference_texture.py",
+      "sha256": "c3b85d29ed49bdce1d0ee70a60a4f8221302bd7d7c492e6ae97ca44a66495c25"
+    },
+    {
+      "bytes": 46168,
+      "path": "skill/img2blockbench/scripts/semantic_evidence.py",
+      "sha256": "96c5726826d63423f78d59564fe61723190de73a29a6f5795f9520fbfdc63dd6"
+    },
+    {
+      "bytes": 40332,
+      "path": "skill/img2blockbench/scripts/semantic_geometry.py",
+      "sha256": "57ed35b6769ff161e44283ba13082283d136697b6de8ad5d43e734472aa83d83"
+    },
+    {
+      "bytes": 46705,
+      "path": "skill/img2blockbench/scripts/view_reconstruction.py",
+      "sha256": "e19220d9696635bf91cf213a087d554180b728617fd212a283cab9365bc1ae4e"
+    },
+    {
+      "bytes": 12812,
+      "path": "skill/img2blockbench/scripts/wearable_export.py",
+      "sha256": "80ae59aa4b21c0b136116f486dcf649d23fae7759b5f2cd091175ec7fac2b601"
+    }
+  ],
+  "excluded_roots": [
+    ".git",
+    ".github",
+    "benchmarks",
+    "demo",
+    "examples",
+    "round2-inputs",
+    "round3-inputs",
+    "tests",
+    "tools"
+  ],
+  "excluded_suffixes": [
+    ".bbmodel",
+    ".glb",
+    ".gltf",
+    ".gif",
+    ".jpeg",
+    ".jpg",
+    ".mp4",
+    ".png",
+    ".webp",
+    ".zip"
+  ],
+  "known_limits": [
+    "single-image relief does not recover hidden anatomy",
+    "calibrated multiview does not recover hidden concavities or rig semantics",
+    "semantic resemblance still requires agent or human visual review",
+    "external reference policy omits the source file but not deliberately transferred texture pixels",
+    "source meshes and third-party generators are external inputs"
+  ],
+  "model_spec_schema": 1,
+  "name": "img2blockbench-platform",
+  "platform_status": "release-candidate",
+  "research_status": {
+    "round1": "passed",
+    "round2": "passed",
+    "round3_angel": "passed",
+    "round3_atlus": "passed",
+    "round3_engine": "passed",
+    "round3_private_glb_assets": "pending-input"
+  },
+  "schema_version": 1,
+  "source": {
+    "commit": "076a5e6d200af6035db678a66192e8c364f01115",
+    "dirty": false
+  },
+  "supported_python": ">=3.10",
+  "version": "0.3.0"
+}

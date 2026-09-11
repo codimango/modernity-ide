@@ -17,6 +17,7 @@
     "onLanguageModelChat:modernity"
   ],
   "enabledApiProposals": [
+    "chatPromptFiles",
     "chatProvider",
     "languageModelSystem",
     "languageModelCapabilities"
@@ -26,6 +27,16 @@
       {
         "vendor": "modernity",
         "displayName": "Modernity"
+      }
+    ],
+    "chatSkills": [
+      {
+        "path": "./assets/img2blockbench/skill/img2blockbench/SKILL.md",
+        "when": "!isWeb"
+      },
+      {
+        "path": "./assets/skills/modernity-tooling/SKILL.md",
+        "when": "!isWeb"
       }
     ],
     "mcpServerDefinitionProviders": [
