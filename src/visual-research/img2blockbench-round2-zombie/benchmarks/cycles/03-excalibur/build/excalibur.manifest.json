@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 34711,
+      "path": "excalibur.model-spec.json",
+      "sha256": "02d2392895dda91937f1b9591aa36170cab0ef467d14f31457684bbe17e63d03"
+    },
+    {
+      "bytes": 4490,
+      "path": "excalibur.png",
+      "sha256": "717f42451971655a83636570dae05c8c6dda8d4945c3e11ab921317b91af64ac"
+    },
+    {
+      "bytes": 63545,
+      "path": "excalibur.bbmodel",
+      "sha256": "ab0b7544ea32b4baa6f67285e7cec57e929d155cf821fa7da358b9d46e3e64ad"
+    },
+    {
+      "bytes": 61881,
+      "path": "excalibur.geo.json",
+      "sha256": "3a6761a8c6bf2f0ac4801b4a425f89901c2bdc8b9efc939441cc710e8a8e5984"
+    },
+    {
+      "bytes": 155,
+      "path": "excalibur.audit.json",
+      "sha256": "5b69934d750fa1a701099337fa0028df354adebddc5df99a2e3547ed90d6d28c"
+    },
+    {
+      "bytes": 125929,
+      "path": "excalibur.reference.png",
+      "sha256": "c4cda78a427ac1d2704df6ec8bde6a755361cbcf73628871fe60cfa97f726fcd"
+    }
+  ],
+  "collision": {
+    "eye_height": 3.0,
+    "height": 3.75,
+    "width": 0.45
+  },
+  "generator": {
+    "lane": "agent-authored-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "excalibur",
+  "reference": {
+    "height": 600,
+    "image": "excalibur.reference.png",
+    "sha256": "c4cda78a427ac1d2704df6ec8bde6a755361cbcf73628871fe60cfa97f726fcd",
+    "width": 800
+  },
+  "schema_version": 1
+}

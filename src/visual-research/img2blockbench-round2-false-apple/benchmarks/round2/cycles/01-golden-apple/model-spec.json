@@ -1,0 +1,7588 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "apple",
+      "parent": "root",
+      "pivot": [
+        0,
+        25,
+        0
+      ]
+    },
+    {
+      "name": "crooked_stem_lower_1",
+      "parent": "apple",
+      "pivot": [
+        0,
+        40,
+        0
+      ]
+    },
+    {
+      "name": "crooked_stem_middle_1",
+      "parent": "crooked_stem_lower_1",
+      "pivot": [
+        -1.45,
+        45.5,
+        0.35
+      ]
+    },
+    {
+      "name": "crooked_stem_upper_1",
+      "parent": "crooked_stem_middle_1",
+      "pivot": [
+        0.3,
+        48.35,
+        -0.35
+      ]
+    },
+    {
+      "name": "crooked_stem_tip_1",
+      "parent": "crooked_stem_upper_1",
+      "pivot": [
+        -0.85,
+        51,
+        0.2
+      ]
+    },
+    {
+      "name": "root_back_left_root_knuckle_1",
+      "parent": "apple",
+      "pivot": [
+        -15.5,
+        15,
+        -9
+      ]
+    },
+    {
+      "name": "root_back_left_root_knuckle_2",
+      "parent": "root_back_left_root_knuckle_1",
+      "pivot": [
+        -16.75,
+        13.25,
+        -10.5
+      ]
+    },
+    {
+      "name": "root_back_left_knuckle_elbow_1",
+      "parent": "root_back_left_root_knuckle_2",
+      "pivot": [
+        -18,
+        11.5,
+        -12
+      ]
+    },
+    {
+      "name": "root_back_left_elbow_wrist_1",
+      "parent": "root_back_left_knuckle_elbow_1",
+      "pivot": [
+        -20,
+        7,
+        -14.5
+      ]
+    },
+    {
+      "name": "root_back_left_elbow_wrist_2",
+      "parent": "root_back_left_elbow_wrist_1",
+      "pivot": [
+        -21,
+        4.75,
+        -15.25
+      ]
+    },
+    {
+      "name": "root_back_left_raised_spur_1",
+      "parent": "root_back_left_elbow_wrist_2",
+      "pivot": [
+        -22,
+        2.5,
+        -16
+      ]
+    },
+    {
+      "name": "root_back_left_wrist_toe_1",
+      "parent": "root_back_left_elbow_wrist_2",
+      "pivot": [
+        -22,
+        2.5,
+        -16
+      ]
+    },
+    {
+      "name": "root_back_left_inner_rootlet_1",
+      "parent": "root_back_left_wrist_toe_1",
+      "pivot": [
+        -24,
+        0.5,
+        -17
+      ]
+    },
+    {
+      "name": "root_back_left_outer_rootlet_1",
+      "parent": "root_back_left_wrist_toe_1",
+      "pivot": [
+        -24,
+        0.5,
+        -17
+      ]
+    },
+    {
+      "name": "root_front_left_root_knuckle_1",
+      "parent": "apple",
+      "pivot": [
+        -5,
+        9.2,
+        10
+      ]
+    },
+    {
+      "name": "root_front_left_root_knuckle_2",
+      "parent": "root_front_left_root_knuckle_1",
+      "pivot": [
+        -6,
+        6.6,
+        11.75
+      ]
+    },
+    {
+      "name": "root_front_left_knuckle_elbow_1",
+      "parent": "root_front_left_root_knuckle_2",
+      "pivot": [
+        -7,
+        4,
+        13.5
+      ]
+    },
+    {
+      "name": "root_front_left_elbow_wrist_1",
+      "parent": "root_front_left_knuckle_elbow_1",
+      "pivot": [
+        -9.5,
+        -1,
+        16.5
+      ]
+    },
+    {
+      "name": "root_front_left_elbow_wrist_2",
+      "parent": "root_front_left_elbow_wrist_1",
+      "pivot": [
+        -9,
+        -3.5,
+        17.75
+      ]
+    },
+    {
+      "name": "root_front_left_raised_spur_1",
+      "parent": "root_front_left_elbow_wrist_2",
+      "pivot": [
+        -8.5,
+        -6,
+        19
+      ]
+    },
+    {
+      "name": "root_front_left_wrist_toe_1",
+      "parent": "root_front_left_elbow_wrist_2",
+      "pivot": [
+        -8.5,
+        -6,
+        19
+      ]
+    },
+    {
+      "name": "root_front_left_inner_rootlet_1",
+      "parent": "root_front_left_wrist_toe_1",
+      "pivot": [
+        -11.5,
+        -9,
+        21.5
+      ]
+    },
+    {
+      "name": "root_front_left_outer_rootlet_1",
+      "parent": "root_front_left_wrist_toe_1",
+      "pivot": [
+        -11.5,
+        -9,
+        21.5
+      ]
+    },
+    {
+      "name": "root_front_right_root_knuckle_1",
+      "parent": "apple",
+      "pivot": [
+        5,
+        9.2,
+        10
+      ]
+    },
+    {
+      "name": "root_front_right_root_knuckle_2",
+      "parent": "root_front_right_root_knuckle_1",
+      "pivot": [
+        6,
+        6.7,
+        11.75
+      ]
+    },
+    {
+      "name": "root_front_right_knuckle_elbow_1",
+      "parent": "root_front_right_root_knuckle_2",
+      "pivot": [
+        7,
+        4.2,
+        13.5
+      ]
+    },
+    {
+      "name": "root_front_right_elbow_wrist_1",
+      "parent": "root_front_right_knuckle_elbow_1",
+      "pivot": [
+        9.8,
+        -0.8,
+        16.5
+      ]
+    },
+    {
+      "name": "root_front_right_elbow_wrist_2",
+      "parent": "root_front_right_elbow_wrist_1",
+      "pivot": [
+        9.3,
+        -3.3,
+        17.75
+      ]
+    },
+    {
+      "name": "root_front_right_raised_spur_1",
+      "parent": "root_front_right_elbow_wrist_2",
+      "pivot": [
+        8.8,
+        -5.8,
+        19
+      ]
+    },
+    {
+      "name": "root_front_right_wrist_toe_1",
+      "parent": "root_front_right_elbow_wrist_2",
+      "pivot": [
+        8.8,
+        -5.8,
+        19
+      ]
+    },
+    {
+      "name": "root_front_right_inner_rootlet_1",
+      "parent": "root_front_right_wrist_toe_1",
+      "pivot": [
+        11.8,
+        -9,
+        21.5
+      ]
+    },
+    {
+      "name": "root_front_right_outer_rootlet_1",
+      "parent": "root_front_right_wrist_toe_1",
+      "pivot": [
+        11.8,
+        -9,
+        21.5
+      ]
+    },
+    {
+      "name": "root_back_right_root_knuckle_1",
+      "parent": "apple",
+      "pivot": [
+        15.5,
+        17,
+        -9
+      ]
+    },
+    {
+      "name": "root_back_right_root_knuckle_2",
+      "parent": "root_back_right_root_knuckle_1",
+      "pivot": [
+        16.75,
+        14.75,
+        -10.5
+      ]
+    },
+    {
+      "name": "root_back_right_knuckle_elbow_1",
+      "parent": "root_back_right_root_knuckle_2",
+      "pivot": [
+        18,
+        12.5,
+        -12
+      ]
+    },
+    {
+      "name": "root_back_right_elbow_wrist_1",
+      "parent": "root_back_right_knuckle_elbow_1",
+      "pivot": [
+        20,
+        7.5,
+        -14.5
+      ]
+    },
+    {
+      "name": "root_back_right_elbow_wrist_2",
+      "parent": "root_back_right_elbow_wrist_1",
+      "pivot": [
+        21,
+        5,
+        -15.25
+      ]
+    },
+    {
+      "name": "root_back_right_raised_spur_1",
+      "parent": "root_back_right_elbow_wrist_2",
+      "pivot": [
+        22,
+        2.5,
+        -16
+      ]
+    },
+    {
+      "name": "root_back_right_wrist_toe_1",
+      "parent": "root_back_right_elbow_wrist_2",
+      "pivot": [
+        22,
+        2.5,
+        -16
+      ]
+    },
+    {
+      "name": "root_back_right_inner_rootlet_1",
+      "parent": "root_back_right_wrist_toe_1",
+      "pivot": [
+        24,
+        0.5,
+        -17
+      ]
+    },
+    {
+      "name": "root_back_right_outer_rootlet_1",
+      "parent": "root_back_right_wrist_toe_1",
+      "pivot": [
+        24,
+        0.5,
+        -17
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 2.8,
+    "height": 3.65,
+    "width": 2.55
+  },
+  "cubes": [
+    {
+      "bone": "apple",
+      "center": [
+        -16.5,
+        12,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_001",
+      "origin": [
+        -16.5,
+        12,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -16.5,
+        14,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_002",
+      "origin": [
+        -16.5,
+        14,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -16.5,
+        16,
+        -10.5
+      ],
+      "faces": {
+        "south": {
+          "material": "cut_shadow"
+        },
+        "up": {
+          "material": "cut_shadow"
+        }
+      },
+      "material": "gold",
+      "name": "apple_volume_003",
+      "origin": [
+        -16.5,
+        16,
+        -10.5
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        2.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -16.5,
+        16,
+        10.5
+      ],
+      "faces": {
+        "north": {
+          "material": "cut_shadow"
+        },
+        "up": {
+          "material": "cut_shadow"
+        }
+      },
+      "material": "gold",
+      "name": "apple_volume_004",
+      "origin": [
+        -16.5,
+        16,
+        10.5
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        2.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -16.5,
+        38,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_005",
+      "origin": [
+        -16.5,
+        38,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -14.3,
+        10,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_006",
+      "origin": [
+        -14.3,
+        10,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 6",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -14.3,
+        12,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_007",
+      "origin": [
+        -14.3,
+        12,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 7",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -14.3,
+        14,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_008",
+      "origin": [
+        -14.3,
+        14,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 8",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -13.2,
+        16,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_009",
+      "origin": [
+        -13.2,
+        16,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 9",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -14.3,
+        18,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_010",
+      "origin": [
+        -14.3,
+        18,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 10",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -13.2,
+        34,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_011",
+      "origin": [
+        -13.2,
+        34,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 11",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -14.3,
+        36,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_012",
+      "origin": [
+        -14.3,
+        36,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 12",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -14.3,
+        38,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_013",
+      "origin": [
+        -14.3,
+        38,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 13",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -14.3,
+        40,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_014",
+      "origin": [
+        -14.3,
+        40,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 14",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -12.1,
+        10,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_015",
+      "origin": [
+        -12.1,
+        10,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 15",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -12.1,
+        12,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_016",
+      "origin": [
+        -12.1,
+        12,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 16",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -11,
+        14,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_017",
+      "origin": [
+        -11,
+        14,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 17",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -12.1,
+        20,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_018",
+      "origin": [
+        -12.1,
+        20,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 18",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        6,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -9.9,
+        24,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_019",
+      "origin": [
+        -9.9,
+        24,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 19",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.6,
+        2,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -12.1,
+        26,
+        -14
+      ],
+      "faces": {
+        "south": {
+          "material": "cut_shadow"
+        },
+        "west": {
+          "material": "cut_shadow"
+        }
+      },
+      "material": "gold",
+      "name": "apple_volume_020",
+      "origin": [
+        -12.1,
+        26,
+        -14
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 20",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -12.1,
+        26,
+        14
+      ],
+      "faces": {
+        "north": {
+          "material": "cut_shadow"
+        },
+        "west": {
+          "material": "cut_shadow"
+        }
+      },
+      "material": "gold",
+      "name": "apple_volume_021",
+      "origin": [
+        -12.1,
+        26,
+        14
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 21",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -12.1,
+        30,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_022",
+      "origin": [
+        -12.1,
+        30,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 22",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        6,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -11,
+        36,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_023",
+      "origin": [
+        -11,
+        36,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 23",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -12.1,
+        38,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_024",
+      "origin": [
+        -12.1,
+        38,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 24",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -12.1,
+        40,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_025",
+      "origin": [
+        -12.1,
+        40,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 25",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -9.9,
+        8,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_026",
+      "origin": [
+        -9.9,
+        8,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 26",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        14
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -8.8,
+        10,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_027",
+      "origin": [
+        -8.8,
+        10,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 27",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -8.8,
+        12,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_028",
+      "origin": [
+        -8.8,
+        12,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 28",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -9.9,
+        16,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_029",
+      "origin": [
+        -9.9,
+        16,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 29",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        0,
+        18,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_030",
+      "origin": [
+        0,
+        18,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 30",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        22,
+        2,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -7.7,
+        20,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_031",
+      "origin": [
+        -7.7,
+        20,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 31",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.6,
+        2,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -8.8,
+        22,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_032",
+      "origin": [
+        -8.8,
+        22,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 32",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -8.8,
+        27,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_033",
+      "origin": [
+        -8.8,
+        27,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 33",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -7.7,
+        30,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_034",
+      "origin": [
+        -7.7,
+        30,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 34",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.6,
+        2,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        0,
+        32,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_035",
+      "origin": [
+        0,
+        32,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 35",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        22,
+        2,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -9.9,
+        34,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_036",
+      "origin": [
+        -9.9,
+        34,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 36",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -8.8,
+        38,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_037",
+      "origin": [
+        -8.8,
+        38,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 37",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -8.8,
+        40,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_038",
+      "origin": [
+        -8.8,
+        40,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 38",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -9.9,
+        42,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_039",
+      "origin": [
+        -9.9,
+        42,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 39",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        14
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -6.6,
+        8,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_040",
+      "origin": [
+        -6.6,
+        8,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 40",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -5.5,
+        14,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_041",
+      "origin": [
+        -5.5,
+        14,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 41",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.6,
+        2,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        0,
+        16,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_042",
+      "origin": [
+        0,
+        16,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 42",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        17.6,
+        2,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        0,
+        34,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_043",
+      "origin": [
+        0,
+        34,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 43",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        17.6,
+        2,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -5.5,
+        36,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_044",
+      "origin": [
+        -5.5,
+        36,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 44",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.6,
+        2,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -6.6,
+        42,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_045",
+      "origin": [
+        -6.6,
+        42,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 45",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -5.5,
+        6,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_046",
+      "origin": [
+        -5.5,
+        6,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 46",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        0,
+        10,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_047",
+      "origin": [
+        0,
+        10,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 47",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.2,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        0,
+        12,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_048",
+      "origin": [
+        0,
+        12,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 48",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.2,
+        2,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        0,
+        25,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_049",
+      "origin": [
+        0,
+        25,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 49",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.2,
+        8,
+        42
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        0,
+        38,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_050",
+      "origin": [
+        0,
+        38,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 50",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.2,
+        2,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        0,
+        40,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_051",
+      "origin": [
+        0,
+        40,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 51",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.2,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -5.5,
+        44,
+        0
+      ],
+      "faces": {
+        "east": {
+          "material": "cut_shadow"
+        }
+      },
+      "material": "gold",
+      "name": "apple_volume_052",
+      "origin": [
+        -5.5,
+        44,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 52",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        0,
+        6,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_053",
+      "origin": [
+        0,
+        6,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 53",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8.8,
+        2,
+        14
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        0,
+        8,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_054",
+      "origin": [
+        0,
+        8,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 54",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8.8,
+        2,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        0,
+        20,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_055",
+      "origin": [
+        0,
+        20,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 55",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8.8,
+        2,
+        42
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        0,
+        30,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_056",
+      "origin": [
+        0,
+        30,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 56",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8.8,
+        2,
+        42
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        -3.3,
+        42,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_057",
+      "origin": [
+        -3.3,
+        42,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 57",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        0,
+        14,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_058",
+      "origin": [
+        0,
+        14,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 58",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        0,
+        36,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_059",
+      "origin": [
+        0,
+        36,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 59",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        5.5,
+        14,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_060",
+      "origin": [
+        5.5,
+        14,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 60",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.6,
+        2,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        5.5,
+        36,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_061",
+      "origin": [
+        5.5,
+        36,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 61",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.6,
+        2,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        3.3,
+        42,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_062",
+      "origin": [
+        3.3,
+        42,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 62",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        5.5,
+        6,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_063",
+      "origin": [
+        5.5,
+        6,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 63",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        6.6,
+        8,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_064",
+      "origin": [
+        6.6,
+        8,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 64",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        7.7,
+        20,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_065",
+      "origin": [
+        7.7,
+        20,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 65",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.6,
+        2,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        7.7,
+        30,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_066",
+      "origin": [
+        7.7,
+        30,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 66",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.6,
+        2,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        6.6,
+        42,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_067",
+      "origin": [
+        6.6,
+        42,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 67",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        5.5,
+        44,
+        0
+      ],
+      "faces": {
+        "west": {
+          "material": "cut_shadow"
+        }
+      },
+      "material": "gold",
+      "name": "apple_volume_068",
+      "origin": [
+        5.5,
+        44,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 68",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        8.8,
+        10,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_069",
+      "origin": [
+        8.8,
+        10,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 69",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        8.8,
+        12,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_070",
+      "origin": [
+        8.8,
+        12,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 70",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        8.8,
+        22,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_071",
+      "origin": [
+        8.8,
+        22,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 71",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        9.9,
+        25,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_072",
+      "origin": [
+        9.9,
+        25,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 72",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.6,
+        4,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        8.8,
+        28,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_073",
+      "origin": [
+        8.8,
+        28,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 73",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        37.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        8.8,
+        38,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_074",
+      "origin": [
+        8.8,
+        38,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 74",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        8.8,
+        40,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_075",
+      "origin": [
+        8.8,
+        40,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 75",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        9.9,
+        8,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_076",
+      "origin": [
+        9.9,
+        8,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 76",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        14
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        11,
+        14,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_077",
+      "origin": [
+        11,
+        14,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 77",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        9.9,
+        16,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_078",
+      "origin": [
+        9.9,
+        16,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 78",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        9.9,
+        34,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_079",
+      "origin": [
+        9.9,
+        34,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 79",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        11,
+        36,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_080",
+      "origin": [
+        11,
+        36,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 80",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        9.9,
+        42,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_081",
+      "origin": [
+        9.9,
+        42,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 81",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        14
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        12.1,
+        10,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_082",
+      "origin": [
+        12.1,
+        10,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 82",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        12.1,
+        12,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_083",
+      "origin": [
+        12.1,
+        12,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 83",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        13.2,
+        16,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_084",
+      "origin": [
+        13.2,
+        16,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 84",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        12.1,
+        18,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_085",
+      "origin": [
+        12.1,
+        18,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 85",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        13.2,
+        21,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_086",
+      "origin": [
+        13.2,
+        21,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 86",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        13.2,
+        29,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_087",
+      "origin": [
+        13.2,
+        29,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 87",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        12.1,
+        32,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_088",
+      "origin": [
+        12.1,
+        32,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 88",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        13.2,
+        34,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_089",
+      "origin": [
+        13.2,
+        34,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 89",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        12.1,
+        38,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_090",
+      "origin": [
+        12.1,
+        38,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 90",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        12.1,
+        40,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_091",
+      "origin": [
+        12.1,
+        40,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 91",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        14.3,
+        10,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_092",
+      "origin": [
+        14.3,
+        10,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 92",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        14.3,
+        12,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_093",
+      "origin": [
+        14.3,
+        12,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 93",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        14.3,
+        14,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_094",
+      "origin": [
+        14.3,
+        14,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 94",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        14.3,
+        18,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_095",
+      "origin": [
+        14.3,
+        18,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 95",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        14.3,
+        25,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_096",
+      "origin": [
+        14.3,
+        25,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 96",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        4,
+        32.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        14.3,
+        32,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_097",
+      "origin": [
+        14.3,
+        32,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 97",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        14.3,
+        36,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_098",
+      "origin": [
+        14.3,
+        36,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 98",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        14.3,
+        38,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_099",
+      "origin": [
+        14.3,
+        38,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 99",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        14.3,
+        40,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_100",
+      "origin": [
+        14.3,
+        40,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 100",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        16.5,
+        12,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_101",
+      "origin": [
+        16.5,
+        12,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 101",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        16.5,
+        14,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_102",
+      "origin": [
+        16.5,
+        14,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 102",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        16.5,
+        17,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_103",
+      "origin": [
+        16.5,
+        17,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 103",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        4,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        16.5,
+        25,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_104",
+      "origin": [
+        16.5,
+        25,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 104",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        12,
+        28
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        16.5,
+        33,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_105",
+      "origin": [
+        16.5,
+        33,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 105",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        4,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        16.5,
+        36,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_106",
+      "origin": [
+        16.5,
+        36,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 106",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        16.5,
+        38,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_107",
+      "origin": [
+        16.5,
+        38,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 107",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        18.7,
+        16,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_108",
+      "origin": [
+        18.7,
+        16,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 108",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        14
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        18.7,
+        19,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_109",
+      "origin": [
+        18.7,
+        19,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 109",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        4,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        18.7,
+        25,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_110",
+      "origin": [
+        18.7,
+        25,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 110",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        8,
+        23.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        18.7,
+        31,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_111",
+      "origin": [
+        18.7,
+        31,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 111",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        4,
+        18.666667
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        18.7,
+        34,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_112",
+      "origin": [
+        18.7,
+        34,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 112",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        14
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        20.9,
+        20,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_113",
+      "origin": [
+        20.9,
+        20,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 113",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        20.9,
+        25,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_114",
+      "origin": [
+        20.9,
+        25,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 114",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        8,
+        14
+      ]
+    },
+    {
+      "bone": "apple",
+      "center": [
+        20.9,
+        30,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "apple_volume_115",
+      "origin": [
+        20.9,
+        30,
+        0
+      ],
+      "role": "carved stepped near-spherical golden apple greedy volume 115",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        2,
+        9.333333
+      ]
+    },
+    {
+      "bone": "crooked_stem_lower_1",
+      "center": [
+        0,
+        42.849342,
+        0
+      ],
+      "faces": {},
+      "material": "bark_dark",
+      "name": "crooked_stem_lower_1",
+      "origin": [
+        0,
+        40,
+        0
+      ],
+      "role": "crooked lower stem tapered segment 1",
+      "rotation": [
+        3.52119,
+        0,
+        14.769199
+      ],
+      "size": [
+        1.4,
+        6.398684,
+        1.35
+      ]
+    },
+    {
+      "bone": "crooked_stem_middle_1",
+      "center": [
+        -1.45,
+        47.208435,
+        0.35
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "crooked_stem_middle_1",
+      "origin": [
+        -1.45,
+        45.5,
+        0.35
+      ],
+      "role": "crooked middle stem tapered segment 1",
+      "rotation": [
+        -11.821647,
+        0,
+        -31.551385
+      ],
+      "size": [
+        1.1,
+        4.11687,
+        1.05
+      ]
+    },
+    {
+      "bone": "crooked_stem_upper_1",
+      "center": [
+        0.3,
+        49.820332,
+        -0.35
+      ],
+      "faces": {},
+      "material": "bark_dark",
+      "name": "crooked_stem_upper_1",
+      "origin": [
+        0.3,
+        48.35,
+        -0.35
+      ],
+      "role": "crooked upper stem tapered segment 1",
+      "rotation": [
+        10.779663,
+        0,
+        23.459024
+      ],
+      "size": [
+        0.825,
+        3.640663,
+        0.775
+      ]
+    },
+    {
+      "bone": "crooked_stem_tip_1",
+      "center": [
+        -0.85,
+        52.510794,
+        0.2
+      ],
+      "faces": {},
+      "material": "bark_light",
+      "name": "crooked_stem_tip_1",
+      "origin": [
+        -0.85,
+        51,
+        0.2
+      ],
+      "role": "broken stem tip tapered segment 1",
+      "rotation": [
+        -3.795202,
+        0,
+        -5.710593
+      ],
+      "size": [
+        0.575,
+        3.721589,
+        0.525
+      ]
+    },
+    {
+      "bone": "root_back_left_root_knuckle_1",
+      "center": [
+        -15.5,
+        16.311011,
+        -9
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_back_left_root_knuckle_1",
+      "origin": [
+        -15.5,
+        15,
+        -9
+      ],
+      "role": "gnarled weight-bearing root shoulder tapered segment 1",
+      "rotation": [
+        -34.895227,
+        0,
+        144.462322
+      ],
+      "size": [
+        4.325,
+        3.522022,
+        4.025
+      ]
+    },
+    {
+      "bone": "root_back_left_root_knuckle_2",
+      "center": [
+        -16.75,
+        14.561011,
+        -10.5
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_back_left_root_knuckle_2",
+      "origin": [
+        -16.75,
+        13.25,
+        -10.5
+      ],
+      "role": "gnarled weight-bearing root shoulder tapered segment 2",
+      "rotation": [
+        -34.895227,
+        0,
+        144.462322
+      ],
+      "size": [
+        3.975,
+        3.522022,
+        3.675
+      ]
+    },
+    {
+      "bone": "root_back_left_knuckle_elbow_1",
+      "center": [
+        -18,
+        14.26134,
+        -12
+      ],
+      "faces": {},
+      "material": "bark_dark",
+      "name": "root_back_left_knuckle_elbow_1",
+      "origin": [
+        -18,
+        11.5,
+        -12
+      ],
+      "role": "angular root upper limb tapered segment 1",
+      "rotation": [
+        -26.915679,
+        0,
+        156.037511
+      ],
+      "size": [
+        3.475,
+        6.422681,
+        3.175
+      ]
+    },
+    {
+      "bone": "root_back_left_elbow_wrist_1",
+      "center": [
+        -20,
+        8.286954,
+        -14.5
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_back_left_elbow_wrist_1",
+      "origin": [
+        -20,
+        7,
+        -14.5
+      ],
+      "role": "gnarled root lower limb tapered segment 1",
+      "rotation": [
+        -16.940938,
+        0,
+        156.037511
+      ],
+      "size": [
+        2.9625,
+        3.473908,
+        2.675
+      ]
+    },
+    {
+      "bone": "root_back_left_elbow_wrist_2",
+      "center": [
+        -21,
+        6.036954,
+        -15.25
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_back_left_elbow_wrist_2",
+      "origin": [
+        -21,
+        4.75,
+        -15.25
+      ],
+      "role": "gnarled root lower limb tapered segment 2",
+      "rotation": [
+        -16.940938,
+        0,
+        156.037511
+      ],
+      "size": [
+        2.5875,
+        3.473908,
+        2.325
+      ]
+    },
+    {
+      "bone": "root_back_left_raised_spur_1",
+      "center": [
+        -22,
+        4.693741,
+        -16
+      ],
+      "faces": {},
+      "material": "bark_light",
+      "name": "root_back_left_raised_spur_1",
+      "origin": [
+        -22,
+        2.5,
+        -16
+      ],
+      "role": "raised broken root spur tapered segment 1",
+      "rotation": [
+        -65.7392,
+        0,
+        33.690068
+      ],
+      "size": [
+        1.025,
+        5.287482,
+        0.85
+      ]
+    },
+    {
+      "bone": "root_back_left_wrist_toe_1",
+      "center": [
+        -22,
+        4,
+        -16
+      ],
+      "faces": {},
+      "material": "bark_light",
+      "name": "root_back_left_wrist_toe_1",
+      "origin": [
+        -22,
+        2.5,
+        -16
+      ],
+      "role": "broad root palm tapered segment 1",
+      "rotation": [
+        -19.471221,
+        0,
+        135
+      ],
+      "size": [
+        2.1,
+        3.9,
+        1.85
+      ]
+    },
+    {
+      "bone": "root_back_left_inner_rootlet_1",
+      "center": [
+        -24,
+        3.290161,
+        -17
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_back_left_inner_rootlet_1",
+      "origin": [
+        -24,
+        0.5,
+        -17
+      ],
+      "role": "inner splayed rootlet tapered segment 1",
+      "rotation": [
+        -45.791275,
+        0,
+        -115.906508
+      ],
+      "size": [
+        1.175,
+        6.480323,
+        0.975
+      ]
+    },
+    {
+      "bone": "root_back_left_outer_rootlet_1",
+      "center": [
+        -24,
+        2.100781,
+        -17
+      ],
+      "faces": {},
+      "material": "bark_dark",
+      "name": "root_back_left_outer_rootlet_1",
+      "origin": [
+        -24,
+        0.5,
+        -17
+      ],
+      "role": "outer splayed rootlet tapered segment 1",
+      "rotation": [
+        -18.20076,
+        0,
+        99.462322
+      ],
+      "size": [
+        1.275,
+        4.101562,
+        1.075
+      ]
+    },
+    {
+      "bone": "root_front_left_root_knuckle_1",
+      "center": [
+        -5,
+        10.844878,
+        10
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_front_left_root_knuckle_1",
+      "origin": [
+        -5,
+        9.2,
+        10
+      ],
+      "role": "gnarled weight-bearing root shoulder tapered segment 1",
+      "rotation": [
+        32.137588,
+        0,
+        158.962489
+      ],
+      "size": [
+        4.325,
+        4.189757,
+        4.025
+      ]
+    },
+    {
+      "bone": "root_front_left_root_knuckle_2",
+      "center": [
+        -6,
+        8.244878,
+        11.75
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_front_left_root_knuckle_2",
+      "origin": [
+        -6,
+        6.6,
+        11.75
+      ],
+      "role": "gnarled weight-bearing root shoulder tapered segment 2",
+      "rotation": [
+        32.137588,
+        0,
+        158.962489
+      ],
+      "size": [
+        3.975,
+        4.189757,
+        3.675
+      ]
+    },
+    {
+      "bone": "root_front_left_knuckle_elbow_1",
+      "center": [
+        -7,
+        7.172144,
+        13.5
+      ],
+      "faces": {},
+      "material": "bark_dark",
+      "name": "root_front_left_knuckle_elbow_1",
+      "origin": [
+        -7,
+        4,
+        13.5
+      ],
+      "role": "angular root upper limb tapered segment 1",
+      "rotation": [
+        28.220512,
+        0,
+        153.434949
+      ],
+      "size": [
+        3.475,
+        7.244289,
+        3.175
+      ]
+    },
+    {
+      "bone": "root_front_left_elbow_wrist_1",
+      "center": [
+        -9.5,
+        0.419727,
+        16.5
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_front_left_elbow_wrist_1",
+      "origin": [
+        -9.5,
+        -1,
+        16.5
+      ],
+      "role": "gnarled root lower limb tapered segment 1",
+      "rotation": [
+        26.118267,
+        0,
+        -168.690068
+      ],
+      "size": [
+        2.9625,
+        3.739454,
+        2.675
+      ]
+    },
+    {
+      "bone": "root_front_left_elbow_wrist_2",
+      "center": [
+        -9,
+        -2.080273,
+        17.75
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_front_left_elbow_wrist_2",
+      "origin": [
+        -9,
+        -3.5,
+        17.75
+      ],
+      "role": "gnarled root lower limb tapered segment 2",
+      "rotation": [
+        26.118267,
+        0,
+        -168.690068
+      ],
+      "size": [
+        2.5875,
+        3.739454,
+        2.325
+      ]
+    },
+    {
+      "bone": "root_front_left_raised_spur_1",
+      "center": [
+        -8.5,
+        -4.273008,
+        19
+      ],
+      "faces": {},
+      "material": "bark_light",
+      "name": "root_front_left_raised_spur_1",
+      "origin": [
+        -8.5,
+        -6,
+        19
+      ],
+      "role": "raised broken root spur tapered segment 1",
+      "rotation": [
+        35.383163,
+        0,
+        -106.504361
+      ],
+      "size": [
+        1.025,
+        4.353983,
+        0.85
+      ]
+    },
+    {
+      "bone": "root_front_left_wrist_toe_1",
+      "center": [
+        -8.5,
+        -3.537786,
+        19
+      ],
+      "faces": {},
+      "material": "bark_light",
+      "name": "root_front_left_wrist_toe_1",
+      "origin": [
+        -8.5,
+        -6,
+        19
+      ],
+      "role": "broad root palm tapered segment 1",
+      "rotation": [
+        30.508959,
+        0,
+        135
+      ],
+      "size": [
+        2.1,
+        5.824429,
+        1.85
+      ]
+    },
+    {
+      "bone": "root_front_left_inner_rootlet_1",
+      "center": [
+        -11.5,
+        -6.841297,
+        21.5
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_front_left_inner_rootlet_1",
+      "origin": [
+        -11.5,
+        -9,
+        21.5
+      ],
+      "role": "inner splayed rootlet tapered segment 1",
+      "rotation": [
+        44.016188,
+        0,
+        -104.931417
+      ],
+      "size": [
+        1.175,
+        5.217407,
+        0.975
+      ]
+    },
+    {
+      "bone": "root_front_left_outer_rootlet_1",
+      "center": [
+        -11.5,
+        -6.651596,
+        21.5
+      ],
+      "faces": {},
+      "material": "bark_dark",
+      "name": "root_front_left_outer_rootlet_1",
+      "origin": [
+        -11.5,
+        -9,
+        21.5
+      ],
+      "role": "outer splayed rootlet tapered segment 1",
+      "rotation": [
+        12.292975,
+        0,
+        78.690068
+      ],
+      "size": [
+        1.275,
+        5.596807,
+        1.075
+      ]
+    },
+    {
+      "bone": "root_front_right_root_knuckle_1",
+      "center": [
+        5,
+        10.805654,
+        10
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_front_right_root_knuckle_1",
+      "origin": [
+        5,
+        9.2,
+        10
+      ],
+      "role": "gnarled weight-bearing root shoulder tapered segment 1",
+      "rotation": [
+        33.021196,
+        0,
+        -158.198591
+      ],
+      "size": [
+        4.325,
+        4.111308,
+        4.025
+      ]
+    },
+    {
+      "bone": "root_front_right_root_knuckle_2",
+      "center": [
+        6,
+        8.305654,
+        11.75
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_front_right_root_knuckle_2",
+      "origin": [
+        6,
+        6.7,
+        11.75
+      ],
+      "role": "gnarled weight-bearing root shoulder tapered segment 2",
+      "rotation": [
+        33.021196,
+        0,
+        -158.198591
+      ],
+      "size": [
+        3.975,
+        4.111308,
+        3.675
+      ]
+    },
+    {
+      "bone": "root_front_right_knuckle_elbow_1",
+      "center": [
+        7,
+        7.434192,
+        13.5
+      ],
+      "faces": {},
+      "material": "bark_dark",
+      "name": "root_front_right_knuckle_elbow_1",
+      "origin": [
+        7,
+        4.2,
+        13.5
+      ],
+      "role": "angular root upper limb tapered segment 1",
+      "rotation": [
+        27.63222,
+        0,
+        -150.751174
+      ],
+      "size": [
+        3.475,
+        7.368385,
+        3.175
+      ]
+    },
+    {
+      "bone": "root_front_right_elbow_wrist_1",
+      "center": [
+        9.8,
+        0.619727,
+        16.5
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_front_right_elbow_wrist_1",
+      "origin": [
+        9.8,
+        -0.8,
+        16.5
+      ],
+      "role": "gnarled root lower limb tapered segment 1",
+      "rotation": [
+        26.118267,
+        0,
+        168.690068
+      ],
+      "size": [
+        2.9625,
+        3.739454,
+        2.675
+      ]
+    },
+    {
+      "bone": "root_front_right_elbow_wrist_2",
+      "center": [
+        9.3,
+        -1.880273,
+        17.75
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_front_right_elbow_wrist_2",
+      "origin": [
+        9.3,
+        -3.3,
+        17.75
+      ],
+      "role": "gnarled root lower limb tapered segment 2",
+      "rotation": [
+        26.118267,
+        0,
+        168.690068
+      ],
+      "size": [
+        2.5875,
+        3.739454,
+        2.325
+      ]
+    },
+    {
+      "bone": "root_front_right_raised_spur_1",
+      "center": [
+        8.8,
+        -4.075906,
+        19
+      ],
+      "faces": {},
+      "material": "bark_light",
+      "name": "root_front_right_raised_spur_1",
+      "origin": [
+        8.8,
+        -5.8,
+        19
+      ],
+      "role": "raised broken root spur tapered segment 1",
+      "rotation": [
+        31.467398,
+        0,
+        107.818889
+      ],
+      "size": [
+        1.025,
+        4.348188,
+        0.85
+      ]
+    },
+    {
+      "bone": "root_front_right_wrist_toe_1",
+      "center": [
+        8.8,
+        -3.275619,
+        19
+      ],
+      "faces": {},
+      "material": "bark_light",
+      "name": "root_front_right_wrist_toe_1",
+      "origin": [
+        8.8,
+        -5.8,
+        19
+      ],
+      "role": "broad root palm tapered segment 1",
+      "rotation": [
+        29.681019,
+        0,
+        -136.84761
+      ],
+      "size": [
+        2.1,
+        5.948762,
+        1.85
+      ]
+    },
+    {
+      "bone": "root_front_right_inner_rootlet_1",
+      "center": [
+        11.8,
+        -6.841297,
+        21.5
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_front_right_inner_rootlet_1",
+      "origin": [
+        11.8,
+        -9,
+        21.5
+      ],
+      "role": "inner splayed rootlet tapered segment 1",
+      "rotation": [
+        44.016188,
+        0,
+        104.931417
+      ],
+      "size": [
+        1.175,
+        5.217407,
+        0.975
+      ]
+    },
+    {
+      "bone": "root_front_right_outer_rootlet_1",
+      "center": [
+        11.8,
+        -6.74556,
+        21.5
+      ],
+      "faces": {},
+      "material": "bark_dark",
+      "name": "root_front_right_outer_rootlet_1",
+      "origin": [
+        11.8,
+        -9,
+        21.5
+      ],
+      "role": "outer splayed rootlet tapered segment 1",
+      "rotation": [
+        16.757399,
+        0,
+        -76.607502
+      ],
+      "size": [
+        1.275,
+        5.40888,
+        1.075
+      ]
+    },
+    {
+      "bone": "root_back_right_root_knuckle_1",
+      "center": [
+        15.5,
+        18.489547,
+        -9
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_back_right_root_knuckle_1",
+      "origin": [
+        15.5,
+        17,
+        -9
+      ],
+      "role": "gnarled weight-bearing root shoulder tapered segment 1",
+      "rotation": [
+        -30.232414,
+        0,
+        -150.945396
+      ],
+      "size": [
+        4.325,
+        3.879094,
+        4.025
+      ]
+    },
+    {
+      "bone": "root_back_right_root_knuckle_2",
+      "center": [
+        16.75,
+        16.239547,
+        -10.5
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_back_right_root_knuckle_2",
+      "origin": [
+        16.75,
+        14.75,
+        -10.5
+      ],
+      "role": "gnarled weight-bearing root shoulder tapered segment 2",
+      "rotation": [
+        -30.232414,
+        0,
+        -150.945396
+      ],
+      "size": [
+        3.975,
+        3.879094,
+        3.675
+      ]
+    },
+    {
+      "bone": "root_back_right_knuckle_elbow_1",
+      "center": [
+        18,
+        15.468586,
+        -12
+      ],
+      "faces": {},
+      "material": "bark_dark",
+      "name": "root_back_right_knuckle_elbow_1",
+      "origin": [
+        18,
+        12.5,
+        -12
+      ],
+      "role": "angular root upper limb tapered segment 1",
+      "rotation": [
+        -24.902536,
+        0,
+        -158.198591
+      ],
+      "size": [
+        3.475,
+        6.837171,
+        3.175
+      ]
+    },
+    {
+      "bone": "root_back_right_elbow_wrist_1",
+      "center": [
+        20,
+        8.897542,
+        -14.5
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_back_right_elbow_wrist_1",
+      "origin": [
+        20,
+        7.5,
+        -14.5
+      ],
+      "role": "gnarled root lower limb tapered segment 1",
+      "rotation": [
+        -15.564807,
+        0,
+        -158.198591
+      ],
+      "size": [
+        2.9625,
+        3.695085,
+        2.675
+      ]
+    },
+    {
+      "bone": "root_back_right_elbow_wrist_2",
+      "center": [
+        21,
+        6.397542,
+        -15.25
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_back_right_elbow_wrist_2",
+      "origin": [
+        21,
+        5,
+        -15.25
+      ],
+      "role": "gnarled root lower limb tapered segment 2",
+      "rotation": [
+        -15.564807,
+        0,
+        -158.198591
+      ],
+      "size": [
+        2.5875,
+        3.695085,
+        2.325
+      ]
+    },
+    {
+      "bone": "root_back_right_raised_spur_1",
+      "center": [
+        22,
+        4.693741,
+        -16
+      ],
+      "faces": {},
+      "material": "bark_light",
+      "name": "root_back_right_raised_spur_1",
+      "origin": [
+        22,
+        2.5,
+        -16
+      ],
+      "role": "raised broken root spur tapered segment 1",
+      "rotation": [
+        -65.7392,
+        0,
+        -33.690068
+      ],
+      "size": [
+        1.025,
+        5.287482,
+        0.85
+      ]
+    },
+    {
+      "bone": "root_back_right_wrist_toe_1",
+      "center": [
+        22,
+        4,
+        -16
+      ],
+      "faces": {},
+      "material": "bark_light",
+      "name": "root_back_right_wrist_toe_1",
+      "origin": [
+        22,
+        2.5,
+        -16
+      ],
+      "role": "broad root palm tapered segment 1",
+      "rotation": [
+        -19.471221,
+        0,
+        -135
+      ],
+      "size": [
+        2.1,
+        3.9,
+        1.85
+      ]
+    },
+    {
+      "bone": "root_back_right_inner_rootlet_1",
+      "center": [
+        24,
+        3.275338,
+        -17
+      ],
+      "faces": {},
+      "material": "bark",
+      "name": "root_back_right_inner_rootlet_1",
+      "origin": [
+        24,
+        0.5,
+        -17
+      ],
+      "role": "inner splayed rootlet tapered segment 1",
+      "rotation": [
+        -46.106766,
+        0,
+        114.567171
+      ],
+      "size": [
+        1.175,
+        6.450676,
+        0.975
+      ]
+    },
+    {
+      "bone": "root_back_right_outer_rootlet_1",
+      "center": [
+        24,
+        2.100781,
+        -17
+      ],
+      "faces": {},
+      "material": "bark_dark",
+      "name": "root_back_right_outer_rootlet_1",
+      "origin": [
+        24,
+        0.5,
+        -17
+      ],
+      "role": "outer splayed rootlet tapered segment 1",
+      "rotation": [
+        -18.20076,
+        0,
+        -99.462322
+      ],
+      "size": [
+        1.275,
+        4.101562,
+        1.075
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "carved-ellipsoid-plus-branch-graphs-golden-apple-v2",
+    "anatomical_axis": "+Z front, X width, Y up",
+    "attachment_contract": {
+      "all_semantic_appendage_links_declared": true,
+      "method": "ellipsoid touching-box tree plus named graph joints and compiled oriented-cuboid audit"
+    },
+    "branch_graphs": [
+      {
+        "attachments": [
+          {
+            "first": "apple_volume_051",
+            "joint": [
+              0.0,
+              40.0,
+              0.0
+            ],
+            "second": "crooked_stem_lower_1"
+          },
+          {
+            "first": "crooked_stem_lower_1",
+            "joint": [
+              -1.45,
+              45.5,
+              0.35
+            ],
+            "second": "crooked_stem_middle_1"
+          },
+          {
+            "first": "crooked_stem_middle_1",
+            "joint": [
+              0.3,
+              48.35,
+              -0.35
+            ],
+            "second": "crooked_stem_upper_1"
+          },
+          {
+            "first": "crooked_stem_upper_1",
+            "joint": [
+              -0.85,
+              51.0,
+              0.2
+            ],
+            "second": "crooked_stem_tip_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "lower_bend",
+            "end_depth": 1.2,
+            "end_thickness": 1.25,
+            "material": "bark_dark",
+            "name": "lower",
+            "role": "crooked lower stem",
+            "segments": [
+              "crooked_stem_lower_1"
+            ],
+            "start": "socket",
+            "start_depth": 1.5,
+            "start_thickness": 1.55
+          },
+          {
+            "end": "middle_bend",
+            "end_depth": 0.9,
+            "end_thickness": 0.95,
+            "material": "bark",
+            "name": "middle",
+            "role": "crooked middle stem",
+            "segments": [
+              "crooked_stem_middle_1"
+            ],
+            "start": "lower_bend",
+            "start_depth": 1.2,
+            "start_thickness": 1.25
+          },
+          {
+            "end": "upper_bend",
+            "end_depth": 0.65,
+            "end_thickness": 0.7,
+            "material": "bark_dark",
+            "name": "upper",
+            "role": "crooked upper stem",
+            "segments": [
+              "crooked_stem_upper_1"
+            ],
+            "start": "middle_bend",
+            "start_depth": 0.9,
+            "start_thickness": 0.95
+          },
+          {
+            "end": "tip",
+            "end_depth": 0.4,
+            "end_thickness": 0.45,
+            "material": "bark_light",
+            "name": "tip",
+            "role": "broken stem tip",
+            "segments": [
+              "crooked_stem_tip_1"
+            ],
+            "start": "upper_bend",
+            "start_depth": 0.65,
+            "start_thickness": 0.7
+          }
+        ],
+        "name": "crooked_stem",
+        "nodes": [
+          {
+            "name": "lower_bend",
+            "point": [
+              -1.45,
+              45.5,
+              0.35
+            ]
+          },
+          {
+            "name": "middle_bend",
+            "point": [
+              0.3,
+              48.35,
+              -0.35
+            ]
+          },
+          {
+            "name": "socket",
+            "point": [
+              0,
+              40,
+              0
+            ]
+          },
+          {
+            "name": "tip",
+            "point": [
+              -0.55,
+              54,
+              0
+            ]
+          },
+          {
+            "name": "upper_bend",
+            "point": [
+              -0.85,
+              51,
+              0.2
+            ]
+          }
+        ],
+        "parent_bone": "apple",
+        "parent_cube": "apple_volume_051",
+        "root_node": "socket",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "apple_volume_002",
+            "joint": [
+              -15.5,
+              15.0,
+              -9.0
+            ],
+            "second": "root_back_left_root_knuckle_1"
+          },
+          {
+            "first": "root_back_left_root_knuckle_1",
+            "joint": [
+              -16.75,
+              13.25,
+              -10.5
+            ],
+            "second": "root_back_left_root_knuckle_2"
+          },
+          {
+            "first": "root_back_left_root_knuckle_2",
+            "joint": [
+              -18.0,
+              11.5,
+              -12.0
+            ],
+            "second": "root_back_left_knuckle_elbow_1"
+          },
+          {
+            "first": "root_back_left_knuckle_elbow_1",
+            "joint": [
+              -20.0,
+              7.0,
+              -14.5
+            ],
+            "second": "root_back_left_elbow_wrist_1"
+          },
+          {
+            "first": "root_back_left_elbow_wrist_1",
+            "joint": [
+              -21.0,
+              4.75,
+              -15.25
+            ],
+            "second": "root_back_left_elbow_wrist_2"
+          },
+          {
+            "first": "root_back_left_elbow_wrist_2",
+            "joint": [
+              -22.0,
+              2.5,
+              -16.0
+            ],
+            "second": "root_back_left_raised_spur_1"
+          },
+          {
+            "first": "root_back_left_elbow_wrist_2",
+            "joint": [
+              -22.0,
+              2.5,
+              -16.0
+            ],
+            "second": "root_back_left_wrist_toe_1"
+          },
+          {
+            "first": "root_back_left_wrist_toe_1",
+            "joint": [
+              -24.0,
+              0.5,
+              -17.0
+            ],
+            "second": "root_back_left_inner_rootlet_1"
+          },
+          {
+            "first": "root_back_left_wrist_toe_1",
+            "joint": [
+              -24.0,
+              0.5,
+              -17.0
+            ],
+            "second": "root_back_left_outer_rootlet_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knuckle",
+            "end_depth": 3.5,
+            "end_thickness": 3.8,
+            "material": "bark",
+            "name": "root_knuckle",
+            "role": "gnarled weight-bearing root shoulder",
+            "segments": [
+              "root_back_left_root_knuckle_1",
+              "root_back_left_root_knuckle_2"
+            ],
+            "start": "root",
+            "start_depth": 4.2,
+            "start_thickness": 4.5
+          },
+          {
+            "end": "elbow",
+            "end_depth": 2.85,
+            "end_thickness": 3.15,
+            "material": "bark_dark",
+            "name": "knuckle_elbow",
+            "role": "angular root upper limb",
+            "segments": [
+              "root_back_left_knuckle_elbow_1"
+            ],
+            "start": "knuckle",
+            "start_depth": 3.5,
+            "start_thickness": 3.8
+          },
+          {
+            "end": "wrist",
+            "end_depth": 2.15,
+            "end_thickness": 2.4,
+            "material": "bark",
+            "name": "elbow_wrist",
+            "role": "gnarled root lower limb",
+            "segments": [
+              "root_back_left_elbow_wrist_1",
+              "root_back_left_elbow_wrist_2"
+            ],
+            "start": "elbow",
+            "start_depth": 2.85,
+            "start_thickness": 3.15
+          },
+          {
+            "end": "spur",
+            "end_depth": 0.5,
+            "end_thickness": 0.6,
+            "material": "bark_light",
+            "name": "raised_spur",
+            "role": "raised broken root spur",
+            "segments": [
+              "root_back_left_raised_spur_1"
+            ],
+            "start": "wrist",
+            "start_depth": 1.2,
+            "start_thickness": 1.45
+          },
+          {
+            "end": "toe",
+            "end_depth": 1.55,
+            "end_thickness": 1.8,
+            "material": "bark_light",
+            "name": "wrist_toe",
+            "role": "broad root palm",
+            "segments": [
+              "root_back_left_wrist_toe_1"
+            ],
+            "start": "wrist",
+            "start_depth": 2.15,
+            "start_thickness": 2.4
+          },
+          {
+            "end": "inner_tip",
+            "end_depth": 0.55,
+            "end_thickness": 0.7,
+            "material": "bark",
+            "name": "inner_rootlet",
+            "role": "inner splayed rootlet",
+            "segments": [
+              "root_back_left_inner_rootlet_1"
+            ],
+            "start": "toe",
+            "start_depth": 1.4,
+            "start_thickness": 1.65
+          },
+          {
+            "end": "outer_tip",
+            "end_depth": 0.6,
+            "end_thickness": 0.75,
+            "material": "bark_dark",
+            "name": "outer_rootlet",
+            "role": "outer splayed rootlet",
+            "segments": [
+              "root_back_left_outer_rootlet_1"
+            ],
+            "start": "toe",
+            "start_depth": 1.55,
+            "start_thickness": 1.8
+          }
+        ],
+        "name": "root_back_left",
+        "nodes": [
+          {
+            "name": "elbow",
+            "point": [
+              -20,
+              7,
+              -14.5
+            ]
+          },
+          {
+            "name": "inner_tip",
+            "point": [
+              -20.5,
+              -1.2,
+              -21
+            ]
+          },
+          {
+            "name": "knuckle",
+            "point": [
+              -18,
+              11.5,
+              -12
+            ]
+          },
+          {
+            "name": "outer_tip",
+            "point": [
+              -27,
+              0,
+              -18
+            ]
+          },
+          {
+            "name": "root",
+            "point": [
+              -15.5,
+              15,
+              -9
+            ]
+          },
+          {
+            "name": "spur",
+            "point": [
+              -23,
+              4,
+              -20
+            ]
+          },
+          {
+            "name": "toe",
+            "point": [
+              -24,
+              0.5,
+              -17
+            ]
+          },
+          {
+            "name": "wrist",
+            "point": [
+              -22,
+              2.5,
+              -16
+            ]
+          }
+        ],
+        "parent_bone": "apple",
+        "parent_cube": "apple_volume_002",
+        "root_node": "root",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "apple_volume_047",
+            "joint": [
+              -5.0,
+              9.2,
+              10.0
+            ],
+            "second": "root_front_left_root_knuckle_1"
+          },
+          {
+            "first": "root_front_left_root_knuckle_1",
+            "joint": [
+              -6.0,
+              6.6,
+              11.75
+            ],
+            "second": "root_front_left_root_knuckle_2"
+          },
+          {
+            "first": "root_front_left_root_knuckle_2",
+            "joint": [
+              -7.0,
+              4.0,
+              13.5
+            ],
+            "second": "root_front_left_knuckle_elbow_1"
+          },
+          {
+            "first": "root_front_left_knuckle_elbow_1",
+            "joint": [
+              -9.5,
+              -1.0,
+              16.5
+            ],
+            "second": "root_front_left_elbow_wrist_1"
+          },
+          {
+            "first": "root_front_left_elbow_wrist_1",
+            "joint": [
+              -9.0,
+              -3.5,
+              17.75
+            ],
+            "second": "root_front_left_elbow_wrist_2"
+          },
+          {
+            "first": "root_front_left_elbow_wrist_2",
+            "joint": [
+              -8.5,
+              -6.0,
+              19.0
+            ],
+            "second": "root_front_left_raised_spur_1"
+          },
+          {
+            "first": "root_front_left_elbow_wrist_2",
+            "joint": [
+              -8.5,
+              -6.0,
+              19.0
+            ],
+            "second": "root_front_left_wrist_toe_1"
+          },
+          {
+            "first": "root_front_left_wrist_toe_1",
+            "joint": [
+              -11.5,
+              -9.0,
+              21.5
+            ],
+            "second": "root_front_left_inner_rootlet_1"
+          },
+          {
+            "first": "root_front_left_wrist_toe_1",
+            "joint": [
+              -11.5,
+              -9.0,
+              21.5
+            ],
+            "second": "root_front_left_outer_rootlet_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knuckle",
+            "end_depth": 3.5,
+            "end_thickness": 3.8,
+            "material": "bark",
+            "name": "root_knuckle",
+            "role": "gnarled weight-bearing root shoulder",
+            "segments": [
+              "root_front_left_root_knuckle_1",
+              "root_front_left_root_knuckle_2"
+            ],
+            "start": "root",
+            "start_depth": 4.2,
+            "start_thickness": 4.5
+          },
+          {
+            "end": "elbow",
+            "end_depth": 2.85,
+            "end_thickness": 3.15,
+            "material": "bark_dark",
+            "name": "knuckle_elbow",
+            "role": "angular root upper limb",
+            "segments": [
+              "root_front_left_knuckle_elbow_1"
+            ],
+            "start": "knuckle",
+            "start_depth": 3.5,
+            "start_thickness": 3.8
+          },
+          {
+            "end": "wrist",
+            "end_depth": 2.15,
+            "end_thickness": 2.4,
+            "material": "bark",
+            "name": "elbow_wrist",
+            "role": "gnarled root lower limb",
+            "segments": [
+              "root_front_left_elbow_wrist_1",
+              "root_front_left_elbow_wrist_2"
+            ],
+            "start": "elbow",
+            "start_depth": 2.85,
+            "start_thickness": 3.15
+          },
+          {
+            "end": "spur",
+            "end_depth": 0.5,
+            "end_thickness": 0.6,
+            "material": "bark_light",
+            "name": "raised_spur",
+            "role": "raised broken root spur",
+            "segments": [
+              "root_front_left_raised_spur_1"
+            ],
+            "start": "wrist",
+            "start_depth": 1.2,
+            "start_thickness": 1.45
+          },
+          {
+            "end": "toe",
+            "end_depth": 1.55,
+            "end_thickness": 1.8,
+            "material": "bark_light",
+            "name": "wrist_toe",
+            "role": "broad root palm",
+            "segments": [
+              "root_front_left_wrist_toe_1"
+            ],
+            "start": "wrist",
+            "start_depth": 2.15,
+            "start_thickness": 2.4
+          },
+          {
+            "end": "inner_tip",
+            "end_depth": 0.55,
+            "end_thickness": 0.7,
+            "material": "bark",
+            "name": "inner_rootlet",
+            "role": "inner splayed rootlet",
+            "segments": [
+              "root_front_left_inner_rootlet_1"
+            ],
+            "start": "toe",
+            "start_depth": 1.4,
+            "start_thickness": 1.65
+          },
+          {
+            "end": "outer_tip",
+            "end_depth": 0.6,
+            "end_thickness": 0.75,
+            "material": "bark_dark",
+            "name": "outer_rootlet",
+            "role": "outer splayed rootlet",
+            "segments": [
+              "root_front_left_outer_rootlet_1"
+            ],
+            "start": "toe",
+            "start_depth": 1.55,
+            "start_thickness": 1.8
+          }
+        ],
+        "name": "root_front_left",
+        "nodes": [
+          {
+            "name": "elbow",
+            "point": [
+              -9.5,
+              -1,
+              16.5
+            ]
+          },
+          {
+            "name": "inner_tip",
+            "point": [
+              -8.5,
+              -9.8,
+              24.5
+            ]
+          },
+          {
+            "name": "knuckle",
+            "point": [
+              -7,
+              4,
+              13.5
+            ]
+          },
+          {
+            "name": "outer_tip",
+            "point": [
+              -16,
+              -8.1,
+              22.5
+            ]
+          },
+          {
+            "name": "root",
+            "point": [
+              -5,
+              9.2,
+              10
+            ]
+          },
+          {
+            "name": "spur",
+            "point": [
+              -5.8,
+              -6.8,
+              21
+            ]
+          },
+          {
+            "name": "toe",
+            "point": [
+              -11.5,
+              -9,
+              21.5
+            ]
+          },
+          {
+            "name": "wrist",
+            "point": [
+              -8.5,
+              -6,
+              19
+            ]
+          }
+        ],
+        "parent_bone": "apple",
+        "parent_cube": "apple_volume_047",
+        "root_node": "root",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "apple_volume_047",
+            "joint": [
+              5.0,
+              9.2,
+              10.0
+            ],
+            "second": "root_front_right_root_knuckle_1"
+          },
+          {
+            "first": "root_front_right_root_knuckle_1",
+            "joint": [
+              6.0,
+              6.699999999999999,
+              11.75
+            ],
+            "second": "root_front_right_root_knuckle_2"
+          },
+          {
+            "first": "root_front_right_root_knuckle_2",
+            "joint": [
+              7.0,
+              4.2,
+              13.5
+            ],
+            "second": "root_front_right_knuckle_elbow_1"
+          },
+          {
+            "first": "root_front_right_knuckle_elbow_1",
+            "joint": [
+              9.8,
+              -0.8,
+              16.5
+            ],
+            "second": "root_front_right_elbow_wrist_1"
+          },
+          {
+            "first": "root_front_right_elbow_wrist_1",
+            "joint": [
+              9.3,
+              -3.3,
+              17.75
+            ],
+            "second": "root_front_right_elbow_wrist_2"
+          },
+          {
+            "first": "root_front_right_elbow_wrist_2",
+            "joint": [
+              8.8,
+              -5.8,
+              19.0
+            ],
+            "second": "root_front_right_raised_spur_1"
+          },
+          {
+            "first": "root_front_right_elbow_wrist_2",
+            "joint": [
+              8.8,
+              -5.8,
+              19.0
+            ],
+            "second": "root_front_right_wrist_toe_1"
+          },
+          {
+            "first": "root_front_right_wrist_toe_1",
+            "joint": [
+              11.8,
+              -9.0,
+              21.5
+            ],
+            "second": "root_front_right_inner_rootlet_1"
+          },
+          {
+            "first": "root_front_right_wrist_toe_1",
+            "joint": [
+              11.8,
+              -9.0,
+              21.5
+            ],
+            "second": "root_front_right_outer_rootlet_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knuckle",
+            "end_depth": 3.5,
+            "end_thickness": 3.8,
+            "material": "bark",
+            "name": "root_knuckle",
+            "role": "gnarled weight-bearing root shoulder",
+            "segments": [
+              "root_front_right_root_knuckle_1",
+              "root_front_right_root_knuckle_2"
+            ],
+            "start": "root",
+            "start_depth": 4.2,
+            "start_thickness": 4.5
+          },
+          {
+            "end": "elbow",
+            "end_depth": 2.85,
+            "end_thickness": 3.15,
+            "material": "bark_dark",
+            "name": "knuckle_elbow",
+            "role": "angular root upper limb",
+            "segments": [
+              "root_front_right_knuckle_elbow_1"
+            ],
+            "start": "knuckle",
+            "start_depth": 3.5,
+            "start_thickness": 3.8
+          },
+          {
+            "end": "wrist",
+            "end_depth": 2.15,
+            "end_thickness": 2.4,
+            "material": "bark",
+            "name": "elbow_wrist",
+            "role": "gnarled root lower limb",
+            "segments": [
+              "root_front_right_elbow_wrist_1",
+              "root_front_right_elbow_wrist_2"
+            ],
+            "start": "elbow",
+            "start_depth": 2.85,
+            "start_thickness": 3.15
+          },
+          {
+            "end": "spur",
+            "end_depth": 0.5,
+            "end_thickness": 0.6,
+            "material": "bark_light",
+            "name": "raised_spur",
+            "role": "raised broken root spur",
+            "segments": [
+              "root_front_right_raised_spur_1"
+            ],
+            "start": "wrist",
+            "start_depth": 1.2,
+            "start_thickness": 1.45
+          },
+          {
+            "end": "toe",
+            "end_depth": 1.55,
+            "end_thickness": 1.8,
+            "material": "bark_light",
+            "name": "wrist_toe",
+            "role": "broad root palm",
+            "segments": [
+              "root_front_right_wrist_toe_1"
+            ],
+            "start": "wrist",
+            "start_depth": 2.15,
+            "start_thickness": 2.4
+          },
+          {
+            "end": "inner_tip",
+            "end_depth": 0.55,
+            "end_thickness": 0.7,
+            "material": "bark",
+            "name": "inner_rootlet",
+            "role": "inner splayed rootlet",
+            "segments": [
+              "root_front_right_inner_rootlet_1"
+            ],
+            "start": "toe",
+            "start_depth": 1.4,
+            "start_thickness": 1.65
+          },
+          {
+            "end": "outer_tip",
+            "end_depth": 0.6,
+            "end_thickness": 0.75,
+            "material": "bark_dark",
+            "name": "outer_rootlet",
+            "role": "outer splayed rootlet",
+            "segments": [
+              "root_front_right_outer_rootlet_1"
+            ],
+            "start": "toe",
+            "start_depth": 1.55,
+            "start_thickness": 1.8
+          }
+        ],
+        "name": "root_front_right",
+        "nodes": [
+          {
+            "name": "elbow",
+            "point": [
+              9.8,
+              -0.8,
+              16.5
+            ]
+          },
+          {
+            "name": "inner_tip",
+            "point": [
+              8.8,
+              -9.8,
+              24.5
+            ]
+          },
+          {
+            "name": "knuckle",
+            "point": [
+              7,
+              4.2,
+              13.5
+            ]
+          },
+          {
+            "name": "outer_tip",
+            "point": [
+              16,
+              -8,
+              22.8
+            ]
+          },
+          {
+            "name": "root",
+            "point": [
+              5,
+              9.2,
+              10
+            ]
+          },
+          {
+            "name": "spur",
+            "point": [
+              6,
+              -6.7,
+              20.8
+            ]
+          },
+          {
+            "name": "toe",
+            "point": [
+              11.8,
+              -9,
+              21.5
+            ]
+          },
+          {
+            "name": "wrist",
+            "point": [
+              8.8,
+              -5.8,
+              19
+            ]
+          }
+        ],
+        "parent_bone": "apple",
+        "parent_cube": "apple_volume_047",
+        "root_node": "root",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "apple_volume_103",
+            "joint": [
+              15.5,
+              17.0,
+              -9.0
+            ],
+            "second": "root_back_right_root_knuckle_1"
+          },
+          {
+            "first": "root_back_right_root_knuckle_1",
+            "joint": [
+              16.75,
+              14.75,
+              -10.5
+            ],
+            "second": "root_back_right_root_knuckle_2"
+          },
+          {
+            "first": "root_back_right_root_knuckle_2",
+            "joint": [
+              18.0,
+              12.5,
+              -12.0
+            ],
+            "second": "root_back_right_knuckle_elbow_1"
+          },
+          {
+            "first": "root_back_right_knuckle_elbow_1",
+            "joint": [
+              20.0,
+              7.5,
+              -14.5
+            ],
+            "second": "root_back_right_elbow_wrist_1"
+          },
+          {
+            "first": "root_back_right_elbow_wrist_1",
+            "joint": [
+              21.0,
+              5.0,
+              -15.25
+            ],
+            "second": "root_back_right_elbow_wrist_2"
+          },
+          {
+            "first": "root_back_right_elbow_wrist_2",
+            "joint": [
+              22.0,
+              2.5,
+              -16.0
+            ],
+            "second": "root_back_right_raised_spur_1"
+          },
+          {
+            "first": "root_back_right_elbow_wrist_2",
+            "joint": [
+              22.0,
+              2.5,
+              -16.0
+            ],
+            "second": "root_back_right_wrist_toe_1"
+          },
+          {
+            "first": "root_back_right_wrist_toe_1",
+            "joint": [
+              24.0,
+              0.5,
+              -17.0
+            ],
+            "second": "root_back_right_inner_rootlet_1"
+          },
+          {
+            "first": "root_back_right_wrist_toe_1",
+            "joint": [
+              24.0,
+              0.5,
+              -17.0
+            ],
+            "second": "root_back_right_outer_rootlet_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knuckle",
+            "end_depth": 3.5,
+            "end_thickness": 3.8,
+            "material": "bark",
+            "name": "root_knuckle",
+            "role": "gnarled weight-bearing root shoulder",
+            "segments": [
+              "root_back_right_root_knuckle_1",
+              "root_back_right_root_knuckle_2"
+            ],
+            "start": "root",
+            "start_depth": 4.2,
+            "start_thickness": 4.5
+          },
+          {
+            "end": "elbow",
+            "end_depth": 2.85,
+            "end_thickness": 3.15,
+            "material": "bark_dark",
+            "name": "knuckle_elbow",
+            "role": "angular root upper limb",
+            "segments": [
+              "root_back_right_knuckle_elbow_1"
+            ],
+            "start": "knuckle",
+            "start_depth": 3.5,
+            "start_thickness": 3.8
+          },
+          {
+            "end": "wrist",
+            "end_depth": 2.15,
+            "end_thickness": 2.4,
+            "material": "bark",
+            "name": "elbow_wrist",
+            "role": "gnarled root lower limb",
+            "segments": [
+              "root_back_right_elbow_wrist_1",
+              "root_back_right_elbow_wrist_2"
+            ],
+            "start": "elbow",
+            "start_depth": 2.85,
+            "start_thickness": 3.15
+          },
+          {
+            "end": "spur",
+            "end_depth": 0.5,
+            "end_thickness": 0.6,
+            "material": "bark_light",
+            "name": "raised_spur",
+            "role": "raised broken root spur",
+            "segments": [
+              "root_back_right_raised_spur_1"
+            ],
+            "start": "wrist",
+            "start_depth": 1.2,
+            "start_thickness": 1.45
+          },
+          {
+            "end": "toe",
+            "end_depth": 1.55,
+            "end_thickness": 1.8,
+            "material": "bark_light",
+            "name": "wrist_toe",
+            "role": "broad root palm",
+            "segments": [
+              "root_back_right_wrist_toe_1"
+            ],
+            "start": "wrist",
+            "start_depth": 2.15,
+            "start_thickness": 2.4
+          },
+          {
+            "end": "inner_tip",
+            "end_depth": 0.55,
+            "end_thickness": 0.7,
+            "material": "bark",
+            "name": "inner_rootlet",
+            "role": "inner splayed rootlet",
+            "segments": [
+              "root_back_right_inner_rootlet_1"
+            ],
+            "start": "toe",
+            "start_depth": 1.4,
+            "start_thickness": 1.65
+          },
+          {
+            "end": "outer_tip",
+            "end_depth": 0.6,
+            "end_thickness": 0.75,
+            "material": "bark_dark",
+            "name": "outer_rootlet",
+            "role": "outer splayed rootlet",
+            "segments": [
+              "root_back_right_outer_rootlet_1"
+            ],
+            "start": "toe",
+            "start_depth": 1.55,
+            "start_thickness": 1.8
+          }
+        ],
+        "name": "root_back_right",
+        "nodes": [
+          {
+            "name": "elbow",
+            "point": [
+              20,
+              7.5,
+              -14.5
+            ]
+          },
+          {
+            "name": "inner_tip",
+            "point": [
+              20.5,
+              -1.1,
+              -21
+            ]
+          },
+          {
+            "name": "knuckle",
+            "point": [
+              18,
+              12.5,
+              -12
+            ]
+          },
+          {
+            "name": "outer_tip",
+            "point": [
+              27,
+              0,
+              -18
+            ]
+          },
+          {
+            "name": "root",
+            "point": [
+              15.5,
+              17,
+              -9
+            ]
+          },
+          {
+            "name": "spur",
+            "point": [
+              23,
+              4,
+              -20
+            ]
+          },
+          {
+            "name": "toe",
+            "point": [
+              24,
+              0.5,
+              -17
+            ]
+          },
+          {
+            "name": "wrist",
+            "point": [
+              22,
+              2.5,
+              -16
+            ]
+          }
+        ],
+        "parent_bone": "apple",
+        "parent_cube": "apple_volume_103",
+        "root_node": "root",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      }
+    ],
+    "declared_attachments": [
+      {
+        "first": "apple_volume_001",
+        "joint": [
+          -16.5,
+          13.0,
+          0.0
+        ],
+        "second": "apple_volume_002"
+      },
+      {
+        "first": "apple_volume_001",
+        "joint": [
+          -15.4,
+          11.0,
+          0.0
+        ],
+        "second": "apple_volume_006"
+      },
+      {
+        "first": "apple_volume_001",
+        "joint": [
+          -15.4,
+          12.0,
+          0.0
+        ],
+        "second": "apple_volume_007"
+      },
+      {
+        "first": "apple_volume_001",
+        "joint": [
+          -15.4,
+          13.0,
+          0.0
+        ],
+        "second": "apple_volume_008"
+      },
+      {
+        "first": "apple_volume_002",
+        "joint": [
+          -16.5,
+          15.0,
+          -9.3333335
+        ],
+        "second": "apple_volume_003"
+      },
+      {
+        "first": "apple_volume_002",
+        "joint": [
+          -16.5,
+          15.0,
+          9.3333335
+        ],
+        "second": "apple_volume_004"
+      },
+      {
+        "first": "apple_volume_002",
+        "joint": [
+          -15.399999999999999,
+          15.0,
+          0.0
+        ],
+        "second": "apple_volume_009"
+      },
+      {
+        "first": "apple_volume_003",
+        "joint": [
+          -15.4,
+          17.0,
+          -10.5
+        ],
+        "second": "apple_volume_010"
+      },
+      {
+        "first": "apple_volume_006",
+        "joint": [
+          -13.2,
+          10.0,
+          0.0
+        ],
+        "second": "apple_volume_015"
+      },
+      {
+        "first": "apple_volume_006",
+        "joint": [
+          -13.2,
+          11.0,
+          0.0
+        ],
+        "second": "apple_volume_016"
+      },
+      {
+        "first": "apple_volume_007",
+        "joint": [
+          -13.2,
+          13.0,
+          0.0
+        ],
+        "second": "apple_volume_017"
+      },
+      {
+        "first": "apple_volume_009",
+        "joint": [
+          -12.1,
+          17.0,
+          0.0
+        ],
+        "second": "apple_volume_018"
+      },
+      {
+        "first": "apple_volume_009",
+        "joint": [
+          -11.0,
+          16.0,
+          0.0
+        ],
+        "second": "apple_volume_029"
+      },
+      {
+        "first": "apple_volume_009",
+        "joint": [
+          -11.0,
+          17.0,
+          0.0
+        ],
+        "second": "apple_volume_030"
+      },
+      {
+        "first": "apple_volume_015",
+        "joint": [
+          -11.0,
+          9.0,
+          0.0
+        ],
+        "second": "apple_volume_026"
+      },
+      {
+        "first": "apple_volume_015",
+        "joint": [
+          -11.0,
+          10.0,
+          0.0
+        ],
+        "second": "apple_volume_027"
+      },
+      {
+        "first": "apple_volume_015",
+        "joint": [
+          -11.0,
+          11.0,
+          0.0
+        ],
+        "second": "apple_volume_028"
+      },
+      {
+        "first": "apple_volume_017",
+        "joint": [
+          -8.8,
+          14.0,
+          0.0
+        ],
+        "second": "apple_volume_041"
+      },
+      {
+        "first": "apple_volume_017",
+        "joint": [
+          -8.8,
+          15.0,
+          0.0
+        ],
+        "second": "apple_volume_042"
+      },
+      {
+        "first": "apple_volume_018",
+        "joint": [
+          -12.1,
+          23.0,
+          0.0
+        ],
+        "second": "apple_volume_019"
+      },
+      {
+        "first": "apple_volume_018",
+        "joint": [
+          -11.0,
+          20.0,
+          0.0
+        ],
+        "second": "apple_volume_031"
+      },
+      {
+        "first": "apple_volume_018",
+        "joint": [
+          -11.0,
+          22.0,
+          0.0
+        ],
+        "second": "apple_volume_032"
+      },
+      {
+        "first": "apple_volume_019",
+        "joint": [
+          -12.1,
+          25.0,
+          -14.0
+        ],
+        "second": "apple_volume_020"
+      },
+      {
+        "first": "apple_volume_019",
+        "joint": [
+          -12.1,
+          25.0,
+          14.0
+        ],
+        "second": "apple_volume_021"
+      },
+      {
+        "first": "apple_volume_019",
+        "joint": [
+          -8.8,
+          25.0,
+          0.0
+        ],
+        "second": "apple_volume_033"
+      },
+      {
+        "first": "apple_volume_019",
+        "joint": [
+          -6.6,
+          24.0,
+          0.0
+        ],
+        "second": "apple_volume_049"
+      },
+      {
+        "first": "apple_volume_020",
+        "joint": [
+          -12.1,
+          27.0,
+          -12.833333499999998
+        ],
+        "second": "apple_volume_022"
+      },
+      {
+        "first": "apple_volume_022",
+        "joint": [
+          -12.1,
+          33.0,
+          0.0
+        ],
+        "second": "apple_volume_011"
+      },
+      {
+        "first": "apple_volume_011",
+        "joint": [
+          -14.3,
+          35.0,
+          0.0
+        ],
+        "second": "apple_volume_012"
+      },
+      {
+        "first": "apple_volume_011",
+        "joint": [
+          -12.1,
+          35.0,
+          0.0
+        ],
+        "second": "apple_volume_023"
+      },
+      {
+        "first": "apple_volume_011",
+        "joint": [
+          -11.0,
+          33.0,
+          0.0
+        ],
+        "second": "apple_volume_035"
+      },
+      {
+        "first": "apple_volume_011",
+        "joint": [
+          -11.0,
+          34.0,
+          0.0
+        ],
+        "second": "apple_volume_036"
+      },
+      {
+        "first": "apple_volume_012",
+        "joint": [
+          -15.4,
+          37.0,
+          0.0
+        ],
+        "second": "apple_volume_005"
+      },
+      {
+        "first": "apple_volume_005",
+        "joint": [
+          -15.4,
+          38.0,
+          0.0
+        ],
+        "second": "apple_volume_013"
+      },
+      {
+        "first": "apple_volume_005",
+        "joint": [
+          -15.4,
+          39.0,
+          0.0
+        ],
+        "second": "apple_volume_014"
+      },
+      {
+        "first": "apple_volume_012",
+        "joint": [
+          -13.2,
+          37.0,
+          0.0
+        ],
+        "second": "apple_volume_024"
+      },
+      {
+        "first": "apple_volume_013",
+        "joint": [
+          -13.2,
+          39.0,
+          0.0
+        ],
+        "second": "apple_volume_025"
+      },
+      {
+        "first": "apple_volume_022",
+        "joint": [
+          -11.0,
+          30.0,
+          0.0
+        ],
+        "second": "apple_volume_034"
+      },
+      {
+        "first": "apple_volume_023",
+        "joint": [
+          -9.9,
+          37.0,
+          0.0
+        ],
+        "second": "apple_volume_037"
+      },
+      {
+        "first": "apple_volume_023",
+        "joint": [
+          -8.8,
+          35.0,
+          0.0
+        ],
+        "second": "apple_volume_043"
+      },
+      {
+        "first": "apple_volume_023",
+        "joint": [
+          -8.8,
+          36.0,
+          0.0
+        ],
+        "second": "apple_volume_044"
+      },
+      {
+        "first": "apple_volume_024",
+        "joint": [
+          -11.0,
+          39.0,
+          0.0
+        ],
+        "second": "apple_volume_038"
+      },
+      {
+        "first": "apple_volume_025",
+        "joint": [
+          -11.0,
+          41.0,
+          0.0
+        ],
+        "second": "apple_volume_039"
+      },
+      {
+        "first": "apple_volume_026",
+        "joint": [
+          -8.8,
+          8.0,
+          0.0
+        ],
+        "second": "apple_volume_040"
+      },
+      {
+        "first": "apple_volume_027",
+        "joint": [
+          -6.6,
+          10.0,
+          0.0
+        ],
+        "second": "apple_volume_047"
+      },
+      {
+        "first": "apple_volume_027",
+        "joint": [
+          -6.6,
+          11.0,
+          0.0
+        ],
+        "second": "apple_volume_048"
+      },
+      {
+        "first": "apple_volume_030",
+        "joint": [
+          0.0,
+          19.0,
+          0.0
+        ],
+        "second": "apple_volume_055"
+      },
+      {
+        "first": "apple_volume_030",
+        "joint": [
+          7.7,
+          19.0,
+          0.0
+        ],
+        "second": "apple_volume_065"
+      },
+      {
+        "first": "apple_volume_030",
+        "joint": [
+          9.9,
+          17.0,
+          0.0
+        ],
+        "second": "apple_volume_078"
+      },
+      {
+        "first": "apple_volume_030",
+        "joint": [
+          11.0,
+          17.0,
+          0.0
+        ],
+        "second": "apple_volume_084"
+      },
+      {
+        "first": "apple_volume_030",
+        "joint": [
+          11.0,
+          18.0,
+          0.0
+        ],
+        "second": "apple_volume_085"
+      },
+      {
+        "first": "apple_volume_030",
+        "joint": [
+          11.0,
+          19.0,
+          0.0
+        ],
+        "second": "apple_volume_086"
+      },
+      {
+        "first": "apple_volume_034",
+        "joint": [
+          -4.4,
+          30.0,
+          0.0
+        ],
+        "second": "apple_volume_056"
+      },
+      {
+        "first": "apple_volume_035",
+        "joint": [
+          7.7,
+          31.0,
+          0.0
+        ],
+        "second": "apple_volume_066"
+      },
+      {
+        "first": "apple_volume_035",
+        "joint": [
+          9.9,
+          33.0,
+          0.0
+        ],
+        "second": "apple_volume_079"
+      },
+      {
+        "first": "apple_volume_035",
+        "joint": [
+          11.0,
+          31.0,
+          0.0
+        ],
+        "second": "apple_volume_087"
+      },
+      {
+        "first": "apple_volume_035",
+        "joint": [
+          11.0,
+          32.0,
+          0.0
+        ],
+        "second": "apple_volume_088"
+      },
+      {
+        "first": "apple_volume_035",
+        "joint": [
+          11.0,
+          33.0,
+          0.0
+        ],
+        "second": "apple_volume_089"
+      },
+      {
+        "first": "apple_volume_037",
+        "joint": [
+          -6.6,
+          38.0,
+          0.0
+        ],
+        "second": "apple_volume_050"
+      },
+      {
+        "first": "apple_volume_037",
+        "joint": [
+          -6.6,
+          39.0,
+          0.0
+        ],
+        "second": "apple_volume_051"
+      },
+      {
+        "first": "apple_volume_038",
+        "joint": [
+          -7.700000000000001,
+          41.0,
+          0.0
+        ],
+        "second": "apple_volume_045"
+      },
+      {
+        "first": "apple_volume_040",
+        "joint": [
+          -5.5,
+          7.0,
+          0.0
+        ],
+        "second": "apple_volume_046"
+      },
+      {
+        "first": "apple_volume_040",
+        "joint": [
+          -4.4,
+          7.0,
+          0.0
+        ],
+        "second": "apple_volume_053"
+      },
+      {
+        "first": "apple_volume_040",
+        "joint": [
+          -4.4,
+          8.0,
+          0.0
+        ],
+        "second": "apple_volume_054"
+      },
+      {
+        "first": "apple_volume_041",
+        "joint": [
+          -2.2,
+          14.0,
+          0.0
+        ],
+        "second": "apple_volume_058"
+      },
+      {
+        "first": "apple_volume_042",
+        "joint": [
+          5.5,
+          15.0,
+          0.0
+        ],
+        "second": "apple_volume_060"
+      },
+      {
+        "first": "apple_volume_042",
+        "joint": [
+          8.8,
+          15.0,
+          0.0
+        ],
+        "second": "apple_volume_077"
+      },
+      {
+        "first": "apple_volume_043",
+        "joint": [
+          0.0,
+          35.0,
+          0.0
+        ],
+        "second": "apple_volume_059"
+      },
+      {
+        "first": "apple_volume_043",
+        "joint": [
+          5.5,
+          35.0,
+          0.0
+        ],
+        "second": "apple_volume_061"
+      },
+      {
+        "first": "apple_volume_043",
+        "joint": [
+          8.8,
+          35.0,
+          0.0
+        ],
+        "second": "apple_volume_080"
+      },
+      {
+        "first": "apple_volume_045",
+        "joint": [
+          -5.5,
+          43.0,
+          0.0
+        ],
+        "second": "apple_volume_052"
+      },
+      {
+        "first": "apple_volume_045",
+        "joint": [
+          -4.4,
+          42.0,
+          0.0
+        ],
+        "second": "apple_volume_057"
+      },
+      {
+        "first": "apple_volume_047",
+        "joint": [
+          5.5,
+          9.0,
+          0.0
+        ],
+        "second": "apple_volume_064"
+      },
+      {
+        "first": "apple_volume_047",
+        "joint": [
+          6.6,
+          10.0,
+          0.0
+        ],
+        "second": "apple_volume_069"
+      },
+      {
+        "first": "apple_volume_047",
+        "joint": [
+          6.6,
+          11.0,
+          0.0
+        ],
+        "second": "apple_volume_070"
+      },
+      {
+        "first": "apple_volume_049",
+        "joint": [
+          6.6,
+          22.0,
+          0.0
+        ],
+        "second": "apple_volume_071"
+      },
+      {
+        "first": "apple_volume_049",
+        "joint": [
+          6.6,
+          25.0,
+          0.0
+        ],
+        "second": "apple_volume_072"
+      },
+      {
+        "first": "apple_volume_049",
+        "joint": [
+          6.6,
+          28.0,
+          0.0
+        ],
+        "second": "apple_volume_073"
+      },
+      {
+        "first": "apple_volume_050",
+        "joint": [
+          6.6,
+          38.0,
+          0.0
+        ],
+        "second": "apple_volume_074"
+      },
+      {
+        "first": "apple_volume_050",
+        "joint": [
+          6.6,
+          39.0,
+          0.0
+        ],
+        "second": "apple_volume_075"
+      },
+      {
+        "first": "apple_volume_051",
+        "joint": [
+          3.3,
+          41.0,
+          0.0
+        ],
+        "second": "apple_volume_062"
+      },
+      {
+        "first": "apple_volume_051",
+        "joint": [
+          5.5,
+          41.0,
+          0.0
+        ],
+        "second": "apple_volume_067"
+      },
+      {
+        "first": "apple_volume_053",
+        "joint": [
+          4.4,
+          6.0,
+          0.0
+        ],
+        "second": "apple_volume_063"
+      },
+      {
+        "first": "apple_volume_062",
+        "joint": [
+          4.4,
+          43.0,
+          0.0
+        ],
+        "second": "apple_volume_068"
+      },
+      {
+        "first": "apple_volume_064",
+        "joint": [
+          8.8,
+          8.0,
+          0.0
+        ],
+        "second": "apple_volume_076"
+      },
+      {
+        "first": "apple_volume_067",
+        "joint": [
+          8.8,
+          42.0,
+          0.0
+        ],
+        "second": "apple_volume_081"
+      },
+      {
+        "first": "apple_volume_069",
+        "joint": [
+          11.0,
+          10.0,
+          0.0
+        ],
+        "second": "apple_volume_082"
+      },
+      {
+        "first": "apple_volume_069",
+        "joint": [
+          11.0,
+          11.0,
+          0.0
+        ],
+        "second": "apple_volume_083"
+      },
+      {
+        "first": "apple_volume_072",
+        "joint": [
+          13.2,
+          25.0,
+          0.0
+        ],
+        "second": "apple_volume_096"
+      },
+      {
+        "first": "apple_volume_074",
+        "joint": [
+          11.0,
+          38.0,
+          0.0
+        ],
+        "second": "apple_volume_090"
+      },
+      {
+        "first": "apple_volume_074",
+        "joint": [
+          11.0,
+          39.0,
+          0.0
+        ],
+        "second": "apple_volume_091"
+      },
+      {
+        "first": "apple_volume_077",
+        "joint": [
+          13.2,
+          13.0,
+          0.0
+        ],
+        "second": "apple_volume_093"
+      },
+      {
+        "first": "apple_volume_077",
+        "joint": [
+          13.2,
+          14.0,
+          0.0
+        ],
+        "second": "apple_volume_094"
+      },
+      {
+        "first": "apple_volume_080",
+        "joint": [
+          13.2,
+          36.0,
+          0.0
+        ],
+        "second": "apple_volume_098"
+      },
+      {
+        "first": "apple_volume_080",
+        "joint": [
+          13.2,
+          37.0,
+          0.0
+        ],
+        "second": "apple_volume_099"
+      },
+      {
+        "first": "apple_volume_082",
+        "joint": [
+          13.2,
+          10.0,
+          0.0
+        ],
+        "second": "apple_volume_092"
+      },
+      {
+        "first": "apple_volume_084",
+        "joint": [
+          14.3,
+          17.0,
+          0.0
+        ],
+        "second": "apple_volume_095"
+      },
+      {
+        "first": "apple_volume_084",
+        "joint": [
+          15.399999999999999,
+          15.0,
+          0.0
+        ],
+        "second": "apple_volume_102"
+      },
+      {
+        "first": "apple_volume_084",
+        "joint": [
+          15.399999999999999,
+          16.0,
+          0.0
+        ],
+        "second": "apple_volume_103"
+      },
+      {
+        "first": "apple_volume_086",
+        "joint": [
+          15.399999999999999,
+          21.0,
+          0.0
+        ],
+        "second": "apple_volume_104"
+      },
+      {
+        "first": "apple_volume_087",
+        "joint": [
+          14.3,
+          31.0,
+          0.0
+        ],
+        "second": "apple_volume_097"
+      },
+      {
+        "first": "apple_volume_087",
+        "joint": [
+          15.399999999999999,
+          31.0,
+          0.0
+        ],
+        "second": "apple_volume_105"
+      },
+      {
+        "first": "apple_volume_089",
+        "joint": [
+          15.399999999999999,
+          35.0,
+          0.0
+        ],
+        "second": "apple_volume_106"
+      },
+      {
+        "first": "apple_volume_090",
+        "joint": [
+          13.2,
+          39.0,
+          0.0
+        ],
+        "second": "apple_volume_100"
+      },
+      {
+        "first": "apple_volume_092",
+        "joint": [
+          15.4,
+          11.0,
+          0.0
+        ],
+        "second": "apple_volume_101"
+      },
+      {
+        "first": "apple_volume_098",
+        "joint": [
+          15.4,
+          37.0,
+          0.0
+        ],
+        "second": "apple_volume_107"
+      },
+      {
+        "first": "apple_volume_102",
+        "joint": [
+          17.6,
+          15.0,
+          0.0
+        ],
+        "second": "apple_volume_108"
+      },
+      {
+        "first": "apple_volume_103",
+        "joint": [
+          17.6,
+          18.0,
+          0.0
+        ],
+        "second": "apple_volume_109"
+      },
+      {
+        "first": "apple_volume_104",
+        "joint": [
+          17.6,
+          25.0,
+          0.0
+        ],
+        "second": "apple_volume_110"
+      },
+      {
+        "first": "apple_volume_104",
+        "joint": [
+          17.6,
+          30.0,
+          0.0
+        ],
+        "second": "apple_volume_111"
+      },
+      {
+        "first": "apple_volume_105",
+        "joint": [
+          17.6,
+          34.0,
+          0.0
+        ],
+        "second": "apple_volume_112"
+      },
+      {
+        "first": "apple_volume_109",
+        "joint": [
+          19.799999999999997,
+          20.0,
+          0.0
+        ],
+        "second": "apple_volume_113"
+      },
+      {
+        "first": "apple_volume_109",
+        "joint": [
+          19.799999999999997,
+          21.0,
+          0.0
+        ],
+        "second": "apple_volume_114"
+      },
+      {
+        "first": "apple_volume_110",
+        "joint": [
+          19.799999999999997,
+          29.0,
+          0.0
+        ],
+        "second": "apple_volume_115"
+      },
+      {
+        "first": "apple_volume_051",
+        "joint": [
+          0.0,
+          40.0,
+          0.0
+        ],
+        "second": "crooked_stem_lower_1"
+      },
+      {
+        "first": "crooked_stem_lower_1",
+        "joint": [
+          -1.45,
+          45.5,
+          0.35
+        ],
+        "second": "crooked_stem_middle_1"
+      },
+      {
+        "first": "crooked_stem_middle_1",
+        "joint": [
+          0.3,
+          48.35,
+          -0.35
+        ],
+        "second": "crooked_stem_upper_1"
+      },
+      {
+        "first": "crooked_stem_upper_1",
+        "joint": [
+          -0.85,
+          51.0,
+          0.2
+        ],
+        "second": "crooked_stem_tip_1"
+      },
+      {
+        "first": "apple_volume_002",
+        "joint": [
+          -15.5,
+          15.0,
+          -9.0
+        ],
+        "second": "root_back_left_root_knuckle_1"
+      },
+      {
+        "first": "root_back_left_root_knuckle_1",
+        "joint": [
+          -16.75,
+          13.25,
+          -10.5
+        ],
+        "second": "root_back_left_root_knuckle_2"
+      },
+      {
+        "first": "root_back_left_root_knuckle_2",
+        "joint": [
+          -18.0,
+          11.5,
+          -12.0
+        ],
+        "second": "root_back_left_knuckle_elbow_1"
+      },
+      {
+        "first": "root_back_left_knuckle_elbow_1",
+        "joint": [
+          -20.0,
+          7.0,
+          -14.5
+        ],
+        "second": "root_back_left_elbow_wrist_1"
+      },
+      {
+        "first": "root_back_left_elbow_wrist_1",
+        "joint": [
+          -21.0,
+          4.75,
+          -15.25
+        ],
+        "second": "root_back_left_elbow_wrist_2"
+      },
+      {
+        "first": "root_back_left_elbow_wrist_2",
+        "joint": [
+          -22.0,
+          2.5,
+          -16.0
+        ],
+        "second": "root_back_left_raised_spur_1"
+      },
+      {
+        "first": "root_back_left_elbow_wrist_2",
+        "joint": [
+          -22.0,
+          2.5,
+          -16.0
+        ],
+        "second": "root_back_left_wrist_toe_1"
+      },
+      {
+        "first": "root_back_left_wrist_toe_1",
+        "joint": [
+          -24.0,
+          0.5,
+          -17.0
+        ],
+        "second": "root_back_left_inner_rootlet_1"
+      },
+      {
+        "first": "root_back_left_wrist_toe_1",
+        "joint": [
+          -24.0,
+          0.5,
+          -17.0
+        ],
+        "second": "root_back_left_outer_rootlet_1"
+      },
+      {
+        "first": "apple_volume_047",
+        "joint": [
+          -5.0,
+          9.2,
+          10.0
+        ],
+        "second": "root_front_left_root_knuckle_1"
+      },
+      {
+        "first": "root_front_left_root_knuckle_1",
+        "joint": [
+          -6.0,
+          6.6,
+          11.75
+        ],
+        "second": "root_front_left_root_knuckle_2"
+      },
+      {
+        "first": "root_front_left_root_knuckle_2",
+        "joint": [
+          -7.0,
+          4.0,
+          13.5
+        ],
+        "second": "root_front_left_knuckle_elbow_1"
+      },
+      {
+        "first": "root_front_left_knuckle_elbow_1",
+        "joint": [
+          -9.5,
+          -1.0,
+          16.5
+        ],
+        "second": "root_front_left_elbow_wrist_1"
+      },
+      {
+        "first": "root_front_left_elbow_wrist_1",
+        "joint": [
+          -9.0,
+          -3.5,
+          17.75
+        ],
+        "second": "root_front_left_elbow_wrist_2"
+      },
+      {
+        "first": "root_front_left_elbow_wrist_2",
+        "joint": [
+          -8.5,
+          -6.0,
+          19.0
+        ],
+        "second": "root_front_left_raised_spur_1"
+      },
+      {
+        "first": "root_front_left_elbow_wrist_2",
+        "joint": [
+          -8.5,
+          -6.0,
+          19.0
+        ],
+        "second": "root_front_left_wrist_toe_1"
+      },
+      {
+        "first": "root_front_left_wrist_toe_1",
+        "joint": [
+          -11.5,
+          -9.0,
+          21.5
+        ],
+        "second": "root_front_left_inner_rootlet_1"
+      },
+      {
+        "first": "root_front_left_wrist_toe_1",
+        "joint": [
+          -11.5,
+          -9.0,
+          21.5
+        ],
+        "second": "root_front_left_outer_rootlet_1"
+      },
+      {
+        "first": "apple_volume_047",
+        "joint": [
+          5.0,
+          9.2,
+          10.0
+        ],
+        "second": "root_front_right_root_knuckle_1"
+      },
+      {
+        "first": "root_front_right_root_knuckle_1",
+        "joint": [
+          6.0,
+          6.699999999999999,
+          11.75
+        ],
+        "second": "root_front_right_root_knuckle_2"
+      },
+      {
+        "first": "root_front_right_root_knuckle_2",
+        "joint": [
+          7.0,
+          4.2,
+          13.5
+        ],
+        "second": "root_front_right_knuckle_elbow_1"
+      },
+      {
+        "first": "root_front_right_knuckle_elbow_1",
+        "joint": [
+          9.8,
+          -0.8,
+          16.5
+        ],
+        "second": "root_front_right_elbow_wrist_1"
+      },
+      {
+        "first": "root_front_right_elbow_wrist_1",
+        "joint": [
+          9.3,
+          -3.3,
+          17.75
+        ],
+        "second": "root_front_right_elbow_wrist_2"
+      },
+      {
+        "first": "root_front_right_elbow_wrist_2",
+        "joint": [
+          8.8,
+          -5.8,
+          19.0
+        ],
+        "second": "root_front_right_raised_spur_1"
+      },
+      {
+        "first": "root_front_right_elbow_wrist_2",
+        "joint": [
+          8.8,
+          -5.8,
+          19.0
+        ],
+        "second": "root_front_right_wrist_toe_1"
+      },
+      {
+        "first": "root_front_right_wrist_toe_1",
+        "joint": [
+          11.8,
+          -9.0,
+          21.5
+        ],
+        "second": "root_front_right_inner_rootlet_1"
+      },
+      {
+        "first": "root_front_right_wrist_toe_1",
+        "joint": [
+          11.8,
+          -9.0,
+          21.5
+        ],
+        "second": "root_front_right_outer_rootlet_1"
+      },
+      {
+        "first": "apple_volume_103",
+        "joint": [
+          15.5,
+          17.0,
+          -9.0
+        ],
+        "second": "root_back_right_root_knuckle_1"
+      },
+      {
+        "first": "root_back_right_root_knuckle_1",
+        "joint": [
+          16.75,
+          14.75,
+          -10.5
+        ],
+        "second": "root_back_right_root_knuckle_2"
+      },
+      {
+        "first": "root_back_right_root_knuckle_2",
+        "joint": [
+          18.0,
+          12.5,
+          -12.0
+        ],
+        "second": "root_back_right_knuckle_elbow_1"
+      },
+      {
+        "first": "root_back_right_knuckle_elbow_1",
+        "joint": [
+          20.0,
+          7.5,
+          -14.5
+        ],
+        "second": "root_back_right_elbow_wrist_1"
+      },
+      {
+        "first": "root_back_right_elbow_wrist_1",
+        "joint": [
+          21.0,
+          5.0,
+          -15.25
+        ],
+        "second": "root_back_right_elbow_wrist_2"
+      },
+      {
+        "first": "root_back_right_elbow_wrist_2",
+        "joint": [
+          22.0,
+          2.5,
+          -16.0
+        ],
+        "second": "root_back_right_raised_spur_1"
+      },
+      {
+        "first": "root_back_right_elbow_wrist_2",
+        "joint": [
+          22.0,
+          2.5,
+          -16.0
+        ],
+        "second": "root_back_right_wrist_toe_1"
+      },
+      {
+        "first": "root_back_right_wrist_toe_1",
+        "joint": [
+          24.0,
+          0.5,
+          -17.0
+        ],
+        "second": "root_back_right_inner_rootlet_1"
+      },
+      {
+        "first": "root_back_right_wrist_toe_1",
+        "joint": [
+          24.0,
+          0.5,
+          -17.0
+        ],
+        "second": "root_back_right_outer_rootlet_1"
+      }
+    ],
+    "ellipsoid": {
+      "base_occupied_voxels": 3912,
+      "center": [
+        0.0,
+        25.0,
+        0.0
+      ],
+      "cutouts": [
+        {
+          "center": [
+            -20.5,
+            26.0,
+            0.0
+          ],
+          "exponent": 2.0,
+          "radii": [
+            8.5,
+            11.5,
+            60.0
+          ],
+          "role": "viewer-left bite"
+        },
+        {
+          "center": [
+            0.0,
+            44.5,
+            0.0
+          ],
+          "exponent": 2.0,
+          "radii": [
+            4.5,
+            3.5,
+            60.0
+          ],
+          "role": "top stem dimple"
+        }
+      ],
+      "dark_exposed_faces": [
+        [
+          "apple_volume_003",
+          "up"
+        ],
+        [
+          "apple_volume_003",
+          "south"
+        ],
+        [
+          "apple_volume_004",
+          "up"
+        ],
+        [
+          "apple_volume_004",
+          "north"
+        ],
+        [
+          "apple_volume_020",
+          "west"
+        ],
+        [
+          "apple_volume_020",
+          "south"
+        ],
+        [
+          "apple_volume_021",
+          "west"
+        ],
+        [
+          "apple_volume_021",
+          "north"
+        ],
+        [
+          "apple_volume_052",
+          "east"
+        ],
+        [
+          "apple_volume_068",
+          "west"
+        ]
+      ],
+      "exponent": 2.05,
+      "greedy_cuboids_after_carving": 115,
+      "occupied_voxels": 3530,
+      "radii": [
+        22.0,
+        20.0,
+        21.0
+      ],
+      "removed_voxels": 382,
+      "subdivisions": [
+        20,
+        20,
+        18
+      ],
+      "voxel_size": [
+        2.2,
+        2.0,
+        2.3333333333333335
+      ]
+    },
+    "feature_inventory": {
+      "apple_volume_cuboids": 115,
+      "carved_voxels": 382,
+      "dark_exposed_cut_faces": 10,
+      "identity_patches": 8,
+      "negative_space_cutouts": 2,
+      "root_limbs": 4,
+      "root_segments": 36,
+      "stem_segments": 4
+    },
+    "frame_clipping": [
+      "left",
+      "right",
+      "bottom"
+    ],
+    "lane": "agent-authored-semantic-volume",
+    "root_quadrants": [
+      {
+        "name": "root_back_left",
+        "root": [
+          -15.5,
+          15.0,
+          -9.0
+        ],
+        "terminal": [
+          -24.0,
+          0.5,
+          -17.0
+        ],
+        "x_sign": -1,
+        "z_sign": -1
+      },
+      {
+        "name": "root_front_left",
+        "root": [
+          -5.0,
+          9.2,
+          10.0
+        ],
+        "terminal": [
+          -11.5,
+          -9.0,
+          21.5
+        ],
+        "x_sign": -1,
+        "z_sign": 1
+      },
+      {
+        "name": "root_front_right",
+        "root": [
+          5.0,
+          9.2,
+          10.0
+        ],
+        "terminal": [
+          11.8,
+          -9.0,
+          21.5
+        ],
+        "x_sign": 1,
+        "z_sign": 1
+      },
+      {
+        "name": "root_back_right",
+        "root": [
+          15.5,
+          17.0,
+          -9.0
+        ],
+        "terminal": [
+          24.0,
+          0.5,
+          -17.0
+        ],
+        "x_sign": 1,
+        "z_sign": -1
+      }
+    ],
+    "single_view_hidden_geometry": "inferred_conservatively_not_observed",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0
+  },
+  "geometry": {
+    "precision": 60
+  },
+  "id": "golden_apple_rooted",
+  "landmarks": [
+    {
+      "center_color": "#fffbd2",
+      "center_uv": [
+        0.63,
+        0.36
+      ],
+      "color": "#ffef86",
+      "cube": "apple_volume_061",
+      "face": "south",
+      "name": "broad_upper_glint_top",
+      "size": [
+        15,
+        2
+      ]
+    },
+    {
+      "center_color": "#fffbd2",
+      "center_uv": [
+        0.64,
+        0.5
+      ],
+      "color": "#ffef86",
+      "cube": "apple_volume_043",
+      "face": "south",
+      "name": "broad_upper_glint_middle",
+      "size": [
+        13,
+        2
+      ]
+    },
+    {
+      "center_color": "#fffbd2",
+      "center_uv": [
+        0.65,
+        0.64
+      ],
+      "color": "#ffe66b",
+      "cube": "apple_volume_035",
+      "face": "south",
+      "name": "broad_upper_glint_lower",
+      "size": [
+        10,
+        2
+      ]
+    },
+    {
+      "center_color": "#fffbd2",
+      "center_uv": [
+        0.48,
+        0.4
+      ],
+      "color": "#ffe66b",
+      "cube": "apple_volume_089",
+      "face": "south",
+      "name": "right_glint_top",
+      "size": [
+        5,
+        2
+      ]
+    },
+    {
+      "center_color": "#fffbd2",
+      "center_uv": [
+        0.52,
+        0.5
+      ],
+      "color": "#ffe66b",
+      "cube": "apple_volume_088",
+      "face": "south",
+      "name": "right_glint_middle",
+      "size": [
+        5,
+        2
+      ]
+    },
+    {
+      "center_color": "#fffbd2",
+      "center_uv": [
+        0.56,
+        0.6
+      ],
+      "color": "#ffe66b",
+      "cube": "apple_volume_087",
+      "face": "south",
+      "name": "right_glint_lower",
+      "size": [
+        4,
+        2
+      ]
+    },
+    {
+      "center_color": "#c88718",
+      "center_uv": [
+        0.46,
+        0.35
+      ],
+      "color": "#a86711",
+      "cube": "apple_volume_043",
+      "face": "south",
+      "name": "left_bruise",
+      "size": [
+        5,
+        4
+      ]
+    },
+    {
+      "center_color": "#d99b21",
+      "center_uv": [
+        0.66,
+        0.46
+      ],
+      "color": "#aa6d13",
+      "cube": "apple_volume_048",
+      "face": "south",
+      "name": "lower_bruise",
+      "size": [
+        7,
+        3
+      ]
+    }
+  ],
+  "materials": {
+    "bark": {
+      "base": "#543126",
+      "highlight": "#80503a",
+      "pattern": "stripes",
+      "pattern_scale": 3,
+      "shade": "#261813"
+    },
+    "bark_dark": {
+      "base": "#35221c",
+      "highlight": "#654033",
+      "pattern": "dither",
+      "pattern_scale": 3,
+      "shade": "#17100e"
+    },
+    "bark_light": {
+      "base": "#76503a",
+      "highlight": "#a06c48",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#35231c"
+    },
+    "cut_shadow": {
+      "base": "#211511",
+      "highlight": "#4a2b20",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#0a0808"
+    },
+    "gold": {
+      "base": "#f2b916",
+      "highlight": "#ffe96a",
+      "pattern": "gradient",
+      "pattern_scale": 5,
+      "shade": "#a96805"
+    }
+  },
+  "quality_contract": {
+    "complexity": "moderate",
+    "identity_features": [
+      "deep near-spherical golden apple body",
+      "top dimple with crooked brown stem",
+      "dark bite-like cut into the viewer-left face",
+      "four connected gnarled roots occupying all X/Z quadrants",
+      "pale highlights and ochre bruise patches"
+    ],
+    "required_views": [
+      "reference-angle",
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "isometric",
+      "bite-closeup",
+      "stem-closeup",
+      "root-joints-closeup"
+    ],
+    "review_targets": [
+      "alpha silhouette",
+      "apple roundness",
+      "true body depth",
+      "bite identity",
+      "stem connection",
+      "four root quadrants",
+      "root joints",
+      "texture patches"
+    ],
+    "target_cuboids": [
+      145,
+      180
+    ]
+  },
+  "reference": {
+    "height": 704,
+    "image": "../../../../image-1.png",
+    "sha256": "228b2a37073397cd167486e5720a21a22f97d89e35e78e7e52f5aeb49207b10f",
+    "width": 600
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "Near-spherical luminous golden apple with a left bite-like dark cut, top dimple, crooked stem, and four gnarled walking roots",
+    "symmetry": "asymmetric",
+    "type": "prop_creature",
+    "uncertainties": [
+      "The single frontal illustration does not observe the rear apple surface or exact root depth",
+      "The source is clipped by the left, right, and bottom frame edges, so root continuation is unknown"
+    ]
+  },
+  "texture": {
+    "atlas_size": 512,
+    "density": 1,
+    "gutter": 1,
+    "palette_size": 24,
+    "quantize_source": false
+  }
+}

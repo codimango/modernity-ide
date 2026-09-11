@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "READY_FOR_BLIND_GATE",
+  "immediately_recognizable": true,
+  "critical_defect_observed": false,
+  "identity_features_visible": {
+    "clean_tapered_ivory_blade": true,
+    "readable_five_glyph_rune_strip": true,
+    "raised_navy_gold_crest": true,
+    "connected_asymmetric_gold_quillons": true,
+    "two_sided_blue_wrapped_grip": true,
+    "gold_gemmed_pommel": true
+  },
+  "evidence": {
+    "source_silhouette_iou": 0.515895,
+    "source_major_axis_delta_degrees": 1.618621,
+    "blade_profile_depth_to_length": 0.028184,
+    "declared_attachment_links": 31,
+    "all_cuboids_attachment_covered": true,
+    "minimum_compiled_attachment_margin": 0.005,
+    "native_audit_ok": true,
+    "native_audit_warnings": 0
+  },
+  "limitations": [
+    "Single-view artwork does not establish the exact reverse decoration",
+    "The source glow is represented by bright pixel bevels rather than emissive material",
+    "Independent blind grader verdict is intentionally not self-authored"
+  ]
+}

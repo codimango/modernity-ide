@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 49496,
+      "path": "nian_beast.model-spec.json",
+      "sha256": "d6cbc27b11724c61cc51ad77aca02f60ce14016a46e1aa85f621efb553f7cefd"
+    },
+    {
+      "bytes": 5948,
+      "path": "nian_beast.png",
+      "sha256": "3a02fddc95c49e96f2b0470ec784b6085df971b48b200005dd97065f22b0a0f8"
+    },
+    {
+      "bytes": 152540,
+      "path": "nian_beast.bbmodel",
+      "sha256": "bdf3fa47e1f8710840e9c84f0afdf3188200d50a607dfa20f4f95ce510a75fb2"
+    },
+    {
+      "bytes": 159905,
+      "path": "nian_beast.geo.json",
+      "sha256": "a973200c14cdf3fc97f727d7c31a69d95df6ac751b17f1f0df821826c0eef8b1"
+    },
+    {
+      "bytes": 212,
+      "path": "nian_beast.audit.json",
+      "sha256": "b5eb0a4ac2deee0e497e6c257930c45ed949a3d50c096d4f3524ce94de51d1bf"
+    },
+    {
+      "bytes": 69875,
+      "path": "nian_beast.reference.jpg",
+      "sha256": "644faf9b0d58763d91daa70a6819c269451fa0e021852356556453758fc23d99"
+    }
+  ],
+  "collision": {
+    "eye_height": 1.62,
+    "height": 2.05,
+    "width": 1.05
+  },
+  "generator": {
+    "lane": "agent-authored-semantic-hybrid",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "nian_beast",
+  "reference": {
+    "height": 480,
+    "image": "nian_beast.reference.jpg",
+    "sha256": "644faf9b0d58763d91daa70a6819c269451fa0e021852356556453758fc23d99",
+    "width": 640
+  },
+  "schema_version": 1
+}

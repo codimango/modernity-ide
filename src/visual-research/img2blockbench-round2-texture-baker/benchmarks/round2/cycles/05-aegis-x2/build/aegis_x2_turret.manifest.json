@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 114586,
+      "path": "aegis_x2_turret.model-spec.json",
+      "sha256": "503fa62be4a8f016cea793ac18337173dcfdcd655080756c4c41b90097a52b2a"
+    },
+    {
+      "bytes": 3096,
+      "path": "aegis_x2_turret.png",
+      "sha256": "80d0e200cb60b0fe1801275b608423aa7b156e93cfec9c32f89e4f4809c0abae"
+    },
+    {
+      "bytes": 235839,
+      "path": "aegis_x2_turret.bbmodel",
+      "sha256": "64b9eb4130d14c113340b8d27de27674f70f02583425f45c6d5a0c3f0edea570"
+    },
+    {
+      "bytes": 280766,
+      "path": "aegis_x2_turret.geo.json",
+      "sha256": "9a33b4ee0c5de07ae3dfa15065e3ee748973a57f7cd72d43fa0f3e4e3f60adba"
+    },
+    {
+      "bytes": 238,
+      "path": "aegis_x2_turret.audit.json",
+      "sha256": "ada2b6e55e9d8c8766f54164ce7932a36c22e8266a1b6523429e8e88254b7220"
+    },
+    {
+      "bytes": 512066,
+      "path": "aegis_x2_turret.reference.png",
+      "sha256": "31bb69536ce0f26540034096402cebc6e006ee9cb7ec56b38deb5bf04afb2e23"
+    }
+  ],
+  "collision": {
+    "eye_height": 4.7,
+    "height": 5.8,
+    "width": 4.5
+  },
+  "generator": {
+    "lane": "agent-authored-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "aegis_x2_turret",
+  "reference": {
+    "height": 1000,
+    "image": "aegis_x2_turret.reference.png",
+    "sha256": "31bb69536ce0f26540034096402cebc6e006ee9cb7ec56b38deb5bf04afb2e23",
+    "width": 1000
+  },
+  "schema_version": 1
+}

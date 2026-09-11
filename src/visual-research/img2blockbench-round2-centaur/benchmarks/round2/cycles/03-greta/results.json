@@ -1,0 +1,38 @@
+{
+  "artifact_sha256": {
+    "audit": "0c52bb09476a6eb04a87c1ba704df8e7dfeb806ed26ac4912a806e096d571abc",
+    "bbmodel": "80ea18fa6d09edf18f5a8cc496ac1e6d5a965a2cee2e39b012faeeac8109e236",
+    "built_model_spec": "d044d0f2d6454e534ac32ac1a2bfe1ae5570c1f8e628990ea1a857f2ebd0f09a",
+    "comparison_sheet": "5f06d77f858508b07becdf2fdc84fd559343209ef84e0110c2c9bd08c6ca6b26",
+    "evaluation": "cfb9f05b1a3a64e4a18b59c797f7aa83bf80ab3fbe0e2da6cb51908f7434f65e",
+    "geo_json": "7b1b95bce333a4382cd5674dbcd7704c38db09044683a0a6f6a0d23893797bda",
+    "manifest": "af99b91b0adfe2f48e32d229d30196bec634d262c915d3f8671626b118317764",
+    "model_spec": "40521fb2fbdfabe848a7da33682f9c2402b5b925111a312e33958f5717e48952",
+    "texture": "d98e4e12ef15c7aa95cb7a5fda6d04b7689a8b15f8cc90dad92342fa206ee141",
+    "zip": "ebe56f45ccee192c3b60ee167d6c9b764ac49de3090f68e0b0820bff9903136b"
+  },
+  "asset": "greta_shark_chef",
+  "author_checks": {
+    "all_71_declared_attachments_connected": true,
+    "alpha_silhouette_iou": 0.68495,
+    "audit_ok": true,
+    "exact_four_toothed_mouths": true,
+    "head_depth_to_body_width": 0.592076,
+    "keypoint_mean_error_subject_heights": 0.029263,
+    "no_reference_image_projection": true,
+    "source_alpha_complete_not_frame_clipped": true,
+    "source_skin_cuboids": 0,
+    "strict_validation": true,
+    "torso_depth_to_body_width": 0.66087,
+    "two_builds_byte_identical": true,
+    "two_grounded_feet": true
+  },
+  "bones": 35,
+  "cuboids": 72,
+  "cycle": "round2-03",
+  "general_improvement": {
+    "capabilities_added": [],
+    "reason": "Existing semantic chain, tapered branch-graph, texture-landmark, attachment-audit, and evidence APIs were sufficient."
+  },
+  "model_id": "greta_shark_chef"
+}

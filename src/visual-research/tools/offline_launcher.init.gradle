@@ -1,0 +1,10 @@
+gradle.beforeProject { project ->
+    def cachedLauncher = System.getProperty('modernity.cachedLauncherManifest')
+    if (cachedLauncher != null && !cachedLauncher.isBlank()) {
+        project.tasks.configureEach { task ->
+            if (task.hasProperty('launcherManifestUrl')) {
+                task.property('launcherManifestUrl').set(cachedLauncher)
+            }
+        }
+    }
+}

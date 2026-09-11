@@ -1,0 +1,24 @@
+{
+  "blocker": {
+    "code": "MISSING_PRIVATE_INPUT",
+    "message": "copy the user-supplied GLB to round3-inputs/Minecraft-style off-road truck.glb; this cycle has not run and has no PASS claim"
+  },
+  "cycle_id": "round3-03-off-road-truck",
+  "outputs_generated_this_run": false,
+  "pass_claimed": false,
+  "schema_version": 1,
+  "status": "BLOCKED",
+  "visual_review": {
+    "required": true,
+    "required_views": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "bottom",
+      "isometric"
+    ],
+    "status": "not-started"
+  }
+}

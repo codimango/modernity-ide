@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "cycle_id": "round3-03-off-road-truck",
+  "model": {
+    "id": "minecraft_off_road_truck_mesh",
+    "description": "A holistic Minecraft-style off-road truck reconstructed from the complete user-supplied mesh rather than a single camera projection.",
+    "subject_type": "vehicle"
+  },
+  "source": {
+    "relative_path": "round3-inputs/Minecraft-style off-road truck.glb",
+    "provider": "user-supplied",
+    "provider_model": "unrecorded",
+    "license": "unrecorded"
+  },
+  "reconstruction": {
+    "resolution": 36,
+    "max_cuboids": 96,
+    "target_size": 40.0,
+    "palette_size": 24,
+    "fill_mode": "auto",
+    "surface_thickness": 1,
+    "min_component_voxels": 2,
+    "min_component_fraction": 0.0003,
+    "geometry_precision": 64,
+    "texture_density": 1,
+    "canonical_transform": null
+  },
+  "review": {
+    "required_views": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "bottom",
+      "isometric"
+    ],
+    "separate_agent_required": true,
+    "automated_evidence_is_not_visual_approval": true
+  },
+  "outputs": {
+    "input_contract": "input-contract.json",
+    "model_spec": "model-spec.json",
+    "evidence": "mesh-evidence.json",
+    "build": "build",
+    "results": "results.json"
+  }
+}

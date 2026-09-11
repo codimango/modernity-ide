@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "cycle": 5,
+  "commit": "7416a5a35ab767a3c033eefe7d1ea3bdb85ae50e",
+  "cumulative_verdict": "PASS",
+  "cumulative_mean": 4.03,
+  "prior_asset_regression": "NONE_DETECTED",
+  "failed_attempts": [
+    {
+      "commit": "dd19be6",
+      "reason": "Nian and Tomato silhouettes were too rectangular and source-specific anatomy was weak."
+    },
+    {
+      "commit": "45a7531",
+      "reason": "Tomato improved, but Nian retained a visible rear-ankle gap and incorrect stance."
+    },
+    {
+      "commit": "085737c",
+      "reason": "Tomato passed; Nian remained the cumulative visual blocker."
+    }
+  ],
+  "assets": {
+    "american_goldfinch": {"verdict": "PASS", "mean": 3.83, "scores": [4, 4, 5, 4, 3, 3]},
+    "porsche_911_turbo_930": {"verdict": "PASS", "mean": 3.83, "scores": [4, 4, 5, 4, 3, 3]},
+    "excalibur": {"verdict": "PASS", "mean": 4.33, "scores": [5, 5, 4, 4, 4, 4]},
+    "nian_beast": {"verdict": "PASS", "mean": 4.0, "scores": [4, 4, 4, 4, 4, 4]},
+    "tomato_devil": {"verdict": "PASS", "mean": 4.17, "scores": [4, 4, 5, 4, 4, 4]}
+  },
+  "required_fixes": []
+}

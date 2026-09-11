@@ -1,0 +1,14 @@
+{
+  "bones": 68,
+  "cuboids": 192,
+  "errors": [],
+  "estimated_triangles": 2304,
+  "ok": true,
+  "texture_size": [
+    512,
+    512
+  ],
+  "warnings": [
+    "very high cuboid count is intended for reviewed high-detail models only"
+  ]
+}

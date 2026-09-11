@@ -1,0 +1,795 @@
+{
+  "all_anti_pancake_gates_pass": true,
+  "all_feature_gates_pass": true,
+  "all_five_reference_direction_gates_pass": true,
+  "anti_pancake_gates": {
+    "all_declared_attachments_connected": true,
+    "all_primary_views_have_at_least_12_percent_occupancy": true,
+    "both_side_pods_cover_at_least_65_percent_length": true,
+    "central_hull_length_to_width_at_least_1.75": true,
+    "four_grounded_shoes": true,
+    "front_and_back_are_visibly_distinct": true,
+    "overall_length_to_width_at_least_1.15": true,
+    "overall_width_to_height_at_least_1.35": true,
+    "three_axis_nonflatness_at_least_0.25": true,
+    "top_and_underside_are_visibly_distinct": true
+  },
+  "attachments": {
+    "all_connected": true,
+    "attachments": [
+      {
+        "connected": true,
+        "first": "belly_keel",
+        "first_margin": 0.6375,
+        "joint": [
+          0,
+          9.8,
+          0
+        ],
+        "minimum_margin": 0.6375,
+        "second": "lower_fuselage",
+        "second_margin": 1.70625
+      },
+      {
+        "connected": true,
+        "first": "lower_fuselage",
+        "first_margin": 1.09375,
+        "joint": [
+          0,
+          12,
+          0
+        ],
+        "minimum_margin": 1.09375,
+        "second": "mid_fuselage",
+        "second_margin": 1.5
+      },
+      {
+        "connected": true,
+        "first": "mid_fuselage",
+        "first_margin": 1.3875,
+        "joint": [
+          0,
+          15.3,
+          -2.5
+        ],
+        "minimum_margin": 0.14375,
+        "second": "upper_cabin",
+        "second_margin": 0.14375
+      },
+      {
+        "connected": true,
+        "first": "upper_cabin",
+        "first_margin": 0.14375,
+        "joint": [
+          0,
+          18.7,
+          -2.5
+        ],
+        "minimum_margin": 0.1375,
+        "second": "roof_spine",
+        "second_margin": 0.1375
+      },
+      {
+        "connected": true,
+        "first": "upper_cabin",
+        "first_margin": 1.04375,
+        "joint": [
+          0,
+          17.8,
+          9.75
+        ],
+        "minimum_margin": 0.276917,
+        "second": "roof_front_slope",
+        "second_margin": 0.276917
+      },
+      {
+        "connected": true,
+        "first": "mid_fuselage",
+        "first_margin": 2.6875,
+        "joint": [
+          0,
+          14,
+          15.625
+        ],
+        "minimum_margin": 1.457599,
+        "second": "nose_deck",
+        "second_margin": 1.457599
+      },
+      {
+        "connected": true,
+        "first": "nose_deck",
+        "first_margin": 1.449563,
+        "joint": [
+          0,
+          13,
+          21.25
+        ],
+        "minimum_margin": 1.449563,
+        "second": "nose_mid",
+        "second_margin": 1.462791
+      },
+      {
+        "connected": true,
+        "first": "nose_mid",
+        "first_margin": 0.720089,
+        "joint": [
+          0,
+          11.2,
+          27.25
+        ],
+        "minimum_margin": 0.288685,
+        "second": "nose_tip",
+        "second_margin": 0.288685
+      },
+      {
+        "connected": true,
+        "first": "nose_mid",
+        "first_margin": 0.118126,
+        "joint": [
+          0,
+          9.8,
+          26
+        ],
+        "minimum_margin": 0.118126,
+        "second": "nose_lower",
+        "second_margin": 0.60093
+      },
+      {
+        "connected": true,
+        "first": "lower_fuselage",
+        "first_margin": 1.29375,
+        "joint": [
+          0,
+          11.8,
+          -19.375
+        ],
+        "minimum_margin": 1.29375,
+        "second": "rear_cabin",
+        "second_margin": 1.8
+      },
+      {
+        "connected": true,
+        "first": "rear_cabin",
+        "first_margin": 1,
+        "joint": [
+          0,
+          16,
+          -21.25
+        ],
+        "minimum_margin": 0.693463,
+        "second": "rear_upper_taper",
+        "second_margin": 0.693463
+      },
+      {
+        "connected": true,
+        "first": "rear_cabin",
+        "first_margin": 0.1875,
+        "joint": [
+          0,
+          10.5,
+          -24.75
+        ],
+        "minimum_margin": 0.125,
+        "second": "rear_bumper",
+        "second_margin": 0.125
+      },
+      {
+        "connected": true,
+        "first": "mid_fuselage",
+        "first_margin": 1,
+        "joint": [
+          -10.5,
+          12,
+          11.25
+        ],
+        "minimum_margin": 0.59375,
+        "second": "left_pod_bridge_front",
+        "second_margin": 0.59375
+      },
+      {
+        "connected": true,
+        "first": "left_pod_bridge_front",
+        "first_margin": 0.5,
+        "joint": [
+          -11.5,
+          11.8,
+          11.25
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_pod_core",
+        "second_margin": 1.40625
+      },
+      {
+        "connected": true,
+        "first": "lower_fuselage",
+        "first_margin": 0.5,
+        "joint": [
+          -10.5,
+          11.2,
+          -11.25
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_pod_bridge_rear",
+        "second_margin": 1.2
+      },
+      {
+        "connected": true,
+        "first": "left_pod_bridge_rear",
+        "first_margin": 0.5,
+        "joint": [
+          -11.5,
+          11.5,
+          -11.25
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_pod_core",
+        "second_margin": 1.40625
+      },
+      {
+        "connected": true,
+        "first": "left_pod_core",
+        "first_margin": 1.5625,
+        "joint": [
+          -14,
+          12,
+          13.75
+        ],
+        "minimum_margin": 1.5625,
+        "second": "left_front_shoulder",
+        "second_margin": 2.326425
+      },
+      {
+        "connected": true,
+        "first": "left_pod_core",
+        "first_margin": 0.9375,
+        "joint": [
+          -14,
+          11.7,
+          -15.625
+        ],
+        "minimum_margin": 0.9375,
+        "second": "left_rear_housing",
+        "second_margin": 2.074026
+      },
+      {
+        "connected": true,
+        "first": "left_rear_housing",
+        "first_margin": 0.175759,
+        "joint": [
+          -14,
+          11.5,
+          -21.25
+        ],
+        "minimum_margin": 0.175759,
+        "second": "left_rear_cap",
+        "second_margin": 0.375
+      },
+      {
+        "connected": true,
+        "first": "mid_fuselage",
+        "first_margin": 1,
+        "joint": [
+          10.5,
+          12,
+          11.25
+        ],
+        "minimum_margin": 0.59375,
+        "second": "right_pod_bridge_front",
+        "second_margin": 0.59375
+      },
+      {
+        "connected": true,
+        "first": "right_pod_bridge_front",
+        "first_margin": 0.5,
+        "joint": [
+          11.5,
+          11.8,
+          11.25
+        ],
+        "minimum_margin": 0.5,
+        "second": "right_pod_core",
+        "second_margin": 1.40625
+      },
+      {
+        "connected": true,
+        "first": "lower_fuselage",
+        "first_margin": 0.5,
+        "joint": [
+          10.5,
+          11.2,
+          -11.25
+        ],
+        "minimum_margin": 0.5,
+        "second": "right_pod_bridge_rear",
+        "second_margin": 1.2
+      },
+      {
+        "connected": true,
+        "first": "right_pod_bridge_rear",
+        "first_margin": 0.5,
+        "joint": [
+          11.5,
+          11.5,
+          -11.25
+        ],
+        "minimum_margin": 0.5,
+        "second": "right_pod_core",
+        "second_margin": 1.40625
+      },
+      {
+        "connected": true,
+        "first": "right_pod_core",
+        "first_margin": 1.5625,
+        "joint": [
+          14,
+          12,
+          13.75
+        ],
+        "minimum_margin": 1.5625,
+        "second": "right_front_shoulder",
+        "second_margin": 2.326425
+      },
+      {
+        "connected": true,
+        "first": "right_pod_core",
+        "first_margin": 0.9375,
+        "joint": [
+          14,
+          11.7,
+          -15.625
+        ],
+        "minimum_margin": 0.9375,
+        "second": "right_rear_housing",
+        "second_margin": 2.074026
+      },
+      {
+        "connected": true,
+        "first": "right_rear_housing",
+        "first_margin": 0.175759,
+        "joint": [
+          14,
+          11.5,
+          -21.25
+        ],
+        "minimum_margin": 0.175759,
+        "second": "right_rear_cap",
+        "second_margin": 0.375
+      },
+      {
+        "connected": true,
+        "first": "left_pod_core",
+        "first_margin": 0.6875,
+        "joint": [
+          -13.5,
+          8,
+          11.25
+        ],
+        "minimum_margin": 0.34375,
+        "second": "front_left_gear_strut",
+        "second_margin": 0.34375
+      },
+      {
+        "connected": true,
+        "first": "front_left_gear_strut",
+        "first_margin": 0.345406,
+        "joint": [
+          -14,
+          5.8,
+          10.75
+        ],
+        "minimum_margin": 0.345406,
+        "second": "front_left_gear_lower",
+        "second_margin": 0.3625
+      },
+      {
+        "connected": true,
+        "first": "front_left_gear_lower",
+        "first_margin": 0.7,
+        "joint": [
+          -15.8,
+          4.5,
+          11
+        ],
+        "minimum_margin": 0.1125,
+        "second": "front_left_gear_armor",
+        "second_margin": 0.1125
+      },
+      {
+        "connected": true,
+        "first": "front_left_gear_lower",
+        "first_margin": 0.349083,
+        "joint": [
+          -14,
+          3.1,
+          11.125
+        ],
+        "minimum_margin": 0.0875,
+        "second": "front_left_gear_shoe",
+        "second_margin": 0.0875
+      },
+      {
+        "connected": true,
+        "first": "front_left_gear_shoe",
+        "first_margin": 0.125,
+        "joint": [
+          -14,
+          0.9,
+          16.125
+        ],
+        "minimum_margin": 0.125,
+        "second": "front_left_gear_toe",
+        "second_margin": 0.625
+      },
+      {
+        "connected": true,
+        "first": "right_pod_core",
+        "first_margin": 0.6875,
+        "joint": [
+          13.5,
+          8,
+          11.25
+        ],
+        "minimum_margin": 0.34375,
+        "second": "front_right_gear_strut",
+        "second_margin": 0.34375
+      },
+      {
+        "connected": true,
+        "first": "front_right_gear_strut",
+        "first_margin": 0.345406,
+        "joint": [
+          14,
+          5.8,
+          10.75
+        ],
+        "minimum_margin": 0.345406,
+        "second": "front_right_gear_lower",
+        "second_margin": 0.3625
+      },
+      {
+        "connected": true,
+        "first": "front_right_gear_lower",
+        "first_margin": 0.7,
+        "joint": [
+          15.8,
+          4.5,
+          11
+        ],
+        "minimum_margin": 0.1125,
+        "second": "front_right_gear_armor",
+        "second_margin": 0.1125
+      },
+      {
+        "connected": true,
+        "first": "front_right_gear_lower",
+        "first_margin": 0.349083,
+        "joint": [
+          14,
+          3.1,
+          11.125
+        ],
+        "minimum_margin": 0.0875,
+        "second": "front_right_gear_shoe",
+        "second_margin": 0.0875
+      },
+      {
+        "connected": true,
+        "first": "front_right_gear_shoe",
+        "first_margin": 0.125,
+        "joint": [
+          14,
+          0.9,
+          16.125
+        ],
+        "minimum_margin": 0.125,
+        "second": "front_right_gear_toe",
+        "second_margin": 0.625
+      },
+      {
+        "connected": true,
+        "first": "left_pod_core",
+        "first_margin": 0.6875,
+        "joint": [
+          -13.5,
+          8,
+          -12.5
+        ],
+        "minimum_margin": 0.34375,
+        "second": "rear_left_gear_strut",
+        "second_margin": 0.34375
+      },
+      {
+        "connected": true,
+        "first": "rear_left_gear_strut",
+        "first_margin": 0.345406,
+        "joint": [
+          -14,
+          5.8,
+          -13
+        ],
+        "minimum_margin": 0.345406,
+        "second": "rear_left_gear_lower",
+        "second_margin": 0.3625
+      },
+      {
+        "connected": true,
+        "first": "rear_left_gear_lower",
+        "first_margin": 0.7,
+        "joint": [
+          -15.8,
+          4.5,
+          -12.75
+        ],
+        "minimum_margin": 0.1125,
+        "second": "rear_left_gear_armor",
+        "second_margin": 0.1125
+      },
+      {
+        "connected": true,
+        "first": "rear_left_gear_lower",
+        "first_margin": 0.349083,
+        "joint": [
+          -14,
+          3.1,
+          -12.625
+        ],
+        "minimum_margin": 0.0875,
+        "second": "rear_left_gear_shoe",
+        "second_margin": 0.0875
+      },
+      {
+        "connected": true,
+        "first": "rear_left_gear_shoe",
+        "first_margin": 0.125,
+        "joint": [
+          -14,
+          0.9,
+          -7.625
+        ],
+        "minimum_margin": 0.125,
+        "second": "rear_left_gear_toe",
+        "second_margin": 0.625
+      },
+      {
+        "connected": true,
+        "first": "right_pod_core",
+        "first_margin": 0.6875,
+        "joint": [
+          13.5,
+          8,
+          -12.5
+        ],
+        "minimum_margin": 0.34375,
+        "second": "rear_right_gear_strut",
+        "second_margin": 0.34375
+      },
+      {
+        "connected": true,
+        "first": "rear_right_gear_strut",
+        "first_margin": 0.345406,
+        "joint": [
+          14,
+          5.8,
+          -13
+        ],
+        "minimum_margin": 0.345406,
+        "second": "rear_right_gear_lower",
+        "second_margin": 0.3625
+      },
+      {
+        "connected": true,
+        "first": "rear_right_gear_lower",
+        "first_margin": 0.7,
+        "joint": [
+          15.8,
+          4.5,
+          -12.75
+        ],
+        "minimum_margin": 0.1125,
+        "second": "rear_right_gear_armor",
+        "second_margin": 0.1125
+      },
+      {
+        "connected": true,
+        "first": "rear_right_gear_lower",
+        "first_margin": 0.349083,
+        "joint": [
+          14,
+          3.1,
+          -12.625
+        ],
+        "minimum_margin": 0.0875,
+        "second": "rear_right_gear_shoe",
+        "second_margin": 0.0875
+      },
+      {
+        "connected": true,
+        "first": "rear_right_gear_shoe",
+        "first_margin": 0.125,
+        "joint": [
+          14,
+          0.9,
+          -7.625
+        ],
+        "minimum_margin": 0.125,
+        "second": "rear_right_gear_toe",
+        "second_margin": 0.625
+      }
+    ],
+    "method": "shared-joint-compiled-oriented-cuboid-margin-v2",
+    "minimum_margin": 0.0875
+  },
+  "bones": 9,
+  "camera_calibration_claimed": false,
+  "cuboids": 165,
+  "evidence_basis": "five observed exterior directions plus one user screenshot",
+  "feature_gates": {
+    "all_materials_are_noise_free_solid_panels": true,
+    "at_least_40_side_detail_cuboids": true,
+    "at_least_six_rear_thruster_cuboids": true,
+    "bilateral_medical_crosses": true,
+    "chunky_ventral_machinery": true,
+    "cuboid_budget_140_to_170": true,
+    "eight_layered_rear_pod_louvers": true,
+    "eight_weapon_muzzle_collars": true,
+    "four_landing_modules": true,
+    "paired_side_pods_have_at_least_20_cuboids_each": true,
+    "three_roof_aerials": true,
+    "two_four_barrel_weapon_clusters": true
+  },
+  "feature_inventory": {
+    "central_fuselage_cuboids": 20,
+    "landing_gear_cuboids": 20,
+    "landing_gear_modules": 4,
+    "left_side_pod_cuboids": 22,
+    "medical_marking_strokes": 16,
+    "rear_pod_louvers": 8,
+    "rear_thruster_cuboids": 6,
+    "right_side_pod_cuboids": 22,
+    "roof_aerials": 3,
+    "side_detail_cuboids": 98,
+    "under_nose_weapon_barrels": 8,
+    "under_nose_weapon_muzzles": 8,
+    "ventral_machinery_cuboids": 6
+  },
+  "hidden_geometry_established_by_source": false,
+  "ignored_local_source_review": [
+    "round3-inputs/local-review/02-atlus/user-source-comparison.png",
+    "round3-inputs/local-review/02-atlus/multiview-source-comparison.png"
+  ],
+  "landmarks": 28,
+  "metrics": {
+    "central_hull_extents_xyz": [
+      23.0,
+      12.90625,
+      57.681015
+    ],
+    "central_hull_length_to_width": 2.50787,
+    "front_back_pixel_difference": 0.102881,
+    "left_pod_extents_xyz": [
+      10.92923,
+      13.2573,
+      44.9375
+    ],
+    "left_pod_length_fraction": 0.729949,
+    "minimum_axis_to_maximum_axis": 0.401955,
+    "orthographic_silhouette_occupancy": {
+      "back": 0.446788,
+      "front": 0.439516,
+      "isometric": 0.418177,
+      "left": 0.247912,
+      "right": 0.247594,
+      "top": 0.286019,
+      "underside": 0.399789
+    },
+    "overall_extents_xyz": [
+      37.483459,
+      24.745358,
+      61.5625
+    ],
+    "overall_length_to_width": 1.642391,
+    "overall_width_to_height": 1.514767,
+    "right_pod_extents_xyz": [
+      10.92923,
+      13.2573,
+      44.9375
+    ],
+    "right_pod_length_fraction": 0.729949,
+    "shoe_ground_heights": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "top_underside_pixel_difference": 0.2337
+  },
+  "model_id": "atlus_trauma_team_aerodyne",
+  "multiview_directional_evidence": {
+    "front": {
+      "gate": true,
+      "metric": "front_width_to_height",
+      "observed_anchors": [
+        "central louver bank",
+        "two four-barrel clusters",
+        "paired outer pods"
+      ],
+      "reference_sha256": "7bb5a2aebb27c2c4d42343f0ef3b19f993733a596b7187576d22d2623227daa4",
+      "value": 1.452055
+    },
+    "front-quarter": {
+      "gate": true,
+      "metric": "isometric_silhouette_occupancy",
+      "observed_anchors": [
+        "tapered nose",
+        "outer rib stacks",
+        "broad rescue door"
+      ],
+      "reference_sha256": "12c3c09ae7ba0c10efe46411c57a13f1477b695923e05475ce34b07c6ca7e967",
+      "value": 0.418177
+    },
+    "rear": {
+      "gate": true,
+      "metric": "rear_width_to_height",
+      "observed_anchors": [
+        "large service panel",
+        "vertical red rails",
+        "layered pod exhausts"
+      ],
+      "reference_sha256": "6454b749f851f58f77b3d670683855cb020c18d6e61b2642a47b24fb37b2d83d",
+      "value": 1.5
+    },
+    "side": {
+      "gate": true,
+      "metric": "side_length_to_height",
+      "observed_anchors": [
+        "long rescue door",
+        "front and rear hover pods",
+        "low roofline"
+      ],
+      "reference_sha256": "c47b04501de8a59322ae03d6bfb8d2302e5f474f58a3f022bb5cfa22818c0d98",
+      "value": 2.418251
+    },
+    "top": {
+      "gate": true,
+      "metric": "top_length_to_width",
+      "observed_anchors": [
+        "long central spine",
+        "paired roof ports",
+        "four-corner pod plan"
+      ],
+      "reference_sha256": "a4a01fa0d23029f3299e493428db8c737fddca533e66e221f464eb10be79a4f0",
+      "value": 1.641378
+    }
+  },
+  "render_sha256": {
+    "all-angle-sheet.png": "5104fe50e3aa0e7b1a99675309beddec41f5887ce28fc490d1c8e81237b4f674",
+    "back.png": "c95521ca5c7af3459da58b3671d2bc52dc1c3a1ccc638a96cb7082ab9cfbf246",
+    "front.png": "6ba03fab05fe45610395be7a2c1d6e99a7fd5318fbdb4bd750b64c0e8d19b419",
+    "isometric.png": "b1387ef58d38d56c1bd0e41edd9cf289f98ca77de1b8e692edb1a33f1878b8fa",
+    "left.png": "4f29d1d13cd1b37b656b81b9ae44c14a9a2e9a5c8c89639be71c5a6c818745c3",
+    "rear-closeup.png": "51167deec0bafd61d7da75979534e1484b64244901537013e4a32ffc192fb678",
+    "reference-angle.png": "649d7b0d7a966da52e6d5bd013a308656fb851186862e18fc49012de01fda4cf",
+    "right.png": "136030ffc9ab767fd2aa25deb0af7a081fed218b9ddb997add229f53853542ce",
+    "side-pod-closeup.png": "e297ccae836c002069b92589b0e683fac31987b74d957e98722322f6bc3d7bc6",
+    "top.png": "ba11f31332f86a5edd9bc273d52bcc3c3b2eb18922302630b22852521976dd27",
+    "underside-closeup.png": "827791d7ee5f67ea5d3b71d4f5211c67e8bf6716ceaf9da0fa11640c267fdaa3",
+    "underside.png": "bfd100e66f21e38d8a7356d58e97d6817b91e886bc4a8e0863cca93bd36aefb9"
+  },
+  "renderer": "deterministic-textured-cuboid-zbuffer-v3",
+  "schema_version": 1,
+  "underside_inference_disclosed": true,
+  "views": [
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "reference-angle.png",
+    "underside.png",
+    "side-pod-closeup.png",
+    "rear-closeup.png",
+    "underside-closeup.png",
+    "all-angle-sheet.png"
+  ]
+}

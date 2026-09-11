@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "asset": "atlus_trauma_team_aerodyne",
+  "cycle": "round3-02",
+  "status": "PASS",
+  "graded_commit": "640b8e7fe4e1179d2ce58fc16c9bb9935e6f4feb",
+  "exact_commit_grade": "pass",
+  "independent_visual_grade": {
+    "decision": "pass",
+    "silhouette": 3,
+    "proportions": 3,
+    "identity": 3,
+    "materials_color": 4,
+    "topology_attachments": 3,
+    "holistic_3d_coherence": 4
+  },
+  "grader_summary": "Exact-commit PASS: the all-angle vehicle reads as the Atlus with strong bounded Minecraft materials and substantial front, side, rear, top, and underside volume.",
+  "non_blocking_caveat": "Rounded pod joints, landing mechanisms, nose guns, and the rear fascia remain deliberately simplified into Minecraft-scale modules; the unobserved underside is disclosed as inferred."
+}

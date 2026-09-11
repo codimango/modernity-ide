@@ -1,0 +1,27 @@
+{
+  "asset": "biblical_angel_many_eyed_six_wing",
+  "cycle": "round3-01",
+  "status": "PASS",
+  "graded_commit": "640b8e7fe4e1179d2ce58fc16c9bb9935e6f4feb",
+  "exact_commit_grade": "pass",
+  "provisional": false,
+  "graded_revision": "640b8e7fe4e1179d2ce58fc16c9bb9935e6f4feb",
+  "independent_visual_grade": {
+    "decision": "pass",
+    "identity": 3,
+    "holistic_3d_coherence": 3,
+    "materials_color": 3,
+    "proportions": 3,
+    "silhouette": 3,
+    "topology_attachments": 3
+  },
+  "resolved_blockers": [
+    "left and right views now expose broad radial wing masses instead of a narrow pancake strip",
+    "all 108 spar, primary-feather, and broad-vane cuboids have nonzero Y yaw",
+    "all 30 distal feather profiles use three strictly narrowing stages",
+    "the thinnest stages are compact caps rather than long needle-like terminals",
+    "the eye crown wraps through four angled corners and both side temples"
+  ],
+  "grader_summary": "Exact-commit PASS: all 30 feather profiles end in compact stepped tapers rather than square paddles, while seven axial/isometric views retain distinct radial sectors and coherent depth.",
+  "non_blocking_caveat": "The frontal wing mass remains more mechanically segmented than the painterly source, consistent with the requested Minecraft abstraction."
+}

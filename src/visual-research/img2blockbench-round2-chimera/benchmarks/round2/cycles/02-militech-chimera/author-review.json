@@ -1,0 +1,59 @@
+{
+  "asset": "militech_chimera",
+  "author_decision": "PASS_AFTER_INDEPENDENT_SIX_LEG_REVIEW",
+  "critical_geometry_defect_observed": false,
+  "cycle": "round2-02",
+  "identity_review": {
+    "broad_layered_shin_armor_on_all_six_legs_visible": true,
+    "deep_low_armored_chassis_visible": true,
+    "faceted_wide_turret_and_sloped_wedge_front_visible": true,
+    "flat_radar_pod_circular_collar_and_antennas_visible": true,
+    "front_middle_rear_bilateral_leg_pairs_visible": true,
+    "six_distinct_articulated_leg_chains_visible": true
+  },
+  "limitations": [
+    "The two still references show different staged poses, colors, and viewing directions.",
+    "Far-side articulation, underside equipment, and hidden panel graphics remain symmetric inferences.",
+    "Raw fixed-camera scores remain below provisional aspirations and are retained as diagnostics instead of driving geometry distortion.",
+    "Static geometry was reviewed; no animation was authored or approved."
+  ],
+  "previous_grade_invalidated": true,
+  "quantitative_checks": {
+    "all_191_declared_attachments_connected": true,
+    "all_volume_and_six_leg_stance_gates_pass": true,
+    "alternate_perspective_iou": 0.632529,
+    "alternate_perspective_keypoint_mean_error_subject_heights": 0.070894,
+    "chassis_depth_to_width": 1.694929,
+    "front_middle_rear_station_counts": {
+      "front": 2,
+      "middle": 2,
+      "rear": 2
+    },
+    "original_perspective_iou": 0.605818,
+    "original_perspective_keypoint_mean_error_subject_heights": 0.066869,
+    "perspective_camera_runtime_fitting": false,
+    "perspective_iou_0_65_and_keypoint_0_06_gate": "diagnostic_below_aspiration",
+    "six_grounded_foot_heights": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+    "six_unique_xz_roots": true,
+    "strict_native_audit": true
+  },
+  "reviewed_views": [
+    "source-perspective.png",
+    "perspective-silhouette-overlap.png",
+    "alternate-source-perspective.png",
+    "alternate-perspective-silhouette-overlap.png",
+    "reference-angle.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "leg-closeup.png",
+    "chassis-closeup.png",
+    "turret-closeup.png",
+    "silhouette-overlap.png",
+    "comparison-sheet.png",
+    "alternate-comparison-sheet.png"
+  ]
+}

@@ -1,0 +1,9486 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        38,
+        0
+      ]
+    },
+    {
+      "name": "body",
+      "parent": "root",
+      "pivot": [
+        0,
+        38,
+        0
+      ]
+    },
+    {
+      "name": "rear_upper_wings",
+      "parent": "body",
+      "pivot": [
+        -8,
+        45,
+        -6
+      ]
+    },
+    {
+      "name": "left_rear_upper_spar_1",
+      "parent": "rear_upper_wings",
+      "pivot": [
+        -8,
+        45,
+        -6
+      ]
+    },
+    {
+      "name": "left_rear_upper_spar_2",
+      "parent": "left_rear_upper_spar_1",
+      "pivot": [
+        -13,
+        57,
+        -11
+      ]
+    },
+    {
+      "name": "left_rear_upper_spar_3",
+      "parent": "left_rear_upper_spar_2",
+      "pivot": [
+        -17.5,
+        71,
+        -15
+      ]
+    },
+    {
+      "name": "left_rear_upper_feather_1_1",
+      "parent": "left_rear_upper_spar_1",
+      "pivot": [
+        -13,
+        57,
+        -11
+      ]
+    },
+    {
+      "name": "left_rear_upper_feather_1_2",
+      "parent": "left_rear_upper_feather_1_1",
+      "pivot": [
+        -21.74,
+        70.2,
+        -17
+      ]
+    },
+    {
+      "name": "left_rear_upper_feather_1_3",
+      "parent": "left_rear_upper_feather_1_2",
+      "pivot": [
+        -29.72,
+        79.7,
+        -20.35
+      ]
+    },
+    {
+      "name": "left_rear_upper_feather_2_1",
+      "parent": "left_rear_upper_spar_2",
+      "pivot": [
+        -17.5,
+        71,
+        -15
+      ]
+    },
+    {
+      "name": "left_rear_upper_feather_2_2",
+      "parent": "left_rear_upper_feather_2_1",
+      "pivot": [
+        -28.77,
+        69.48,
+        -17.78
+      ]
+    },
+    {
+      "name": "left_rear_upper_feather_2_3",
+      "parent": "left_rear_upper_feather_2_2",
+      "pivot": [
+        -39.06,
+        65.54,
+        -18.19
+      ]
+    },
+    {
+      "name": "left_rear_upper_feather_3_1",
+      "parent": "left_rear_upper_spar_3",
+      "pivot": [
+        -21,
+        85,
+        -18
+      ]
+    },
+    {
+      "name": "left_rear_upper_feather_3_2",
+      "parent": "left_rear_upper_feather_3_1",
+      "pivot": [
+        -29.74,
+        68.76,
+        -17.56
+      ]
+    },
+    {
+      "name": "left_rear_upper_feather_3_3",
+      "parent": "left_rear_upper_feather_3_2",
+      "pivot": [
+        -37.72,
+        51.38,
+        -15.03
+      ]
+    },
+    {
+      "name": "left_rear_upper_overlap_vane_1_1",
+      "parent": "left_rear_upper_spar_1",
+      "pivot": [
+        -13,
+        57,
+        -11
+      ]
+    },
+    {
+      "name": "left_rear_upper_overlap_vane_1_2",
+      "parent": "left_rear_upper_overlap_vane_1_1",
+      "pivot": [
+        -20.14,
+        66.08,
+        -14.78
+      ]
+    },
+    {
+      "name": "left_rear_upper_overlap_vane_1_3",
+      "parent": "left_rear_upper_overlap_vane_1_2",
+      "pivot": [
+        -28.3,
+        74.55,
+        -19.1
+      ]
+    },
+    {
+      "name": "left_rear_upper_overlap_vane_2_1",
+      "parent": "left_rear_upper_spar_3",
+      "pivot": [
+        -21,
+        85,
+        -18
+      ]
+    },
+    {
+      "name": "left_rear_upper_overlap_vane_2_2",
+      "parent": "left_rear_upper_overlap_vane_2_1",
+      "pivot": [
+        -27.3,
+        71.82,
+        -16.74
+      ]
+    },
+    {
+      "name": "left_rear_upper_overlap_vane_2_3",
+      "parent": "left_rear_upper_overlap_vane_2_2",
+      "pivot": [
+        -34.5,
+        54.85,
+        -15.3
+      ]
+    },
+    {
+      "name": "right_rear_upper_spar_1",
+      "parent": "rear_upper_wings",
+      "pivot": [
+        8,
+        45,
+        -6
+      ]
+    },
+    {
+      "name": "right_rear_upper_spar_2",
+      "parent": "right_rear_upper_spar_1",
+      "pivot": [
+        13,
+        57,
+        -11
+      ]
+    },
+    {
+      "name": "right_rear_upper_spar_3",
+      "parent": "right_rear_upper_spar_2",
+      "pivot": [
+        17.5,
+        71,
+        -15
+      ]
+    },
+    {
+      "name": "right_rear_upper_feather_1_1",
+      "parent": "right_rear_upper_spar_1",
+      "pivot": [
+        13,
+        57,
+        -11
+      ]
+    },
+    {
+      "name": "right_rear_upper_feather_1_2",
+      "parent": "right_rear_upper_feather_1_1",
+      "pivot": [
+        21.74,
+        70.2,
+        -17
+      ]
+    },
+    {
+      "name": "right_rear_upper_feather_1_3",
+      "parent": "right_rear_upper_feather_1_2",
+      "pivot": [
+        29.72,
+        79.7,
+        -20.35
+      ]
+    },
+    {
+      "name": "right_rear_upper_feather_2_1",
+      "parent": "right_rear_upper_spar_2",
+      "pivot": [
+        17.5,
+        71,
+        -15
+      ]
+    },
+    {
+      "name": "right_rear_upper_feather_2_2",
+      "parent": "right_rear_upper_feather_2_1",
+      "pivot": [
+        28.77,
+        69.48,
+        -17.78
+      ]
+    },
+    {
+      "name": "right_rear_upper_feather_2_3",
+      "parent": "right_rear_upper_feather_2_2",
+      "pivot": [
+        39.06,
+        65.54,
+        -18.19
+      ]
+    },
+    {
+      "name": "right_rear_upper_feather_3_1",
+      "parent": "right_rear_upper_spar_3",
+      "pivot": [
+        21,
+        85,
+        -18
+      ]
+    },
+    {
+      "name": "right_rear_upper_feather_3_2",
+      "parent": "right_rear_upper_feather_3_1",
+      "pivot": [
+        29.74,
+        68.76,
+        -17.56
+      ]
+    },
+    {
+      "name": "right_rear_upper_feather_3_3",
+      "parent": "right_rear_upper_feather_3_2",
+      "pivot": [
+        37.72,
+        51.38,
+        -15.03
+      ]
+    },
+    {
+      "name": "right_rear_upper_overlap_vane_1_1",
+      "parent": "right_rear_upper_spar_1",
+      "pivot": [
+        13,
+        57,
+        -11
+      ]
+    },
+    {
+      "name": "right_rear_upper_overlap_vane_1_2",
+      "parent": "right_rear_upper_overlap_vane_1_1",
+      "pivot": [
+        20.14,
+        66.08,
+        -14.78
+      ]
+    },
+    {
+      "name": "right_rear_upper_overlap_vane_1_3",
+      "parent": "right_rear_upper_overlap_vane_1_2",
+      "pivot": [
+        28.3,
+        74.55,
+        -19.1
+      ]
+    },
+    {
+      "name": "right_rear_upper_overlap_vane_2_1",
+      "parent": "right_rear_upper_spar_3",
+      "pivot": [
+        21,
+        85,
+        -18
+      ]
+    },
+    {
+      "name": "right_rear_upper_overlap_vane_2_2",
+      "parent": "right_rear_upper_overlap_vane_2_1",
+      "pivot": [
+        27.3,
+        71.82,
+        -16.74
+      ]
+    },
+    {
+      "name": "right_rear_upper_overlap_vane_2_3",
+      "parent": "right_rear_upper_overlap_vane_2_2",
+      "pivot": [
+        34.5,
+        54.85,
+        -15.3
+      ]
+    },
+    {
+      "name": "middle_wings",
+      "parent": "body",
+      "pivot": [
+        -9,
+        43,
+        0
+      ]
+    },
+    {
+      "name": "left_middle_spar_1",
+      "parent": "middle_wings",
+      "pivot": [
+        -9,
+        43,
+        0
+      ]
+    },
+    {
+      "name": "left_middle_spar_2",
+      "parent": "left_middle_spar_1",
+      "pivot": [
+        -21,
+        49,
+        4
+      ]
+    },
+    {
+      "name": "left_middle_spar_3",
+      "parent": "left_middle_spar_2",
+      "pivot": [
+        -34,
+        51,
+        10
+      ]
+    },
+    {
+      "name": "left_middle_feather_1_1",
+      "parent": "left_middle_spar_1",
+      "pivot": [
+        -21,
+        49,
+        4
+      ]
+    },
+    {
+      "name": "left_middle_feather_1_2",
+      "parent": "left_middle_feather_1_1",
+      "pivot": [
+        -31.58,
+        56.22,
+        10
+      ]
+    },
+    {
+      "name": "left_middle_feather_1_3",
+      "parent": "left_middle_feather_1_2",
+      "pivot": [
+        -41.24,
+        60.26,
+        13.35
+      ]
+    },
+    {
+      "name": "left_middle_feather_2_1",
+      "parent": "left_middle_spar_2",
+      "pivot": [
+        -34,
+        51,
+        10
+      ]
+    },
+    {
+      "name": "left_middle_feather_2_2",
+      "parent": "left_middle_feather_2_1",
+      "pivot": [
+        -43.2,
+        49.48,
+        15.08
+      ]
+    },
+    {
+      "name": "left_middle_feather_2_3",
+      "parent": "left_middle_feather_2_2",
+      "pivot": [
+        -51.6,
+        45.54,
+        17.59
+      ]
+    },
+    {
+      "name": "left_middle_feather_3_1",
+      "parent": "left_middle_spar_3",
+      "pivot": [
+        -48,
+        47,
+        15
+      ]
+    },
+    {
+      "name": "left_middle_feather_3_2",
+      "parent": "left_middle_feather_3_1",
+      "pivot": [
+        -46.16,
+        39.96,
+        18.24
+      ]
+    },
+    {
+      "name": "left_middle_feather_3_3",
+      "parent": "left_middle_feather_3_2",
+      "pivot": [
+        -44.48,
+        30.98,
+        19.07
+      ]
+    },
+    {
+      "name": "left_middle_overlap_vane_1_1",
+      "parent": "left_middle_spar_1",
+      "pivot": [
+        -21,
+        49,
+        4
+      ]
+    },
+    {
+      "name": "left_middle_overlap_vane_1_2",
+      "parent": "left_middle_overlap_vane_1_1",
+      "pivot": [
+        -28.14,
+        53.04,
+        7.78
+      ]
+    },
+    {
+      "name": "left_middle_overlap_vane_1_3",
+      "parent": "left_middle_overlap_vane_1_2",
+      "pivot": [
+        -36.3,
+        55.75,
+        12.1
+      ]
+    },
+    {
+      "name": "left_middle_overlap_vane_2_1",
+      "parent": "left_middle_spar_3",
+      "pivot": [
+        -48,
+        47,
+        15
+      ]
+    },
+    {
+      "name": "left_middle_overlap_vane_2_2",
+      "parent": "left_middle_overlap_vane_2_1",
+      "pivot": [
+        -45.48,
+        42.22,
+        16.26
+      ]
+    },
+    {
+      "name": "left_middle_overlap_vane_2_3",
+      "parent": "left_middle_overlap_vane_2_2",
+      "pivot": [
+        -42.6,
+        34.85,
+        17.7
+      ]
+    },
+    {
+      "name": "right_middle_spar_1",
+      "parent": "middle_wings",
+      "pivot": [
+        9,
+        43,
+        0
+      ]
+    },
+    {
+      "name": "right_middle_spar_2",
+      "parent": "right_middle_spar_1",
+      "pivot": [
+        21,
+        49,
+        4
+      ]
+    },
+    {
+      "name": "right_middle_spar_3",
+      "parent": "right_middle_spar_2",
+      "pivot": [
+        34,
+        51,
+        10
+      ]
+    },
+    {
+      "name": "right_middle_feather_1_1",
+      "parent": "right_middle_spar_1",
+      "pivot": [
+        21,
+        49,
+        4
+      ]
+    },
+    {
+      "name": "right_middle_feather_1_2",
+      "parent": "right_middle_feather_1_1",
+      "pivot": [
+        31.58,
+        56.22,
+        10
+      ]
+    },
+    {
+      "name": "right_middle_feather_1_3",
+      "parent": "right_middle_feather_1_2",
+      "pivot": [
+        41.24,
+        60.26,
+        13.35
+      ]
+    },
+    {
+      "name": "right_middle_feather_2_1",
+      "parent": "right_middle_spar_2",
+      "pivot": [
+        34,
+        51,
+        10
+      ]
+    },
+    {
+      "name": "right_middle_feather_2_2",
+      "parent": "right_middle_feather_2_1",
+      "pivot": [
+        43.2,
+        49.48,
+        15.08
+      ]
+    },
+    {
+      "name": "right_middle_feather_2_3",
+      "parent": "right_middle_feather_2_2",
+      "pivot": [
+        51.6,
+        45.54,
+        17.59
+      ]
+    },
+    {
+      "name": "right_middle_feather_3_1",
+      "parent": "right_middle_spar_3",
+      "pivot": [
+        48,
+        47,
+        15
+      ]
+    },
+    {
+      "name": "right_middle_feather_3_2",
+      "parent": "right_middle_feather_3_1",
+      "pivot": [
+        46.16,
+        39.96,
+        18.24
+      ]
+    },
+    {
+      "name": "right_middle_feather_3_3",
+      "parent": "right_middle_feather_3_2",
+      "pivot": [
+        44.48,
+        30.98,
+        19.07
+      ]
+    },
+    {
+      "name": "right_middle_overlap_vane_1_1",
+      "parent": "right_middle_spar_1",
+      "pivot": [
+        21,
+        49,
+        4
+      ]
+    },
+    {
+      "name": "right_middle_overlap_vane_1_2",
+      "parent": "right_middle_overlap_vane_1_1",
+      "pivot": [
+        28.14,
+        53.04,
+        7.78
+      ]
+    },
+    {
+      "name": "right_middle_overlap_vane_1_3",
+      "parent": "right_middle_overlap_vane_1_2",
+      "pivot": [
+        36.3,
+        55.75,
+        12.1
+      ]
+    },
+    {
+      "name": "right_middle_overlap_vane_2_1",
+      "parent": "right_middle_spar_3",
+      "pivot": [
+        48,
+        47,
+        15
+      ]
+    },
+    {
+      "name": "right_middle_overlap_vane_2_2",
+      "parent": "right_middle_overlap_vane_2_1",
+      "pivot": [
+        45.48,
+        42.22,
+        16.26
+      ]
+    },
+    {
+      "name": "right_middle_overlap_vane_2_3",
+      "parent": "right_middle_overlap_vane_2_2",
+      "pivot": [
+        42.6,
+        34.85,
+        17.7
+      ]
+    },
+    {
+      "name": "front_lower_wings",
+      "parent": "body",
+      "pivot": [
+        -8,
+        40,
+        6
+      ]
+    },
+    {
+      "name": "left_front_lower_spar_1",
+      "parent": "front_lower_wings",
+      "pivot": [
+        -8,
+        40,
+        6
+      ]
+    },
+    {
+      "name": "left_front_lower_spar_2",
+      "parent": "left_front_lower_spar_1",
+      "pivot": [
+        -16,
+        32,
+        12
+      ]
+    },
+    {
+      "name": "left_front_lower_spar_3",
+      "parent": "left_front_lower_spar_2",
+      "pivot": [
+        -23,
+        19,
+        18
+      ]
+    },
+    {
+      "name": "left_front_lower_feather_1_1",
+      "parent": "left_front_lower_spar_1",
+      "pivot": [
+        -16,
+        32,
+        12
+      ]
+    },
+    {
+      "name": "left_front_lower_feather_1_2",
+      "parent": "left_front_lower_feather_1_1",
+      "pivot": [
+        -26.12,
+        34.62,
+        16.62
+      ]
+    },
+    {
+      "name": "left_front_lower_feather_1_3",
+      "parent": "left_front_lower_feather_1_2",
+      "pivot": [
+        -35.36,
+        34.46,
+        18.71
+      ]
+    },
+    {
+      "name": "left_front_lower_feather_2_1",
+      "parent": "left_front_lower_spar_2",
+      "pivot": [
+        -23,
+        19,
+        18
+      ]
+    },
+    {
+      "name": "left_front_lower_feather_2_2",
+      "parent": "left_front_lower_feather_2_1",
+      "pivot": [
+        -32.66,
+        19.32,
+        21.7
+      ]
+    },
+    {
+      "name": "left_front_lower_feather_2_3",
+      "parent": "left_front_lower_feather_2_2",
+      "pivot": [
+        -41.48,
+        17.06,
+        22.95
+      ]
+    },
+    {
+      "name": "left_front_lower_feather_3_1",
+      "parent": "left_front_lower_spar_3",
+      "pivot": [
+        -27,
+        5,
+        22
+      ]
+    },
+    {
+      "name": "left_front_lower_feather_3_2",
+      "parent": "left_front_lower_feather_3_1",
+      "pivot": [
+        -28.84,
+        2.56,
+        24.78
+      ]
+    },
+    {
+      "name": "left_front_lower_feather_3_3",
+      "parent": "left_front_lower_feather_3_2",
+      "pivot": [
+        -30.52,
+        -2.22,
+        25.19
+      ]
+    },
+    {
+      "name": "left_front_lower_overlap_vane_1_1",
+      "parent": "left_front_lower_spar_1",
+      "pivot": [
+        -16,
+        32,
+        12
+      ]
+    },
+    {
+      "name": "left_front_lower_overlap_vane_1_2",
+      "parent": "left_front_lower_overlap_vane_1_1",
+      "pivot": [
+        -22.72,
+        32.26,
+        14.52
+      ]
+    },
+    {
+      "name": "left_front_lower_overlap_vane_1_3",
+      "parent": "left_front_lower_overlap_vane_1_2",
+      "pivot": [
+        -30.4,
+        30.65,
+        17.4
+      ]
+    },
+    {
+      "name": "left_front_lower_overlap_vane_2_1",
+      "parent": "left_front_lower_spar_3",
+      "pivot": [
+        -27,
+        5,
+        22
+      ]
+    },
+    {
+      "name": "left_front_lower_overlap_vane_2_2",
+      "parent": "left_front_lower_overlap_vane_2_1",
+      "pivot": [
+        -30.36,
+        5.68,
+        22.84
+      ]
+    },
+    {
+      "name": "left_front_lower_overlap_vane_2_3",
+      "parent": "left_front_lower_overlap_vane_2_2",
+      "pivot": [
+        -34.2,
+        4.55,
+        23.8
+      ]
+    },
+    {
+      "name": "right_front_lower_spar_1",
+      "parent": "front_lower_wings",
+      "pivot": [
+        8,
+        40,
+        6
+      ]
+    },
+    {
+      "name": "right_front_lower_spar_2",
+      "parent": "right_front_lower_spar_1",
+      "pivot": [
+        16,
+        32,
+        12
+      ]
+    },
+    {
+      "name": "right_front_lower_spar_3",
+      "parent": "right_front_lower_spar_2",
+      "pivot": [
+        23,
+        19,
+        18
+      ]
+    },
+    {
+      "name": "right_front_lower_feather_1_1",
+      "parent": "right_front_lower_spar_1",
+      "pivot": [
+        16,
+        32,
+        12
+      ]
+    },
+    {
+      "name": "right_front_lower_feather_1_2",
+      "parent": "right_front_lower_feather_1_1",
+      "pivot": [
+        26.12,
+        34.62,
+        16.62
+      ]
+    },
+    {
+      "name": "right_front_lower_feather_1_3",
+      "parent": "right_front_lower_feather_1_2",
+      "pivot": [
+        35.36,
+        34.46,
+        18.71
+      ]
+    },
+    {
+      "name": "right_front_lower_feather_2_1",
+      "parent": "right_front_lower_spar_2",
+      "pivot": [
+        23,
+        19,
+        18
+      ]
+    },
+    {
+      "name": "right_front_lower_feather_2_2",
+      "parent": "right_front_lower_feather_2_1",
+      "pivot": [
+        32.66,
+        19.32,
+        21.7
+      ]
+    },
+    {
+      "name": "right_front_lower_feather_2_3",
+      "parent": "right_front_lower_feather_2_2",
+      "pivot": [
+        41.48,
+        17.06,
+        22.95
+      ]
+    },
+    {
+      "name": "right_front_lower_feather_3_1",
+      "parent": "right_front_lower_spar_3",
+      "pivot": [
+        27,
+        5,
+        22
+      ]
+    },
+    {
+      "name": "right_front_lower_feather_3_2",
+      "parent": "right_front_lower_feather_3_1",
+      "pivot": [
+        28.84,
+        2.56,
+        24.78
+      ]
+    },
+    {
+      "name": "right_front_lower_feather_3_3",
+      "parent": "right_front_lower_feather_3_2",
+      "pivot": [
+        30.52,
+        -2.22,
+        25.19
+      ]
+    },
+    {
+      "name": "right_front_lower_overlap_vane_1_1",
+      "parent": "right_front_lower_spar_1",
+      "pivot": [
+        16,
+        32,
+        12
+      ]
+    },
+    {
+      "name": "right_front_lower_overlap_vane_1_2",
+      "parent": "right_front_lower_overlap_vane_1_1",
+      "pivot": [
+        22.72,
+        32.26,
+        14.52
+      ]
+    },
+    {
+      "name": "right_front_lower_overlap_vane_1_3",
+      "parent": "right_front_lower_overlap_vane_1_2",
+      "pivot": [
+        30.4,
+        30.65,
+        17.4
+      ]
+    },
+    {
+      "name": "right_front_lower_overlap_vane_2_1",
+      "parent": "right_front_lower_spar_3",
+      "pivot": [
+        27,
+        5,
+        22
+      ]
+    },
+    {
+      "name": "right_front_lower_overlap_vane_2_2",
+      "parent": "right_front_lower_overlap_vane_2_1",
+      "pivot": [
+        30.36,
+        5.68,
+        22.84
+      ]
+    },
+    {
+      "name": "right_front_lower_overlap_vane_2_3",
+      "parent": "right_front_lower_overlap_vane_2_2",
+      "pivot": [
+        34.2,
+        4.55,
+        23.8
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 3.8,
+    "height": 5.6,
+    "width": 3.4
+  },
+  "cubes": [
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        39.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "body_core",
+      "origin": [
+        0.0,
+        39.0,
+        0.0
+      ],
+      "role": "deep central many-eyed angel body",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        18.0,
+        14.0,
+        14.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        39.0,
+        9.5
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "front_body_shell",
+      "origin": [
+        0.0,
+        39.0,
+        9.5
+      ],
+      "role": "projecting faceted front body shell",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        22.0,
+        10.0,
+        6.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        39.0,
+        -9.5
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "back_body_shell",
+      "origin": [
+        0.0,
+        39.0,
+        -9.5
+      ],
+      "role": "projecting faceted rear body shell",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        22.0,
+        10.0,
+        6.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -10.5,
+        39.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "left_body_shell",
+      "origin": [
+        -10.5,
+        39.0,
+        0.0
+      ],
+      "role": "left rounded-step body shell",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        14.0,
+        13.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        10.5,
+        39.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_body_shell",
+      "origin": [
+        10.5,
+        39.0,
+        0.0
+      ],
+      "role": "right rounded-step body shell",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        14.0,
+        13.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        49.0,
+        -0.5
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "body_upper_crown",
+      "origin": [
+        0.0,
+        49.0,
+        -0.5
+      ],
+      "role": "upper crown volume behind the ocular band",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        16.0,
+        7.0,
+        15.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        28.5,
+        -0.5
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "body_lower_shroud",
+      "origin": [
+        0.0,
+        28.5,
+        -0.5
+      ],
+      "role": "lower torn sacred shroud volume",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        16.0,
+        9.0,
+        15.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        44.0,
+        12.0
+      ],
+      "faces": {},
+      "material": "rose",
+      "name": "front_eye_band",
+      "origin": [
+        0.0,
+        44.0,
+        12.0
+      ],
+      "role": "projecting frontal crown for seven eyes",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        17.0,
+        6.0,
+        4.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        43.0,
+        -12.0
+      ],
+      "faces": {},
+      "material": "rose",
+      "name": "back_eye_band",
+      "origin": [
+        0.0,
+        43.0,
+        -12.0
+      ],
+      "role": "fully modeled rear eye crown",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        13.0,
+        7.0,
+        4.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -11.0,
+        43.8,
+        10.5
+      ],
+      "faces": {},
+      "material": "rose",
+      "name": "front_left_crown_wrap",
+      "origin": [
+        -11.0,
+        43.8,
+        10.5
+      ],
+      "role": "front-left angled ocular crown segment",
+      "rotation": [
+        0.0,
+        -38.0,
+        0.0
+      ],
+      "size": [
+        10.0,
+        5.5,
+        7.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        11.0,
+        43.8,
+        10.5
+      ],
+      "faces": {},
+      "material": "rose",
+      "name": "front_right_crown_wrap",
+      "origin": [
+        11.0,
+        43.8,
+        10.5
+      ],
+      "role": "front-right angled ocular crown segment",
+      "rotation": [
+        0.0,
+        38.0,
+        0.0
+      ],
+      "size": [
+        10.0,
+        5.5,
+        7.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -11.0,
+        42.8,
+        -10.5
+      ],
+      "faces": {},
+      "material": "rose_dark",
+      "name": "rear_left_crown_wrap",
+      "origin": [
+        -11.0,
+        42.8,
+        -10.5
+      ],
+      "role": "rear-left angled ocular crown segment",
+      "rotation": [
+        0.0,
+        38.0,
+        0.0
+      ],
+      "size": [
+        10.0,
+        5.5,
+        7.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        11.0,
+        42.8,
+        -10.5
+      ],
+      "faces": {},
+      "material": "rose_dark",
+      "name": "rear_right_crown_wrap",
+      "origin": [
+        11.0,
+        42.8,
+        -10.5
+      ],
+      "role": "rear-right angled ocular crown segment",
+      "rotation": [
+        0.0,
+        -38.0,
+        0.0
+      ],
+      "size": [
+        10.0,
+        5.5,
+        7.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -13.7,
+        40.5,
+        0.0
+      ],
+      "faces": {},
+      "material": "rose",
+      "name": "left_side_temple",
+      "origin": [
+        -13.7,
+        40.5,
+        0.0
+      ],
+      "role": "left volumetric eye temple",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.0,
+        9.0,
+        10.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        13.7,
+        40.5,
+        0.0
+      ],
+      "faces": {},
+      "material": "rose",
+      "name": "right_side_temple",
+      "origin": [
+        13.7,
+        40.5,
+        0.0
+      ],
+      "role": "right volumetric eye temple",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.0,
+        9.0,
+        10.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        51.5,
+        0.0
+      ],
+      "faces": {},
+      "material": "rose_dark",
+      "name": "top_eye_plinth",
+      "origin": [
+        0.0,
+        51.5,
+        0.0
+      ],
+      "role": "top-facing eye plinth",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        9.0,
+        4.0,
+        8.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -13.0,
+        44.2,
+        13.633999999999999
+      ],
+      "faces": {},
+      "material": "sclera_shadow",
+      "name": "front_eye_1_sclera",
+      "origin": [
+        -13.0,
+        44.2,
+        13.633999999999999
+      ],
+      "role": "front eye 1 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.7199999999999998,
+        2.728,
+        1.426
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -13.0,
+        44.2,
+        14.501999999999999
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "front_eye_1_iris",
+      "origin": [
+        -13.0,
+        44.2,
+        14.501999999999999
+      ],
+      "role": "front eye 1 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.612,
+        1.612,
+        0.9299999999999999
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -13.0,
+        44.2,
+        14.935999999999998
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "front_eye_1_pupil",
+      "origin": [
+        -13.0,
+        44.2,
+        14.935999999999998
+      ],
+      "role": "front eye 1 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.713,
+        0.806,
+        0.496
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -9.0,
+        44.2,
+        13.774
+      ],
+      "faces": {},
+      "material": "sclera",
+      "name": "front_eye_2_sclera",
+      "origin": [
+        -9.0,
+        44.2,
+        13.774
+      ],
+      "role": "front eye 2 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.92,
+        3.608,
+        1.8859999999999997
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -9.0,
+        44.2,
+        14.921999999999999
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "front_eye_2_iris",
+      "origin": [
+        -9.0,
+        44.2,
+        14.921999999999999
+      ],
+      "role": "front eye 2 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.132,
+        2.132,
+        1.23
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -9.0,
+        44.2,
+        15.495999999999999
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "front_eye_2_pupil",
+      "origin": [
+        -9.0,
+        44.2,
+        15.495999999999999
+      ],
+      "role": "front eye 2 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.9429999999999998,
+        1.066,
+        0.656
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -5.8,
+        44.2,
+        13.774
+      ],
+      "faces": {},
+      "material": "sclera",
+      "name": "front_eye_3_sclera",
+      "origin": [
+        -5.8,
+        44.2,
+        13.774
+      ],
+      "role": "front eye 3 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.92,
+        3.608,
+        1.8859999999999997
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -5.8,
+        44.2,
+        14.921999999999999
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "front_eye_3_iris",
+      "origin": [
+        -5.8,
+        44.2,
+        14.921999999999999
+      ],
+      "role": "front eye 3 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.132,
+        2.132,
+        1.23
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -5.8,
+        44.2,
+        15.495999999999999
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "front_eye_3_pupil",
+      "origin": [
+        -5.8,
+        44.2,
+        15.495999999999999
+      ],
+      "role": "front eye 3 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.9429999999999998,
+        1.066,
+        0.656
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        45.6,
+        14.774999999999999
+      ],
+      "faces": {},
+      "material": "sclera",
+      "name": "front_eye_4_sclera",
+      "origin": [
+        0.0,
+        45.6,
+        14.774999999999999
+      ],
+      "role": "front eye 4 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        13.5,
+        9.9,
+        5.175
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        45.6,
+        17.924999999999997
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "front_eye_4_iris",
+      "origin": [
+        0.0,
+        45.6,
+        17.924999999999997
+      ],
+      "role": "front eye 4 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        5.8500000000000005,
+        5.8500000000000005,
+        3.375
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        45.6,
+        19.499999999999996
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "front_eye_4_pupil",
+      "origin": [
+        0.0,
+        45.6,
+        19.499999999999996
+      ],
+      "role": "front eye 4 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.5875,
+        2.9250000000000003,
+        1.8
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        5.8,
+        44.2,
+        13.774
+      ],
+      "faces": {},
+      "material": "sclera",
+      "name": "front_eye_5_sclera",
+      "origin": [
+        5.8,
+        44.2,
+        13.774
+      ],
+      "role": "front eye 5 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.92,
+        3.608,
+        1.8859999999999997
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        5.8,
+        44.2,
+        14.921999999999999
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "front_eye_5_iris",
+      "origin": [
+        5.8,
+        44.2,
+        14.921999999999999
+      ],
+      "role": "front eye 5 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.132,
+        2.132,
+        1.23
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        5.8,
+        44.2,
+        15.495999999999999
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "front_eye_5_pupil",
+      "origin": [
+        5.8,
+        44.2,
+        15.495999999999999
+      ],
+      "role": "front eye 5 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.9429999999999998,
+        1.066,
+        0.656
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        9.0,
+        44.2,
+        13.774
+      ],
+      "faces": {},
+      "material": "sclera",
+      "name": "front_eye_6_sclera",
+      "origin": [
+        9.0,
+        44.2,
+        13.774
+      ],
+      "role": "front eye 6 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.92,
+        3.608,
+        1.8859999999999997
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        9.0,
+        44.2,
+        14.921999999999999
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "front_eye_6_iris",
+      "origin": [
+        9.0,
+        44.2,
+        14.921999999999999
+      ],
+      "role": "front eye 6 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.132,
+        2.132,
+        1.23
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        9.0,
+        44.2,
+        15.495999999999999
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "front_eye_6_pupil",
+      "origin": [
+        9.0,
+        44.2,
+        15.495999999999999
+      ],
+      "role": "front eye 6 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.9429999999999998,
+        1.066,
+        0.656
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        13.0,
+        44.2,
+        13.633999999999999
+      ],
+      "faces": {},
+      "material": "sclera_shadow",
+      "name": "front_eye_7_sclera",
+      "origin": [
+        13.0,
+        44.2,
+        13.633999999999999
+      ],
+      "role": "front eye 7 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.7199999999999998,
+        2.728,
+        1.426
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        13.0,
+        44.2,
+        14.501999999999999
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "front_eye_7_iris",
+      "origin": [
+        13.0,
+        44.2,
+        14.501999999999999
+      ],
+      "role": "front eye 7 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.612,
+        1.612,
+        0.9299999999999999
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        13.0,
+        44.2,
+        14.935999999999998
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "front_eye_7_pupil",
+      "origin": [
+        13.0,
+        44.2,
+        14.935999999999998
+      ],
+      "role": "front eye 7 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.713,
+        0.806,
+        0.496
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        49.5,
+        16.0
+      ],
+      "faces": {},
+      "material": "rose_dark",
+      "name": "central_upper_lid",
+      "origin": [
+        0.0,
+        49.5,
+        16.0
+      ],
+      "role": "raised rose frame around the dominant central eye",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        13.5,
+        1.5,
+        2.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        41.8,
+        16.0
+      ],
+      "faces": {},
+      "material": "rose_dark",
+      "name": "central_lower_lid",
+      "origin": [
+        0.0,
+        41.8,
+        16.0
+      ],
+      "role": "raised rose frame around the dominant central eye",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        13.5,
+        1.5,
+        2.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -9.5,
+        43.2,
+        -13.703999999999999
+      ],
+      "faces": {},
+      "material": "sclera_shadow",
+      "name": "back_eye_1_sclera",
+      "origin": [
+        -9.5,
+        43.2,
+        -13.703999999999999
+      ],
+      "role": "back eye 1 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.32,
+        3.168,
+        1.656
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -9.5,
+        43.2,
+        -14.712
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "back_eye_1_iris",
+      "origin": [
+        -9.5,
+        43.2,
+        -14.712
+      ],
+      "role": "back eye 1 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.8719999999999999,
+        1.8719999999999999,
+        1.08
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -9.5,
+        43.2,
+        -15.216
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "back_eye_1_pupil",
+      "origin": [
+        -9.5,
+        43.2,
+        -15.216
+      ],
+      "role": "back eye 1 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.828,
+        0.9359999999999999,
+        0.576
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -4.8,
+        43.2,
+        -13.703999999999999
+      ],
+      "faces": {},
+      "material": "sclera_shadow",
+      "name": "back_eye_2_sclera",
+      "origin": [
+        -4.8,
+        43.2,
+        -13.703999999999999
+      ],
+      "role": "back eye 2 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.32,
+        3.168,
+        1.656
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -4.8,
+        43.2,
+        -14.712
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "back_eye_2_iris",
+      "origin": [
+        -4.8,
+        43.2,
+        -14.712
+      ],
+      "role": "back eye 2 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.8719999999999999,
+        1.8719999999999999,
+        1.08
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -4.8,
+        43.2,
+        -15.216
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "back_eye_2_pupil",
+      "origin": [
+        -4.8,
+        43.2,
+        -15.216
+      ],
+      "role": "back eye 2 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.828,
+        0.9359999999999999,
+        0.576
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        43.2,
+        -13.872
+      ],
+      "faces": {},
+      "material": "sclera",
+      "name": "back_eye_3_sclera",
+      "origin": [
+        0.0,
+        43.2,
+        -13.872
+      ],
+      "role": "back eye 3 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        5.76,
+        4.224,
+        2.2079999999999997
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        43.2,
+        -15.216
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "back_eye_3_iris",
+      "origin": [
+        0.0,
+        43.2,
+        -15.216
+      ],
+      "role": "back eye 3 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.496,
+        2.496,
+        1.44
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        43.2,
+        -15.888
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "back_eye_3_pupil",
+      "origin": [
+        0.0,
+        43.2,
+        -15.888
+      ],
+      "role": "back eye 3 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.1039999999999999,
+        1.248,
+        0.768
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        4.8,
+        43.2,
+        -13.703999999999999
+      ],
+      "faces": {},
+      "material": "sclera_shadow",
+      "name": "back_eye_4_sclera",
+      "origin": [
+        4.8,
+        43.2,
+        -13.703999999999999
+      ],
+      "role": "back eye 4 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.32,
+        3.168,
+        1.656
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        4.8,
+        43.2,
+        -14.712
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "back_eye_4_iris",
+      "origin": [
+        4.8,
+        43.2,
+        -14.712
+      ],
+      "role": "back eye 4 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.8719999999999999,
+        1.8719999999999999,
+        1.08
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        4.8,
+        43.2,
+        -15.216
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "back_eye_4_pupil",
+      "origin": [
+        4.8,
+        43.2,
+        -15.216
+      ],
+      "role": "back eye 4 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.828,
+        0.9359999999999999,
+        0.576
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        9.5,
+        43.2,
+        -13.703999999999999
+      ],
+      "faces": {},
+      "material": "sclera_shadow",
+      "name": "back_eye_5_sclera",
+      "origin": [
+        9.5,
+        43.2,
+        -13.703999999999999
+      ],
+      "role": "back eye 5 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.32,
+        3.168,
+        1.656
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        9.5,
+        43.2,
+        -14.712
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "back_eye_5_iris",
+      "origin": [
+        9.5,
+        43.2,
+        -14.712
+      ],
+      "role": "back eye 5 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.8719999999999999,
+        1.8719999999999999,
+        1.08
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        9.5,
+        43.2,
+        -15.216
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "back_eye_5_pupil",
+      "origin": [
+        9.5,
+        43.2,
+        -15.216
+      ],
+      "role": "back eye 5 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.828,
+        0.9359999999999999,
+        0.576
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -15.444,
+        41.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "sclera",
+      "name": "left_temple_eye_sclera",
+      "origin": [
+        -15.444,
+        41.0,
+        0.0
+      ],
+      "role": "left temple eye raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.7600000000000002,
+        4.048000000000001,
+        5.5200000000000005
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -16.732,
+        41.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "left_temple_eye_iris",
+      "origin": [
+        -16.732,
+        41.0,
+        0.0
+      ],
+      "role": "left temple eye cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.4720000000000002,
+        2.3920000000000003,
+        2.3920000000000003
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -17.375999999999998,
+        41.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "left_temple_eye_pupil",
+      "origin": [
+        -17.375999999999998,
+        41.0,
+        0.0
+      ],
+      "role": "left temple eye dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.92,
+        1.1960000000000002,
+        1.058
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        15.444,
+        41.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "sclera",
+      "name": "right_temple_eye_sclera",
+      "origin": [
+        15.444,
+        41.0,
+        0.0
+      ],
+      "role": "right temple eye raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.7600000000000002,
+        4.048000000000001,
+        5.5200000000000005
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        16.732,
+        41.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "right_temple_eye_iris",
+      "origin": [
+        16.732,
+        41.0,
+        0.0
+      ],
+      "role": "right temple eye cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.4720000000000002,
+        2.3920000000000003,
+        2.3920000000000003
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        17.375999999999998,
+        41.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "right_temple_eye_pupil",
+      "origin": [
+        17.375999999999998,
+        41.0,
+        0.0
+      ],
+      "role": "right temple eye dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.92,
+        1.1960000000000002,
+        1.058
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        53.265,
+        0.0
+      ],
+      "faces": {},
+      "material": "sclera",
+      "name": "zenith_eye_sclera",
+      "origin": [
+        0.0,
+        53.265,
+        0.0
+      ],
+      "role": "zenith eye raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        5.699999999999999,
+        2.8499999999999996,
+        4.18
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        54.595,
+        0.0
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "zenith_eye_iris",
+      "origin": [
+        0.0,
+        54.595,
+        0.0
+      ],
+      "role": "zenith eye cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.4699999999999998,
+        1.52,
+        2.4699999999999998
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0.0,
+        55.26,
+        0.0
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "zenith_eye_pupil",
+      "origin": [
+        0.0,
+        55.26,
+        0.0
+      ],
+      "role": "zenith eye dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.0924999999999998,
+        0.95,
+        1.2349999999999999
+      ]
+    },
+    {
+      "bone": "left_rear_upper_spar_1",
+      "center": [
+        -8,
+        45,
+        0.964194
+      ],
+      "faces": {},
+      "material": "rose",
+      "name": "left_rear_upper_spar_1",
+      "origin": [
+        -8,
+        45,
+        -6
+      ],
+      "role": "left rear upper load-bearing wing spar segment 1",
+      "rotation": [
+        -59.491041,
+        -135,
+        0
+      ],
+      "size": [
+        6.2,
+        6,
+        15.328388
+      ]
+    },
+    {
+      "bone": "left_rear_upper_spar_2",
+      "center": [
+        -13,
+        57,
+        -3.380125
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "left_rear_upper_spar_2",
+      "origin": [
+        -13,
+        57,
+        -11
+      ],
+      "role": "left rear upper load-bearing wing spar segment 2",
+      "rotation": [
+        -66.729541,
+        -131.633539,
+        0
+      ],
+      "size": [
+        5.3,
+        5.2,
+        16.639751
+      ]
+    },
+    {
+      "bone": "left_rear_upper_spar_3",
+      "center": [
+        -17.5,
+        71,
+        -7.630299
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_rear_upper_spar_3",
+      "origin": [
+        -17.5,
+        71,
+        -15
+      ],
+      "role": "left rear upper load-bearing wing spar segment 3",
+      "rotation": [
+        -71.774865,
+        -130.601295,
+        0
+      ],
+      "size": [
+        4.5,
+        4.4,
+        16.139403
+      ]
+    },
+    {
+      "bone": "left_rear_upper_feather_1_1",
+      "center": [
+        -13,
+        57,
+        -2.53496
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_rear_upper_feather_1_1",
+      "origin": [
+        -13,
+        57,
+        -11
+      ],
+      "role": "left rear upper primary feather 1 segment 1",
+      "rotation": [
+        -51.231045,
+        -124.469554,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        18.03008
+      ]
+    },
+    {
+      "bone": "left_rear_upper_feather_1_2",
+      "center": [
+        -21.74,
+        70.2,
+        -10.574409
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_rear_upper_feather_1_2",
+      "origin": [
+        -21.74,
+        70.2,
+        -17
+      ],
+      "role": "left rear upper primary feather 1 segment 2",
+      "rotation": [
+        -47.665998,
+        -112.77264,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        13.951183
+      ]
+    },
+    {
+      "bone": "left_rear_upper_feather_1_3",
+      "center": [
+        -29.72,
+        79.7,
+        -18.698417
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_rear_upper_feather_1_3",
+      "origin": [
+        -29.72,
+        79.7,
+        -20.35
+      ],
+      "role": "left rear upper primary feather 1 segment 3",
+      "rotation": [
+        -44.131049,
+        -105.9122,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        4.403165
+      ]
+    },
+    {
+      "bone": "left_rear_upper_feather_2_1",
+      "center": [
+        -17.5,
+        71,
+        -9.146546
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_rear_upper_feather_2_1",
+      "origin": [
+        -17.5,
+        71,
+        -15
+      ],
+      "role": "left rear upper primary feather 2 segment 1",
+      "rotation": [
+        7.460223,
+        -103.856671,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        12.806908
+      ]
+    },
+    {
+      "bone": "left_rear_upper_feather_2_2",
+      "center": [
+        -28.77,
+        69.48,
+        -12.266929
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_rear_upper_feather_2_2",
+      "origin": [
+        -28.77,
+        69.48,
+        -17.78
+      ],
+      "role": "left rear upper primary feather 2 segment 2",
+      "rotation": [
+        20.936473,
+        -92.281715,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        12.126142
+      ]
+    },
+    {
+      "bone": "left_rear_upper_feather_2_3",
+      "center": [
+        -39.06,
+        65.54,
+        -16.527825
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_rear_upper_feather_2_3",
+      "origin": [
+        -39.06,
+        65.54,
+        -18.19
+      ],
+      "role": "left rear upper primary feather 2 segment 3",
+      "rotation": [
+        27.596928,
+        -86.302354,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        4.42435
+      ]
+    },
+    {
+      "bone": "left_rear_upper_feather_3_1",
+      "center": [
+        -21,
+        85,
+        -8.776134
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_rear_upper_feather_3_1",
+      "origin": [
+        -21,
+        85,
+        -18
+      ],
+      "role": "left rear upper primary feather 3 segment 1",
+      "rotation": [
+        61.681597,
+        -87.117977,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        19.547732
+      ]
+    },
+    {
+      "bone": "left_rear_upper_feather_3_2",
+      "center": [
+        -29.74,
+        68.76,
+        -7.914461
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_rear_upper_feather_3_2",
+      "origin": [
+        -29.74,
+        68.76,
+        -17.56
+      ],
+      "role": "left rear upper primary feather 3 segment 2",
+      "rotation": [
+        64.28119,
+        -72.409167,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        20.391078
+      ]
+    },
+    {
+      "bone": "left_rear_upper_feather_3_3",
+      "center": [
+        -37.72,
+        51.38,
+        -12.063365
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_rear_upper_feather_3_3",
+      "origin": [
+        -37.72,
+        51.38,
+        -15.03
+      ],
+      "role": "left rear upper primary feather 3 segment 3",
+      "rotation": [
+        65.060177,
+        -65.688718,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        7.033271
+      ]
+    },
+    {
+      "bone": "left_rear_upper_overlap_vane_1_1",
+      "center": [
+        -13,
+        57,
+        -4.923109
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_rear_upper_overlap_vane_1_1",
+      "origin": [
+        -13,
+        57,
+        -11
+      ],
+      "role": "left rear upper broad overlapping feather vane segment 1",
+      "rotation": [
+        -48.339153,
+        -117.897271,
+        0
+      ],
+      "size": [
+        11,
+        5.8,
+        13.653781
+      ]
+    },
+    {
+      "bone": "left_rear_upper_overlap_vane_1_2",
+      "center": [
+        -20.14,
+        66.08,
+        -8.515239
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "left_rear_upper_overlap_vane_1_2",
+      "origin": [
+        -20.14,
+        66.08,
+        -14.78
+      ],
+      "role": "left rear upper broad overlapping feather vane segment 2",
+      "rotation": [
+        -42.532125,
+        -117.897271,
+        0
+      ],
+      "size": [
+        6,
+        3.2,
+        14.029521
+      ]
+    },
+    {
+      "bone": "left_rear_upper_overlap_vane_1_3",
+      "center": [
+        -28.3,
+        74.55,
+        -17.895581
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_rear_upper_overlap_vane_1_3",
+      "origin": [
+        -28.3,
+        74.55,
+        -19.1
+      ],
+      "role": "left rear upper broad overlapping feather vane segment 3",
+      "rotation": [
+        -37.009685,
+        -117.897271,
+        0
+      ],
+      "size": [
+        1.4,
+        1,
+        3.908838
+      ]
+    },
+    {
+      "bone": "left_rear_upper_overlap_vane_2_1",
+      "center": [
+        -21,
+        85,
+        -10.668731
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_rear_upper_overlap_vane_2_1",
+      "origin": [
+        -21,
+        85,
+        -18
+      ],
+      "role": "left rear upper broad overlapping feather vane segment 1",
+      "rotation": [
+        64.012471,
+        -78.690068,
+        0
+      ],
+      "size": [
+        11,
+        5.8,
+        16.162537
+      ]
+    },
+    {
+      "bone": "left_rear_upper_overlap_vane_2_2",
+      "center": [
+        -27.3,
+        71.82,
+        -7.494805
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "left_rear_upper_overlap_vane_2_2",
+      "origin": [
+        -27.3,
+        71.82,
+        -16.74
+      ],
+      "role": "left rear upper broad overlapping feather vane segment 2",
+      "rotation": [
+        66.602806,
+        -78.690068,
+        0
+      ],
+      "size": [
+        6,
+        3.2,
+        19.990389
+      ]
+    },
+    {
+      "bone": "left_rear_upper_overlap_vane_2_3",
+      "center": [
+        -34.5,
+        54.85,
+        -13.228618
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_rear_upper_overlap_vane_2_3",
+      "origin": [
+        -34.5,
+        54.85,
+        -15.3
+      ],
+      "role": "left rear upper broad overlapping feather vane segment 3",
+      "rotation": [
+        68.330779,
+        -78.690068,
+        0
+      ],
+      "size": [
+        1.4,
+        1,
+        5.642765
+      ]
+    },
+    {
+      "bone": "left_rear_upper_spar_2",
+      "center": [
+        -17.5,
+        71.0,
+        -16.506
+      ],
+      "faces": {},
+      "material": "sclera_shadow",
+      "name": "left_rear_upper_wing_eye_1_sclera",
+      "origin": [
+        -17.5,
+        71.0,
+        -16.506
+      ],
+      "role": "left rear upper wing eye 1 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.4799999999999995,
+        2.552,
+        1.3339999999999999
+      ]
+    },
+    {
+      "bone": "left_rear_upper_spar_2",
+      "center": [
+        -17.5,
+        71.0,
+        -17.318
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "left_rear_upper_wing_eye_1_iris",
+      "origin": [
+        -17.5,
+        71.0,
+        -17.318
+      ],
+      "role": "left rear upper wing eye 1 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.508,
+        1.508,
+        0.8699999999999999
+      ]
+    },
+    {
+      "bone": "left_rear_upper_spar_2",
+      "center": [
+        -17.5,
+        71.0,
+        -17.724
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "left_rear_upper_wing_eye_1_pupil",
+      "origin": [
+        -17.5,
+        71.0,
+        -17.724
+      ],
+      "role": "left rear upper wing eye 1 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.6669999999999999,
+        0.754,
+        0.46399999999999997
+      ]
+    },
+    {
+      "bone": "right_rear_upper_spar_1",
+      "center": [
+        8,
+        45,
+        0.964194
+      ],
+      "faces": {},
+      "material": "rose",
+      "name": "right_rear_upper_spar_1",
+      "origin": [
+        8,
+        45,
+        -6
+      ],
+      "role": "right rear upper load-bearing wing spar segment 1",
+      "rotation": [
+        -59.491041,
+        135,
+        0
+      ],
+      "size": [
+        6.2,
+        6,
+        15.328388
+      ]
+    },
+    {
+      "bone": "right_rear_upper_spar_2",
+      "center": [
+        13,
+        57,
+        -3.380125
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "right_rear_upper_spar_2",
+      "origin": [
+        13,
+        57,
+        -11
+      ],
+      "role": "right rear upper load-bearing wing spar segment 2",
+      "rotation": [
+        -66.729541,
+        131.633539,
+        0
+      ],
+      "size": [
+        5.3,
+        5.2,
+        16.639751
+      ]
+    },
+    {
+      "bone": "right_rear_upper_spar_3",
+      "center": [
+        17.5,
+        71,
+        -7.630299
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_rear_upper_spar_3",
+      "origin": [
+        17.5,
+        71,
+        -15
+      ],
+      "role": "right rear upper load-bearing wing spar segment 3",
+      "rotation": [
+        -71.774865,
+        130.601295,
+        0
+      ],
+      "size": [
+        4.5,
+        4.4,
+        16.139403
+      ]
+    },
+    {
+      "bone": "right_rear_upper_feather_1_1",
+      "center": [
+        13,
+        57,
+        -2.53496
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_rear_upper_feather_1_1",
+      "origin": [
+        13,
+        57,
+        -11
+      ],
+      "role": "right rear upper primary feather 1 segment 1",
+      "rotation": [
+        -51.231045,
+        124.469554,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        18.03008
+      ]
+    },
+    {
+      "bone": "right_rear_upper_feather_1_2",
+      "center": [
+        21.74,
+        70.2,
+        -10.574409
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_rear_upper_feather_1_2",
+      "origin": [
+        21.74,
+        70.2,
+        -17
+      ],
+      "role": "right rear upper primary feather 1 segment 2",
+      "rotation": [
+        -47.665998,
+        112.77264,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        13.951183
+      ]
+    },
+    {
+      "bone": "right_rear_upper_feather_1_3",
+      "center": [
+        29.72,
+        79.7,
+        -18.698417
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_rear_upper_feather_1_3",
+      "origin": [
+        29.72,
+        79.7,
+        -20.35
+      ],
+      "role": "right rear upper primary feather 1 segment 3",
+      "rotation": [
+        -44.131049,
+        105.9122,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        4.403165
+      ]
+    },
+    {
+      "bone": "right_rear_upper_feather_2_1",
+      "center": [
+        17.5,
+        71,
+        -9.146546
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_rear_upper_feather_2_1",
+      "origin": [
+        17.5,
+        71,
+        -15
+      ],
+      "role": "right rear upper primary feather 2 segment 1",
+      "rotation": [
+        7.460223,
+        103.856671,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        12.806908
+      ]
+    },
+    {
+      "bone": "right_rear_upper_feather_2_2",
+      "center": [
+        28.77,
+        69.48,
+        -12.266929
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_rear_upper_feather_2_2",
+      "origin": [
+        28.77,
+        69.48,
+        -17.78
+      ],
+      "role": "right rear upper primary feather 2 segment 2",
+      "rotation": [
+        20.936473,
+        92.281715,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        12.126142
+      ]
+    },
+    {
+      "bone": "right_rear_upper_feather_2_3",
+      "center": [
+        39.06,
+        65.54,
+        -16.527825
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_rear_upper_feather_2_3",
+      "origin": [
+        39.06,
+        65.54,
+        -18.19
+      ],
+      "role": "right rear upper primary feather 2 segment 3",
+      "rotation": [
+        27.596928,
+        86.302354,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        4.42435
+      ]
+    },
+    {
+      "bone": "right_rear_upper_feather_3_1",
+      "center": [
+        21,
+        85,
+        -8.776134
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_rear_upper_feather_3_1",
+      "origin": [
+        21,
+        85,
+        -18
+      ],
+      "role": "right rear upper primary feather 3 segment 1",
+      "rotation": [
+        61.681597,
+        87.117977,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        19.547732
+      ]
+    },
+    {
+      "bone": "right_rear_upper_feather_3_2",
+      "center": [
+        29.74,
+        68.76,
+        -7.914461
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_rear_upper_feather_3_2",
+      "origin": [
+        29.74,
+        68.76,
+        -17.56
+      ],
+      "role": "right rear upper primary feather 3 segment 2",
+      "rotation": [
+        64.28119,
+        72.409167,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        20.391078
+      ]
+    },
+    {
+      "bone": "right_rear_upper_feather_3_3",
+      "center": [
+        37.72,
+        51.38,
+        -12.063365
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_rear_upper_feather_3_3",
+      "origin": [
+        37.72,
+        51.38,
+        -15.03
+      ],
+      "role": "right rear upper primary feather 3 segment 3",
+      "rotation": [
+        65.060177,
+        65.688718,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        7.033271
+      ]
+    },
+    {
+      "bone": "right_rear_upper_overlap_vane_1_1",
+      "center": [
+        13,
+        57,
+        -4.923109
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_rear_upper_overlap_vane_1_1",
+      "origin": [
+        13,
+        57,
+        -11
+      ],
+      "role": "right rear upper broad overlapping feather vane segment 1",
+      "rotation": [
+        -48.339153,
+        117.897271,
+        0
+      ],
+      "size": [
+        11,
+        5.8,
+        13.653781
+      ]
+    },
+    {
+      "bone": "right_rear_upper_overlap_vane_1_2",
+      "center": [
+        20.14,
+        66.08,
+        -8.515239
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "right_rear_upper_overlap_vane_1_2",
+      "origin": [
+        20.14,
+        66.08,
+        -14.78
+      ],
+      "role": "right rear upper broad overlapping feather vane segment 2",
+      "rotation": [
+        -42.532125,
+        117.897271,
+        0
+      ],
+      "size": [
+        6,
+        3.2,
+        14.029521
+      ]
+    },
+    {
+      "bone": "right_rear_upper_overlap_vane_1_3",
+      "center": [
+        28.3,
+        74.55,
+        -17.895581
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_rear_upper_overlap_vane_1_3",
+      "origin": [
+        28.3,
+        74.55,
+        -19.1
+      ],
+      "role": "right rear upper broad overlapping feather vane segment 3",
+      "rotation": [
+        -37.009685,
+        117.897271,
+        0
+      ],
+      "size": [
+        1.4,
+        1,
+        3.908838
+      ]
+    },
+    {
+      "bone": "right_rear_upper_overlap_vane_2_1",
+      "center": [
+        21,
+        85,
+        -10.668731
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_rear_upper_overlap_vane_2_1",
+      "origin": [
+        21,
+        85,
+        -18
+      ],
+      "role": "right rear upper broad overlapping feather vane segment 1",
+      "rotation": [
+        64.012471,
+        78.690068,
+        0
+      ],
+      "size": [
+        11,
+        5.8,
+        16.162537
+      ]
+    },
+    {
+      "bone": "right_rear_upper_overlap_vane_2_2",
+      "center": [
+        27.3,
+        71.82,
+        -7.494805
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "right_rear_upper_overlap_vane_2_2",
+      "origin": [
+        27.3,
+        71.82,
+        -16.74
+      ],
+      "role": "right rear upper broad overlapping feather vane segment 2",
+      "rotation": [
+        66.602806,
+        78.690068,
+        0
+      ],
+      "size": [
+        6,
+        3.2,
+        19.990389
+      ]
+    },
+    {
+      "bone": "right_rear_upper_overlap_vane_2_3",
+      "center": [
+        34.5,
+        54.85,
+        -13.228618
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_rear_upper_overlap_vane_2_3",
+      "origin": [
+        34.5,
+        54.85,
+        -15.3
+      ],
+      "role": "right rear upper broad overlapping feather vane segment 3",
+      "rotation": [
+        68.330779,
+        78.690068,
+        0
+      ],
+      "size": [
+        1.4,
+        1,
+        5.642765
+      ]
+    },
+    {
+      "bone": "right_rear_upper_spar_2",
+      "center": [
+        17.5,
+        71.0,
+        -16.506
+      ],
+      "faces": {},
+      "material": "sclera_shadow",
+      "name": "right_rear_upper_wing_eye_1_sclera",
+      "origin": [
+        17.5,
+        71.0,
+        -16.506
+      ],
+      "role": "right rear upper wing eye 1 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.4799999999999995,
+        2.552,
+        1.3339999999999999
+      ]
+    },
+    {
+      "bone": "right_rear_upper_spar_2",
+      "center": [
+        17.5,
+        71.0,
+        -17.318
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "right_rear_upper_wing_eye_1_iris",
+      "origin": [
+        17.5,
+        71.0,
+        -17.318
+      ],
+      "role": "right rear upper wing eye 1 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.508,
+        1.508,
+        0.8699999999999999
+      ]
+    },
+    {
+      "bone": "right_rear_upper_spar_2",
+      "center": [
+        17.5,
+        71.0,
+        -17.724
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "right_rear_upper_wing_eye_1_pupil",
+      "origin": [
+        17.5,
+        71.0,
+        -17.724
+      ],
+      "role": "right rear upper wing eye 1 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.6669999999999999,
+        0.754,
+        0.46399999999999997
+      ]
+    },
+    {
+      "bone": "left_middle_spar_1",
+      "center": [
+        -9,
+        43,
+        7
+      ],
+      "faces": {},
+      "material": "rose",
+      "name": "left_middle_spar_1",
+      "origin": [
+        -9,
+        43,
+        0
+      ],
+      "role": "left middle load-bearing wing spar segment 1",
+      "rotation": [
+        -25.376934,
+        -71.565051,
+        0
+      ],
+      "size": [
+        6.2,
+        6,
+        15.4
+      ]
+    },
+    {
+      "bone": "left_middle_spar_2",
+      "center": [
+        -21,
+        49,
+        11.228416
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "left_middle_spar_2",
+      "origin": [
+        -21,
+        49,
+        4
+      ],
+      "role": "left middle load-bearing wing spar segment 2",
+      "rotation": [
+        -7.951968,
+        -65.224859,
+        0
+      ],
+      "size": [
+        5.3,
+        5.2,
+        15.856832
+      ]
+    },
+    {
+      "bone": "left_middle_spar_3",
+      "center": [
+        -34,
+        51,
+        17.697402
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "left_middle_spar_3",
+      "origin": [
+        -34,
+        51,
+        10
+      ],
+      "role": "left middle load-bearing wing spar segment 3",
+      "rotation": [
+        15.059852,
+        -70.346176,
+        0
+      ],
+      "size": [
+        4.5,
+        4.4,
+        16.794804
+      ]
+    },
+    {
+      "bone": "left_middle_feather_1_1",
+      "center": [
+        -21,
+        49,
+        11.072213
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "left_middle_feather_1_1",
+      "origin": [
+        -21,
+        49,
+        4
+      ],
+      "role": "left middle primary feather 1 segment 1",
+      "rotation": [
+        -30.693703,
+        -60.442092,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        15.244426
+      ]
+    },
+    {
+      "bone": "left_middle_feather_1_2",
+      "center": [
+        -31.58,
+        56.22,
+        15.49681
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_middle_feather_1_2",
+      "origin": [
+        -31.58,
+        56.22,
+        10
+      ],
+      "role": "left middle primary feather 1 segment 2",
+      "rotation": [
+        -21.560646,
+        -70.87392,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        12.093621
+      ]
+    },
+    {
+      "bone": "left_middle_feather_1_3",
+      "center": [
+        -41.24,
+        60.26,
+        14.815239
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_middle_feather_1_3",
+      "origin": [
+        -41.24,
+        60.26,
+        13.35
+      ],
+      "role": "left middle primary feather 1 segment 3",
+      "rotation": [
+        -14.626597,
+        -76.74791,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        4.030478
+      ]
+    },
+    {
+      "bone": "left_middle_feather_2_1",
+      "center": [
+        -34,
+        51,
+        15.30935
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "left_middle_feather_2_1",
+      "origin": [
+        -34,
+        51,
+        10
+      ],
+      "role": "left middle primary feather 2 segment 1",
+      "rotation": [
+        8.229799,
+        -61.093666,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        11.7187
+      ]
+    },
+    {
+      "bone": "left_middle_feather_2_2",
+      "center": [
+        -43.2,
+        49.48,
+        19.885822
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_middle_feather_2_2",
+      "origin": [
+        -43.2,
+        49.48,
+        15.08
+      ],
+      "role": "left middle primary feather 2 segment 2",
+      "rotation": [
+        24.199776,
+        -73.363354,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        10.711644
+      ]
+    },
+    {
+      "bone": "left_middle_feather_2_3",
+      "center": [
+        -51.6,
+        45.54,
+        19.03046
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_middle_feather_2_3",
+      "origin": [
+        -51.6,
+        45.54,
+        17.59
+      ],
+      "role": "left middle primary feather 2 segment 3",
+      "rotation": [
+        32.313498,
+        -80.305556,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        3.98092
+      ]
+    },
+    {
+      "bone": "left_middle_feather_3_1",
+      "center": [
+        -48,
+        47,
+        18.982612
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "left_middle_feather_3_1",
+      "origin": [
+        -48,
+        47,
+        15
+      ],
+      "role": "left middle primary feather 3 segment 1",
+      "rotation": [
+        62.109354,
+        29.592296,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        9.065224
+      ]
+    },
+    {
+      "bone": "left_middle_feather_3_2",
+      "center": [
+        -46.16,
+        39.96,
+        22.826712
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_middle_feather_3_2",
+      "origin": [
+        -46.16,
+        39.96,
+        18.24
+      ],
+      "role": "left middle primary feather 3 segment 2",
+      "rotation": [
+        78.213288,
+        63.708435,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        10.273424
+      ]
+    },
+    {
+      "bone": "left_middle_feather_3_3",
+      "center": [
+        -44.48,
+        30.98,
+        20.579611
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_middle_feather_3_3",
+      "origin": [
+        -44.48,
+        30.98,
+        19.07
+      ],
+      "role": "left middle primary feather 3 segment 3",
+      "rotation": [
+        80.754617,
+        98.297145,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        4.119222
+      ]
+    },
+    {
+      "bone": "left_middle_overlap_vane_1_1",
+      "center": [
+        -21,
+        49,
+        8.516348
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "left_middle_overlap_vane_1_1",
+      "origin": [
+        -21,
+        49,
+        4
+      ],
+      "role": "left middle broad overlapping feather vane segment 1",
+      "rotation": [
+        -26.568281,
+        -62.102729,
+        0
+      ],
+      "size": [
+        11,
+        5.8,
+        10.532696
+      ]
+    },
+    {
+      "bone": "left_middle_overlap_vane_1_2",
+      "center": [
+        -28.14,
+        53.04,
+        12.591239
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "left_middle_overlap_vane_1_2",
+      "origin": [
+        -28.14,
+        53.04,
+        7.78
+      ],
+      "role": "left middle broad overlapping feather vane segment 2",
+      "rotation": [
+        -16.357644,
+        -62.102729,
+        0
+      ],
+      "size": [
+        6,
+        3.2,
+        11.122479
+      ]
+    },
+    {
+      "bone": "left_middle_overlap_vane_1_3",
+      "center": [
+        -36.3,
+        55.75,
+        13.069858
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_middle_overlap_vane_1_3",
+      "origin": [
+        -36.3,
+        55.75,
+        12.1
+      ],
+      "role": "left middle broad overlapping feather vane segment 3",
+      "rotation": [
+        -7.405155,
+        -62.102729,
+        0
+      ],
+      "size": [
+        1.4,
+        1,
+        3.439716
+      ]
+    },
+    {
+      "bone": "left_middle_overlap_vane_2_1",
+      "center": [
+        -48,
+        47,
+        17.774275
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "left_middle_overlap_vane_2_1",
+      "origin": [
+        -48,
+        47,
+        15
+      ],
+      "role": "left middle broad overlapping feather vane segment 1",
+      "rotation": [
+        59.483891,
+        63.434949,
+        0
+      ],
+      "size": [
+        11,
+        5.8,
+        7.048549
+      ]
+    },
+    {
+      "bone": "left_middle_overlap_vane_2_2",
+      "center": [
+        -45.48,
+        42.22,
+        20.281346
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "left_middle_overlap_vane_2_2",
+      "origin": [
+        -45.48,
+        42.22,
+        16.26
+      ],
+      "role": "left middle broad overlapping feather vane segment 2",
+      "rotation": [
+        66.399582,
+        63.434949,
+        0
+      ],
+      "size": [
+        6,
+        3.2,
+        9.542692
+      ]
+    },
+    {
+      "bone": "left_middle_overlap_vane_2_3",
+      "center": [
+        -42.6,
+        34.85,
+        18.683933
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_middle_overlap_vane_2_3",
+      "origin": [
+        -42.6,
+        34.85,
+        17.7
+      ],
+      "role": "left middle broad overlapping feather vane segment 3",
+      "rotation": [
+        70.069071,
+        63.434949,
+        0
+      ],
+      "size": [
+        1.4,
+        1,
+        3.467867
+      ]
+    },
+    {
+      "bone": "left_middle_spar_2",
+      "center": [
+        -34.0,
+        51.0,
+        11.506
+      ],
+      "faces": {},
+      "material": "sclera_shadow",
+      "name": "left_middle_wing_eye_1_sclera",
+      "origin": [
+        -34.0,
+        51.0,
+        11.506
+      ],
+      "role": "left middle wing eye 1 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.4799999999999995,
+        2.552,
+        1.3339999999999999
+      ]
+    },
+    {
+      "bone": "left_middle_spar_2",
+      "center": [
+        -34.0,
+        51.0,
+        12.318
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "left_middle_wing_eye_1_iris",
+      "origin": [
+        -34.0,
+        51.0,
+        12.318
+      ],
+      "role": "left middle wing eye 1 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.508,
+        1.508,
+        0.8699999999999999
+      ]
+    },
+    {
+      "bone": "left_middle_spar_2",
+      "center": [
+        -34.0,
+        51.0,
+        12.724
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "left_middle_wing_eye_1_pupil",
+      "origin": [
+        -34.0,
+        51.0,
+        12.724
+      ],
+      "role": "left middle wing eye 1 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.6669999999999999,
+        0.754,
+        0.46399999999999997
+      ]
+    },
+    {
+      "bone": "right_middle_spar_1",
+      "center": [
+        9,
+        43,
+        7
+      ],
+      "faces": {},
+      "material": "rose",
+      "name": "right_middle_spar_1",
+      "origin": [
+        9,
+        43,
+        0
+      ],
+      "role": "right middle load-bearing wing spar segment 1",
+      "rotation": [
+        -25.376934,
+        71.565051,
+        0
+      ],
+      "size": [
+        6.2,
+        6,
+        15.4
+      ]
+    },
+    {
+      "bone": "right_middle_spar_2",
+      "center": [
+        21,
+        49,
+        11.228416
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "right_middle_spar_2",
+      "origin": [
+        21,
+        49,
+        4
+      ],
+      "role": "right middle load-bearing wing spar segment 2",
+      "rotation": [
+        -7.951968,
+        65.224859,
+        0
+      ],
+      "size": [
+        5.3,
+        5.2,
+        15.856832
+      ]
+    },
+    {
+      "bone": "right_middle_spar_3",
+      "center": [
+        34,
+        51,
+        17.697402
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "right_middle_spar_3",
+      "origin": [
+        34,
+        51,
+        10
+      ],
+      "role": "right middle load-bearing wing spar segment 3",
+      "rotation": [
+        15.059852,
+        70.346176,
+        0
+      ],
+      "size": [
+        4.5,
+        4.4,
+        16.794804
+      ]
+    },
+    {
+      "bone": "right_middle_feather_1_1",
+      "center": [
+        21,
+        49,
+        11.072213
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "right_middle_feather_1_1",
+      "origin": [
+        21,
+        49,
+        4
+      ],
+      "role": "right middle primary feather 1 segment 1",
+      "rotation": [
+        -30.693703,
+        60.442092,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        15.244426
+      ]
+    },
+    {
+      "bone": "right_middle_feather_1_2",
+      "center": [
+        31.58,
+        56.22,
+        15.49681
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_middle_feather_1_2",
+      "origin": [
+        31.58,
+        56.22,
+        10
+      ],
+      "role": "right middle primary feather 1 segment 2",
+      "rotation": [
+        -21.560646,
+        70.87392,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        12.093621
+      ]
+    },
+    {
+      "bone": "right_middle_feather_1_3",
+      "center": [
+        41.24,
+        60.26,
+        14.815239
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_middle_feather_1_3",
+      "origin": [
+        41.24,
+        60.26,
+        13.35
+      ],
+      "role": "right middle primary feather 1 segment 3",
+      "rotation": [
+        -14.626597,
+        76.74791,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        4.030478
+      ]
+    },
+    {
+      "bone": "right_middle_feather_2_1",
+      "center": [
+        34,
+        51,
+        15.30935
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "right_middle_feather_2_1",
+      "origin": [
+        34,
+        51,
+        10
+      ],
+      "role": "right middle primary feather 2 segment 1",
+      "rotation": [
+        8.229799,
+        61.093666,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        11.7187
+      ]
+    },
+    {
+      "bone": "right_middle_feather_2_2",
+      "center": [
+        43.2,
+        49.48,
+        19.885822
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_middle_feather_2_2",
+      "origin": [
+        43.2,
+        49.48,
+        15.08
+      ],
+      "role": "right middle primary feather 2 segment 2",
+      "rotation": [
+        24.199776,
+        73.363354,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        10.711644
+      ]
+    },
+    {
+      "bone": "right_middle_feather_2_3",
+      "center": [
+        51.6,
+        45.54,
+        19.03046
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_middle_feather_2_3",
+      "origin": [
+        51.6,
+        45.54,
+        17.59
+      ],
+      "role": "right middle primary feather 2 segment 3",
+      "rotation": [
+        32.313498,
+        80.305556,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        3.98092
+      ]
+    },
+    {
+      "bone": "right_middle_feather_3_1",
+      "center": [
+        48,
+        47,
+        18.982612
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "right_middle_feather_3_1",
+      "origin": [
+        48,
+        47,
+        15
+      ],
+      "role": "right middle primary feather 3 segment 1",
+      "rotation": [
+        62.109354,
+        -29.592296,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        9.065224
+      ]
+    },
+    {
+      "bone": "right_middle_feather_3_2",
+      "center": [
+        46.16,
+        39.96,
+        22.826712
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_middle_feather_3_2",
+      "origin": [
+        46.16,
+        39.96,
+        18.24
+      ],
+      "role": "right middle primary feather 3 segment 2",
+      "rotation": [
+        78.213288,
+        -63.708435,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        10.273424
+      ]
+    },
+    {
+      "bone": "right_middle_feather_3_3",
+      "center": [
+        44.48,
+        30.98,
+        20.579611
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_middle_feather_3_3",
+      "origin": [
+        44.48,
+        30.98,
+        19.07
+      ],
+      "role": "right middle primary feather 3 segment 3",
+      "rotation": [
+        80.754617,
+        -98.297145,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        4.119222
+      ]
+    },
+    {
+      "bone": "right_middle_overlap_vane_1_1",
+      "center": [
+        21,
+        49,
+        8.516348
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "right_middle_overlap_vane_1_1",
+      "origin": [
+        21,
+        49,
+        4
+      ],
+      "role": "right middle broad overlapping feather vane segment 1",
+      "rotation": [
+        -26.568281,
+        62.102729,
+        0
+      ],
+      "size": [
+        11,
+        5.8,
+        10.532696
+      ]
+    },
+    {
+      "bone": "right_middle_overlap_vane_1_2",
+      "center": [
+        28.14,
+        53.04,
+        12.591239
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "right_middle_overlap_vane_1_2",
+      "origin": [
+        28.14,
+        53.04,
+        7.78
+      ],
+      "role": "right middle broad overlapping feather vane segment 2",
+      "rotation": [
+        -16.357644,
+        62.102729,
+        0
+      ],
+      "size": [
+        6,
+        3.2,
+        11.122479
+      ]
+    },
+    {
+      "bone": "right_middle_overlap_vane_1_3",
+      "center": [
+        36.3,
+        55.75,
+        13.069858
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_middle_overlap_vane_1_3",
+      "origin": [
+        36.3,
+        55.75,
+        12.1
+      ],
+      "role": "right middle broad overlapping feather vane segment 3",
+      "rotation": [
+        -7.405155,
+        62.102729,
+        0
+      ],
+      "size": [
+        1.4,
+        1,
+        3.439716
+      ]
+    },
+    {
+      "bone": "right_middle_overlap_vane_2_1",
+      "center": [
+        48,
+        47,
+        17.774275
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "right_middle_overlap_vane_2_1",
+      "origin": [
+        48,
+        47,
+        15
+      ],
+      "role": "right middle broad overlapping feather vane segment 1",
+      "rotation": [
+        59.483891,
+        -63.434949,
+        0
+      ],
+      "size": [
+        11,
+        5.8,
+        7.048549
+      ]
+    },
+    {
+      "bone": "right_middle_overlap_vane_2_2",
+      "center": [
+        45.48,
+        42.22,
+        20.281346
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "right_middle_overlap_vane_2_2",
+      "origin": [
+        45.48,
+        42.22,
+        16.26
+      ],
+      "role": "right middle broad overlapping feather vane segment 2",
+      "rotation": [
+        66.399582,
+        -63.434949,
+        0
+      ],
+      "size": [
+        6,
+        3.2,
+        9.542692
+      ]
+    },
+    {
+      "bone": "right_middle_overlap_vane_2_3",
+      "center": [
+        42.6,
+        34.85,
+        18.683933
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_middle_overlap_vane_2_3",
+      "origin": [
+        42.6,
+        34.85,
+        17.7
+      ],
+      "role": "right middle broad overlapping feather vane segment 3",
+      "rotation": [
+        70.069071,
+        -63.434949,
+        0
+      ],
+      "size": [
+        1.4,
+        1,
+        3.467867
+      ]
+    },
+    {
+      "bone": "right_middle_spar_2",
+      "center": [
+        34.0,
+        51.0,
+        11.506
+      ],
+      "faces": {},
+      "material": "sclera_shadow",
+      "name": "right_middle_wing_eye_1_sclera",
+      "origin": [
+        34.0,
+        51.0,
+        11.506
+      ],
+      "role": "right middle wing eye 1 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.4799999999999995,
+        2.552,
+        1.3339999999999999
+      ]
+    },
+    {
+      "bone": "right_middle_spar_2",
+      "center": [
+        34.0,
+        51.0,
+        12.318
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "right_middle_wing_eye_1_iris",
+      "origin": [
+        34.0,
+        51.0,
+        12.318
+      ],
+      "role": "right middle wing eye 1 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.508,
+        1.508,
+        0.8699999999999999
+      ]
+    },
+    {
+      "bone": "right_middle_spar_2",
+      "center": [
+        34.0,
+        51.0,
+        12.724
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "right_middle_wing_eye_1_pupil",
+      "origin": [
+        34.0,
+        51.0,
+        12.724
+      ],
+      "role": "right middle wing eye 1 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.6669999999999999,
+        0.754,
+        0.46399999999999997
+      ]
+    },
+    {
+      "bone": "left_front_lower_spar_1",
+      "center": [
+        -8,
+        40,
+        12.403124
+      ],
+      "faces": {},
+      "material": "rose",
+      "name": "left_front_lower_spar_1",
+      "origin": [
+        -8,
+        40,
+        6
+      ],
+      "role": "left front lower load-bearing wing spar segment 1",
+      "rotation": [
+        38.659808,
+        -53.130102,
+        0
+      ],
+      "size": [
+        6.2,
+        6,
+        14.206248
+      ]
+    },
+    {
+      "bone": "left_front_lower_spar_2",
+      "center": [
+        -16,
+        32,
+        19.968689
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "left_front_lower_spar_2",
+      "origin": [
+        -16,
+        32,
+        12
+      ],
+      "role": "left front lower load-bearing wing spar segment 2",
+      "rotation": [
+        54.655897,
+        -49.398705,
+        0
+      ],
+      "size": [
+        5.3,
+        5.2,
+        17.337377
+      ]
+    },
+    {
+      "bone": "left_front_lower_spar_3",
+      "center": [
+        -23,
+        19,
+        25.549834
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "left_front_lower_spar_3",
+      "origin": [
+        -23,
+        19,
+        18
+      ],
+      "role": "left front lower load-bearing wing spar segment 3",
+      "rotation": [
+        67.998286,
+        -45,
+        0
+      ],
+      "size": [
+        4.5,
+        4.4,
+        16.499669
+      ]
+    },
+    {
+      "bone": "left_front_lower_feather_1_1",
+      "center": [
+        -16,
+        32,
+        17.714525
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "left_front_lower_feather_1_1",
+      "origin": [
+        -16,
+        32,
+        12
+      ],
+      "role": "left front lower primary feather 1 segment 1",
+      "rotation": [
+        -13.252354,
+        -65.462272,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        12.529051
+      ]
+    },
+    {
+      "bone": "left_front_lower_feather_1_2",
+      "center": [
+        -26.12,
+        34.62,
+        21.357386
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_front_lower_feather_1_2",
+      "origin": [
+        -26.12,
+        34.62,
+        16.62
+      ],
+      "role": "left front lower primary feather 1 segment 2",
+      "rotation": [
+        0.967597,
+        -77.254711,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        10.574772
+      ]
+    },
+    {
+      "bone": "left_front_lower_feather_1_3",
+      "center": [
+        -35.36,
+        34.46,
+        20.057711
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_front_lower_feather_1_3",
+      "origin": [
+        -35.36,
+        34.46,
+        18.71
+      ],
+      "role": "left front lower primary feather 1 segment 3",
+      "rotation": [
+        9.826179,
+        -83.731279,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        3.795422
+      ]
+    },
+    {
+      "bone": "left_front_lower_feather_2_1",
+      "center": [
+        -23,
+        19,
+        23.17465
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "left_front_lower_feather_2_1",
+      "origin": [
+        -23,
+        19,
+        18
+      ],
+      "role": "left front lower primary feather 2 segment 1",
+      "rotation": [
+        -1.771866,
+        -69.042022,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        11.449299
+      ]
+    },
+    {
+      "bone": "left_front_lower_feather_2_2",
+      "center": [
+        -32.66,
+        19.32,
+        26.295174
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_front_lower_feather_2_2",
+      "origin": [
+        -32.66,
+        19.32,
+        21.7
+      ],
+      "role": "left front lower primary feather 2 segment 2",
+      "rotation": [
+        14.235628,
+        -81.93357,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        10.290348
+      ]
+    },
+    {
+      "bone": "left_front_lower_feather_2_3",
+      "center": [
+        -41.48,
+        17.06,
+        24.317159
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_front_lower_feather_2_3",
+      "origin": [
+        -41.48,
+        17.06,
+        22.95
+      ],
+      "role": "left front lower primary feather 2 segment 3",
+      "rotation": [
+        22.809292,
+        -88.863328,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        3.834319
+      ]
+    },
+    {
+      "bone": "left_front_lower_feather_3_1",
+      "center": [
+        -27,
+        5,
+        24.065648
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "left_front_lower_feather_3_1",
+      "origin": [
+        -27,
+        5,
+        22
+      ],
+      "role": "left front lower primary feather 3 segment 1",
+      "rotation": [
+        36.200578,
+        -33.4994,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        5.231295
+      ]
+    },
+    {
+      "bone": "left_front_lower_feather_3_2",
+      "center": [
+        -28.84,
+        2.56,
+        27.321599
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_front_lower_feather_3_2",
+      "origin": [
+        -28.84,
+        2.56,
+        24.78
+      ],
+      "role": "left front lower primary feather 3 segment 2",
+      "rotation": [
+        70.110913,
+        -76.285188,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        6.183198
+      ]
+    },
+    {
+      "bone": "left_front_lower_feather_3_3",
+      "center": [
+        -30.52,
+        -2.22,
+        26.116674
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_front_lower_feather_3_3",
+      "origin": [
+        -30.52,
+        -2.22,
+        25.19
+      ],
+      "role": "left front lower primary feather 3 segment 3",
+      "rotation": [
+        73.826761,
+        -111.59531,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        2.953348
+      ]
+    },
+    {
+      "bone": "left_front_lower_overlap_vane_1_1",
+      "center": [
+        -16,
+        32,
+        15.590836
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "left_front_lower_overlap_vane_1_1",
+      "origin": [
+        -16,
+        32,
+        12
+      ],
+      "role": "left front lower broad overlapping feather vane segment 1",
+      "rotation": [
+        -2.074748,
+        -69.443955,
+        0
+      ],
+      "size": [
+        9.8,
+        5.8,
+        8.681671
+      ]
+    },
+    {
+      "bone": "left_front_lower_overlap_vane_1_2",
+      "center": [
+        -22.72,
+        32.26,
+        18.699381
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "left_front_lower_overlap_vane_1_2",
+      "origin": [
+        -22.72,
+        32.26,
+        14.52
+      ],
+      "role": "left front lower broad overlapping feather vane segment 2",
+      "rotation": [
+        11.105272,
+        -69.443955,
+        0
+      ],
+      "size": [
+        5.5,
+        3.2,
+        9.858762
+      ]
+    },
+    {
+      "bone": "left_front_lower_overlap_vane_1_3",
+      "center": [
+        -30.4,
+        30.65,
+        18.314125
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_front_lower_overlap_vane_1_3",
+      "origin": [
+        -30.4,
+        30.65,
+        17.4
+      ],
+      "role": "left front lower broad overlapping feather vane segment 3",
+      "rotation": [
+        20.826,
+        -69.443955,
+        0
+      ],
+      "size": [
+        1.2,
+        1,
+        3.328251
+      ]
+    },
+    {
+      "bone": "left_front_lower_overlap_vane_2_1",
+      "center": [
+        -27,
+        5,
+        23.764766
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "left_front_lower_overlap_vane_2_1",
+      "origin": [
+        -27,
+        5,
+        22
+      ],
+      "role": "left front lower broad overlapping feather vane segment 1",
+      "rotation": [
+        -11.108064,
+        -75.963757,
+        0
+      ],
+      "size": [
+        9.8,
+        5.8,
+        5.029533
+      ]
+    },
+    {
+      "bone": "left_front_lower_overlap_vane_2_2",
+      "center": [
+        -30.36,
+        5.68,
+        24.898161
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "left_front_lower_overlap_vane_2_2",
+      "origin": [
+        -30.36,
+        5.68,
+        22.84
+      ],
+      "role": "left front lower broad overlapping feather vane segment 2",
+      "rotation": [
+        15.933231,
+        -75.963757,
+        0
+      ],
+      "size": [
+        5.5,
+        3.2,
+        5.616321
+      ]
+    },
+    {
+      "bone": "left_front_lower_overlap_vane_2_3",
+      "center": [
+        -34.2,
+        4.55,
+        24.295606
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "left_front_lower_overlap_vane_2_3",
+      "origin": [
+        -34.2,
+        4.55,
+        23.8
+      ],
+      "role": "left front lower broad overlapping feather vane segment 3",
+      "rotation": [
+        33.702216,
+        -75.963757,
+        0
+      ],
+      "size": [
+        1.2,
+        1,
+        2.491211
+      ]
+    },
+    {
+      "bone": "left_front_lower_spar_2",
+      "center": [
+        -23.0,
+        19.0,
+        19.506
+      ],
+      "faces": {},
+      "material": "sclera_shadow",
+      "name": "left_front_lower_wing_eye_1_sclera",
+      "origin": [
+        -23.0,
+        19.0,
+        19.506
+      ],
+      "role": "left front lower wing eye 1 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.4799999999999995,
+        2.552,
+        1.3339999999999999
+      ]
+    },
+    {
+      "bone": "left_front_lower_spar_2",
+      "center": [
+        -23.0,
+        19.0,
+        20.318
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "left_front_lower_wing_eye_1_iris",
+      "origin": [
+        -23.0,
+        19.0,
+        20.318
+      ],
+      "role": "left front lower wing eye 1 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.508,
+        1.508,
+        0.8699999999999999
+      ]
+    },
+    {
+      "bone": "left_front_lower_spar_2",
+      "center": [
+        -23.0,
+        19.0,
+        20.724
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "left_front_lower_wing_eye_1_pupil",
+      "origin": [
+        -23.0,
+        19.0,
+        20.724
+      ],
+      "role": "left front lower wing eye 1 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.6669999999999999,
+        0.754,
+        0.46399999999999997
+      ]
+    },
+    {
+      "bone": "right_front_lower_spar_1",
+      "center": [
+        8,
+        40,
+        12.403124
+      ],
+      "faces": {},
+      "material": "rose",
+      "name": "right_front_lower_spar_1",
+      "origin": [
+        8,
+        40,
+        6
+      ],
+      "role": "right front lower load-bearing wing spar segment 1",
+      "rotation": [
+        38.659808,
+        53.130102,
+        0
+      ],
+      "size": [
+        6.2,
+        6,
+        14.206248
+      ]
+    },
+    {
+      "bone": "right_front_lower_spar_2",
+      "center": [
+        16,
+        32,
+        19.968689
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "right_front_lower_spar_2",
+      "origin": [
+        16,
+        32,
+        12
+      ],
+      "role": "right front lower load-bearing wing spar segment 2",
+      "rotation": [
+        54.655897,
+        49.398705,
+        0
+      ],
+      "size": [
+        5.3,
+        5.2,
+        17.337377
+      ]
+    },
+    {
+      "bone": "right_front_lower_spar_3",
+      "center": [
+        23,
+        19,
+        25.549834
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "right_front_lower_spar_3",
+      "origin": [
+        23,
+        19,
+        18
+      ],
+      "role": "right front lower load-bearing wing spar segment 3",
+      "rotation": [
+        67.998286,
+        45,
+        0
+      ],
+      "size": [
+        4.5,
+        4.4,
+        16.499669
+      ]
+    },
+    {
+      "bone": "right_front_lower_feather_1_1",
+      "center": [
+        16,
+        32,
+        17.714525
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "right_front_lower_feather_1_1",
+      "origin": [
+        16,
+        32,
+        12
+      ],
+      "role": "right front lower primary feather 1 segment 1",
+      "rotation": [
+        -13.252354,
+        65.462272,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        12.529051
+      ]
+    },
+    {
+      "bone": "right_front_lower_feather_1_2",
+      "center": [
+        26.12,
+        34.62,
+        21.357386
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_front_lower_feather_1_2",
+      "origin": [
+        26.12,
+        34.62,
+        16.62
+      ],
+      "role": "right front lower primary feather 1 segment 2",
+      "rotation": [
+        0.967597,
+        77.254711,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        10.574772
+      ]
+    },
+    {
+      "bone": "right_front_lower_feather_1_3",
+      "center": [
+        35.36,
+        34.46,
+        20.057711
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_front_lower_feather_1_3",
+      "origin": [
+        35.36,
+        34.46,
+        18.71
+      ],
+      "role": "right front lower primary feather 1 segment 3",
+      "rotation": [
+        9.826179,
+        83.731279,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        3.795422
+      ]
+    },
+    {
+      "bone": "right_front_lower_feather_2_1",
+      "center": [
+        23,
+        19,
+        23.17465
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "right_front_lower_feather_2_1",
+      "origin": [
+        23,
+        19,
+        18
+      ],
+      "role": "right front lower primary feather 2 segment 1",
+      "rotation": [
+        -1.771866,
+        69.042022,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        11.449299
+      ]
+    },
+    {
+      "bone": "right_front_lower_feather_2_2",
+      "center": [
+        32.66,
+        19.32,
+        26.295174
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_front_lower_feather_2_2",
+      "origin": [
+        32.66,
+        19.32,
+        21.7
+      ],
+      "role": "right front lower primary feather 2 segment 2",
+      "rotation": [
+        14.235628,
+        81.93357,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        10.290348
+      ]
+    },
+    {
+      "bone": "right_front_lower_feather_2_3",
+      "center": [
+        41.48,
+        17.06,
+        24.317159
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_front_lower_feather_2_3",
+      "origin": [
+        41.48,
+        17.06,
+        22.95
+      ],
+      "role": "right front lower primary feather 2 segment 3",
+      "rotation": [
+        22.809292,
+        88.863328,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        3.834319
+      ]
+    },
+    {
+      "bone": "right_front_lower_feather_3_1",
+      "center": [
+        27,
+        5,
+        24.065648
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "right_front_lower_feather_3_1",
+      "origin": [
+        27,
+        5,
+        22
+      ],
+      "role": "right front lower primary feather 3 segment 1",
+      "rotation": [
+        36.200578,
+        33.4994,
+        0
+      ],
+      "size": [
+        5.8,
+        4.8,
+        5.231295
+      ]
+    },
+    {
+      "bone": "right_front_lower_feather_3_2",
+      "center": [
+        28.84,
+        2.56,
+        27.321599
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_front_lower_feather_3_2",
+      "origin": [
+        28.84,
+        2.56,
+        24.78
+      ],
+      "role": "right front lower primary feather 3 segment 2",
+      "rotation": [
+        70.110913,
+        76.285188,
+        0
+      ],
+      "size": [
+        3,
+        2.5,
+        6.183198
+      ]
+    },
+    {
+      "bone": "right_front_lower_feather_3_3",
+      "center": [
+        30.52,
+        -2.22,
+        26.116674
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_front_lower_feather_3_3",
+      "origin": [
+        30.52,
+        -2.22,
+        25.19
+      ],
+      "role": "right front lower primary feather 3 segment 3",
+      "rotation": [
+        73.826761,
+        111.59531,
+        0
+      ],
+      "size": [
+        1,
+        0.8,
+        2.953348
+      ]
+    },
+    {
+      "bone": "right_front_lower_overlap_vane_1_1",
+      "center": [
+        16,
+        32,
+        15.590836
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "right_front_lower_overlap_vane_1_1",
+      "origin": [
+        16,
+        32,
+        12
+      ],
+      "role": "right front lower broad overlapping feather vane segment 1",
+      "rotation": [
+        -2.074748,
+        69.443955,
+        0
+      ],
+      "size": [
+        9.8,
+        5.8,
+        8.681671
+      ]
+    },
+    {
+      "bone": "right_front_lower_overlap_vane_1_2",
+      "center": [
+        22.72,
+        32.26,
+        18.699381
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "right_front_lower_overlap_vane_1_2",
+      "origin": [
+        22.72,
+        32.26,
+        14.52
+      ],
+      "role": "right front lower broad overlapping feather vane segment 2",
+      "rotation": [
+        11.105272,
+        69.443955,
+        0
+      ],
+      "size": [
+        5.5,
+        3.2,
+        9.858762
+      ]
+    },
+    {
+      "bone": "right_front_lower_overlap_vane_1_3",
+      "center": [
+        30.4,
+        30.65,
+        18.314125
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_front_lower_overlap_vane_1_3",
+      "origin": [
+        30.4,
+        30.65,
+        17.4
+      ],
+      "role": "right front lower broad overlapping feather vane segment 3",
+      "rotation": [
+        20.826,
+        69.443955,
+        0
+      ],
+      "size": [
+        1.2,
+        1,
+        3.328251
+      ]
+    },
+    {
+      "bone": "right_front_lower_overlap_vane_2_1",
+      "center": [
+        27,
+        5,
+        23.764766
+      ],
+      "faces": {},
+      "material": "feather_shadow",
+      "name": "right_front_lower_overlap_vane_2_1",
+      "origin": [
+        27,
+        5,
+        22
+      ],
+      "role": "right front lower broad overlapping feather vane segment 1",
+      "rotation": [
+        -11.108064,
+        75.963757,
+        0
+      ],
+      "size": [
+        9.8,
+        5.8,
+        5.029533
+      ]
+    },
+    {
+      "bone": "right_front_lower_overlap_vane_2_2",
+      "center": [
+        30.36,
+        5.68,
+        24.898161
+      ],
+      "faces": {},
+      "material": "ivory",
+      "name": "right_front_lower_overlap_vane_2_2",
+      "origin": [
+        30.36,
+        5.68,
+        22.84
+      ],
+      "role": "right front lower broad overlapping feather vane segment 2",
+      "rotation": [
+        15.933231,
+        75.963757,
+        0
+      ],
+      "size": [
+        5.5,
+        3.2,
+        5.616321
+      ]
+    },
+    {
+      "bone": "right_front_lower_overlap_vane_2_3",
+      "center": [
+        34.2,
+        4.55,
+        24.295606
+      ],
+      "faces": {},
+      "material": "ivory_light",
+      "name": "right_front_lower_overlap_vane_2_3",
+      "origin": [
+        34.2,
+        4.55,
+        23.8
+      ],
+      "role": "right front lower broad overlapping feather vane segment 3",
+      "rotation": [
+        33.702216,
+        75.963757,
+        0
+      ],
+      "size": [
+        1.2,
+        1,
+        2.491211
+      ]
+    },
+    {
+      "bone": "right_front_lower_spar_2",
+      "center": [
+        23.0,
+        19.0,
+        19.506
+      ],
+      "faces": {},
+      "material": "sclera_shadow",
+      "name": "right_front_lower_wing_eye_1_sclera",
+      "origin": [
+        23.0,
+        19.0,
+        19.506
+      ],
+      "role": "right front lower wing eye 1 raised sclera",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.4799999999999995,
+        2.552,
+        1.3339999999999999
+      ]
+    },
+    {
+      "bone": "right_front_lower_spar_2",
+      "center": [
+        23.0,
+        19.0,
+        20.318
+      ],
+      "faces": {},
+      "material": "iris_cyan",
+      "name": "right_front_lower_wing_eye_1_iris",
+      "origin": [
+        23.0,
+        19.0,
+        20.318
+      ],
+      "role": "right front lower wing eye 1 cyan iris",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.508,
+        1.508,
+        0.8699999999999999
+      ]
+    },
+    {
+      "bone": "right_front_lower_spar_2",
+      "center": [
+        23.0,
+        19.0,
+        20.724
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "right_front_lower_wing_eye_1_pupil",
+      "origin": [
+        23.0,
+        19.0,
+        20.724
+      ],
+      "role": "right front lower wing eye 1 dark pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.6669999999999999,
+        0.754,
+        0.46399999999999997
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "single-view-agentic-radial-depth-inference-six-wing-v2",
+    "anatomical_axis": "+Z front, X width, Y up",
+    "declared_attachments": [
+      {
+        "first": "body_core",
+        "joint": [
+          0.0,
+          39.0,
+          7.0
+        ],
+        "second": "front_body_shell"
+      },
+      {
+        "first": "body_core",
+        "joint": [
+          0.0,
+          39.0,
+          -7.0
+        ],
+        "second": "back_body_shell"
+      },
+      {
+        "first": "body_core",
+        "joint": [
+          -9.0,
+          39.0,
+          0.0
+        ],
+        "second": "left_body_shell"
+      },
+      {
+        "first": "body_core",
+        "joint": [
+          9.0,
+          39.0,
+          0.0
+        ],
+        "second": "right_body_shell"
+      },
+      {
+        "first": "body_core",
+        "joint": [
+          0.0,
+          45.5,
+          0.0
+        ],
+        "second": "body_upper_crown"
+      },
+      {
+        "first": "body_core",
+        "joint": [
+          0.0,
+          32.2,
+          0.0
+        ],
+        "second": "body_lower_shroud"
+      },
+      {
+        "first": "front_body_shell",
+        "joint": [
+          0.0,
+          44.0,
+          11.0
+        ],
+        "second": "front_eye_band"
+      },
+      {
+        "first": "back_body_shell",
+        "joint": [
+          0.0,
+          43.0,
+          -11.0
+        ],
+        "second": "back_eye_band"
+      },
+      {
+        "first": "front_body_shell",
+        "joint": [
+          -8.5,
+          43.5,
+          9.5
+        ],
+        "second": "front_left_crown_wrap"
+      },
+      {
+        "first": "front_body_shell",
+        "joint": [
+          8.5,
+          43.5,
+          9.5
+        ],
+        "second": "front_right_crown_wrap"
+      },
+      {
+        "first": "back_body_shell",
+        "joint": [
+          -8.5,
+          42.5,
+          -9.5
+        ],
+        "second": "rear_left_crown_wrap"
+      },
+      {
+        "first": "back_body_shell",
+        "joint": [
+          8.5,
+          42.5,
+          -9.5
+        ],
+        "second": "rear_right_crown_wrap"
+      },
+      {
+        "first": "left_body_shell",
+        "joint": [
+          -12.0,
+          40.5,
+          0.0
+        ],
+        "second": "left_side_temple"
+      },
+      {
+        "first": "right_body_shell",
+        "joint": [
+          12.0,
+          40.5,
+          0.0
+        ],
+        "second": "right_side_temple"
+      },
+      {
+        "first": "body_upper_crown",
+        "joint": [
+          0.0,
+          50.0,
+          0.0
+        ],
+        "second": "top_eye_plinth"
+      },
+      {
+        "first": "front_left_crown_wrap",
+        "joint": [
+          -13.0,
+          44.2,
+          12.982999999999999
+        ],
+        "second": "front_eye_1_sclera"
+      },
+      {
+        "first": "front_eye_1_sclera",
+        "joint": [
+          -13.0,
+          44.2,
+          14.129999999999999
+        ],
+        "second": "front_eye_1_iris"
+      },
+      {
+        "first": "front_eye_1_iris",
+        "joint": [
+          -13.0,
+          44.2,
+          14.719
+        ],
+        "second": "front_eye_1_pupil"
+      },
+      {
+        "first": "front_left_crown_wrap",
+        "joint": [
+          -9.0,
+          44.2,
+          12.912999999999998
+        ],
+        "second": "front_eye_2_sclera"
+      },
+      {
+        "first": "front_eye_2_sclera",
+        "joint": [
+          -9.0,
+          44.2,
+          14.43
+        ],
+        "second": "front_eye_2_iris"
+      },
+      {
+        "first": "front_eye_2_iris",
+        "joint": [
+          -9.0,
+          44.2,
+          15.209
+        ],
+        "second": "front_eye_2_pupil"
+      },
+      {
+        "first": "front_eye_band",
+        "joint": [
+          -5.8,
+          44.2,
+          12.912999999999998
+        ],
+        "second": "front_eye_3_sclera"
+      },
+      {
+        "first": "front_eye_3_sclera",
+        "joint": [
+          -5.8,
+          44.2,
+          14.43
+        ],
+        "second": "front_eye_3_iris"
+      },
+      {
+        "first": "front_eye_3_iris",
+        "joint": [
+          -5.8,
+          44.2,
+          15.209
+        ],
+        "second": "front_eye_3_pupil"
+      },
+      {
+        "first": "front_eye_band",
+        "joint": [
+          0.0,
+          45.6,
+          12.4125
+        ],
+        "second": "front_eye_4_sclera"
+      },
+      {
+        "first": "front_eye_4_sclera",
+        "joint": [
+          0.0,
+          45.6,
+          16.575
+        ],
+        "second": "front_eye_4_iris"
+      },
+      {
+        "first": "front_eye_4_iris",
+        "joint": [
+          0.0,
+          45.6,
+          18.7125
+        ],
+        "second": "front_eye_4_pupil"
+      },
+      {
+        "first": "front_eye_band",
+        "joint": [
+          5.8,
+          44.2,
+          12.912999999999998
+        ],
+        "second": "front_eye_5_sclera"
+      },
+      {
+        "first": "front_eye_5_sclera",
+        "joint": [
+          5.8,
+          44.2,
+          14.43
+        ],
+        "second": "front_eye_5_iris"
+      },
+      {
+        "first": "front_eye_5_iris",
+        "joint": [
+          5.8,
+          44.2,
+          15.209
+        ],
+        "second": "front_eye_5_pupil"
+      },
+      {
+        "first": "front_right_crown_wrap",
+        "joint": [
+          9.0,
+          44.2,
+          12.912999999999998
+        ],
+        "second": "front_eye_6_sclera"
+      },
+      {
+        "first": "front_eye_6_sclera",
+        "joint": [
+          9.0,
+          44.2,
+          14.43
+        ],
+        "second": "front_eye_6_iris"
+      },
+      {
+        "first": "front_eye_6_iris",
+        "joint": [
+          9.0,
+          44.2,
+          15.209
+        ],
+        "second": "front_eye_6_pupil"
+      },
+      {
+        "first": "front_right_crown_wrap",
+        "joint": [
+          13.0,
+          44.2,
+          12.982999999999999
+        ],
+        "second": "front_eye_7_sclera"
+      },
+      {
+        "first": "front_eye_7_sclera",
+        "joint": [
+          13.0,
+          44.2,
+          14.129999999999999
+        ],
+        "second": "front_eye_7_iris"
+      },
+      {
+        "first": "front_eye_7_iris",
+        "joint": [
+          13.0,
+          44.2,
+          14.719
+        ],
+        "second": "front_eye_7_pupil"
+      },
+      {
+        "first": "front_eye_4_sclera",
+        "joint": [
+          0.0,
+          49.5,
+          16.0
+        ],
+        "second": "central_upper_lid"
+      },
+      {
+        "first": "front_eye_4_sclera",
+        "joint": [
+          0.0,
+          41.8,
+          16.0
+        ],
+        "second": "central_lower_lid"
+      },
+      {
+        "first": "rear_left_crown_wrap",
+        "joint": [
+          -9.5,
+          43.2,
+          -12.947999999999999
+        ],
+        "second": "back_eye_1_sclera"
+      },
+      {
+        "first": "back_eye_1_sclera",
+        "joint": [
+          -9.5,
+          43.2,
+          -14.28
+        ],
+        "second": "back_eye_1_iris"
+      },
+      {
+        "first": "back_eye_1_iris",
+        "joint": [
+          -9.5,
+          43.2,
+          -14.964
+        ],
+        "second": "back_eye_1_pupil"
+      },
+      {
+        "first": "back_eye_band",
+        "joint": [
+          -4.8,
+          43.2,
+          -12.947999999999999
+        ],
+        "second": "back_eye_2_sclera"
+      },
+      {
+        "first": "back_eye_2_sclera",
+        "joint": [
+          -4.8,
+          43.2,
+          -14.28
+        ],
+        "second": "back_eye_2_iris"
+      },
+      {
+        "first": "back_eye_2_iris",
+        "joint": [
+          -4.8,
+          43.2,
+          -14.964
+        ],
+        "second": "back_eye_2_pupil"
+      },
+      {
+        "first": "back_eye_band",
+        "joint": [
+          0.0,
+          43.2,
+          -12.863999999999999
+        ],
+        "second": "back_eye_3_sclera"
+      },
+      {
+        "first": "back_eye_3_sclera",
+        "joint": [
+          0.0,
+          43.2,
+          -14.64
+        ],
+        "second": "back_eye_3_iris"
+      },
+      {
+        "first": "back_eye_3_iris",
+        "joint": [
+          0.0,
+          43.2,
+          -15.552
+        ],
+        "second": "back_eye_3_pupil"
+      },
+      {
+        "first": "back_eye_band",
+        "joint": [
+          4.8,
+          43.2,
+          -12.947999999999999
+        ],
+        "second": "back_eye_4_sclera"
+      },
+      {
+        "first": "back_eye_4_sclera",
+        "joint": [
+          4.8,
+          43.2,
+          -14.28
+        ],
+        "second": "back_eye_4_iris"
+      },
+      {
+        "first": "back_eye_4_iris",
+        "joint": [
+          4.8,
+          43.2,
+          -14.964
+        ],
+        "second": "back_eye_4_pupil"
+      },
+      {
+        "first": "rear_right_crown_wrap",
+        "joint": [
+          9.5,
+          43.2,
+          -12.947999999999999
+        ],
+        "second": "back_eye_5_sclera"
+      },
+      {
+        "first": "back_eye_5_sclera",
+        "joint": [
+          9.5,
+          43.2,
+          -14.28
+        ],
+        "second": "back_eye_5_iris"
+      },
+      {
+        "first": "back_eye_5_iris",
+        "joint": [
+          9.5,
+          43.2,
+          -14.964
+        ],
+        "second": "back_eye_5_pupil"
+      },
+      {
+        "first": "left_side_temple",
+        "joint": [
+          -14.478000000000002,
+          41.0,
+          0.0
+        ],
+        "second": "left_temple_eye_sclera"
+      },
+      {
+        "first": "left_temple_eye_sclera",
+        "joint": [
+          -16.18,
+          41.0,
+          0.0
+        ],
+        "second": "left_temple_eye_iris"
+      },
+      {
+        "first": "left_temple_eye_iris",
+        "joint": [
+          -17.054,
+          41.0,
+          0.0
+        ],
+        "second": "left_temple_eye_pupil"
+      },
+      {
+        "first": "right_side_temple",
+        "joint": [
+          14.478000000000002,
+          41.0,
+          0.0
+        ],
+        "second": "right_temple_eye_sclera"
+      },
+      {
+        "first": "right_temple_eye_sclera",
+        "joint": [
+          16.18,
+          41.0,
+          0.0
+        ],
+        "second": "right_temple_eye_iris"
+      },
+      {
+        "first": "right_temple_eye_iris",
+        "joint": [
+          17.054,
+          41.0,
+          0.0
+        ],
+        "second": "right_temple_eye_pupil"
+      },
+      {
+        "first": "top_eye_plinth",
+        "joint": [
+          0.0,
+          52.2675,
+          0.0
+        ],
+        "second": "zenith_eye_sclera"
+      },
+      {
+        "first": "zenith_eye_sclera",
+        "joint": [
+          0.0,
+          54.025,
+          0.0
+        ],
+        "second": "zenith_eye_iris"
+      },
+      {
+        "first": "zenith_eye_iris",
+        "joint": [
+          0.0,
+          54.9275,
+          0.0
+        ],
+        "second": "zenith_eye_pupil"
+      },
+      {
+        "first": "body_core",
+        "joint": [
+          -8.0,
+          45.0,
+          -6.0
+        ],
+        "second": "left_rear_upper_spar_1"
+      },
+      {
+        "first": "left_rear_upper_spar_1",
+        "joint": [
+          -13.0,
+          57.0,
+          -11.0
+        ],
+        "second": "left_rear_upper_spar_2"
+      },
+      {
+        "first": "left_rear_upper_spar_2",
+        "joint": [
+          -17.5,
+          71.0,
+          -15.0
+        ],
+        "second": "left_rear_upper_spar_3"
+      },
+      {
+        "first": "left_rear_upper_spar_1",
+        "joint": [
+          -13.0,
+          57.0,
+          -11.0
+        ],
+        "second": "left_rear_upper_feather_1_1"
+      },
+      {
+        "first": "left_rear_upper_feather_1_1",
+        "joint": [
+          -21.740000000000002,
+          70.2,
+          -17.0
+        ],
+        "second": "left_rear_upper_feather_1_2"
+      },
+      {
+        "first": "left_rear_upper_feather_1_2",
+        "joint": [
+          -29.72,
+          79.7,
+          -20.35
+        ],
+        "second": "left_rear_upper_feather_1_3"
+      },
+      {
+        "first": "left_rear_upper_spar_2",
+        "joint": [
+          -17.5,
+          71.0,
+          -15.0
+        ],
+        "second": "left_rear_upper_feather_2_1"
+      },
+      {
+        "first": "left_rear_upper_feather_2_1",
+        "joint": [
+          -28.770000000000003,
+          69.48,
+          -17.779999999999998
+        ],
+        "second": "left_rear_upper_feather_2_2"
+      },
+      {
+        "first": "left_rear_upper_feather_2_2",
+        "joint": [
+          -39.06,
+          65.54,
+          -18.19
+        ],
+        "second": "left_rear_upper_feather_2_3"
+      },
+      {
+        "first": "left_rear_upper_spar_3",
+        "joint": [
+          -21.0,
+          85.0,
+          -18.0
+        ],
+        "second": "left_rear_upper_feather_3_1"
+      },
+      {
+        "first": "left_rear_upper_feather_3_1",
+        "joint": [
+          -29.740000000000002,
+          68.76,
+          -17.56
+        ],
+        "second": "left_rear_upper_feather_3_2"
+      },
+      {
+        "first": "left_rear_upper_feather_3_2",
+        "joint": [
+          -37.72,
+          51.38,
+          -15.030000000000001
+        ],
+        "second": "left_rear_upper_feather_3_3"
+      },
+      {
+        "first": "left_rear_upper_spar_1",
+        "joint": [
+          -13.0,
+          57.0,
+          -11.0
+        ],
+        "second": "left_rear_upper_overlap_vane_1_1"
+      },
+      {
+        "first": "left_rear_upper_overlap_vane_1_1",
+        "joint": [
+          -20.14,
+          66.08,
+          -14.78
+        ],
+        "second": "left_rear_upper_overlap_vane_1_2"
+      },
+      {
+        "first": "left_rear_upper_overlap_vane_1_2",
+        "joint": [
+          -28.3,
+          74.55,
+          -19.1
+        ],
+        "second": "left_rear_upper_overlap_vane_1_3"
+      },
+      {
+        "first": "left_rear_upper_spar_3",
+        "joint": [
+          -21.0,
+          85.0,
+          -18.0
+        ],
+        "second": "left_rear_upper_overlap_vane_2_1"
+      },
+      {
+        "first": "left_rear_upper_overlap_vane_2_1",
+        "joint": [
+          -27.3,
+          71.82,
+          -16.74
+        ],
+        "second": "left_rear_upper_overlap_vane_2_2"
+      },
+      {
+        "first": "left_rear_upper_overlap_vane_2_2",
+        "joint": [
+          -34.5,
+          54.85,
+          -15.3
+        ],
+        "second": "left_rear_upper_overlap_vane_2_3"
+      },
+      {
+        "first": "left_rear_upper_spar_2",
+        "joint": [
+          -17.5,
+          71.0,
+          -15.897000000000002
+        ],
+        "second": "left_rear_upper_wing_eye_1_sclera"
+      },
+      {
+        "first": "left_rear_upper_wing_eye_1_sclera",
+        "joint": [
+          -17.5,
+          71.0,
+          -16.97
+        ],
+        "second": "left_rear_upper_wing_eye_1_iris"
+      },
+      {
+        "first": "left_rear_upper_wing_eye_1_iris",
+        "joint": [
+          -17.5,
+          71.0,
+          -17.521
+        ],
+        "second": "left_rear_upper_wing_eye_1_pupil"
+      },
+      {
+        "first": "body_core",
+        "joint": [
+          8.0,
+          45.0,
+          -6.0
+        ],
+        "second": "right_rear_upper_spar_1"
+      },
+      {
+        "first": "right_rear_upper_spar_1",
+        "joint": [
+          13.0,
+          57.0,
+          -11.0
+        ],
+        "second": "right_rear_upper_spar_2"
+      },
+      {
+        "first": "right_rear_upper_spar_2",
+        "joint": [
+          17.5,
+          71.0,
+          -15.0
+        ],
+        "second": "right_rear_upper_spar_3"
+      },
+      {
+        "first": "right_rear_upper_spar_1",
+        "joint": [
+          13.0,
+          57.0,
+          -11.0
+        ],
+        "second": "right_rear_upper_feather_1_1"
+      },
+      {
+        "first": "right_rear_upper_feather_1_1",
+        "joint": [
+          21.740000000000002,
+          70.2,
+          -17.0
+        ],
+        "second": "right_rear_upper_feather_1_2"
+      },
+      {
+        "first": "right_rear_upper_feather_1_2",
+        "joint": [
+          29.72,
+          79.7,
+          -20.35
+        ],
+        "second": "right_rear_upper_feather_1_3"
+      },
+      {
+        "first": "right_rear_upper_spar_2",
+        "joint": [
+          17.5,
+          71.0,
+          -15.0
+        ],
+        "second": "right_rear_upper_feather_2_1"
+      },
+      {
+        "first": "right_rear_upper_feather_2_1",
+        "joint": [
+          28.770000000000003,
+          69.48,
+          -17.779999999999998
+        ],
+        "second": "right_rear_upper_feather_2_2"
+      },
+      {
+        "first": "right_rear_upper_feather_2_2",
+        "joint": [
+          39.06,
+          65.54,
+          -18.19
+        ],
+        "second": "right_rear_upper_feather_2_3"
+      },
+      {
+        "first": "right_rear_upper_spar_3",
+        "joint": [
+          21.0,
+          85.0,
+          -18.0
+        ],
+        "second": "right_rear_upper_feather_3_1"
+      },
+      {
+        "first": "right_rear_upper_feather_3_1",
+        "joint": [
+          29.740000000000002,
+          68.76,
+          -17.56
+        ],
+        "second": "right_rear_upper_feather_3_2"
+      },
+      {
+        "first": "right_rear_upper_feather_3_2",
+        "joint": [
+          37.72,
+          51.38,
+          -15.030000000000001
+        ],
+        "second": "right_rear_upper_feather_3_3"
+      },
+      {
+        "first": "right_rear_upper_spar_1",
+        "joint": [
+          13.0,
+          57.0,
+          -11.0
+        ],
+        "second": "right_rear_upper_overlap_vane_1_1"
+      },
+      {
+        "first": "right_rear_upper_overlap_vane_1_1",
+        "joint": [
+          20.14,
+          66.08,
+          -14.78
+        ],
+        "second": "right_rear_upper_overlap_vane_1_2"
+      },
+      {
+        "first": "right_rear_upper_overlap_vane_1_2",
+        "joint": [
+          28.3,
+          74.55,
+          -19.1
+        ],
+        "second": "right_rear_upper_overlap_vane_1_3"
+      },
+      {
+        "first": "right_rear_upper_spar_3",
+        "joint": [
+          21.0,
+          85.0,
+          -18.0
+        ],
+        "second": "right_rear_upper_overlap_vane_2_1"
+      },
+      {
+        "first": "right_rear_upper_overlap_vane_2_1",
+        "joint": [
+          27.3,
+          71.82,
+          -16.74
+        ],
+        "second": "right_rear_upper_overlap_vane_2_2"
+      },
+      {
+        "first": "right_rear_upper_overlap_vane_2_2",
+        "joint": [
+          34.5,
+          54.85,
+          -15.3
+        ],
+        "second": "right_rear_upper_overlap_vane_2_3"
+      },
+      {
+        "first": "right_rear_upper_spar_2",
+        "joint": [
+          17.5,
+          71.0,
+          -15.897000000000002
+        ],
+        "second": "right_rear_upper_wing_eye_1_sclera"
+      },
+      {
+        "first": "right_rear_upper_wing_eye_1_sclera",
+        "joint": [
+          17.5,
+          71.0,
+          -16.97
+        ],
+        "second": "right_rear_upper_wing_eye_1_iris"
+      },
+      {
+        "first": "right_rear_upper_wing_eye_1_iris",
+        "joint": [
+          17.5,
+          71.0,
+          -17.521
+        ],
+        "second": "right_rear_upper_wing_eye_1_pupil"
+      },
+      {
+        "first": "body_core",
+        "joint": [
+          -9.0,
+          43.0,
+          0.0
+        ],
+        "second": "left_middle_spar_1"
+      },
+      {
+        "first": "left_middle_spar_1",
+        "joint": [
+          -21.0,
+          49.0,
+          4.0
+        ],
+        "second": "left_middle_spar_2"
+      },
+      {
+        "first": "left_middle_spar_2",
+        "joint": [
+          -34.0,
+          51.0,
+          10.0
+        ],
+        "second": "left_middle_spar_3"
+      },
+      {
+        "first": "left_middle_spar_1",
+        "joint": [
+          -21.0,
+          49.0,
+          4.0
+        ],
+        "second": "left_middle_feather_1_1"
+      },
+      {
+        "first": "left_middle_feather_1_1",
+        "joint": [
+          -31.58,
+          56.220000000000006,
+          10.000000000000002
+        ],
+        "second": "left_middle_feather_1_2"
+      },
+      {
+        "first": "left_middle_feather_1_2",
+        "joint": [
+          -41.239999999999995,
+          60.260000000000005,
+          13.350000000000001
+        ],
+        "second": "left_middle_feather_1_3"
+      },
+      {
+        "first": "left_middle_spar_2",
+        "joint": [
+          -34.0,
+          51.0,
+          10.0
+        ],
+        "second": "left_middle_feather_2_1"
+      },
+      {
+        "first": "left_middle_feather_2_1",
+        "joint": [
+          -43.2,
+          49.480000000000004,
+          15.08
+        ],
+        "second": "left_middle_feather_2_2"
+      },
+      {
+        "first": "left_middle_feather_2_2",
+        "joint": [
+          -51.6,
+          45.540000000000006,
+          17.59
+        ],
+        "second": "left_middle_feather_2_3"
+      },
+      {
+        "first": "left_middle_spar_3",
+        "joint": [
+          -48.0,
+          47.0,
+          15.0
+        ],
+        "second": "left_middle_feather_3_1"
+      },
+      {
+        "first": "left_middle_feather_3_1",
+        "joint": [
+          -46.16,
+          39.96,
+          18.24
+        ],
+        "second": "left_middle_feather_3_2"
+      },
+      {
+        "first": "left_middle_feather_3_2",
+        "joint": [
+          -44.48,
+          30.98,
+          19.07
+        ],
+        "second": "left_middle_feather_3_3"
+      },
+      {
+        "first": "left_middle_spar_1",
+        "joint": [
+          -21.0,
+          49.0,
+          4.0
+        ],
+        "second": "left_middle_overlap_vane_1_1"
+      },
+      {
+        "first": "left_middle_overlap_vane_1_1",
+        "joint": [
+          -28.14,
+          53.04,
+          7.779999999999999
+        ],
+        "second": "left_middle_overlap_vane_1_2"
+      },
+      {
+        "first": "left_middle_overlap_vane_1_2",
+        "joint": [
+          -36.3,
+          55.75,
+          12.1
+        ],
+        "second": "left_middle_overlap_vane_1_3"
+      },
+      {
+        "first": "left_middle_spar_3",
+        "joint": [
+          -48.0,
+          47.0,
+          15.0
+        ],
+        "second": "left_middle_overlap_vane_2_1"
+      },
+      {
+        "first": "left_middle_overlap_vane_2_1",
+        "joint": [
+          -45.48,
+          42.22,
+          16.26
+        ],
+        "second": "left_middle_overlap_vane_2_2"
+      },
+      {
+        "first": "left_middle_overlap_vane_2_2",
+        "joint": [
+          -42.6,
+          34.85,
+          17.7
+        ],
+        "second": "left_middle_overlap_vane_2_3"
+      },
+      {
+        "first": "left_middle_spar_2",
+        "joint": [
+          -34.0,
+          51.0,
+          10.897
+        ],
+        "second": "left_middle_wing_eye_1_sclera"
+      },
+      {
+        "first": "left_middle_wing_eye_1_sclera",
+        "joint": [
+          -34.0,
+          51.0,
+          11.97
+        ],
+        "second": "left_middle_wing_eye_1_iris"
+      },
+      {
+        "first": "left_middle_wing_eye_1_iris",
+        "joint": [
+          -34.0,
+          51.0,
+          12.520999999999999
+        ],
+        "second": "left_middle_wing_eye_1_pupil"
+      },
+      {
+        "first": "body_core",
+        "joint": [
+          9.0,
+          43.0,
+          0.0
+        ],
+        "second": "right_middle_spar_1"
+      },
+      {
+        "first": "right_middle_spar_1",
+        "joint": [
+          21.0,
+          49.0,
+          4.0
+        ],
+        "second": "right_middle_spar_2"
+      },
+      {
+        "first": "right_middle_spar_2",
+        "joint": [
+          34.0,
+          51.0,
+          10.0
+        ],
+        "second": "right_middle_spar_3"
+      },
+      {
+        "first": "right_middle_spar_1",
+        "joint": [
+          21.0,
+          49.0,
+          4.0
+        ],
+        "second": "right_middle_feather_1_1"
+      },
+      {
+        "first": "right_middle_feather_1_1",
+        "joint": [
+          31.58,
+          56.220000000000006,
+          10.000000000000002
+        ],
+        "second": "right_middle_feather_1_2"
+      },
+      {
+        "first": "right_middle_feather_1_2",
+        "joint": [
+          41.239999999999995,
+          60.260000000000005,
+          13.350000000000001
+        ],
+        "second": "right_middle_feather_1_3"
+      },
+      {
+        "first": "right_middle_spar_2",
+        "joint": [
+          34.0,
+          51.0,
+          10.0
+        ],
+        "second": "right_middle_feather_2_1"
+      },
+      {
+        "first": "right_middle_feather_2_1",
+        "joint": [
+          43.2,
+          49.480000000000004,
+          15.08
+        ],
+        "second": "right_middle_feather_2_2"
+      },
+      {
+        "first": "right_middle_feather_2_2",
+        "joint": [
+          51.6,
+          45.540000000000006,
+          17.59
+        ],
+        "second": "right_middle_feather_2_3"
+      },
+      {
+        "first": "right_middle_spar_3",
+        "joint": [
+          48.0,
+          47.0,
+          15.0
+        ],
+        "second": "right_middle_feather_3_1"
+      },
+      {
+        "first": "right_middle_feather_3_1",
+        "joint": [
+          46.16,
+          39.96,
+          18.24
+        ],
+        "second": "right_middle_feather_3_2"
+      },
+      {
+        "first": "right_middle_feather_3_2",
+        "joint": [
+          44.48,
+          30.98,
+          19.07
+        ],
+        "second": "right_middle_feather_3_3"
+      },
+      {
+        "first": "right_middle_spar_1",
+        "joint": [
+          21.0,
+          49.0,
+          4.0
+        ],
+        "second": "right_middle_overlap_vane_1_1"
+      },
+      {
+        "first": "right_middle_overlap_vane_1_1",
+        "joint": [
+          28.14,
+          53.04,
+          7.779999999999999
+        ],
+        "second": "right_middle_overlap_vane_1_2"
+      },
+      {
+        "first": "right_middle_overlap_vane_1_2",
+        "joint": [
+          36.3,
+          55.75,
+          12.1
+        ],
+        "second": "right_middle_overlap_vane_1_3"
+      },
+      {
+        "first": "right_middle_spar_3",
+        "joint": [
+          48.0,
+          47.0,
+          15.0
+        ],
+        "second": "right_middle_overlap_vane_2_1"
+      },
+      {
+        "first": "right_middle_overlap_vane_2_1",
+        "joint": [
+          45.48,
+          42.22,
+          16.26
+        ],
+        "second": "right_middle_overlap_vane_2_2"
+      },
+      {
+        "first": "right_middle_overlap_vane_2_2",
+        "joint": [
+          42.6,
+          34.85,
+          17.7
+        ],
+        "second": "right_middle_overlap_vane_2_3"
+      },
+      {
+        "first": "right_middle_spar_2",
+        "joint": [
+          34.0,
+          51.0,
+          10.897
+        ],
+        "second": "right_middle_wing_eye_1_sclera"
+      },
+      {
+        "first": "right_middle_wing_eye_1_sclera",
+        "joint": [
+          34.0,
+          51.0,
+          11.97
+        ],
+        "second": "right_middle_wing_eye_1_iris"
+      },
+      {
+        "first": "right_middle_wing_eye_1_iris",
+        "joint": [
+          34.0,
+          51.0,
+          12.520999999999999
+        ],
+        "second": "right_middle_wing_eye_1_pupil"
+      },
+      {
+        "first": "body_core",
+        "joint": [
+          -8.0,
+          40.0,
+          6.0
+        ],
+        "second": "left_front_lower_spar_1"
+      },
+      {
+        "first": "left_front_lower_spar_1",
+        "joint": [
+          -16.0,
+          32.0,
+          12.0
+        ],
+        "second": "left_front_lower_spar_2"
+      },
+      {
+        "first": "left_front_lower_spar_2",
+        "joint": [
+          -23.0,
+          19.0,
+          18.0
+        ],
+        "second": "left_front_lower_spar_3"
+      },
+      {
+        "first": "left_front_lower_spar_1",
+        "joint": [
+          -16.0,
+          32.0,
+          12.0
+        ],
+        "second": "left_front_lower_feather_1_1"
+      },
+      {
+        "first": "left_front_lower_feather_1_1",
+        "joint": [
+          -26.12,
+          34.620000000000005,
+          16.62
+        ],
+        "second": "left_front_lower_feather_1_2"
+      },
+      {
+        "first": "left_front_lower_feather_1_2",
+        "joint": [
+          -35.36,
+          34.46,
+          18.71
+        ],
+        "second": "left_front_lower_feather_1_3"
+      },
+      {
+        "first": "left_front_lower_spar_2",
+        "joint": [
+          -23.0,
+          19.0,
+          18.0
+        ],
+        "second": "left_front_lower_feather_2_1"
+      },
+      {
+        "first": "left_front_lower_feather_2_1",
+        "joint": [
+          -32.66,
+          19.32,
+          21.7
+        ],
+        "second": "left_front_lower_feather_2_2"
+      },
+      {
+        "first": "left_front_lower_feather_2_2",
+        "joint": [
+          -41.480000000000004,
+          17.06,
+          22.95
+        ],
+        "second": "left_front_lower_feather_2_3"
+      },
+      {
+        "first": "left_front_lower_spar_3",
+        "joint": [
+          -27.0,
+          5.0,
+          22.0
+        ],
+        "second": "left_front_lower_feather_3_1"
+      },
+      {
+        "first": "left_front_lower_feather_3_1",
+        "joint": [
+          -28.84,
+          2.5599999999999996,
+          24.779999999999998
+        ],
+        "second": "left_front_lower_feather_3_2"
+      },
+      {
+        "first": "left_front_lower_feather_3_2",
+        "joint": [
+          -30.52,
+          -2.2199999999999998,
+          25.19
+        ],
+        "second": "left_front_lower_feather_3_3"
+      },
+      {
+        "first": "left_front_lower_spar_1",
+        "joint": [
+          -16.0,
+          32.0,
+          12.0
+        ],
+        "second": "left_front_lower_overlap_vane_1_1"
+      },
+      {
+        "first": "left_front_lower_overlap_vane_1_1",
+        "joint": [
+          -22.72,
+          32.26,
+          14.52
+        ],
+        "second": "left_front_lower_overlap_vane_1_2"
+      },
+      {
+        "first": "left_front_lower_overlap_vane_1_2",
+        "joint": [
+          -30.4,
+          30.65,
+          17.4
+        ],
+        "second": "left_front_lower_overlap_vane_1_3"
+      },
+      {
+        "first": "left_front_lower_spar_3",
+        "joint": [
+          -27.0,
+          5.0,
+          22.0
+        ],
+        "second": "left_front_lower_overlap_vane_2_1"
+      },
+      {
+        "first": "left_front_lower_overlap_vane_2_1",
+        "joint": [
+          -30.36,
+          5.68,
+          22.84
+        ],
+        "second": "left_front_lower_overlap_vane_2_2"
+      },
+      {
+        "first": "left_front_lower_overlap_vane_2_2",
+        "joint": [
+          -34.2,
+          4.55,
+          23.8
+        ],
+        "second": "left_front_lower_overlap_vane_2_3"
+      },
+      {
+        "first": "left_front_lower_spar_2",
+        "joint": [
+          -23.0,
+          19.0,
+          18.897000000000002
+        ],
+        "second": "left_front_lower_wing_eye_1_sclera"
+      },
+      {
+        "first": "left_front_lower_wing_eye_1_sclera",
+        "joint": [
+          -23.0,
+          19.0,
+          19.97
+        ],
+        "second": "left_front_lower_wing_eye_1_iris"
+      },
+      {
+        "first": "left_front_lower_wing_eye_1_iris",
+        "joint": [
+          -23.0,
+          19.0,
+          20.521
+        ],
+        "second": "left_front_lower_wing_eye_1_pupil"
+      },
+      {
+        "first": "body_core",
+        "joint": [
+          8.0,
+          40.0,
+          6.0
+        ],
+        "second": "right_front_lower_spar_1"
+      },
+      {
+        "first": "right_front_lower_spar_1",
+        "joint": [
+          16.0,
+          32.0,
+          12.0
+        ],
+        "second": "right_front_lower_spar_2"
+      },
+      {
+        "first": "right_front_lower_spar_2",
+        "joint": [
+          23.0,
+          19.0,
+          18.0
+        ],
+        "second": "right_front_lower_spar_3"
+      },
+      {
+        "first": "right_front_lower_spar_1",
+        "joint": [
+          16.0,
+          32.0,
+          12.0
+        ],
+        "second": "right_front_lower_feather_1_1"
+      },
+      {
+        "first": "right_front_lower_feather_1_1",
+        "joint": [
+          26.12,
+          34.620000000000005,
+          16.62
+        ],
+        "second": "right_front_lower_feather_1_2"
+      },
+      {
+        "first": "right_front_lower_feather_1_2",
+        "joint": [
+          35.36,
+          34.46,
+          18.71
+        ],
+        "second": "right_front_lower_feather_1_3"
+      },
+      {
+        "first": "right_front_lower_spar_2",
+        "joint": [
+          23.0,
+          19.0,
+          18.0
+        ],
+        "second": "right_front_lower_feather_2_1"
+      },
+      {
+        "first": "right_front_lower_feather_2_1",
+        "joint": [
+          32.66,
+          19.32,
+          21.7
+        ],
+        "second": "right_front_lower_feather_2_2"
+      },
+      {
+        "first": "right_front_lower_feather_2_2",
+        "joint": [
+          41.480000000000004,
+          17.06,
+          22.95
+        ],
+        "second": "right_front_lower_feather_2_3"
+      },
+      {
+        "first": "right_front_lower_spar_3",
+        "joint": [
+          27.0,
+          5.0,
+          22.0
+        ],
+        "second": "right_front_lower_feather_3_1"
+      },
+      {
+        "first": "right_front_lower_feather_3_1",
+        "joint": [
+          28.84,
+          2.5599999999999996,
+          24.779999999999998
+        ],
+        "second": "right_front_lower_feather_3_2"
+      },
+      {
+        "first": "right_front_lower_feather_3_2",
+        "joint": [
+          30.52,
+          -2.2199999999999998,
+          25.19
+        ],
+        "second": "right_front_lower_feather_3_3"
+      },
+      {
+        "first": "right_front_lower_spar_1",
+        "joint": [
+          16.0,
+          32.0,
+          12.0
+        ],
+        "second": "right_front_lower_overlap_vane_1_1"
+      },
+      {
+        "first": "right_front_lower_overlap_vane_1_1",
+        "joint": [
+          22.72,
+          32.26,
+          14.52
+        ],
+        "second": "right_front_lower_overlap_vane_1_2"
+      },
+      {
+        "first": "right_front_lower_overlap_vane_1_2",
+        "joint": [
+          30.4,
+          30.65,
+          17.4
+        ],
+        "second": "right_front_lower_overlap_vane_1_3"
+      },
+      {
+        "first": "right_front_lower_spar_3",
+        "joint": [
+          27.0,
+          5.0,
+          22.0
+        ],
+        "second": "right_front_lower_overlap_vane_2_1"
+      },
+      {
+        "first": "right_front_lower_overlap_vane_2_1",
+        "joint": [
+          30.36,
+          5.68,
+          22.84
+        ],
+        "second": "right_front_lower_overlap_vane_2_2"
+      },
+      {
+        "first": "right_front_lower_overlap_vane_2_2",
+        "joint": [
+          34.2,
+          4.55,
+          23.8
+        ],
+        "second": "right_front_lower_overlap_vane_2_3"
+      },
+      {
+        "first": "right_front_lower_spar_2",
+        "joint": [
+          23.0,
+          19.0,
+          18.897000000000002
+        ],
+        "second": "right_front_lower_wing_eye_1_sclera"
+      },
+      {
+        "first": "right_front_lower_wing_eye_1_sclera",
+        "joint": [
+          23.0,
+          19.0,
+          19.97
+        ],
+        "second": "right_front_lower_wing_eye_1_iris"
+      },
+      {
+        "first": "right_front_lower_wing_eye_1_iris",
+        "joint": [
+          23.0,
+          19.0,
+          20.521
+        ],
+        "second": "right_front_lower_wing_eye_1_pupil"
+      }
+    ],
+    "distal_taper_contract": {
+      "maximum_terminal_depth": 1.0,
+      "maximum_terminal_width": 1.4,
+      "segments_per_overlap_vane": 3,
+      "segments_per_primary": 3,
+      "staggered_terminal_lengths": true,
+      "strictly_decreasing_width_and_depth": true
+    },
+    "eye_crown": {
+      "angled_corner_yaw_degrees": 38.0,
+      "segments": [
+        "front_eye_band",
+        "front_left_crown_wrap",
+        "left_side_temple",
+        "rear_left_crown_wrap",
+        "back_eye_band",
+        "rear_right_crown_wrap",
+        "right_side_temple",
+        "front_right_crown_wrap"
+      ],
+      "topology": "eight-part wrapped ring"
+    },
+    "eyes": [
+      {
+        "center": [
+          -13.0,
+          44.2,
+          13.2
+        ],
+        "cubes": [
+          "front_eye_1_sclera",
+          "front_eye_1_iris",
+          "front_eye_1_pupil"
+        ],
+        "name": "front_eye_1",
+        "orientation": "south"
+      },
+      {
+        "center": [
+          -9.0,
+          44.2,
+          13.2
+        ],
+        "cubes": [
+          "front_eye_2_sclera",
+          "front_eye_2_iris",
+          "front_eye_2_pupil"
+        ],
+        "name": "front_eye_2",
+        "orientation": "south"
+      },
+      {
+        "center": [
+          -5.8,
+          44.2,
+          13.2
+        ],
+        "cubes": [
+          "front_eye_3_sclera",
+          "front_eye_3_iris",
+          "front_eye_3_pupil"
+        ],
+        "name": "front_eye_3",
+        "orientation": "south"
+      },
+      {
+        "center": [
+          0.0,
+          45.6,
+          13.2
+        ],
+        "cubes": [
+          "front_eye_4_sclera",
+          "front_eye_4_iris",
+          "front_eye_4_pupil"
+        ],
+        "name": "front_eye_4",
+        "orientation": "south"
+      },
+      {
+        "center": [
+          5.8,
+          44.2,
+          13.2
+        ],
+        "cubes": [
+          "front_eye_5_sclera",
+          "front_eye_5_iris",
+          "front_eye_5_pupil"
+        ],
+        "name": "front_eye_5",
+        "orientation": "south"
+      },
+      {
+        "center": [
+          9.0,
+          44.2,
+          13.2
+        ],
+        "cubes": [
+          "front_eye_6_sclera",
+          "front_eye_6_iris",
+          "front_eye_6_pupil"
+        ],
+        "name": "front_eye_6",
+        "orientation": "south"
+      },
+      {
+        "center": [
+          13.0,
+          44.2,
+          13.2
+        ],
+        "cubes": [
+          "front_eye_7_sclera",
+          "front_eye_7_iris",
+          "front_eye_7_pupil"
+        ],
+        "name": "front_eye_7",
+        "orientation": "south"
+      },
+      {
+        "center": [
+          -9.5,
+          43.2,
+          -13.2
+        ],
+        "cubes": [
+          "back_eye_1_sclera",
+          "back_eye_1_iris",
+          "back_eye_1_pupil"
+        ],
+        "name": "back_eye_1",
+        "orientation": "north"
+      },
+      {
+        "center": [
+          -4.8,
+          43.2,
+          -13.2
+        ],
+        "cubes": [
+          "back_eye_2_sclera",
+          "back_eye_2_iris",
+          "back_eye_2_pupil"
+        ],
+        "name": "back_eye_2",
+        "orientation": "north"
+      },
+      {
+        "center": [
+          0.0,
+          43.2,
+          -13.2
+        ],
+        "cubes": [
+          "back_eye_3_sclera",
+          "back_eye_3_iris",
+          "back_eye_3_pupil"
+        ],
+        "name": "back_eye_3",
+        "orientation": "north"
+      },
+      {
+        "center": [
+          4.8,
+          43.2,
+          -13.2
+        ],
+        "cubes": [
+          "back_eye_4_sclera",
+          "back_eye_4_iris",
+          "back_eye_4_pupil"
+        ],
+        "name": "back_eye_4",
+        "orientation": "north"
+      },
+      {
+        "center": [
+          9.5,
+          43.2,
+          -13.2
+        ],
+        "cubes": [
+          "back_eye_5_sclera",
+          "back_eye_5_iris",
+          "back_eye_5_pupil"
+        ],
+        "name": "back_eye_5",
+        "orientation": "north"
+      },
+      {
+        "center": [
+          -14.8,
+          41.0,
+          0.0
+        ],
+        "cubes": [
+          "left_temple_eye_sclera",
+          "left_temple_eye_iris",
+          "left_temple_eye_pupil"
+        ],
+        "name": "left_temple_eye",
+        "orientation": "west"
+      },
+      {
+        "center": [
+          14.8,
+          41.0,
+          0.0
+        ],
+        "cubes": [
+          "right_temple_eye_sclera",
+          "right_temple_eye_iris",
+          "right_temple_eye_pupil"
+        ],
+        "name": "right_temple_eye",
+        "orientation": "east"
+      },
+      {
+        "center": [
+          0.0,
+          52.6,
+          0.0
+        ],
+        "cubes": [
+          "zenith_eye_sclera",
+          "zenith_eye_iris",
+          "zenith_eye_pupil"
+        ],
+        "name": "zenith_eye",
+        "orientation": "up"
+      },
+      {
+        "center": [
+          -17.5,
+          71.0,
+          -16.1
+        ],
+        "cubes": [
+          "left_rear_upper_wing_eye_1_sclera",
+          "left_rear_upper_wing_eye_1_iris",
+          "left_rear_upper_wing_eye_1_pupil"
+        ],
+        "name": "left_rear_upper_wing_eye_1",
+        "orientation": "north"
+      },
+      {
+        "center": [
+          17.5,
+          71.0,
+          -16.1
+        ],
+        "cubes": [
+          "right_rear_upper_wing_eye_1_sclera",
+          "right_rear_upper_wing_eye_1_iris",
+          "right_rear_upper_wing_eye_1_pupil"
+        ],
+        "name": "right_rear_upper_wing_eye_1",
+        "orientation": "north"
+      },
+      {
+        "center": [
+          -34.0,
+          51.0,
+          11.1
+        ],
+        "cubes": [
+          "left_middle_wing_eye_1_sclera",
+          "left_middle_wing_eye_1_iris",
+          "left_middle_wing_eye_1_pupil"
+        ],
+        "name": "left_middle_wing_eye_1",
+        "orientation": "south"
+      },
+      {
+        "center": [
+          34.0,
+          51.0,
+          11.1
+        ],
+        "cubes": [
+          "right_middle_wing_eye_1_sclera",
+          "right_middle_wing_eye_1_iris",
+          "right_middle_wing_eye_1_pupil"
+        ],
+        "name": "right_middle_wing_eye_1",
+        "orientation": "south"
+      },
+      {
+        "center": [
+          -23.0,
+          19.0,
+          19.1
+        ],
+        "cubes": [
+          "left_front_lower_wing_eye_1_sclera",
+          "left_front_lower_wing_eye_1_iris",
+          "left_front_lower_wing_eye_1_pupil"
+        ],
+        "name": "left_front_lower_wing_eye_1",
+        "orientation": "south"
+      },
+      {
+        "center": [
+          23.0,
+          19.0,
+          19.1
+        ],
+        "cubes": [
+          "right_front_lower_wing_eye_1_sclera",
+          "right_front_lower_wing_eye_1_iris",
+          "right_front_lower_wing_eye_1_pupil"
+        ],
+        "name": "right_front_lower_wing_eye_1",
+        "orientation": "south"
+      }
+    ],
+    "feature_inventory": {
+      "back_crown_eyes": 5,
+      "bilateral_wings": 6,
+      "broad_overlap_vane_segments": 36,
+      "broad_overlap_vanes": 12,
+      "feather_segments": 54,
+      "front_back_depth_bands": 3,
+      "front_crown_eyes": 7,
+      "primary_feathers": 18,
+      "side_eyes": 2,
+      "top_eyes": 1,
+      "total_geometric_eyes": 21,
+      "wing_eyes": 6,
+      "wing_layers": 3,
+      "wing_spar_segments": 18
+    },
+    "holistic_3d_contract": {
+      "front_is_not_a_texture_billboard": true,
+      "minimum_required_back_to_front_silhouette_area": 0.9,
+      "minimum_required_body_depth_to_width": 0.85,
+      "minimum_required_bottom_to_front_silhouette_area": 0.55,
+      "minimum_required_depth_to_width": 0.4,
+      "minimum_required_side_to_front_bbox_width": 0.5,
+      "minimum_required_side_to_front_silhouette_area": 0.6,
+      "minimum_required_top_to_front_silhouette_area": 0.7,
+      "rear_identity_geometry_authored": true,
+      "side_identity_geometry_authored": true,
+      "top_identity_geometry_authored": true,
+      "wing_depth_layers": [
+        -14.0,
+        7.5,
+        16.0
+      ]
+    },
+    "lane": "agent-authored-holistic-semantic-volume",
+    "single_view_hidden_geometry": "inferred_conservatively_not_observed",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0,
+    "wing_records": [
+      {
+        "depth_center": -14.0,
+        "feather_profiles": [
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "left_rear_upper_feather_1",
+            "segments": [
+              "left_rear_upper_feather_1_1",
+              "left_rear_upper_feather_1_2",
+              "left_rear_upper_feather_1_3"
+            ],
+            "terminal_length": 3.303165,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          },
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "left_rear_upper_feather_2",
+            "segments": [
+              "left_rear_upper_feather_2_1",
+              "left_rear_upper_feather_2_2",
+              "left_rear_upper_feather_2_3"
+            ],
+            "terminal_length": 3.32435,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          },
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "left_rear_upper_feather_3",
+            "segments": [
+              "left_rear_upper_feather_3_1",
+              "left_rear_upper_feather_3_2",
+              "left_rear_upper_feather_3_3"
+            ],
+            "terminal_length": 5.933271,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          }
+        ],
+        "feathers": [
+          "left_rear_upper_feather_1_1",
+          "left_rear_upper_feather_1_2",
+          "left_rear_upper_feather_1_3",
+          "left_rear_upper_feather_2_1",
+          "left_rear_upper_feather_2_2",
+          "left_rear_upper_feather_2_3",
+          "left_rear_upper_feather_3_1",
+          "left_rear_upper_feather_3_2",
+          "left_rear_upper_feather_3_3"
+        ],
+        "layer": "rear_upper",
+        "ocular_ornaments": [
+          "left_rear_upper_wing_eye_1_sclera",
+          "left_rear_upper_wing_eye_1_iris",
+          "left_rear_upper_wing_eye_1_pupil"
+        ],
+        "overlap_vane_profiles": [
+          {
+            "depths": [
+              5.8,
+              3.2,
+              1.0
+            ],
+            "name": "left_rear_upper_overlap_vane_1",
+            "segments": [
+              "left_rear_upper_overlap_vane_1_1",
+              "left_rear_upper_overlap_vane_1_2",
+              "left_rear_upper_overlap_vane_1_3"
+            ],
+            "terminal_length": 2.408838,
+            "widths": [
+              11.0,
+              6.0,
+              1.4
+            ]
+          },
+          {
+            "depths": [
+              5.8,
+              3.2,
+              1.0
+            ],
+            "name": "left_rear_upper_overlap_vane_2",
+            "segments": [
+              "left_rear_upper_overlap_vane_2_1",
+              "left_rear_upper_overlap_vane_2_2",
+              "left_rear_upper_overlap_vane_2_3"
+            ],
+            "terminal_length": 4.142765,
+            "widths": [
+              11.0,
+              6.0,
+              1.4
+            ]
+          }
+        ],
+        "overlap_vanes": [
+          "left_rear_upper_overlap_vane_1_1",
+          "left_rear_upper_overlap_vane_1_2",
+          "left_rear_upper_overlap_vane_1_3",
+          "left_rear_upper_overlap_vane_2_1",
+          "left_rear_upper_overlap_vane_2_2",
+          "left_rear_upper_overlap_vane_2_3"
+        ],
+        "sector_sweep_degrees": 42.70939,
+        "side": "left",
+        "spar": [
+          "left_rear_upper_spar_1",
+          "left_rear_upper_spar_2",
+          "left_rear_upper_spar_3"
+        ]
+      },
+      {
+        "depth_center": -14.0,
+        "feather_profiles": [
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "right_rear_upper_feather_1",
+            "segments": [
+              "right_rear_upper_feather_1_1",
+              "right_rear_upper_feather_1_2",
+              "right_rear_upper_feather_1_3"
+            ],
+            "terminal_length": 3.303165,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          },
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "right_rear_upper_feather_2",
+            "segments": [
+              "right_rear_upper_feather_2_1",
+              "right_rear_upper_feather_2_2",
+              "right_rear_upper_feather_2_3"
+            ],
+            "terminal_length": 3.32435,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          },
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "right_rear_upper_feather_3",
+            "segments": [
+              "right_rear_upper_feather_3_1",
+              "right_rear_upper_feather_3_2",
+              "right_rear_upper_feather_3_3"
+            ],
+            "terminal_length": 5.933271,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          }
+        ],
+        "feathers": [
+          "right_rear_upper_feather_1_1",
+          "right_rear_upper_feather_1_2",
+          "right_rear_upper_feather_1_3",
+          "right_rear_upper_feather_2_1",
+          "right_rear_upper_feather_2_2",
+          "right_rear_upper_feather_2_3",
+          "right_rear_upper_feather_3_1",
+          "right_rear_upper_feather_3_2",
+          "right_rear_upper_feather_3_3"
+        ],
+        "layer": "rear_upper",
+        "ocular_ornaments": [
+          "right_rear_upper_wing_eye_1_sclera",
+          "right_rear_upper_wing_eye_1_iris",
+          "right_rear_upper_wing_eye_1_pupil"
+        ],
+        "overlap_vane_profiles": [
+          {
+            "depths": [
+              5.8,
+              3.2,
+              1.0
+            ],
+            "name": "right_rear_upper_overlap_vane_1",
+            "segments": [
+              "right_rear_upper_overlap_vane_1_1",
+              "right_rear_upper_overlap_vane_1_2",
+              "right_rear_upper_overlap_vane_1_3"
+            ],
+            "terminal_length": 2.408838,
+            "widths": [
+              11.0,
+              6.0,
+              1.4
+            ]
+          },
+          {
+            "depths": [
+              5.8,
+              3.2,
+              1.0
+            ],
+            "name": "right_rear_upper_overlap_vane_2",
+            "segments": [
+              "right_rear_upper_overlap_vane_2_1",
+              "right_rear_upper_overlap_vane_2_2",
+              "right_rear_upper_overlap_vane_2_3"
+            ],
+            "terminal_length": 4.142765,
+            "widths": [
+              11.0,
+              6.0,
+              1.4
+            ]
+          }
+        ],
+        "overlap_vanes": [
+          "right_rear_upper_overlap_vane_1_1",
+          "right_rear_upper_overlap_vane_1_2",
+          "right_rear_upper_overlap_vane_1_3",
+          "right_rear_upper_overlap_vane_2_1",
+          "right_rear_upper_overlap_vane_2_2",
+          "right_rear_upper_overlap_vane_2_3"
+        ],
+        "sector_sweep_degrees": 42.70939,
+        "side": "right",
+        "spar": [
+          "right_rear_upper_spar_1",
+          "right_rear_upper_spar_2",
+          "right_rear_upper_spar_3"
+        ]
+      },
+      {
+        "depth_center": 7.5,
+        "feather_profiles": [
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "left_middle_feather_1",
+            "segments": [
+              "left_middle_feather_1_1",
+              "left_middle_feather_1_2",
+              "left_middle_feather_1_3"
+            ],
+            "terminal_length": 2.930478,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          },
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "left_middle_feather_2",
+            "segments": [
+              "left_middle_feather_2_1",
+              "left_middle_feather_2_2",
+              "left_middle_feather_2_3"
+            ],
+            "terminal_length": 2.88092,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          },
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "left_middle_feather_3",
+            "segments": [
+              "left_middle_feather_3_1",
+              "left_middle_feather_3_2",
+              "left_middle_feather_3_3"
+            ],
+            "terminal_length": 3.019222,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          }
+        ],
+        "feathers": [
+          "left_middle_feather_1_1",
+          "left_middle_feather_1_2",
+          "left_middle_feather_1_3",
+          "left_middle_feather_2_1",
+          "left_middle_feather_2_2",
+          "left_middle_feather_2_3",
+          "left_middle_feather_3_1",
+          "left_middle_feather_3_2",
+          "left_middle_feather_3_3"
+        ],
+        "layer": "middle",
+        "ocular_ornaments": [
+          "left_middle_wing_eye_1_sclera",
+          "left_middle_wing_eye_1_iris",
+          "left_middle_wing_eye_1_pupil"
+        ],
+        "overlap_vane_profiles": [
+          {
+            "depths": [
+              5.8,
+              3.2,
+              1.0
+            ],
+            "name": "left_middle_overlap_vane_1",
+            "segments": [
+              "left_middle_overlap_vane_1_1",
+              "left_middle_overlap_vane_1_2",
+              "left_middle_overlap_vane_1_3"
+            ],
+            "terminal_length": 1.939716,
+            "widths": [
+              11.0,
+              6.0,
+              1.4
+            ]
+          },
+          {
+            "depths": [
+              5.8,
+              3.2,
+              1.0
+            ],
+            "name": "left_middle_overlap_vane_2",
+            "segments": [
+              "left_middle_overlap_vane_2_1",
+              "left_middle_overlap_vane_2_2",
+              "left_middle_overlap_vane_2_3"
+            ],
+            "terminal_length": 1.967867,
+            "widths": [
+              11.0,
+              6.0,
+              1.4
+            ]
+          }
+        ],
+        "overlap_vanes": [
+          "left_middle_overlap_vane_1_1",
+          "left_middle_overlap_vane_1_2",
+          "left_middle_overlap_vane_1_3",
+          "left_middle_overlap_vane_2_1",
+          "left_middle_overlap_vane_2_2",
+          "left_middle_overlap_vane_2_3"
+        ],
+        "sector_sweep_degrees": 21.037511,
+        "side": "left",
+        "spar": [
+          "left_middle_spar_1",
+          "left_middle_spar_2",
+          "left_middle_spar_3"
+        ]
+      },
+      {
+        "depth_center": 7.5,
+        "feather_profiles": [
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "right_middle_feather_1",
+            "segments": [
+              "right_middle_feather_1_1",
+              "right_middle_feather_1_2",
+              "right_middle_feather_1_3"
+            ],
+            "terminal_length": 2.930478,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          },
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "right_middle_feather_2",
+            "segments": [
+              "right_middle_feather_2_1",
+              "right_middle_feather_2_2",
+              "right_middle_feather_2_3"
+            ],
+            "terminal_length": 2.88092,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          },
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "right_middle_feather_3",
+            "segments": [
+              "right_middle_feather_3_1",
+              "right_middle_feather_3_2",
+              "right_middle_feather_3_3"
+            ],
+            "terminal_length": 3.019222,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          }
+        ],
+        "feathers": [
+          "right_middle_feather_1_1",
+          "right_middle_feather_1_2",
+          "right_middle_feather_1_3",
+          "right_middle_feather_2_1",
+          "right_middle_feather_2_2",
+          "right_middle_feather_2_3",
+          "right_middle_feather_3_1",
+          "right_middle_feather_3_2",
+          "right_middle_feather_3_3"
+        ],
+        "layer": "middle",
+        "ocular_ornaments": [
+          "right_middle_wing_eye_1_sclera",
+          "right_middle_wing_eye_1_iris",
+          "right_middle_wing_eye_1_pupil"
+        ],
+        "overlap_vane_profiles": [
+          {
+            "depths": [
+              5.8,
+              3.2,
+              1.0
+            ],
+            "name": "right_middle_overlap_vane_1",
+            "segments": [
+              "right_middle_overlap_vane_1_1",
+              "right_middle_overlap_vane_1_2",
+              "right_middle_overlap_vane_1_3"
+            ],
+            "terminal_length": 1.939716,
+            "widths": [
+              11.0,
+              6.0,
+              1.4
+            ]
+          },
+          {
+            "depths": [
+              5.8,
+              3.2,
+              1.0
+            ],
+            "name": "right_middle_overlap_vane_2",
+            "segments": [
+              "right_middle_overlap_vane_2_1",
+              "right_middle_overlap_vane_2_2",
+              "right_middle_overlap_vane_2_3"
+            ],
+            "terminal_length": 1.967867,
+            "widths": [
+              11.0,
+              6.0,
+              1.4
+            ]
+          }
+        ],
+        "overlap_vanes": [
+          "right_middle_overlap_vane_1_1",
+          "right_middle_overlap_vane_1_2",
+          "right_middle_overlap_vane_1_3",
+          "right_middle_overlap_vane_2_1",
+          "right_middle_overlap_vane_2_2",
+          "right_middle_overlap_vane_2_3"
+        ],
+        "sector_sweep_degrees": 21.037511,
+        "side": "right",
+        "spar": [
+          "right_middle_spar_1",
+          "right_middle_spar_2",
+          "right_middle_spar_3"
+        ]
+      },
+      {
+        "depth_center": 16.0,
+        "feather_profiles": [
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "left_front_lower_feather_1",
+            "segments": [
+              "left_front_lower_feather_1_1",
+              "left_front_lower_feather_1_2",
+              "left_front_lower_feather_1_3"
+            ],
+            "terminal_length": 2.695422,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          },
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "left_front_lower_feather_2",
+            "segments": [
+              "left_front_lower_feather_2_1",
+              "left_front_lower_feather_2_2",
+              "left_front_lower_feather_2_3"
+            ],
+            "terminal_length": 2.734319,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          },
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "left_front_lower_feather_3",
+            "segments": [
+              "left_front_lower_feather_3_1",
+              "left_front_lower_feather_3_2",
+              "left_front_lower_feather_3_3"
+            ],
+            "terminal_length": 1.853348,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          }
+        ],
+        "feathers": [
+          "left_front_lower_feather_1_1",
+          "left_front_lower_feather_1_2",
+          "left_front_lower_feather_1_3",
+          "left_front_lower_feather_2_1",
+          "left_front_lower_feather_2_2",
+          "left_front_lower_feather_2_3",
+          "left_front_lower_feather_3_1",
+          "left_front_lower_feather_3_2",
+          "left_front_lower_feather_3_3"
+        ],
+        "layer": "front_lower",
+        "ocular_ornaments": [
+          "left_front_lower_wing_eye_1_sclera",
+          "left_front_lower_wing_eye_1_iris",
+          "left_front_lower_wing_eye_1_pupil"
+        ],
+        "overlap_vane_profiles": [
+          {
+            "depths": [
+              5.8,
+              3.2,
+              1.0
+            ],
+            "name": "left_front_lower_overlap_vane_1",
+            "segments": [
+              "left_front_lower_overlap_vane_1_1",
+              "left_front_lower_overlap_vane_1_2",
+              "left_front_lower_overlap_vane_1_3"
+            ],
+            "terminal_length": 1.828251,
+            "widths": [
+              9.8,
+              5.5,
+              1.2
+            ]
+          },
+          {
+            "depths": [
+              5.8,
+              3.2,
+              1.0
+            ],
+            "name": "left_front_lower_overlap_vane_2",
+            "segments": [
+              "left_front_lower_overlap_vane_2_1",
+              "left_front_lower_overlap_vane_2_2",
+              "left_front_lower_overlap_vane_2_3"
+            ],
+            "terminal_length": 0.991211,
+            "widths": [
+              9.8,
+              5.5,
+              1.2
+            ]
+          }
+        ],
+        "overlap_vanes": [
+          "left_front_lower_overlap_vane_1_1",
+          "left_front_lower_overlap_vane_1_2",
+          "left_front_lower_overlap_vane_1_3",
+          "left_front_lower_overlap_vane_2_1",
+          "left_front_lower_overlap_vane_2_2",
+          "left_front_lower_overlap_vane_2_3"
+        ],
+        "sector_sweep_degrees": 40.100908,
+        "side": "left",
+        "spar": [
+          "left_front_lower_spar_1",
+          "left_front_lower_spar_2",
+          "left_front_lower_spar_3"
+        ]
+      },
+      {
+        "depth_center": 16.0,
+        "feather_profiles": [
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "right_front_lower_feather_1",
+            "segments": [
+              "right_front_lower_feather_1_1",
+              "right_front_lower_feather_1_2",
+              "right_front_lower_feather_1_3"
+            ],
+            "terminal_length": 2.695422,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          },
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "right_front_lower_feather_2",
+            "segments": [
+              "right_front_lower_feather_2_1",
+              "right_front_lower_feather_2_2",
+              "right_front_lower_feather_2_3"
+            ],
+            "terminal_length": 2.734319,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          },
+          {
+            "depths": [
+              4.8,
+              2.5,
+              0.8
+            ],
+            "name": "right_front_lower_feather_3",
+            "segments": [
+              "right_front_lower_feather_3_1",
+              "right_front_lower_feather_3_2",
+              "right_front_lower_feather_3_3"
+            ],
+            "terminal_length": 1.853348,
+            "widths": [
+              5.8,
+              3.0,
+              1.0
+            ]
+          }
+        ],
+        "feathers": [
+          "right_front_lower_feather_1_1",
+          "right_front_lower_feather_1_2",
+          "right_front_lower_feather_1_3",
+          "right_front_lower_feather_2_1",
+          "right_front_lower_feather_2_2",
+          "right_front_lower_feather_2_3",
+          "right_front_lower_feather_3_1",
+          "right_front_lower_feather_3_2",
+          "right_front_lower_feather_3_3"
+        ],
+        "layer": "front_lower",
+        "ocular_ornaments": [
+          "right_front_lower_wing_eye_1_sclera",
+          "right_front_lower_wing_eye_1_iris",
+          "right_front_lower_wing_eye_1_pupil"
+        ],
+        "overlap_vane_profiles": [
+          {
+            "depths": [
+              5.8,
+              3.2,
+              1.0
+            ],
+            "name": "right_front_lower_overlap_vane_1",
+            "segments": [
+              "right_front_lower_overlap_vane_1_1",
+              "right_front_lower_overlap_vane_1_2",
+              "right_front_lower_overlap_vane_1_3"
+            ],
+            "terminal_length": 1.828251,
+            "widths": [
+              9.8,
+              5.5,
+              1.2
+            ]
+          },
+          {
+            "depths": [
+              5.8,
+              3.2,
+              1.0
+            ],
+            "name": "right_front_lower_overlap_vane_2",
+            "segments": [
+              "right_front_lower_overlap_vane_2_1",
+              "right_front_lower_overlap_vane_2_2",
+              "right_front_lower_overlap_vane_2_3"
+            ],
+            "terminal_length": 0.991211,
+            "widths": [
+              9.8,
+              5.5,
+              1.2
+            ]
+          }
+        ],
+        "overlap_vanes": [
+          "right_front_lower_overlap_vane_1_1",
+          "right_front_lower_overlap_vane_1_2",
+          "right_front_lower_overlap_vane_1_3",
+          "right_front_lower_overlap_vane_2_1",
+          "right_front_lower_overlap_vane_2_2",
+          "right_front_lower_overlap_vane_2_3"
+        ],
+        "sector_sweep_degrees": 40.100908,
+        "side": "right",
+        "spar": [
+          "right_front_lower_spar_1",
+          "right_front_lower_spar_2",
+          "right_front_lower_spar_3"
+        ]
+      }
+    ],
+    "wing_sector_contract": {
+      "all_spar_feather_and_vane_cubes_require_nonzero_yaw": true,
+      "front_lower_degrees": [
+        35.0,
+        55.0
+      ],
+      "middle_degrees": [
+        15.0,
+        30.0
+      ],
+      "rear_upper_degrees": [
+        35.0,
+        55.0
+      ]
+    }
+  },
+  "geometry": {
+    "precision": 20
+  },
+  "id": "biblical_angel_many_eyed_six_wing",
+  "landmarks": [
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "front_eye_1_pupil",
+      "face": "south",
+      "name": "front_eye_1_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "front_eye_2_pupil",
+      "face": "south",
+      "name": "front_eye_2_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "front_eye_3_pupil",
+      "face": "south",
+      "name": "front_eye_3_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "front_eye_4_pupil",
+      "face": "south",
+      "name": "front_eye_4_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "front_eye_5_pupil",
+      "face": "south",
+      "name": "front_eye_5_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "front_eye_6_pupil",
+      "face": "south",
+      "name": "front_eye_6_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "front_eye_7_pupil",
+      "face": "south",
+      "name": "front_eye_7_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "back_eye_1_pupil",
+      "face": "north",
+      "name": "back_eye_1_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "back_eye_2_pupil",
+      "face": "north",
+      "name": "back_eye_2_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "back_eye_3_pupil",
+      "face": "north",
+      "name": "back_eye_3_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "back_eye_4_pupil",
+      "face": "north",
+      "name": "back_eye_4_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "back_eye_5_pupil",
+      "face": "north",
+      "name": "back_eye_5_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "left_temple_eye_pupil",
+      "face": "west",
+      "name": "left_temple_eye_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "right_temple_eye_pupil",
+      "face": "east",
+      "name": "right_temple_eye_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "zenith_eye_pupil",
+      "face": "up",
+      "name": "zenith_eye_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "left_rear_upper_wing_eye_1_pupil",
+      "face": "north",
+      "name": "left_rear_upper_wing_eye_1_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "right_rear_upper_wing_eye_1_pupil",
+      "face": "north",
+      "name": "right_rear_upper_wing_eye_1_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "left_middle_wing_eye_1_pupil",
+      "face": "south",
+      "name": "left_middle_wing_eye_1_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "right_middle_wing_eye_1_pupil",
+      "face": "south",
+      "name": "right_middle_wing_eye_1_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "left_front_lower_wing_eye_1_pupil",
+      "face": "south",
+      "name": "left_front_lower_wing_eye_1_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5ffff",
+      "center_uv": [
+        0.35,
+        0.32
+      ],
+      "color": "#f5ffff",
+      "cube": "right_front_lower_wing_eye_1_pupil",
+      "face": "south",
+      "name": "right_front_lower_wing_eye_1_glint",
+      "size": [
+        1,
+        1
+      ]
+    }
+  ],
+  "materials": {
+    "feather_shadow": {
+      "base": "#c6b7b7",
+      "highlight": "#e5d9d3",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#897a80"
+    },
+    "gold": {
+      "base": "#d6b67c",
+      "highlight": "#f3dca8",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#8f7246"
+    },
+    "iris_cyan": {
+      "base": "#63c1c8",
+      "highlight": "#a8edf0",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#2b737c"
+    },
+    "iris_dark": {
+      "base": "#2c7782",
+      "highlight": "#63b8c0",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#153b47"
+    },
+    "ivory": {
+      "base": "#e8ddd5",
+      "highlight": "#fff8ef",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#b9acad"
+    },
+    "ivory_light": {
+      "base": "#f5eee7",
+      "highlight": "#ffffff",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#cec2bd"
+    },
+    "pupil": {
+      "base": "#17232a",
+      "highlight": "#3c5660",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#070b10"
+    },
+    "rose": {
+      "base": "#c58e88",
+      "highlight": "#e4b8ae",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#805051"
+    },
+    "rose_dark": {
+      "base": "#8e5656",
+      "highlight": "#bb7770",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#4d3035"
+    },
+    "rust": {
+      "base": "#8c443f",
+      "highlight": "#bd7066",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#48252a"
+    },
+    "sclera": {
+      "base": "#f1ede7",
+      "highlight": "#ffffff",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#c2b7b4"
+    },
+    "sclera_shadow": {
+      "base": "#d5c7c2",
+      "highlight": "#eee4dd",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#9f8887"
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "oversized cyan central eye in a seven-eye frontal crown",
+      "five rear crown eyes plus bilateral temple and top eyes",
+      "three bilateral wing pairs occupying rear, middle, and front depth bands",
+      "eighteen three-stage primary feathers with pointed terminal caps",
+      "twelve three-stage broad overlap vanes closing skeletal wing gaps",
+      "rear, middle, and lower wings yaw through distinct radial sectors",
+      "an eight-segment eye crown wraps continuously around the body",
+      "deep central body and staggered wing Z positions that resist pancake views",
+      "pale ivory, dusty rose, restrained rust, and cyan Minecraft palette"
+    ],
+    "required_views": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "bottom",
+      "isometric",
+      "eye-crown-closeup",
+      "rear-eyes-closeup",
+      "wing-layers-closeup",
+      "side-depth-closeup",
+      "wing-tip-closeup",
+      "crown-wrap-closeup"
+    ],
+    "review_targets": [
+      "front-back readability",
+      "side silhouette",
+      "wing-layer separation",
+      "eye count",
+      "central-eye hierarchy",
+      "feather taper",
+      "joint continuity",
+      "pixel-texture restraint",
+      "all-angle volume"
+    ],
+    "target_cuboids": [
+      180,
+      192
+    ]
+  },
+  "reference": {
+    "availability": "private-optional",
+    "bundled": false,
+    "height": 714,
+    "image": "../../../../../round3-inputs/biblically-accurate-angel.png",
+    "required_for_model_use": false,
+    "sha256": "1b4e05b4fa70f51fa37d4eb054b7355274fcfd576936402ca7db1515b391826c",
+    "width": 744
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "A hovering pale many-eyed angel with a seven-eye frontal crown, fully modeled rear/side/top eyes, and six layered feather wings",
+    "symmetry": "bilateral",
+    "type": "mob",
+    "uncertainties": [
+      "Only one frontal illustration is available; rear eye placement and exact wing-root topology are conservative agentic-vision inference",
+      "The reference is painterly and extremely bright, so the model translates it to a bounded ivory, rose, rust, and cyan Minecraft palette",
+      "Clouds and bloom are environmental effects and are not modeled as anatomy",
+      "Source rights are unknown and the ignored reference remains local only"
+    ]
+  },
+  "texture": {
+    "atlas_size": 1024,
+    "density": 1,
+    "gutter": 1,
+    "palette_size": 16,
+    "quantize_source": false
+  }
+}

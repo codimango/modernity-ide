@@ -1,0 +1,47 @@
+{
+  "asset": "militech_chimera",
+  "cycle": "round2-02",
+  "generation": {
+    "algorithm": "deep-hard-surface-hexapod-semantic-cuboids-v2",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0
+  },
+  "perspective_evidence": {
+    "camera_parameters_are_estimated": true,
+    "geometry_modified_for_calibration": false,
+    "hidden_geometry_established": false,
+    "method": "manual-fixed-camera-calibration-v1",
+    "runtime_camera_fitting": false,
+    "visual_hull_used": false
+  },
+  "references": {
+    "alternate": {
+      "height": 414,
+      "redistribution": "not authorized; private ignored benchmark input",
+      "rights": "unknown",
+      "sha256": "28ecd39372be2f3df0a5be657392b31557f8a91fb90136a78722878548bf46f7",
+      "source": "local user-supplied benchmarks/round2/references/chimera-alt.png",
+      "width": 736
+    },
+    "original": {
+      "height": 900,
+      "redistribution": "not authorized; private ignored benchmark input",
+      "rights": "unknown",
+      "sha256": "55ed303da9e7484812f0827922fceb0b07a8bac68ccc1a9c03e39702419eada2",
+      "source": "local Round 2 image.png",
+      "width": 600
+    }
+  },
+  "reviewed_masks": {
+    "alternate": {
+      "limitation": "dark recessed joints partly blend into the studio background",
+      "sha256": "5d428925081def90d21c95ed15db2208868b067dee1b149327737653d064e406"
+    },
+    "original": {
+      "excludes": ["connected display plinth", "cast shadows", "background"],
+      "sha256": "8905f69990541593579b5043120c65ba078b82e2afc36709536169bd9e8b19b3"
+    }
+  },
+  "single_view_hidden_geometry": "Far-side articulation, underside equipment, and hidden panel graphics are conservative symmetric inferences across two still photographs."
+}

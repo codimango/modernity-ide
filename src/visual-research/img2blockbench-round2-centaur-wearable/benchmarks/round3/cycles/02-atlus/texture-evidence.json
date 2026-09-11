@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "method": "deterministic-solid-material-atlas-audit-v1",
+  "atlas": "build/atlus_trauma_team_aerodyne.png",
+  "atlas_size": [512, 512],
+  "opaque_texels": 172670,
+  "opaque_color_count": 18,
+  "opaque_palette": [
+    "#0a1116",
+    "#16242c",
+    "#17232d",
+    "#17616d",
+    "#20252b",
+    "#24445d",
+    "#2a9da5",
+    "#313b46",
+    "#38c2d7",
+    "#55bfc2",
+    "#778690",
+    "#9b1d2a",
+    "#9ea9ae",
+    "#a3212c",
+    "#c0c9ca",
+    "#d8373f",
+    "#d9e0e2",
+    "#eef2ef"
+  ],
+  "palette_limit": 24,
+  "procedural_noise": false,
+  "dithering": false,
+  "source_pixels_embedded_verbatim": false,
+  "bounded_minecraft_palette": true
+}

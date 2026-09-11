@@ -1,0 +1,50 @@
+{
+  "calibration": {
+    "projection": "orthographic-yaw",
+    "volume_bounds": [
+      [
+        -10,
+        0,
+        -5
+      ],
+      [
+        10,
+        50,
+        5
+      ]
+    ]
+  },
+  "provenance": {
+    "camera_motion": "not inferred",
+    "front_observed": "thresholded only from the supplied reference against its measured #f8f8f8 background",
+    "side_synthetic_proxy": "authored depth prior from the semantic proportions; not a photograph and not hidden-shape evidence"
+  },
+  "reference_view": "front_observed",
+  "schema_version": 1,
+  "views": [
+    {
+      "azimuth_degrees": 0,
+      "center_px": [
+        347,
+        935
+      ],
+      "evidence_kind": "observed",
+      "id": "front_observed",
+      "image": "../../../references/06-scp-173.jpg",
+      "mask": "front-observed-mask.png",
+      "pixels_per_unit": 18.145833333333332
+    },
+    {
+      "azimuth_degrees": 90,
+      "center_px": [
+        375,
+        935
+      ],
+      "evidence_kind": "synthetic_proxy",
+      "id": "side_synthetic_proxy",
+      "image": "side-synthetic.png",
+      "mask": "side-synthetic-mask.png",
+      "pixels_per_unit": 18.145833333333332
+    }
+  ]
+}

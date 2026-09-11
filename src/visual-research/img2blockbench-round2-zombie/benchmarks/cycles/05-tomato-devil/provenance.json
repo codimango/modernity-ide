@@ -1,0 +1,24 @@
+{
+  "cycle": 5,
+  "generator": {
+    "algorithm": "greedy-ellipsoid-connected-radial-v2",
+    "name": "img2blockbench",
+    "route": "agent-authored semantic volume"
+  },
+  "model_id": "tomato_devil",
+  "reference": {
+    "height": 764,
+    "local_path": "../../references/05-tomato-devil.png",
+    "redistribution": "not authorized; excluded by .gitignore",
+    "retrieved": "2026-09-06",
+    "sha256": "a14835e56a9e35dbc01a532e2170d47a7f32c38476041a58ce716e017b31f651",
+    "url": "https://static.wikia.nocookie.net/chainsaw-man/images/d/d1/Tomato_Devil.png/revision/latest?cb=20230420064751",
+    "width": 492
+  },
+  "source_mesh": null,
+  "source_projection": false,
+  "uncertainties": [
+    "The single frontal illustration hides the exact back-eye arrangement",
+    "Rear arm crossings are inferred conservatively from visible joints"
+  ]
+}

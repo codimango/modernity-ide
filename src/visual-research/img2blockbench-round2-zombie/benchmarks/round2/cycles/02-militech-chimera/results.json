@@ -1,0 +1,64 @@
+{
+  "artifact_sha256": {
+    "alternate_comparison_sheet": "94ccef479043f05c9355bf5159c7ec499d22af17ea869b2807a2bd419916a65f",
+    "alternate_foreground_mask": "5d428925081def90d21c95ed15db2208868b067dee1b149327737653d064e406",
+    "alternate_perspective_camera": "868081ee12c4ac75c7b30b20b7259fc764b67ba193545f7fada54ec19c216010",
+    "alternate_perspective_render": "dbf8715cc3420e9e00ceb8fcf4bcaff1b321cbd122045388003aedb64b9c8c43",
+    "alternate_perspective_silhouette_overlap": "b7d1b378e68c4311d0725b7a0f7422a33e80662f305509fb53c045ff4052b2e8",
+    "audit": "291e1cc8b9e51160084a776be60b89f12ba9f517497bf95530a74a42049c4bc6",
+    "bbmodel": "889aa70b9ba1799f97181bdf3b0e195fe482c5cd82845cb8cba30c0615bce0aa",
+    "built_model_spec": "275115c602be96aae133ac10d75409eb3e5cb41a93051137a99ce2783acd73a2",
+    "comparison_sheet": "ee87f6fa1b9d7e0bc92c01d8c80ccf87cb253a45c6dcb0f7196e6acc7c324817",
+    "evaluation": "9bdd194f566a664f44d0a0c271276e4a22243c5728186984c461abdaadeeaaf8",
+    "foreground_mask": "8905f69990541593579b5043120c65ba078b82e2afc36709536169bd9e8b19b3",
+    "geo_json": "5e96f9be77cee63aa1f49bb3fb321b67489cc612c85e2c3ab0b7ef0909215113",
+    "manifest": "8ecb5d7ae33b894f875b2212718a1154420456c1a154a701ab08c47114765138",
+    "model_spec": "cf48b2a47355a02ddd52ec3f152e1c9283dad9a6ddaaa4fa1a1318d8eb6bafea",
+    "perspective_camera": "e53e4d076efaa7a62334886e81312fece5eb42a3d25f70c3f76cc74974ea5ee9",
+    "perspective_render": "2fac89e8164a3d01c804fb5dbd7d4462bed2eadbd64ad5eeae06bd31e8adcfdb",
+    "perspective_silhouette_overlap": "8f408e532aa65fa5abb9191097752adb65111a9b33ae4c25d2cce1c4c057b0a5",
+    "texture": "dc650c19badf321675098a882c7e8ccd96f340389ccbcd303f6278280c3c484d",
+    "zip": "ab8dbb037ef0eac5f2aefb7ca2c3f326beba6561d26a00552dd515392692e286"
+  },
+  "asset": "militech_chimera",
+  "author_checks": {
+    "all_191_declared_attachments_connected": true,
+    "all_volume_and_six_leg_stance_gates_pass": true,
+    "alternate_perspective_iou": 0.632529,
+    "alternate_perspective_keypoint_mean_error_subject_heights": 0.070894,
+    "audit_ok": true,
+    "chassis_depth_to_width": 1.694929,
+    "no_reference_image_projection": true,
+    "original_perspective_iou": 0.605818,
+    "original_perspective_keypoint_mean_error_subject_heights": 0.066869,
+    "perspective_camera_runtime_fitting": false,
+    "perspective_evidence_two_runs_byte_identical": true,
+    "perspective_source_gate": "pass_independent_visual_review",
+    "six_grounded_feet": true,
+    "six_unique_xz_roots": true,
+    "source_skin_cuboids": 0,
+    "strict_validation": true,
+    "two_builds_byte_identical": true
+  },
+  "bones": 36,
+  "cuboids": 174,
+  "cycle": "round2-02",
+  "feature_inventory": {
+    "mechanical_leg_chains": 6,
+    "mechanical_leg_segments": 24,
+    "mechanical_hinges": 18,
+    "shin_armor_layers": 18,
+    "turret_collar_segments": 12,
+    "upper_turret_cuboids": 38
+  },
+  "general_improvement": {
+    "capabilities_added": [],
+    "reason": "Existing hard-surface semantic cuboids, articulated chains, and fixed-camera evidence were sufficient; the correction is asset-specific composition."
+  },
+  "grade": "PASS",
+  "model_id": "militech_chimera",
+  "reference_sha256": {
+    "alternate": "28ecd39372be2f3df0a5be657392b31557f8a91fb90136a78722878548bf46f7",
+    "original": "55ed303da9e7484812f0827922fceb0b07a8bac68ccc1a9c03e39702419eada2"
+  }
+}

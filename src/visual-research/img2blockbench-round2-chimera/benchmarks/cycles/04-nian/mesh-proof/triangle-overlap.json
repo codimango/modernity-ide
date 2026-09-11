@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "method": "orthographic triangle-silhouette rasterization",
+  "legend": {
+    "source_only": "#25BEDD",
+    "model_only": "#F67E2B",
+    "overlap": "#F8FAFC"
+  },
+  "inputs": {
+    "source": "examples/chimpanzee/lane2/source.glb",
+    "source_sha256": "5f4f30207e68102ac83585eac940ff1acaf1d45c2c3d5446cabbb34a9b256d90",
+    "spec": "benchmarks/cycles/04-nian/mesh-proof/overlap-transform.json",
+    "spec_sha256": "035525d8ef3d00d45ba5c44380f7acfa33749e53b1a31f6c32a189c6d1c63b50",
+    "bbmodel": "benchmarks/cycles/04-nian/mesh-proof/output/chimpanzee_ray_voxel.bbmodel",
+    "bbmodel_sha256": "c1b4c3282268abd5ba2871bd271d6a1340fce2ce1f4bfd61db3eff10f801d92e"
+  },
+  "resolution": 384,
+  "summary": {
+    "mean_iou": 0.8191,
+    "mean_source_coverage": 0.9992,
+    "mean_model_precision": 0.8196
+  },
+  "views": {
+    "front": {
+      "iou": 0.8006,
+      "source_coverage": 0.9988,
+      "model_precision": 0.8014,
+      "source_pixels": 65714,
+      "model_pixels": 81904,
+      "intersection_pixels": 65637,
+      "union_pixels": 81981
+    },
+    "side": {
+      "iou": 0.8157,
+      "source_coverage": 0.9989,
+      "model_precision": 0.8165,
+      "source_pixels": 45626,
+      "model_pixels": 55818,
+      "intersection_pixels": 45575,
+      "union_pixels": 55869
+    },
+    "top": {
+      "iou": 0.8555,
+      "source_coverage": 0.9993,
+      "model_precision": 0.856,
+      "source_pixels": 52800,
+      "model_pixels": 61638,
+      "intersection_pixels": 52764,
+      "union_pixels": 61674
+    },
+    "isometric": {
+      "iou": 0.8045,
+      "source_coverage": 1.0,
+      "model_precision": 0.8045,
+      "source_pixels": 59804,
+      "model_pixels": 74336,
+      "intersection_pixels": 59803,
+      "union_pixels": 74337
+    }
+  }
+}

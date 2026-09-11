@@ -1,0 +1,12 @@
+{
+  "correction_scope": "Cycle 2 Porsche artifact and focused test only",
+  "cycle": 2,
+  "other_cycle_files_modified": false,
+  "prior_assets": [
+    {
+      "asset": "american_goldfinch",
+      "status": "preserved unchanged by this correction"
+    }
+  ],
+  "schema_version": 1
+}

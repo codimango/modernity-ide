@@ -1,0 +1,82 @@
+{
+  "all_assets_pass": true,
+  "assets": {
+    "aegis_x2": {
+      "blockers": [],
+      "scores": {
+        "3d_coherence": 4,
+        "identity": 4,
+        "materials_color": 3,
+        "proportions": 3,
+        "silhouette": 4,
+        "topology_attachments": 4
+      },
+      "verdict": "PASS"
+    },
+    "centaur": {
+      "blockers": [],
+      "non_blocking_note": "The static shell is not runtime-integrated, and its shield/backpack remain simplified at Minecraft scale.",
+      "scores": {
+        "3d_coherence": 3,
+        "identity": 4,
+        "materials_color": 3,
+        "proportions": 3,
+        "silhouette": 3,
+        "topology_attachments": 4
+      },
+      "verdict": "PASS",
+      "verification": "The corrected lower chassis has massive powered hips, knees, shin armor, ankles, and feet. The replaceable shell removes seven pilot bones, retains six player interfaces, and audits at 168 cuboids and 21 bones."
+    },
+    "chimera": {
+      "blockers": [],
+      "scores": {
+        "3d_coherence": 4,
+        "identity": 4,
+        "materials_color": 4,
+        "proportions": 3,
+        "silhouette": 3,
+        "topology_attachments": 4
+      },
+      "verdict": "PASS",
+      "verification": "Exactly six articulated leg chains are present and visually distinct; the earlier four-legged proxy remains invalidated. The canonical texture is now the original olive/khaki military source, with the white alternate used only for geometry evidence."
+    },
+    "zombie_devil": {
+      "blockers": [],
+      "non_blocking_note": "The source-facing manga marks are front-heavy, while the colorful hidden surfaces and added rear depth are explicitly labeled authored single-view inference.",
+      "scores": {
+        "3d_coherence": 3,
+        "identity": 4,
+        "materials_color": 4,
+        "proportions": 3,
+        "silhouette": 3,
+        "topology_attachments": 3
+      },
+      "verdict": "PASS",
+      "verification": "Side, top, back, and isometric renders expose substantive volume: torso depth ratio 0.75, head 0.833333, brain 1.166667, and arms 0.341463. The 16-color source projection stays grayscale, while 91.6654% of opaque atlas texels use the restored user-selected dusty flesh, pink brain, and muted red-brown Minecraft palette."
+    }
+  },
+  "audit": "The color-restoration regrade reports a clean Zombie native audit, an unchanged geometry fingerprint, and unchanged Chimera artifacts; only intentional high-cuboid-count warnings remain.",
+  "cumulative_verdict": "PASS",
+  "evidence_integrity": {
+    "details": "The color-restoration grader audited immutable commit 527ba3a, excluded authored grade/review/results/status conclusions, and inspected source comparisons plus front, side, back, top, isometric, face, brain, and viscera renders. Zombie geometry matches the previously approved df4ad06 geometry, and Chimera model, build, and render hashes are unchanged. Metrics use manually frozen cameras without runtime fit, scale, translation, or recentering.",
+    "raw_iou": {
+      "aegis_x2": [0.635555, 0.665274, 0.630694],
+      "centaur": [0.603863, 0.47559, 0.542573],
+      "chimera": [0.605818, 0.632529],
+      "zombie_devil": [0.645798]
+    },
+    "verdict": "HONEST",
+    "zombie_geometry_fingerprint_sha256": "aafbaafe270e8701a296b18be1cc9745949086092bdd2dee396fa3442ced01d3"
+  },
+  "graded_commit": "527ba3add381616620e42f665e3d8e3e3cc12aca",
+  "grader": "independent_read_only_codex_terminal_color_restore",
+  "policy": "Each selected asset passes only when every 1-4 rubric category is at least 3 and there is no critical structural mismatch. The cumulative gate passes only when all four assets pass.",
+  "schema_version": 1,
+  "selected_cycles": [2, 5, 7, 8],
+  "verification": {
+    "cumulative_tests": "139/139 PASS",
+    "exact_archive_color_restore_tests": "9/9 PASS",
+    "random_dither_detected": false,
+    "literal_photo_collage_detected": false
+  }
+}

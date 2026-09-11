@@ -1,0 +1,8 @@
+{
+  "baseline_commit": "a7782886cd733a72cf51b96177097d9b10e925a9",
+  "cycle": "round2-07",
+  "fixed_camera_evidence_reused": true,
+  "other_benchmark_files_modified": false,
+  "scope": "Centaur exoskeleton benchmark, focused regression tests, native build, and review evidence only",
+  "suite_status": "107 tests passed, including 4 Centaur exoskeleton tests"
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "round": 2,
+  "cycle": 3,
+  "asset": "greta_shark_chef",
+  "verdict": "PASS",
+  "grader": "independent_read_only_codex_terminal",
+  "mean": 4.0,
+  "scores": {
+    "silhouette": 4,
+    "proportions": 4,
+    "identity": 4,
+    "materials_color": 4,
+    "attachment_topology": 4,
+    "3d_coherence": 4
+  },
+  "quantitative": {
+    "alpha_silhouette_iou": 0.68495,
+    "keypoint_mean_error_subject_heights": 0.029263,
+    "torso_depth_to_body_width": 0.66087,
+    "head_depth_to_body_width": 0.592076,
+    "declared_links_connected": "71/71",
+    "mouth_assemblies": 4,
+    "tooth_cuboids": 22
+  },
+  "resolved_blockers": [
+    "made the wide shark grin and alternating teeth legible at full-body scale",
+    "reduced material noise and separated skin, suit, and hat",
+    "replaced the tattoo glyph with flowing blue stair ribbons",
+    "simplified the tail to a broad taper and two caudal lobes",
+    "rebuilt the axe as a connected three-piece hooked cleaver"
+  ],
+  "critical_defects": []
+}

@@ -1,0 +1,12 @@
+{
+  "baseline_commit": "4634ac37ba0a63adf5bc77b5aed7482f1be9f2e7",
+  "other_benchmark_files_modified": false,
+  "preserved_git_objects": {
+    "benchmarks/cycles": "1bdbf14f696127e114e1867d8b39a7ad3e392791",
+    "benchmarks/grades": "08d5d485e45b357e222408214b940d6de2e001c9",
+    "benchmarks/round2/cycles/01-golden-apple": "17dcb5afc0f89d08f4b34e8277ae02e31a71dadd",
+    "benchmarks/round2/cycles/02-militech-chimera": "997f7c389bbcd144081685794ab7c0f806c01057",
+    "benchmarks/round2/grades": "9d24363e3c423a8e49bd20c0b4610fd81e441356"
+  },
+  "scope": "Greta benchmark, generated native build, evidence bundle, and focused regression tests only"
+}

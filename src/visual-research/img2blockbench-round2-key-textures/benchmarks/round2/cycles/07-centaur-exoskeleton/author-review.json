@@ -1,0 +1,49 @@
+{
+  "asset": "militech_centaur_piloted_exoskeleton",
+  "author_decision": "INDEPENDENT_PASS",
+  "critical_geometry_defect_observed": false,
+  "cycle": "round2-07",
+  "identity_review": {
+    "human_pilot_is_visibly_distinct_from_machine": true,
+    "inset_trouser_legs_have_visible_negative_space_from_outer_rails": true,
+    "pilot_legs_are_nested_in_two_exo_chains": true,
+    "shield_and_thermal_weapon_are_distinct_asymmetric_loads": true,
+    "thermal_weapon_has_four_grilles_and_heat_tube_bank": true,
+    "two_mechanical_shield_contacts_are_visible": true,
+    "two_powered_legs_have_knee_guards_pistons_and_grounded_feet": true
+  },
+  "limitations": [
+    "The inputs are uncalibrated studio renders; hidden-side geometry and exact cable routing are conservative inference.",
+    "The side-view mask excludes a large connected studio-floor reflection and uses a disclosed 0.45 IoU diagnostic target.",
+    "The source artwork contains far more micro-panels and scratches than are useful as native Blockbench cuboids; those remain pixel-material detail.",
+    "The fixed-camera thresholds are diagnostic and do not establish hidden geometry.",
+    "Static geometry was reviewed; no animation was authored or approved."
+  ],
+  "quantitative_checks": {
+    "all_191_declared_attachments_connected": true,
+    "all_three_fixed_camera_aspirations_pass": true,
+    "both_exo_feet_grounded": true,
+    "both_pilot_boots_retained_in_exoframe": true,
+    "fixed_camera_iou": [0.567833, 0.463441, 0.526309],
+    "fixed_camera_keypoint_mean_subject_heights": [0.061855, 0.083226, 0.072842],
+    "shield_contacts": "2/2",
+    "two_builds_byte_identical": true
+  },
+  "reviewed_views": [
+    "source-6-perspective.png",
+    "source-7-perspective.png",
+    "source-8-perspective.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "pilot-closeup.png",
+    "leg-closeup.png",
+    "shield-contact-closeup.png",
+    "backpack-closeup.png",
+    "thermal-weapon-closeup.png",
+    "comparison-sheet.png"
+  ]
+}

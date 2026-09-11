@@ -1,0 +1,225 @@
+{
+  "algorithm": "reviewed-semantic-parts-with-duplicate-view-audit-v1",
+  "foreground": {
+    "encoding": "8-bit grayscale; >=128 is foreground",
+    "image": "foreground-mask.png",
+    "limitation": "The crop intersects the bottom frame and other manga figures occlude the lowest anatomy. The mask includes only the visible Devil silhouette.",
+    "polygon_parts": {
+      "brain_stalk": [
+        [
+          205,
+          195
+        ],
+        [
+          240,
+          157
+        ],
+        [
+          281,
+          126
+        ],
+        [
+          329,
+          128
+        ],
+        [
+          393,
+          153
+        ],
+        [
+          398,
+          217
+        ],
+        [
+          362,
+          253
+        ],
+        [
+          301,
+          251
+        ],
+        [
+          252,
+          228
+        ]
+      ],
+      "left_massive_arm": [
+        [
+          24,
+          154
+        ],
+        [
+          67,
+          119
+        ],
+        [
+          139,
+          114
+        ],
+        [
+          202,
+          129
+        ],
+        [
+          251,
+          166
+        ],
+        [
+          239,
+          207
+        ],
+        [
+          196,
+          227
+        ],
+        [
+          130,
+          225
+        ],
+        [
+          70,
+          209
+        ],
+        [
+          29,
+          191
+        ]
+      ],
+      "right_massive_arm": [
+        [
+          236,
+          206
+        ],
+        [
+          301,
+          184
+        ],
+        [
+          371,
+          198
+        ],
+        [
+          431,
+          232
+        ],
+        [
+          512,
+          276
+        ],
+        [
+          512,
+          332
+        ],
+        [
+          482,
+          378
+        ],
+        [
+          439,
+          397
+        ],
+        [
+          389,
+          367
+        ],
+        [
+          344,
+          335
+        ],
+        [
+          290,
+          315
+        ],
+        [
+          254,
+          283
+        ]
+      ],
+      "torso": [
+        [
+          114,
+          277
+        ],
+        [
+          169,
+          247
+        ],
+        [
+          245,
+          246
+        ],
+        [
+          307,
+          281
+        ],
+        [
+          354,
+          337
+        ],
+        [
+          365,
+          424
+        ],
+        [
+          331,
+          502
+        ],
+        [
+          286,
+          548
+        ],
+        [
+          183,
+          554
+        ],
+        [
+          123,
+          516
+        ],
+        [
+          89,
+          432
+        ],
+        [
+          91,
+          344
+        ]
+      ]
+    },
+    "reviewed_bbox_pixels": [
+      24,
+      37,
+      513,
+      754
+    ],
+    "sha256": "e2e7179114033bbbed7309895f68329fd5dc99d32ba8283be627da982bd189d1"
+  },
+  "hidden_geometry_established_from_observed_views": false,
+  "observed_camera_axes": 1,
+  "schema_version": 1,
+  "sources": [
+    {
+      "image": "../../../../../image-11.png",
+      "role": "primary higher-resolution crop",
+      "sha256": "e3c594bc2fc60a63fa7f510fd6557e761219b731be2654a599fc751d024c96df",
+      "size": [
+        513,
+        754
+      ]
+    },
+    {
+      "image": "../../../../../image-10.png",
+      "role": "duplicate lower-resolution crop; provenance only",
+      "sha256": "77d658a02c89ce685490832c78b0467f10cc06662548570c2ee9d2497cbe03d6",
+      "size": [
+        369,
+        542
+      ]
+    }
+  ],
+  "view_content_similarity": {
+    "near_duplicate": true,
+    "normalized_mean_absolute_error": 0.003353,
+    "rgb_correlation": 0.999919
+  }
+}

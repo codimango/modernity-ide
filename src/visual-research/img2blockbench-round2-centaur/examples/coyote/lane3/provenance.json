@@ -1,0 +1,43 @@
+{
+  "agent_blueprint": "../../../tools/img2threejs/blueprints/coyote.json",
+  "blockbench_atlas": {
+    "bytes": 6014,
+    "path": "blockbench/coyote-lane3.png",
+    "sha256": "855ba4657f5f11c978b0be54594a8f4f08273dbeb25f652284f37279258130b0",
+    "source": "6 img2threejs MeshPhysicalMaterial base-color maps",
+    "threejs_materials": 6
+  },
+  "blockbench_model": {
+    "bytes": 47187,
+    "path": "blockbench/coyote-lane3.bbmodel",
+    "sha256": "781133be66dd9cf346fdc529196600d25409e281df5534c20d3a690fd1dfcc24"
+  },
+  "generated_factory": {
+    "bytes": 183918,
+    "path": "createMinecraftCoyoteModel.generated.ts",
+    "sha256": "727be23ee8ae7cf32bca8dc35d4d486f73ee18438affc28591ca77c6851e996d"
+  },
+  "reference": "../reference.png",
+  "spec": "img2threejs-spec.json",
+  "texture_transfer": {
+    "algorithm": "img2threejs-native-albedo-transfer",
+    "bytes": 2259,
+    "mapped_material_count": 6,
+    "path": "projection-audit.json",
+    "reference_projection": false,
+    "sha256": "83bb932c13cb83088cd64b9fbd70fbcac9c9babbc725458f8d345cf107797187",
+    "source": "MeshPhysicalMaterial.map"
+  },
+  "threejs_scene": {
+    "bytes": 977014,
+    "path": "coyote.img2threejs.three.json",
+    "sha256": "1afd4bc1600f46adeb34aca4765d34206e043a5ff76d34c12cd73d3d35f6674e"
+  },
+  "upstream": {
+    "commit": "f1ade81d45252ede20323d74a5b269c819f75245",
+    "generated_pass": "optimization-pass",
+    "generator": "forge/stage3_build/generate_threejs_factory.py",
+    "license": "Apache-2.0",
+    "repository": "https://github.com/img2threejs/img2threejs"
+  }
+}

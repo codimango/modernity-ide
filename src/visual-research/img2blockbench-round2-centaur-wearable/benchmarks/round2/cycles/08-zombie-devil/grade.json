@@ -1,0 +1,34 @@
+{
+  "asset": "zombie_devil_exposed_brain",
+  "blockers": [],
+  "caveat": "Rear depth is conservative single-view inference and remains deliberately plain; color on unobserved surfaces is an authored Minecraft fallback rather than source-derived evidence.",
+  "cycle": 8,
+  "graded_commit": "527ba3add381616620e42f665e3d8e3e3cc12aca",
+  "grader": "independent_read_only_codex_terminal_color_restore",
+  "mean": 3.333333,
+  "round": 2,
+  "schema_version": 1,
+  "scores": {
+    "3d_coherence": 3,
+    "attachment_topology": 3,
+    "identity": 4,
+    "materials_color": 4,
+    "proportions": 3,
+    "silhouette": 3
+  },
+  "verdict": "PASS",
+  "verified": {
+    "attachments_connected": "187/187",
+    "chromatic_opaque_texel_fraction": 0.916654,
+    "chromatic_opaque_texels": "161366/176038",
+    "brain_depth_to_width": 1.166667,
+    "duplicate_views_counted_as_one_axis": true,
+    "geometry_fingerprint_sha256": "aafbaafe270e8701a296b18be1cc9745949086092bdd2dee396fa3442ced01d3",
+    "grounded_feet": 0,
+    "head_depth_to_width": 0.833333,
+    "rear_depth_is_inferred": true,
+    "source_palette_colors": 16,
+    "source_palette_max_channel_spread": 1,
+    "torso_depth_to_width": 0.75
+  }
+}

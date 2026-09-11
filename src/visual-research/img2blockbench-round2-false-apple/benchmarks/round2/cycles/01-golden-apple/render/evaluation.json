@@ -1,0 +1,2245 @@
+{
+  "alpha_silhouette": {
+    "alpha_threshold": 16,
+    "iou": 0.705691,
+    "keypoints": {
+      "count": 7,
+      "maximum_error_subject_heights": 0.046914,
+      "mean_error_subject_heights": 0.022501,
+      "points": {
+        "apple_bottom": {
+          "error_subject_heights": 0.038491,
+          "reference": [
+            0.038407,
+            0.751067
+          ],
+          "rendered": [
+            0.0,
+            0.753614
+          ]
+        },
+        "apple_right_equator": {
+          "error_subject_heights": 0.036487,
+          "reference": [
+            0.361309,
+            0.42532
+          ],
+          "rendered": [
+            0.335843,
+            0.45145
+          ]
+        },
+        "bite_inner_cusp": {
+          "error_subject_heights": 0.046914,
+          "reference": [
+            -0.211949,
+            0.502134
+          ],
+          "rendered": [
+            -0.209902,
+            0.455265
+          ]
+        },
+        "left_outer_root_tip": {
+          "error_subject_heights": 0.015128,
+          "reference": [
+            -0.415363,
+            0.837838
+          ],
+          "rendered": [
+            -0.412171,
+            0.82305
+          ]
+        },
+        "right_outer_root_tip": {
+          "error_subject_heights": 0.004649,
+          "reference": [
+            0.416785,
+            0.823613
+          ],
+          "rendered": [
+            0.412171,
+            0.82305
+          ]
+        },
+        "stem_socket": {
+          "error_subject_heights": 0.011424,
+          "reference": [
+            -0.008535,
+            0.204836
+          ],
+          "rendered": [
+            0.0,
+            0.197243
+          ]
+        },
+        "stem_tip": {
+          "error_subject_heights": 0.004414,
+          "reference": [
+            -0.008535,
+            0.001422
+          ],
+          "rendered": [
+            -0.008396,
+            0.005834
+          ]
+        }
+      }
+    },
+    "limitation": "front alpha silhouette and annotated keypoints only; hidden-side geometry still requires multi-view inspection. A source touching the frame may contain clipped appendages, so IoU cannot establish their off-frame continuation.",
+    "method": "alpha-mask-aspect-preserving-height-normalized-centered-iou-v1",
+    "precision": 0.963959,
+    "recall": 0.724815,
+    "reference_aspect_ratio": 0.852823,
+    "reference_transform": {
+      "bbox": [
+        0,
+        1,
+        600,
+        704
+      ],
+      "normalized_height": 496,
+      "normalized_width": 423,
+      "scale": 0.705547653,
+      "source_height": 703,
+      "source_width": 600,
+      "touches_frame_edges": {
+        "bottom": true,
+        "left": true,
+        "right": true,
+        "top": false
+      }
+    },
+    "rendered_aspect_ratio": 0.844758,
+    "rendered_transform": {
+      "bbox": [
+        85,
+        42,
+        555,
+        598
+      ],
+      "normalized_height": 496,
+      "normalized_width": 419,
+      "scale": 0.892086331,
+      "source_height": 556,
+      "source_width": 470,
+      "touches_frame_edges": {
+        "bottom": false,
+        "left": false,
+        "right": false,
+        "top": false
+      }
+    },
+    "source_touches_frame": true,
+    "target_height": 496
+  },
+  "apple_depth_width_gate_0.8_to_1.1": true,
+  "attachments": {
+    "all_connected": true,
+    "attachments": [
+      {
+        "connected": true,
+        "first": "apple_volume_001",
+        "first_margin": 0,
+        "joint": [
+          -16.5,
+          13,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_002",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_001",
+        "first_margin": 0,
+        "joint": [
+          -15.4,
+          11,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_006",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_001",
+        "first_margin": 0,
+        "joint": [
+          -15.4,
+          12,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_007",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_001",
+        "first_margin": 0,
+        "joint": [
+          -15.4,
+          13,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_008",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_002",
+        "first_margin": 0,
+        "joint": [
+          -16.5,
+          15,
+          -9.333334
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_003",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_002",
+        "first_margin": 0,
+        "joint": [
+          -16.5,
+          15,
+          9.333334
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_004",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_002",
+        "first_margin": 0,
+        "joint": [
+          -15.4,
+          15,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_009",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_003",
+        "first_margin": 0,
+        "joint": [
+          -15.4,
+          17,
+          -10.5
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_010",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_006",
+        "first_margin": 0,
+        "joint": [
+          -13.2,
+          10,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_015",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_006",
+        "first_margin": 0,
+        "joint": [
+          -13.2,
+          11,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_016",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_007",
+        "first_margin": 0,
+        "joint": [
+          -13.2,
+          13,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_017",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_009",
+        "first_margin": 0,
+        "joint": [
+          -12.1,
+          17,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_018",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_009",
+        "first_margin": 0,
+        "joint": [
+          -11,
+          16,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_029",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_009",
+        "first_margin": 0,
+        "joint": [
+          -11,
+          17,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_030",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_015",
+        "first_margin": 0,
+        "joint": [
+          -11,
+          9,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_026",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_015",
+        "first_margin": 0,
+        "joint": [
+          -11,
+          10,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_027",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_015",
+        "first_margin": 0,
+        "joint": [
+          -11,
+          11,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_028",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_017",
+        "first_margin": 0,
+        "joint": [
+          -8.8,
+          14,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_041",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_017",
+        "first_margin": 0,
+        "joint": [
+          -8.8,
+          15,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_042",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_018",
+        "first_margin": 0,
+        "joint": [
+          -12.1,
+          23,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_019",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_018",
+        "first_margin": 0,
+        "joint": [
+          -11,
+          20,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_031",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_018",
+        "first_margin": 0,
+        "joint": [
+          -11,
+          22,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_032",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_019",
+        "first_margin": 0,
+        "joint": [
+          -12.1,
+          25,
+          -14
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_020",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_019",
+        "first_margin": 0,
+        "joint": [
+          -12.1,
+          25,
+          14
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_021",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_019",
+        "first_margin": 0,
+        "joint": [
+          -8.8,
+          25,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_033",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_019",
+        "first_margin": 0,
+        "joint": [
+          -6.6,
+          24,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_049",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_020",
+        "first_margin": 0,
+        "joint": [
+          -12.1,
+          27,
+          -12.833333
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_022",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_022",
+        "first_margin": 0,
+        "joint": [
+          -12.1,
+          33,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_011",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_011",
+        "first_margin": 0,
+        "joint": [
+          -14.3,
+          35,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_012",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_011",
+        "first_margin": 0,
+        "joint": [
+          -12.1,
+          35,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_023",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_011",
+        "first_margin": 0,
+        "joint": [
+          -11,
+          33,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_035",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_011",
+        "first_margin": 0,
+        "joint": [
+          -11,
+          34,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_036",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_012",
+        "first_margin": 0,
+        "joint": [
+          -15.4,
+          37,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_005",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_005",
+        "first_margin": 0,
+        "joint": [
+          -15.4,
+          38,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_013",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_005",
+        "first_margin": 0,
+        "joint": [
+          -15.4,
+          39,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_014",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_012",
+        "first_margin": 0,
+        "joint": [
+          -13.2,
+          37,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_024",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_013",
+        "first_margin": 0,
+        "joint": [
+          -13.2,
+          39,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_025",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_022",
+        "first_margin": 0,
+        "joint": [
+          -11,
+          30,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_034",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_023",
+        "first_margin": 0,
+        "joint": [
+          -9.9,
+          37,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_037",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_023",
+        "first_margin": 0,
+        "joint": [
+          -8.8,
+          35,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_043",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_023",
+        "first_margin": 0,
+        "joint": [
+          -8.8,
+          36,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_044",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_024",
+        "first_margin": 0,
+        "joint": [
+          -11,
+          39,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_038",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_025",
+        "first_margin": 0,
+        "joint": [
+          -11,
+          41,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_039",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_026",
+        "first_margin": 0,
+        "joint": [
+          -8.8,
+          8,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_040",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_027",
+        "first_margin": 0,
+        "joint": [
+          -6.6,
+          10,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_047",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_027",
+        "first_margin": 0,
+        "joint": [
+          -6.6,
+          11,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_048",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_030",
+        "first_margin": 0,
+        "joint": [
+          0,
+          19,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_055",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_030",
+        "first_margin": 0,
+        "joint": [
+          7.7,
+          19,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_065",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_030",
+        "first_margin": 0,
+        "joint": [
+          9.9,
+          17,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_078",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_030",
+        "first_margin": 0,
+        "joint": [
+          11,
+          17,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_084",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_030",
+        "first_margin": 0,
+        "joint": [
+          11,
+          18,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_085",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_030",
+        "first_margin": 0,
+        "joint": [
+          11,
+          19,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_086",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_034",
+        "first_margin": 0,
+        "joint": [
+          -4.4,
+          30,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_056",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_035",
+        "first_margin": 0,
+        "joint": [
+          7.7,
+          31,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_066",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_035",
+        "first_margin": 0,
+        "joint": [
+          9.9,
+          33,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_079",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_035",
+        "first_margin": 0,
+        "joint": [
+          11,
+          31,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_087",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_035",
+        "first_margin": 0,
+        "joint": [
+          11,
+          32,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_088",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_035",
+        "first_margin": 0,
+        "joint": [
+          11,
+          33,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_089",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_037",
+        "first_margin": 0,
+        "joint": [
+          -6.6,
+          38,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_050",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_037",
+        "first_margin": 0,
+        "joint": [
+          -6.6,
+          39,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_051",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_038",
+        "first_margin": 0,
+        "joint": [
+          -7.7,
+          41,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_045",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_040",
+        "first_margin": 0,
+        "joint": [
+          -5.5,
+          7,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_046",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_040",
+        "first_margin": 0,
+        "joint": [
+          -4.4,
+          7,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_053",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_040",
+        "first_margin": 0,
+        "joint": [
+          -4.4,
+          8,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_054",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_041",
+        "first_margin": 0,
+        "joint": [
+          -2.2,
+          14,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_058",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_042",
+        "first_margin": 0,
+        "joint": [
+          5.5,
+          15,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_060",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_042",
+        "first_margin": 0,
+        "joint": [
+          8.8,
+          15,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_077",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_043",
+        "first_margin": 0,
+        "joint": [
+          0,
+          35,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_059",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_043",
+        "first_margin": 0,
+        "joint": [
+          5.5,
+          35,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_061",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_043",
+        "first_margin": 0,
+        "joint": [
+          8.8,
+          35,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_080",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_045",
+        "first_margin": 0,
+        "joint": [
+          -5.5,
+          43,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_052",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_045",
+        "first_margin": 0,
+        "joint": [
+          -4.4,
+          42,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_057",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_047",
+        "first_margin": 0,
+        "joint": [
+          5.5,
+          9,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_064",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_047",
+        "first_margin": 0,
+        "joint": [
+          6.6,
+          10,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_069",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_047",
+        "first_margin": 0,
+        "joint": [
+          6.6,
+          11,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_070",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_049",
+        "first_margin": 0,
+        "joint": [
+          6.6,
+          22,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_071",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_049",
+        "first_margin": 0,
+        "joint": [
+          6.6,
+          25,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_072",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_049",
+        "first_margin": 0,
+        "joint": [
+          6.6,
+          28,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_073",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_050",
+        "first_margin": 0,
+        "joint": [
+          6.6,
+          38,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_074",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_050",
+        "first_margin": 0,
+        "joint": [
+          6.6,
+          39,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_075",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_051",
+        "first_margin": 0,
+        "joint": [
+          3.3,
+          41,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_062",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_051",
+        "first_margin": 0,
+        "joint": [
+          5.5,
+          41,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_067",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_053",
+        "first_margin": 0,
+        "joint": [
+          4.4,
+          6,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_063",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_062",
+        "first_margin": 0,
+        "joint": [
+          4.4,
+          43,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_068",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_064",
+        "first_margin": 0,
+        "joint": [
+          8.8,
+          8,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_076",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_067",
+        "first_margin": 0,
+        "joint": [
+          8.8,
+          42,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_081",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_069",
+        "first_margin": 0,
+        "joint": [
+          11,
+          10,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_082",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_069",
+        "first_margin": 0,
+        "joint": [
+          11,
+          11,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_083",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_072",
+        "first_margin": 0,
+        "joint": [
+          13.2,
+          25,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_096",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_074",
+        "first_margin": 0,
+        "joint": [
+          11,
+          38,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_090",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_074",
+        "first_margin": 0,
+        "joint": [
+          11,
+          39,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_091",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_077",
+        "first_margin": 0,
+        "joint": [
+          13.2,
+          13,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_093",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_077",
+        "first_margin": 0,
+        "joint": [
+          13.2,
+          14,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_094",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_080",
+        "first_margin": 0,
+        "joint": [
+          13.2,
+          36,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_098",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_080",
+        "first_margin": 0,
+        "joint": [
+          13.2,
+          37,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_099",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_082",
+        "first_margin": 0,
+        "joint": [
+          13.2,
+          10,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_092",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_084",
+        "first_margin": 0,
+        "joint": [
+          14.3,
+          17,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_095",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_084",
+        "first_margin": 0,
+        "joint": [
+          15.4,
+          15,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_102",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_084",
+        "first_margin": 0,
+        "joint": [
+          15.4,
+          16,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_103",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_086",
+        "first_margin": 0,
+        "joint": [
+          15.4,
+          21,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_104",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_087",
+        "first_margin": 0,
+        "joint": [
+          14.3,
+          31,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_097",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_087",
+        "first_margin": 0,
+        "joint": [
+          15.4,
+          31,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_105",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_089",
+        "first_margin": 0,
+        "joint": [
+          15.4,
+          35,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_106",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_090",
+        "first_margin": 0,
+        "joint": [
+          13.2,
+          39,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_100",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_092",
+        "first_margin": 0,
+        "joint": [
+          15.4,
+          11,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_101",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_098",
+        "first_margin": 0,
+        "joint": [
+          15.4,
+          37,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_107",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_102",
+        "first_margin": 0,
+        "joint": [
+          17.6,
+          15,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_108",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_103",
+        "first_margin": 0,
+        "joint": [
+          17.6,
+          18,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_109",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_104",
+        "first_margin": 0,
+        "joint": [
+          17.6,
+          25,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_110",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_104",
+        "first_margin": 0,
+        "joint": [
+          17.6,
+          30,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_111",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_105",
+        "first_margin": 0,
+        "joint": [
+          17.6,
+          34,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_112",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_109",
+        "first_margin": 0,
+        "joint": [
+          19.8,
+          20,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_113",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_109",
+        "first_margin": 0,
+        "joint": [
+          19.8,
+          21,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_114",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_110",
+        "first_margin": 0,
+        "joint": [
+          19.8,
+          29,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_volume_115",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_051",
+        "first_margin": 1,
+        "joint": [
+          0,
+          40,
+          0
+        ],
+        "minimum_margin": 0.35,
+        "second": "crooked_stem_lower_1",
+        "second_margin": 0.35
+      },
+      {
+        "connected": true,
+        "first": "crooked_stem_lower_1",
+        "first_margin": 0.351316,
+        "joint": [
+          -1.45,
+          45.5,
+          0.35
+        ],
+        "minimum_margin": 0.35,
+        "second": "crooked_stem_middle_1",
+        "second_margin": 0.35
+      },
+      {
+        "connected": true,
+        "first": "crooked_stem_middle_1",
+        "first_margin": 0.349797,
+        "joint": [
+          0.3,
+          48.35,
+          -0.35
+        ],
+        "minimum_margin": 0.349797,
+        "second": "crooked_stem_upper_1",
+        "second_margin": 0.35
+      },
+      {
+        "connected": true,
+        "first": "crooked_stem_upper_1",
+        "first_margin": 0.34267,
+        "joint": [
+          -0.85,
+          51,
+          0.2
+        ],
+        "minimum_margin": 0.266667,
+        "second": "crooked_stem_tip_1",
+        "second_margin": 0.266667
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_002",
+        "first_margin": 0,
+        "joint": [
+          -15.5,
+          15,
+          -9
+        ],
+        "minimum_margin": 0,
+        "second": "root_back_left_root_knuckle_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_back_left_root_knuckle_1",
+        "first_margin": 0.444645,
+        "joint": [
+          -16.75,
+          13.25,
+          -10.5
+        ],
+        "minimum_margin": 0.444645,
+        "second": "root_back_left_root_knuckle_2",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_back_left_root_knuckle_2",
+        "first_margin": 0.444645,
+        "joint": [
+          -18,
+          11.5,
+          -12
+        ],
+        "minimum_margin": 0.444645,
+        "second": "root_back_left_knuckle_elbow_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_back_left_knuckle_elbow_1",
+        "first_margin": 0.443986,
+        "joint": [
+          -20,
+          7,
+          -14.5
+        ],
+        "minimum_margin": 0.443986,
+        "second": "root_back_left_elbow_wrist_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_back_left_elbow_wrist_1",
+        "first_margin": 0.442759,
+        "joint": [
+          -21,
+          4.75,
+          -15.25
+        ],
+        "minimum_margin": 0.442759,
+        "second": "root_back_left_elbow_wrist_2",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_back_left_elbow_wrist_2",
+        "first_margin": 0.442759,
+        "joint": [
+          -22,
+          2.5,
+          -16
+        ],
+        "minimum_margin": 0.433333,
+        "second": "root_back_left_raised_spur_1",
+        "second_margin": 0.433333
+      },
+      {
+        "connected": true,
+        "first": "root_back_left_elbow_wrist_2",
+        "first_margin": 0.442759,
+        "joint": [
+          -22,
+          2.5,
+          -16
+        ],
+        "minimum_margin": 0.442759,
+        "second": "root_back_left_wrist_toe_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_back_left_wrist_toe_1",
+        "first_margin": 0.45,
+        "joint": [
+          -24,
+          0.5,
+          -17
+        ],
+        "minimum_margin": 0.45,
+        "second": "root_back_left_inner_rootlet_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_back_left_wrist_toe_1",
+        "first_margin": 0.45,
+        "joint": [
+          -24,
+          0.5,
+          -17
+        ],
+        "minimum_margin": 0.45,
+        "second": "root_back_left_outer_rootlet_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_047",
+        "first_margin": 0.2,
+        "joint": [
+          -5,
+          9.2,
+          10
+        ],
+        "minimum_margin": 0.2,
+        "second": "root_front_left_root_knuckle_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_front_left_root_knuckle_1",
+        "first_margin": 0.443577,
+        "joint": [
+          -6,
+          6.6,
+          11.75
+        ],
+        "minimum_margin": 0.443577,
+        "second": "root_front_left_root_knuckle_2",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_front_left_root_knuckle_2",
+        "first_margin": 0.443577,
+        "joint": [
+          -7,
+          4,
+          13.5
+        ],
+        "minimum_margin": 0.443577,
+        "second": "root_front_left_knuckle_elbow_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_front_left_knuckle_elbow_1",
+        "first_margin": 0.455711,
+        "joint": [
+          -9.5,
+          -1,
+          16.5
+        ],
+        "minimum_margin": 0.45,
+        "second": "root_front_left_elbow_wrist_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_front_left_elbow_wrist_1",
+        "first_margin": 0.443879,
+        "joint": [
+          -9,
+          -3.5,
+          17.75
+        ],
+        "minimum_margin": 0.443879,
+        "second": "root_front_left_elbow_wrist_2",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_front_left_elbow_wrist_2",
+        "first_margin": 0.443879,
+        "joint": [
+          -8.5,
+          -6,
+          19
+        ],
+        "minimum_margin": 0.433333,
+        "second": "root_front_left_raised_spur_1",
+        "second_margin": 0.433333
+      },
+      {
+        "connected": true,
+        "first": "root_front_left_elbow_wrist_2",
+        "first_margin": 0.443879,
+        "joint": [
+          -8.5,
+          -6,
+          19
+        ],
+        "minimum_margin": 0.443879,
+        "second": "root_front_left_wrist_toe_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_front_left_wrist_toe_1",
+        "first_margin": 0.442238,
+        "joint": [
+          -11.5,
+          -9,
+          21.5
+        ],
+        "minimum_margin": 0.442238,
+        "second": "root_front_left_inner_rootlet_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_front_left_wrist_toe_1",
+        "first_margin": 0.442238,
+        "joint": [
+          -11.5,
+          -9,
+          21.5
+        ],
+        "minimum_margin": 0.442238,
+        "second": "root_front_left_outer_rootlet_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_047",
+        "first_margin": 0.2,
+        "joint": [
+          5,
+          9.2,
+          10
+        ],
+        "minimum_margin": 0.2,
+        "second": "root_front_right_root_knuckle_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_front_right_root_knuckle_1",
+        "first_margin": 0.455359,
+        "joint": [
+          6,
+          6.7,
+          11.75
+        ],
+        "minimum_margin": 0.45,
+        "second": "root_front_right_root_knuckle_2",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_front_right_root_knuckle_2",
+        "first_margin": 0.455359,
+        "joint": [
+          7,
+          4.2,
+          13.5
+        ],
+        "minimum_margin": 0.45,
+        "second": "root_front_right_knuckle_elbow_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_front_right_knuckle_elbow_1",
+        "first_margin": 0.448282,
+        "joint": [
+          9.8,
+          -0.8,
+          16.5
+        ],
+        "minimum_margin": 0.448282,
+        "second": "root_front_right_elbow_wrist_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_front_right_elbow_wrist_1",
+        "first_margin": 0.443879,
+        "joint": [
+          9.3,
+          -3.3,
+          17.75
+        ],
+        "minimum_margin": 0.443879,
+        "second": "root_front_right_elbow_wrist_2",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_front_right_elbow_wrist_2",
+        "first_margin": 0.443879,
+        "joint": [
+          8.8,
+          -5.8,
+          19
+        ],
+        "minimum_margin": 0.433333,
+        "second": "root_front_right_raised_spur_1",
+        "second_margin": 0.433333
+      },
+      {
+        "connected": true,
+        "first": "root_front_right_elbow_wrist_2",
+        "first_margin": 0.443879,
+        "joint": [
+          8.8,
+          -5.8,
+          19
+        ],
+        "minimum_margin": 0.443879,
+        "second": "root_front_right_wrist_toe_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_front_right_wrist_toe_1",
+        "first_margin": 0.451238,
+        "joint": [
+          11.8,
+          -9,
+          21.5
+        ],
+        "minimum_margin": 0.45,
+        "second": "root_front_right_inner_rootlet_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_front_right_wrist_toe_1",
+        "first_margin": 0.451238,
+        "joint": [
+          11.8,
+          -9,
+          21.5
+        ],
+        "minimum_margin": 0.45,
+        "second": "root_front_right_outer_rootlet_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "apple_volume_103",
+        "first_margin": 0.1,
+        "joint": [
+          15.5,
+          17,
+          -9
+        ],
+        "minimum_margin": 0.1,
+        "second": "root_back_right_root_knuckle_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_back_right_root_knuckle_1",
+        "first_margin": 0.45424,
+        "joint": [
+          16.75,
+          14.75,
+          -10.5
+        ],
+        "minimum_margin": 0.45,
+        "second": "root_back_right_root_knuckle_2",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_back_right_root_knuckle_2",
+        "first_margin": 0.45424,
+        "joint": [
+          18,
+          12.5,
+          -12
+        ],
+        "minimum_margin": 0.45,
+        "second": "root_back_right_knuckle_elbow_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_back_right_knuckle_elbow_1",
+        "first_margin": 0.446162,
+        "joint": [
+          20,
+          7.5,
+          -14.5
+        ],
+        "minimum_margin": 0.446162,
+        "second": "root_back_right_elbow_wrist_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_back_right_elbow_wrist_1",
+        "first_margin": 0.454915,
+        "joint": [
+          21,
+          5,
+          -15.25
+        ],
+        "minimum_margin": 0.45,
+        "second": "root_back_right_elbow_wrist_2",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_back_right_elbow_wrist_2",
+        "first_margin": 0.454915,
+        "joint": [
+          22,
+          2.5,
+          -16
+        ],
+        "minimum_margin": 0.433333,
+        "second": "root_back_right_raised_spur_1",
+        "second_margin": 0.433333
+      },
+      {
+        "connected": true,
+        "first": "root_back_right_elbow_wrist_2",
+        "first_margin": 0.454915,
+        "joint": [
+          22,
+          2.5,
+          -16
+        ],
+        "minimum_margin": 0.45,
+        "second": "root_back_right_wrist_toe_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_back_right_wrist_toe_1",
+        "first_margin": 0.45,
+        "joint": [
+          24,
+          0.5,
+          -17
+        ],
+        "minimum_margin": 0.45,
+        "second": "root_back_right_inner_rootlet_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "root_back_right_wrist_toe_1",
+        "first_margin": 0.45,
+        "joint": [
+          24,
+          0.5,
+          -17
+        ],
+        "minimum_margin": 0.45,
+        "second": "root_back_right_outer_rootlet_1",
+        "second_margin": 0.45
+      }
+    ],
+    "method": "shared-joint-compiled-oriented-cuboid-margin-v2",
+    "minimum_margin": 0.0
+  },
+  "bones": 42,
+  "cuboids": 155,
+  "declared_link_tree_covers_every_cube": true,
+  "feature_inventory": {
+    "apple_volume_cuboids": 115,
+    "carved_voxels": 382,
+    "dark_exposed_cut_faces": 10,
+    "identity_patches": 8,
+    "negative_space_cutouts": 2,
+    "root_limbs": 4,
+    "root_segments": 36,
+    "stem_segments": 4
+  },
+  "four_roots_in_four_xz_quadrants": true,
+  "keypoint_mean_gate_at_most_0.05_subject_heights": true,
+  "model_id": "golden_apple_rooted",
+  "negative_space": {
+    "base_occupied_voxels": 3912,
+    "black_proxy_solids": 0,
+    "cutout_is_empty_geometry_not_a_black_proxy": true,
+    "dark_exposed_surface_overrides": 10,
+    "method": "voxel-center ellipsoid CSG subtraction before greedy cuboid merging",
+    "occupied_voxels_after_carving": 3530,
+    "removed_voxels": 382
+  },
+  "proportions": {
+    "apple_depth_to_width": 1.060606,
+    "apple_extents": [
+      39.6,
+      40.0,
+      42.0
+    ],
+    "apple_width_to_height": 0.99,
+    "model_extents": [
+      55.377287,
+      64.921787,
+      46.821496
+    ],
+    "root_extents": [
+      55.377287,
+      29.813142,
+      46.821496
+    ]
+  },
+  "recorded_feature_inventory_matches": true,
+  "reference_frame_clipping": {
+    "declared_edges": [
+      "left",
+      "right",
+      "bottom"
+    ],
+    "iou_cannot_establish_off_frame_continuation": true,
+    "measured_edges": {
+      "bottom": true,
+      "left": true,
+      "right": true,
+      "top": false
+    }
+  },
+  "reference_rights": "unknown; private ignored benchmark reference only",
+  "renderer": "deterministic-orthographic-textured-cuboid-zbuffer-v2-light-review",
+  "root_quadrants": [
+    [
+      -1,
+      -1
+    ],
+    [
+      -1,
+      1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "schema_version": 1,
+  "semantic_cuboids": 155,
+  "single_view_hidden_geometry": "inferred_conservatively_not_observed",
+  "source_iou_gate_at_least_0.70": true,
+  "source_projection": false,
+  "source_skin_cuboids": 0,
+  "views": [
+    "reference-angle.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "bite-closeup.png",
+    "stem-closeup.png",
+    "root-joints-closeup.png",
+    "silhouette-overlap.png",
+    "comparison-sheet.png"
+  ]
+}

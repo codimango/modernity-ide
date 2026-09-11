@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "nian": {
+    "representation": "agent-authored native semantic volume with one fur-matched flush pixel decal",
+    "cuboids": 80,
+    "semantic_anatomy_cuboids": 79,
+    "flush_surface_decal_cuboids": 1,
+    "source_skin_cuboids": 0,
+    "bones": 32,
+    "model_extents": [25.394019, 34.097337, 33.750871],
+    "width_to_length_ratio": 0.752396,
+    "native_audit": {"ok": true, "errors": 0, "warnings": 1},
+    "segmentation": {
+      "method": "reviewed reference mask used for evaluation only",
+      "bbox_pixels": [145, 40, 567, 442],
+      "foreground_fraction": 0.287438
+    },
+    "semantic_profile_fidelity": {
+      "alignment": "uniform-scale-translation-grid-search-no-warp",
+      "silhouette_iou": 0.661169,
+      "silhouette_recall": 0.798111,
+      "silhouette_precision": 0.793957,
+      "texture_psnr_db": 10.3246,
+      "mean_absolute_error": 61.9657,
+      "reprojected_fraction": 0.288942
+    },
+    "reference_view_fidelity": {
+      "alignment": "uniform-scale-translation-grid-search-no-warp",
+      "silhouette_iou": 0.75329,
+      "silhouette_recall": 0.869311,
+      "silhouette_precision": 0.849493,
+      "texture_psnr_db": 10.6634,
+      "mean_absolute_error": 58.101,
+      "reprojected_fraction": 0.294144,
+      "view_direction": [-1.0, 0.32, 0.6]
+    },
+    "bilateral_consistency": {
+      "full_body_silhouette_iou": 0.972976,
+      "full_body_rgb_mae": 19.3651,
+      "head_silhouette_iou": 1.0,
+      "head_rgb_mae": 17.5401
+    },
+    "anatomy_metrics": {
+      "main_trunk_z_span": 16.5,
+      "shoulder_top_minus_rump_top": 13.8,
+      "shoulder_to_rump_width_ratio": 2.066667,
+      "front_to_rear_upper_limb_width_ratio": 1.789474,
+      "front_chain_pitch_degrees": [10.0, 8.0, 12.0],
+      "front_paw_depth": 3.2,
+      "front_pad_depth": 1.8,
+      "green_face_y_span": 8.0,
+      "horn_span": 24.4,
+      "horn_tip_forward_z": 22.15,
+      "near_rear_ankle_vertical_overlap": 0.689163,
+      "far_rear_ankle_vertical_overlap": 0.696333,
+      "near_rear_toe_vertical_overlap": 1.094648,
+      "far_rear_toe_vertical_overlap": 1.094648
+    },
+    "topology": {
+      "all_required_chains_connected": true,
+      "maximum_required_chain_gap": 0.0
+    },
+    "visual_gate": {
+      "specialist_review": "GO",
+      "strict_cumulative_gate": "PENDING",
+      "self_assigned_pass": false,
+      "exact_comparison_sheet_sha256": "36d07e366a345e70668457ceb627cbeefdbd6fdb469cf86cb134cb110bb8a087",
+      "latest_specialist_calls": {
+        "silhouette": 4.0,
+        "proportions": 4.0,
+        "identity": 4.0,
+        "materials_color": 4.0,
+        "topology_attachment": 3.0,
+        "three_dimensional_coherence": 3.0
+      },
+      "prior_candidate_verdicts": ["FAIL", "FAIL", "FAIL", "FAIL", "FAIL"]
+    },
+    "artifacts": {
+      "model_spec_sha256": "d50ebf9cf4bc7fdb1eb102da02ae8b773dd0f6140c5b764044ede4f70769eda6",
+      "bbmodel_sha256": "bdf3fa47e1f8710840e9c84f0afdf3188200d50a607dfa20f4f95ce510a75fb2",
+      "texture_sha256": "3a02fddc95c49e96f2b0470ec784b6085df971b48b200005dd97065f22b0a0f8",
+      "comparison_sheet_sha256": "36d07e366a345e70668457ceb627cbeefdbd6fdb469cf86cb134cb110bb8a087",
+      "semantic_evaluation_sha256": "110992078adf550177f3c09221ebc48bade769880543f33d4d5243e24c9bcaa7",
+      "profile_sha256": "b8a3fb397172e0a3d9cf8b64135f43b3dddf56de02f3dc7fd0c58e8fd13fcf55",
+      "reference_angle_sha256": "9f1cde8ba98503b50f064bd52470d94bef24b18e9ee6423d5eb1ab16575afe7a",
+      "isometric_sha256": "4bbf93ba83eb38b5c9bbe9fc639043094c6572e9c3ba028a16a3fefccd7b971c",
+      "rear_joint_source_sha256": "8da3ac3a39f3c2bd57fe84c41ac44913138b4f9a2268681be2a000689f1084d1",
+      "rear_joint_profile_sha256": "0310f939e19a400c11bef34e116e7b072874775a5937d7ce4a076d5aa70eaebb",
+      "semantic_profile_reprojection_sha256": "79b1856f68b6862784dc60036865912ec30dcee9ee7a934addfa9bd3fff17036",
+      "semantic_profile_overlap_sha256": "1e1904d528b89cfe79010548e685f03e78e6fb59922d6111dc55bb59628d4ed0",
+      "semantic_reference_reprojection_sha256": "90738ffdabc012ea8355c346eecccb7d6d421101617383abb5b84197357676e9",
+      "semantic_reference_overlap_sha256": "353eaadcb6c10d5f22e120eb077ff09bf65b9396e6fe1ace4a1814659d00023f",
+      "foreground_mask_sha256": "318a379a94a63e0faea5570ecd20d4ee4e75ff13b76ccfa6eb5910983202a721",
+      "depth_map_sha256": "14f91283cba58fb6dcbba8aaf7fdde22d2e71f5baefcb23d0606b6130b413fb1"
+    }
+  },
+  "generic_mesh_proof": {
+    "cuboids": 72,
+    "source_mesh": {
+      "geometries": 1,
+      "vertices": 6272,
+      "triangles": 7942,
+      "watertight": false,
+      "color_source": "uv-texture",
+      "face_material_overrides": 117
+    },
+    "voxel_evidence": {
+      "retained_components": 1,
+      "retained_voxels": 1946,
+      "removed_voxels": 0,
+      "source_coverage": 1.0,
+      "voxel_iou": 0.507035,
+      "surface_f1_tolerant": 0.935582,
+      "mean_silhouette_iou": 0.956008
+    },
+    "triangle_raster_audit": {
+      "mean_iou": 0.8191,
+      "mean_source_coverage": 0.9992,
+      "mean_model_precision": 0.8196
+    },
+    "native_audit": {"ok": true, "errors": 0, "warnings": 1},
+    "artifacts": {
+      "model_spec_sha256": "c9f0d58958b99a24ff2de642a5b02316f2fab8f3bf2cb1e53d83eef5ab4532ae",
+      "mesh_evidence_sha256": "8d4c7ed817aa622dc9576165a29cbfec4867f463aa1abeca7e823f446313130c",
+      "bbmodel_sha256": "c1b4c3282268abd5ba2871bd271d6a1340fce2ce1f4bfd61db3eff10f801d92e",
+      "triangle_overlap_sha256": "63a52f115a0e77c48dd96a54986cb7effea8cb07b102880539a330d9326ff7b5"
+    }
+  }
+}

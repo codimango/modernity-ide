@@ -1,0 +1,4 @@
+interface:
+  display_name: "img2blockbench"
+  short_description: "Turn images, clips, or meshes into Blockbench models"
+  default_prompt: "Use $img2blockbench to reconstruct this subject as a reviewed, all-angle Minecraft-style Blockbench model."

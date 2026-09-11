@@ -1,0 +1,59 @@
+{
+  "artifacts": [
+    {
+      "bytes": 187438,
+      "path": "biblical_angel_many_eyed_six_wing.model-spec.json",
+      "sha256": "21ccd48c98ab37432cb8309e183103798e0999912096df24a7cce1974cfd3b62"
+    },
+    {
+      "bytes": 5383,
+      "path": "biblical_angel_many_eyed_six_wing.png",
+      "sha256": "b84a5d4e0d94518f08856dba915dc95c68c38de0a5d7a8dd4e52d300e9ae2ef6"
+    },
+    {
+      "bytes": 381671,
+      "path": "biblical_angel_many_eyed_six_wing.bbmodel",
+      "sha256": "3984d4a205b3814a6fd2d1a3f1f4146e5dc68907ad01e572cd28ac595343060b"
+    },
+    {
+      "bytes": 388264,
+      "path": "biblical_angel_many_eyed_six_wing.geo.json",
+      "sha256": "8d7354be7d5eef8b4f74267c982b1963a8e77fe1d5495b5048cc08aa5bb60bb9"
+    },
+    {
+      "bytes": 241,
+      "path": "biblical_angel_many_eyed_six_wing.audit.json",
+      "sha256": "0e185c3aa5426f5a2c30888bb3a9f9786c715bf932635b1a4aaee54c4b46634d"
+    }
+  ],
+  "collision": {
+    "eye_height": 3.8,
+    "height": 5.6,
+    "width": 3.4
+  },
+  "generator": {
+    "lane": "agent-authored-holistic-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "biblical_angel_many_eyed_six_wing",
+  "private_optional_artifacts": [
+    {
+      "bundled": false,
+      "filename": "biblically-accurate-angel.png",
+      "kind": "source_reference",
+      "required_for_model_use": false,
+      "sha256": "1b4e05b4fa70f51fa37d4eb054b7355274fcfd576936402ca7db1515b391826c"
+    }
+  ],
+  "reference": {
+    "availability": "private-optional",
+    "bundled": false,
+    "height": 714,
+    "image": "biblically-accurate-angel.png",
+    "required_for_model_use": false,
+    "sha256": "1b4e05b4fa70f51fa37d4eb054b7355274fcfd576936402ca7db1515b391826c",
+    "width": 744
+  },
+  "schema_version": 1
+}

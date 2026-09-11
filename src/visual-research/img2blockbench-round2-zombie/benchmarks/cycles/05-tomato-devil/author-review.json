@@ -1,0 +1,27 @@
+{
+  "asset": "tomato_devil",
+  "critical_defect_observed": false,
+  "cycle": 5,
+  "inspection": {
+    "comparison_sheet": "render/comparison-sheet.png",
+    "views_inspected": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "isometric",
+      "ten-eyes",
+      "zipper-mouth",
+      "arm-joints"
+    ]
+  },
+  "observations": [
+    "A 14x16x12 true ellipsoid occupancy produces a rounded silhouette in front, side, top, and isometric views without a dominant slab.",
+    "The measured body envelope is 25.1875 by 25.625 by 25.0 units, so all three dimensions remain within 2.5 percent.",
+    "All ten eye bulbs, eight long elbowed arms, eight broad palms, and 32 fingers are native modeled features rather than painted panels.",
+    "The mouth is a 0.625-unit-wide pinched seam with five small irregular teeth, not an open rectangular slot.",
+    "A separate skeptical visual-review terminal marked the exact final comparison sheet GO; final cumulative grading remains external."
+  ],
+  "status": "READY_FOR_BLIND_CUMULATIVE_GRADING"
+}

@@ -1,0 +1,66 @@
+{
+  "asset": "militech_centaur_piloted_exoskeleton",
+  "author_decision": "INDEPENDENT_PASS",
+  "critical_geometry_defect_observed": false,
+  "cycle": "round2-07",
+  "independently_graded_commit": "df4ad06",
+  "identity_review": {
+    "human_pilot_is_visibly_distinct_from_machine": true,
+    "player_fit_preview_uses_a_separate_classic_player": true,
+    "shell_export_contains_no_pilot_bones_or_pilot_named_cubes": true,
+    "shield_and_thermal_weapon_are_distinct_asymmetric_loads": true,
+    "six_wearable_interfaces_are_named_and_transformed": true,
+    "two_powered_leg_chains_flank_the_player": true,
+    "two_powered_leg_chains_pass_minimum_mass_gates": true,
+    "wearable_shell_reads_as_an_open_exoskeleton": true
+  },
+  "limitations": [
+    "The powered-leg mass now tracks the production silhouette, but micro-panels remain simplified as Minecraft-scale detail.",
+    "The shield is an open cellular grille rather than a dense translucent composite slab.",
+    "The backpack is simpler than the production power unit and small decals are omitted.",
+    "The cameras are manually frozen estimates and do not establish hidden geometry.",
+    "The attachable is a static shell asset; runtime animation, controller, item registration, and an in-game fit render are not included."
+  ],
+  "quantitative_checks": {
+    "all_191_declared_attachments_connected": true,
+    "all_three_fixed_camera_aspirations_pass": true,
+    "both_exo_feet_grounded": true,
+    "both_pilot_boots_retained_in_exoframe": true,
+    "fixed_camera_iou": [0.603863, 0.47559, 0.542573],
+    "fixed_camera_keypoint_mean_subject_heights": [0.061311, 0.07981, 0.073091],
+    "minecraft_texture": {
+      "colors_per_material_at_most": 4,
+      "dithering": false,
+      "global_palette_colors": 24,
+      "source_fraction": 0.208461,
+      "source_observed_faces": 486,
+      "source_observed_texels": 14749,
+      "texture_density": 1
+    },
+    "shield_contacts": "2/2",
+    "wearable_attachment_points": 6,
+    "wearable_shell_bones": 21,
+    "wearable_shell_cuboids": 168,
+    "wearable_shell_pilot_bones": 0
+  },
+  "reviewed_views": [
+    "source-6-perspective.png",
+    "source-7-perspective.png",
+    "source-8-perspective.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "pilot-closeup.png",
+    "leg-closeup.png",
+    "shield-contact-closeup.png",
+    "backpack-closeup.png",
+    "thermal-weapon-closeup.png",
+    "wearable-shell-isometric.png",
+    "wearable-fit-front.png",
+    "wearable-fit-isometric.png",
+    "comparison-sheet.png"
+  ]
+}

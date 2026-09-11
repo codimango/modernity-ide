@@ -1,0 +1,177 @@
+{
+  "automatic_fit_or_recentering": false,
+  "camera_parameters_are_estimated": true,
+  "cameras": {
+    "source-6": {
+      "orbit_parameters": {
+        "distance": 190.0,
+        "near": 0.1,
+        "pitch_degrees": 0.0,
+        "principal_point": [
+          500.0,
+          513.0
+        ],
+        "roll_degrees": 0.0,
+        "target": [
+          4.0,
+          55.0,
+          4.0
+        ],
+        "vertical_fov_degrees": 35.0,
+        "yaw_degrees": -5.0
+      },
+      "resolved_camera": {
+        "focal_x": 1622.2707414087834,
+        "focal_y": 1622.2707414087834,
+        "image_size": [
+          1000,
+          1023
+        ],
+        "near": 0.1,
+        "principal_point": [
+          500.0,
+          513.0
+        ],
+        "projection": "perspective",
+        "translation": [
+          -4.333401763357617,
+          -55.0,
+          -193.63615582137635
+        ],
+        "world_to_camera": [
+          [
+            0.9961946980917455,
+            0.0,
+            0.08715574274765817
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.08715574274765817,
+            0.0,
+            0.9961946980917455
+          ]
+        ]
+      }
+    },
+    "source-7": {
+      "orbit_parameters": {
+        "distance": 184.0,
+        "near": 0.1,
+        "pitch_degrees": 1.0,
+        "principal_point": [
+          510.0,
+          515.0
+        ],
+        "roll_degrees": 0.0,
+        "target": [
+          2.0,
+          54.0,
+          2.0
+        ],
+        "vertical_fov_degrees": 35.0,
+        "yaw_degrees": 70.0
+      },
+      "resolved_camera": {
+        "focal_x": 1622.2707414087834,
+        "focal_y": 1622.2707414087834,
+        "image_size": [
+          1000,
+          1023
+        ],
+        "near": 0.1,
+        "principal_point": [
+          510.0,
+          515.0
+        ],
+        "projection": "perspective",
+        "translation": [
+          1.195344954920479,
+          -53.947037594254866,
+          -187.5054650537123
+        ],
+        "world_to_camera": [
+          [
+            0.3420201433256688,
+            0.0,
+            -0.9396926207859083
+          ],
+          [
+            -0.0163998975440718,
+            0.9998476951563913,
+            -0.005969074551057532
+          ],
+          [
+            0.9395495010482593,
+            0.01745240643728351,
+            0.3419680520012286
+          ]
+        ]
+      }
+    },
+    "source-8": {
+      "orbit_parameters": {
+        "distance": 188.0,
+        "near": 0.1,
+        "pitch_degrees": 1.0,
+        "principal_point": [
+          500.0,
+          515.0
+        ],
+        "roll_degrees": 0.0,
+        "target": [
+          0.0,
+          53.0,
+          0.0
+        ],
+        "vertical_fov_degrees": 35.0,
+        "yaw_degrees": 178.0
+      },
+      "resolved_camera": {
+        "focal_x": 1622.2707414087834,
+        "focal_y": 1622.2707414087834,
+        "image_size": [
+          1000,
+          1023
+        ],
+        "near": 0.1,
+        "principal_point": [
+          500.0,
+          515.0
+        ],
+        "projection": "perspective",
+        "translation": [
+          -0.0,
+          -52.99192784328873,
+          -188.92497754117608
+        ],
+        "world_to_camera": [
+          [
+            -0.9993908270190957,
+            0.0,
+            -0.034899496702501136
+          ],
+          [
+            -0.0006090802009086855,
+            0.9998476951563912,
+            0.017441774902830158
+          ],
+          [
+            0.03489418134011384,
+            0.01745240643728351,
+            -0.9992386149554826
+          ]
+        ]
+      }
+    }
+  },
+  "geometry_modified_during_evidence": false,
+  "hidden_geometry_established": false,
+  "method": "three-independent-manually-frozen-perspective-cameras-v1",
+  "runtime_camera_fitting": false,
+  "schema_version": 1,
+  "visual_hull_used": false
+}

@@ -1,0 +1,1169 @@
+{
+  "all_proportion_gates_pass": true,
+  "alpha_silhouette": {
+    "alpha_threshold": 16,
+    "iou": 0.68495,
+    "keypoints": {
+      "count": 10,
+      "maximum_error_subject_heights": 0.070994,
+      "mean_error_subject_heights": 0.029263,
+      "points": {
+        "axe_head": {
+          "error_subject_heights": 0.008832,
+          "reference": [
+            -0.328477,
+            0.754967
+          ],
+          "rendered": [
+            -0.324266,
+            0.76273
+          ]
+        },
+        "hand_mouth": {
+          "error_subject_heights": 0.019928,
+          "reference": [
+            0.124503,
+            0.537748
+          ],
+          "rendered": [
+            0.143802,
+            0.542717
+          ]
+        },
+        "hat_top": {
+          "error_subject_heights": 0.016133,
+          "reference": [
+            -0.05298,
+            0.0
+          ],
+          "rendered": [
+            -0.068878,
+            0.002748
+          ]
+        },
+        "head_mouth": {
+          "error_subject_heights": 0.006654,
+          "reference": [
+            -0.088742,
+            0.193377
+          ],
+          "rendered": [
+            -0.092245,
+            0.199035
+          ]
+        },
+        "red_eye": {
+          "error_subject_heights": 0.024312,
+          "reference": [
+            -0.083444,
+            0.133775
+          ],
+          "rendered": [
+            -0.059243,
+            0.131449
+          ]
+        },
+        "right_foot": {
+          "error_subject_heights": 0.022531,
+          "reference": [
+            0.107285,
+            0.982781
+          ],
+          "rendered": [
+            0.092753,
+            1.0
+          ]
+        },
+        "snout_tip": {
+          "error_subject_heights": 0.040146,
+          "reference": [
+            -0.198675,
+            0.156291
+          ],
+          "rendered": [
+            -0.23511,
+            0.173151
+          ]
+        },
+        "tail_base_mouth": {
+          "error_subject_heights": 0.070994,
+          "reference": [
+            -0.018543,
+            0.737748
+          ],
+          "rendered": [
+            0.023801,
+            0.680764
+          ]
+        },
+        "tail_mid_mouth": {
+          "error_subject_heights": 0.030883,
+          "reference": [
+            0.170861,
+            0.716556
+          ],
+          "rendered": [
+            0.140207,
+            0.720309
+          ]
+        },
+        "tail_tip": {
+          "error_subject_heights": 0.052217,
+          "reference": [
+            0.388079,
+            0.890066
+          ],
+          "rendered": [
+            0.341527,
+            0.91372
+          ]
+        }
+      }
+    },
+    "limitation": "One observed illustrated view constrains the front silhouette and named landmarks. The source alpha is complete and does not touch the frame; rear materials and exact appendage depth remain conservative semantic inference requiring canonical views.",
+    "method": "alpha-mask-aspect-preserving-height-normalized-centered-iou-v1",
+    "precision": 0.726462,
+    "recall": 0.922997,
+    "reference_aspect_ratio": 0.78629,
+    "reference_transform": {
+      "bbox": [
+        3,
+        8,
+        597,
+        763
+      ],
+      "normalized_height": 496,
+      "normalized_width": 390,
+      "scale": 0.656953642,
+      "source_height": 755,
+      "source_width": 594,
+      "touches_frame_edges": {
+        "bottom": false,
+        "left": false,
+        "right": false,
+        "top": false
+      }
+    },
+    "rendered_aspect_ratio": 0.77621,
+    "rendered_transform": {
+      "bbox": [
+        104,
+        42,
+        536,
+        598
+      ],
+      "normalized_height": 496,
+      "normalized_width": 385,
+      "scale": 0.892086331,
+      "source_height": 556,
+      "source_width": 432,
+      "touches_frame_edges": {
+        "bottom": false,
+        "left": false,
+        "right": false,
+        "top": false
+      }
+    },
+    "source_touches_frame": false,
+    "target_height": 496
+  },
+  "attachments": {
+    "all_connected": true,
+    "attachments": [
+      {
+        "connected": true,
+        "first": "pelvis_core",
+        "first_margin": 0.3,
+        "joint": [
+          0,
+          33.2,
+          0
+        ],
+        "minimum_margin": 0.3,
+        "second": "abdomen_core",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "abdomen_core",
+        "first_margin": 0.3,
+        "joint": [
+          0,
+          40.2,
+          0
+        ],
+        "minimum_margin": 0.2,
+        "second": "chest_core",
+        "second_margin": 0.2
+      },
+      {
+        "connected": true,
+        "first": "chest_core",
+        "first_margin": 1.5,
+        "joint": [
+          0,
+          49.5,
+          0
+        ],
+        "minimum_margin": 1.5,
+        "second": "shoulder_core",
+        "second_margin": 1.55
+      },
+      {
+        "connected": true,
+        "first": "shoulder_core",
+        "first_margin": 0.95,
+        "joint": [
+          0,
+          51.5,
+          0
+        ],
+        "minimum_margin": 0.95,
+        "second": "shark_throat",
+        "second_margin": 2.35
+      },
+      {
+        "connected": true,
+        "first": "shark_throat",
+        "first_margin": 1.65,
+        "joint": [
+          0,
+          56,
+          0
+        ],
+        "minimum_margin": 1.65,
+        "second": "head_cranium",
+        "second_margin": 2
+      },
+      {
+        "connected": true,
+        "first": "head_cranium",
+        "first_margin": 4.8,
+        "joint": [
+          0,
+          59.2,
+          1
+        ],
+        "minimum_margin": 0.45,
+        "second": "head_snout_base_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "head_snout_base_1",
+        "first_margin": 0.436409,
+        "joint": [
+          -4.5,
+          58.85,
+          1
+        ],
+        "minimum_margin": 0.436409,
+        "second": "head_snout_base_2",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "head_snout_base_2",
+        "first_margin": 0.436409,
+        "joint": [
+          -9,
+          58.5,
+          1
+        ],
+        "minimum_margin": 0.436409,
+        "second": "head_snout_tip_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "head_snout_tip_1",
+        "first_margin": 0.470689,
+        "joint": [
+          -13.25,
+          58,
+          1
+        ],
+        "minimum_margin": 0.45,
+        "second": "head_snout_tip_2",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "head_cranium",
+        "first_margin": 2,
+        "joint": [
+          -0.5,
+          56,
+          1
+        ],
+        "minimum_margin": 0.5,
+        "second": "lower_jaw",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "head_snout_base_1",
+        "first_margin": 0.1,
+        "joint": [
+          -1,
+          56.4,
+          7.1
+        ],
+        "minimum_margin": 0.1,
+        "second": "mouth_head",
+        "second_margin": 0.15
+      },
+      {
+        "connected": true,
+        "first": "mouth_head",
+        "first_margin": 0.5,
+        "joint": [
+          -2.4,
+          56.272727,
+          6.868182
+        ],
+        "minimum_margin": 0.118182,
+        "second": "head_mouth_tooth_1",
+        "second_margin": 0.118182
+      },
+      {
+        "connected": true,
+        "first": "mouth_head",
+        "first_margin": 0.5,
+        "joint": [
+          -3.8,
+          56.145455,
+          6.636364
+        ],
+        "minimum_margin": 0.086364,
+        "second": "head_mouth_tooth_2",
+        "second_margin": 0.086364
+      },
+      {
+        "connected": true,
+        "first": "mouth_head",
+        "first_margin": 0.5,
+        "joint": [
+          -5.2,
+          56.018182,
+          6.404545
+        ],
+        "minimum_margin": 0.104545,
+        "second": "head_mouth_tooth_3",
+        "second_margin": 0.104545
+      },
+      {
+        "connected": true,
+        "first": "mouth_head",
+        "first_margin": 0.5,
+        "joint": [
+          -6.6,
+          55.890909,
+          6.172727
+        ],
+        "minimum_margin": 0.109091,
+        "second": "head_mouth_tooth_4",
+        "second_margin": 0.109091
+      },
+      {
+        "connected": true,
+        "first": "mouth_head",
+        "first_margin": 0.5,
+        "joint": [
+          -8,
+          55.763636,
+          5.940909
+        ],
+        "minimum_margin": 0.090909,
+        "second": "head_mouth_tooth_5",
+        "second_margin": 0.090909
+      },
+      {
+        "connected": true,
+        "first": "mouth_head",
+        "first_margin": 0.5,
+        "joint": [
+          -9.4,
+          55.636364,
+          5.709091
+        ],
+        "minimum_margin": 0.109091,
+        "second": "head_mouth_tooth_6",
+        "second_margin": 0.109091
+      },
+      {
+        "connected": true,
+        "first": "mouth_head",
+        "first_margin": 0.5,
+        "joint": [
+          -10.8,
+          55.509091,
+          5.477273
+        ],
+        "minimum_margin": 0.077273,
+        "second": "head_mouth_tooth_7",
+        "second_margin": 0.077273
+      },
+      {
+        "connected": true,
+        "first": "mouth_head",
+        "first_margin": 0.5,
+        "joint": [
+          -12.2,
+          55.381818,
+          5.245455
+        ],
+        "minimum_margin": 0.095455,
+        "second": "head_mouth_tooth_8",
+        "second_margin": 0.095455
+      },
+      {
+        "connected": true,
+        "first": "mouth_head",
+        "first_margin": 0.5,
+        "joint": [
+          -13.6,
+          55.254545,
+          5.013636
+        ],
+        "minimum_margin": 0.104545,
+        "second": "head_mouth_tooth_9",
+        "second_margin": 0.104545
+      },
+      {
+        "connected": true,
+        "first": "mouth_head",
+        "first_margin": 0.5,
+        "joint": [
+          -15,
+          55.127273,
+          4.781818
+        ],
+        "minimum_margin": 0.081818,
+        "second": "head_mouth_tooth_10",
+        "second_margin": 0.081818
+      },
+      {
+        "connected": true,
+        "first": "head_cranium",
+        "first_margin": 1.5,
+        "joint": [
+          -2,
+          62.5,
+          0
+        ],
+        "minimum_margin": 0.707406,
+        "second": "hat_band",
+        "second_margin": 0.707406
+      },
+      {
+        "connected": true,
+        "first": "hat_band",
+        "first_margin": 0.400609,
+        "joint": [
+          -2.2,
+          64.2,
+          0
+        ],
+        "minimum_margin": 0.400609,
+        "second": "hat_crown",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "hat_crown",
+        "first_margin": 0.9,
+        "joint": [
+          -4,
+          66.2,
+          0
+        ],
+        "minimum_margin": 0.829198,
+        "second": "hat_puff_left",
+        "second_margin": 0.829198
+      },
+      {
+        "connected": true,
+        "first": "hat_crown",
+        "first_margin": 0.9,
+        "joint": [
+          -2.3,
+          66.2,
+          0
+        ],
+        "minimum_margin": 0.35,
+        "second": "hat_puff_center",
+        "second_margin": 0.35
+      },
+      {
+        "connected": true,
+        "first": "hat_crown",
+        "first_margin": 0.9,
+        "joint": [
+          -0.2,
+          66.2,
+          0
+        ],
+        "minimum_margin": 0.773528,
+        "second": "hat_puff_right",
+        "second_margin": 0.773528
+      },
+      {
+        "connected": true,
+        "first": "shoulder_core",
+        "first_margin": 1.45,
+        "joint": [
+          9,
+          51,
+          -3.5
+        ],
+        "minimum_margin": 0.3,
+        "second": "dorsal_fin_base_1",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "dorsal_fin_base_1",
+        "first_margin": 0.281989,
+        "joint": [
+          11,
+          54,
+          -3.8
+        ],
+        "minimum_margin": 0.281989,
+        "second": "dorsal_fin_tip_1",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "shoulder_core",
+        "first_margin": 2,
+        "joint": [
+          -9.5,
+          50,
+          0
+        ],
+        "minimum_margin": 0.45,
+        "second": "left_arm_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "left_arm_1",
+        "first_margin": 0.474774,
+        "joint": [
+          -13,
+          41,
+          0.6
+        ],
+        "minimum_margin": 0.45,
+        "second": "left_arm_2",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "left_arm_2",
+        "first_margin": 0.466175,
+        "joint": [
+          -12.5,
+          32,
+          1.2
+        ],
+        "minimum_margin": 0.466175,
+        "second": "left_hand",
+        "second_margin": 1.8
+      },
+      {
+        "connected": true,
+        "first": "shoulder_core",
+        "first_margin": 2,
+        "joint": [
+          9.5,
+          50,
+          0
+        ],
+        "minimum_margin": 0.45,
+        "second": "right_arm_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "right_arm_1",
+        "first_margin": 0.458055,
+        "joint": [
+          13.2,
+          42,
+          0.7
+        ],
+        "minimum_margin": 0.45,
+        "second": "right_arm_2",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "right_arm_2",
+        "first_margin": 0.458982,
+        "joint": [
+          12.5,
+          33,
+          1.2
+        ],
+        "minimum_margin": 0.458982,
+        "second": "right_hand",
+        "second_margin": 1.8
+      },
+      {
+        "connected": true,
+        "first": "right_hand",
+        "first_margin": 0,
+        "joint": [
+          10.1,
+          32.4,
+          5.05
+        ],
+        "minimum_margin": 0,
+        "second": "mouth_hand",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "mouth_hand",
+        "first_margin": 0.4,
+        "joint": [
+          11.02,
+          32.16,
+          5.05
+        ],
+        "minimum_margin": 0.1,
+        "second": "hand_mouth_tooth_1",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "mouth_hand",
+        "first_margin": 0.4,
+        "joint": [
+          11.94,
+          31.92,
+          5.05
+        ],
+        "minimum_margin": 0.1,
+        "second": "hand_mouth_tooth_2",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "mouth_hand",
+        "first_margin": 0.4,
+        "joint": [
+          12.86,
+          31.68,
+          5.05
+        ],
+        "minimum_margin": 0.1,
+        "second": "hand_mouth_tooth_3",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "mouth_hand",
+        "first_margin": 0.4,
+        "joint": [
+          13.78,
+          31.44,
+          5.05
+        ],
+        "minimum_margin": 0.1,
+        "second": "hand_mouth_tooth_4",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "right_hand",
+        "first_margin": 1.561348,
+        "joint": [
+          10.8,
+          30.5,
+          1.8
+        ],
+        "minimum_margin": 0.2,
+        "second": "right_finger_1",
+        "second_margin": 0.2
+      },
+      {
+        "connected": true,
+        "first": "right_hand",
+        "first_margin": 1.709513,
+        "joint": [
+          12.5,
+          30.5,
+          1.8
+        ],
+        "minimum_margin": 0.2,
+        "second": "right_finger_2",
+        "second_margin": 0.2
+      },
+      {
+        "connected": true,
+        "first": "right_hand",
+        "first_margin": 1.58858,
+        "joint": [
+          14.2,
+          30.5,
+          1.8
+        ],
+        "minimum_margin": 0.2,
+        "second": "right_finger_3",
+        "second_margin": 0.2
+      },
+      {
+        "connected": true,
+        "first": "pelvis_core",
+        "first_margin": 3.5,
+        "joint": [
+          -4.2,
+          30,
+          0
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_leg_1",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "left_leg_1",
+        "first_margin": 0.508144,
+        "joint": [
+          -5.2,
+          17,
+          0.3
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_leg_2",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "left_leg_2",
+        "first_margin": 0.522358,
+        "joint": [
+          -6.5,
+          3,
+          1
+        ],
+        "minimum_margin": 0,
+        "second": "left_foot",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "pelvis_core",
+        "first_margin": 3.5,
+        "joint": [
+          4.2,
+          30,
+          0
+        ],
+        "minimum_margin": 0.5,
+        "second": "right_leg_1",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "right_leg_1",
+        "first_margin": 0.492973,
+        "joint": [
+          5.4,
+          16,
+          0.4
+        ],
+        "minimum_margin": 0.492973,
+        "second": "right_leg_2",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "right_leg_2",
+        "first_margin": 0.483217,
+        "joint": [
+          7,
+          3,
+          1.1
+        ],
+        "minimum_margin": 0,
+        "second": "right_foot",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "pelvis_core",
+        "first_margin": 0.5,
+        "joint": [
+          1,
+          25,
+          -5
+        ],
+        "minimum_margin": 0.45,
+        "second": "tail_base_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "tail_base_1",
+        "first_margin": 0.426244,
+        "joint": [
+          5.5,
+          22.25,
+          -5
+        ],
+        "minimum_margin": 0.426244,
+        "second": "tail_base_2",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "tail_base_2",
+        "first_margin": 0.426244,
+        "joint": [
+          10,
+          19.5,
+          -5
+        ],
+        "minimum_margin": 0.426244,
+        "second": "tail_mid_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "tail_mid_1",
+        "first_margin": 0.425765,
+        "joint": [
+          13.666667,
+          19.333333,
+          -4.833333
+        ],
+        "minimum_margin": 0.425765,
+        "second": "tail_mid_2",
+        "second_margin": 0.433333
+      },
+      {
+        "connected": true,
+        "first": "tail_mid_2",
+        "first_margin": 0.442433,
+        "joint": [
+          17.333333,
+          19.166667,
+          -4.666667
+        ],
+        "minimum_margin": 0.442433,
+        "second": "tail_mid_3",
+        "second_margin": 0.466667
+      },
+      {
+        "connected": true,
+        "first": "tail_mid_3",
+        "first_margin": 0.459098,
+        "joint": [
+          21,
+          19,
+          -4.5
+        ],
+        "minimum_margin": 0.45,
+        "second": "tail_band_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "tail_band_1",
+        "first_margin": 0.427384,
+        "joint": [
+          26,
+          15,
+          -4
+        ],
+        "minimum_margin": 0.427384,
+        "second": "tail_lower_fin_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "tail_band_1",
+        "first_margin": 0.427384,
+        "joint": [
+          26,
+          15,
+          -4
+        ],
+        "minimum_margin": 0.427384,
+        "second": "tail_upper_fin_1",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "tail_band_1",
+        "first_margin": 0.427384,
+        "joint": [
+          26,
+          15,
+          -4
+        ],
+        "minimum_margin": 0.427384,
+        "second": "tail_fork_hub",
+        "second_margin": 3.5
+      },
+      {
+        "connected": true,
+        "first": "tail_base_1",
+        "first_margin": 0.35,
+        "joint": [
+          3.2,
+          23.8,
+          0.1
+        ],
+        "minimum_margin": 0.1,
+        "second": "mouth_tail_base",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "tail_mid_1",
+        "first_margin": 0.440214,
+        "joint": [
+          13,
+          19.8,
+          -0.25
+        ],
+        "minimum_margin": 0.1,
+        "second": "mouth_tail_mid",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "mouth_tail_base",
+        "first_margin": 0.4,
+        "joint": [
+          4.2,
+          23.16,
+          0.09
+        ],
+        "minimum_margin": 0.09,
+        "second": "tail_base_mouth_tooth_1",
+        "second_margin": 0.09
+      },
+      {
+        "connected": true,
+        "first": "mouth_tail_base",
+        "first_margin": 0.4,
+        "joint": [
+          5.2,
+          22.52,
+          0.08
+        ],
+        "minimum_margin": 0.08,
+        "second": "tail_base_mouth_tooth_2",
+        "second_margin": 0.08
+      },
+      {
+        "connected": true,
+        "first": "mouth_tail_base",
+        "first_margin": 0.4,
+        "joint": [
+          6.2,
+          21.88,
+          0.07
+        ],
+        "minimum_margin": 0.12,
+        "second": "tail_base_mouth_tooth_3",
+        "second_margin": 0.12
+      },
+      {
+        "connected": true,
+        "first": "mouth_tail_base",
+        "first_margin": 0.4,
+        "joint": [
+          7.2,
+          21.24,
+          0.06
+        ],
+        "minimum_margin": 0.11,
+        "second": "tail_base_mouth_tooth_4",
+        "second_margin": 0.11
+      },
+      {
+        "connected": true,
+        "first": "mouth_tail_mid",
+        "first_margin": 0.45,
+        "joint": [
+          14.24,
+          19.66,
+          -0.27
+        ],
+        "minimum_margin": 0.08,
+        "second": "tail_mid_mouth_tooth_1",
+        "second_margin": 0.08
+      },
+      {
+        "connected": true,
+        "first": "mouth_tail_mid",
+        "first_margin": 0.45,
+        "joint": [
+          15.48,
+          19.52,
+          -0.29
+        ],
+        "minimum_margin": 0.11,
+        "second": "tail_mid_mouth_tooth_2",
+        "second_margin": 0.11
+      },
+      {
+        "connected": true,
+        "first": "mouth_tail_mid",
+        "first_margin": 0.45,
+        "joint": [
+          16.72,
+          19.38,
+          -0.31
+        ],
+        "minimum_margin": 0.09,
+        "second": "tail_mid_mouth_tooth_3",
+        "second_margin": 0.09
+      },
+      {
+        "connected": true,
+        "first": "mouth_tail_mid",
+        "first_margin": 0.45,
+        "joint": [
+          17.96,
+          19.24,
+          -0.33
+        ],
+        "minimum_margin": 0.11,
+        "second": "tail_mid_mouth_tooth_4",
+        "second_margin": 0.11
+      },
+      {
+        "connected": true,
+        "first": "left_hand",
+        "first_margin": 2.207611,
+        "joint": [
+          -12.5,
+          30,
+          1.8
+        ],
+        "minimum_margin": 0.25,
+        "second": "axe_handle",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "axe_handle",
+        "first_margin": 0.235922,
+        "joint": [
+          -21.5,
+          19,
+          2
+        ],
+        "minimum_margin": 0.235922,
+        "second": "axe_head",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "axe_head",
+        "first_margin": 0.506584,
+        "joint": [
+          -26,
+          20.5,
+          2
+        ],
+        "minimum_margin": 0.5,
+        "second": "axe_cheek",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "axe_cheek",
+        "first_margin": 0.477864,
+        "joint": [
+          -28,
+          16.5,
+          2
+        ],
+        "minimum_margin": 0.35,
+        "second": "axe_hook",
+        "second_margin": 0.35
+      }
+    ],
+    "method": "shared-joint-compiled-oriented-cuboid-margin-v2",
+    "minimum_margin": 0.0
+  },
+  "axe_contact_present": true,
+  "bones": 35,
+  "cuboids": 72,
+  "feature_contract_pass": true,
+  "feature_inventory": {
+    "biped_leg_chains": 2,
+    "blue_tattoo_landmarks": 12,
+    "caudal_fin_branches": 2,
+    "chef_hat_cuboids": 5,
+    "dorsal_fin_segments": 2,
+    "grounded_feet": 2,
+    "hand_mouths": 1,
+    "head_mouths": 1,
+    "held_axes": 1,
+    "humanoid_arm_chains": 2,
+    "red_eye_landmarks": 1,
+    "tail_mouths": 2,
+    "tail_segments": 8,
+    "tooth_row_landmarks": 8,
+    "toothed_mouth_assemblies": 4
+  },
+  "keypoint_mean_error_gate_at_most_0.05": true,
+  "model_extents": [
+    69.748247,
+    69.541121,
+    19.9
+  ],
+  "model_id": "greta_shark_chef",
+  "proportion_gates": {
+    "head_depth_to_body_width_at_least_0.35": true,
+    "source_aspect_delta_at_most_0.04": true,
+    "tail_span_to_body_width_at_least_1.0": true,
+    "torso_depth_to_body_width_at_least_0.35": true,
+    "two_grounded_feet_within_0.05": true
+  },
+  "proportion_metrics": {
+    "foot_ground_heights": [
+      0.0,
+      0.0
+    ],
+    "full_width_to_height": 1.002978,
+    "head_depth_to_body_width": 0.592076,
+    "tail_span_to_body_width": 1.808807,
+    "torso_depth_to_body_width": 0.66087
+  },
+  "recorded_feature_inventory_matches": true,
+  "reference_rights": "unknown; private ignored benchmark reference only",
+  "renderer": "deterministic-orthographic-textured-cuboid-zbuffer-v2-light-review",
+  "schema_version": 1,
+  "semantic_cuboids": 72,
+  "single_view_hidden_geometry": "inferred_conservatively_not_observed",
+  "source_iou_gate_at_least_0.68": true,
+  "source_projection": false,
+  "source_skin_cuboids": 0,
+  "views": [
+    "reference-angle.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "head-mouth.png",
+    "hand-mouth.png",
+    "tail-mouths.png",
+    "axe-contact.png",
+    "silhouette-overlap.png",
+    "comparison-sheet.png"
+  ]
+}

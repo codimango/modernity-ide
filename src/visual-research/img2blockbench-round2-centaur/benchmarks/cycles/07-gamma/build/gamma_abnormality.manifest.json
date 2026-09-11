@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 130024,
+      "path": "gamma_abnormality.model-spec.json",
+      "sha256": "a5515083d5299b95be45ac2194a2e95ab118cf7471cf5f2a0fdf1bd0fa8426f6"
+    },
+    {
+      "bytes": 18403,
+      "path": "gamma_abnormality.png",
+      "sha256": "12d9dbdff30ddb65b3e81116711fa3134f81085ee41a56f44f7d80fc2d2e8254"
+    },
+    {
+      "bytes": 238712,
+      "path": "gamma_abnormality.bbmodel",
+      "sha256": "c392f0ad8061c46a2ec1f182a30876e228649aa04ed38fdfac008472e1c801f1"
+    },
+    {
+      "bytes": 227290,
+      "path": "gamma_abnormality.geo.json",
+      "sha256": "524e7794979bc8e67c7a8bdba6e9964db731f9490d070828e953c44a067f2a49"
+    },
+    {
+      "bytes": 214,
+      "path": "gamma_abnormality.audit.json",
+      "sha256": "cf259ce39472cf5288d45d669f4a01ed7b8ce5059a02b84fcf1ad5e7a891296b"
+    },
+    {
+      "bytes": 338675,
+      "path": "gamma_abnormality.reference.png",
+      "sha256": "26cb7dea9090c5a1af9e9caba210472bffe0405bf2c17375132a3abb90dac63b"
+    }
+  ],
+  "collision": {
+    "eye_height": 4.7,
+    "height": 5.4,
+    "width": 1.4
+  },
+  "generator": {
+    "lane": "agent-authored-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "gamma_abnormality",
+  "reference": {
+    "height": 899,
+    "image": "gamma_abnormality.reference.png",
+    "sha256": "26cb7dea9090c5a1af9e9caba210472bffe0405bf2c17375132a3abb90dac63b",
+    "width": 592
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 138545,
+      "path": "militech_centaur_piloted_exoskeleton.model-spec.json",
+      "sha256": "ff80b90cc3f46b525cc758541afb7dffc3ffc792581f4bdfdb0e628b9b718b69"
+    },
+    {
+      "bytes": 19363,
+      "path": "militech_centaur_piloted_exoskeleton.png",
+      "sha256": "cba3a4451fc43da09d68399013fc03f7a21022e34678ca57cc384f5ad92c4e7a"
+    },
+    {
+      "bytes": 339688,
+      "path": "militech_centaur_piloted_exoskeleton.bbmodel",
+      "sha256": "b7f1ec7bcc2b59834f55dba0516e29e13f38071a4d7c146476bc0a7dc1ed1f56"
+    },
+    {
+      "bytes": 371943,
+      "path": "militech_centaur_piloted_exoskeleton.geo.json",
+      "sha256": "a6a3820d7f2a6ed7d2e9ab4b036e7200a354a4614c614180505bbfa59706c2b1"
+    },
+    {
+      "bytes": 238,
+      "path": "militech_centaur_piloted_exoskeleton.audit.json",
+      "sha256": "0c56fdd180908409ee3efd7b9560aa900c05549fb564bea6fc9fbddb92b70fe7"
+    },
+    {
+      "bytes": 950728,
+      "path": "militech_centaur_piloted_exoskeleton.reference.png",
+      "sha256": "4182ef6f34f6c701322d39b3ca07e5acf824a5b0b2804a48c6e2182c1698bf92"
+    }
+  ],
+  "collision": {
+    "eye_height": 4.0,
+    "height": 4.6,
+    "width": 2.2
+  },
+  "generator": {
+    "lane": "agent-authored-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "militech_centaur_piloted_exoskeleton",
+  "reference": {
+    "height": 1023,
+    "image": "militech_centaur_piloted_exoskeleton.reference.png",
+    "sha256": "4182ef6f34f6c701322d39b3ca07e5acf824a5b0b2804a48c6e2182c1698bf92",
+    "width": 1000
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,63 @@
+{
+  "coordinate_space": "raw 1000x1023 source pixels; no crop, scale, or recentering",
+  "limitation": "Masks exclude floor shadows and corner logos. Dark cavities enclosed by visible metal edges are filled, but these silhouettes do not establish hidden geometry.",
+  "method": "dark-studio-separation-plus-hand-reviewed-bounds-v1",
+  "rights": "unknown; private ignored benchmark references only",
+  "schema_version": 1,
+  "views": {
+    "source-6": {
+      "bbox": [
+        71,
+        0,
+        970,
+        1001
+      ],
+      "mask": "source-6-mask.png",
+      "mask_sha256": "53a6a61a1ac3597ea7831670975524d46e817410c84c2a253adb1fc8a01e110a",
+      "source": "image-6.png",
+      "source_sha256": "4182ef6f34f6c701322d39b3ca07e5acf824a5b0b2804a48c6e2182c1698bf92",
+      "touches_frame_edges": {
+        "bottom": false,
+        "left": false,
+        "right": false,
+        "top": true
+      }
+    },
+    "source-7": {
+      "bbox": [
+        170,
+        0,
+        902,
+        988
+      ],
+      "mask": "source-7-mask.png",
+      "mask_sha256": "1807f96d7aa22164cc28df2d6138aca9ecb4a9946486f036c926d759e5aaa9c1",
+      "source": "image-7.png",
+      "source_sha256": "c1286f3eb14a6a4642d1c55c73e0edaf3c59f9f3c7b264469d3c8e0d1997f799",
+      "touches_frame_edges": {
+        "bottom": false,
+        "left": false,
+        "right": false,
+        "top": true
+      }
+    },
+    "source-8": {
+      "bbox": [
+        76,
+        18,
+        902,
+        985
+      ],
+      "mask": "source-8-mask.png",
+      "mask_sha256": "e45f3efc3b98c82e4bb60d507b0461658b13137c164e278310370db8f2ef41a5",
+      "source": "image-8.png",
+      "source_sha256": "fa98828914ac3d04907d2452ff5627511ce877608c8273c007f7ae167723411c",
+      "touches_frame_edges": {
+        "bottom": false,
+        "left": false,
+        "right": false,
+        "top": false
+      }
+    }
+  }
+}

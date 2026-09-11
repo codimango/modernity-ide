@@ -1,0 +1,2553 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 1.7,
+    "height": 2.0,
+    "width": 0.8
+  },
+  "cubes": [
+    {
+      "bone": "root",
+      "center": [
+        -1.6,
+        3.2,
+        0.0
+      ],
+      "faces": {
+        "down": {
+          "material": "views_11"
+        },
+        "up": {
+          "material": "views_01"
+        },
+        "west": {
+          "material": "views_01"
+        }
+      },
+      "material": "views_07",
+      "name": "view_c01_001",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.6,
+        6.4,
+        1.6
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.4,
+        1.2,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_05",
+      "name": "view_c01_002",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        1.6
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.4,
+        4.4,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_15",
+      "name": "view_c01_003",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        4.0,
+        1.6
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        1.2,
+        3.2,
+        0.0
+      ],
+      "faces": {
+        "down": {
+          "material": "views_01"
+        },
+        "up": {
+          "material": "views_04"
+        }
+      },
+      "material": "views_12",
+      "name": "view_c01_004",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        6.4,
+        1.6
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        2.0,
+        3.2,
+        -0.4
+      ],
+      "faces": {},
+      "material": "views_02",
+      "name": "view_c01_005",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        6.4,
+        0.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        2.0,
+        3.2,
+        0.4
+      ],
+      "faces": {
+        "up": {
+          "material": "views_04"
+        }
+      },
+      "material": "views_15",
+      "name": "view_c01_006",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        6.4,
+        0.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.8,
+        6.8,
+        0.0
+      ],
+      "faces": {
+        "north": {
+          "material": "views_01"
+        },
+        "west": {
+          "material": "views_01"
+        }
+      },
+      "material": "views_15",
+      "name": "view_c01_007",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.8,
+        8.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_01",
+      "name": "view_c01_008",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        1.6,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        1.6,
+        7.6,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_00",
+      "name": "view_c01_009",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.6,
+        2.4,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.0,
+        9.2,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_02",
+      "name": "view_c01_010",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.0,
+        10.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_11",
+      "name": "view_c01_011",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.0,
+        9.6,
+        0.0
+      ],
+      "faces": {
+        "east": {
+          "material": "views_02"
+        },
+        "north": {
+          "material": "views_02"
+        }
+      },
+      "material": "views_04",
+      "name": "view_c01_012",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        1.6,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.0,
+        10.8,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_02",
+      "name": "view_c01_013",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.0,
+        11.6,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_07",
+      "name": "view_c01_014",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.0,
+        12.4,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_05",
+      "name": "view_c01_015",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.0,
+        13.6,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_03",
+      "name": "view_c01_016",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        1.6,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.2,
+        10.8,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_10",
+      "name": "view_c01_017",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.2,
+        11.6,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_14",
+      "name": "view_c01_018",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.2,
+        12.4,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_03",
+      "name": "view_c01_019",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.2,
+        13.6,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_04",
+      "name": "view_c01_020",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        1.6,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.0,
+        12.4,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_14",
+      "name": "view_c01_021",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.6,
+        4.0,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        1.6,
+        12.4,
+        0.0
+      ],
+      "faces": {
+        "east": {
+          "material": "views_00"
+        },
+        "south": {
+          "material": "views_05"
+        },
+        "up": {
+          "material": "views_00"
+        }
+      },
+      "material": "views_02",
+      "name": "view_c01_022",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.6,
+        4.0,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.0,
+        15.2,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_06",
+      "name": "view_c01_023",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        1.6,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.2,
+        14.8,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_02",
+      "name": "view_c01_024",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.2,
+        15.6,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_07",
+      "name": "view_c01_025",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.6,
+        16.4,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_12",
+      "name": "view_c01_026",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.6,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.8,
+        14.8,
+        -1.2
+      ],
+      "faces": {},
+      "material": "views_03",
+      "name": "view_c01_027",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        0.8,
+        0.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.8,
+        16.0,
+        -1.2
+      ],
+      "faces": {
+        "west": {
+          "material": "views_05"
+        }
+      },
+      "material": "views_08",
+      "name": "view_c01_028",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        1.6,
+        0.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.4,
+        15.6,
+        0.4
+      ],
+      "faces": {
+        "north": {
+          "material": "views_00"
+        }
+      },
+      "material": "views_05",
+      "name": "view_c01_029",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.4,
+        2.4,
+        2.4
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        2.0,
+        15.6,
+        0.4
+      ],
+      "faces": {
+        "up": {
+          "material": "views_01"
+        }
+      },
+      "material": "views_00",
+      "name": "view_c01_030",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        2.4,
+        2.4
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.0,
+        14.8,
+        2.0
+      ],
+      "faces": {
+        "down": {
+          "material": "views_03"
+        },
+        "east": {
+          "material": "views_00"
+        },
+        "west": {
+          "material": "views_06"
+        }
+      },
+      "material": "views_05",
+      "name": "view_c01_031",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.8,
+        2.4,
+        0.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.2,
+        17.2,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_10",
+      "name": "view_c01_032",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.0,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        1.6,
+        17.2,
+        0.0
+      ],
+      "faces": {
+        "east": {
+          "material": "views_00"
+        },
+        "north": {
+          "material": "views_08"
+        }
+      },
+      "material": "views_07",
+      "name": "view_c01_033",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.6,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        3.6,
+        17.2,
+        0.0
+      ],
+      "faces": {
+        "south": {
+          "material": "views_15"
+        }
+      },
+      "material": "views_02",
+      "name": "view_c01_034",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.8,
+        18.4,
+        0.0
+      ],
+      "faces": {
+        "north": {
+          "material": "views_01"
+        },
+        "west": {
+          "material": "views_09"
+        }
+      },
+      "material": "views_15",
+      "name": "view_c01_035",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8.0,
+        1.6,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        5.2,
+        18.0,
+        0.0
+      ],
+      "faces": {
+        "south": {
+          "material": "views_13"
+        }
+      },
+      "material": "views_04",
+      "name": "view_c01_036",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.0,
+        19.6,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_12",
+      "name": "view_c01_037",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.2,
+        19.6,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_01",
+      "name": "view_c01_038",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.4,
+        19.6,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_06",
+      "name": "view_c01_039",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        1.2,
+        19.6,
+        0.0
+      ],
+      "faces": {
+        "north": {
+          "material": "views_04"
+        }
+      },
+      "material": "views_00",
+      "name": "view_c01_040",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.4,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.0,
+        22.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_13",
+      "name": "view_c01_041",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.2,
+        20.8,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_06",
+      "name": "view_c01_042",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        1.6,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.2,
+        22.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_12",
+      "name": "view_c01_043",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.4,
+        21.2,
+        0.0
+      ],
+      "faces": {
+        "down": {
+          "material": "views_02"
+        },
+        "east": {
+          "material": "views_02"
+        },
+        "north": {
+          "material": "views_02"
+        },
+        "up": {
+          "material": "views_02"
+        },
+        "west": {
+          "material": "views_02"
+        }
+      },
+      "material": "views_08",
+      "name": "view_c01_044",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.4,
+        2.4,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.4,
+        22.8,
+        -1.2
+      ],
+      "faces": {
+        "west": {
+          "material": "views_13"
+        }
+      },
+      "material": "views_02",
+      "name": "view_c01_045",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.0,
+        0.8,
+        2.4
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.4,
+        22.8,
+        1.2
+      ],
+      "faces": {
+        "east": {
+          "material": "views_02"
+        },
+        "north": {
+          "material": "views_04"
+        },
+        "west": {
+          "material": "views_13"
+        }
+      },
+      "material": "views_12",
+      "name": "view_c01_046",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.0,
+        0.8,
+        2.4
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.8,
+        23.6,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_14",
+      "name": "view_c01_047",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        4.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.8,
+        24.4,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_13",
+      "name": "view_c01_048",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        4.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.0,
+        23.6,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_10",
+      "name": "view_c01_049",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        4.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.0,
+        24.4,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_04",
+      "name": "view_c01_050",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        4.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.4,
+        25.6,
+        0.0
+      ],
+      "faces": {
+        "down": {
+          "material": "views_06"
+        },
+        "east": {
+          "material": "views_06"
+        },
+        "up": {
+          "material": "views_01"
+        },
+        "west": {
+          "material": "views_01"
+        }
+      },
+      "material": "views_09",
+      "name": "view_c01_051",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.6,
+        1.6,
+        4.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.2,
+        23.6,
+        0.0
+      ],
+      "faces": {
+        "north": {
+          "material": "views_02"
+        }
+      },
+      "material": "views_09",
+      "name": "view_c01_052",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        4.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.2,
+        24.4,
+        0.0
+      ],
+      "faces": {
+        "north": {
+          "material": "views_00"
+        }
+      },
+      "material": "views_01",
+      "name": "view_c01_053",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        4.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.2,
+        25.2,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_02",
+      "name": "view_c01_054",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        4.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.2,
+        26.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_11",
+      "name": "view_c01_055",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        4.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.8,
+        27.6,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_06",
+      "name": "view_c01_056",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        2.4,
+        4.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.6,
+        27.2,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_05",
+      "name": "view_c01_057",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.6,
+        1.6,
+        4.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.0,
+        28.4,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_03",
+      "name": "view_c01_058",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        4.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.2,
+        28.4,
+        0.0
+      ],
+      "faces": {
+        "north": {
+          "material": "views_00"
+        }
+      },
+      "material": "views_14",
+      "name": "view_c01_059",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        4.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.8,
+        23.6,
+        -1.2
+      ],
+      "faces": {
+        "east": {
+          "material": "views_00"
+        }
+      },
+      "material": "views_02",
+      "name": "view_c01_060",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        0.8,
+        2.4
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.8,
+        24.4,
+        -1.2
+      ],
+      "faces": {},
+      "material": "views_00",
+      "name": "view_c01_061",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        0.8,
+        2.4
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.8,
+        25.6,
+        -1.2
+      ],
+      "faces": {
+        "west": {
+          "material": "views_15"
+        }
+      },
+      "material": "views_02",
+      "name": "view_c01_062",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        1.6,
+        2.4
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.8,
+        27.2,
+        -2.0
+      ],
+      "faces": {},
+      "material": "views_08",
+      "name": "view_c01_063",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        1.6,
+        0.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.8,
+        28.4,
+        -2.0
+      ],
+      "faces": {},
+      "material": "views_00",
+      "name": "view_c01_064",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        0.8,
+        0.8
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.8,
+        27.6,
+        -0.8
+      ],
+      "faces": {
+        "south": {
+          "material": "views_01"
+        },
+        "up": {
+          "material": "views_01"
+        },
+        "west": {
+          "material": "views_15"
+        }
+      },
+      "material": "views_00",
+      "name": "view_c01_065",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        2.4,
+        1.6
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.8,
+        26.0,
+        1.2
+      ],
+      "faces": {
+        "down": {
+          "material": "views_09"
+        },
+        "east": {
+          "material": "views_00"
+        },
+        "up": {
+          "material": "views_10"
+        }
+      },
+      "material": "views_15",
+      "name": "view_c01_066",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        5.6,
+        2.4
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.8,
+        29.2,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_08",
+      "name": "view_c01_067",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.0,
+        29.2,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_00",
+      "name": "view_c01_068",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.4,
+        29.2,
+        0.0
+      ],
+      "faces": {
+        "east": {
+          "material": "views_02"
+        },
+        "north": {
+          "material": "views_02"
+        },
+        "south": {
+          "material": "views_08"
+        }
+      },
+      "material": "views_04",
+      "name": "view_c01_069",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.0,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -2.0,
+        30.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "views_09",
+      "name": "view_c01_070",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.0,
+        30.0,
+        0.0
+      ],
+      "faces": {
+        "east": {
+          "material": "views_00"
+        },
+        "north": {
+          "material": "views_02"
+        }
+      },
+      "material": "views_08",
+      "name": "view_c01_071",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        2.8,
+        26.4,
+        0.0
+      ],
+      "faces": {
+        "down": {
+          "material": "views_06"
+        },
+        "north": {
+          "material": "views_00"
+        },
+        "south": {
+          "material": "views_06"
+        }
+      },
+      "material": "views_02",
+      "name": "view_c01_072",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "visual hull component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        1.6,
+        4.8
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "calibrated-orthographic-yaw-visual-hull-cuboids-v1",
+    "axis_constraints": {
+      "camera_elevation": "not represented by orthographic-yaw calibration",
+      "coordinate_plane": "canonical x-z",
+      "horizontal_constraint_rank_all": 2,
+      "horizontal_constraint_rank_observed": 1,
+      "largest_unobserved_yaw_gap_degrees_all": 90.0,
+      "largest_unobserved_yaw_gap_degrees_observed": 180.0,
+      "observed_view_count": 1,
+      "synthetic_proxy_view_count": 1,
+      "unique_unoriented_yaw_axes_degrees_all": [
+        0.0,
+        90.0
+      ],
+      "unique_unoriented_yaw_axes_degrees_observed": [
+        0.0
+      ],
+      "vertical_axis": "constrained by every silhouette"
+    },
+    "cuboid_fit": {
+      "cuboid_voxels": 974,
+      "cuboids": 72,
+      "dominant_color_fraction": 0.545361,
+      "intersection_voxels": 970,
+      "mean_silhouette_iou": 0.998551,
+      "method": "adaptive binary 3D cuboid decomposition",
+      "model_precision": 0.995893,
+      "orthographic_views": {
+        "front": {
+          "bidirectional_depth_mae": 0.0,
+          "iou": 0.995652,
+          "model_pixels": 230,
+          "model_precision": 0.995652,
+          "source_coverage": 1.0,
+          "source_pixels": 229
+        },
+        "side": {
+          "bidirectional_depth_mae": 0.0,
+          "iou": 1.0,
+          "model_pixels": 155,
+          "model_precision": 1.0,
+          "source_coverage": 1.0,
+          "source_pixels": 155
+        },
+        "top": {
+          "bidirectional_depth_mae": 0.000855,
+          "iou": 1.0,
+          "model_pixels": 60,
+          "model_precision": 1.0,
+          "source_coverage": 1.0,
+          "source_pixels": 60
+        }
+      },
+      "source_coverage": 1.0,
+      "source_voxels": 970,
+      "surface_f1_tolerance_voxels": 1,
+      "surface_f1_tolerant": 1.0,
+      "surface_precision_tolerant": 1.0,
+      "surface_recall_tolerant": 1.0,
+      "union_voxels": 974,
+      "voxel_iou": 0.995893
+    },
+    "hidden_geometry": {
+      "cannot_recover": [
+        "concavities that do not alter any supplied silhouette",
+        "occluded or never-visible surface markings",
+        "top and bottom surface shape without elevated views",
+        "semantic anatomy, articulation, or internal structure"
+      ],
+      "color_disclosure": "Filled colors are nearest visible-surface propagation, not observations",
+      "hidden_geometry_established_from_observed_views": false,
+      "method": "silhouette visual hull; no depth was estimated or claimed",
+      "proxy_disclosure": "Synthetic-proxy masks constrain the generated visual hull but do not establish that hidden geometry was observed"
+    },
+    "hidden_geometry_established_from_observed_views": false,
+    "lane": "calibrated-multiview-visual-hull",
+    "manifest": {
+      "path": "../view-inputs/views.json",
+      "projection": "orthographic-yaw",
+      "reference_view": "front_observed",
+      "sha256": "2e75958aaaea9218a64afe228e6d446f156966a9b4324a13840d076a0304ca07",
+      "volume_bounds": [
+        [
+          -10.0,
+          0.0,
+          -5.0
+        ],
+        [
+          10.0,
+          50.0,
+          5.0
+        ]
+      ]
+    },
+    "per_view_silhouette": {
+      "front_observed": {
+        "carved_visual_hull": {
+          "iou": 0.887554,
+          "model_pixels": 121162,
+          "model_precision": 0.919595,
+          "source_coverage": 0.962226
+        },
+        "fitted_cuboids": {
+          "iou": 0.885125,
+          "model_pixels": 121645,
+          "model_precision": 0.916478,
+          "source_coverage": 0.962787
+        },
+        "source_pixels": 115794
+      },
+      "side_synthetic_proxy": {
+        "carved_visual_hull": {
+          "iou": 0.868913,
+          "model_pixels": 81961,
+          "model_precision": 0.978575,
+          "source_coverage": 0.885764
+        },
+        "fitted_cuboids": {
+          "iou": 0.868913,
+          "model_pixels": 81961,
+          "model_precision": 0.978575,
+          "source_coverage": 0.885764
+        },
+        "source_pixels": 90549
+      }
+    },
+    "views": [
+      {
+        "azimuth_degrees": 0.0,
+        "center_px": [
+          347.0,
+          935.0
+        ],
+        "dimensions": [
+          750,
+          1000
+        ],
+        "evidence_kind": "observed",
+        "id": "front_observed",
+        "image": "../../../references/06-scp-173.jpg",
+        "image_sha256": "85d698e25b04dbfc4009a05e1cdbb7dc13c5675d2f7c76e5af8cb5e13f0bd93f",
+        "mask": "../view-inputs/front-observed-mask.png",
+        "mask_sha256": "fdddd0325867eebb4040857960a67cc350a87c5ffb939f3c2331f59454717f51",
+        "pixels_per_unit": 18.145833333
+      },
+      {
+        "azimuth_degrees": 90.0,
+        "center_px": [
+          375.0,
+          935.0
+        ],
+        "dimensions": [
+          750,
+          1000
+        ],
+        "evidence_kind": "synthetic_proxy",
+        "id": "side_synthetic_proxy",
+        "image": "../view-inputs/side-synthetic.png",
+        "image_sha256": "2d75eac684e0992dec642c190d43b94939301ad7d3f12e35a12d6ae7165dd1e3",
+        "mask": "../view-inputs/side-synthetic-mask.png",
+        "mask_sha256": "0a83bcdd1f48f5123cb80823c45736d9afb240724d8eff43294d54d4f2e46b48",
+        "pixels_per_unit": 18.145833333
+      }
+    ],
+    "voxelization": {
+      "candidate_voxels": 5120,
+      "color_fusion": {
+        "color_precedence": "observed samples take precedence over synthetic proxies",
+        "directly_colored_voxels": 346,
+        "directly_colored_voxels_by_evidence_kind": {
+          "observed": 229,
+          "synthetic_proxy": 155
+        },
+        "exclusive_direct_color_attribution": {
+          "both_observed_and_proxy": 38,
+          "observed_only": 191,
+          "synthetic_proxy_only": 117,
+          "union": 346
+        },
+        "hidden_color_claim": "Filled colors are nearest visible-surface propagation, not observations",
+        "hidden_color_fill_voxels": 624,
+        "method": "frontmost observed samples averaged; proxy samples used only where no observed sample exists; then nearest 6-connected fill",
+        "view_order": [
+          "front_observed",
+          "side_synthetic_proxy"
+        ],
+        "visible_sample_contributions_by_evidence_kind": {
+          "observed": 229,
+          "synthetic_proxy": 155
+        },
+        "visible_samples_by_view": {
+          "front_observed": 229,
+          "side_synthetic_proxy": 155
+        }
+      },
+      "components": {
+        "after_cleanup": 1,
+        "before_cleanup": 1,
+        "connectivity": 6,
+        "minimum_voxels": 2,
+        "raw_voxels": 970,
+        "removed_voxels": 0,
+        "retained_voxels": 970,
+        "sizes": [
+          970
+        ]
+      },
+      "grid_dimensions": [
+        16,
+        40,
+        8
+      ],
+      "method": "order-independent intersection of calibrated silhouette cones",
+      "per_view_inside_samples": {
+        "front_observed": 1832,
+        "side_synthetic_proxy": 2480
+      },
+      "voxel_pitch_source_units": 1.25
+    }
+  },
+  "geometry": {
+    "precision": 64
+  },
+  "id": "scp_173_visual_hull_proof",
+  "landmarks": [],
+  "materials": {
+    "views_00": {
+      "base": "#b5996a",
+      "highlight": "#d6b57d",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#705f42"
+    },
+    "views_01": {
+      "base": "#a6885b",
+      "highlight": "#c4a06b",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#675438"
+    },
+    "views_02": {
+      "base": "#bca374",
+      "highlight": "#dec089",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#756548"
+    },
+    "views_03": {
+      "base": "#c3a879",
+      "highlight": "#e6c68f",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#79684b"
+    },
+    "views_04": {
+      "base": "#ad9364",
+      "highlight": "#ccad76",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#6b5b3e"
+    },
+    "views_05": {
+      "base": "#cbb488",
+      "highlight": "#f0d4a0",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#7e7054"
+    },
+    "views_06": {
+      "base": "#b59c73",
+      "highlight": "#d6b888",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#706147"
+    },
+    "views_07": {
+      "base": "#c6ae84",
+      "highlight": "#eacd9c",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#7b6c52"
+    },
+    "views_08": {
+      "base": "#a78c63",
+      "highlight": "#c5a575",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#68573d"
+    },
+    "views_09": {
+      "base": "#997c55",
+      "highlight": "#b59264",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#5f4d35"
+    },
+    "views_10": {
+      "base": "#9b8359",
+      "highlight": "#b79b69",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#605137"
+    },
+    "views_11": {
+      "base": "#9a7948",
+      "highlight": "#b68f55",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#5f4b2d"
+    },
+    "views_12": {
+      "base": "#8b7149",
+      "highlight": "#a48556",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#56462d"
+    },
+    "views_13": {
+      "base": "#887452",
+      "highlight": "#a08961",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#544833"
+    },
+    "views_14": {
+      "base": "#d5be96",
+      "highlight": "#fbe0b1",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#84765d"
+    },
+    "views_15": {
+      "base": "#66492a",
+      "highlight": "#785632",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#3f2d1a"
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "intersection of every calibrated silhouette",
+      "visible-color fusion from caller-labeled azimuths"
+    ],
+    "required_views": [
+      "front_observed",
+      "side_synthetic_proxy",
+      "isometric"
+    ],
+    "review_targets": [
+      "per-view silhouette",
+      "hidden-volume ambiguity",
+      "color fusion",
+      "components"
+    ],
+    "target_cuboids": [
+      1,
+      72
+    ]
+  },
+  "reference": {
+    "height": 1000,
+    "image": "../../../references/06-scp-173.jpg",
+    "sha256": "85d698e25b04dbfc4009a05e1cdbb7dc13c5675d2f7c76e5af8cb5e13f0bd93f",
+    "width": 750
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "SCP-173 calibrated front plus disclosed synthetic side proxy",
+    "symmetry": "none",
+    "type": "character",
+    "uncertainties": [
+      "concavities that do not alter any supplied silhouette",
+      "occluded or never-visible surface markings",
+      "top and bottom surface shape without elevated views",
+      "semantic anatomy, articulation, or internal structure"
+    ]
+  },
+  "texture": {
+    "atlas_size": 256,
+    "density": 2,
+    "gutter": 1,
+    "palette_size": 16
+  }
+}

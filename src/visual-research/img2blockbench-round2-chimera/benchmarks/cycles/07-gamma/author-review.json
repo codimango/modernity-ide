@@ -1,0 +1,46 @@
+{
+  "asset": "gamma_abnormality",
+  "author_decision": "READY_FOR_INDEPENDENT_CUMULATIVE_GRADING",
+  "critical_defect_observed": false,
+  "cycle": 7,
+  "identity_review": {
+    "exactly_eight_upper_mandible_chains_visible": true,
+    "exactly_four_hinged_mechanical_leg_chains_present": true,
+    "high_off_center_white_mask_visible": true,
+    "lower_struts_read_as_mechanical_legs": true,
+    "split_head_and_vertical_maw_visible": true,
+    "two_unequal_silver_rings_visible": true,
+    "upper_fan_authored_as_mandibles_not_antlers": true
+  },
+  "limitations": [
+    "The single transparent source does not observe the back or exact appendage depth.",
+    "The source silhouette touches all four image edges, so its alpha IoU cannot validate off-frame continuation.",
+    "The cuboid robe has a deliberately harder rectangular shoulder transition than the painted source.",
+    "Static geometry was reviewed; no animation was authored or approved."
+  ],
+  "quantitative_checks": {
+    "all_120_declared_attachments_connected": true,
+    "all_proportion_gates_pass": true,
+    "alpha_silhouette_iou": 0.672993,
+    "alpha_silhouette_precision": 0.717009,
+    "alpha_silhouette_recall": 0.916408,
+    "keypoint_mean_error_subject_heights": 0.046625,
+    "real_depth_to_full_width": 0.277409,
+    "source_iou_aspiration_at_least_0.64": true
+  },
+  "reviewed_views": [
+    "reference-angle.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "face-split-head.png",
+    "maw-eight-claw.png",
+    "ring.png",
+    "leg-joint.png",
+    "silhouette-overlap.png",
+    "comparison-sheet.png"
+  ]
+}

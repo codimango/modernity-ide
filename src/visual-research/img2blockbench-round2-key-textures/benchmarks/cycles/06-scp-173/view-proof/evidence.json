@@ -1,0 +1,270 @@
+{
+  "algorithm": "calibrated-orthographic-yaw-visual-hull-cuboids-v1",
+  "axis_constraints": {
+    "camera_elevation": "not represented by orthographic-yaw calibration",
+    "coordinate_plane": "canonical x-z",
+    "horizontal_constraint_rank_all": 2,
+    "horizontal_constraint_rank_observed": 1,
+    "largest_unobserved_yaw_gap_degrees_all": 90.0,
+    "largest_unobserved_yaw_gap_degrees_observed": 180.0,
+    "observed_view_count": 1,
+    "synthetic_proxy_view_count": 1,
+    "unique_unoriented_yaw_axes_degrees_all": [
+      0.0,
+      90.0
+    ],
+    "unique_unoriented_yaw_axes_degrees_observed": [
+      0.0
+    ],
+    "vertical_axis": "constrained by every silhouette"
+  },
+  "color_transfer": {
+    "color_precedence": "observed samples take precedence over synthetic proxies",
+    "directly_colored_voxels": 346,
+    "directly_colored_voxels_by_evidence_kind": {
+      "observed": 229,
+      "synthetic_proxy": 155
+    },
+    "exclusive_direct_color_attribution": {
+      "both_observed_and_proxy": 38,
+      "observed_only": 191,
+      "synthetic_proxy_only": 117,
+      "union": 346
+    },
+    "face_material_overrides": 58,
+    "hidden_color_claim": "Filled colors are nearest visible-surface propagation, not observations",
+    "hidden_color_fill_voxels": 624,
+    "method": "frontmost observed samples averaged; proxy samples used only where no observed sample exists; then nearest 6-connected fill",
+    "palette": [
+      "#b5996a",
+      "#a6885b",
+      "#bca374",
+      "#c3a879",
+      "#ad9364",
+      "#cbb488",
+      "#b59c73",
+      "#c6ae84",
+      "#a78c63",
+      "#997c55",
+      "#9b8359",
+      "#9a7948",
+      "#8b7149",
+      "#887452",
+      "#d5be96",
+      "#66492a"
+    ],
+    "palette_entries": 16,
+    "view_order": [
+      "front_observed",
+      "side_synthetic_proxy"
+    ],
+    "visible_sample_contributions_by_evidence_kind": {
+      "observed": 229,
+      "synthetic_proxy": 155
+    },
+    "visible_samples_by_view": {
+      "front_observed": 229,
+      "side_synthetic_proxy": 155
+    }
+  },
+  "cuboid_fit": {
+    "cuboid_voxels": 974,
+    "cuboids": 72,
+    "dominant_color_fraction": 0.545361,
+    "intersection_voxels": 970,
+    "mean_silhouette_iou": 0.998551,
+    "method": "adaptive binary 3D cuboid decomposition",
+    "model_precision": 0.995893,
+    "orthographic_views": {
+      "front": {
+        "bidirectional_depth_mae": 0.0,
+        "iou": 0.995652,
+        "model_pixels": 230,
+        "model_precision": 0.995652,
+        "source_coverage": 1.0,
+        "source_pixels": 229
+      },
+      "side": {
+        "bidirectional_depth_mae": 0.0,
+        "iou": 1.0,
+        "model_pixels": 155,
+        "model_precision": 1.0,
+        "source_coverage": 1.0,
+        "source_pixels": 155
+      },
+      "top": {
+        "bidirectional_depth_mae": 0.000855,
+        "iou": 1.0,
+        "model_pixels": 60,
+        "model_precision": 1.0,
+        "source_coverage": 1.0,
+        "source_pixels": 60
+      }
+    },
+    "source_coverage": 1.0,
+    "source_voxels": 970,
+    "surface_f1_tolerance_voxels": 1,
+    "surface_f1_tolerant": 1.0,
+    "surface_precision_tolerant": 1.0,
+    "surface_recall_tolerant": 1.0,
+    "union_voxels": 974,
+    "voxel_iou": 0.995893
+  },
+  "hidden_geometry": {
+    "cannot_recover": [
+      "concavities that do not alter any supplied silhouette",
+      "occluded or never-visible surface markings",
+      "top and bottom surface shape without elevated views",
+      "semantic anatomy, articulation, or internal structure"
+    ],
+    "color_disclosure": "Filled colors are nearest visible-surface propagation, not observations",
+    "hidden_geometry_established_from_observed_views": false,
+    "method": "silhouette visual hull; no depth was estimated or claimed",
+    "proxy_disclosure": "Synthetic-proxy masks constrain the generated visual hull but do not establish that hidden geometry was observed"
+  },
+  "hidden_geometry_established_from_observed_views": false,
+  "manifest": {
+    "path": "../view-inputs/views.json",
+    "projection": "orthographic-yaw",
+    "reference_view": "front_observed",
+    "sha256": "2e75958aaaea9218a64afe228e6d446f156966a9b4324a13840d076a0304ca07",
+    "volume_bounds": [
+      [
+        -10.0,
+        0.0,
+        -5.0
+      ],
+      [
+        10.0,
+        50.0,
+        5.0
+      ]
+    ]
+  },
+  "per_view_silhouette": {
+    "front_observed": {
+      "carved_visual_hull": {
+        "iou": 0.887554,
+        "model_pixels": 121162,
+        "model_precision": 0.919595,
+        "source_coverage": 0.962226
+      },
+      "fitted_cuboids": {
+        "iou": 0.885125,
+        "model_pixels": 121645,
+        "model_precision": 0.916478,
+        "source_coverage": 0.962787
+      },
+      "source_pixels": 115794
+    },
+    "side_synthetic_proxy": {
+      "carved_visual_hull": {
+        "iou": 0.868913,
+        "model_pixels": 81961,
+        "model_precision": 0.978575,
+        "source_coverage": 0.885764
+      },
+      "fitted_cuboids": {
+        "iou": 0.868913,
+        "model_pixels": 81961,
+        "model_precision": 0.978575,
+        "source_coverage": 0.885764
+      },
+      "source_pixels": 90549
+    }
+  },
+  "schema_version": 1,
+  "views": [
+    {
+      "azimuth_degrees": 0.0,
+      "center_px": [
+        347.0,
+        935.0
+      ],
+      "dimensions": [
+        750,
+        1000
+      ],
+      "evidence_kind": "observed",
+      "id": "front_observed",
+      "image": "../../../references/06-scp-173.jpg",
+      "image_sha256": "85d698e25b04dbfc4009a05e1cdbb7dc13c5675d2f7c76e5af8cb5e13f0bd93f",
+      "mask": "../view-inputs/front-observed-mask.png",
+      "mask_sha256": "fdddd0325867eebb4040857960a67cc350a87c5ffb939f3c2331f59454717f51",
+      "pixels_per_unit": 18.145833333
+    },
+    {
+      "azimuth_degrees": 90.0,
+      "center_px": [
+        375.0,
+        935.0
+      ],
+      "dimensions": [
+        750,
+        1000
+      ],
+      "evidence_kind": "synthetic_proxy",
+      "id": "side_synthetic_proxy",
+      "image": "../view-inputs/side-synthetic.png",
+      "image_sha256": "2d75eac684e0992dec642c190d43b94939301ad7d3f12e35a12d6ae7165dd1e3",
+      "mask": "../view-inputs/side-synthetic-mask.png",
+      "mask_sha256": "0a83bcdd1f48f5123cb80823c45736d9afb240724d8eff43294d54d4f2e46b48",
+      "pixels_per_unit": 18.145833333
+    }
+  ],
+  "voxelization": {
+    "candidate_voxels": 5120,
+    "color_fusion": {
+      "color_precedence": "observed samples take precedence over synthetic proxies",
+      "directly_colored_voxels": 346,
+      "directly_colored_voxels_by_evidence_kind": {
+        "observed": 229,
+        "synthetic_proxy": 155
+      },
+      "exclusive_direct_color_attribution": {
+        "both_observed_and_proxy": 38,
+        "observed_only": 191,
+        "synthetic_proxy_only": 117,
+        "union": 346
+      },
+      "hidden_color_claim": "Filled colors are nearest visible-surface propagation, not observations",
+      "hidden_color_fill_voxels": 624,
+      "method": "frontmost observed samples averaged; proxy samples used only where no observed sample exists; then nearest 6-connected fill",
+      "view_order": [
+        "front_observed",
+        "side_synthetic_proxy"
+      ],
+      "visible_sample_contributions_by_evidence_kind": {
+        "observed": 229,
+        "synthetic_proxy": 155
+      },
+      "visible_samples_by_view": {
+        "front_observed": 229,
+        "side_synthetic_proxy": 155
+      }
+    },
+    "components": {
+      "after_cleanup": 1,
+      "before_cleanup": 1,
+      "connectivity": 6,
+      "minimum_voxels": 2,
+      "raw_voxels": 970,
+      "removed_voxels": 0,
+      "retained_voxels": 970,
+      "sizes": [
+        970
+      ]
+    },
+    "grid_dimensions": [
+      16,
+      40,
+      8
+    ],
+    "method": "order-independent intersection of calibrated silhouette cones",
+    "per_view_inside_samples": {
+      "front_observed": 1832,
+      "side_synthetic_proxy": 2480
+    },
+    "voxel_pitch_source_units": 1.25
+  }
+}

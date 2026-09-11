@@ -1,0 +1,16 @@
+{
+  "asset": "falling_devil_twelve_armed_chef",
+  "cycle": "round2-06",
+  "generator": "agent-authored native cuboid model",
+  "input": {
+    "filename": "image-12.png",
+    "height": 501,
+    "kind": "single RGB illustration",
+    "sha256": "e2824aa87127cb8922be7e37ae0942f9abfbf8413fbe39ce133edf4ed06c18fb",
+    "width": 399
+  },
+  "license": "unknown; private ignored benchmark reference only",
+  "mesh_provider": null,
+  "route": "Route 2 semantic native-cuboid reconstruction",
+  "source_projection": false
+}

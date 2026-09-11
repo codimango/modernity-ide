@@ -1,0 +1,3988 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pelvis",
+      "parent": "root",
+      "pivot": [
+        0,
+        29,
+        0
+      ]
+    },
+    {
+      "name": "torso",
+      "parent": "pelvis",
+      "pivot": [
+        0,
+        37,
+        0
+      ]
+    },
+    {
+      "name": "chest",
+      "parent": "torso",
+      "pivot": [
+        0,
+        47,
+        0
+      ]
+    },
+    {
+      "name": "neck",
+      "parent": "chest",
+      "pivot": [
+        0,
+        53,
+        0
+      ]
+    },
+    {
+      "name": "head",
+      "parent": "neck",
+      "pivot": [
+        0,
+        58,
+        0
+      ]
+    },
+    {
+      "name": "jaw",
+      "parent": "head",
+      "pivot": [
+        -1,
+        56,
+        1
+      ]
+    },
+    {
+      "name": "hat",
+      "parent": "head",
+      "pivot": [
+        0,
+        63,
+        0
+      ]
+    },
+    {
+      "name": "head_snout_base_1",
+      "parent": "head",
+      "pivot": [
+        0,
+        59.2,
+        1
+      ]
+    },
+    {
+      "name": "head_snout_base_2",
+      "parent": "head_snout_base_1",
+      "pivot": [
+        -4.5,
+        58.85,
+        1
+      ]
+    },
+    {
+      "name": "head_snout_tip_1",
+      "parent": "head_snout_base_2",
+      "pivot": [
+        -9,
+        58.5,
+        1
+      ]
+    },
+    {
+      "name": "head_snout_tip_2",
+      "parent": "head_snout_tip_1",
+      "pivot": [
+        -13.25,
+        58,
+        1
+      ]
+    },
+    {
+      "name": "dorsal_fin_base_1",
+      "parent": "chest",
+      "pivot": [
+        9,
+        51,
+        -3.5
+      ]
+    },
+    {
+      "name": "dorsal_fin_tip_1",
+      "parent": "dorsal_fin_base_1",
+      "pivot": [
+        11,
+        54,
+        -3.8
+      ]
+    },
+    {
+      "name": "left_arm_1",
+      "parent": "chest",
+      "pivot": [
+        -9.5,
+        50,
+        0
+      ]
+    },
+    {
+      "name": "left_arm_2",
+      "parent": "left_arm_1",
+      "pivot": [
+        -13,
+        41,
+        0.6
+      ]
+    },
+    {
+      "name": "left_hand",
+      "parent": "left_arm_2",
+      "pivot": [
+        -12.5,
+        32,
+        1.2
+      ]
+    },
+    {
+      "name": "right_arm_1",
+      "parent": "chest",
+      "pivot": [
+        9.5,
+        50,
+        0
+      ]
+    },
+    {
+      "name": "right_arm_2",
+      "parent": "right_arm_1",
+      "pivot": [
+        13.2,
+        42,
+        0.7
+      ]
+    },
+    {
+      "name": "right_hand",
+      "parent": "right_arm_2",
+      "pivot": [
+        12.5,
+        33,
+        1.2
+      ]
+    },
+    {
+      "name": "left_leg_1",
+      "parent": "pelvis",
+      "pivot": [
+        -4.2,
+        30,
+        0
+      ]
+    },
+    {
+      "name": "left_leg_2",
+      "parent": "left_leg_1",
+      "pivot": [
+        -5.2,
+        17,
+        0.3
+      ]
+    },
+    {
+      "name": "left_foot",
+      "parent": "left_leg_2",
+      "pivot": [
+        -6.5,
+        3,
+        1
+      ]
+    },
+    {
+      "name": "right_leg_1",
+      "parent": "pelvis",
+      "pivot": [
+        4.2,
+        30,
+        0
+      ]
+    },
+    {
+      "name": "right_leg_2",
+      "parent": "right_leg_1",
+      "pivot": [
+        5.4,
+        16,
+        0.4
+      ]
+    },
+    {
+      "name": "right_foot",
+      "parent": "right_leg_2",
+      "pivot": [
+        7,
+        3,
+        1.1
+      ]
+    },
+    {
+      "name": "tail_base_1",
+      "parent": "pelvis",
+      "pivot": [
+        1,
+        25,
+        -5
+      ]
+    },
+    {
+      "name": "tail_base_2",
+      "parent": "tail_base_1",
+      "pivot": [
+        5.5,
+        22.25,
+        -5
+      ]
+    },
+    {
+      "name": "tail_mid_1",
+      "parent": "tail_base_2",
+      "pivot": [
+        10,
+        19.5,
+        -5
+      ]
+    },
+    {
+      "name": "tail_mid_2",
+      "parent": "tail_mid_1",
+      "pivot": [
+        13.666667,
+        19.333333,
+        -4.833333
+      ]
+    },
+    {
+      "name": "tail_mid_3",
+      "parent": "tail_mid_2",
+      "pivot": [
+        17.333333,
+        19.166667,
+        -4.666667
+      ]
+    },
+    {
+      "name": "tail_band_1",
+      "parent": "tail_mid_3",
+      "pivot": [
+        21,
+        19,
+        -4.5
+      ]
+    },
+    {
+      "name": "tail_lower_fin_1",
+      "parent": "tail_band_1",
+      "pivot": [
+        26,
+        15,
+        -4
+      ]
+    },
+    {
+      "name": "tail_upper_fin_1",
+      "parent": "tail_band_1",
+      "pivot": [
+        26,
+        15,
+        -4
+      ]
+    },
+    {
+      "name": "axe",
+      "parent": "left_hand",
+      "pivot": [
+        -12.5,
+        30,
+        1.8
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 3.15,
+    "height": 3.6,
+    "width": 1.1
+  },
+  "cubes": [
+    {
+      "bone": "pelvis",
+      "center": [
+        0,
+        29,
+        0
+      ],
+      "faces": {},
+      "material": "suit_shadow",
+      "name": "pelvis_core",
+      "origin": [
+        0,
+        29,
+        0
+      ],
+      "role": "deep suited pelvis",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        16,
+        9,
+        14
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        0,
+        36.5,
+        0
+      ],
+      "faces": {},
+      "material": "suit",
+      "name": "abdomen_core",
+      "origin": [
+        0,
+        36.5,
+        0
+      ],
+      "role": "deep fitted lower jacket",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        18,
+        8,
+        14
+      ]
+    },
+    {
+      "bone": "chest",
+      "center": [
+        0,
+        45.5,
+        0
+      ],
+      "faces": {},
+      "material": "suit",
+      "name": "chest_core",
+      "origin": [
+        0,
+        45.5,
+        0
+      ],
+      "role": "broad deep tailored chest",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        20,
+        11,
+        15
+      ]
+    },
+    {
+      "bone": "chest",
+      "center": [
+        0,
+        50.2,
+        -0.2
+      ],
+      "faces": {},
+      "material": "suit_mid",
+      "name": "shoulder_core",
+      "origin": [
+        0,
+        50.2,
+        -0.2
+      ],
+      "role": "wide load-bearing shoulders",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        23,
+        4.5,
+        15
+      ]
+    },
+    {
+      "bone": "neck",
+      "center": [
+        0,
+        53.4,
+        0.3
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "shark_throat",
+      "origin": [
+        0,
+        53.4,
+        0.3
+      ],
+      "role": "white shark throat joining collar",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        10.5,
+        8.5,
+        12
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -0.4,
+        59.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "head_cranium",
+      "origin": [
+        -0.4,
+        59.0,
+        0.0
+      ],
+      "role": "deep rear shark cranium",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        11,
+        10,
+        12
+      ]
+    },
+    {
+      "bone": "head_snout_base_1",
+      "center": [
+        0,
+        61.456795,
+        1
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "head_snout_base_1",
+      "origin": [
+        0,
+        59.2,
+        1
+      ],
+      "role": "broad rear shark snout tapered segment 1",
+      "rotation": [
+        0,
+        0,
+        94.447385
+      ],
+      "size": [
+        10,
+        5.413591,
+        12.375
+      ]
+    },
+    {
+      "bone": "head_snout_base_2",
+      "center": [
+        -4.5,
+        61.106795,
+        1
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "head_snout_base_2",
+      "origin": [
+        -4.5,
+        58.85,
+        1
+      ],
+      "role": "broad rear shark snout tapered segment 2",
+      "rotation": [
+        0,
+        0,
+        94.447385
+      ],
+      "size": [
+        9,
+        5.413591,
+        11.125
+      ]
+    },
+    {
+      "bone": "head_snout_tip_1",
+      "center": [
+        -9,
+        60.639655,
+        1
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "head_snout_tip_1",
+      "origin": [
+        -9,
+        58.5,
+        1
+      ],
+      "role": "tapered shark nose tapered segment 1",
+      "rotation": [
+        0,
+        0,
+        96.709837
+      ],
+      "size": [
+        7.625,
+        5.179311,
+        9.625
+      ]
+    },
+    {
+      "bone": "head_snout_tip_2",
+      "center": [
+        -13.25,
+        60.139655,
+        1
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "head_snout_tip_2",
+      "origin": [
+        -13.25,
+        58,
+        1
+      ],
+      "role": "tapered shark nose tapered segment 2",
+      "rotation": [
+        0,
+        0,
+        96.709837
+      ],
+      "size": [
+        5.875,
+        5.179311,
+        7.875
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -0.5,
+        63.922752,
+        1
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "lower_jaw",
+      "origin": [
+        -0.5,
+        56,
+        1
+      ],
+      "role": "separate heavy lower shark jaw",
+      "rotation": [
+        0,
+        0,
+        94.34324
+      ],
+      "size": [
+        4.8,
+        16.845504,
+        11
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -1,
+        64.236174,
+        7.1
+      ],
+      "faces": {},
+      "material": "mouth",
+      "name": "mouth_head",
+      "origin": [
+        -1,
+        56.4,
+        7.1
+      ],
+      "role": "toothed main shark mouth cavity",
+      "rotation": [
+        -9.364052,
+        0,
+        95.194429
+      ],
+      "size": [
+        2,
+        15.972348,
+        1
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -2.4,
+        56.77272727272727,
+        7.218181818181818
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "head_mouth_tooth_1",
+      "origin": [
+        -2.4,
+        56.27272727272727,
+        6.868181818181818
+      ],
+      "role": "alternating visible tooth for head_mouth",
+      "rotation": [
+        0,
+        0,
+        -174.8055710922652
+      ],
+      "size": [
+        1.25,
+        1.25,
+        0.8999999999999999
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -3.8,
+        55.64545454545454,
+        6.986363636363635
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "head_mouth_tooth_2",
+      "origin": [
+        -3.8,
+        56.14545454545454,
+        6.636363636363636
+      ],
+      "role": "alternating visible tooth for head_mouth",
+      "rotation": [
+        0,
+        0,
+        -174.8055710922652
+      ],
+      "size": [
+        1.25,
+        1.25,
+        0.8999999999999999
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -5.199999999999999,
+        56.518181818181816,
+        6.754545454545454
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "head_mouth_tooth_3",
+      "origin": [
+        -5.199999999999999,
+        56.018181818181816,
+        6.404545454545454
+      ],
+      "role": "alternating visible tooth for head_mouth",
+      "rotation": [
+        0,
+        0,
+        -174.8055710922652
+      ],
+      "size": [
+        1.25,
+        1.25,
+        0.8999999999999999
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -6.6,
+        55.39090909090909,
+        6.522727272727272
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "head_mouth_tooth_4",
+      "origin": [
+        -6.6,
+        55.89090909090909,
+        6.172727272727272
+      ],
+      "role": "alternating visible tooth for head_mouth",
+      "rotation": [
+        0,
+        0,
+        -174.8055710922652
+      ],
+      "size": [
+        1.25,
+        1.25,
+        0.8999999999999999
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -7.999999999999999,
+        56.263636363636365,
+        6.29090909090909
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "head_mouth_tooth_5",
+      "origin": [
+        -7.999999999999999,
+        55.763636363636365,
+        5.9409090909090905
+      ],
+      "role": "alternating visible tooth for head_mouth",
+      "rotation": [
+        0,
+        0,
+        -174.8055710922652
+      ],
+      "size": [
+        1.25,
+        1.25,
+        0.8999999999999999
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -9.399999999999999,
+        55.13636363636363,
+        6.059090909090909
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "head_mouth_tooth_6",
+      "origin": [
+        -9.399999999999999,
+        55.63636363636363,
+        5.709090909090909
+      ],
+      "role": "alternating visible tooth for head_mouth",
+      "rotation": [
+        0,
+        0,
+        -174.8055710922652
+      ],
+      "size": [
+        1.25,
+        1.25,
+        0.8999999999999999
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -10.799999999999999,
+        56.00909090909091,
+        5.827272727272726
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "head_mouth_tooth_7",
+      "origin": [
+        -10.799999999999999,
+        55.50909090909091,
+        5.477272727272727
+      ],
+      "role": "alternating visible tooth for head_mouth",
+      "rotation": [
+        0,
+        0,
+        -174.8055710922652
+      ],
+      "size": [
+        1.25,
+        1.25,
+        0.8999999999999999
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -12.2,
+        54.88181818181818,
+        5.595454545454545
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "head_mouth_tooth_8",
+      "origin": [
+        -12.2,
+        55.38181818181818,
+        5.245454545454545
+      ],
+      "role": "alternating visible tooth for head_mouth",
+      "rotation": [
+        0,
+        0,
+        -174.8055710922652
+      ],
+      "size": [
+        1.25,
+        1.25,
+        0.8999999999999999
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -13.6,
+        55.75454545454546,
+        5.363636363636363
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "head_mouth_tooth_9",
+      "origin": [
+        -13.6,
+        55.25454545454546,
+        5.013636363636364
+      ],
+      "role": "alternating visible tooth for head_mouth",
+      "rotation": [
+        0,
+        0,
+        -174.8055710922652
+      ],
+      "size": [
+        1.25,
+        1.25,
+        0.8999999999999999
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -14.999999999999998,
+        54.627272727272725,
+        5.131818181818181
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "head_mouth_tooth_10",
+      "origin": [
+        -14.999999999999998,
+        55.127272727272725,
+        4.781818181818181
+      ],
+      "role": "alternating visible tooth for head_mouth",
+      "rotation": [
+        0,
+        0,
+        -174.8055710922652
+      ],
+      "size": [
+        1.25,
+        1.25,
+        0.8999999999999999
+      ]
+    },
+    {
+      "bone": "hat",
+      "center": [
+        -2.2,
+        63.2,
+        0
+      ],
+      "faces": {},
+      "material": "shirt",
+      "name": "hat_band",
+      "origin": [
+        -2.2,
+        63.2,
+        0
+      ],
+      "role": "chef hat lower band",
+      "rotation": [
+        0,
+        0,
+        -2
+      ],
+      "size": [
+        13.0,
+        2.8,
+        9.0
+      ]
+    },
+    {
+      "bone": "hat",
+      "center": [
+        -2.3,
+        65.3,
+        0
+      ],
+      "faces": {},
+      "material": "shirt",
+      "name": "hat_crown",
+      "origin": [
+        -2.3,
+        65.3,
+        0
+      ],
+      "role": "tall chef hat crown",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        12.0,
+        3.6,
+        8.0
+      ]
+    },
+    {
+      "bone": "hat",
+      "center": [
+        -7.0,
+        67.4,
+        0
+      ],
+      "faces": {},
+      "material": "shirt",
+      "name": "hat_puff_left",
+      "origin": [
+        -7.0,
+        67.4,
+        0
+      ],
+      "role": "left chef hat puff",
+      "rotation": [
+        0,
+        0,
+        -8
+      ],
+      "size": [
+        8.0,
+        3.2,
+        8.2
+      ]
+    },
+    {
+      "bone": "hat",
+      "center": [
+        -2.3,
+        67.6,
+        0
+      ],
+      "faces": {},
+      "material": "shirt",
+      "name": "hat_puff_center",
+      "origin": [
+        -2.3,
+        67.6,
+        0
+      ],
+      "role": "center chef hat puff",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8.0,
+        3.5,
+        8.5
+      ]
+    },
+    {
+      "bone": "hat",
+      "center": [
+        2.4,
+        67.4,
+        0
+      ],
+      "faces": {},
+      "material": "shirt",
+      "name": "hat_puff_right",
+      "origin": [
+        2.4,
+        67.4,
+        0
+      ],
+      "role": "right chef hat puff",
+      "rotation": [
+        0,
+        0,
+        8
+      ],
+      "size": [
+        8.0,
+        3.2,
+        8.2
+      ]
+    },
+    {
+      "bone": "dorsal_fin_base_1",
+      "center": [
+        9,
+        52.809005,
+        -3.5
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "dorsal_fin_base_1",
+      "origin": [
+        9,
+        51,
+        -3.5
+      ],
+      "role": "rear shoulder dorsal fin tapered segment 1",
+      "rotation": [
+        -4.756341,
+        0,
+        -33.690068
+      ],
+      "size": [
+        4.55,
+        4.218011,
+        1.2
+      ]
+    },
+    {
+      "bone": "dorsal_fin_tip_1",
+      "center": [
+        11,
+        55.668083,
+        -3.8
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "dorsal_fin_tip_1",
+      "origin": [
+        11,
+        54,
+        -3.8
+      ],
+      "role": "pointed dorsal fin tip tapered segment 1",
+      "rotation": [
+        -3.436889,
+        0,
+        -48.652223
+      ],
+      "size": [
+        2.1,
+        3.936165,
+        0.7
+      ]
+    },
+    {
+      "bone": "left_arm_1",
+      "center": [
+        -9.5,
+        54.837613,
+        0
+      ],
+      "faces": {},
+      "material": "suit_mid",
+      "name": "left_arm_1",
+      "origin": [
+        -9.5,
+        50,
+        0
+      ],
+      "role": "left suited arm segment 1",
+      "rotation": [
+        3.555425,
+        0,
+        158.749494
+      ],
+      "size": [
+        6.5,
+        10.575226,
+        7
+      ]
+    },
+    {
+      "bone": "left_arm_2",
+      "center": [
+        -13,
+        45.516913,
+        0.6
+      ],
+      "faces": {},
+      "material": "suit",
+      "name": "left_arm_2",
+      "origin": [
+        -13,
+        41,
+        0.6
+      ],
+      "role": "left suited arm segment 2",
+      "rotation": [
+        3.80822,
+        0,
+        -176.82017
+      ],
+      "size": [
+        5.2,
+        9.933825,
+        6
+      ]
+    },
+    {
+      "bone": "left_hand",
+      "center": [
+        -12.5,
+        30.8,
+        1.8
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "left_hand",
+      "origin": [
+        -12.5,
+        32.0,
+        1.2
+      ],
+      "role": "left blood-marked shark hand",
+      "rotation": [
+        0,
+        0,
+        5
+      ],
+      "size": [
+        6.2,
+        6.0,
+        6.5
+      ]
+    },
+    {
+      "bone": "right_arm_1",
+      "center": [
+        9.5,
+        54.420973,
+        0
+      ],
+      "faces": {},
+      "material": "suit_mid",
+      "name": "right_arm_1",
+      "origin": [
+        9.5,
+        50,
+        0
+      ],
+      "role": "right suited arm segment 1",
+      "rotation": [
+        4.54075,
+        0,
+        -155.179459
+      ],
+      "size": [
+        6.5,
+        9.741945,
+        7
+      ]
+    },
+    {
+      "bone": "right_arm_2",
+      "center": [
+        13.2,
+        46.520509,
+        0.7
+      ],
+      "faces": {},
+      "material": "suit",
+      "name": "right_arm_2",
+      "origin": [
+        13.2,
+        42,
+        0.7
+      ],
+      "role": "right suited arm segment 2",
+      "rotation": [
+        3.170275,
+        0,
+        175.552615
+      ],
+      "size": [
+        5.2,
+        9.941018,
+        6
+      ]
+    },
+    {
+      "bone": "right_hand",
+      "center": [
+        12.5,
+        31.8,
+        1.8
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "right_hand",
+      "origin": [
+        12.5,
+        33.0,
+        1.2
+      ],
+      "role": "right blood-marked shark hand",
+      "rotation": [
+        0,
+        0,
+        -5
+      ],
+      "size": [
+        7.0,
+        6.0,
+        6.5
+      ]
+    },
+    {
+      "bone": "right_hand",
+      "center": [
+        10.1,
+        34.776973,
+        5.05
+      ],
+      "faces": {},
+      "material": "mouth",
+      "name": "mouth_hand",
+      "origin": [
+        10.1,
+        32.4,
+        5.05
+      ],
+      "role": "toothed mouth in right shark hand",
+      "rotation": [
+        0,
+        0,
+        -104.620874
+      ],
+      "size": [
+        1.35,
+        4.993946,
+        0.8
+      ]
+    },
+    {
+      "bone": "right_hand",
+      "center": [
+        11.02,
+        32.48,
+        5.33
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "hand_mouth_tooth_1",
+      "origin": [
+        11.02,
+        32.16,
+        5.05
+      ],
+      "role": "alternating visible tooth for hand_mouth",
+      "rotation": [
+        0,
+        0,
+        -14.62087398863165
+      ],
+      "size": [
+        0.9,
+        0.9,
+        0.76
+      ]
+    },
+    {
+      "bone": "right_hand",
+      "center": [
+        11.94,
+        31.599999999999998,
+        5.33
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "hand_mouth_tooth_2",
+      "origin": [
+        11.94,
+        31.919999999999998,
+        5.05
+      ],
+      "role": "alternating visible tooth for hand_mouth",
+      "rotation": [
+        0,
+        0,
+        -14.62087398863165
+      ],
+      "size": [
+        0.9,
+        0.9,
+        0.76
+      ]
+    },
+    {
+      "bone": "right_hand",
+      "center": [
+        12.86,
+        32.0,
+        5.33
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "hand_mouth_tooth_3",
+      "origin": [
+        12.86,
+        31.68,
+        5.05
+      ],
+      "role": "alternating visible tooth for hand_mouth",
+      "rotation": [
+        0,
+        0,
+        -14.62087398863165
+      ],
+      "size": [
+        0.9,
+        0.9,
+        0.76
+      ]
+    },
+    {
+      "bone": "right_hand",
+      "center": [
+        13.78,
+        31.119999999999997,
+        5.33
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "hand_mouth_tooth_4",
+      "origin": [
+        13.78,
+        31.439999999999998,
+        5.05
+      ],
+      "role": "alternating visible tooth for hand_mouth",
+      "rotation": [
+        0,
+        0,
+        -14.62087398863165
+      ],
+      "size": [
+        0.9,
+        0.9,
+        0.76
+      ]
+    },
+    {
+      "bone": "right_hand",
+      "center": [
+        10.8,
+        32.311741,
+        1.8
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "right_finger_1",
+      "origin": [
+        10.8,
+        30.5,
+        1.8
+      ],
+      "role": "pointed shark hand digit",
+      "rotation": [
+        4.749142,
+        0,
+        174.597276
+      ],
+      "size": [
+        1.1,
+        3.983482,
+        1.2
+      ]
+    },
+    {
+      "bone": "right_hand",
+      "center": [
+        12.5,
+        32.007481,
+        1.8
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "right_finger_2",
+      "origin": [
+        12.5,
+        30.5,
+        1.8
+      ],
+      "role": "pointed shark hand digit",
+      "rotation": [
+        5.710593,
+        0,
+        -180
+      ],
+      "size": [
+        1.1,
+        3.374963,
+        1.2
+      ]
+    },
+    {
+      "bone": "right_hand",
+      "center": [
+        14.2,
+        32.311741,
+        1.8
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "right_finger_3",
+      "origin": [
+        14.2,
+        30.5,
+        1.8
+      ],
+      "role": "pointed shark hand digit",
+      "rotation": [
+        4.749142,
+        0,
+        -174.597276
+      ],
+      "size": [
+        1.1,
+        3.983482,
+        1.2
+      ]
+    },
+    {
+      "bone": "left_leg_1",
+      "center": [
+        -4.2,
+        36.520928,
+        0
+      ],
+      "faces": {},
+      "material": "suit",
+      "name": "left_leg_1",
+      "origin": [
+        -4.2,
+        30,
+        0
+      ],
+      "role": "left tailored trouser leg segment 1",
+      "rotation": [
+        1.318083,
+        0,
+        175.601295
+      ],
+      "size": [
+        7.5,
+        14.041856,
+        8.5
+      ]
+    },
+    {
+      "bone": "left_leg_2",
+      "center": [
+        -5.2,
+        24.038821,
+        0.3
+      ],
+      "faces": {},
+      "material": "suit_shadow",
+      "name": "left_leg_2",
+      "origin": [
+        -5.2,
+        17,
+        0.3
+      ],
+      "role": "left tailored trouser leg segment 2",
+      "rotation": [
+        2.850164,
+        0,
+        174.69489
+      ],
+      "size": [
+        6.6,
+        15.077642,
+        7.5
+      ]
+    },
+    {
+      "bone": "left_foot",
+      "center": [
+        -8.0,
+        1.5,
+        4.2
+      ],
+      "faces": {},
+      "material": "suit_shadow",
+      "name": "left_foot",
+      "origin": [
+        -8.0,
+        1.5,
+        4.2
+      ],
+      "role": "grounded left dress shoe",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.0,
+        3.0,
+        10.5
+      ]
+    },
+    {
+      "bone": "right_leg_1",
+      "center": [
+        4.2,
+        37.028513,
+        0
+      ],
+      "faces": {},
+      "material": "suit",
+      "name": "right_leg_1",
+      "origin": [
+        4.2,
+        30,
+        0
+      ],
+      "role": "right tailored trouser leg segment 1",
+      "rotation": [
+        1.630601,
+        0,
+        -175.100908
+      ],
+      "size": [
+        7.5,
+        15.057027,
+        8.5
+      ]
+    },
+    {
+      "bone": "right_leg_2",
+      "center": [
+        5.4,
+        22.558392,
+        0.4
+      ],
+      "faces": {},
+      "material": "suit_shadow",
+      "name": "right_leg_2",
+      "origin": [
+        5.4,
+        16,
+        0.4
+      ],
+      "role": "right tailored trouser leg segment 2",
+      "rotation": [
+        3.059142,
+        0,
+        -172.983498
+      ],
+      "size": [
+        6.6,
+        14.116783,
+        7.5
+      ]
+    },
+    {
+      "bone": "right_foot",
+      "center": [
+        8.0,
+        1.5,
+        4.2
+      ],
+      "faces": {},
+      "material": "suit_shadow",
+      "name": "right_foot",
+      "origin": [
+        8.0,
+        1.5,
+        4.2
+      ],
+      "role": "grounded right dress shoe",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        9.0,
+        3.0,
+        10.5
+      ]
+    },
+    {
+      "bone": "tail_base_1",
+      "center": [
+        1,
+        27.636878,
+        -5
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "tail_base_1",
+      "origin": [
+        1,
+        25,
+        -5
+      ],
+      "role": "thick rear shark tail root tapered segment 1",
+      "rotation": [
+        0,
+        0,
+        -121.429566
+      ],
+      "size": [
+        11.25,
+        6.173756,
+        10.875
+      ]
+    },
+    {
+      "bone": "tail_base_2",
+      "center": [
+        5.5,
+        24.886878,
+        -5
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "tail_base_2",
+      "origin": [
+        5.5,
+        22.25,
+        -5
+      ],
+      "role": "thick rear shark tail root tapered segment 2",
+      "rotation": [
+        0,
+        0,
+        -121.429566
+      ],
+      "size": [
+        10.75,
+        6.173756,
+        10.625
+      ]
+    },
+    {
+      "bone": "tail_mid_1",
+      "center": [
+        10,
+        21.337117,
+        -5
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "tail_mid_1",
+      "origin": [
+        10,
+        19.5,
+        -5
+      ],
+      "role": "single broad tapered shark tail tapered segment 1",
+      "rotation": [
+        2.599881,
+        0,
+        -92.602562
+      ],
+      "size": [
+        10,
+        4.574235,
+        10.083333
+      ]
+    },
+    {
+      "bone": "tail_mid_2",
+      "center": [
+        13.666667,
+        21.170451,
+        -4.833333
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "tail_mid_2",
+      "origin": [
+        13.666667,
+        19.333333,
+        -4.833333
+      ],
+      "role": "single broad tapered shark tail tapered segment 2",
+      "rotation": [
+        2.599881,
+        0,
+        -92.602562
+      ],
+      "size": [
+        9,
+        4.574235,
+        9.25
+      ]
+    },
+    {
+      "bone": "tail_mid_3",
+      "center": [
+        17.333333,
+        21.003784,
+        -4.666667
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "tail_mid_3",
+      "origin": [
+        17.333333,
+        19.166667,
+        -4.666667
+      ],
+      "role": "single broad tapered shark tail tapered segment 3",
+      "rotation": [
+        2.599881,
+        0,
+        -92.602562
+      ],
+      "size": [
+        8,
+        4.574235,
+        8.416667
+      ]
+    },
+    {
+      "bone": "tail_band_1",
+      "center": [
+        21,
+        22.211308,
+        -4.5
+      ],
+      "faces": {},
+      "material": "tail_band",
+      "name": "tail_band_1",
+      "origin": [
+        21,
+        19,
+        -4.5
+      ],
+      "role": "dark caudal tail band tapered segment 1",
+      "rotation": [
+        4.464988,
+        0,
+        -128.659808
+      ],
+      "size": [
+        6.35,
+        7.322616,
+        7.25
+      ]
+    },
+    {
+      "bone": "tail_lower_fin_1",
+      "center": [
+        26,
+        21.731456,
+        -4
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "tail_lower_fin_1",
+      "origin": [
+        26,
+        15,
+        -4
+      ],
+      "role": "lower caudal fin lobe tapered segment 1",
+      "rotation": [
+        2.128401,
+        0,
+        -131.987212
+      ],
+      "size": [
+        8.75,
+        14.362912,
+        2.25
+      ]
+    },
+    {
+      "bone": "tail_upper_fin_1",
+      "center": [
+        26,
+        21.025985,
+        -4
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "tail_upper_fin_1",
+      "origin": [
+        26,
+        15,
+        -4
+      ],
+      "role": "upper caudal fin lobe tapered segment 1",
+      "rotation": [
+        2.377712,
+        0,
+        -48.366461
+      ],
+      "size": [
+        7.75,
+        12.951971,
+        2.25
+      ]
+    },
+    {
+      "bone": "tail_band_1",
+      "center": [
+        26.0,
+        15.0,
+        -4.0
+      ],
+      "faces": {},
+      "material": "skin_blood",
+      "name": "tail_fork_hub",
+      "origin": [
+        26.0,
+        15.0,
+        -4.0
+      ],
+      "role": "single connected caudal fin hub",
+      "rotation": [
+        0,
+        0,
+        -8
+      ],
+      "size": [
+        8.0,
+        8.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "tail_base_1",
+      "center": [
+        3.2,
+        26.76827,
+        0.1
+      ],
+      "faces": {},
+      "material": "mouth",
+      "name": "mouth_tail_base",
+      "origin": [
+        3.2,
+        23.8,
+        0.1
+      ],
+      "role": "first toothed mouth embedded in shark tail root",
+      "rotation": [
+        -0.482575,
+        0,
+        -122.619243
+      ],
+      "size": [
+        1.6,
+        6.176539,
+        0.85
+      ]
+    },
+    {
+      "bone": "tail_mid_1",
+      "center": [
+        13,
+        22.920096,
+        -0.25
+      ],
+      "faces": {},
+      "material": "mouth",
+      "name": "mouth_tail_mid",
+      "origin": [
+        13,
+        19.8,
+        -0.25
+      ],
+      "role": "toothed mouth along main shark tail",
+      "rotation": [
+        -0.918213,
+        0,
+        -96.4416
+      ],
+      "size": [
+        1.6,
+        6.480192,
+        0.85
+      ]
+    },
+    {
+      "bone": "tail_base_1",
+      "center": [
+        4.2,
+        23.5,
+        0.39
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "tail_base_mouth_tooth_1",
+      "origin": [
+        4.2,
+        23.16,
+        0.09
+      ],
+      "role": "alternating visible tooth for tail_base_mouth",
+      "rotation": [
+        0,
+        0,
+        -32.61924307119283
+      ],
+      "size": [
+        0.92,
+        0.92,
+        0.8
+      ]
+    },
+    {
+      "bone": "tail_base_1",
+      "center": [
+        5.2,
+        22.18,
+        0.38
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "tail_base_mouth_tooth_2",
+      "origin": [
+        5.2,
+        22.52,
+        0.08
+      ],
+      "role": "alternating visible tooth for tail_base_mouth",
+      "rotation": [
+        0,
+        0,
+        -32.61924307119283
+      ],
+      "size": [
+        0.92,
+        0.92,
+        0.8
+      ]
+    },
+    {
+      "bone": "tail_base_1",
+      "center": [
+        6.199999999999999,
+        22.220000000000002,
+        0.37
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "tail_base_mouth_tooth_3",
+      "origin": [
+        6.199999999999999,
+        21.880000000000003,
+        0.07
+      ],
+      "role": "alternating visible tooth for tail_base_mouth",
+      "rotation": [
+        0,
+        0,
+        -32.61924307119283
+      ],
+      "size": [
+        0.92,
+        0.92,
+        0.8
+      ]
+    },
+    {
+      "bone": "tail_base_1",
+      "center": [
+        7.199999999999999,
+        20.900000000000002,
+        0.36
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "tail_base_mouth_tooth_4",
+      "origin": [
+        7.199999999999999,
+        21.240000000000002,
+        0.06
+      ],
+      "role": "alternating visible tooth for tail_base_mouth",
+      "rotation": [
+        0,
+        0,
+        -32.61924307119283
+      ],
+      "size": [
+        0.92,
+        0.92,
+        0.8
+      ]
+    },
+    {
+      "bone": "tail_mid_1",
+      "center": [
+        14.24,
+        20.0,
+        0.02999999999999997
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "tail_mid_mouth_tooth_1",
+      "origin": [
+        14.24,
+        19.66,
+        -0.27
+      ],
+      "role": "alternating visible tooth for tail_mid_mouth",
+      "rotation": [
+        0,
+        0,
+        -6.4416000993350275
+      ],
+      "size": [
+        0.92,
+        0.92,
+        0.8
+      ]
+    },
+    {
+      "bone": "tail_mid_1",
+      "center": [
+        15.48,
+        19.18,
+        0.010000000000000009
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "tail_mid_mouth_tooth_2",
+      "origin": [
+        15.48,
+        19.52,
+        -0.29
+      ],
+      "role": "alternating visible tooth for tail_mid_mouth",
+      "rotation": [
+        0,
+        0,
+        -6.4416000993350275
+      ],
+      "size": [
+        0.92,
+        0.92,
+        0.8
+      ]
+    },
+    {
+      "bone": "tail_mid_1",
+      "center": [
+        16.72,
+        19.720000000000002,
+        -0.010000000000000009
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "tail_mid_mouth_tooth_3",
+      "origin": [
+        16.72,
+        19.380000000000003,
+        -0.31
+      ],
+      "role": "alternating visible tooth for tail_mid_mouth",
+      "rotation": [
+        0,
+        0,
+        -6.4416000993350275
+      ],
+      "size": [
+        0.92,
+        0.92,
+        0.8
+      ]
+    },
+    {
+      "bone": "tail_mid_1",
+      "center": [
+        17.96,
+        18.900000000000002,
+        -0.02999999999999997
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "tail_mid_mouth_tooth_4",
+      "origin": [
+        17.96,
+        19.240000000000002,
+        -0.32999999999999996
+      ],
+      "role": "alternating visible tooth for tail_mid_mouth",
+      "rotation": [
+        0,
+        0,
+        -6.4416000993350275
+      ],
+      "size": [
+        0.92,
+        0.92,
+        0.8
+      ]
+    },
+    {
+      "bone": "axe",
+      "center": [
+        -12.5,
+        37.107039,
+        1.8
+      ],
+      "faces": {},
+      "material": "handle",
+      "name": "axe_handle",
+      "origin": [
+        -12.5,
+        30,
+        1.8
+      ],
+      "role": "long one-handed butcher axe handle",
+      "rotation": [
+        0.80621,
+        0,
+        140.710593
+      ],
+      "size": [
+        1,
+        14.714078,
+        1
+      ]
+    },
+    {
+      "bone": "axe",
+      "center": [
+        -21.5,
+        21.371708,
+        2
+      ],
+      "faces": {},
+      "material": "steel_blood",
+      "name": "axe_head",
+      "origin": [
+        -21.5,
+        19,
+        2
+      ],
+      "role": "wide upper cleaver wedge",
+      "rotation": [
+        0,
+        0,
+        71.565051
+      ],
+      "size": [
+        5.5,
+        5.743416,
+        3
+      ]
+    },
+    {
+      "bone": "axe",
+      "center": [
+        -26,
+        22.736068,
+        2
+      ],
+      "faces": {},
+      "material": "steel_blood",
+      "name": "axe_cheek",
+      "origin": [
+        -26,
+        20.5,
+        2
+      ],
+      "role": "descending outer cleaver cheek",
+      "rotation": [
+        0,
+        0,
+        153.434949
+      ],
+      "size": [
+        5,
+        5.472136,
+        3
+      ]
+    },
+    {
+      "bone": "axe",
+      "center": [
+        -28,
+        18.974874,
+        2
+      ],
+      "faces": {},
+      "material": "steel_blood",
+      "name": "axe_hook",
+      "origin": [
+        -28,
+        16.5,
+        2
+      ],
+      "role": "inward hooked lower axe beak",
+      "rotation": [
+        0,
+        0,
+        -135
+      ],
+      "size": [
+        3.5,
+        5.649747,
+        3
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "anatomy-rigged-shark-chef-v1",
+    "anatomical_axis": "+Z front, X width, Y up",
+    "arm_chains": [
+      {
+        "hand": "left_hand",
+        "joints": [
+          [
+            -9.5,
+            50.0,
+            0.0
+          ],
+          [
+            -13.0,
+            41.0,
+            0.6
+          ],
+          [
+            -12.5,
+            32.0,
+            1.2
+          ]
+        ],
+        "name": "left",
+        "segments": [
+          "left_arm_1",
+          "left_arm_2"
+        ]
+      },
+      {
+        "hand": "right_hand",
+        "joints": [
+          [
+            9.5,
+            50.0,
+            0.0
+          ],
+          [
+            13.2,
+            42.0,
+            0.7
+          ],
+          [
+            12.5,
+            33.0,
+            1.2
+          ]
+        ],
+        "name": "right",
+        "segments": [
+          "right_arm_1",
+          "right_arm_2"
+        ]
+      }
+    ],
+    "declared_attachments": [
+      {
+        "first": "pelvis_core",
+        "joint": [
+          0,
+          33.2,
+          0
+        ],
+        "second": "abdomen_core"
+      },
+      {
+        "first": "abdomen_core",
+        "joint": [
+          0,
+          40.2,
+          0
+        ],
+        "second": "chest_core"
+      },
+      {
+        "first": "chest_core",
+        "joint": [
+          0,
+          49.5,
+          0
+        ],
+        "second": "shoulder_core"
+      },
+      {
+        "first": "shoulder_core",
+        "joint": [
+          0,
+          51.5,
+          0
+        ],
+        "second": "shark_throat"
+      },
+      {
+        "first": "shark_throat",
+        "joint": [
+          0,
+          56.0,
+          0
+        ],
+        "second": "head_cranium"
+      },
+      {
+        "first": "head_cranium",
+        "joint": [
+          0.0,
+          59.2,
+          1.0
+        ],
+        "second": "head_snout_base_1"
+      },
+      {
+        "first": "head_snout_base_1",
+        "joint": [
+          -4.5,
+          58.85,
+          1.0
+        ],
+        "second": "head_snout_base_2"
+      },
+      {
+        "first": "head_snout_base_2",
+        "joint": [
+          -9.0,
+          58.5,
+          1.0
+        ],
+        "second": "head_snout_tip_1"
+      },
+      {
+        "first": "head_snout_tip_1",
+        "joint": [
+          -13.25,
+          58.0,
+          1.0
+        ],
+        "second": "head_snout_tip_2"
+      },
+      {
+        "first": "head_cranium",
+        "joint": [
+          -0.5,
+          56.0,
+          1.0
+        ],
+        "second": "lower_jaw"
+      },
+      {
+        "first": "head_snout_base_1",
+        "joint": [
+          -1.0,
+          56.4,
+          7.1
+        ],
+        "second": "mouth_head"
+      },
+      {
+        "first": "mouth_head",
+        "joint": [
+          -2.4,
+          56.27272727272727,
+          6.868181818181818
+        ],
+        "second": "head_mouth_tooth_1"
+      },
+      {
+        "first": "mouth_head",
+        "joint": [
+          -3.8,
+          56.14545454545454,
+          6.636363636363636
+        ],
+        "second": "head_mouth_tooth_2"
+      },
+      {
+        "first": "mouth_head",
+        "joint": [
+          -5.199999999999999,
+          56.018181818181816,
+          6.404545454545454
+        ],
+        "second": "head_mouth_tooth_3"
+      },
+      {
+        "first": "mouth_head",
+        "joint": [
+          -6.6,
+          55.89090909090909,
+          6.172727272727272
+        ],
+        "second": "head_mouth_tooth_4"
+      },
+      {
+        "first": "mouth_head",
+        "joint": [
+          -7.999999999999999,
+          55.763636363636365,
+          5.9409090909090905
+        ],
+        "second": "head_mouth_tooth_5"
+      },
+      {
+        "first": "mouth_head",
+        "joint": [
+          -9.399999999999999,
+          55.63636363636363,
+          5.709090909090909
+        ],
+        "second": "head_mouth_tooth_6"
+      },
+      {
+        "first": "mouth_head",
+        "joint": [
+          -10.799999999999999,
+          55.50909090909091,
+          5.477272727272727
+        ],
+        "second": "head_mouth_tooth_7"
+      },
+      {
+        "first": "mouth_head",
+        "joint": [
+          -12.2,
+          55.38181818181818,
+          5.245454545454545
+        ],
+        "second": "head_mouth_tooth_8"
+      },
+      {
+        "first": "mouth_head",
+        "joint": [
+          -13.6,
+          55.25454545454546,
+          5.013636363636364
+        ],
+        "second": "head_mouth_tooth_9"
+      },
+      {
+        "first": "mouth_head",
+        "joint": [
+          -14.999999999999998,
+          55.127272727272725,
+          4.781818181818181
+        ],
+        "second": "head_mouth_tooth_10"
+      },
+      {
+        "first": "head_cranium",
+        "joint": [
+          -2.0,
+          62.5,
+          0
+        ],
+        "second": "hat_band"
+      },
+      {
+        "first": "hat_band",
+        "joint": [
+          -2.2,
+          64.2,
+          0
+        ],
+        "second": "hat_crown"
+      },
+      {
+        "first": "hat_crown",
+        "joint": [
+          -4.0,
+          66.2,
+          0
+        ],
+        "second": "hat_puff_left"
+      },
+      {
+        "first": "hat_crown",
+        "joint": [
+          -2.3,
+          66.2,
+          0
+        ],
+        "second": "hat_puff_center"
+      },
+      {
+        "first": "hat_crown",
+        "joint": [
+          -0.2,
+          66.2,
+          0
+        ],
+        "second": "hat_puff_right"
+      },
+      {
+        "first": "shoulder_core",
+        "joint": [
+          9.0,
+          51.0,
+          -3.5
+        ],
+        "second": "dorsal_fin_base_1"
+      },
+      {
+        "first": "dorsal_fin_base_1",
+        "joint": [
+          11.0,
+          54.0,
+          -3.8
+        ],
+        "second": "dorsal_fin_tip_1"
+      },
+      {
+        "first": "shoulder_core",
+        "joint": [
+          -9.5,
+          50.0,
+          0.0
+        ],
+        "second": "left_arm_1"
+      },
+      {
+        "first": "left_arm_1",
+        "joint": [
+          -13.0,
+          41.0,
+          0.6
+        ],
+        "second": "left_arm_2"
+      },
+      {
+        "first": "left_arm_2",
+        "joint": [
+          -12.5,
+          32.0,
+          1.2
+        ],
+        "second": "left_hand"
+      },
+      {
+        "first": "shoulder_core",
+        "joint": [
+          9.5,
+          50.0,
+          0.0
+        ],
+        "second": "right_arm_1"
+      },
+      {
+        "first": "right_arm_1",
+        "joint": [
+          13.2,
+          42.0,
+          0.7
+        ],
+        "second": "right_arm_2"
+      },
+      {
+        "first": "right_arm_2",
+        "joint": [
+          12.5,
+          33.0,
+          1.2
+        ],
+        "second": "right_hand"
+      },
+      {
+        "first": "right_hand",
+        "joint": [
+          10.1,
+          32.4,
+          5.05
+        ],
+        "second": "mouth_hand"
+      },
+      {
+        "first": "mouth_hand",
+        "joint": [
+          11.02,
+          32.16,
+          5.05
+        ],
+        "second": "hand_mouth_tooth_1"
+      },
+      {
+        "first": "mouth_hand",
+        "joint": [
+          11.94,
+          31.919999999999998,
+          5.05
+        ],
+        "second": "hand_mouth_tooth_2"
+      },
+      {
+        "first": "mouth_hand",
+        "joint": [
+          12.86,
+          31.68,
+          5.05
+        ],
+        "second": "hand_mouth_tooth_3"
+      },
+      {
+        "first": "mouth_hand",
+        "joint": [
+          13.78,
+          31.439999999999998,
+          5.05
+        ],
+        "second": "hand_mouth_tooth_4"
+      },
+      {
+        "first": "right_hand",
+        "joint": [
+          10.8,
+          30.5,
+          1.8
+        ],
+        "second": "right_finger_1"
+      },
+      {
+        "first": "right_hand",
+        "joint": [
+          12.5,
+          30.5,
+          1.8
+        ],
+        "second": "right_finger_2"
+      },
+      {
+        "first": "right_hand",
+        "joint": [
+          14.2,
+          30.5,
+          1.8
+        ],
+        "second": "right_finger_3"
+      },
+      {
+        "first": "pelvis_core",
+        "joint": [
+          -4.2,
+          30.0,
+          0.0
+        ],
+        "second": "left_leg_1"
+      },
+      {
+        "first": "left_leg_1",
+        "joint": [
+          -5.2,
+          17.0,
+          0.3
+        ],
+        "second": "left_leg_2"
+      },
+      {
+        "first": "left_leg_2",
+        "joint": [
+          -6.5,
+          3.0,
+          1.0
+        ],
+        "second": "left_foot"
+      },
+      {
+        "first": "pelvis_core",
+        "joint": [
+          4.2,
+          30.0,
+          0.0
+        ],
+        "second": "right_leg_1"
+      },
+      {
+        "first": "right_leg_1",
+        "joint": [
+          5.4,
+          16.0,
+          0.4
+        ],
+        "second": "right_leg_2"
+      },
+      {
+        "first": "right_leg_2",
+        "joint": [
+          7.0,
+          3.0,
+          1.1
+        ],
+        "second": "right_foot"
+      },
+      {
+        "first": "pelvis_core",
+        "joint": [
+          1.0,
+          25.0,
+          -5.0
+        ],
+        "second": "tail_base_1"
+      },
+      {
+        "first": "tail_base_1",
+        "joint": [
+          5.5,
+          22.25,
+          -5.0
+        ],
+        "second": "tail_base_2"
+      },
+      {
+        "first": "tail_base_2",
+        "joint": [
+          10.0,
+          19.5,
+          -5.0
+        ],
+        "second": "tail_mid_1"
+      },
+      {
+        "first": "tail_mid_1",
+        "joint": [
+          13.666666666666666,
+          19.333333333333332,
+          -4.833333333333333
+        ],
+        "second": "tail_mid_2"
+      },
+      {
+        "first": "tail_mid_2",
+        "joint": [
+          17.333333333333332,
+          19.166666666666668,
+          -4.666666666666667
+        ],
+        "second": "tail_mid_3"
+      },
+      {
+        "first": "tail_mid_3",
+        "joint": [
+          21.0,
+          19.0,
+          -4.5
+        ],
+        "second": "tail_band_1"
+      },
+      {
+        "first": "tail_band_1",
+        "joint": [
+          26.0,
+          15.0,
+          -4.0
+        ],
+        "second": "tail_lower_fin_1"
+      },
+      {
+        "first": "tail_band_1",
+        "joint": [
+          26.0,
+          15.0,
+          -4.0
+        ],
+        "second": "tail_upper_fin_1"
+      },
+      {
+        "first": "tail_band_1",
+        "joint": [
+          26.0,
+          15.0,
+          -4.0
+        ],
+        "second": "tail_fork_hub"
+      },
+      {
+        "first": "tail_base_1",
+        "joint": [
+          3.2,
+          23.8,
+          0.1
+        ],
+        "second": "mouth_tail_base"
+      },
+      {
+        "first": "tail_mid_1",
+        "joint": [
+          13.0,
+          19.8,
+          -0.25
+        ],
+        "second": "mouth_tail_mid"
+      },
+      {
+        "first": "mouth_tail_base",
+        "joint": [
+          4.2,
+          23.16,
+          0.09
+        ],
+        "second": "tail_base_mouth_tooth_1"
+      },
+      {
+        "first": "mouth_tail_base",
+        "joint": [
+          5.2,
+          22.52,
+          0.08
+        ],
+        "second": "tail_base_mouth_tooth_2"
+      },
+      {
+        "first": "mouth_tail_base",
+        "joint": [
+          6.199999999999999,
+          21.880000000000003,
+          0.07
+        ],
+        "second": "tail_base_mouth_tooth_3"
+      },
+      {
+        "first": "mouth_tail_base",
+        "joint": [
+          7.199999999999999,
+          21.240000000000002,
+          0.06
+        ],
+        "second": "tail_base_mouth_tooth_4"
+      },
+      {
+        "first": "mouth_tail_mid",
+        "joint": [
+          14.24,
+          19.66,
+          -0.27
+        ],
+        "second": "tail_mid_mouth_tooth_1"
+      },
+      {
+        "first": "mouth_tail_mid",
+        "joint": [
+          15.48,
+          19.52,
+          -0.29
+        ],
+        "second": "tail_mid_mouth_tooth_2"
+      },
+      {
+        "first": "mouth_tail_mid",
+        "joint": [
+          16.72,
+          19.380000000000003,
+          -0.31
+        ],
+        "second": "tail_mid_mouth_tooth_3"
+      },
+      {
+        "first": "mouth_tail_mid",
+        "joint": [
+          17.96,
+          19.240000000000002,
+          -0.32999999999999996
+        ],
+        "second": "tail_mid_mouth_tooth_4"
+      },
+      {
+        "first": "left_hand",
+        "joint": [
+          -12.5,
+          30.0,
+          1.8
+        ],
+        "second": "axe_handle"
+      },
+      {
+        "first": "axe_handle",
+        "joint": [
+          -21.5,
+          19.0,
+          2.0
+        ],
+        "second": "axe_head"
+      },
+      {
+        "first": "axe_head",
+        "joint": [
+          -26.0,
+          20.5,
+          2.0
+        ],
+        "second": "axe_cheek"
+      },
+      {
+        "first": "axe_cheek",
+        "joint": [
+          -28.0,
+          16.5,
+          2.0
+        ],
+        "second": "axe_hook"
+      }
+    ],
+    "dorsal_fin_graph": {
+      "attachments": [
+        {
+          "first": "shoulder_core",
+          "joint": [
+            9.0,
+            51.0,
+            -3.5
+          ],
+          "second": "dorsal_fin_base_1"
+        },
+        {
+          "first": "dorsal_fin_base_1",
+          "joint": [
+            11.0,
+            54.0,
+            -3.8
+          ],
+          "second": "dorsal_fin_tip_1"
+        }
+      ],
+      "edges": [
+        {
+          "end": "fin_mid",
+          "end_depth": 1,
+          "end_thickness": 3.6,
+          "material": "skin",
+          "name": "base",
+          "role": "rear shoulder dorsal fin",
+          "segments": [
+            "dorsal_fin_base_1"
+          ],
+          "start": "fin_root",
+          "start_depth": 1.4,
+          "start_thickness": 5.5
+        },
+        {
+          "end": "fin_tip",
+          "end_depth": 0.5,
+          "end_thickness": 0.8,
+          "material": "skin_blood",
+          "name": "tip",
+          "role": "pointed dorsal fin tip",
+          "segments": [
+            "dorsal_fin_tip_1"
+          ],
+          "start": "fin_mid",
+          "start_depth": 0.9,
+          "start_thickness": 3.4
+        }
+      ],
+      "name": "dorsal_fin",
+      "nodes": [
+        {
+          "name": "fin_mid",
+          "point": [
+            11,
+            54,
+            -3.8
+          ]
+        },
+        {
+          "name": "fin_root",
+          "point": [
+            9,
+            51,
+            -3.5
+          ]
+        },
+        {
+          "name": "fin_tip",
+          "point": [
+            13.5,
+            56.2,
+            -4
+          ]
+        }
+      ],
+      "parent_bone": "chest",
+      "parent_cube": "shoulder_core",
+      "root_node": "fin_root",
+      "taper_method": "piecewise-constant-midpoint-sampling"
+    },
+    "feature_inventory": {
+      "biped_leg_chains": 2,
+      "blue_tattoo_landmarks": 12,
+      "caudal_fin_branches": 2,
+      "chef_hat_cuboids": 5,
+      "dorsal_fin_segments": 2,
+      "grounded_feet": 2,
+      "hand_mouths": 1,
+      "head_mouths": 1,
+      "held_axes": 1,
+      "humanoid_arm_chains": 2,
+      "red_eye_landmarks": 1,
+      "tail_mouths": 2,
+      "tail_segments": 8,
+      "tooth_row_landmarks": 8,
+      "toothed_mouth_assemblies": 4
+    },
+    "head_snout_graph": {
+      "attachments": [
+        {
+          "first": "head_cranium",
+          "joint": [
+            0.0,
+            59.2,
+            1.0
+          ],
+          "second": "head_snout_base_1"
+        },
+        {
+          "first": "head_snout_base_1",
+          "joint": [
+            -4.5,
+            58.85,
+            1.0
+          ],
+          "second": "head_snout_base_2"
+        },
+        {
+          "first": "head_snout_base_2",
+          "joint": [
+            -9.0,
+            58.5,
+            1.0
+          ],
+          "second": "head_snout_tip_1"
+        },
+        {
+          "first": "head_snout_tip_1",
+          "joint": [
+            -13.25,
+            58.0,
+            1.0
+          ],
+          "second": "head_snout_tip_2"
+        }
+      ],
+      "edges": [
+        {
+          "end": "snout_mid",
+          "end_depth": 10.5,
+          "end_thickness": 8.5,
+          "material": "skin_blood",
+          "name": "base",
+          "role": "broad rear shark snout",
+          "segments": [
+            "head_snout_base_1",
+            "head_snout_base_2"
+          ],
+          "start": "snout_root",
+          "start_depth": 13,
+          "start_thickness": 10.5
+        },
+        {
+          "end": "snout_tip",
+          "end_depth": 7,
+          "end_thickness": 5,
+          "material": "skin_blood",
+          "name": "tip",
+          "role": "tapered shark nose",
+          "segments": [
+            "head_snout_tip_1",
+            "head_snout_tip_2"
+          ],
+          "start": "snout_mid",
+          "start_depth": 10.5,
+          "start_thickness": 8.5
+        }
+      ],
+      "name": "head_snout",
+      "nodes": [
+        {
+          "name": "snout_mid",
+          "point": [
+            -9,
+            58.5,
+            1
+          ]
+        },
+        {
+          "name": "snout_root",
+          "point": [
+            0,
+            59.2,
+            1
+          ]
+        },
+        {
+          "name": "snout_tip",
+          "point": [
+            -17.5,
+            57.5,
+            1
+          ]
+        }
+      ],
+      "parent_bone": "head",
+      "parent_cube": "head_cranium",
+      "root_node": "snout_root",
+      "taper_method": "piecewise-constant-midpoint-sampling"
+    },
+    "held_prop_contacts": [
+      {
+        "hand_cube": "left_hand",
+        "joint": [
+          -12.5,
+          30.0,
+          1.8
+        ],
+        "prop": "axe",
+        "prop_cube": "axe_handle"
+      }
+    ],
+    "lane": "agent-authored-semantic-volume",
+    "leg_chains": [
+      {
+        "foot": "left_foot",
+        "joints": [
+          [
+            -4.2,
+            30.0,
+            0.0
+          ],
+          [
+            -5.2,
+            17.0,
+            0.3
+          ],
+          [
+            -6.5,
+            3.0,
+            1.0
+          ]
+        ],
+        "name": "left",
+        "segments": [
+          "left_leg_1",
+          "left_leg_2"
+        ]
+      },
+      {
+        "foot": "right_foot",
+        "joints": [
+          [
+            4.2,
+            30.0,
+            0.0
+          ],
+          [
+            5.4,
+            16.0,
+            0.4
+          ],
+          [
+            7.0,
+            3.0,
+            1.1
+          ]
+        ],
+        "name": "right",
+        "segments": [
+          "right_leg_1",
+          "right_leg_2"
+        ]
+      }
+    ],
+    "single_view_hidden_geometry": "inferred_conservatively_not_observed",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0,
+    "tail_graph": {
+      "attachments": [
+        {
+          "first": "pelvis_core",
+          "joint": [
+            1.0,
+            25.0,
+            -5.0
+          ],
+          "second": "tail_base_1"
+        },
+        {
+          "first": "tail_base_1",
+          "joint": [
+            5.5,
+            22.25,
+            -5.0
+          ],
+          "second": "tail_base_2"
+        },
+        {
+          "first": "tail_base_2",
+          "joint": [
+            10.0,
+            19.5,
+            -5.0
+          ],
+          "second": "tail_mid_1"
+        },
+        {
+          "first": "tail_mid_1",
+          "joint": [
+            13.666666666666666,
+            19.333333333333332,
+            -4.833333333333333
+          ],
+          "second": "tail_mid_2"
+        },
+        {
+          "first": "tail_mid_2",
+          "joint": [
+            17.333333333333332,
+            19.166666666666668,
+            -4.666666666666667
+          ],
+          "second": "tail_mid_3"
+        },
+        {
+          "first": "tail_mid_3",
+          "joint": [
+            21.0,
+            19.0,
+            -4.5
+          ],
+          "second": "tail_band_1"
+        },
+        {
+          "first": "tail_band_1",
+          "joint": [
+            26.0,
+            15.0,
+            -4.0
+          ],
+          "second": "tail_lower_fin_1"
+        },
+        {
+          "first": "tail_band_1",
+          "joint": [
+            26.0,
+            15.0,
+            -4.0
+          ],
+          "second": "tail_upper_fin_1"
+        }
+      ],
+      "edges": [
+        {
+          "end": "tail_base",
+          "end_depth": 10.5,
+          "end_thickness": 10.5,
+          "material": "skin_blood",
+          "name": "base",
+          "role": "thick rear shark tail root",
+          "segments": [
+            "tail_base_1",
+            "tail_base_2"
+          ],
+          "start": "tail_root",
+          "start_depth": 11,
+          "start_thickness": 11.5
+        },
+        {
+          "end": "tail_mid",
+          "end_depth": 8,
+          "end_thickness": 7.5,
+          "material": "skin_blood",
+          "name": "mid",
+          "role": "single broad tapered shark tail",
+          "segments": [
+            "tail_mid_1",
+            "tail_mid_2",
+            "tail_mid_3"
+          ],
+          "start": "tail_base",
+          "start_depth": 10.5,
+          "start_thickness": 10.5
+        },
+        {
+          "end": "tail_fork",
+          "end_depth": 6.5,
+          "end_thickness": 5.5,
+          "material": "tail_band",
+          "name": "band",
+          "role": "dark caudal tail band",
+          "segments": [
+            "tail_band_1"
+          ],
+          "start": "tail_mid",
+          "start_depth": 8,
+          "start_thickness": 7.2
+        },
+        {
+          "end": "tail_lower_tip",
+          "end_depth": 1,
+          "end_thickness": 1.5,
+          "material": "skin_blood",
+          "name": "lower_fin",
+          "role": "lower caudal fin lobe",
+          "segments": [
+            "tail_lower_fin_1"
+          ],
+          "start": "tail_fork",
+          "start_depth": 3.5,
+          "start_thickness": 16
+        },
+        {
+          "end": "tail_upper_tip",
+          "end_depth": 1,
+          "end_thickness": 1.5,
+          "material": "skin_blood",
+          "name": "upper_fin",
+          "role": "upper caudal fin lobe",
+          "segments": [
+            "tail_upper_fin_1"
+          ],
+          "start": "tail_fork",
+          "start_depth": 3.5,
+          "start_thickness": 14
+        }
+      ],
+      "name": "tail",
+      "nodes": [
+        {
+          "name": "tail_base",
+          "point": [
+            10,
+            19.5,
+            -5
+          ]
+        },
+        {
+          "name": "tail_fork",
+          "point": [
+            26,
+            15,
+            -4
+          ]
+        },
+        {
+          "name": "tail_lower_tip",
+          "point": [
+            36,
+            6,
+            -3.5
+          ]
+        },
+        {
+          "name": "tail_mid",
+          "point": [
+            21,
+            19,
+            -4.5
+          ]
+        },
+        {
+          "name": "tail_root",
+          "point": [
+            1,
+            25,
+            -5
+          ]
+        },
+        {
+          "name": "tail_upper_tip",
+          "point": [
+            35,
+            23,
+            -3.5
+          ]
+        }
+      ],
+      "parent_bone": "pelvis",
+      "parent_cube": "pelvis_core",
+      "root_node": "tail_root",
+      "taper_method": "piecewise-constant-midpoint-sampling"
+    }
+  },
+  "geometry": {
+    "precision": 20
+  },
+  "id": "greta_shark_chef",
+  "landmarks": [
+    {
+      "center_color": "#5a2023",
+      "center_uv": [
+        0.5,
+        0.27
+      ],
+      "color": "#e9e4d5",
+      "cube": "mouth_head",
+      "face": "south",
+      "name": "head_mouth_upper_teeth",
+      "size": [
+        10,
+        1
+      ]
+    },
+    {
+      "center_color": "#5a2023",
+      "center_uv": [
+        0.5,
+        0.73
+      ],
+      "color": "#e9e4d5",
+      "cube": "mouth_head",
+      "face": "south",
+      "name": "head_mouth_lower_teeth",
+      "size": [
+        10,
+        1
+      ]
+    },
+    {
+      "center_color": "#5a2023",
+      "center_uv": [
+        0.5,
+        0.27
+      ],
+      "color": "#e9e4d5",
+      "cube": "mouth_hand",
+      "face": "south",
+      "name": "hand_mouth_upper_teeth",
+      "size": [
+        4,
+        1
+      ]
+    },
+    {
+      "center_color": "#5a2023",
+      "center_uv": [
+        0.5,
+        0.73
+      ],
+      "color": "#e9e4d5",
+      "cube": "mouth_hand",
+      "face": "south",
+      "name": "hand_mouth_lower_teeth",
+      "size": [
+        4,
+        1
+      ]
+    },
+    {
+      "center_color": "#5a2023",
+      "center_uv": [
+        0.5,
+        0.27
+      ],
+      "color": "#e9e4d5",
+      "cube": "mouth_tail_base",
+      "face": "south",
+      "name": "tail_base_mouth_upper_teeth",
+      "size": [
+        4,
+        1
+      ]
+    },
+    {
+      "center_color": "#5a2023",
+      "center_uv": [
+        0.5,
+        0.73
+      ],
+      "color": "#e9e4d5",
+      "cube": "mouth_tail_base",
+      "face": "south",
+      "name": "tail_base_mouth_lower_teeth",
+      "size": [
+        4,
+        1
+      ]
+    },
+    {
+      "center_color": "#5a2023",
+      "center_uv": [
+        0.5,
+        0.27
+      ],
+      "color": "#e9e4d5",
+      "cube": "mouth_tail_mid",
+      "face": "south",
+      "name": "tail_mid_mouth_upper_teeth",
+      "size": [
+        5,
+        1
+      ]
+    },
+    {
+      "center_color": "#5a2023",
+      "center_uv": [
+        0.5,
+        0.73
+      ],
+      "color": "#e9e4d5",
+      "cube": "mouth_tail_mid",
+      "face": "south",
+      "name": "tail_mid_mouth_lower_teeth",
+      "size": [
+        5,
+        1
+      ]
+    },
+    {
+      "center_color": "#4a090d",
+      "center_uv": [
+        0.43,
+        0.32
+      ],
+      "color": "#e33139",
+      "cube": "head_snout_base_2",
+      "face": "south",
+      "name": "single_red_eye",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#2f6fcc",
+      "center_uv": [
+        0.12,
+        0.16
+      ],
+      "color": "#2f6fcc",
+      "cube": "right_arm_1",
+      "face": "south",
+      "name": "right_shoulder_blue_tattoo_1",
+      "size": [
+        4,
+        1
+      ]
+    },
+    {
+      "center_color": "#2f6fcc",
+      "center_uv": [
+        0.24,
+        0.26
+      ],
+      "color": "#2f6fcc",
+      "cube": "right_arm_1",
+      "face": "south",
+      "name": "right_shoulder_blue_tattoo_2",
+      "size": [
+        4,
+        1
+      ]
+    },
+    {
+      "center_color": "#2f6fcc",
+      "center_uv": [
+        0.36,
+        0.36
+      ],
+      "color": "#2f6fcc",
+      "cube": "right_arm_1",
+      "face": "south",
+      "name": "right_shoulder_blue_tattoo_3",
+      "size": [
+        4,
+        1
+      ]
+    },
+    {
+      "center_color": "#2f6fcc",
+      "center_uv": [
+        0.48,
+        0.46
+      ],
+      "color": "#2f6fcc",
+      "cube": "right_arm_1",
+      "face": "south",
+      "name": "right_shoulder_blue_tattoo_4",
+      "size": [
+        4,
+        1
+      ]
+    },
+    {
+      "center_color": "#2f6fcc",
+      "center_uv": [
+        0.6,
+        0.56
+      ],
+      "color": "#2f6fcc",
+      "cube": "right_arm_1",
+      "face": "south",
+      "name": "right_shoulder_blue_tattoo_5",
+      "size": [
+        4,
+        1
+      ]
+    },
+    {
+      "center_color": "#2f6fcc",
+      "center_uv": [
+        0.72,
+        0.66
+      ],
+      "color": "#2f6fcc",
+      "cube": "right_arm_1",
+      "face": "south",
+      "name": "right_shoulder_blue_tattoo_6",
+      "size": [
+        4,
+        1
+      ]
+    },
+    {
+      "center_color": "#2f6fcc",
+      "center_uv": [
+        0.82,
+        0.76
+      ],
+      "color": "#2f6fcc",
+      "cube": "right_arm_1",
+      "face": "south",
+      "name": "right_shoulder_blue_tattoo_7",
+      "size": [
+        3,
+        1
+      ]
+    },
+    {
+      "center_color": "#2f6fcc",
+      "center_uv": [
+        0.75,
+        0.18
+      ],
+      "color": "#2f6fcc",
+      "cube": "right_arm_1",
+      "face": "south",
+      "name": "right_shoulder_blue_tattoo_8",
+      "size": [
+        3,
+        1
+      ]
+    },
+    {
+      "center_color": "#2f6fcc",
+      "center_uv": [
+        0.63,
+        0.3
+      ],
+      "color": "#2f6fcc",
+      "cube": "right_arm_1",
+      "face": "south",
+      "name": "right_shoulder_blue_tattoo_9",
+      "size": [
+        3,
+        1
+      ]
+    },
+    {
+      "center_color": "#2f6fcc",
+      "center_uv": [
+        0.55,
+        0.43
+      ],
+      "color": "#2f6fcc",
+      "cube": "right_arm_1",
+      "face": "south",
+      "name": "right_shoulder_blue_tattoo_10",
+      "size": [
+        3,
+        1
+      ]
+    },
+    {
+      "center_color": "#2f6fcc",
+      "center_uv": [
+        0.63,
+        0.56
+      ],
+      "color": "#2f6fcc",
+      "cube": "right_arm_1",
+      "face": "south",
+      "name": "right_shoulder_blue_tattoo_11",
+      "size": [
+        3,
+        1
+      ]
+    },
+    {
+      "center_color": "#2f6fcc",
+      "center_uv": [
+        0.77,
+        0.68
+      ],
+      "color": "#2f6fcc",
+      "cube": "right_arm_1",
+      "face": "south",
+      "name": "right_shoulder_blue_tattoo_12",
+      "size": [
+        3,
+        1
+      ]
+    },
+    {
+      "center_color": "#a3a5a2",
+      "center_uv": [
+        0.5,
+        0.22
+      ],
+      "color": "#deded8",
+      "cube": "chest_core",
+      "face": "south",
+      "name": "white_shirt_front",
+      "size": [
+        8,
+        5
+      ]
+    },
+    {
+      "center_color": "#14213d",
+      "center_uv": [
+        0.5,
+        0.43
+      ],
+      "color": "#28406c",
+      "cube": "chest_core",
+      "face": "south",
+      "name": "navy_tie",
+      "size": [
+        3,
+        8
+      ]
+    },
+    {
+      "center_color": "#111318",
+      "center_uv": [
+        0.5,
+        0.48
+      ],
+      "color": "#52565b",
+      "cube": "abdomen_core",
+      "face": "south",
+      "name": "jacket_buttons",
+      "size": [
+        1,
+        4
+      ]
+    }
+  ],
+  "materials": {
+    "blood": {
+      "base": "#842d31",
+      "highlight": "#c0504e",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#331217"
+    },
+    "blue": {
+      "base": "#285aaa",
+      "highlight": "#4d8ee3",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#102856"
+    },
+    "eye": {
+      "base": "#c82b32",
+      "highlight": "#ff625c",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#541017"
+    },
+    "handle": {
+      "base": "#352d2b",
+      "highlight": "#665651",
+      "pattern": "stripes",
+      "pattern_scale": 3,
+      "shade": "#151212"
+    },
+    "mouth": {
+      "base": "#631923",
+      "highlight": "#a8323e",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#16080d"
+    },
+    "shirt": {
+      "base": "#e0e0db",
+      "highlight": "#f8f7ef",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#9b9d9a"
+    },
+    "skin": {
+      "base": "#dadad5",
+      "highlight": "#f6f4ec",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#929493"
+    },
+    "skin_blood": {
+      "base": "#cecec8",
+      "highlight": "#eee9df",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#898b89"
+    },
+    "steel": {
+      "base": "#767a7c",
+      "highlight": "#c2c5c3",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#303438"
+    },
+    "steel_blood": {
+      "base": "#75666a",
+      "highlight": "#b18b8c",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#30272b"
+    },
+    "suit": {
+      "base": "#17191d",
+      "highlight": "#343840",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#090a0d"
+    },
+    "suit_mid": {
+      "base": "#252931",
+      "highlight": "#464b55",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#101217"
+    },
+    "suit_shadow": {
+      "base": "#0d0f13",
+      "highlight": "#252930",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#050608"
+    },
+    "tail_band": {
+      "base": "#18191d",
+      "highlight": "#383a40",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#08090b"
+    },
+    "tie": {
+      "base": "#273b64",
+      "highlight": "#5279b6",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#111a31"
+    },
+    "tooth": {
+      "base": "#f3efe2",
+      "highlight": "#ffffff",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#b7b5ad"
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "yawed white shark head with red eye and toothed jaw",
+      "chef hat, black suit, white shirt, navy tie, and blue shoulder tattoo",
+      "exactly four toothed mouths: head, right hand, and two tail mouths",
+      "large attached articulated rear shark tail with forked caudal fin",
+      "grounded biped stance and attached blood-marked axe",
+      "substantial torso and head depth rather than a relief panel"
+    ],
+    "required_views": [
+      "reference-angle",
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "isometric",
+      "head-mouth",
+      "hand-mouth",
+      "tail-mouths",
+      "axe-contact"
+    ],
+    "review_targets": [
+      "alpha silhouette",
+      "shark head yaw",
+      "four mouth count",
+      "tail topology",
+      "axe contact",
+      "grounding",
+      "tattoo",
+      "torso depth",
+      "joint continuity"
+    ],
+    "target_cuboids": [
+      45,
+      100
+    ]
+  },
+  "reference": {
+    "height": 766,
+    "image": "greta_shark_chef.reference.png",
+    "sha256": "a0519be7ef788e3ea2d01b3fa1dcd310912c5489a58b3cb675fa8b4962626178",
+    "width": 600
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "A broad suited shark chef with a yawed head, four toothed mouths, blue shoulder tattoo, held axe, dorsal fin, and articulated rear tail",
+    "symmetry": "asymmetric",
+    "type": "character",
+    "uncertainties": [
+      "Only one illustrated view is observed; rear markings and exact tail depth are conservative semantic inference",
+      "The rear tail is partly occluded by the legs, so its hidden root is inferred",
+      "Source rights are unknown and the ignored reference is retained locally only"
+    ]
+  },
+  "texture": {
+    "atlas_size": 512,
+    "density": 2,
+    "gutter": 1,
+    "palette_size": 24,
+    "quantize_source": false
+  }
+}

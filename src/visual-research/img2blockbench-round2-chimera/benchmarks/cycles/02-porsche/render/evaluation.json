@@ -1,0 +1,285 @@
+{
+  "attachments": {
+    "all_connected": true,
+    "attachments": [
+      {
+        "connected": true,
+        "first": "front_axle",
+        "first_margin": 0.59375,
+        "joint": [
+          -6.8,
+          4.25,
+          9
+        ],
+        "minimum_margin": 0.59375,
+        "second": "front_left_wheel_tire_vertical",
+        "second_margin": 1.2375
+      },
+      {
+        "connected": true,
+        "first": "front_left_wheel_tire_vertical",
+        "first_margin": 0.325,
+        "joint": [
+          -8.8,
+          4.25,
+          9
+        ],
+        "minimum_margin": 0.2375,
+        "second": "front_left_wheel_sidewall",
+        "second_margin": 0.2375
+      },
+      {
+        "connected": true,
+        "first": "front_left_wheel_sidewall",
+        "first_margin": 0.13,
+        "joint": [
+          -9.12,
+          4.25,
+          9
+        ],
+        "minimum_margin": 0.13,
+        "second": "front_left_wheel_hub",
+        "second_margin": 0.21375
+      },
+      {
+        "connected": true,
+        "first": "front_axle",
+        "first_margin": 0.59375,
+        "joint": [
+          6.8,
+          4.25,
+          9
+        ],
+        "minimum_margin": 0.59375,
+        "second": "front_right_wheel_tire_vertical",
+        "second_margin": 1.2375
+      },
+      {
+        "connected": true,
+        "first": "front_right_wheel_tire_vertical",
+        "first_margin": 0.325,
+        "joint": [
+          8.8,
+          4.25,
+          9
+        ],
+        "minimum_margin": 0.2375,
+        "second": "front_right_wheel_sidewall",
+        "second_margin": 0.2375
+      },
+      {
+        "connected": true,
+        "first": "front_right_wheel_sidewall",
+        "first_margin": 0.13,
+        "joint": [
+          9.12,
+          4.25,
+          9
+        ],
+        "minimum_margin": 0.13,
+        "second": "front_right_wheel_hub",
+        "second_margin": 0.21375
+      },
+      {
+        "connected": true,
+        "first": "rear_axle",
+        "first_margin": 0.59375,
+        "joint": [
+          -6.8,
+          4.25,
+          -9.2
+        ],
+        "minimum_margin": 0.59375,
+        "second": "rear_left_wheel_tire_vertical",
+        "second_margin": 1.2375
+      },
+      {
+        "connected": true,
+        "first": "rear_left_wheel_tire_vertical",
+        "first_margin": 0.325,
+        "joint": [
+          -8.8,
+          4.25,
+          -9.2
+        ],
+        "minimum_margin": 0.2375,
+        "second": "rear_left_wheel_sidewall",
+        "second_margin": 0.2375
+      },
+      {
+        "connected": true,
+        "first": "rear_left_wheel_sidewall",
+        "first_margin": 0.13,
+        "joint": [
+          -9.12,
+          4.25,
+          -9.2
+        ],
+        "minimum_margin": 0.13,
+        "second": "rear_left_wheel_hub",
+        "second_margin": 0.21375
+      },
+      {
+        "connected": true,
+        "first": "rear_axle",
+        "first_margin": 0.59375,
+        "joint": [
+          6.8,
+          4.25,
+          -9.2
+        ],
+        "minimum_margin": 0.59375,
+        "second": "rear_right_wheel_tire_vertical",
+        "second_margin": 1.2375
+      },
+      {
+        "connected": true,
+        "first": "rear_right_wheel_tire_vertical",
+        "first_margin": 0.325,
+        "joint": [
+          8.8,
+          4.25,
+          -9.2
+        ],
+        "minimum_margin": 0.2375,
+        "second": "rear_right_wheel_sidewall",
+        "second_margin": 0.2375
+      },
+      {
+        "connected": true,
+        "first": "rear_right_wheel_sidewall",
+        "first_margin": 0.13,
+        "joint": [
+          9.12,
+          4.25,
+          -9.2
+        ],
+        "minimum_margin": 0.13,
+        "second": "rear_right_wheel_hub",
+        "second_margin": 0.21375
+      },
+      {
+        "connected": true,
+        "first": "rear_deck",
+        "first_margin": 0.623403,
+        "joint": [
+          -3.7,
+          8.3,
+          -13.7
+        ],
+        "minimum_margin": 0.1791,
+        "second": "spoiler_left_support",
+        "second_margin": 0.1791
+      },
+      {
+        "connected": true,
+        "first": "rear_deck",
+        "first_margin": 0.623403,
+        "joint": [
+          3.7,
+          8.3,
+          -13.7
+        ],
+        "minimum_margin": 0.1791,
+        "second": "spoiler_right_support",
+        "second_margin": 0.1791
+      },
+      {
+        "connected": true,
+        "first": "spoiler_left_support",
+        "first_margin": 0.105665,
+        "joint": [
+          -3.7,
+          9.4,
+          -14.2
+        ],
+        "minimum_margin": 0.025469,
+        "second": "whale_tail",
+        "second_margin": 0.025469
+      },
+      {
+        "connected": true,
+        "first": "spoiler_right_support",
+        "first_margin": 0.105665,
+        "joint": [
+          3.7,
+          9.4,
+          -14.2
+        ],
+        "minimum_margin": 0.025469,
+        "second": "whale_tail",
+        "second_margin": 0.025469
+      }
+    ],
+    "method": "shared-joint-compiled-oriented-cuboid-margin-v2",
+    "minimum_margin": 0.025469
+  },
+  "authored_livery_only": true,
+  "bones": 13,
+  "cuboids": 97,
+  "feature_inventory": {
+    "body_volumes": 18,
+    "fender_haunch_volumes": 12,
+    "greenhouse_glass": 6,
+    "headlamp_cuboids": 6,
+    "mirrors": 2,
+    "spoiler_cuboids": 3,
+    "tail_lamps": 2,
+    "wheel_assemblies": 4,
+    "wheel_cuboids": 28
+  },
+  "hidden_geometry_disclosure": "Opposite side mirrors observed side geometry; front, rear, roof, underbody, and exact wheel depth are conservative Porsche 930 priors.",
+  "model_extents": [
+    19.75,
+    13.775147,
+    33.5625
+  ],
+  "model_id": "porsche_911_turbo_930",
+  "no_source_projection": true,
+  "proportion_metrics": {
+    "body_length_to_width": 1.972815,
+    "cabin_length_to_body_length": 0.39897,
+    "cabin_width_to_body_width": 0.705783,
+    "overall_height_to_length": 0.410433,
+    "overall_length_to_width": 1.699367,
+    "track_to_body_width": 1.144145,
+    "wheel_ground_heights": [
+      0.139942,
+      0.139942,
+      0.131103,
+      0.131103
+    ],
+    "wheelbase_to_body_length": 0.572407
+  },
+  "recorded_feature_inventory_matches": true,
+  "renderer": "deterministic-orthographic-textured-cuboid-zbuffer-v2",
+  "schema_version": 1,
+  "semantic_cuboids": 97,
+  "source_angle_silhouette": {
+    "camera_direction": [
+      0.72,
+      0.08,
+      1.0
+    ],
+    "iou": 0.71078,
+    "limitation": "one observed three-quarter silhouette; inferred opposite, front, rear, roof, and underbody are reviewed separately",
+    "method": "manual-source-mask-height-normalized-centered-iou-v1",
+    "precision": 0.915045,
+    "recall": 0.760998
+  },
+  "source_skin_cuboids": 0,
+  "vehicle_contract_pass": true,
+  "views": [
+    "reference-angle.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "wheel-closeup.png",
+    "greenhouse-livery.png",
+    "front-lamps.png",
+    "comparison-sheet.png"
+  ]
+}

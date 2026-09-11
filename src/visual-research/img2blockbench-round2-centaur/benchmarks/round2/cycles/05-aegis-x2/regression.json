@@ -1,0 +1,17 @@
+{
+  "asset": "aegis_x2_turret",
+  "cycle": "round2-05",
+  "expected_bones": 11,
+  "expected_cuboids": 145,
+  "expected_declared_attachments": 144,
+  "fixed_camera_evidence_deterministic": true,
+  "minimum_fixed_frame_iou": 0.6,
+  "maximum_held_out_keypoint_error_subject_heights": 0.06,
+  "required_sources": [
+    "source-3",
+    "source-4",
+    "source-5"
+  ],
+  "strict_native_audit": true,
+  "two_builds_byte_identical": true
+}

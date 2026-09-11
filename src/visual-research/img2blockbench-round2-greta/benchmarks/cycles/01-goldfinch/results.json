@@ -1,0 +1,29 @@
+{
+  "artifacts": {
+    "bbmodel_sha256": "bc88e42ded62fa0992afce1293d6a388a21597c2495eff61627d34f475e86a87",
+    "comparison_sheet_sha256": "0a51d807ac8d9e1c51d01a351326729f026d8564fd48fdaed1db8272151587cd",
+    "model_spec_sha256": "593d2560eb595e229f4be55718a70c396532bfc4f339bd959c4bb5e36d4c959d",
+    "texture_sha256": "b9d081cab0bf8d6ac91e7cd570a3382aa98273fd63cd370b2b568cd07faa0bba"
+  },
+  "bones": 40,
+  "cuboids": 98,
+  "deterministic_rebuild": true,
+  "evidence": {
+    "all_declared_attachments_connected": true,
+    "bilateral_head_silhouette_iou": 1.0,
+    "feature_contract_pass": true,
+    "minimum_compiled_joint_margin": 0.0625,
+    "source_profile_aspect_relative_error": 0.012784,
+    "source_profile_iou": 0.809408,
+    "source_profile_precision": 0.868862,
+    "source_profile_recall": 0.922049
+  },
+  "external_regrade": "pending",
+  "native_audit": {
+    "errors": 0,
+    "ok": true,
+    "warnings": 1
+  },
+  "schema_version": 1,
+  "source_skin_cuboids": 0
+}

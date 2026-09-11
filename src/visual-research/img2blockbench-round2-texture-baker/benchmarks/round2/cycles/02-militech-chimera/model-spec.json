@@ -1,0 +1,8085 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chassis",
+      "parent": "root",
+      "pivot": [
+        0,
+        11.8,
+        0
+      ]
+    },
+    {
+      "name": "hull",
+      "parent": "chassis",
+      "pivot": [
+        0,
+        13.5,
+        0.5
+      ]
+    },
+    {
+      "name": "nose",
+      "parent": "hull",
+      "pivot": [
+        0,
+        12.8,
+        12
+      ]
+    },
+    {
+      "name": "turret_ring",
+      "parent": "hull",
+      "pivot": [
+        0,
+        17,
+        -1.8
+      ]
+    },
+    {
+      "name": "turret",
+      "parent": "turret_ring",
+      "pivot": [
+        0,
+        18.2,
+        -1.2
+      ]
+    },
+    {
+      "name": "roof",
+      "parent": "turret",
+      "pivot": [
+        0,
+        23.1,
+        -2
+      ]
+    },
+    {
+      "name": "radar",
+      "parent": "roof",
+      "pivot": [
+        0,
+        24.2,
+        -3
+      ]
+    },
+    {
+      "name": "sensors",
+      "parent": "nose",
+      "pivot": [
+        0,
+        12,
+        18
+      ]
+    },
+    {
+      "name": "antenna_left",
+      "parent": "roof",
+      "pivot": [
+        -4.2,
+        23.3,
+        -6.2
+      ]
+    },
+    {
+      "name": "antenna_center",
+      "parent": "roof",
+      "pivot": [
+        -2.5,
+        23.3,
+        -6.7
+      ]
+    },
+    {
+      "name": "antenna_right",
+      "parent": "roof",
+      "pivot": [
+        4.5,
+        23.3,
+        -6.4
+      ]
+    },
+    {
+      "name": "front_right_leg_1",
+      "parent": "chassis",
+      "pivot": [
+        7.059876,
+        11.8,
+        6.356741
+      ]
+    },
+    {
+      "name": "front_right_leg_2",
+      "parent": "front_right_leg_1",
+      "pivot": [
+        10.255399,
+        10.8,
+        9.234002
+      ]
+    },
+    {
+      "name": "front_right_leg_3",
+      "parent": "front_right_leg_2",
+      "pivot": [
+        12.782091,
+        8.2,
+        11.509046
+      ]
+    },
+    {
+      "name": "front_right_leg_4",
+      "parent": "front_right_leg_3",
+      "pivot": [
+        15.011525,
+        4.1,
+        13.516438
+      ]
+    },
+    {
+      "name": "front_left_leg_1",
+      "parent": "chassis",
+      "pivot": [
+        -7.059876,
+        11.8,
+        6.356741
+      ]
+    },
+    {
+      "name": "front_left_leg_2",
+      "parent": "front_left_leg_1",
+      "pivot": [
+        -10.255399,
+        10.8,
+        9.234002
+      ]
+    },
+    {
+      "name": "front_left_leg_3",
+      "parent": "front_left_leg_2",
+      "pivot": [
+        -12.782091,
+        8.2,
+        11.509046
+      ]
+    },
+    {
+      "name": "front_left_leg_4",
+      "parent": "front_left_leg_3",
+      "pivot": [
+        -15.011525,
+        4.1,
+        13.516438
+      ]
+    },
+    {
+      "name": "middle_right_leg_1",
+      "parent": "chassis",
+      "pivot": [
+        9.5,
+        11.8,
+        0
+      ]
+    },
+    {
+      "name": "middle_right_leg_2",
+      "parent": "middle_right_leg_1",
+      "pivot": [
+        13.8,
+        10.8,
+        0
+      ]
+    },
+    {
+      "name": "middle_right_leg_3",
+      "parent": "middle_right_leg_2",
+      "pivot": [
+        17.2,
+        8.2,
+        0
+      ]
+    },
+    {
+      "name": "middle_right_leg_4",
+      "parent": "middle_right_leg_3",
+      "pivot": [
+        20.2,
+        4.1,
+        0
+      ]
+    },
+    {
+      "name": "middle_left_leg_1",
+      "parent": "chassis",
+      "pivot": [
+        -9.5,
+        11.8,
+        0
+      ]
+    },
+    {
+      "name": "middle_left_leg_2",
+      "parent": "middle_left_leg_1",
+      "pivot": [
+        -13.8,
+        10.8,
+        0
+      ]
+    },
+    {
+      "name": "middle_left_leg_3",
+      "parent": "middle_left_leg_2",
+      "pivot": [
+        -17.2,
+        8.2,
+        0
+      ]
+    },
+    {
+      "name": "middle_left_leg_4",
+      "parent": "middle_left_leg_3",
+      "pivot": [
+        -20.2,
+        4.1,
+        0
+      ]
+    },
+    {
+      "name": "rear_left_leg_1",
+      "parent": "chassis",
+      "pivot": [
+        -7.059876,
+        11.8,
+        -6.356741
+      ]
+    },
+    {
+      "name": "rear_left_leg_2",
+      "parent": "rear_left_leg_1",
+      "pivot": [
+        -10.255399,
+        10.8,
+        -9.234002
+      ]
+    },
+    {
+      "name": "rear_left_leg_3",
+      "parent": "rear_left_leg_2",
+      "pivot": [
+        -12.782091,
+        8.2,
+        -11.509046
+      ]
+    },
+    {
+      "name": "rear_left_leg_4",
+      "parent": "rear_left_leg_3",
+      "pivot": [
+        -15.011525,
+        4.1,
+        -13.516438
+      ]
+    },
+    {
+      "name": "rear_right_leg_1",
+      "parent": "chassis",
+      "pivot": [
+        7.059876,
+        11.8,
+        -6.356741
+      ]
+    },
+    {
+      "name": "rear_right_leg_2",
+      "parent": "rear_right_leg_1",
+      "pivot": [
+        10.255399,
+        10.8,
+        -9.234002
+      ]
+    },
+    {
+      "name": "rear_right_leg_3",
+      "parent": "rear_right_leg_2",
+      "pivot": [
+        12.782091,
+        8.2,
+        -11.509046
+      ]
+    },
+    {
+      "name": "rear_right_leg_4",
+      "parent": "rear_right_leg_3",
+      "pivot": [
+        15.011525,
+        4.1,
+        -13.516438
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 2.25,
+    "height": 2.7,
+    "width": 3.6
+  },
+  "cubes": [
+    {
+      "bone": "chassis",
+      "center": [
+        0,
+        10.8,
+        0
+      ],
+      "faces": {},
+      "material": "edge",
+      "name": "belly_core",
+      "origin": [
+        0,
+        10.8,
+        0
+      ],
+      "role": "deep protected central belly",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        15.0,
+        4.4,
+        23.0
+      ]
+    },
+    {
+      "bone": "hull",
+      "center": [
+        0,
+        13.1,
+        0.5
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "lower_hull",
+      "origin": [
+        0,
+        13.1,
+        0.5
+      ],
+      "role": "low wide load-bearing hull",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        18.0,
+        4.5,
+        24.0
+      ]
+    },
+    {
+      "bone": "hull",
+      "center": [
+        0,
+        15.4,
+        -0.4
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "center_deck",
+      "origin": [
+        0,
+        15.4,
+        -0.4
+      ],
+      "role": "layered central deck below the turret ring",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        17.0,
+        2.8,
+        20.5
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        14.2,
+        11.0
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "front_deck",
+      "origin": [
+        0,
+        14.2,
+        11.0
+      ],
+      "role": "sloping forward deck",
+      "rotation": [
+        9,
+        0,
+        0
+      ],
+      "size": [
+        15.0,
+        3.4,
+        8.5
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        12.7,
+        15.1
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "prow_mid",
+      "origin": [
+        0,
+        12.7,
+        15.1
+      ],
+      "role": "faceted middle prow",
+      "rotation": [
+        13,
+        0,
+        0
+      ],
+      "size": [
+        12.8,
+        3.5,
+        6.2
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        11.5,
+        18.6
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "prow_tip",
+      "origin": [
+        0,
+        11.5,
+        18.6
+      ],
+      "role": "low blunt sensor nose",
+      "rotation": [
+        12,
+        0,
+        0
+      ],
+      "size": [
+        9.8,
+        2.6,
+        3.2
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        10.5,
+        15.8
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "lower_glacis",
+      "origin": [
+        0,
+        10.5,
+        15.8
+      ],
+      "role": "recessed lower nose armor",
+      "rotation": [
+        8,
+        0,
+        0
+      ],
+      "size": [
+        10.8,
+        1.8,
+        6.2
+      ]
+    },
+    {
+      "bone": "hull",
+      "center": [
+        0,
+        13.4,
+        -11.3
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "rear_hull",
+      "origin": [
+        0,
+        13.4,
+        -11.3
+      ],
+      "role": "rear armored engine block",
+      "rotation": [
+        -5,
+        0,
+        0
+      ],
+      "size": [
+        15.4,
+        4.0,
+        4.4
+      ]
+    },
+    {
+      "bone": "hull",
+      "center": [
+        0,
+        14.1,
+        -13.0
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "rear_engine_cap",
+      "origin": [
+        0,
+        14.1,
+        -13.0
+      ],
+      "role": "stepped rear engine armor",
+      "rotation": [
+        -7,
+        0,
+        0
+      ],
+      "size": [
+        11.8,
+        2.8,
+        2.0
+      ]
+    },
+    {
+      "bone": "hull",
+      "center": [
+        -8.8,
+        12.8,
+        0.0
+      ],
+      "faces": {},
+      "material": "edge",
+      "name": "left_side_rail",
+      "origin": [
+        -8.8,
+        12.8,
+        0.0
+      ],
+      "role": "left full-depth structural rail",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.4,
+        4.4,
+        21.5
+      ]
+    },
+    {
+      "bone": "hull",
+      "center": [
+        8.8,
+        12.8,
+        0.0
+      ],
+      "faces": {},
+      "material": "edge",
+      "name": "right_side_rail",
+      "origin": [
+        8.8,
+        12.8,
+        0.0
+      ],
+      "role": "right full-depth structural rail",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.4,
+        4.4,
+        21.5
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        -6.2,
+        13.9,
+        13.0
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "left_front_cheek",
+      "origin": [
+        -6.2,
+        13.9,
+        13.0
+      ],
+      "role": "left faceted prow cheek",
+      "rotation": [
+        9,
+        9,
+        -5
+      ],
+      "size": [
+        3.8,
+        4.0,
+        7.6
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        6.2,
+        13.9,
+        13.0
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "right_front_cheek",
+      "origin": [
+        6.2,
+        13.9,
+        13.0
+      ],
+      "role": "right faceted prow cheek",
+      "rotation": [
+        9,
+        -9,
+        5
+      ],
+      "size": [
+        3.8,
+        4.0,
+        7.6
+      ]
+    },
+    {
+      "bone": "hull",
+      "center": [
+        -8.4,
+        14.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "left_mid_cheek",
+      "origin": [
+        -8.4,
+        14.0,
+        0.0
+      ],
+      "role": "left layered middle shoulder armor",
+      "rotation": [
+        0,
+        0,
+        -5
+      ],
+      "size": [
+        3.2,
+        4.8,
+        8.0
+      ]
+    },
+    {
+      "bone": "hull",
+      "center": [
+        8.4,
+        14.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "right_mid_cheek",
+      "origin": [
+        8.4,
+        14.0,
+        0.0
+      ],
+      "role": "right layered middle shoulder armor",
+      "rotation": [
+        0,
+        0,
+        5
+      ],
+      "size": [
+        3.2,
+        4.8,
+        8.0
+      ]
+    },
+    {
+      "bone": "hull",
+      "center": [
+        -7.0,
+        14.5,
+        -8.8
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "left_rear_cheek",
+      "origin": [
+        -7.0,
+        14.5,
+        -8.8
+      ],
+      "role": "left rear shoulder armor",
+      "rotation": [
+        -4,
+        7,
+        -5
+      ],
+      "size": [
+        3.6,
+        4.2,
+        7.0
+      ]
+    },
+    {
+      "bone": "hull",
+      "center": [
+        7.0,
+        14.5,
+        -8.8
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "right_rear_cheek",
+      "origin": [
+        7.0,
+        14.5,
+        -8.8
+      ],
+      "role": "right rear shoulder armor",
+      "rotation": [
+        -4,
+        -7,
+        5
+      ],
+      "size": [
+        3.6,
+        4.2,
+        7.0
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        -5.0,
+        8.8,
+        0.0
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "left_belly_skid",
+      "origin": [
+        -5.0,
+        8.8,
+        0.0
+      ],
+      "role": "left armored underside runner",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.0,
+        1.0,
+        17.0
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        5.0,
+        8.8,
+        0.0
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "right_belly_skid",
+      "origin": [
+        5.0,
+        8.8,
+        0.0
+      ],
+      "role": "right armored underside runner",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.0,
+        1.0,
+        17.0
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        -8.0,
+        9.8,
+        0.0
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "left_lower_side_skirt",
+      "origin": [
+        -8.0,
+        9.8,
+        0.0
+      ],
+      "role": "left low armored chassis skirt",
+      "rotation": [
+        0,
+        0,
+        -5
+      ],
+      "size": [
+        1.8,
+        3.2,
+        17.0
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        8.0,
+        9.8,
+        0.0
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "right_lower_side_skirt",
+      "origin": [
+        8.0,
+        9.8,
+        0.0
+      ],
+      "role": "right low armored chassis skirt",
+      "rotation": [
+        0,
+        0,
+        5
+      ],
+      "size": [
+        1.8,
+        3.2,
+        17.0
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        0,
+        9.4,
+        9.8
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "belly_front_plate",
+      "origin": [
+        0,
+        9.4,
+        9.8
+      ],
+      "role": "forward underside armor plate",
+      "rotation": [
+        8,
+        0,
+        0
+      ],
+      "size": [
+        10.0,
+        1.2,
+        3.8
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        0,
+        9.4,
+        -9.5
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "belly_rear_plate",
+      "origin": [
+        0,
+        9.4,
+        -9.5
+      ],
+      "role": "rear underside armor plate",
+      "rotation": [
+        -8,
+        0,
+        0
+      ],
+      "size": [
+        10.0,
+        1.2,
+        3.8
+      ]
+    },
+    {
+      "bone": "sensors",
+      "center": [
+        0,
+        11.1,
+        20.0
+      ],
+      "faces": {},
+      "material": "edge",
+      "name": "front_sensor_bar",
+      "origin": [
+        0,
+        11.1,
+        20.0
+      ],
+      "role": "wide blue forward sensor bank",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8.8,
+        1.3,
+        0.7
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        15.3,
+        13.5
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "nose_hatch",
+      "origin": [
+        0,
+        15.3,
+        13.5
+      ],
+      "role": "raised rectangular prow service hatch",
+      "rotation": [
+        10,
+        0,
+        0
+      ],
+      "size": [
+        4.6,
+        0.65,
+        3.4
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        -7.5,
+        12.8,
+        14.2
+      ],
+      "faces": {},
+      "material": "edge",
+      "name": "left_front_fender",
+      "origin": [
+        -7.5,
+        12.8,
+        14.2
+      ],
+      "role": "left forward edge armor",
+      "rotation": [
+        8,
+        8,
+        -4
+      ],
+      "size": [
+        1.1,
+        2.8,
+        6.0
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        7.5,
+        12.8,
+        14.2
+      ],
+      "faces": {},
+      "material": "edge",
+      "name": "right_front_fender",
+      "origin": [
+        7.5,
+        12.8,
+        14.2
+      ],
+      "role": "right forward edge armor",
+      "rotation": [
+        8,
+        -8,
+        4
+      ],
+      "size": [
+        1.1,
+        2.8,
+        6.0
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        0,
+        18.0,
+        -1.5
+      ],
+      "faces": {},
+      "material": "edge",
+      "name": "turret_base",
+      "origin": [
+        0,
+        18.0,
+        -1.5
+      ],
+      "role": "deep rotating turret foundation",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        18.0,
+        2.6,
+        16.0
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        0,
+        20.4,
+        -2.0
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "cabin_core",
+      "origin": [
+        0,
+        20.4,
+        -2.0
+      ],
+      "role": "large closed armored turret core",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        16.0,
+        4.8,
+        15.0
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        0,
+        19.9,
+        5.8
+      ],
+      "faces": {},
+      "material": "pale_panel",
+      "name": "cabin_front_slope",
+      "origin": [
+        0,
+        19.9,
+        5.8
+      ],
+      "role": "broad sloped wedge glacis",
+      "rotation": [
+        18,
+        0,
+        0
+      ],
+      "size": [
+        14.8,
+        4.0,
+        1.8
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        0,
+        21.6,
+        4.8
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "turret_front_upper",
+      "origin": [
+        0,
+        21.6,
+        4.8
+      ],
+      "role": "upper layer of the wedge front",
+      "rotation": [
+        10,
+        0,
+        0
+      ],
+      "size": [
+        14.0,
+        1.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        0,
+        18.5,
+        6.2
+      ],
+      "faces": {},
+      "material": "edge",
+      "name": "turret_front_lower",
+      "origin": [
+        0,
+        18.5,
+        6.2
+      ],
+      "role": "dark lower lip of the wedge front",
+      "rotation": [
+        12,
+        0,
+        0
+      ],
+      "size": [
+        13.0,
+        1.6,
+        2.5
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        -8.1,
+        20.3,
+        -1.8
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "cabin_left_wall",
+      "origin": [
+        -8.1,
+        20.3,
+        -1.8
+      ],
+      "role": "left faceted turret side",
+      "rotation": [
+        0,
+        0,
+        -5
+      ],
+      "size": [
+        1.2,
+        4.5,
+        13.5
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        8.1,
+        20.3,
+        -1.8
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "cabin_right_wall",
+      "origin": [
+        8.1,
+        20.3,
+        -1.8
+      ],
+      "role": "right faceted turret side",
+      "rotation": [
+        0,
+        0,
+        5
+      ],
+      "size": [
+        1.2,
+        4.5,
+        13.5
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        -3.8,
+        20.8,
+        6.5
+      ],
+      "faces": {},
+      "material": "glass",
+      "name": "left_window",
+      "origin": [
+        -3.8,
+        20.8,
+        6.5
+      ],
+      "role": "left forward observation panel",
+      "rotation": [
+        18,
+        0,
+        0
+      ],
+      "size": [
+        5.4,
+        2.0,
+        0.55
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        3.8,
+        20.8,
+        6.5
+      ],
+      "faces": {},
+      "material": "glass",
+      "name": "right_window",
+      "origin": [
+        3.8,
+        20.8,
+        6.5
+      ],
+      "role": "right forward observation panel",
+      "rotation": [
+        18,
+        0,
+        0
+      ],
+      "size": [
+        5.4,
+        2.0,
+        0.55
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        0,
+        20.3,
+        -9.6
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "cabin_rear",
+      "origin": [
+        0,
+        20.3,
+        -9.6
+      ],
+      "role": "conservative rear turret armor",
+      "rotation": [
+        -4,
+        0,
+        0
+      ],
+      "size": [
+        14.0,
+        4.0,
+        1.4
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        -7.1,
+        22.0,
+        -2.0
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "left_upper_facet",
+      "origin": [
+        -7.1,
+        22.0,
+        -2.0
+      ],
+      "role": "left sloped upper turret facet",
+      "rotation": [
+        0,
+        0,
+        -12
+      ],
+      "size": [
+        3.0,
+        1.8,
+        11.0
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        7.1,
+        22.0,
+        -2.0
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "right_upper_facet",
+      "origin": [
+        7.1,
+        22.0,
+        -2.0
+      ],
+      "role": "right sloped upper turret facet",
+      "rotation": [
+        0,
+        0,
+        12
+      ],
+      "size": [
+        3.0,
+        1.8,
+        11.0
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        0,
+        23.0,
+        -2.2
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "roof_plate",
+      "origin": [
+        0,
+        23.0,
+        -2.2
+      ],
+      "role": "wide armored turret roof",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        14.0,
+        0.9,
+        11.5
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        0,
+        22.8,
+        3.7
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "roof_front_brow",
+      "origin": [
+        0,
+        22.8,
+        3.7
+      ],
+      "role": "thick forward roof brow",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.2,
+        1.1,
+        2.0
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        0,
+        22.9,
+        -8.2
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "roof_rear_step",
+      "origin": [
+        0,
+        22.9,
+        -8.2
+      ],
+      "role": "rear roof step",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        12.0,
+        1.1,
+        1.8
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        0,
+        23.48,
+        -1.8
+      ],
+      "faces": {},
+      "material": "edge",
+      "name": "roof_hatch_long",
+      "origin": [
+        0,
+        23.48,
+        -1.8
+      ],
+      "role": "cross-shaped roof access hatch",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.8,
+        0.5,
+        2.0
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        0,
+        23.49,
+        -1.8
+      ],
+      "faces": {},
+      "material": "edge",
+      "name": "roof_hatch_cross",
+      "origin": [
+        0,
+        23.49,
+        -1.8
+      ],
+      "role": "cross-shaped roof access hatch",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.0,
+        0.52,
+        4.8
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        -8.45,
+        20.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "pale_panel",
+      "name": "left_side_panel",
+      "origin": [
+        -8.45,
+        20.0,
+        0.0
+      ],
+      "role": "left pale side identification panel",
+      "rotation": [
+        0,
+        0,
+        -6
+      ],
+      "size": [
+        0.6,
+        3.0,
+        6.2
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        8.45,
+        20.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "pale_panel",
+      "name": "right_side_panel",
+      "origin": [
+        8.45,
+        20.0,
+        0.0
+      ],
+      "role": "right pale side identification panel",
+      "rotation": [
+        0,
+        0,
+        6
+      ],
+      "size": [
+        0.6,
+        3.0,
+        6.2
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        -6.8,
+        18.0,
+        3.4
+      ],
+      "faces": {},
+      "material": "edge",
+      "name": "left_lower_skirt",
+      "origin": [
+        -6.8,
+        18.0,
+        3.4
+      ],
+      "role": "left dark lower turret skirt",
+      "rotation": [
+        0,
+        8,
+        -5
+      ],
+      "size": [
+        4.0,
+        2.0,
+        5.0
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        6.8,
+        18.0,
+        3.4
+      ],
+      "faces": {},
+      "material": "edge",
+      "name": "right_lower_skirt",
+      "origin": [
+        6.8,
+        18.0,
+        3.4
+      ],
+      "role": "right dark lower turret skirt",
+      "rotation": [
+        0,
+        -8,
+        5
+      ],
+      "size": [
+        4.0,
+        2.0,
+        5.0
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        -6.8,
+        20.2,
+        -8.8
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "left_rear_turret_facet",
+      "origin": [
+        -6.8,
+        20.2,
+        -8.8
+      ],
+      "role": "left rear turret corner facet",
+      "rotation": [
+        -4,
+        10,
+        -5
+      ],
+      "size": [
+        3.6,
+        3.5,
+        2.2
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        6.8,
+        20.2,
+        -8.8
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "right_rear_turret_facet",
+      "origin": [
+        6.8,
+        20.2,
+        -8.8
+      ],
+      "role": "right rear turret corner facet",
+      "rotation": [
+        -4,
+        -10,
+        5
+      ],
+      "size": [
+        3.6,
+        3.5,
+        2.2
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        -6.4,
+        20.0,
+        5.6
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "turret_left_front_wedge_cheek",
+      "origin": [
+        -6.4,
+        20.0,
+        5.6
+      ],
+      "role": "left rotated front wedge cheek",
+      "rotation": [
+        14,
+        12,
+        -9
+      ],
+      "size": [
+        3.6,
+        3.4,
+        2.8
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        6.4,
+        20.0,
+        5.6
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "turret_right_front_wedge_cheek",
+      "origin": [
+        6.4,
+        20.0,
+        5.6
+      ],
+      "role": "right rotated front wedge cheek",
+      "rotation": [
+        14,
+        -12,
+        9
+      ],
+      "size": [
+        3.6,
+        3.4,
+        2.8
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        -8.2,
+        18.7,
+        -1.5
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "turret_left_lower_bevel",
+      "origin": [
+        -8.2,
+        18.7,
+        -1.5
+      ],
+      "role": "left lower sloped turret shell",
+      "rotation": [
+        0,
+        0,
+        -18
+      ],
+      "size": [
+        1.8,
+        2.2,
+        10.0
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        8.2,
+        18.7,
+        -1.5
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "turret_right_lower_bevel",
+      "origin": [
+        8.2,
+        18.7,
+        -1.5
+      ],
+      "role": "right lower sloped turret shell",
+      "rotation": [
+        0,
+        0,
+        18
+      ],
+      "size": [
+        1.8,
+        2.2,
+        10.0
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        -5.7,
+        22.0,
+        -8.2
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "turret_left_rear_roof_bevel",
+      "origin": [
+        -5.7,
+        22.0,
+        -8.2
+      ],
+      "role": "left sloped rear roof corner",
+      "rotation": [
+        -7,
+        12,
+        -10
+      ],
+      "size": [
+        3.6,
+        1.8,
+        2.8
+      ]
+    },
+    {
+      "bone": "turret",
+      "center": [
+        5.7,
+        22.0,
+        -8.2
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "turret_right_rear_roof_bevel",
+      "origin": [
+        5.7,
+        22.0,
+        -8.2
+      ],
+      "role": "right sloped rear roof corner",
+      "rotation": [
+        -7,
+        -12,
+        10
+      ],
+      "size": [
+        3.6,
+        1.8,
+        2.8
+      ]
+    },
+    {
+      "bone": "turret_ring",
+      "center": [
+        7.0,
+        16.8,
+        -1.8
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "turret_collar_01",
+      "origin": [
+        7.0,
+        16.8,
+        -1.8
+      ],
+      "role": "segmented circular turret rotation collar",
+      "rotation": [
+        0,
+        -0.0,
+        0
+      ],
+      "size": [
+        4.0,
+        1.4,
+        1.5
+      ]
+    },
+    {
+      "bone": "turret_ring",
+      "center": [
+        6.062177826491071,
+        16.8,
+        1.6999999999999995
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "turret_collar_02",
+      "origin": [
+        6.062177826491071,
+        16.8,
+        1.6999999999999995
+      ],
+      "role": "segmented circular turret rotation collar",
+      "rotation": [
+        0,
+        -30.0,
+        0
+      ],
+      "size": [
+        4.0,
+        1.4,
+        1.5
+      ]
+    },
+    {
+      "bone": "turret_ring",
+      "center": [
+        3.500000000000001,
+        16.8,
+        4.262177826491071
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "turret_collar_03",
+      "origin": [
+        3.500000000000001,
+        16.8,
+        4.262177826491071
+      ],
+      "role": "segmented circular turret rotation collar",
+      "rotation": [
+        0,
+        -60.0,
+        0
+      ],
+      "size": [
+        4.0,
+        1.4,
+        1.5
+      ]
+    },
+    {
+      "bone": "turret_ring",
+      "center": [
+        4.286263797015736e-16,
+        16.8,
+        5.2
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "turret_collar_04",
+      "origin": [
+        4.286263797015736e-16,
+        16.8,
+        5.2
+      ],
+      "role": "segmented circular turret rotation collar",
+      "rotation": [
+        0,
+        -90.0,
+        0
+      ],
+      "size": [
+        4.0,
+        1.4,
+        1.5
+      ]
+    },
+    {
+      "bone": "turret_ring",
+      "center": [
+        -3.4999999999999987,
+        16.8,
+        4.2621778264910715
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "turret_collar_05",
+      "origin": [
+        -3.4999999999999987,
+        16.8,
+        4.2621778264910715
+      ],
+      "role": "segmented circular turret rotation collar",
+      "rotation": [
+        0,
+        -120.0,
+        0
+      ],
+      "size": [
+        4.0,
+        1.4,
+        1.5
+      ]
+    },
+    {
+      "bone": "turret_ring",
+      "center": [
+        -6.062177826491071,
+        16.8,
+        1.6999999999999995
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "turret_collar_06",
+      "origin": [
+        -6.062177826491071,
+        16.8,
+        1.6999999999999995
+      ],
+      "role": "segmented circular turret rotation collar",
+      "rotation": [
+        0,
+        -150.0,
+        0
+      ],
+      "size": [
+        4.0,
+        1.4,
+        1.5
+      ]
+    },
+    {
+      "bone": "turret_ring",
+      "center": [
+        -7.0,
+        16.8,
+        -1.7999999999999992
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "turret_collar_07",
+      "origin": [
+        -7.0,
+        16.8,
+        -1.7999999999999992
+      ],
+      "role": "segmented circular turret rotation collar",
+      "rotation": [
+        0,
+        -180.0,
+        0
+      ],
+      "size": [
+        4.0,
+        1.4,
+        1.5
+      ]
+    },
+    {
+      "bone": "turret_ring",
+      "center": [
+        -6.06217782649107,
+        16.8,
+        -5.300000000000001
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "turret_collar_08",
+      "origin": [
+        -6.06217782649107,
+        16.8,
+        -5.300000000000001
+      ],
+      "role": "segmented circular turret rotation collar",
+      "rotation": [
+        0,
+        -210.0,
+        0
+      ],
+      "size": [
+        4.0,
+        1.4,
+        1.5
+      ]
+    },
+    {
+      "bone": "turret_ring",
+      "center": [
+        -3.500000000000003,
+        16.8,
+        -7.8621778264910684
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "turret_collar_09",
+      "origin": [
+        -3.500000000000003,
+        16.8,
+        -7.8621778264910684
+      ],
+      "role": "segmented circular turret rotation collar",
+      "rotation": [
+        0,
+        -240.0,
+        0
+      ],
+      "size": [
+        4.0,
+        1.4,
+        1.5
+      ]
+    },
+    {
+      "bone": "turret_ring",
+      "center": [
+        -1.2858791391047208e-15,
+        16.8,
+        -8.8
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "turret_collar_10",
+      "origin": [
+        -1.2858791391047208e-15,
+        16.8,
+        -8.8
+      ],
+      "role": "segmented circular turret rotation collar",
+      "rotation": [
+        0,
+        -270.0,
+        0
+      ],
+      "size": [
+        4.0,
+        1.4,
+        1.5
+      ]
+    },
+    {
+      "bone": "turret_ring",
+      "center": [
+        3.500000000000001,
+        16.8,
+        -7.86217782649107
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "turret_collar_11",
+      "origin": [
+        3.500000000000001,
+        16.8,
+        -7.86217782649107
+      ],
+      "role": "segmented circular turret rotation collar",
+      "rotation": [
+        0,
+        -300.0,
+        0
+      ],
+      "size": [
+        4.0,
+        1.4,
+        1.5
+      ]
+    },
+    {
+      "bone": "turret_ring",
+      "center": [
+        6.062177826491069,
+        16.8,
+        -5.300000000000003
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "turret_collar_12",
+      "origin": [
+        6.062177826491069,
+        16.8,
+        -5.300000000000003
+      ],
+      "role": "segmented circular turret rotation collar",
+      "rotation": [
+        0,
+        -330.0,
+        0
+      ],
+      "size": [
+        4.0,
+        1.4,
+        1.5
+      ]
+    },
+    {
+      "bone": "radar",
+      "center": [
+        0,
+        23.9,
+        -3.0
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "radar_pedestal",
+      "origin": [
+        0,
+        23.9,
+        -3.0
+      ],
+      "role": "radar pod circular-equivalent pedestal",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.8,
+        1.2,
+        3.8
+      ]
+    },
+    {
+      "bone": "radar",
+      "center": [
+        0,
+        24.6,
+        -3.0
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "radar_neck",
+      "origin": [
+        0,
+        24.6,
+        -3.0
+      ],
+      "role": "radar pod rotating neck",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.8,
+        1.3,
+        1.8
+      ]
+    },
+    {
+      "bone": "radar",
+      "center": [
+        0,
+        25.7,
+        -2.6
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "radar_pod_core",
+      "origin": [
+        0,
+        25.7,
+        -2.6
+      ],
+      "role": "large roof sensor and radar pod",
+      "rotation": [
+        2,
+        0,
+        0
+      ],
+      "size": [
+        11.5,
+        1.6,
+        5.4
+      ]
+    },
+    {
+      "bone": "radar",
+      "center": [
+        0,
+        25.6,
+        0.2
+      ],
+      "faces": {},
+      "material": "glass",
+      "name": "radar_pod_front",
+      "origin": [
+        0,
+        25.6,
+        0.2
+      ],
+      "role": "sloped radar pod sensor face",
+      "rotation": [
+        10,
+        0,
+        0
+      ],
+      "size": [
+        10.0,
+        1.2,
+        1.0
+      ]
+    },
+    {
+      "bone": "radar",
+      "center": [
+        -5.8,
+        25.7,
+        -2.6
+      ],
+      "faces": {},
+      "material": "edge",
+      "name": "radar_pod_left",
+      "origin": [
+        -5.8,
+        25.7,
+        -2.6
+      ],
+      "role": "left radar pod edge armor",
+      "rotation": [
+        0,
+        0,
+        -8
+      ],
+      "size": [
+        0.8,
+        1.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "radar",
+      "center": [
+        5.8,
+        25.7,
+        -2.6
+      ],
+      "faces": {},
+      "material": "edge",
+      "name": "radar_pod_right",
+      "origin": [
+        5.8,
+        25.7,
+        -2.6
+      ],
+      "role": "right radar pod edge armor",
+      "rotation": [
+        0,
+        0,
+        8
+      ],
+      "size": [
+        0.8,
+        1.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "radar",
+      "center": [
+        0,
+        26.6,
+        -2.7
+      ],
+      "faces": {},
+      "material": "pale_panel",
+      "name": "radar_pod_top",
+      "origin": [
+        0,
+        26.6,
+        -2.7
+      ],
+      "role": "radar pod top plate",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        10.8,
+        0.4,
+        4.8
+      ]
+    },
+    {
+      "bone": "antenna_left",
+      "center": [
+        -4.2,
+        24.75,
+        -6.2
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "antenna_left",
+      "origin": [
+        -4.2,
+        23.3,
+        -6.2
+      ],
+      "role": "upright roof communications aerial",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.45,
+        3.2,
+        0.45
+      ]
+    },
+    {
+      "bone": "antenna_center",
+      "center": [
+        -2.5,
+        24.6,
+        -6.7
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "antenna_center",
+      "origin": [
+        -2.5,
+        23.3,
+        -6.7
+      ],
+      "role": "upright roof communications aerial",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.45,
+        2.9,
+        0.45
+      ]
+    },
+    {
+      "bone": "antenna_right",
+      "center": [
+        4.5,
+        24.65,
+        -6.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "antenna_right",
+      "origin": [
+        4.5,
+        23.3,
+        -6.4
+      ],
+      "role": "upright roof communications aerial",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.45,
+        3,
+        0.45
+      ]
+    },
+    {
+      "bone": "front_right_leg_1",
+      "center": [
+        7.059876,
+        14.007374,
+        6.356741
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "front_right_leg_1",
+      "origin": [
+        7.059876,
+        11.8,
+        6.356741
+      ],
+      "role": "front right articulated load-bearing leg segment 1",
+      "rotation": [
+        40.672804,
+        0,
+        -107.376875
+      ],
+      "size": [
+        3.8,
+        5.514748,
+        4.5
+      ]
+    },
+    {
+      "bone": "front_right_leg_2",
+      "center": [
+        10.255399,
+        12.940093,
+        9.234002
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "front_right_leg_2",
+      "origin": [
+        10.255399,
+        10.8,
+        9.234002
+      ],
+      "role": "front right articulated load-bearing leg segment 2",
+      "rotation": [
+        32.108832,
+        0,
+        -135.819233
+      ],
+      "size": [
+        3.5,
+        5.380187,
+        3.8
+      ]
+    },
+    {
+      "bone": "front_right_leg_3",
+      "center": [
+        12.782091,
+        10.740177,
+        11.509046
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "front_right_leg_3",
+      "origin": [
+        12.782091,
+        8.2,
+        11.509046
+      ],
+      "role": "front right articulated load-bearing leg segment 3",
+      "rotation": [
+        23.27398,
+        0,
+        -151.464227
+      ],
+      "size": [
+        4,
+        6.180354,
+        4.2
+      ]
+    },
+    {
+      "bone": "front_right_leg_4",
+      "center": [
+        15.011525,
+        5.640292,
+        13.516438
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "front_right_leg_4",
+      "origin": [
+        15.011525,
+        4.1,
+        13.516438
+      ],
+      "role": "front right articulated load-bearing leg segment 4",
+      "rotation": [
+        23.015251,
+        0,
+        -151.85035
+      ],
+      "size": [
+        2.8,
+        4.180584,
+        3
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        7.059876,
+        11.8,
+        6.356741
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "front_right_hip_housing",
+      "origin": [
+        7.059876,
+        11.8,
+        6.356741
+      ],
+      "role": "front right square armored hip",
+      "rotation": [
+        0,
+        -42.0,
+        0
+      ],
+      "size": [
+        5.4,
+        4.6,
+        5.4
+      ]
+    },
+    {
+      "bone": "front_right_leg_1",
+      "center": [
+        10.255399,
+        10.8,
+        9.234002
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "front_right_hinge_1",
+      "origin": [
+        10.255399,
+        10.8,
+        9.234002
+      ],
+      "role": "front right visible pivot hinge 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "front_right_leg_2",
+      "center": [
+        12.782091,
+        8.2,
+        11.509046
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "front_right_hinge_2",
+      "origin": [
+        12.782091,
+        8.2,
+        11.509046
+      ],
+      "role": "front right visible pivot hinge 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "front_right_leg_3",
+      "center": [
+        15.011525,
+        4.1,
+        13.516438
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "front_right_hinge_3",
+      "origin": [
+        15.011525,
+        4.1,
+        13.516438
+      ],
+      "role": "front right visible pivot hinge 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.7,
+        3.7,
+        3.7
+      ]
+    },
+    {
+      "bone": "front_right_leg_3",
+      "center": [
+        12.343257,
+        12.547207,
+        11.113918
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "front_right_shin_shield",
+      "origin": [
+        12.343257,
+        9.00703,
+        11.113918
+      ],
+      "role": "front right large rectangular shin shield",
+      "rotation": [
+        23.27398,
+        0,
+        -151.464227
+      ],
+      "size": [
+        5.8,
+        7.580354,
+        2.6
+      ]
+    },
+    {
+      "bone": "front_right_leg_3",
+      "center": [
+        12.591825,
+        9.399548,
+        11.33773
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "front_right_shin_upper_plate",
+      "origin": [
+        12.591825,
+        8.549905,
+        11.33773
+      ],
+      "role": "front right raised upper shin plate",
+      "rotation": [
+        23.27398,
+        0,
+        -151.464227
+      ],
+      "size": [
+        6.5,
+        1.939285,
+        3
+      ]
+    },
+    {
+      "bone": "front_right_leg_3",
+      "center": [
+        14.456086,
+        5.971112,
+        13.016319
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "front_right_shin_lower_plate",
+      "origin": [
+        14.456086,
+        5.121469,
+        13.016319
+      ],
+      "role": "front right raised lower shin plate",
+      "rotation": [
+        23.27398,
+        0,
+        -151.464227
+      ],
+      "size": [
+        6.5,
+        1.939285,
+        3
+      ]
+    },
+    {
+      "bone": "front_right_leg_4",
+      "center": [
+        16.349186,
+        0.9,
+        14.720873
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "front_right_foot_pad",
+      "origin": [
+        16.349186,
+        0.9,
+        14.720873
+      ],
+      "role": "front right large rectangular grounded foot",
+      "rotation": [
+        0,
+        -42.0,
+        0
+      ],
+      "size": [
+        6.2,
+        1.8,
+        5.6
+      ]
+    },
+    {
+      "bone": "front_right_leg_4",
+      "center": [
+        16.349186,
+        2.0,
+        14.720873
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "front_right_foot_armor",
+      "origin": [
+        16.349186,
+        2.0,
+        14.720873
+      ],
+      "role": "front right armored ankle and foot shield",
+      "rotation": [
+        0,
+        -42.0,
+        0
+      ],
+      "size": [
+        5.6,
+        2.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "front_right_leg_4",
+      "center": [
+        17.252512,
+        0.72,
+        15.117627
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "front_right_toe_1",
+      "origin": [
+        17.252512,
+        0.72,
+        13.717627
+      ],
+      "role": "front right grounded gripping toe",
+      "rotation": [
+        0,
+        48,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "front_right_leg_4",
+      "center": [
+        16.349186,
+        0.72,
+        16.120873
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "front_right_toe_2",
+      "origin": [
+        16.349186,
+        0.72,
+        14.720873
+      ],
+      "role": "front right grounded gripping toe",
+      "rotation": [
+        0,
+        48,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "front_right_leg_4",
+      "center": [
+        15.44586,
+        0.72,
+        17.124119
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "front_right_toe_3",
+      "origin": [
+        15.44586,
+        0.72,
+        15.724119
+      ],
+      "role": "front right grounded gripping toe",
+      "rotation": [
+        0,
+        48,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "front_left_leg_1",
+      "center": [
+        -7.059876,
+        14.007374,
+        6.356741
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "front_left_leg_1",
+      "origin": [
+        -7.059876,
+        11.8,
+        6.356741
+      ],
+      "role": "front left articulated load-bearing leg segment 1",
+      "rotation": [
+        40.672804,
+        0,
+        107.376875
+      ],
+      "size": [
+        3.8,
+        5.514748,
+        4.5
+      ]
+    },
+    {
+      "bone": "front_left_leg_2",
+      "center": [
+        -10.255399,
+        12.940093,
+        9.234002
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "front_left_leg_2",
+      "origin": [
+        -10.255399,
+        10.8,
+        9.234002
+      ],
+      "role": "front left articulated load-bearing leg segment 2",
+      "rotation": [
+        32.108832,
+        0,
+        135.819233
+      ],
+      "size": [
+        3.5,
+        5.380187,
+        3.8
+      ]
+    },
+    {
+      "bone": "front_left_leg_3",
+      "center": [
+        -12.782091,
+        10.740177,
+        11.509046
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "front_left_leg_3",
+      "origin": [
+        -12.782091,
+        8.2,
+        11.509046
+      ],
+      "role": "front left articulated load-bearing leg segment 3",
+      "rotation": [
+        23.27398,
+        0,
+        151.464227
+      ],
+      "size": [
+        4,
+        6.180354,
+        4.2
+      ]
+    },
+    {
+      "bone": "front_left_leg_4",
+      "center": [
+        -15.011525,
+        5.640292,
+        13.516438
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "front_left_leg_4",
+      "origin": [
+        -15.011525,
+        4.1,
+        13.516438
+      ],
+      "role": "front left articulated load-bearing leg segment 4",
+      "rotation": [
+        23.015251,
+        0,
+        151.85035
+      ],
+      "size": [
+        2.8,
+        4.180584,
+        3
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        -7.059876,
+        11.8,
+        6.356741
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "front_left_hip_housing",
+      "origin": [
+        -7.059876,
+        11.8,
+        6.356741
+      ],
+      "role": "front left square armored hip",
+      "rotation": [
+        0,
+        -138.0,
+        0
+      ],
+      "size": [
+        5.4,
+        4.6,
+        5.4
+      ]
+    },
+    {
+      "bone": "front_left_leg_1",
+      "center": [
+        -10.255399,
+        10.8,
+        9.234002
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "front_left_hinge_1",
+      "origin": [
+        -10.255399,
+        10.8,
+        9.234002
+      ],
+      "role": "front left visible pivot hinge 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "front_left_leg_2",
+      "center": [
+        -12.782091,
+        8.2,
+        11.509046
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "front_left_hinge_2",
+      "origin": [
+        -12.782091,
+        8.2,
+        11.509046
+      ],
+      "role": "front left visible pivot hinge 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "front_left_leg_3",
+      "center": [
+        -15.011525,
+        4.1,
+        13.516438
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "front_left_hinge_3",
+      "origin": [
+        -15.011525,
+        4.1,
+        13.516438
+      ],
+      "role": "front left visible pivot hinge 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.7,
+        3.7,
+        3.7
+      ]
+    },
+    {
+      "bone": "front_left_leg_3",
+      "center": [
+        -12.343257,
+        12.547207,
+        11.113918
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "front_left_shin_shield",
+      "origin": [
+        -12.343257,
+        9.00703,
+        11.113918
+      ],
+      "role": "front left large rectangular shin shield",
+      "rotation": [
+        23.27398,
+        0,
+        151.464227
+      ],
+      "size": [
+        5.8,
+        7.580354,
+        2.6
+      ]
+    },
+    {
+      "bone": "front_left_leg_3",
+      "center": [
+        -12.591825,
+        9.399548,
+        11.33773
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "front_left_shin_upper_plate",
+      "origin": [
+        -12.591825,
+        8.549905,
+        11.33773
+      ],
+      "role": "front left raised upper shin plate",
+      "rotation": [
+        23.27398,
+        0,
+        151.464227
+      ],
+      "size": [
+        6.5,
+        1.939285,
+        3
+      ]
+    },
+    {
+      "bone": "front_left_leg_3",
+      "center": [
+        -14.456086,
+        5.971112,
+        13.016319
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "front_left_shin_lower_plate",
+      "origin": [
+        -14.456086,
+        5.121469,
+        13.016319
+      ],
+      "role": "front left raised lower shin plate",
+      "rotation": [
+        23.27398,
+        0,
+        151.464227
+      ],
+      "size": [
+        6.5,
+        1.939285,
+        3
+      ]
+    },
+    {
+      "bone": "front_left_leg_4",
+      "center": [
+        -16.349186,
+        0.9,
+        14.720873
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "front_left_foot_pad",
+      "origin": [
+        -16.349186,
+        0.9,
+        14.720873
+      ],
+      "role": "front left large rectangular grounded foot",
+      "rotation": [
+        0,
+        -138.0,
+        0
+      ],
+      "size": [
+        6.2,
+        1.8,
+        5.6
+      ]
+    },
+    {
+      "bone": "front_left_leg_4",
+      "center": [
+        -16.349186,
+        2.0,
+        14.720873
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "front_left_foot_armor",
+      "origin": [
+        -16.349186,
+        2.0,
+        14.720873
+      ],
+      "role": "front left armored ankle and foot shield",
+      "rotation": [
+        0,
+        -138.0,
+        0
+      ],
+      "size": [
+        5.6,
+        2.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "front_left_leg_4",
+      "center": [
+        -15.44586,
+        0.72,
+        17.124119
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "front_left_toe_1",
+      "origin": [
+        -15.44586,
+        0.72,
+        15.724119
+      ],
+      "role": "front left grounded gripping toe",
+      "rotation": [
+        0,
+        -48,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "front_left_leg_4",
+      "center": [
+        -16.349186,
+        0.72,
+        16.120873
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "front_left_toe_2",
+      "origin": [
+        -16.349186,
+        0.72,
+        14.720873
+      ],
+      "role": "front left grounded gripping toe",
+      "rotation": [
+        0,
+        -48,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "front_left_leg_4",
+      "center": [
+        -17.252512,
+        0.72,
+        15.117627
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "front_left_toe_3",
+      "origin": [
+        -17.252512,
+        0.72,
+        13.717627
+      ],
+      "role": "front left grounded gripping toe",
+      "rotation": [
+        0,
+        -48,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "middle_right_leg_1",
+      "center": [
+        9.5,
+        14.007374,
+        0
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "middle_right_leg_1",
+      "origin": [
+        9.5,
+        11.8,
+        0
+      ],
+      "role": "middle right articulated load-bearing leg segment 1",
+      "rotation": [
+        0,
+        0,
+        -103.091893
+      ],
+      "size": [
+        3.8,
+        5.514748,
+        4.5
+      ]
+    },
+    {
+      "bone": "middle_right_leg_2",
+      "center": [
+        13.8,
+        12.940093,
+        0
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "middle_right_leg_2",
+      "origin": [
+        13.8,
+        10.8,
+        0
+      ],
+      "role": "middle right articulated load-bearing leg segment 2",
+      "rotation": [
+        0,
+        0,
+        -127.405357
+      ],
+      "size": [
+        3.5,
+        5.380187,
+        3.8
+      ]
+    },
+    {
+      "bone": "middle_right_leg_3",
+      "center": [
+        17.2,
+        10.740177,
+        0
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "middle_right_leg_3",
+      "origin": [
+        17.2,
+        8.2,
+        0
+      ],
+      "role": "middle right articulated load-bearing leg segment 3",
+      "rotation": [
+        0,
+        0,
+        -143.806793
+      ],
+      "size": [
+        4,
+        6.180354,
+        4.2
+      ]
+    },
+    {
+      "bone": "middle_right_leg_4",
+      "center": [
+        20.2,
+        5.640292,
+        0
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "middle_right_leg_4",
+      "origin": [
+        20.2,
+        4.1,
+        0
+      ],
+      "role": "middle right articulated load-bearing leg segment 4",
+      "rotation": [
+        0,
+        0,
+        -144.246113
+      ],
+      "size": [
+        2.8,
+        4.180584,
+        3
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        9.5,
+        11.8,
+        0.0
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "middle_right_hip_housing",
+      "origin": [
+        9.5,
+        11.8,
+        0.0
+      ],
+      "role": "middle right square armored hip",
+      "rotation": [
+        0,
+        -0.0,
+        0
+      ],
+      "size": [
+        5.4,
+        4.6,
+        5.4
+      ]
+    },
+    {
+      "bone": "middle_right_leg_1",
+      "center": [
+        13.8,
+        10.8,
+        0.0
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "middle_right_hinge_1",
+      "origin": [
+        13.8,
+        10.8,
+        0.0
+      ],
+      "role": "middle right visible pivot hinge 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "middle_right_leg_2",
+      "center": [
+        17.2,
+        8.2,
+        0.0
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "middle_right_hinge_2",
+      "origin": [
+        17.2,
+        8.2,
+        0.0
+      ],
+      "role": "middle right visible pivot hinge 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "middle_right_leg_3",
+      "center": [
+        20.2,
+        4.1,
+        0.0
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "middle_right_hinge_3",
+      "origin": [
+        20.2,
+        4.1,
+        0.0
+      ],
+      "role": "middle right visible pivot hinge 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.7,
+        3.7,
+        3.7
+      ]
+    },
+    {
+      "bone": "middle_right_leg_3",
+      "center": [
+        16.60949,
+        12.547207,
+        0
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "middle_right_shin_shield",
+      "origin": [
+        16.60949,
+        9.00703,
+        0
+      ],
+      "role": "middle right large rectangular shin shield",
+      "rotation": [
+        0,
+        0,
+        -143.806793
+      ],
+      "size": [
+        5.8,
+        7.580354,
+        2.6
+      ]
+    },
+    {
+      "bone": "middle_right_leg_3",
+      "center": [
+        16.943972,
+        9.399548,
+        0
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "middle_right_shin_upper_plate",
+      "origin": [
+        16.943972,
+        8.549905,
+        0
+      ],
+      "role": "middle right raised upper shin plate",
+      "rotation": [
+        0,
+        0,
+        -143.806793
+      ],
+      "size": [
+        6.5,
+        1.939285,
+        3
+      ]
+    },
+    {
+      "bone": "middle_right_leg_3",
+      "center": [
+        19.452584,
+        5.971112,
+        0
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "middle_right_shin_lower_plate",
+      "origin": [
+        19.452584,
+        5.121469,
+        0
+      ],
+      "role": "middle right raised lower shin plate",
+      "rotation": [
+        0,
+        0,
+        -143.806793
+      ],
+      "size": [
+        6.5,
+        1.939285,
+        3
+      ]
+    },
+    {
+      "bone": "middle_right_leg_4",
+      "center": [
+        22.0,
+        0.9,
+        0.0
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "middle_right_foot_pad",
+      "origin": [
+        22.0,
+        0.9,
+        0.0
+      ],
+      "role": "middle right large rectangular grounded foot",
+      "rotation": [
+        0,
+        -0.0,
+        0
+      ],
+      "size": [
+        6.2,
+        1.8,
+        5.6
+      ]
+    },
+    {
+      "bone": "middle_right_leg_4",
+      "center": [
+        22.0,
+        2.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "middle_right_foot_armor",
+      "origin": [
+        22.0,
+        2.0,
+        0.0
+      ],
+      "role": "middle right armored ankle and foot shield",
+      "rotation": [
+        0,
+        -0.0,
+        0
+      ],
+      "size": [
+        5.6,
+        2.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "middle_right_leg_4",
+      "center": [
+        22,
+        0.72,
+        0.05
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "middle_right_toe_1",
+      "origin": [
+        22,
+        0.72,
+        -1.35
+      ],
+      "role": "middle right grounded gripping toe",
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "middle_right_leg_4",
+      "center": [
+        22,
+        0.72,
+        1.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "middle_right_toe_2",
+      "origin": [
+        22,
+        0.72,
+        0
+      ],
+      "role": "middle right grounded gripping toe",
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "middle_right_leg_4",
+      "center": [
+        22,
+        0.72,
+        2.75
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "middle_right_toe_3",
+      "origin": [
+        22,
+        0.72,
+        1.35
+      ],
+      "role": "middle right grounded gripping toe",
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "middle_left_leg_1",
+      "center": [
+        -9.5,
+        14.007374,
+        0
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "middle_left_leg_1",
+      "origin": [
+        -9.5,
+        11.8,
+        0
+      ],
+      "role": "middle left articulated load-bearing leg segment 1",
+      "rotation": [
+        0,
+        0,
+        103.091893
+      ],
+      "size": [
+        3.8,
+        5.514748,
+        4.5
+      ]
+    },
+    {
+      "bone": "middle_left_leg_2",
+      "center": [
+        -13.8,
+        12.940093,
+        0
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "middle_left_leg_2",
+      "origin": [
+        -13.8,
+        10.8,
+        0
+      ],
+      "role": "middle left articulated load-bearing leg segment 2",
+      "rotation": [
+        0,
+        0,
+        127.405357
+      ],
+      "size": [
+        3.5,
+        5.380187,
+        3.8
+      ]
+    },
+    {
+      "bone": "middle_left_leg_3",
+      "center": [
+        -17.2,
+        10.740177,
+        0
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "middle_left_leg_3",
+      "origin": [
+        -17.2,
+        8.2,
+        0
+      ],
+      "role": "middle left articulated load-bearing leg segment 3",
+      "rotation": [
+        0,
+        0,
+        143.806793
+      ],
+      "size": [
+        4,
+        6.180354,
+        4.2
+      ]
+    },
+    {
+      "bone": "middle_left_leg_4",
+      "center": [
+        -20.2,
+        5.640292,
+        0
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "middle_left_leg_4",
+      "origin": [
+        -20.2,
+        4.1,
+        0
+      ],
+      "role": "middle left articulated load-bearing leg segment 4",
+      "rotation": [
+        0,
+        0,
+        144.246113
+      ],
+      "size": [
+        2.8,
+        4.180584,
+        3
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        -9.5,
+        11.8,
+        0.0
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "middle_left_hip_housing",
+      "origin": [
+        -9.5,
+        11.8,
+        0.0
+      ],
+      "role": "middle left square armored hip",
+      "rotation": [
+        0,
+        -180.0,
+        0
+      ],
+      "size": [
+        5.4,
+        4.6,
+        5.4
+      ]
+    },
+    {
+      "bone": "middle_left_leg_1",
+      "center": [
+        -13.8,
+        10.8,
+        0.0
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "middle_left_hinge_1",
+      "origin": [
+        -13.8,
+        10.8,
+        0.0
+      ],
+      "role": "middle left visible pivot hinge 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "middle_left_leg_2",
+      "center": [
+        -17.2,
+        8.2,
+        0.0
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "middle_left_hinge_2",
+      "origin": [
+        -17.2,
+        8.2,
+        0.0
+      ],
+      "role": "middle left visible pivot hinge 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "middle_left_leg_3",
+      "center": [
+        -20.2,
+        4.1,
+        0.0
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "middle_left_hinge_3",
+      "origin": [
+        -20.2,
+        4.1,
+        0.0
+      ],
+      "role": "middle left visible pivot hinge 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.7,
+        3.7,
+        3.7
+      ]
+    },
+    {
+      "bone": "middle_left_leg_3",
+      "center": [
+        -16.60949,
+        12.547207,
+        0
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "middle_left_shin_shield",
+      "origin": [
+        -16.60949,
+        9.00703,
+        0
+      ],
+      "role": "middle left large rectangular shin shield",
+      "rotation": [
+        0,
+        0,
+        143.806793
+      ],
+      "size": [
+        5.8,
+        7.580354,
+        2.6
+      ]
+    },
+    {
+      "bone": "middle_left_leg_3",
+      "center": [
+        -16.943972,
+        9.399548,
+        0
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "middle_left_shin_upper_plate",
+      "origin": [
+        -16.943972,
+        8.549905,
+        0
+      ],
+      "role": "middle left raised upper shin plate",
+      "rotation": [
+        0,
+        0,
+        143.806793
+      ],
+      "size": [
+        6.5,
+        1.939285,
+        3
+      ]
+    },
+    {
+      "bone": "middle_left_leg_3",
+      "center": [
+        -19.452584,
+        5.971112,
+        0
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "middle_left_shin_lower_plate",
+      "origin": [
+        -19.452584,
+        5.121469,
+        0
+      ],
+      "role": "middle left raised lower shin plate",
+      "rotation": [
+        0,
+        0,
+        143.806793
+      ],
+      "size": [
+        6.5,
+        1.939285,
+        3
+      ]
+    },
+    {
+      "bone": "middle_left_leg_4",
+      "center": [
+        -22.0,
+        0.9,
+        0.0
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "middle_left_foot_pad",
+      "origin": [
+        -22.0,
+        0.9,
+        0.0
+      ],
+      "role": "middle left large rectangular grounded foot",
+      "rotation": [
+        0,
+        -180.0,
+        0
+      ],
+      "size": [
+        6.2,
+        1.8,
+        5.6
+      ]
+    },
+    {
+      "bone": "middle_left_leg_4",
+      "center": [
+        -22.0,
+        2.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "middle_left_foot_armor",
+      "origin": [
+        -22.0,
+        2.0,
+        0.0
+      ],
+      "role": "middle left armored ankle and foot shield",
+      "rotation": [
+        0,
+        -180.0,
+        0
+      ],
+      "size": [
+        5.6,
+        2.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "middle_left_leg_4",
+      "center": [
+        -22,
+        0.72,
+        2.75
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "middle_left_toe_1",
+      "origin": [
+        -22,
+        0.72,
+        1.35
+      ],
+      "role": "middle left grounded gripping toe",
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "middle_left_leg_4",
+      "center": [
+        -22,
+        0.72,
+        1.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "middle_left_toe_2",
+      "origin": [
+        -22,
+        0.72,
+        0
+      ],
+      "role": "middle left grounded gripping toe",
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "middle_left_leg_4",
+      "center": [
+        -22,
+        0.72,
+        0.05
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "middle_left_toe_3",
+      "origin": [
+        -22,
+        0.72,
+        -1.35
+      ],
+      "role": "middle left grounded gripping toe",
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "rear_left_leg_1",
+      "center": [
+        -7.059876,
+        14.007374,
+        -6.356741
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "rear_left_leg_1",
+      "origin": [
+        -7.059876,
+        11.8,
+        -6.356741
+      ],
+      "role": "rear left articulated load-bearing leg segment 1",
+      "rotation": [
+        -40.672804,
+        0,
+        107.376875
+      ],
+      "size": [
+        3.8,
+        5.514748,
+        4.5
+      ]
+    },
+    {
+      "bone": "rear_left_leg_2",
+      "center": [
+        -10.255399,
+        12.940093,
+        -9.234002
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "rear_left_leg_2",
+      "origin": [
+        -10.255399,
+        10.8,
+        -9.234002
+      ],
+      "role": "rear left articulated load-bearing leg segment 2",
+      "rotation": [
+        -32.108832,
+        0,
+        135.819233
+      ],
+      "size": [
+        3.5,
+        5.380187,
+        3.8
+      ]
+    },
+    {
+      "bone": "rear_left_leg_3",
+      "center": [
+        -12.782091,
+        10.740177,
+        -11.509046
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "rear_left_leg_3",
+      "origin": [
+        -12.782091,
+        8.2,
+        -11.509046
+      ],
+      "role": "rear left articulated load-bearing leg segment 3",
+      "rotation": [
+        -23.27398,
+        0,
+        151.464227
+      ],
+      "size": [
+        4,
+        6.180354,
+        4.2
+      ]
+    },
+    {
+      "bone": "rear_left_leg_4",
+      "center": [
+        -15.011525,
+        5.640292,
+        -13.516438
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "rear_left_leg_4",
+      "origin": [
+        -15.011525,
+        4.1,
+        -13.516438
+      ],
+      "role": "rear left articulated load-bearing leg segment 4",
+      "rotation": [
+        -23.015251,
+        0,
+        151.85035
+      ],
+      "size": [
+        2.8,
+        4.180584,
+        3
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        -7.059876,
+        11.8,
+        -6.356741
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "rear_left_hip_housing",
+      "origin": [
+        -7.059876,
+        11.8,
+        -6.356741
+      ],
+      "role": "rear left square armored hip",
+      "rotation": [
+        0,
+        -222.0,
+        0
+      ],
+      "size": [
+        5.4,
+        4.6,
+        5.4
+      ]
+    },
+    {
+      "bone": "rear_left_leg_1",
+      "center": [
+        -10.255399,
+        10.8,
+        -9.234002
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "rear_left_hinge_1",
+      "origin": [
+        -10.255399,
+        10.8,
+        -9.234002
+      ],
+      "role": "rear left visible pivot hinge 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "rear_left_leg_2",
+      "center": [
+        -12.782091,
+        8.2,
+        -11.509046
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "rear_left_hinge_2",
+      "origin": [
+        -12.782091,
+        8.2,
+        -11.509046
+      ],
+      "role": "rear left visible pivot hinge 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "rear_left_leg_3",
+      "center": [
+        -15.011525,
+        4.1,
+        -13.516438
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "rear_left_hinge_3",
+      "origin": [
+        -15.011525,
+        4.1,
+        -13.516438
+      ],
+      "role": "rear left visible pivot hinge 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.7,
+        3.7,
+        3.7
+      ]
+    },
+    {
+      "bone": "rear_left_leg_3",
+      "center": [
+        -12.343257,
+        12.547207,
+        -11.113918
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "rear_left_shin_shield",
+      "origin": [
+        -12.343257,
+        9.00703,
+        -11.113918
+      ],
+      "role": "rear left large rectangular shin shield",
+      "rotation": [
+        -23.27398,
+        0,
+        151.464227
+      ],
+      "size": [
+        5.8,
+        7.580354,
+        2.6
+      ]
+    },
+    {
+      "bone": "rear_left_leg_3",
+      "center": [
+        -12.591825,
+        9.399548,
+        -11.33773
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "rear_left_shin_upper_plate",
+      "origin": [
+        -12.591825,
+        8.549905,
+        -11.33773
+      ],
+      "role": "rear left raised upper shin plate",
+      "rotation": [
+        -23.27398,
+        0,
+        151.464227
+      ],
+      "size": [
+        6.5,
+        1.939285,
+        3
+      ]
+    },
+    {
+      "bone": "rear_left_leg_3",
+      "center": [
+        -14.456086,
+        5.971112,
+        -13.016319
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "rear_left_shin_lower_plate",
+      "origin": [
+        -14.456086,
+        5.121469,
+        -13.016319
+      ],
+      "role": "rear left raised lower shin plate",
+      "rotation": [
+        -23.27398,
+        0,
+        151.464227
+      ],
+      "size": [
+        6.5,
+        1.939285,
+        3
+      ]
+    },
+    {
+      "bone": "rear_left_leg_4",
+      "center": [
+        -16.349186,
+        0.9,
+        -14.720873
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "rear_left_foot_pad",
+      "origin": [
+        -16.349186,
+        0.9,
+        -14.720873
+      ],
+      "role": "rear left large rectangular grounded foot",
+      "rotation": [
+        0,
+        -222.0,
+        0
+      ],
+      "size": [
+        6.2,
+        1.8,
+        5.6
+      ]
+    },
+    {
+      "bone": "rear_left_leg_4",
+      "center": [
+        -16.349186,
+        2.0,
+        -14.720873
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "rear_left_foot_armor",
+      "origin": [
+        -16.349186,
+        2.0,
+        -14.720873
+      ],
+      "role": "rear left armored ankle and foot shield",
+      "rotation": [
+        0,
+        -222.0,
+        0
+      ],
+      "size": [
+        5.6,
+        2.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "rear_left_leg_4",
+      "center": [
+        -17.252512,
+        0.72,
+        -12.317627
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "rear_left_toe_1",
+      "origin": [
+        -17.252512,
+        0.72,
+        -13.717627
+      ],
+      "role": "rear left grounded gripping toe",
+      "rotation": [
+        0,
+        -132,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "rear_left_leg_4",
+      "center": [
+        -16.349186,
+        0.72,
+        -13.320873
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "rear_left_toe_2",
+      "origin": [
+        -16.349186,
+        0.72,
+        -14.720873
+      ],
+      "role": "rear left grounded gripping toe",
+      "rotation": [
+        0,
+        -132,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "rear_left_leg_4",
+      "center": [
+        -15.44586,
+        0.72,
+        -14.324119
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "rear_left_toe_3",
+      "origin": [
+        -15.44586,
+        0.72,
+        -15.724119
+      ],
+      "role": "rear left grounded gripping toe",
+      "rotation": [
+        0,
+        -132,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "rear_right_leg_1",
+      "center": [
+        7.059876,
+        14.007374,
+        -6.356741
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "rear_right_leg_1",
+      "origin": [
+        7.059876,
+        11.8,
+        -6.356741
+      ],
+      "role": "rear right articulated load-bearing leg segment 1",
+      "rotation": [
+        -40.672804,
+        0,
+        -107.376875
+      ],
+      "size": [
+        3.8,
+        5.514748,
+        4.5
+      ]
+    },
+    {
+      "bone": "rear_right_leg_2",
+      "center": [
+        10.255399,
+        12.940093,
+        -9.234002
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "rear_right_leg_2",
+      "origin": [
+        10.255399,
+        10.8,
+        -9.234002
+      ],
+      "role": "rear right articulated load-bearing leg segment 2",
+      "rotation": [
+        -32.108832,
+        0,
+        -135.819233
+      ],
+      "size": [
+        3.5,
+        5.380187,
+        3.8
+      ]
+    },
+    {
+      "bone": "rear_right_leg_3",
+      "center": [
+        12.782091,
+        10.740177,
+        -11.509046
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "rear_right_leg_3",
+      "origin": [
+        12.782091,
+        8.2,
+        -11.509046
+      ],
+      "role": "rear right articulated load-bearing leg segment 3",
+      "rotation": [
+        -23.27398,
+        0,
+        -151.464227
+      ],
+      "size": [
+        4,
+        6.180354,
+        4.2
+      ]
+    },
+    {
+      "bone": "rear_right_leg_4",
+      "center": [
+        15.011525,
+        5.640292,
+        -13.516438
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "rear_right_leg_4",
+      "origin": [
+        15.011525,
+        4.1,
+        -13.516438
+      ],
+      "role": "rear right articulated load-bearing leg segment 4",
+      "rotation": [
+        -23.015251,
+        0,
+        -151.85035
+      ],
+      "size": [
+        2.8,
+        4.180584,
+        3
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        7.059876,
+        11.8,
+        -6.356741
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "rear_right_hip_housing",
+      "origin": [
+        7.059876,
+        11.8,
+        -6.356741
+      ],
+      "role": "rear right square armored hip",
+      "rotation": [
+        0,
+        -318.0,
+        0
+      ],
+      "size": [
+        5.4,
+        4.6,
+        5.4
+      ]
+    },
+    {
+      "bone": "rear_right_leg_1",
+      "center": [
+        10.255399,
+        10.8,
+        -9.234002
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "rear_right_hinge_1",
+      "origin": [
+        10.255399,
+        10.8,
+        -9.234002
+      ],
+      "role": "rear right visible pivot hinge 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "rear_right_leg_2",
+      "center": [
+        12.782091,
+        8.2,
+        -11.509046
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "rear_right_hinge_2",
+      "origin": [
+        12.782091,
+        8.2,
+        -11.509046
+      ],
+      "role": "rear right visible pivot hinge 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "rear_right_leg_3",
+      "center": [
+        15.011525,
+        4.1,
+        -13.516438
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "rear_right_hinge_3",
+      "origin": [
+        15.011525,
+        4.1,
+        -13.516438
+      ],
+      "role": "rear right visible pivot hinge 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.7,
+        3.7,
+        3.7
+      ]
+    },
+    {
+      "bone": "rear_right_leg_3",
+      "center": [
+        12.343257,
+        12.547207,
+        -11.113918
+      ],
+      "faces": {},
+      "material": "armor_light",
+      "name": "rear_right_shin_shield",
+      "origin": [
+        12.343257,
+        9.00703,
+        -11.113918
+      ],
+      "role": "rear right large rectangular shin shield",
+      "rotation": [
+        -23.27398,
+        0,
+        -151.464227
+      ],
+      "size": [
+        5.8,
+        7.580354,
+        2.6
+      ]
+    },
+    {
+      "bone": "rear_right_leg_3",
+      "center": [
+        12.591825,
+        9.399548,
+        -11.33773
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "rear_right_shin_upper_plate",
+      "origin": [
+        12.591825,
+        8.549905,
+        -11.33773
+      ],
+      "role": "rear right raised upper shin plate",
+      "rotation": [
+        -23.27398,
+        0,
+        -151.464227
+      ],
+      "size": [
+        6.5,
+        1.939285,
+        3
+      ]
+    },
+    {
+      "bone": "rear_right_leg_3",
+      "center": [
+        14.456086,
+        5.971112,
+        -13.016319
+      ],
+      "faces": {},
+      "material": "armor",
+      "name": "rear_right_shin_lower_plate",
+      "origin": [
+        14.456086,
+        5.121469,
+        -13.016319
+      ],
+      "role": "rear right raised lower shin plate",
+      "rotation": [
+        -23.27398,
+        0,
+        -151.464227
+      ],
+      "size": [
+        6.5,
+        1.939285,
+        3
+      ]
+    },
+    {
+      "bone": "rear_right_leg_4",
+      "center": [
+        16.349186,
+        0.9,
+        -14.720873
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "rear_right_foot_pad",
+      "origin": [
+        16.349186,
+        0.9,
+        -14.720873
+      ],
+      "role": "rear right large rectangular grounded foot",
+      "rotation": [
+        0,
+        -318.0,
+        0
+      ],
+      "size": [
+        6.2,
+        1.8,
+        5.6
+      ]
+    },
+    {
+      "bone": "rear_right_leg_4",
+      "center": [
+        16.349186,
+        2.0,
+        -14.720873
+      ],
+      "faces": {},
+      "material": "armor_dark",
+      "name": "rear_right_foot_armor",
+      "origin": [
+        16.349186,
+        2.0,
+        -14.720873
+      ],
+      "role": "rear right armored ankle and foot shield",
+      "rotation": [
+        0,
+        -318.0,
+        0
+      ],
+      "size": [
+        5.6,
+        2.4,
+        4.4
+      ]
+    },
+    {
+      "bone": "rear_right_leg_4",
+      "center": [
+        15.44586,
+        0.72,
+        -14.324119
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "rear_right_toe_1",
+      "origin": [
+        15.44586,
+        0.72,
+        -15.724119
+      ],
+      "role": "rear right grounded gripping toe",
+      "rotation": [
+        0,
+        132,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "rear_right_leg_4",
+      "center": [
+        16.349186,
+        0.72,
+        -13.320873
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "rear_right_toe_2",
+      "origin": [
+        16.349186,
+        0.72,
+        -14.720873
+      ],
+      "role": "rear right grounded gripping toe",
+      "rotation": [
+        0,
+        132,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "rear_right_leg_4",
+      "center": [
+        17.252512,
+        0.72,
+        -12.317627
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "rear_right_toe_3",
+      "origin": [
+        17.252512,
+        0.72,
+        -13.717627
+      ],
+      "role": "rear right grounded gripping toe",
+      "rotation": [
+        0,
+        132,
+        0
+      ],
+      "size": [
+        0.8,
+        0.8,
+        3.2
+      ]
+    }
+  ],
+  "generation": {
+    "additional_references": [
+      {
+        "height": 414,
+        "image": "benchmarks/round2/references/chimera-alt.png",
+        "sha256": "28ecd39372be2f3df0a5be657392b31557f8a91fb90136a78722878548bf46f7",
+        "width": 736
+      }
+    ],
+    "algorithm": "deep-hard-surface-hexapod-semantic-cuboids-v2",
+    "anatomical_axis": "+Z nose, X width, Y up",
+    "authored_texture_sources": [],
+    "declared_attachments": [
+      {
+        "first": "belly_core",
+        "joint": [
+          0,
+          12.8,
+          0
+        ],
+        "second": "lower_hull"
+      },
+      {
+        "first": "lower_hull",
+        "joint": [
+          0,
+          14.8,
+          0
+        ],
+        "second": "center_deck"
+      },
+      {
+        "first": "lower_hull",
+        "joint": [
+          0,
+          13.7,
+          8.8
+        ],
+        "second": "front_deck"
+      },
+      {
+        "first": "front_deck",
+        "joint": [
+          0,
+          13.4,
+          13.0
+        ],
+        "second": "prow_mid"
+      },
+      {
+        "first": "prow_mid",
+        "joint": [
+          0,
+          12.45,
+          17.7
+        ],
+        "second": "prow_tip"
+      },
+      {
+        "first": "prow_mid",
+        "joint": [
+          0,
+          11.2,
+          15.5
+        ],
+        "second": "lower_glacis"
+      },
+      {
+        "first": "lower_hull",
+        "joint": [
+          0,
+          13.3,
+          -10.0
+        ],
+        "second": "rear_hull"
+      },
+      {
+        "first": "rear_hull",
+        "joint": [
+          0,
+          13.8,
+          -12.0
+        ],
+        "second": "rear_engine_cap"
+      },
+      {
+        "first": "lower_hull",
+        "joint": [
+          -8.0,
+          12.8,
+          0
+        ],
+        "second": "left_side_rail"
+      },
+      {
+        "first": "lower_hull",
+        "joint": [
+          8.0,
+          12.8,
+          0
+        ],
+        "second": "right_side_rail"
+      },
+      {
+        "first": "front_deck",
+        "joint": [
+          -5.5,
+          14.0,
+          12.0
+        ],
+        "second": "left_front_cheek"
+      },
+      {
+        "first": "front_deck",
+        "joint": [
+          5.5,
+          14.0,
+          12.0
+        ],
+        "second": "right_front_cheek"
+      },
+      {
+        "first": "lower_hull",
+        "joint": [
+          -8.2,
+          13.5,
+          0
+        ],
+        "second": "left_mid_cheek"
+      },
+      {
+        "first": "lower_hull",
+        "joint": [
+          8.2,
+          13.5,
+          0
+        ],
+        "second": "right_mid_cheek"
+      },
+      {
+        "first": "rear_hull",
+        "joint": [
+          -6.0,
+          14.0,
+          -9.5
+        ],
+        "second": "left_rear_cheek"
+      },
+      {
+        "first": "rear_hull",
+        "joint": [
+          6.0,
+          14.0,
+          -9.5
+        ],
+        "second": "right_rear_cheek"
+      },
+      {
+        "first": "belly_core",
+        "joint": [
+          -5.0,
+          8.95,
+          0
+        ],
+        "second": "left_belly_skid"
+      },
+      {
+        "first": "belly_core",
+        "joint": [
+          5.0,
+          8.95,
+          0
+        ],
+        "second": "right_belly_skid"
+      },
+      {
+        "first": "belly_core",
+        "joint": [
+          -7.2,
+          9.8,
+          0
+        ],
+        "second": "left_lower_side_skirt"
+      },
+      {
+        "first": "belly_core",
+        "joint": [
+          7.2,
+          9.8,
+          0
+        ],
+        "second": "right_lower_side_skirt"
+      },
+      {
+        "first": "belly_core",
+        "joint": [
+          0,
+          9.8,
+          9.0
+        ],
+        "second": "belly_front_plate"
+      },
+      {
+        "first": "belly_core",
+        "joint": [
+          0,
+          9.8,
+          -9.0
+        ],
+        "second": "belly_rear_plate"
+      },
+      {
+        "first": "prow_tip",
+        "joint": [
+          0,
+          11.45,
+          19.9
+        ],
+        "second": "front_sensor_bar"
+      },
+      {
+        "first": "front_deck",
+        "joint": [
+          0,
+          15.0,
+          14.85
+        ],
+        "second": "nose_hatch"
+      },
+      {
+        "first": "left_front_cheek",
+        "joint": [
+          -7.1,
+          13.3,
+          14.0
+        ],
+        "second": "left_front_fender"
+      },
+      {
+        "first": "right_front_cheek",
+        "joint": [
+          7.1,
+          13.3,
+          14.0
+        ],
+        "second": "right_front_fender"
+      },
+      {
+        "first": "center_deck",
+        "joint": [
+          0,
+          16.7,
+          -1.5
+        ],
+        "second": "turret_base"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          0,
+          19.0,
+          -2.0
+        ],
+        "second": "cabin_core"
+      },
+      {
+        "first": "cabin_core",
+        "joint": [
+          0,
+          20.0,
+          5.0
+        ],
+        "second": "cabin_front_slope"
+      },
+      {
+        "first": "cabin_front_slope",
+        "joint": [
+          0,
+          21.05,
+          5.8
+        ],
+        "second": "turret_front_upper"
+      },
+      {
+        "first": "cabin_front_slope",
+        "joint": [
+          0,
+          18.8,
+          5.9
+        ],
+        "second": "turret_front_lower"
+      },
+      {
+        "first": "cabin_core",
+        "joint": [
+          -7.6,
+          20.4,
+          -2.5
+        ],
+        "second": "cabin_left_wall"
+      },
+      {
+        "first": "cabin_core",
+        "joint": [
+          7.6,
+          20.4,
+          -2.5
+        ],
+        "second": "cabin_right_wall"
+      },
+      {
+        "first": "cabin_front_slope",
+        "joint": [
+          -3.8,
+          20.8,
+          6.3
+        ],
+        "second": "left_window"
+      },
+      {
+        "first": "cabin_front_slope",
+        "joint": [
+          3.8,
+          20.8,
+          6.3
+        ],
+        "second": "right_window"
+      },
+      {
+        "first": "cabin_core",
+        "joint": [
+          0,
+          20.0,
+          -9.15
+        ],
+        "second": "cabin_rear"
+      },
+      {
+        "first": "cabin_core",
+        "joint": [
+          -6.8,
+          21.7,
+          -2.0
+        ],
+        "second": "left_upper_facet"
+      },
+      {
+        "first": "cabin_core",
+        "joint": [
+          6.8,
+          21.7,
+          -2.0
+        ],
+        "second": "right_upper_facet"
+      },
+      {
+        "first": "cabin_core",
+        "joint": [
+          0,
+          22.7,
+          -2.5
+        ],
+        "second": "roof_plate"
+      },
+      {
+        "first": "roof_plate",
+        "joint": [
+          0,
+          22.9,
+          3.0
+        ],
+        "second": "roof_front_brow"
+      },
+      {
+        "first": "roof_plate",
+        "joint": [
+          0,
+          23.0,
+          -7.6
+        ],
+        "second": "roof_rear_step"
+      },
+      {
+        "first": "roof_plate",
+        "joint": [
+          0,
+          23.3,
+          -1.8
+        ],
+        "second": "roof_hatch_long"
+      },
+      {
+        "first": "roof_plate",
+        "joint": [
+          0,
+          23.3,
+          -1.8
+        ],
+        "second": "roof_hatch_cross"
+      },
+      {
+        "first": "cabin_left_wall",
+        "joint": [
+          -8.3,
+          20.5,
+          0
+        ],
+        "second": "left_side_panel"
+      },
+      {
+        "first": "cabin_right_wall",
+        "joint": [
+          8.3,
+          20.5,
+          0
+        ],
+        "second": "right_side_panel"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          -6.4,
+          18.0,
+          3.2
+        ],
+        "second": "left_lower_skirt"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          6.4,
+          18.0,
+          3.2
+        ],
+        "second": "right_lower_skirt"
+      },
+      {
+        "first": "cabin_rear",
+        "joint": [
+          -6.2,
+          20.2,
+          -9.4
+        ],
+        "second": "left_rear_turret_facet"
+      },
+      {
+        "first": "cabin_rear",
+        "joint": [
+          6.2,
+          20.2,
+          -9.4
+        ],
+        "second": "right_rear_turret_facet"
+      },
+      {
+        "first": "cabin_front_slope",
+        "joint": [
+          -6.0,
+          20.0,
+          5.8
+        ],
+        "second": "turret_left_front_wedge_cheek"
+      },
+      {
+        "first": "cabin_front_slope",
+        "joint": [
+          6.0,
+          20.0,
+          5.8
+        ],
+        "second": "turret_right_front_wedge_cheek"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          -8.0,
+          18.4,
+          -1.5
+        ],
+        "second": "turret_left_lower_bevel"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          8.0,
+          18.4,
+          -1.5
+        ],
+        "second": "turret_right_lower_bevel"
+      },
+      {
+        "first": "cabin_rear",
+        "joint": [
+          -4.6,
+          21.85,
+          -9.4
+        ],
+        "second": "turret_left_rear_roof_bevel"
+      },
+      {
+        "first": "cabin_rear",
+        "joint": [
+          4.6,
+          21.85,
+          -9.4
+        ],
+        "second": "turret_right_rear_roof_bevel"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          7.0,
+          16.8,
+          -1.8
+        ],
+        "second": "turret_collar_01"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          6.062177826491071,
+          16.8,
+          1.6999999999999995
+        ],
+        "second": "turret_collar_02"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          3.500000000000001,
+          16.8,
+          4.262177826491071
+        ],
+        "second": "turret_collar_03"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          4.286263797015736e-16,
+          16.8,
+          5.2
+        ],
+        "second": "turret_collar_04"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          -3.4999999999999987,
+          16.8,
+          4.2621778264910715
+        ],
+        "second": "turret_collar_05"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          -6.062177826491071,
+          16.8,
+          1.6999999999999995
+        ],
+        "second": "turret_collar_06"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          -7.0,
+          16.8,
+          -1.7999999999999992
+        ],
+        "second": "turret_collar_07"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          -6.06217782649107,
+          16.8,
+          -5.300000000000001
+        ],
+        "second": "turret_collar_08"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          -3.500000000000003,
+          16.8,
+          -7.8621778264910684
+        ],
+        "second": "turret_collar_09"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          -1.2858791391047208e-15,
+          16.8,
+          -8.8
+        ],
+        "second": "turret_collar_10"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          3.500000000000001,
+          16.8,
+          -7.86217782649107
+        ],
+        "second": "turret_collar_11"
+      },
+      {
+        "first": "turret_base",
+        "joint": [
+          6.062177826491069,
+          16.8,
+          -5.300000000000003
+        ],
+        "second": "turret_collar_12"
+      },
+      {
+        "first": "roof_plate",
+        "joint": [
+          0,
+          23.4,
+          -3.0
+        ],
+        "second": "radar_pedestal"
+      },
+      {
+        "first": "radar_pedestal",
+        "joint": [
+          0,
+          24.2,
+          -3.0
+        ],
+        "second": "radar_neck"
+      },
+      {
+        "first": "radar_neck",
+        "joint": [
+          0,
+          25.0,
+          -3.0
+        ],
+        "second": "radar_pod_core"
+      },
+      {
+        "first": "radar_pod_core",
+        "joint": [
+          0,
+          25.6,
+          -0.05
+        ],
+        "second": "radar_pod_front"
+      },
+      {
+        "first": "radar_pod_core",
+        "joint": [
+          -5.5,
+          26.0,
+          -2.6
+        ],
+        "second": "radar_pod_left"
+      },
+      {
+        "first": "radar_pod_core",
+        "joint": [
+          5.5,
+          26.0,
+          -2.6
+        ],
+        "second": "radar_pod_right"
+      },
+      {
+        "first": "radar_pod_core",
+        "joint": [
+          0,
+          26.45,
+          -2.7
+        ],
+        "second": "radar_pod_top"
+      },
+      {
+        "first": "roof_plate",
+        "joint": [
+          -4.2,
+          23.3,
+          -6.2
+        ],
+        "second": "antenna_left"
+      },
+      {
+        "first": "roof_plate",
+        "joint": [
+          -2.5,
+          23.3,
+          -6.7
+        ],
+        "second": "antenna_center"
+      },
+      {
+        "first": "roof_plate",
+        "joint": [
+          4.5,
+          23.3,
+          -6.4
+        ],
+        "second": "antenna_right"
+      },
+      {
+        "first": "lower_hull",
+        "joint": [
+          7.059876,
+          11.8,
+          6.356741
+        ],
+        "second": "front_right_hip_housing"
+      },
+      {
+        "first": "front_right_hip_housing",
+        "joint": [
+          7.059876,
+          11.8,
+          6.356741
+        ],
+        "second": "front_right_leg_1"
+      },
+      {
+        "first": "front_right_leg_1",
+        "joint": [
+          10.255399,
+          10.8,
+          9.234002
+        ],
+        "second": "front_right_leg_2"
+      },
+      {
+        "first": "front_right_leg_2",
+        "joint": [
+          12.782091,
+          8.2,
+          11.509046
+        ],
+        "second": "front_right_leg_3"
+      },
+      {
+        "first": "front_right_leg_3",
+        "joint": [
+          15.011525,
+          4.1,
+          13.516438
+        ],
+        "second": "front_right_leg_4"
+      },
+      {
+        "first": "front_right_leg_1",
+        "joint": [
+          10.255399,
+          10.8,
+          9.234002
+        ],
+        "second": "front_right_hinge_1"
+      },
+      {
+        "first": "front_right_hinge_1",
+        "joint": [
+          10.255399,
+          10.8,
+          9.234002
+        ],
+        "second": "front_right_leg_2"
+      },
+      {
+        "first": "front_right_leg_2",
+        "joint": [
+          12.782091,
+          8.2,
+          11.509046
+        ],
+        "second": "front_right_hinge_2"
+      },
+      {
+        "first": "front_right_hinge_2",
+        "joint": [
+          12.782091,
+          8.2,
+          11.509046
+        ],
+        "second": "front_right_leg_3"
+      },
+      {
+        "first": "front_right_leg_3",
+        "joint": [
+          15.011525,
+          4.1,
+          13.516438
+        ],
+        "second": "front_right_hinge_3"
+      },
+      {
+        "first": "front_right_hinge_3",
+        "joint": [
+          15.011525,
+          4.1,
+          13.516438
+        ],
+        "second": "front_right_leg_4"
+      },
+      {
+        "first": "front_right_leg_3",
+        "joint": [
+          13.896808,
+          6.149999999999999,
+          12.512742
+        ],
+        "second": "front_right_shin_shield"
+      },
+      {
+        "first": "front_right_shin_shield",
+        "joint": [
+          12.964677181105259,
+          7.864218208508722,
+          11.673447385850062
+        ],
+        "second": "front_right_shin_upper_plate"
+      },
+      {
+        "first": "front_right_shin_shield",
+        "joint": [
+          14.828938818894741,
+          4.4357817914912765,
+          13.352036614149938
+        ],
+        "second": "front_right_shin_lower_plate"
+      },
+      {
+        "first": "front_right_leg_4",
+        "joint": [
+          16.349186,
+          1.6,
+          14.720873
+        ],
+        "second": "front_right_foot_pad"
+      },
+      {
+        "first": "front_right_foot_pad",
+        "joint": [
+          16.349186,
+          1.3,
+          14.720873
+        ],
+        "second": "front_right_foot_armor"
+      },
+      {
+        "first": "front_right_foot_pad",
+        "joint": [
+          17.252512318584458,
+          0.72,
+          13.717627485605517
+        ],
+        "second": "front_right_toe_1"
+      },
+      {
+        "first": "front_right_foot_pad",
+        "joint": [
+          16.349186,
+          0.72,
+          14.720873
+        ],
+        "second": "front_right_toe_2"
+      },
+      {
+        "first": "front_right_foot_pad",
+        "joint": [
+          15.445859681415541,
+          0.72,
+          15.724118514394481
+        ],
+        "second": "front_right_toe_3"
+      },
+      {
+        "first": "lower_hull",
+        "joint": [
+          -7.059876,
+          11.8,
+          6.356741
+        ],
+        "second": "front_left_hip_housing"
+      },
+      {
+        "first": "front_left_hip_housing",
+        "joint": [
+          -7.059876,
+          11.8,
+          6.356741
+        ],
+        "second": "front_left_leg_1"
+      },
+      {
+        "first": "front_left_leg_1",
+        "joint": [
+          -10.255399,
+          10.8,
+          9.234002
+        ],
+        "second": "front_left_leg_2"
+      },
+      {
+        "first": "front_left_leg_2",
+        "joint": [
+          -12.782091,
+          8.2,
+          11.509046
+        ],
+        "second": "front_left_leg_3"
+      },
+      {
+        "first": "front_left_leg_3",
+        "joint": [
+          -15.011525,
+          4.1,
+          13.516438
+        ],
+        "second": "front_left_leg_4"
+      },
+      {
+        "first": "front_left_leg_1",
+        "joint": [
+          -10.255399,
+          10.8,
+          9.234002
+        ],
+        "second": "front_left_hinge_1"
+      },
+      {
+        "first": "front_left_hinge_1",
+        "joint": [
+          -10.255399,
+          10.8,
+          9.234002
+        ],
+        "second": "front_left_leg_2"
+      },
+      {
+        "first": "front_left_leg_2",
+        "joint": [
+          -12.782091,
+          8.2,
+          11.509046
+        ],
+        "second": "front_left_hinge_2"
+      },
+      {
+        "first": "front_left_hinge_2",
+        "joint": [
+          -12.782091,
+          8.2,
+          11.509046
+        ],
+        "second": "front_left_leg_3"
+      },
+      {
+        "first": "front_left_leg_3",
+        "joint": [
+          -15.011525,
+          4.1,
+          13.516438
+        ],
+        "second": "front_left_hinge_3"
+      },
+      {
+        "first": "front_left_hinge_3",
+        "joint": [
+          -15.011525,
+          4.1,
+          13.516438
+        ],
+        "second": "front_left_leg_4"
+      },
+      {
+        "first": "front_left_leg_3",
+        "joint": [
+          -13.896808,
+          6.149999999999999,
+          12.512742
+        ],
+        "second": "front_left_shin_shield"
+      },
+      {
+        "first": "front_left_shin_shield",
+        "joint": [
+          -12.964677181105259,
+          7.864218208508722,
+          11.673447385850062
+        ],
+        "second": "front_left_shin_upper_plate"
+      },
+      {
+        "first": "front_left_shin_shield",
+        "joint": [
+          -14.828938818894741,
+          4.4357817914912765,
+          13.352036614149938
+        ],
+        "second": "front_left_shin_lower_plate"
+      },
+      {
+        "first": "front_left_leg_4",
+        "joint": [
+          -16.349186,
+          1.6,
+          14.720873
+        ],
+        "second": "front_left_foot_pad"
+      },
+      {
+        "first": "front_left_foot_pad",
+        "joint": [
+          -16.349186,
+          1.3,
+          14.720873
+        ],
+        "second": "front_left_foot_armor"
+      },
+      {
+        "first": "front_left_foot_pad",
+        "joint": [
+          -15.445859681415541,
+          0.72,
+          15.724118514394481
+        ],
+        "second": "front_left_toe_1"
+      },
+      {
+        "first": "front_left_foot_pad",
+        "joint": [
+          -16.349186,
+          0.72,
+          14.720873
+        ],
+        "second": "front_left_toe_2"
+      },
+      {
+        "first": "front_left_foot_pad",
+        "joint": [
+          -17.252512318584458,
+          0.72,
+          13.717627485605517
+        ],
+        "second": "front_left_toe_3"
+      },
+      {
+        "first": "right_side_rail",
+        "joint": [
+          9.5,
+          11.8,
+          0.0
+        ],
+        "second": "middle_right_hip_housing"
+      },
+      {
+        "first": "middle_right_hip_housing",
+        "joint": [
+          9.5,
+          11.8,
+          0.0
+        ],
+        "second": "middle_right_leg_1"
+      },
+      {
+        "first": "middle_right_leg_1",
+        "joint": [
+          13.8,
+          10.8,
+          0.0
+        ],
+        "second": "middle_right_leg_2"
+      },
+      {
+        "first": "middle_right_leg_2",
+        "joint": [
+          17.2,
+          8.2,
+          0.0
+        ],
+        "second": "middle_right_leg_3"
+      },
+      {
+        "first": "middle_right_leg_3",
+        "joint": [
+          20.2,
+          4.1,
+          0.0
+        ],
+        "second": "middle_right_leg_4"
+      },
+      {
+        "first": "middle_right_leg_1",
+        "joint": [
+          13.8,
+          10.8,
+          0.0
+        ],
+        "second": "middle_right_hinge_1"
+      },
+      {
+        "first": "middle_right_hinge_1",
+        "joint": [
+          13.8,
+          10.8,
+          0.0
+        ],
+        "second": "middle_right_leg_2"
+      },
+      {
+        "first": "middle_right_leg_2",
+        "joint": [
+          17.2,
+          8.2,
+          0.0
+        ],
+        "second": "middle_right_hinge_2"
+      },
+      {
+        "first": "middle_right_hinge_2",
+        "joint": [
+          17.2,
+          8.2,
+          0.0
+        ],
+        "second": "middle_right_leg_3"
+      },
+      {
+        "first": "middle_right_leg_3",
+        "joint": [
+          20.2,
+          4.1,
+          0.0
+        ],
+        "second": "middle_right_hinge_3"
+      },
+      {
+        "first": "middle_right_hinge_3",
+        "joint": [
+          20.2,
+          4.1,
+          0.0
+        ],
+        "second": "middle_right_leg_4"
+      },
+      {
+        "first": "middle_right_leg_3",
+        "joint": [
+          18.7,
+          6.15,
+          0.0
+        ],
+        "second": "middle_right_shin_shield"
+      },
+      {
+        "first": "middle_right_shin_shield",
+        "joint": [
+          17.445694003369468,
+          7.8642181953950585,
+          0.0
+        ],
+        "second": "middle_right_shin_upper_plate"
+      },
+      {
+        "first": "middle_right_shin_shield",
+        "joint": [
+          19.95430599663053,
+          4.435781804604941,
+          0.0
+        ],
+        "second": "middle_right_shin_lower_plate"
+      },
+      {
+        "first": "middle_right_leg_4",
+        "joint": [
+          22.0,
+          1.6,
+          0.0
+        ],
+        "second": "middle_right_foot_pad"
+      },
+      {
+        "first": "middle_right_foot_pad",
+        "joint": [
+          22.0,
+          1.3,
+          0.0
+        ],
+        "second": "middle_right_foot_armor"
+      },
+      {
+        "first": "middle_right_foot_pad",
+        "joint": [
+          22.0,
+          0.72,
+          -1.35
+        ],
+        "second": "middle_right_toe_1"
+      },
+      {
+        "first": "middle_right_foot_pad",
+        "joint": [
+          22.0,
+          0.72,
+          0.0
+        ],
+        "second": "middle_right_toe_2"
+      },
+      {
+        "first": "middle_right_foot_pad",
+        "joint": [
+          22.0,
+          0.72,
+          1.35
+        ],
+        "second": "middle_right_toe_3"
+      },
+      {
+        "first": "left_side_rail",
+        "joint": [
+          -9.5,
+          11.8,
+          0.0
+        ],
+        "second": "middle_left_hip_housing"
+      },
+      {
+        "first": "middle_left_hip_housing",
+        "joint": [
+          -9.5,
+          11.8,
+          0.0
+        ],
+        "second": "middle_left_leg_1"
+      },
+      {
+        "first": "middle_left_leg_1",
+        "joint": [
+          -13.8,
+          10.8,
+          0.0
+        ],
+        "second": "middle_left_leg_2"
+      },
+      {
+        "first": "middle_left_leg_2",
+        "joint": [
+          -17.2,
+          8.2,
+          0.0
+        ],
+        "second": "middle_left_leg_3"
+      },
+      {
+        "first": "middle_left_leg_3",
+        "joint": [
+          -20.2,
+          4.1,
+          0.0
+        ],
+        "second": "middle_left_leg_4"
+      },
+      {
+        "first": "middle_left_leg_1",
+        "joint": [
+          -13.8,
+          10.8,
+          0.0
+        ],
+        "second": "middle_left_hinge_1"
+      },
+      {
+        "first": "middle_left_hinge_1",
+        "joint": [
+          -13.8,
+          10.8,
+          0.0
+        ],
+        "second": "middle_left_leg_2"
+      },
+      {
+        "first": "middle_left_leg_2",
+        "joint": [
+          -17.2,
+          8.2,
+          0.0
+        ],
+        "second": "middle_left_hinge_2"
+      },
+      {
+        "first": "middle_left_hinge_2",
+        "joint": [
+          -17.2,
+          8.2,
+          0.0
+        ],
+        "second": "middle_left_leg_3"
+      },
+      {
+        "first": "middle_left_leg_3",
+        "joint": [
+          -20.2,
+          4.1,
+          0.0
+        ],
+        "second": "middle_left_hinge_3"
+      },
+      {
+        "first": "middle_left_hinge_3",
+        "joint": [
+          -20.2,
+          4.1,
+          0.0
+        ],
+        "second": "middle_left_leg_4"
+      },
+      {
+        "first": "middle_left_leg_3",
+        "joint": [
+          -18.7,
+          6.15,
+          0.0
+        ],
+        "second": "middle_left_shin_shield"
+      },
+      {
+        "first": "middle_left_shin_shield",
+        "joint": [
+          -17.445694003369468,
+          7.8642181953950585,
+          0.0
+        ],
+        "second": "middle_left_shin_upper_plate"
+      },
+      {
+        "first": "middle_left_shin_shield",
+        "joint": [
+          -19.95430599663053,
+          4.435781804604941,
+          0.0
+        ],
+        "second": "middle_left_shin_lower_plate"
+      },
+      {
+        "first": "middle_left_leg_4",
+        "joint": [
+          -22.0,
+          1.6,
+          0.0
+        ],
+        "second": "middle_left_foot_pad"
+      },
+      {
+        "first": "middle_left_foot_pad",
+        "joint": [
+          -22.0,
+          1.3,
+          0.0
+        ],
+        "second": "middle_left_foot_armor"
+      },
+      {
+        "first": "middle_left_foot_pad",
+        "joint": [
+          -22.0,
+          0.72,
+          1.35
+        ],
+        "second": "middle_left_toe_1"
+      },
+      {
+        "first": "middle_left_foot_pad",
+        "joint": [
+          -22.0,
+          0.72,
+          0.0
+        ],
+        "second": "middle_left_toe_2"
+      },
+      {
+        "first": "middle_left_foot_pad",
+        "joint": [
+          -22.0,
+          0.72,
+          -1.35
+        ],
+        "second": "middle_left_toe_3"
+      },
+      {
+        "first": "lower_hull",
+        "joint": [
+          -7.059876,
+          11.8,
+          -6.356741
+        ],
+        "second": "rear_left_hip_housing"
+      },
+      {
+        "first": "rear_left_hip_housing",
+        "joint": [
+          -7.059876,
+          11.8,
+          -6.356741
+        ],
+        "second": "rear_left_leg_1"
+      },
+      {
+        "first": "rear_left_leg_1",
+        "joint": [
+          -10.255399,
+          10.8,
+          -9.234002
+        ],
+        "second": "rear_left_leg_2"
+      },
+      {
+        "first": "rear_left_leg_2",
+        "joint": [
+          -12.782091,
+          8.2,
+          -11.509046
+        ],
+        "second": "rear_left_leg_3"
+      },
+      {
+        "first": "rear_left_leg_3",
+        "joint": [
+          -15.011525,
+          4.1,
+          -13.516438
+        ],
+        "second": "rear_left_leg_4"
+      },
+      {
+        "first": "rear_left_leg_1",
+        "joint": [
+          -10.255399,
+          10.8,
+          -9.234002
+        ],
+        "second": "rear_left_hinge_1"
+      },
+      {
+        "first": "rear_left_hinge_1",
+        "joint": [
+          -10.255399,
+          10.8,
+          -9.234002
+        ],
+        "second": "rear_left_leg_2"
+      },
+      {
+        "first": "rear_left_leg_2",
+        "joint": [
+          -12.782091,
+          8.2,
+          -11.509046
+        ],
+        "second": "rear_left_hinge_2"
+      },
+      {
+        "first": "rear_left_hinge_2",
+        "joint": [
+          -12.782091,
+          8.2,
+          -11.509046
+        ],
+        "second": "rear_left_leg_3"
+      },
+      {
+        "first": "rear_left_leg_3",
+        "joint": [
+          -15.011525,
+          4.1,
+          -13.516438
+        ],
+        "second": "rear_left_hinge_3"
+      },
+      {
+        "first": "rear_left_hinge_3",
+        "joint": [
+          -15.011525,
+          4.1,
+          -13.516438
+        ],
+        "second": "rear_left_leg_4"
+      },
+      {
+        "first": "rear_left_leg_3",
+        "joint": [
+          -13.896808,
+          6.149999999999999,
+          -12.512742
+        ],
+        "second": "rear_left_shin_shield"
+      },
+      {
+        "first": "rear_left_shin_shield",
+        "joint": [
+          -12.964677181105259,
+          7.864218208508722,
+          -11.673447385850062
+        ],
+        "second": "rear_left_shin_upper_plate"
+      },
+      {
+        "first": "rear_left_shin_shield",
+        "joint": [
+          -14.828938818894741,
+          4.4357817914912765,
+          -13.352036614149938
+        ],
+        "second": "rear_left_shin_lower_plate"
+      },
+      {
+        "first": "rear_left_leg_4",
+        "joint": [
+          -16.349186,
+          1.6,
+          -14.720873
+        ],
+        "second": "rear_left_foot_pad"
+      },
+      {
+        "first": "rear_left_foot_pad",
+        "joint": [
+          -16.349186,
+          1.3,
+          -14.720873
+        ],
+        "second": "rear_left_foot_armor"
+      },
+      {
+        "first": "rear_left_foot_pad",
+        "joint": [
+          -17.252512318584458,
+          0.72,
+          -13.717627485605517
+        ],
+        "second": "rear_left_toe_1"
+      },
+      {
+        "first": "rear_left_foot_pad",
+        "joint": [
+          -16.349186,
+          0.72,
+          -14.720873
+        ],
+        "second": "rear_left_toe_2"
+      },
+      {
+        "first": "rear_left_foot_pad",
+        "joint": [
+          -15.445859681415541,
+          0.72,
+          -15.724118514394481
+        ],
+        "second": "rear_left_toe_3"
+      },
+      {
+        "first": "lower_hull",
+        "joint": [
+          7.059876,
+          11.8,
+          -6.356741
+        ],
+        "second": "rear_right_hip_housing"
+      },
+      {
+        "first": "rear_right_hip_housing",
+        "joint": [
+          7.059876,
+          11.8,
+          -6.356741
+        ],
+        "second": "rear_right_leg_1"
+      },
+      {
+        "first": "rear_right_leg_1",
+        "joint": [
+          10.255399,
+          10.8,
+          -9.234002
+        ],
+        "second": "rear_right_leg_2"
+      },
+      {
+        "first": "rear_right_leg_2",
+        "joint": [
+          12.782091,
+          8.2,
+          -11.509046
+        ],
+        "second": "rear_right_leg_3"
+      },
+      {
+        "first": "rear_right_leg_3",
+        "joint": [
+          15.011525,
+          4.1,
+          -13.516438
+        ],
+        "second": "rear_right_leg_4"
+      },
+      {
+        "first": "rear_right_leg_1",
+        "joint": [
+          10.255399,
+          10.8,
+          -9.234002
+        ],
+        "second": "rear_right_hinge_1"
+      },
+      {
+        "first": "rear_right_hinge_1",
+        "joint": [
+          10.255399,
+          10.8,
+          -9.234002
+        ],
+        "second": "rear_right_leg_2"
+      },
+      {
+        "first": "rear_right_leg_2",
+        "joint": [
+          12.782091,
+          8.2,
+          -11.509046
+        ],
+        "second": "rear_right_hinge_2"
+      },
+      {
+        "first": "rear_right_hinge_2",
+        "joint": [
+          12.782091,
+          8.2,
+          -11.509046
+        ],
+        "second": "rear_right_leg_3"
+      },
+      {
+        "first": "rear_right_leg_3",
+        "joint": [
+          15.011525,
+          4.1,
+          -13.516438
+        ],
+        "second": "rear_right_hinge_3"
+      },
+      {
+        "first": "rear_right_hinge_3",
+        "joint": [
+          15.011525,
+          4.1,
+          -13.516438
+        ],
+        "second": "rear_right_leg_4"
+      },
+      {
+        "first": "rear_right_leg_3",
+        "joint": [
+          13.896808,
+          6.149999999999999,
+          -12.512742
+        ],
+        "second": "rear_right_shin_shield"
+      },
+      {
+        "first": "rear_right_shin_shield",
+        "joint": [
+          12.964677181105259,
+          7.864218208508722,
+          -11.673447385850062
+        ],
+        "second": "rear_right_shin_upper_plate"
+      },
+      {
+        "first": "rear_right_shin_shield",
+        "joint": [
+          14.828938818894741,
+          4.4357817914912765,
+          -13.352036614149938
+        ],
+        "second": "rear_right_shin_lower_plate"
+      },
+      {
+        "first": "rear_right_leg_4",
+        "joint": [
+          16.349186,
+          1.6,
+          -14.720873
+        ],
+        "second": "rear_right_foot_pad"
+      },
+      {
+        "first": "rear_right_foot_pad",
+        "joint": [
+          16.349186,
+          1.3,
+          -14.720873
+        ],
+        "second": "rear_right_foot_armor"
+      },
+      {
+        "first": "rear_right_foot_pad",
+        "joint": [
+          15.445859681415541,
+          0.72,
+          -15.724118514394481
+        ],
+        "second": "rear_right_toe_1"
+      },
+      {
+        "first": "rear_right_foot_pad",
+        "joint": [
+          16.349186,
+          0.72,
+          -14.720873
+        ],
+        "second": "rear_right_toe_2"
+      },
+      {
+        "first": "rear_right_foot_pad",
+        "joint": [
+          17.252512318584458,
+          0.72,
+          -13.717627485605517
+        ],
+        "second": "rear_right_toe_3"
+      }
+    ],
+    "feature_inventory": {
+      "amber_status_lights": 12,
+      "body_volumes": 27,
+      "foot_armor_blocks": 6,
+      "front_optics": 3,
+      "grounded_feet": 6,
+      "hip_housings": 6,
+      "mechanical_hinges": 18,
+      "mechanical_leg_chains": 6,
+      "mechanical_leg_segments": 24,
+      "panel_bolts": 24,
+      "panel_seams": 6,
+      "radar_pod_cuboids": 7,
+      "roof_antennae": 3,
+      "shin_armor_layers": 18,
+      "shin_shields": 6,
+      "toe_claws": 18,
+      "turret_collar_segments": 12,
+      "upper_turret_cuboids": 38
+    },
+    "lane": "agent-authored-semantic-volume",
+    "leg_chains": [
+      {
+        "azimuth_degrees": 42.0,
+        "foot": "front_right_foot_pad",
+        "foot_armor": "front_right_foot_armor",
+        "hinges": [
+          "front_right_hinge_1",
+          "front_right_hinge_2",
+          "front_right_hinge_3"
+        ],
+        "joints": [
+          [
+            7.059876,
+            11.8,
+            6.356741
+          ],
+          [
+            10.255399,
+            10.8,
+            9.234002
+          ],
+          [
+            12.782091,
+            8.2,
+            11.509046
+          ],
+          [
+            15.011525,
+            4.1,
+            13.516438
+          ],
+          [
+            16.349186,
+            1.6,
+            14.720873
+          ]
+        ],
+        "name": "front_right",
+        "root": [
+          7.059876,
+          11.8,
+          6.356741
+        ],
+        "segments": [
+          "front_right_leg_1",
+          "front_right_leg_2",
+          "front_right_leg_3",
+          "front_right_leg_4"
+        ],
+        "shin_plates": [
+          "front_right_shin_upper_plate",
+          "front_right_shin_lower_plate"
+        ],
+        "shin_shield": "front_right_shin_shield",
+        "station": "front",
+        "toes": [
+          "front_right_toe_1",
+          "front_right_toe_2",
+          "front_right_toe_3"
+        ]
+      },
+      {
+        "azimuth_degrees": 138.0,
+        "foot": "front_left_foot_pad",
+        "foot_armor": "front_left_foot_armor",
+        "hinges": [
+          "front_left_hinge_1",
+          "front_left_hinge_2",
+          "front_left_hinge_3"
+        ],
+        "joints": [
+          [
+            -7.059876,
+            11.8,
+            6.356741
+          ],
+          [
+            -10.255399,
+            10.8,
+            9.234002
+          ],
+          [
+            -12.782091,
+            8.2,
+            11.509046
+          ],
+          [
+            -15.011525,
+            4.1,
+            13.516438
+          ],
+          [
+            -16.349186,
+            1.6,
+            14.720873
+          ]
+        ],
+        "name": "front_left",
+        "root": [
+          -7.059876,
+          11.8,
+          6.356741
+        ],
+        "segments": [
+          "front_left_leg_1",
+          "front_left_leg_2",
+          "front_left_leg_3",
+          "front_left_leg_4"
+        ],
+        "shin_plates": [
+          "front_left_shin_upper_plate",
+          "front_left_shin_lower_plate"
+        ],
+        "shin_shield": "front_left_shin_shield",
+        "station": "front",
+        "toes": [
+          "front_left_toe_1",
+          "front_left_toe_2",
+          "front_left_toe_3"
+        ]
+      },
+      {
+        "azimuth_degrees": 0.0,
+        "foot": "middle_right_foot_pad",
+        "foot_armor": "middle_right_foot_armor",
+        "hinges": [
+          "middle_right_hinge_1",
+          "middle_right_hinge_2",
+          "middle_right_hinge_3"
+        ],
+        "joints": [
+          [
+            9.5,
+            11.8,
+            0.0
+          ],
+          [
+            13.8,
+            10.8,
+            0.0
+          ],
+          [
+            17.2,
+            8.2,
+            0.0
+          ],
+          [
+            20.2,
+            4.1,
+            0.0
+          ],
+          [
+            22.0,
+            1.6,
+            0.0
+          ]
+        ],
+        "name": "middle_right",
+        "root": [
+          9.5,
+          11.8,
+          0.0
+        ],
+        "segments": [
+          "middle_right_leg_1",
+          "middle_right_leg_2",
+          "middle_right_leg_3",
+          "middle_right_leg_4"
+        ],
+        "shin_plates": [
+          "middle_right_shin_upper_plate",
+          "middle_right_shin_lower_plate"
+        ],
+        "shin_shield": "middle_right_shin_shield",
+        "station": "middle",
+        "toes": [
+          "middle_right_toe_1",
+          "middle_right_toe_2",
+          "middle_right_toe_3"
+        ]
+      },
+      {
+        "azimuth_degrees": 180.0,
+        "foot": "middle_left_foot_pad",
+        "foot_armor": "middle_left_foot_armor",
+        "hinges": [
+          "middle_left_hinge_1",
+          "middle_left_hinge_2",
+          "middle_left_hinge_3"
+        ],
+        "joints": [
+          [
+            -9.5,
+            11.8,
+            0.0
+          ],
+          [
+            -13.8,
+            10.8,
+            0.0
+          ],
+          [
+            -17.2,
+            8.2,
+            0.0
+          ],
+          [
+            -20.2,
+            4.1,
+            0.0
+          ],
+          [
+            -22.0,
+            1.6,
+            0.0
+          ]
+        ],
+        "name": "middle_left",
+        "root": [
+          -9.5,
+          11.8,
+          0.0
+        ],
+        "segments": [
+          "middle_left_leg_1",
+          "middle_left_leg_2",
+          "middle_left_leg_3",
+          "middle_left_leg_4"
+        ],
+        "shin_plates": [
+          "middle_left_shin_upper_plate",
+          "middle_left_shin_lower_plate"
+        ],
+        "shin_shield": "middle_left_shin_shield",
+        "station": "middle",
+        "toes": [
+          "middle_left_toe_1",
+          "middle_left_toe_2",
+          "middle_left_toe_3"
+        ]
+      },
+      {
+        "azimuth_degrees": 222.0,
+        "foot": "rear_left_foot_pad",
+        "foot_armor": "rear_left_foot_armor",
+        "hinges": [
+          "rear_left_hinge_1",
+          "rear_left_hinge_2",
+          "rear_left_hinge_3"
+        ],
+        "joints": [
+          [
+            -7.059876,
+            11.8,
+            -6.356741
+          ],
+          [
+            -10.255399,
+            10.8,
+            -9.234002
+          ],
+          [
+            -12.782091,
+            8.2,
+            -11.509046
+          ],
+          [
+            -15.011525,
+            4.1,
+            -13.516438
+          ],
+          [
+            -16.349186,
+            1.6,
+            -14.720873
+          ]
+        ],
+        "name": "rear_left",
+        "root": [
+          -7.059876,
+          11.8,
+          -6.356741
+        ],
+        "segments": [
+          "rear_left_leg_1",
+          "rear_left_leg_2",
+          "rear_left_leg_3",
+          "rear_left_leg_4"
+        ],
+        "shin_plates": [
+          "rear_left_shin_upper_plate",
+          "rear_left_shin_lower_plate"
+        ],
+        "shin_shield": "rear_left_shin_shield",
+        "station": "rear",
+        "toes": [
+          "rear_left_toe_1",
+          "rear_left_toe_2",
+          "rear_left_toe_3"
+        ]
+      },
+      {
+        "azimuth_degrees": 318.0,
+        "foot": "rear_right_foot_pad",
+        "foot_armor": "rear_right_foot_armor",
+        "hinges": [
+          "rear_right_hinge_1",
+          "rear_right_hinge_2",
+          "rear_right_hinge_3"
+        ],
+        "joints": [
+          [
+            7.059876,
+            11.8,
+            -6.356741
+          ],
+          [
+            10.255399,
+            10.8,
+            -9.234002
+          ],
+          [
+            12.782091,
+            8.2,
+            -11.509046
+          ],
+          [
+            15.011525,
+            4.1,
+            -13.516438
+          ],
+          [
+            16.349186,
+            1.6,
+            -14.720873
+          ]
+        ],
+        "name": "rear_right",
+        "root": [
+          7.059876,
+          11.8,
+          -6.356741
+        ],
+        "segments": [
+          "rear_right_leg_1",
+          "rear_right_leg_2",
+          "rear_right_leg_3",
+          "rear_right_leg_4"
+        ],
+        "shin_plates": [
+          "rear_right_shin_upper_plate",
+          "rear_right_shin_lower_plate"
+        ],
+        "shin_shield": "rear_right_shin_shield",
+        "station": "rear",
+        "toes": [
+          "rear_right_toe_1",
+          "rear_right_toe_2",
+          "rear_right_toe_3"
+        ]
+      }
+    ],
+    "single_view_hidden_geometry": "Far-side articulation, underside equipment, and hidden panel graphics remain conservative symmetric inferences across two still photographs.",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0
+  },
+  "geometry": {
+    "precision": 32
+  },
+  "id": "militech_chimera",
+  "landmarks": [
+    {
+      "center_color": "#ffd45c",
+      "center_uv": [
+        0.33,
+        0.38
+      ],
+      "color": "#7a4308",
+      "cube": "cabin_left_wall",
+      "face": "west",
+      "name": "left_amber_1_1",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#ffd45c",
+      "center_uv": [
+        0.5,
+        0.38
+      ],
+      "color": "#7a4308",
+      "cube": "cabin_left_wall",
+      "face": "west",
+      "name": "left_amber_1_2",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#ffd45c",
+      "center_uv": [
+        0.67,
+        0.38
+      ],
+      "color": "#7a4308",
+      "cube": "cabin_left_wall",
+      "face": "west",
+      "name": "left_amber_1_3",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#ffd45c",
+      "center_uv": [
+        0.33,
+        0.55
+      ],
+      "color": "#7a4308",
+      "cube": "cabin_left_wall",
+      "face": "west",
+      "name": "left_amber_2_1",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#ffd45c",
+      "center_uv": [
+        0.5,
+        0.55
+      ],
+      "color": "#7a4308",
+      "cube": "cabin_left_wall",
+      "face": "west",
+      "name": "left_amber_2_2",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#ffd45c",
+      "center_uv": [
+        0.67,
+        0.55
+      ],
+      "color": "#7a4308",
+      "cube": "cabin_left_wall",
+      "face": "west",
+      "name": "left_amber_2_3",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#f7faef",
+      "center_uv": [
+        0.5,
+        0.18
+      ],
+      "color": "#d8dfd1",
+      "cube": "cabin_left_wall",
+      "face": "west",
+      "name": "left_militech_bar",
+      "size": [
+        7,
+        1
+      ]
+    },
+    {
+      "center_color": "#ffd45c",
+      "center_uv": [
+        0.33,
+        0.38
+      ],
+      "color": "#7a4308",
+      "cube": "cabin_right_wall",
+      "face": "east",
+      "name": "right_amber_1_1",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#ffd45c",
+      "center_uv": [
+        0.5,
+        0.38
+      ],
+      "color": "#7a4308",
+      "cube": "cabin_right_wall",
+      "face": "east",
+      "name": "right_amber_1_2",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#ffd45c",
+      "center_uv": [
+        0.67,
+        0.38
+      ],
+      "color": "#7a4308",
+      "cube": "cabin_right_wall",
+      "face": "east",
+      "name": "right_amber_1_3",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#ffd45c",
+      "center_uv": [
+        0.33,
+        0.55
+      ],
+      "color": "#7a4308",
+      "cube": "cabin_right_wall",
+      "face": "east",
+      "name": "right_amber_2_1",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#ffd45c",
+      "center_uv": [
+        0.5,
+        0.55
+      ],
+      "color": "#7a4308",
+      "cube": "cabin_right_wall",
+      "face": "east",
+      "name": "right_amber_2_2",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#ffd45c",
+      "center_uv": [
+        0.67,
+        0.55
+      ],
+      "color": "#7a4308",
+      "cube": "cabin_right_wall",
+      "face": "east",
+      "name": "right_amber_2_3",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#f7faef",
+      "center_uv": [
+        0.5,
+        0.18
+      ],
+      "color": "#d8dfd1",
+      "cube": "cabin_right_wall",
+      "face": "east",
+      "name": "right_militech_bar",
+      "size": [
+        7,
+        1
+      ]
+    },
+    {
+      "center_color": "#69a9bb",
+      "center_uv": [
+        0.25,
+        0.5
+      ],
+      "color": "#0b2530",
+      "cube": "front_sensor_bar",
+      "face": "south",
+      "name": "front_sensor_1",
+      "size": [
+        2,
+        1
+      ]
+    },
+    {
+      "center_color": "#69a9bb",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#0b2530",
+      "cube": "front_sensor_bar",
+      "face": "south",
+      "name": "front_sensor_2",
+      "size": [
+        2,
+        1
+      ]
+    },
+    {
+      "center_color": "#69a9bb",
+      "center_uv": [
+        0.75,
+        0.5
+      ],
+      "color": "#0b2530",
+      "cube": "front_sensor_bar",
+      "face": "south",
+      "name": "front_sensor_3",
+      "size": [
+        2,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.18,
+        0.2
+      ],
+      "color": "#252e2b",
+      "cube": "front_right_shin_shield",
+      "face": "south",
+      "name": "front_right_shield_bolt_1",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.82,
+        0.2
+      ],
+      "color": "#252e2b",
+      "cube": "front_right_shin_shield",
+      "face": "south",
+      "name": "front_right_shield_bolt_2",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.18,
+        0.8
+      ],
+      "color": "#252e2b",
+      "cube": "front_right_shin_shield",
+      "face": "south",
+      "name": "front_right_shield_bolt_3",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.82,
+        0.8
+      ],
+      "color": "#252e2b",
+      "cube": "front_right_shin_shield",
+      "face": "south",
+      "name": "front_right_shield_bolt_4",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#697478",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#30383b",
+      "cube": "front_right_shin_shield",
+      "face": "south",
+      "name": "front_right_shield_seam",
+      "size": [
+        1,
+        5
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.18,
+        0.2
+      ],
+      "color": "#252e2b",
+      "cube": "front_left_shin_shield",
+      "face": "south",
+      "name": "front_left_shield_bolt_1",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.82,
+        0.2
+      ],
+      "color": "#252e2b",
+      "cube": "front_left_shin_shield",
+      "face": "south",
+      "name": "front_left_shield_bolt_2",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.18,
+        0.8
+      ],
+      "color": "#252e2b",
+      "cube": "front_left_shin_shield",
+      "face": "south",
+      "name": "front_left_shield_bolt_3",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.82,
+        0.8
+      ],
+      "color": "#252e2b",
+      "cube": "front_left_shin_shield",
+      "face": "south",
+      "name": "front_left_shield_bolt_4",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#697478",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#30383b",
+      "cube": "front_left_shin_shield",
+      "face": "south",
+      "name": "front_left_shield_seam",
+      "size": [
+        1,
+        5
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.18,
+        0.2
+      ],
+      "color": "#252e2b",
+      "cube": "middle_right_shin_shield",
+      "face": "south",
+      "name": "middle_right_shield_bolt_1",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.82,
+        0.2
+      ],
+      "color": "#252e2b",
+      "cube": "middle_right_shin_shield",
+      "face": "south",
+      "name": "middle_right_shield_bolt_2",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.18,
+        0.8
+      ],
+      "color": "#252e2b",
+      "cube": "middle_right_shin_shield",
+      "face": "south",
+      "name": "middle_right_shield_bolt_3",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.82,
+        0.8
+      ],
+      "color": "#252e2b",
+      "cube": "middle_right_shin_shield",
+      "face": "south",
+      "name": "middle_right_shield_bolt_4",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#697478",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#30383b",
+      "cube": "middle_right_shin_shield",
+      "face": "south",
+      "name": "middle_right_shield_seam",
+      "size": [
+        1,
+        5
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.18,
+        0.2
+      ],
+      "color": "#252e2b",
+      "cube": "middle_left_shin_shield",
+      "face": "south",
+      "name": "middle_left_shield_bolt_1",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.82,
+        0.2
+      ],
+      "color": "#252e2b",
+      "cube": "middle_left_shin_shield",
+      "face": "south",
+      "name": "middle_left_shield_bolt_2",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.18,
+        0.8
+      ],
+      "color": "#252e2b",
+      "cube": "middle_left_shin_shield",
+      "face": "south",
+      "name": "middle_left_shield_bolt_3",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.82,
+        0.8
+      ],
+      "color": "#252e2b",
+      "cube": "middle_left_shin_shield",
+      "face": "south",
+      "name": "middle_left_shield_bolt_4",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#697478",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#30383b",
+      "cube": "middle_left_shin_shield",
+      "face": "south",
+      "name": "middle_left_shield_seam",
+      "size": [
+        1,
+        5
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.18,
+        0.2
+      ],
+      "color": "#252e2b",
+      "cube": "rear_left_shin_shield",
+      "face": "south",
+      "name": "rear_left_shield_bolt_1",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.82,
+        0.2
+      ],
+      "color": "#252e2b",
+      "cube": "rear_left_shin_shield",
+      "face": "south",
+      "name": "rear_left_shield_bolt_2",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.18,
+        0.8
+      ],
+      "color": "#252e2b",
+      "cube": "rear_left_shin_shield",
+      "face": "south",
+      "name": "rear_left_shield_bolt_3",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.82,
+        0.8
+      ],
+      "color": "#252e2b",
+      "cube": "rear_left_shin_shield",
+      "face": "south",
+      "name": "rear_left_shield_bolt_4",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#697478",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#30383b",
+      "cube": "rear_left_shin_shield",
+      "face": "south",
+      "name": "rear_left_shield_seam",
+      "size": [
+        1,
+        5
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.18,
+        0.2
+      ],
+      "color": "#252e2b",
+      "cube": "rear_right_shin_shield",
+      "face": "south",
+      "name": "rear_right_shield_bolt_1",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.82,
+        0.2
+      ],
+      "color": "#252e2b",
+      "cube": "rear_right_shin_shield",
+      "face": "south",
+      "name": "rear_right_shield_bolt_2",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.18,
+        0.8
+      ],
+      "color": "#252e2b",
+      "cube": "rear_right_shin_shield",
+      "face": "south",
+      "name": "rear_right_shield_bolt_3",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.82,
+        0.8
+      ],
+      "color": "#252e2b",
+      "cube": "rear_right_shin_shield",
+      "face": "south",
+      "name": "rear_right_shield_bolt_4",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#697478",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#30383b",
+      "cube": "rear_right_shin_shield",
+      "face": "south",
+      "name": "rear_right_shield_seam",
+      "size": [
+        1,
+        5
+      ]
+    },
+    {
+      "center_color": "#69a9bb",
+      "center_uv": [
+        0.3,
+        0.5
+      ],
+      "color": "#0b2530",
+      "cube": "radar_pod_front",
+      "face": "south",
+      "name": "radar_status_light_1",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#69a9bb",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#0b2530",
+      "cube": "radar_pod_front",
+      "face": "south",
+      "name": "radar_status_light_2",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#69a9bb",
+      "center_uv": [
+        0.7,
+        0.5
+      ],
+      "color": "#0b2530",
+      "cube": "radar_pod_front",
+      "face": "south",
+      "name": "radar_status_light_3",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#adb7b7",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#697478",
+      "cube": "roof_hatch_long",
+      "face": "up",
+      "name": "roof_hatch_mark",
+      "size": [
+        4,
+        2
+      ]
+    },
+    {
+      "center_color": "#ffd45c",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#d58b1c",
+      "cube": "nose_hatch",
+      "face": "up",
+      "name": "nose_warning_mark",
+      "size": [
+        3,
+        1
+      ]
+    }
+  ],
+  "materials": {
+    "amber": {
+      "base": "#d58b1c",
+      "highlight": "#ffd45c",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#6f3f08"
+    },
+    "armor": {
+      "base": "#62694d",
+      "highlight": "#929579",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#30382e"
+    },
+    "armor_dark": {
+      "base": "#3a4437",
+      "highlight": "#66705b",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#1b241e"
+    },
+    "armor_light": {
+      "base": "#85866a",
+      "highlight": "#b8b897",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#505440"
+    },
+    "edge": {
+      "base": "#252e2b",
+      "highlight": "#515b55",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#101615"
+    },
+    "glass": {
+      "base": "#263d43",
+      "highlight": "#6e8587",
+      "pattern": "gradient",
+      "pattern_scale": 4,
+      "shade": "#101c20"
+    },
+    "joint": {
+      "base": "#293437",
+      "highlight": "#657176",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#11191b"
+    },
+    "label": {
+      "base": "#d8dfd1",
+      "highlight": "#f7faef",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#7f8a7d"
+    },
+    "pale_panel": {
+      "base": "#bbc5ac",
+      "highlight": "#e1e6cf",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#727c6c"
+    },
+    "rubber": {
+      "base": "#262a27",
+      "highlight": "#505651",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#0f1210"
+    },
+    "sensor": {
+      "base": "#23596b",
+      "highlight": "#69a9bb",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#0b2530"
+    },
+    "steel": {
+      "base": "#697478",
+      "highlight": "#adb7b7",
+      "pattern": "stripes",
+      "pattern_scale": 3,
+      "shade": "#30383b"
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "deep low armored hull with a sloped sensor nose",
+      "segmented circular collar and large faceted rotating upper turret",
+      "six separately articulated legs at front, middle, and rear stations",
+      "large rectangular shin shields, hinge blocks, armored feet, and triple toes",
+      "roof radar pod, three aerials, blue optics, amber lights, seams, and bolts"
+    ],
+    "required_views": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "isometric",
+      "original-reference-perspective",
+      "alternate-reference-perspective",
+      "leg-closeup",
+      "chassis-closeup",
+      "turret-closeup"
+    ],
+    "review_targets": [
+      "two source silhouettes",
+      "true chassis depth",
+      "six-leg station layout",
+      "joint continuity",
+      "six ground contacts",
+      "faceted turret identity"
+    ],
+    "target_cuboids": [
+      120,
+      180
+    ]
+  },
+  "reference": {
+    "height": 900,
+    "image": "/Users/derekwang1/aai-labs-modernity/img2blockbench-round2-texture-baker/image.png",
+    "sha256": "55ed303da9e7484812f0827922fceb0b07a8bac68ccc1a9c03e39702419eada2",
+    "width": 600
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "Deep armored six-legged Militech Chimera combat machine",
+    "symmetry": "bilateral",
+    "type": "vehicle",
+    "uncertainties": [
+      "The two still references occlude parts of the far-side leg joints.",
+      "Exact underside equipment and rear-most armor remain partly unobserved.",
+      "Hidden-side panel graphics mirror the visible side conservatively."
+    ]
+  },
+  "texture": {
+    "atlas_size": 512,
+    "density": 2,
+    "gutter": 1,
+    "palette_size": 32,
+    "quantize_source": false
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "model_id": "excalibur",
+  "representation": "agent-authored-semantic-volume",
+  "cuboids": 30,
+  "bones": 19,
+  "semantic_cuboids": 30,
+  "source_skin_cuboids": 0,
+  "deterministic_rebuild": true,
+  "strict_validation": true,
+  "native_audit": {
+    "ok": true,
+    "errors": 0,
+    "warnings": 0,
+    "estimated_triangles": 360
+  },
+  "geometry": {
+    "model_extents": [15.120844, 59.875, 3.0625],
+    "blade_extents": [4.8125, 45.03125, 1.6875],
+    "guard_extents": [15.120844, 7.991588, 2.8125],
+    "blade_profile_depth_to_length": 0.028184,
+    "guard_span_to_length": 0.25254
+  },
+  "fidelity": {
+    "silhouette_method": "reviewed-source-mask-reference-roll-centered-uniform-scale-iou-v1",
+    "silhouette_iou": 0.515895,
+    "silhouette_recall": 0.781582,
+    "silhouette_precision": 0.602801,
+    "major_axis_delta_degrees": 1.618621
+  },
+  "attachment_audit": {
+    "method": "shared-joint-compiled-oriented-cuboid-margin-v2",
+    "declared_links": 31,
+    "all_connected": true,
+    "all_cuboids_covered": true,
+    "minimum_margin": 0.005
+  },
+  "texture_contract": {
+    "authored_embedded_images": 7,
+    "front_rune_glyphs": 5,
+    "reverse_rune_glyphs": 5,
+    "front_and_reverse_crests": true,
+    "two_sided_grip_wrap": true,
+    "source_reference_pixels": false
+  },
+  "artifacts": {
+    "generator_sha256": "1613810edab8ae6c3f43ad60b37712e43802f3e4e5cb97dd077635820e6b300d",
+    "model_spec_sha256": "f98cd6fcea1bc33aca638aa77ebe176099b1f0b6fc5c46e001f0af3612fcf8d1",
+    "bbmodel_sha256": "ab0b7544ea32b4baa6f67285e7cec57e929d155cf821fa7da358b9d46e3e64ad",
+    "geo_json_sha256": "3a6761a8c6bf2f0ac4801b4a425f89901c2bdc8b9efc939441cc710e8a8e5984",
+    "texture_sha256": "717f42451971655a83636570dae05c8c6dda8d4945c3e11ab921317b91af64ac",
+    "audit_sha256": "5b69934d750fa1a701099337fa0028df354adebddc5df99a2e3547ed90d6d28c",
+    "comparison_sheet_sha256": "2baa4d9f0df45f4f9c3f9ccc492e64f1273f0c8e78d7770aed5ace775a216202",
+    "evaluation_sha256": "f132937bc44a28b19a04857ce0a269d15ab11842fcd9f8b6d581fd289179f55b",
+    "foreground_mask_sha256": "bd1a3b6cb24c6daeb981152a9d268f05a84a88d8b17ac85aa5515d40c1f0505b"
+  }
+}

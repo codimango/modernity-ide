@@ -1,0 +1,107 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1186517,
+      "path": "militech_centaur_piloted_exoskeleton.model-spec.json",
+      "sha256": "f69d3496b798727aa9866d3f2007ad0467bdb15b1ff728f9ffa1dcc84359d1e6"
+    },
+    {
+      "bytes": 27384,
+      "path": "militech_centaur_piloted_exoskeleton.png",
+      "sha256": "6a3b2573f4c61bf687334f0770a3d9a75d801df84a6b8cf1fa9a0b47ae37e8db"
+    },
+    {
+      "bytes": 350060,
+      "path": "militech_centaur_piloted_exoskeleton.bbmodel",
+      "sha256": "103e345f7915ddd881e9affedd228a3ace8ac1eb5e45018c831c1078b237f38c"
+    },
+    {
+      "bytes": 371911,
+      "path": "militech_centaur_piloted_exoskeleton.geo.json",
+      "sha256": "b4dff5596e5f414e0dcb858a542a469eea70dc452cd7aa7b8996969dfb0d999e"
+    },
+    {
+      "bytes": 240,
+      "path": "militech_centaur_piloted_exoskeleton.audit.json",
+      "sha256": "a23ef387c1a6e0049da3053b22124211a91727a210d03712ebe42011a507f7c3"
+    },
+    {
+      "bytes": 950728,
+      "path": "militech_centaur_piloted_exoskeleton.reference.png",
+      "sha256": "4182ef6f34f6c701322d39b3ca07e5acf824a5b0b2804a48c6e2182c1698bf92"
+    },
+    {
+      "bytes": 1047175,
+      "path": "militech_centaur_piloted_exoskeleton_wearable.model-spec.json",
+      "sha256": "924b98ddc0b29e888b035436232a6b147d18157ab8cd990ca9cfcc26dd8f82ae"
+    },
+    {
+      "bytes": 12074,
+      "path": "militech_centaur_piloted_exoskeleton_wearable.png",
+      "sha256": "f6a8461bbc0a9c716ddcc7ea457f95be51b513a6a1058301a77b8b99bf6b9e44"
+    },
+    {
+      "bytes": 290485,
+      "path": "militech_centaur_piloted_exoskeleton_wearable.bbmodel",
+      "sha256": "dc4e4f3348638589bd081ba509b5853b5a75aaaac5b961e74cc355a67c1e0292"
+    },
+    {
+      "bytes": 324411,
+      "path": "militech_centaur_piloted_exoskeleton_wearable.geo.json",
+      "sha256": "ad86952e0e875f562b6ccecc5623f9d144d0a9d374b3c79b3fff77f3de193773"
+    },
+    {
+      "bytes": 519,
+      "path": "militech_centaur_piloted_exoskeleton_wearable.attachable.json",
+      "sha256": "a9de412563bc893bed0ffbd479d7d08a1c2466157849eaf8d147f03dca14a4fd"
+    },
+    {
+      "bytes": 240,
+      "path": "militech_centaur_piloted_exoskeleton_wearable.audit.json",
+      "sha256": "da4ab8ef4969d3c35b4fdbd6bb3ad0b030c81b3fe3aaf3d15c6f249025a659d1"
+    }
+  ],
+  "collision": {
+    "eye_height": 4.0,
+    "height": 4.6,
+    "width": 2.2
+  },
+  "generator": {
+    "lane": "agent-authored-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "militech_centaur_piloted_exoskeleton",
+  "reference": {
+    "height": 1023,
+    "image": "militech_centaur_piloted_exoskeleton.reference.png",
+    "sha256": "4182ef6f34f6c701322d39b3ca07e5acf824a5b0b2804a48c6e2182c1698bf92",
+    "width": 1000
+  },
+  "schema_version": 1,
+  "wearable": {
+    "artifacts": [
+      "militech_centaur_piloted_exoskeleton_wearable.model-spec.json",
+      "militech_centaur_piloted_exoskeleton_wearable.png",
+      "militech_centaur_piloted_exoskeleton_wearable.bbmodel",
+      "militech_centaur_piloted_exoskeleton_wearable.geo.json",
+      "militech_centaur_piloted_exoskeleton_wearable.attachable.json",
+      "militech_centaur_piloted_exoskeleton_wearable.audit.json"
+    ],
+    "audit": {
+      "bones": 21,
+      "cuboids": 168,
+      "errors": [],
+      "estimated_triangles": 2016,
+      "ok": true,
+      "texture_size": [
+        1024,
+        1024
+      ],
+      "warnings": [
+        "very high cuboid count is intended for reviewed high-detail models only"
+      ]
+    },
+    "model_id": "militech_centaur_piloted_exoskeleton_wearable"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 59721,
+      "path": "scp_173.model-spec.json",
+      "sha256": "83d159e46aa073b3cfba737872215d13eee4269f7ddb257fdc8024f546629081"
+    },
+    {
+      "bytes": 14549,
+      "path": "scp_173.png",
+      "sha256": "cfad3b4322687f4b2e5a2e978bb3e6713d14131a4e0b666eedf95d9964143006"
+    },
+    {
+      "bytes": 148578,
+      "path": "scp_173.bbmodel",
+      "sha256": "e215e1ab89099505331935a25a9ad5c34d9dbdae49ff42bfed94af0f5bd86693"
+    },
+    {
+      "bytes": 154383,
+      "path": "scp_173.geo.json",
+      "sha256": "299fd1cf69e5b2e78210b568f1d4bf659f485393844e13ac6bb9b39b0be785c3"
+    },
+    {
+      "bytes": 212,
+      "path": "scp_173.audit.json",
+      "sha256": "ba02e54f6350fc811997831ca2952176ca404b80e901624b66c01824c1320795"
+    },
+    {
+      "bytes": 54852,
+      "path": "scp_173.reference.jpg",
+      "sha256": "85d698e25b04dbfc4009a05e1cdbb7dc13c5675d2f7c76e5af8cb5e13f0bd93f"
+    }
+  ],
+  "collision": {
+    "eye_height": 2.65,
+    "height": 3.1,
+    "width": 0.95
+  },
+  "generator": {
+    "lane": "agent-authored-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "scp_173",
+  "reference": {
+    "height": 1000,
+    "image": "scp_173.reference.jpg",
+    "sha256": "85d698e25b04dbfc4009a05e1cdbb7dc13c5675d2f7c76e5af8cb5e13f0bd93f",
+    "width": 750
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "cycle": 7,
+  "commit": "c7a7556fc26d6ec754c17832ed9f85983354a766",
+  "grader": "fresh_read_only_codex_terminal",
+  "cumulative_verdict": "PASS",
+  "overall_visual_mean": 4.19,
+  "prior_asset_regression": "NONE_DETECTED",
+  "score_order": [
+    "silhouette",
+    "proportions",
+    "identity",
+    "materials_color",
+    "attachment_topology",
+    "3d_coherence"
+  ],
+  "assets": {
+    "american_goldfinch": {
+      "verdict": "PASS",
+      "mean": 4.17,
+      "scores": [4, 4, 5, 4, 4, 4]
+    },
+    "porsche_911_turbo_930": {
+      "verdict": "PASS",
+      "mean": 4.17,
+      "scores": [4, 4, 5, 4, 4, 4]
+    },
+    "excalibur": {
+      "verdict": "PASS",
+      "mean": 4.17,
+      "scores": [4, 4, 5, 4, 4, 4]
+    },
+    "nian_beast": {
+      "verdict": "PASS",
+      "mean": 4.33,
+      "scores": [4, 4, 5, 5, 4, 4]
+    },
+    "tomato_devil": {
+      "verdict": "PASS",
+      "mean": 4.17,
+      "scores": [4, 4, 5, 4, 4, 4]
+    },
+    "scp_173": {
+      "verdict": "PASS",
+      "mean": 4.17,
+      "scores": [4, 4, 5, 4, 4, 4]
+    },
+    "gamma_full_body": {
+      "verdict": "PASS",
+      "mean": 4.17,
+      "scores": [4, 4, 5, 4, 4, 4]
+    }
+  },
+  "cycle_07_features": {
+    "native_cuboids": 111,
+    "bones": 67,
+    "upper_mandible_chains": 8,
+    "mandible_segments": 40,
+    "mandible_depth_layers": 3,
+    "mechanical_leg_chains": 4,
+    "mechanical_hinges": 8,
+    "mechanical_leg_depth_layers": 2,
+    "silver_ring_assemblies": 2,
+    "alpha_silhouette_iou": 0.672993,
+    "all_120_declared_links_connected": true,
+    "native_audit": "PASS"
+  },
+  "checks": {
+    "strict_validation": "7/7 PASS",
+    "live_native_model_audits": "7/7 PASS",
+    "unit_tests": "67/67 PASS",
+    "prior_grade_files_consulted": false,
+    "workspace_modified_by_grader": false
+  },
+  "required_fixes": []
+}

@@ -1,0 +1,46 @@
+{
+  "asset": "biblical_angel_many_eyed_six_wing",
+  "cycle": "round3-01",
+  "independently_graded_commit": "640b8e7fe4e1179d2ce58fc16c9bb9935e6f4feb",
+  "gates": {
+    "all_seven_holistic_renders_are_pixel_distinct": true,
+    "all_108_wing_shape_cuboids_require_nonzero_yaw": true,
+    "back_to_front_silhouette_area_minimum": 0.9,
+    "body_depth_to_width_minimum": 0.85,
+    "bottom_to_front_silhouette_area_minimum": 0.55,
+    "depth_to_width_minimum": 0.4,
+    "distal_primary_and_vane_segments": 3,
+    "eye_crown_wrapped_segments": 8,
+    "front_back_side_top_eye_surfaces_required": true,
+    "front_middle_rear_depth_bands_minimum_cuboids_each": 20,
+    "materials_must_be_solid_without_noise_patterns": true,
+    "side_aspect_difference_from_front_minimum": 0.35,
+    "side_to_front_bbox_width_minimum": 0.5,
+    "side_to_front_silhouette_area_minimum": 0.6,
+    "top_to_front_silhouette_area_minimum": 0.7,
+    "wing_depth_span_minimum": 30.0
+  },
+  "observed": {
+    "back_to_front_silhouette_area": 0.981761,
+    "body_depth_to_width": 0.955629,
+    "bottom_to_front_silhouette_area": 0.750201,
+    "depth_to_width": 0.47418,
+    "distinct_terminal_lengths": 15,
+    "left_side_to_front_bbox_width": 0.54717,
+    "left_side_to_front_silhouette_area": 0.673758,
+    "maximum_terminal_depth": 1.0,
+    "maximum_terminal_width": 1.4,
+    "right_side_to_front_bbox_width": 0.54717,
+    "right_side_to_front_silhouette_area": 0.673758,
+    "top_to_front_silhouette_area": 0.750201,
+    "wing_depth_span": 30.0,
+    "wing_nonzero_yaw_fraction": 1.0,
+    "required_model_only_render_hashes": 14,
+    "wing_sector_sweeps_degrees": {
+      "front_lower": 40.100908,
+      "middle": 21.037511,
+      "rear_upper": 42.70939
+    }
+  },
+  "status": "pass"
+}

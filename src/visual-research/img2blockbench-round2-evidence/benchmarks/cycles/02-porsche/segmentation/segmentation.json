@@ -1,0 +1,29 @@
+{
+  "algorithm": "explicit-foreground-contract-v1",
+  "analysis_size": [
+    256,
+    84
+  ],
+  "background_labels": [],
+  "bbox_pixels": [
+    448,
+    224,
+    1254,
+    517
+  ],
+  "foreground_fraction": 0.138765,
+  "input_mask_sha256": "da62644afadd2f56b50a91ae1bf532182fde02e2cdf4cba031789dbc644a1878",
+  "method": "external-mask+subject-bbox",
+  "requested_bbox_pixels": [
+    430,
+    210,
+    1270,
+    530
+  ],
+  "schema_version": 1,
+  "source_sha256": "3b161a5f5e5c4a1ab3aa1034ceb5e6f0f727e51f6f7d0135ed4bae0e67c3f1d1",
+  "source_size": [
+    1859,
+    609
+  ]
+}

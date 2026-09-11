@@ -1,0 +1,3202 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chassis",
+      "parent": "root",
+      "pivot": [
+        0,
+        4.8,
+        0
+      ]
+    },
+    {
+      "name": "body",
+      "parent": "chassis",
+      "pivot": [
+        0,
+        7,
+        0
+      ]
+    },
+    {
+      "name": "hood",
+      "parent": "body",
+      "pivot": [
+        0,
+        7.8,
+        10
+      ]
+    },
+    {
+      "name": "cabin",
+      "parent": "body",
+      "pivot": [
+        0,
+        9.5,
+        -1.5
+      ]
+    },
+    {
+      "name": "rear_body",
+      "parent": "body",
+      "pivot": [
+        0,
+        7.6,
+        -10
+      ]
+    },
+    {
+      "name": "spoiler",
+      "parent": "rear_body",
+      "pivot": [
+        0,
+        8.8,
+        -14
+      ]
+    },
+    {
+      "name": "front_left_wheel",
+      "parent": "chassis",
+      "pivot": [
+        -7.35,
+        4.25,
+        9
+      ]
+    },
+    {
+      "name": "front_right_wheel",
+      "parent": "chassis",
+      "pivot": [
+        7.35,
+        4.25,
+        9
+      ]
+    },
+    {
+      "name": "rear_left_wheel",
+      "parent": "chassis",
+      "pivot": [
+        -7.35,
+        4.25,
+        -9.2
+      ]
+    },
+    {
+      "name": "rear_right_wheel",
+      "parent": "chassis",
+      "pivot": [
+        7.35,
+        4.25,
+        -9.2
+      ]
+    },
+    {
+      "name": "front_details",
+      "parent": "hood",
+      "pivot": [
+        0,
+        6.8,
+        15.5
+      ]
+    },
+    {
+      "name": "rear_details",
+      "parent": "rear_body",
+      "pivot": [
+        0,
+        6.5,
+        -15
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 1.05,
+    "height": 1.25,
+    "width": 1.9
+  },
+  "cubes": [
+    {
+      "bone": "chassis",
+      "center": [
+        0,
+        2.7,
+        0
+      ],
+      "faces": {},
+      "material": "dark_trim",
+      "name": "undertray",
+      "origin": [
+        0,
+        2.7,
+        0
+      ],
+      "role": "complete flat undertray",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.8,
+        1.0,
+        30.5
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        0,
+        4.45,
+        0
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "lower_chassis",
+      "origin": [
+        0,
+        4.45,
+        0
+      ],
+      "role": "full length low chassis volume",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        14.4,
+        3.4,
+        29.0
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        6.45,
+        0.25
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "center_body",
+      "origin": [
+        0,
+        6.45,
+        0.25
+      ],
+      "role": "wide continuous 930 body waist",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        14.6,
+        4.35,
+        25.8
+      ]
+    },
+    {
+      "bone": "hood",
+      "center": [
+        0,
+        6.65,
+        14.15
+      ],
+      "faces": {},
+      "material": "silver_light",
+      "name": "front_nose",
+      "origin": [
+        0,
+        6.65,
+        14.15
+      ],
+      "role": "low rounded front nose",
+      "rotation": [
+        6,
+        0,
+        0
+      ],
+      "size": [
+        13.3,
+        3.05,
+        4.1
+      ]
+    },
+    {
+      "bone": "hood",
+      "center": [
+        0,
+        7.65,
+        10.45
+      ],
+      "faces": {},
+      "material": "silver_light",
+      "name": "hood_main",
+      "origin": [
+        0,
+        7.65,
+        10.45
+      ],
+      "role": "narrow low sloping hood between fenders",
+      "rotation": [
+        8,
+        0,
+        0
+      ],
+      "size": [
+        10.6,
+        2.45,
+        8.8
+      ]
+    },
+    {
+      "bone": "hood",
+      "center": [
+        -5.35,
+        7.35,
+        14.0
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "front_left_fender_front",
+      "origin": [
+        -5.35,
+        7.35,
+        14.0
+      ],
+      "role": "left rounded fender nose",
+      "rotation": [
+        8,
+        0,
+        -2
+      ],
+      "size": [
+        4.0,
+        3.25,
+        3.7
+      ]
+    },
+    {
+      "bone": "hood",
+      "center": [
+        5.35,
+        7.35,
+        14.0
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "front_right_fender_front",
+      "origin": [
+        5.35,
+        7.35,
+        14.0
+      ],
+      "role": "right rounded fender nose",
+      "rotation": [
+        8,
+        0,
+        2
+      ],
+      "size": [
+        4.0,
+        3.25,
+        3.7
+      ]
+    },
+    {
+      "bone": "hood",
+      "center": [
+        -5.55,
+        8.15,
+        10.45
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "front_left_fender_crown",
+      "origin": [
+        -5.55,
+        8.15,
+        10.45
+      ],
+      "role": "left raised fender crown over wheel",
+      "rotation": [
+        6,
+        0,
+        -2
+      ],
+      "size": [
+        3.8,
+        2.65,
+        5.5
+      ]
+    },
+    {
+      "bone": "hood",
+      "center": [
+        5.55,
+        8.15,
+        10.45
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "front_right_fender_crown",
+      "origin": [
+        5.55,
+        8.15,
+        10.45
+      ],
+      "role": "right raised fender crown over wheel",
+      "rotation": [
+        6,
+        0,
+        2
+      ],
+      "size": [
+        3.8,
+        2.65,
+        5.5
+      ]
+    },
+    {
+      "bone": "hood",
+      "center": [
+        -5.6,
+        7.3,
+        7.35
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "front_left_fender_rear",
+      "origin": [
+        -5.6,
+        7.3,
+        7.35
+      ],
+      "role": "left fender rear taper",
+      "rotation": [
+        2,
+        0,
+        -2
+      ],
+      "size": [
+        3.45,
+        3.0,
+        2.5
+      ]
+    },
+    {
+      "bone": "hood",
+      "center": [
+        5.6,
+        7.3,
+        7.35
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "front_right_fender_rear",
+      "origin": [
+        5.6,
+        7.3,
+        7.35
+      ],
+      "role": "right fender rear taper",
+      "rotation": [
+        2,
+        0,
+        2
+      ],
+      "size": [
+        3.45,
+        3.0,
+        2.5
+      ]
+    },
+    {
+      "bone": "rear_body",
+      "center": [
+        0,
+        7.65,
+        -11.0
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "rear_deck",
+      "origin": [
+        0,
+        7.65,
+        -11.0
+      ],
+      "role": "sloping rear engine deck",
+      "rotation": [
+        -5,
+        0,
+        0
+      ],
+      "size": [
+        13.6,
+        3.0,
+        8.7
+      ]
+    },
+    {
+      "bone": "rear_body",
+      "center": [
+        -5.7,
+        7.05,
+        -6.8
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "rear_left_haunch_front",
+      "origin": [
+        -5.7,
+        7.05,
+        -6.8
+      ],
+      "role": "left rear haunch front rise",
+      "rotation": [
+        -2,
+        0,
+        -2
+      ],
+      "size": [
+        3.8,
+        3.35,
+        3.2
+      ]
+    },
+    {
+      "bone": "rear_body",
+      "center": [
+        5.7,
+        7.05,
+        -6.8
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "rear_right_haunch_front",
+      "origin": [
+        5.7,
+        7.05,
+        -6.8
+      ],
+      "role": "right rear haunch front rise",
+      "rotation": [
+        -2,
+        0,
+        2
+      ],
+      "size": [
+        3.8,
+        3.35,
+        3.2
+      ]
+    },
+    {
+      "bone": "rear_body",
+      "center": [
+        -5.9,
+        7.95,
+        -9.45
+      ],
+      "faces": {
+        "west": {
+          "material": "side_livery"
+        }
+      },
+      "material": "silver",
+      "name": "rear_left_haunch_crown",
+      "origin": [
+        -5.9,
+        7.95,
+        -9.45
+      ],
+      "role": "left wide turbo fender crown",
+      "rotation": [
+        -4,
+        0,
+        -2
+      ],
+      "size": [
+        4.2,
+        3.0,
+        5.8
+      ]
+    },
+    {
+      "bone": "rear_body",
+      "center": [
+        5.9,
+        7.95,
+        -9.45
+      ],
+      "faces": {
+        "east": {
+          "flip_x": true,
+          "material": "side_livery"
+        }
+      },
+      "material": "silver",
+      "name": "rear_right_haunch_crown",
+      "origin": [
+        5.9,
+        7.95,
+        -9.45
+      ],
+      "role": "right wide turbo fender crown",
+      "rotation": [
+        -4,
+        0,
+        2
+      ],
+      "size": [
+        4.2,
+        3.0,
+        5.8
+      ]
+    },
+    {
+      "bone": "rear_body",
+      "center": [
+        -5.6,
+        7.05,
+        -13.3
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "rear_left_haunch_tail",
+      "origin": [
+        -5.6,
+        7.05,
+        -13.3
+      ],
+      "role": "left haunch rear taper",
+      "rotation": [
+        -6,
+        0,
+        -2
+      ],
+      "size": [
+        3.9,
+        3.35,
+        3.1
+      ]
+    },
+    {
+      "bone": "rear_body",
+      "center": [
+        5.6,
+        7.05,
+        -13.3
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "rear_right_haunch_tail",
+      "origin": [
+        5.6,
+        7.05,
+        -13.3
+      ],
+      "role": "right haunch rear taper",
+      "rotation": [
+        -6,
+        0,
+        2
+      ],
+      "size": [
+        3.9,
+        3.35,
+        3.1
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -6.2,
+        6.55,
+        -0.65
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "left_door_volume",
+      "origin": [
+        -6.2,
+        6.55,
+        -0.65
+      ],
+      "role": "deep clean left door and sill volume",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.15,
+        5.0,
+        10.9
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        6.2,
+        6.55,
+        -0.65
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "right_door_volume",
+      "origin": [
+        6.2,
+        6.55,
+        -0.65
+      ],
+      "role": "deep clean right door and sill volume",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.15,
+        5.0,
+        10.9
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -7.15,
+        3.85,
+        -0.75
+      ],
+      "faces": {},
+      "material": "dark_trim",
+      "name": "left_rocker",
+      "origin": [
+        -7.15,
+        3.85,
+        -0.75
+      ],
+      "role": "left black rocker trim",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.1,
+        1.05,
+        18.2
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        7.15,
+        3.85,
+        -0.75
+      ],
+      "faces": {},
+      "material": "dark_trim",
+      "name": "right_rocker",
+      "origin": [
+        7.15,
+        3.85,
+        -0.75
+      ],
+      "role": "right black rocker trim",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.1,
+        1.05,
+        18.2
+      ]
+    },
+    {
+      "bone": "front_details",
+      "center": [
+        0,
+        4.75,
+        16.0
+      ],
+      "faces": {},
+      "material": "chrome",
+      "name": "front_bumper",
+      "origin": [
+        0,
+        4.75,
+        16.0
+      ],
+      "role": "slim full width front bumper",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        14.5,
+        1.45,
+        1.15
+      ]
+    },
+    {
+      "bone": "front_details",
+      "center": [
+        0,
+        3.55,
+        16.3
+      ],
+      "faces": {},
+      "material": "dark_trim",
+      "name": "front_splitter",
+      "origin": [
+        0,
+        3.55,
+        16.3
+      ],
+      "role": "thin black front splitter",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        14.7,
+        0.55,
+        1.35
+      ]
+    },
+    {
+      "bone": "rear_details",
+      "center": [
+        0,
+        4.65,
+        -15.45
+      ],
+      "faces": {},
+      "material": "dark_trim",
+      "name": "rear_bumper",
+      "origin": [
+        0,
+        4.65,
+        -15.45
+      ],
+      "role": "slim full width rear impact bumper",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        14.8,
+        1.55,
+        1.2
+      ]
+    },
+    {
+      "bone": "rear_details",
+      "center": [
+        0,
+        3.65,
+        -15.1
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "rear_valance",
+      "origin": [
+        0,
+        3.65,
+        -15.1
+      ],
+      "role": "low rear valance",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        14.1,
+        1.35,
+        1.45
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        0,
+        8.85,
+        -1.4
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "cabin_floor",
+      "origin": [
+        0,
+        8.85,
+        -1.4
+      ],
+      "role": "closed low cabin shoulder volume",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        11.6,
+        1.35,
+        12.7
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        0,
+        11.15,
+        3.7
+      ],
+      "faces": {},
+      "material": "glass_glint",
+      "name": "windshield",
+      "origin": [
+        0,
+        11.15,
+        3.7
+      ],
+      "role": "strongly raked full width windshield",
+      "rotation": [
+        -42,
+        0,
+        0
+      ],
+      "size": [
+        10.45,
+        4.45,
+        0.75
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        0,
+        10.95,
+        -5.35
+      ],
+      "faces": {},
+      "material": "glass",
+      "name": "rear_glass",
+      "origin": [
+        0,
+        10.95,
+        -5.35
+      ],
+      "role": "long fastback rear glass",
+      "rotation": [
+        43,
+        0,
+        0
+      ],
+      "size": [
+        9.9,
+        4.65,
+        0.75
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        0,
+        13.15,
+        1.05
+      ],
+      "faces": {},
+      "material": "silver_light",
+      "name": "roof_front_step",
+      "origin": [
+        0,
+        13.15,
+        1.05
+      ],
+      "role": "sloped front roof shoulder",
+      "rotation": [
+        -10,
+        0,
+        0
+      ],
+      "size": [
+        9.7,
+        0.8,
+        2.35
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        0,
+        13.45,
+        -1.35
+      ],
+      "faces": {},
+      "material": "silver_light",
+      "name": "roof_crown",
+      "origin": [
+        0,
+        13.45,
+        -1.35
+      ],
+      "role": "low central roof crown",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        9.2,
+        0.9,
+        3.65
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        0,
+        13.1,
+        -3.9
+      ],
+      "faces": {},
+      "material": "silver_light",
+      "name": "roof_rear_step",
+      "origin": [
+        0,
+        13.1,
+        -3.9
+      ],
+      "role": "descending rear roof shoulder",
+      "rotation": [
+        12,
+        0,
+        0
+      ],
+      "size": [
+        9.35,
+        0.8,
+        2.55
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        -5.25,
+        11.25,
+        1.0
+      ],
+      "faces": {},
+      "material": "glass_glint",
+      "name": "left_front_window",
+      "origin": [
+        -5.25,
+        11.25,
+        1.0
+      ],
+      "role": "left door side window",
+      "rotation": [
+        -4,
+        0,
+        0
+      ],
+      "size": [
+        0.5,
+        3.15,
+        4.7
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        5.25,
+        11.25,
+        1.0
+      ],
+      "faces": {},
+      "material": "glass_glint",
+      "name": "right_front_window",
+      "origin": [
+        5.25,
+        11.25,
+        1.0
+      ],
+      "role": "right door side window",
+      "rotation": [
+        -4,
+        0,
+        0
+      ],
+      "size": [
+        0.5,
+        3.15,
+        4.7
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        -5.05,
+        11.1,
+        -3.25
+      ],
+      "faces": {},
+      "material": "glass",
+      "name": "left_rear_window",
+      "origin": [
+        -5.05,
+        11.1,
+        -3.25
+      ],
+      "role": "left tapering rear quarter window",
+      "rotation": [
+        16,
+        0,
+        0
+      ],
+      "size": [
+        0.55,
+        2.85,
+        3.55
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        5.05,
+        11.1,
+        -3.25
+      ],
+      "faces": {},
+      "material": "glass",
+      "name": "right_rear_window",
+      "origin": [
+        5.05,
+        11.1,
+        -3.25
+      ],
+      "role": "right tapering rear quarter window",
+      "rotation": [
+        16,
+        0,
+        0
+      ],
+      "size": [
+        0.55,
+        2.85,
+        3.55
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        -5.4,
+        11.2,
+        -1.2
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "left_b_pillar",
+      "origin": [
+        -5.4,
+        11.2,
+        -1.2
+      ],
+      "role": "left B pillar",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        3.45,
+        0.6
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        5.4,
+        11.2,
+        -1.2
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "right_b_pillar",
+      "origin": [
+        5.4,
+        11.2,
+        -1.2
+      ],
+      "role": "right B pillar",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        3.45,
+        0.6
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        -5.3,
+        11.2,
+        3.75
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "left_a_pillar",
+      "origin": [
+        -5.3,
+        11.2,
+        3.75
+      ],
+      "role": "left strongly swept A pillar",
+      "rotation": [
+        -42,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        4.45,
+        0.65
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        5.3,
+        11.2,
+        3.75
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "right_a_pillar",
+      "origin": [
+        5.3,
+        11.2,
+        3.75
+      ],
+      "role": "right strongly swept A pillar",
+      "rotation": [
+        -42,
+        0,
+        0
+      ],
+      "size": [
+        0.6,
+        4.45,
+        0.65
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        -5.1,
+        11.0,
+        -5.4
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "left_c_pillar",
+      "origin": [
+        -5.1,
+        11.0,
+        -5.4
+      ],
+      "role": "left fastback C pillar",
+      "rotation": [
+        43,
+        0,
+        0
+      ],
+      "size": [
+        0.65,
+        4.65,
+        0.65
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        5.1,
+        11.0,
+        -5.4
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "right_c_pillar",
+      "origin": [
+        5.1,
+        11.0,
+        -5.4
+      ],
+      "role": "right fastback C pillar",
+      "rotation": [
+        43,
+        0,
+        0
+      ],
+      "size": [
+        0.65,
+        4.65,
+        0.65
+      ]
+    },
+    {
+      "bone": "spoiler",
+      "center": [
+        -3.7,
+        8.85,
+        -13.7
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "spoiler_left_support",
+      "origin": [
+        -3.7,
+        8.85,
+        -13.7
+      ],
+      "role": "left compact whale-tail support",
+      "rotation": [
+        -7,
+        0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.45,
+        1.35
+      ]
+    },
+    {
+      "bone": "spoiler",
+      "center": [
+        3.7,
+        8.85,
+        -13.7
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "spoiler_right_support",
+      "origin": [
+        3.7,
+        8.85,
+        -13.7
+      ],
+      "role": "right compact whale-tail support",
+      "rotation": [
+        -7,
+        0,
+        0
+      ],
+      "size": [
+        0.9,
+        1.45,
+        1.35
+      ]
+    },
+    {
+      "bone": "spoiler",
+      "center": [
+        0,
+        9.65,
+        -14.65
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "whale_tail",
+      "origin": [
+        0,
+        9.65,
+        -14.65
+      ],
+      "role": "thin integrated whale-tail spoiler",
+      "rotation": [
+        -4,
+        0,
+        0
+      ],
+      "size": [
+        11.6,
+        0.62,
+        2.65
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        -6.0,
+        10.5,
+        2.75
+      ],
+      "faces": {},
+      "material": "dark_trim",
+      "name": "left_mirror_stem",
+      "origin": [
+        -6.0,
+        10.5,
+        2.75
+      ],
+      "role": "left mirror stem",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.45,
+        0.55,
+        0.55
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        6.0,
+        10.5,
+        2.75
+      ],
+      "faces": {},
+      "material": "dark_trim",
+      "name": "right_mirror_stem",
+      "origin": [
+        6.0,
+        10.5,
+        2.75
+      ],
+      "role": "right mirror stem",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.45,
+        0.55,
+        0.55
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        -7.0,
+        10.65,
+        2.85
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "left_mirror",
+      "origin": [
+        -7.0,
+        10.65,
+        2.85
+      ],
+      "role": "left compact mirror housing",
+      "rotation": [
+        0,
+        6,
+        -4
+      ],
+      "size": [
+        1.7,
+        1.1,
+        1.8
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        7.0,
+        10.65,
+        2.85
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "right_mirror",
+      "origin": [
+        7.0,
+        10.65,
+        2.85
+      ],
+      "role": "right compact mirror housing",
+      "rotation": [
+        0,
+        -6,
+        4
+      ],
+      "size": [
+        1.7,
+        1.1,
+        1.8
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -7.35,
+        7.75,
+        -1.35
+      ],
+      "faces": {},
+      "material": "dark_trim",
+      "name": "left_door_handle",
+      "origin": [
+        -7.35,
+        7.75,
+        -1.35
+      ],
+      "role": "left black door handle",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.4,
+        0.4,
+        1.65
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        7.35,
+        7.75,
+        -1.35
+      ],
+      "faces": {},
+      "material": "dark_trim",
+      "name": "right_door_handle",
+      "origin": [
+        7.35,
+        7.75,
+        -1.35
+      ],
+      "role": "right black door handle",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.4,
+        0.4,
+        1.65
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        0,
+        4.25,
+        9.0
+      ],
+      "faces": {},
+      "material": "hub_dark",
+      "name": "front_axle",
+      "origin": [
+        0,
+        4.25,
+        9.0
+      ],
+      "role": "front axle connecting both wheels",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        16.2,
+        1.2,
+        1.2
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        0,
+        4.25,
+        -9.2
+      ],
+      "faces": {},
+      "material": "hub_dark",
+      "name": "rear_axle",
+      "origin": [
+        0,
+        4.25,
+        -9.2
+      ],
+      "role": "rear axle connecting both wheels",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        16.2,
+        1.2,
+        1.2
+      ]
+    },
+    {
+      "bone": "front_left_wheel",
+      "center": [
+        -7.35,
+        4.25,
+        9.0
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "front_left_wheel_tire_vertical",
+      "origin": [
+        -7.35,
+        4.25,
+        9.0
+      ],
+      "role": "front left vertical tire lobe",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.55,
+        7.9,
+        4.75
+      ]
+    },
+    {
+      "bone": "front_left_wheel",
+      "center": [
+        -7.35,
+        4.25,
+        9.0
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "front_left_wheel_tire_diagonal",
+      "origin": [
+        -7.35,
+        4.25,
+        9.0
+      ],
+      "role": "front left diagonal tire lobe",
+      "rotation": [
+        45,
+        0,
+        0
+      ],
+      "size": [
+        3.6,
+        7.11,
+        4.5
+      ]
+    },
+    {
+      "bone": "front_left_wheel",
+      "center": [
+        -8.9,
+        4.25,
+        9.0
+      ],
+      "faces": {},
+      "material": "sidewall",
+      "name": "front_left_wheel_sidewall",
+      "origin": [
+        -8.9,
+        4.25,
+        9.0
+      ],
+      "role": "front left inset diagonal sidewall",
+      "rotation": [
+        45,
+        0,
+        0
+      ],
+      "size": [
+        0.68,
+        4.424,
+        3.3
+      ]
+    },
+    {
+      "bone": "front_left_wheel",
+      "center": [
+        -9.219999999999999,
+        4.25,
+        9.0
+      ],
+      "faces": {},
+      "material": "wheel_metal",
+      "name": "front_left_wheel_hub",
+      "origin": [
+        -9.219999999999999,
+        4.25,
+        9.0
+      ],
+      "role": "front left bronze wheel hub",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.62,
+        4.15,
+        4.15
+      ]
+    },
+    {
+      "bone": "front_left_wheel",
+      "center": [
+        -9.55,
+        4.25,
+        9.0
+      ],
+      "faces": {},
+      "material": "hub_dark",
+      "name": "front_left_wheel_spoke_vertical",
+      "origin": [
+        -9.55,
+        4.25,
+        9.0
+      ],
+      "role": "front left vertical wheel spoke",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.3,
+        3.55,
+        0.62
+      ]
+    },
+    {
+      "bone": "front_left_wheel",
+      "center": [
+        -9.57,
+        4.25,
+        9.0
+      ],
+      "faces": {},
+      "material": "hub_dark",
+      "name": "front_left_wheel_spoke_horizontal",
+      "origin": [
+        -9.57,
+        4.25,
+        9.0
+      ],
+      "role": "front left horizontal wheel spoke",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.3,
+        0.62,
+        3.55
+      ]
+    },
+    {
+      "bone": "front_left_wheel",
+      "center": [
+        -9.75,
+        4.25,
+        9.0
+      ],
+      "faces": {},
+      "material": "chrome",
+      "name": "front_left_wheel_center_cap",
+      "origin": [
+        -9.75,
+        4.25,
+        9.0
+      ],
+      "role": "front left wheel center cap",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.24,
+        1.05,
+        1.05
+      ]
+    },
+    {
+      "bone": "front_right_wheel",
+      "center": [
+        7.35,
+        4.25,
+        9.0
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "front_right_wheel_tire_vertical",
+      "origin": [
+        7.35,
+        4.25,
+        9.0
+      ],
+      "role": "front right vertical tire lobe",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.55,
+        7.9,
+        4.75
+      ]
+    },
+    {
+      "bone": "front_right_wheel",
+      "center": [
+        7.35,
+        4.25,
+        9.0
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "front_right_wheel_tire_diagonal",
+      "origin": [
+        7.35,
+        4.25,
+        9.0
+      ],
+      "role": "front right diagonal tire lobe",
+      "rotation": [
+        45,
+        0,
+        0
+      ],
+      "size": [
+        3.6,
+        7.11,
+        4.5
+      ]
+    },
+    {
+      "bone": "front_right_wheel",
+      "center": [
+        8.9,
+        4.25,
+        9.0
+      ],
+      "faces": {},
+      "material": "sidewall",
+      "name": "front_right_wheel_sidewall",
+      "origin": [
+        8.9,
+        4.25,
+        9.0
+      ],
+      "role": "front right inset diagonal sidewall",
+      "rotation": [
+        45,
+        0,
+        0
+      ],
+      "size": [
+        0.68,
+        4.424,
+        3.3
+      ]
+    },
+    {
+      "bone": "front_right_wheel",
+      "center": [
+        9.219999999999999,
+        4.25,
+        9.0
+      ],
+      "faces": {},
+      "material": "wheel_metal",
+      "name": "front_right_wheel_hub",
+      "origin": [
+        9.219999999999999,
+        4.25,
+        9.0
+      ],
+      "role": "front right bronze wheel hub",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.62,
+        4.15,
+        4.15
+      ]
+    },
+    {
+      "bone": "front_right_wheel",
+      "center": [
+        9.55,
+        4.25,
+        9.0
+      ],
+      "faces": {},
+      "material": "hub_dark",
+      "name": "front_right_wheel_spoke_vertical",
+      "origin": [
+        9.55,
+        4.25,
+        9.0
+      ],
+      "role": "front right vertical wheel spoke",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.3,
+        3.55,
+        0.62
+      ]
+    },
+    {
+      "bone": "front_right_wheel",
+      "center": [
+        9.57,
+        4.25,
+        9.0
+      ],
+      "faces": {},
+      "material": "hub_dark",
+      "name": "front_right_wheel_spoke_horizontal",
+      "origin": [
+        9.57,
+        4.25,
+        9.0
+      ],
+      "role": "front right horizontal wheel spoke",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.3,
+        0.62,
+        3.55
+      ]
+    },
+    {
+      "bone": "front_right_wheel",
+      "center": [
+        9.75,
+        4.25,
+        9.0
+      ],
+      "faces": {},
+      "material": "chrome",
+      "name": "front_right_wheel_center_cap",
+      "origin": [
+        9.75,
+        4.25,
+        9.0
+      ],
+      "role": "front right wheel center cap",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.24,
+        1.05,
+        1.05
+      ]
+    },
+    {
+      "bone": "rear_left_wheel",
+      "center": [
+        -7.35,
+        4.25,
+        -9.2
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "rear_left_wheel_tire_vertical",
+      "origin": [
+        -7.35,
+        4.25,
+        -9.2
+      ],
+      "role": "rear left vertical tire lobe",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.55,
+        7.9,
+        4.75
+      ]
+    },
+    {
+      "bone": "rear_left_wheel",
+      "center": [
+        -7.35,
+        4.25,
+        -9.2
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "rear_left_wheel_tire_diagonal",
+      "origin": [
+        -7.35,
+        4.25,
+        -9.2
+      ],
+      "role": "rear left diagonal tire lobe",
+      "rotation": [
+        45,
+        0,
+        0
+      ],
+      "size": [
+        3.6,
+        7.11,
+        4.5
+      ]
+    },
+    {
+      "bone": "rear_left_wheel",
+      "center": [
+        -8.9,
+        4.25,
+        -9.2
+      ],
+      "faces": {},
+      "material": "sidewall",
+      "name": "rear_left_wheel_sidewall",
+      "origin": [
+        -8.9,
+        4.25,
+        -9.2
+      ],
+      "role": "rear left inset diagonal sidewall",
+      "rotation": [
+        45,
+        0,
+        0
+      ],
+      "size": [
+        0.68,
+        4.424,
+        3.3
+      ]
+    },
+    {
+      "bone": "rear_left_wheel",
+      "center": [
+        -9.219999999999999,
+        4.25,
+        -9.2
+      ],
+      "faces": {},
+      "material": "wheel_metal",
+      "name": "rear_left_wheel_hub",
+      "origin": [
+        -9.219999999999999,
+        4.25,
+        -9.2
+      ],
+      "role": "rear left bronze wheel hub",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.62,
+        4.15,
+        4.15
+      ]
+    },
+    {
+      "bone": "rear_left_wheel",
+      "center": [
+        -9.55,
+        4.25,
+        -9.2
+      ],
+      "faces": {},
+      "material": "hub_dark",
+      "name": "rear_left_wheel_spoke_vertical",
+      "origin": [
+        -9.55,
+        4.25,
+        -9.2
+      ],
+      "role": "rear left vertical wheel spoke",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.3,
+        3.55,
+        0.62
+      ]
+    },
+    {
+      "bone": "rear_left_wheel",
+      "center": [
+        -9.57,
+        4.25,
+        -9.2
+      ],
+      "faces": {},
+      "material": "hub_dark",
+      "name": "rear_left_wheel_spoke_horizontal",
+      "origin": [
+        -9.57,
+        4.25,
+        -9.2
+      ],
+      "role": "rear left horizontal wheel spoke",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.3,
+        0.62,
+        3.55
+      ]
+    },
+    {
+      "bone": "rear_left_wheel",
+      "center": [
+        -9.75,
+        4.25,
+        -9.2
+      ],
+      "faces": {},
+      "material": "chrome",
+      "name": "rear_left_wheel_center_cap",
+      "origin": [
+        -9.75,
+        4.25,
+        -9.2
+      ],
+      "role": "rear left wheel center cap",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.24,
+        1.05,
+        1.05
+      ]
+    },
+    {
+      "bone": "rear_right_wheel",
+      "center": [
+        7.35,
+        4.25,
+        -9.2
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "rear_right_wheel_tire_vertical",
+      "origin": [
+        7.35,
+        4.25,
+        -9.2
+      ],
+      "role": "rear right vertical tire lobe",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.55,
+        7.9,
+        4.75
+      ]
+    },
+    {
+      "bone": "rear_right_wheel",
+      "center": [
+        7.35,
+        4.25,
+        -9.2
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "rear_right_wheel_tire_diagonal",
+      "origin": [
+        7.35,
+        4.25,
+        -9.2
+      ],
+      "role": "rear right diagonal tire lobe",
+      "rotation": [
+        45,
+        0,
+        0
+      ],
+      "size": [
+        3.6,
+        7.11,
+        4.5
+      ]
+    },
+    {
+      "bone": "rear_right_wheel",
+      "center": [
+        8.9,
+        4.25,
+        -9.2
+      ],
+      "faces": {},
+      "material": "sidewall",
+      "name": "rear_right_wheel_sidewall",
+      "origin": [
+        8.9,
+        4.25,
+        -9.2
+      ],
+      "role": "rear right inset diagonal sidewall",
+      "rotation": [
+        45,
+        0,
+        0
+      ],
+      "size": [
+        0.68,
+        4.424,
+        3.3
+      ]
+    },
+    {
+      "bone": "rear_right_wheel",
+      "center": [
+        9.219999999999999,
+        4.25,
+        -9.2
+      ],
+      "faces": {},
+      "material": "wheel_metal",
+      "name": "rear_right_wheel_hub",
+      "origin": [
+        9.219999999999999,
+        4.25,
+        -9.2
+      ],
+      "role": "rear right bronze wheel hub",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.62,
+        4.15,
+        4.15
+      ]
+    },
+    {
+      "bone": "rear_right_wheel",
+      "center": [
+        9.55,
+        4.25,
+        -9.2
+      ],
+      "faces": {},
+      "material": "hub_dark",
+      "name": "rear_right_wheel_spoke_vertical",
+      "origin": [
+        9.55,
+        4.25,
+        -9.2
+      ],
+      "role": "rear right vertical wheel spoke",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.3,
+        3.55,
+        0.62
+      ]
+    },
+    {
+      "bone": "rear_right_wheel",
+      "center": [
+        9.57,
+        4.25,
+        -9.2
+      ],
+      "faces": {},
+      "material": "hub_dark",
+      "name": "rear_right_wheel_spoke_horizontal",
+      "origin": [
+        9.57,
+        4.25,
+        -9.2
+      ],
+      "role": "rear right horizontal wheel spoke",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.3,
+        0.62,
+        3.55
+      ]
+    },
+    {
+      "bone": "rear_right_wheel",
+      "center": [
+        9.75,
+        4.25,
+        -9.2
+      ],
+      "faces": {},
+      "material": "chrome",
+      "name": "rear_right_wheel_center_cap",
+      "origin": [
+        9.75,
+        4.25,
+        -9.2
+      ],
+      "role": "rear right wheel center cap",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.24,
+        1.05,
+        1.05
+      ]
+    },
+    {
+      "bone": "front_details",
+      "center": [
+        -4.65,
+        8.25,
+        16.02
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "left_headlamp_vertical",
+      "origin": [
+        -4.65,
+        8.25,
+        16.02
+      ],
+      "role": "left recessed headlamp bezel",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.8,
+        2.8,
+        0.48
+      ]
+    },
+    {
+      "bone": "front_details",
+      "center": [
+        -4.65,
+        8.25,
+        16.3
+      ],
+      "faces": {},
+      "material": "headlamp",
+      "name": "left_headlamp_horizontal",
+      "origin": [
+        -4.65,
+        8.25,
+        16.3
+      ],
+      "role": "left round alpha-masked headlamp lens",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.55,
+        2.55,
+        0.26
+      ]
+    },
+    {
+      "bone": "front_details",
+      "center": [
+        -4.9,
+        8.55,
+        16.48
+      ],
+      "faces": {},
+      "material": "lamp_glint",
+      "name": "left_headlamp_glint",
+      "origin": [
+        -4.9,
+        8.55,
+        16.48
+      ],
+      "role": "left headlamp glint",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.42,
+        0.42,
+        0.18
+      ]
+    },
+    {
+      "bone": "front_details",
+      "center": [
+        -4.65,
+        5.45,
+        16.65
+      ],
+      "faces": {},
+      "material": "amber",
+      "name": "left_turn_signal",
+      "origin": [
+        -4.65,
+        5.45,
+        16.65
+      ],
+      "role": "left amber bumper indicator",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.25,
+        0.72,
+        0.35
+      ]
+    },
+    {
+      "bone": "front_details",
+      "center": [
+        4.65,
+        8.25,
+        16.02
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "right_headlamp_vertical",
+      "origin": [
+        4.65,
+        8.25,
+        16.02
+      ],
+      "role": "right recessed headlamp bezel",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.8,
+        2.8,
+        0.48
+      ]
+    },
+    {
+      "bone": "front_details",
+      "center": [
+        4.65,
+        8.25,
+        16.3
+      ],
+      "faces": {},
+      "material": "headlamp",
+      "name": "right_headlamp_horizontal",
+      "origin": [
+        4.65,
+        8.25,
+        16.3
+      ],
+      "role": "right round alpha-masked headlamp lens",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.55,
+        2.55,
+        0.26
+      ]
+    },
+    {
+      "bone": "front_details",
+      "center": [
+        4.4,
+        8.55,
+        16.48
+      ],
+      "faces": {},
+      "material": "lamp_glint",
+      "name": "right_headlamp_glint",
+      "origin": [
+        4.4,
+        8.55,
+        16.48
+      ],
+      "role": "right headlamp glint",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.42,
+        0.42,
+        0.18
+      ]
+    },
+    {
+      "bone": "front_details",
+      "center": [
+        4.65,
+        5.45,
+        16.65
+      ],
+      "faces": {},
+      "material": "amber",
+      "name": "right_turn_signal",
+      "origin": [
+        4.65,
+        5.45,
+        16.65
+      ],
+      "role": "right amber bumper indicator",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.25,
+        0.72,
+        0.35
+      ]
+    },
+    {
+      "bone": "front_details",
+      "center": [
+        0,
+        5.3,
+        16.65
+      ],
+      "faces": {},
+      "material": "dark_trim",
+      "name": "front_grille",
+      "origin": [
+        0,
+        5.3,
+        16.65
+      ],
+      "role": "center front cooling grille",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.8,
+        0.72,
+        0.35
+      ]
+    },
+    {
+      "bone": "front_details",
+      "center": [
+        0,
+        4.4,
+        16.92
+      ],
+      "faces": {},
+      "material": "plate",
+      "name": "front_plate",
+      "origin": [
+        0,
+        4.4,
+        16.92
+      ],
+      "role": "front license plate",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.8,
+        1.05,
+        0.3
+      ]
+    },
+    {
+      "bone": "rear_details",
+      "center": [
+        -3.85,
+        6.65,
+        -16.0
+      ],
+      "faces": {},
+      "material": "tail_lamp",
+      "name": "rear_light_left",
+      "origin": [
+        -3.85,
+        6.65,
+        -16.0
+      ],
+      "role": "left rear tail lamp",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.4,
+        1.05,
+        0.42
+      ]
+    },
+    {
+      "bone": "rear_details",
+      "center": [
+        3.85,
+        6.65,
+        -16.0
+      ],
+      "faces": {},
+      "material": "tail_lamp",
+      "name": "rear_light_right",
+      "origin": [
+        3.85,
+        6.65,
+        -16.0
+      ],
+      "role": "right rear tail lamp",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.4,
+        1.05,
+        0.42
+      ]
+    },
+    {
+      "bone": "rear_details",
+      "center": [
+        0,
+        6.65,
+        -16.04
+      ],
+      "faces": {},
+      "material": "red",
+      "name": "rear_center_reflector",
+      "origin": [
+        0,
+        6.65,
+        -16.04
+      ],
+      "role": "center red rear reflector",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.0,
+        1.05,
+        0.45
+      ]
+    },
+    {
+      "bone": "rear_details",
+      "center": [
+        0,
+        5.15,
+        -16.02
+      ],
+      "faces": {},
+      "material": "plate",
+      "name": "rear_plate",
+      "origin": [
+        0,
+        5.15,
+        -16.02
+      ],
+      "role": "rear license plate",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.8,
+        1.05,
+        0.32
+      ]
+    },
+    {
+      "bone": "rear_details",
+      "center": [
+        -4.8,
+        2.9,
+        -15.9
+      ],
+      "faces": {},
+      "material": "dark_trim",
+      "name": "left_exhaust",
+      "origin": [
+        -4.8,
+        2.9,
+        -15.9
+      ],
+      "role": "left black exhaust tip",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.8,
+        0.85,
+        1.2
+      ]
+    },
+    {
+      "bone": "rear_details",
+      "center": [
+        4.8,
+        2.9,
+        -15.9
+      ],
+      "faces": {},
+      "material": "dark_trim",
+      "name": "right_exhaust",
+      "origin": [
+        4.8,
+        2.9,
+        -15.9
+      ],
+      "role": "right black exhaust tip",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.8,
+        0.85,
+        1.2
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "complete-hard-surface-semantic-cuboids-v2",
+    "anatomical_axis": "+Z nose, X width, Y up",
+    "authored_texture_sources": [
+      "side_livery"
+    ],
+    "declared_attachments": [
+      {
+        "first": "front_axle",
+        "joint": [
+          -6.8,
+          4.25,
+          9.0
+        ],
+        "second": "front_left_wheel_tire_vertical"
+      },
+      {
+        "first": "front_left_wheel_tire_vertical",
+        "joint": [
+          -8.799999999999999,
+          4.25,
+          9.0
+        ],
+        "second": "front_left_wheel_sidewall"
+      },
+      {
+        "first": "front_left_wheel_sidewall",
+        "joint": [
+          -9.12,
+          4.25,
+          9.0
+        ],
+        "second": "front_left_wheel_hub"
+      },
+      {
+        "first": "front_axle",
+        "joint": [
+          6.8,
+          4.25,
+          9.0
+        ],
+        "second": "front_right_wheel_tire_vertical"
+      },
+      {
+        "first": "front_right_wheel_tire_vertical",
+        "joint": [
+          8.799999999999999,
+          4.25,
+          9.0
+        ],
+        "second": "front_right_wheel_sidewall"
+      },
+      {
+        "first": "front_right_wheel_sidewall",
+        "joint": [
+          9.12,
+          4.25,
+          9.0
+        ],
+        "second": "front_right_wheel_hub"
+      },
+      {
+        "first": "rear_axle",
+        "joint": [
+          -6.8,
+          4.25,
+          -9.2
+        ],
+        "second": "rear_left_wheel_tire_vertical"
+      },
+      {
+        "first": "rear_left_wheel_tire_vertical",
+        "joint": [
+          -8.799999999999999,
+          4.25,
+          -9.2
+        ],
+        "second": "rear_left_wheel_sidewall"
+      },
+      {
+        "first": "rear_left_wheel_sidewall",
+        "joint": [
+          -9.12,
+          4.25,
+          -9.2
+        ],
+        "second": "rear_left_wheel_hub"
+      },
+      {
+        "first": "rear_axle",
+        "joint": [
+          6.8,
+          4.25,
+          -9.2
+        ],
+        "second": "rear_right_wheel_tire_vertical"
+      },
+      {
+        "first": "rear_right_wheel_tire_vertical",
+        "joint": [
+          8.799999999999999,
+          4.25,
+          -9.2
+        ],
+        "second": "rear_right_wheel_sidewall"
+      },
+      {
+        "first": "rear_right_wheel_sidewall",
+        "joint": [
+          9.12,
+          4.25,
+          -9.2
+        ],
+        "second": "rear_right_wheel_hub"
+      },
+      {
+        "first": "rear_deck",
+        "joint": [
+          -3.7,
+          8.3,
+          -13.7
+        ],
+        "second": "spoiler_left_support"
+      },
+      {
+        "first": "rear_deck",
+        "joint": [
+          3.7,
+          8.3,
+          -13.7
+        ],
+        "second": "spoiler_right_support"
+      },
+      {
+        "first": "spoiler_left_support",
+        "joint": [
+          -3.7,
+          9.4,
+          -14.2
+        ],
+        "second": "whale_tail"
+      },
+      {
+        "first": "spoiler_right_support",
+        "joint": [
+          3.7,
+          9.4,
+          -14.2
+        ],
+        "second": "whale_tail"
+      }
+    ],
+    "feature_inventory": {
+      "body_volumes": 18,
+      "fender_haunch_volumes": 12,
+      "greenhouse_glass": 6,
+      "headlamp_cuboids": 6,
+      "mirrors": 2,
+      "spoiler_cuboids": 3,
+      "tail_lamps": 2,
+      "wheel_assemblies": 4,
+      "wheel_cuboids": 28
+    },
+    "lane": "agent-authored-semantic-volume",
+    "single_view_hidden_geometry": "Opposite side mirrors observed side geometry; front, rear, roof, underbody, and exact wheel depth are conservative Porsche 930 priors.",
+    "source_mesh": null,
+    "source_skin_cuboids": 0
+  },
+  "geometry": {
+    "precision": 32
+  },
+  "id": "porsche_911_turbo_930",
+  "landmarks": [
+    {
+      "center_color": "#e0be55",
+      "center_uv": [
+        0.5,
+        0.77
+      ],
+      "color": "#9f7727",
+      "cube": "hood_main",
+      "face": "up",
+      "name": "hood_badge",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#252628",
+      "center_uv": [
+        0.36,
+        0.12
+      ],
+      "color": "#e5e1d7",
+      "cube": "windshield",
+      "face": "south",
+      "name": "roof_banner_left",
+      "size": [
+        3,
+        1
+      ]
+    },
+    {
+      "center_color": "#252628",
+      "center_uv": [
+        0.64,
+        0.12
+      ],
+      "color": "#e5e1d7",
+      "cube": "windshield",
+      "face": "south",
+      "name": "roof_banner_right",
+      "size": [
+        3,
+        1
+      ]
+    }
+  ],
+  "materials": {
+    "amber": {
+      "base": "#c67d21",
+      "highlight": "#f4bd48",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#633b0f"
+    },
+    "chrome": {
+      "base": "#a9aaa4",
+      "highlight": "#eef0e9",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#555956"
+    },
+    "dark_trim": {
+      "base": "#242628",
+      "highlight": "#4c5051",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#101112"
+    },
+    "glass": {
+      "base": "#23343a",
+      "highlight": "#64777a",
+      "pattern": "gradient",
+      "pattern_scale": 3,
+      "shade": "#0d171c"
+    },
+    "glass_glint": {
+      "base": "#496069",
+      "highlight": "#9aa9a7",
+      "pattern": "gradient",
+      "pattern_scale": 3,
+      "shade": "#1a2a30"
+    },
+    "headlamp": {
+      "base": "#cdb56b",
+      "highlight": "#fff4b0",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#75632f",
+      "source_texture": {
+        "center": [
+          0,
+          0
+        ],
+        "data_uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAfElEQVR42mNkQAKlyfr/GbCA7rkXGWFsFmTFCVHWDDjAf5gmRmTFMvKyDHwSmnBVn15cZ3jy8DEDAwMDw4JlRxm6515kZCFgMhxA1fxnQZf49OI6Xo0oGmDW4wNMDCQCOmjonnuRccGyowQVwoKVCRaT+DTBFMMjjpSkAQA/wTVuyRSapwAAAABJRU5ErkJggg==",
+        "flip_y": true,
+        "offset": [
+          0,
+          0
+        ],
+        "repeat": [
+          1,
+          1
+        ],
+        "rotation": 0,
+        "wrap": [
+          1001,
+          1001
+        ]
+      }
+    },
+    "hub_dark": {
+      "base": "#383832",
+      "highlight": "#69675d",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#151614"
+    },
+    "lamp_glint": {
+      "base": "#eed47c",
+      "highlight": "#fffbd0",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#9b742b"
+    },
+    "plate": {
+      "base": "#d3d8cf",
+      "highlight": "#f7f6eb",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#5b6f74"
+    },
+    "red": {
+      "base": "#ae2f2b",
+      "highlight": "#e3584e",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#5a1717"
+    },
+    "rubber": {
+      "base": "#393a37",
+      "highlight": "#5e5f59",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#151615"
+    },
+    "side_livery": {
+      "base": "#92918d",
+      "highlight": "#d5d2c9",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#5d6060",
+      "source_texture": {
+        "center": [
+          0,
+          0
+        ],
+        "data_uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAQCAYAAAB3AH1ZAAAAZElEQVR42mPs7+38z4AHxEYHY4hd9AhkoAa4FBvDwMQwwIBpIH1P0AEDHgK09v3gDgFs8T+gUUCL4B86iZBWvsfpAHrF/9CIAloG/6AIAUZVNfX/xCicwcVGlIEZ337RxgG0AgCaCB6OINjqnQAAAABJRU5ErkJggg==",
+        "flip_y": true,
+        "offset": [
+          0,
+          0
+        ],
+        "repeat": [
+          1,
+          1
+        ],
+        "rotation": 0,
+        "wrap": [
+          1001,
+          1001
+        ]
+      }
+    },
+    "sidewall": {
+      "base": "#44443f",
+      "highlight": "#69685f",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#1b1c1a"
+    },
+    "silver": {
+      "base": "#969692",
+      "highlight": "#d0cec6",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#5f6260"
+    },
+    "silver_dark": {
+      "base": "#686a67",
+      "highlight": "#999b96",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#414442"
+    },
+    "silver_light": {
+      "base": "#aaa8a1",
+      "highlight": "#dedbd2",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#747572"
+    },
+    "tail_lamp": {
+      "base": "#a32627",
+      "highlight": "#ed594d",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#4a1013"
+    },
+    "wheel_metal": {
+      "base": "#716952",
+      "highlight": "#aaa087",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#3b372c"
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "low sloping hood and paired round headlamps",
+      "arched compact greenhouse with sloped windshield and rear glass",
+      "four complete deep wheels under flared fenders",
+      "wide rear turbo haunches and raised whale-tail spoiler",
+      "red-white diagonal side racing livery"
+    ],
+    "required_views": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "isometric",
+      "reference-angle",
+      "wheel-closeup",
+      "greenhouse-closeup"
+    ],
+    "review_targets": [
+      "complete 3D volume",
+      "930 silhouette",
+      "four wheel grounding",
+      "circular lamps",
+      "greenhouse",
+      "spoiler",
+      "side livery"
+    ],
+    "target_cuboids": [
+      80,
+      110
+    ]
+  },
+  "reference": {
+    "height": 609,
+    "image": "porsche_911_turbo_930.reference.png",
+    "sha256": "3b161a5f5e5c4a1ab3aa1034ceb5e6f0f727e51f6f7d0135ed4bae0e67c3f1d1",
+    "width": 1859
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "Complete silver Porsche 911 Turbo 930 with red-white racing livery",
+    "symmetry": "bilateral",
+    "type": "vehicle",
+    "uncertainties": [
+      "The single three-quarter image hides the exact opposite-side decals",
+      "Underside and engine-bay details are conservatively inferred"
+    ]
+  },
+  "texture": {
+    "atlas_size": 512,
+    "density": 2,
+    "gutter": 1,
+    "palette_size": 32,
+    "quantize_source": false
+  }
+}

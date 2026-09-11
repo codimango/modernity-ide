@@ -1,0 +1,491 @@
+{
+  "attachment_graph": {
+    "all_cuboids_covered": true,
+    "covered_cuboids": 30,
+    "declared_links": 31
+  },
+  "attachments": {
+    "all_connected": true,
+    "attachments": [
+      {
+        "connected": true,
+        "first": "blade_ricasso",
+        "first_margin": 0.2875,
+        "joint": [
+          0,
+          23.4,
+          0
+        ],
+        "minimum_margin": 0.2125,
+        "second": "blade_rune_field",
+        "second_margin": 0.2125
+      },
+      {
+        "connected": true,
+        "first": "blade_rune_field",
+        "first_margin": 0.1875,
+        "joint": [
+          0,
+          35,
+          0
+        ],
+        "minimum_margin": 0.09375,
+        "second": "blade_middle",
+        "second_margin": 0.09375
+      },
+      {
+        "connected": true,
+        "first": "blade_middle",
+        "first_margin": 0.0875,
+        "joint": [
+          0,
+          45.6,
+          0
+        ],
+        "minimum_margin": 0.0875,
+        "second": "blade_upper",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "blade_upper",
+        "first_margin": 0.3125,
+        "joint": [
+          0,
+          53,
+          0
+        ],
+        "minimum_margin": 0.15625,
+        "second": "blade_tip_spine",
+        "second_margin": 0.15625
+      },
+      {
+        "connected": true,
+        "first": "blade_upper",
+        "first_margin": 0.25125,
+        "joint": [
+          -1.28,
+          52.95,
+          0
+        ],
+        "minimum_margin": 0.23125,
+        "second": "blade_tip_left_edge",
+        "second_margin": 0.23125
+      },
+      {
+        "connected": true,
+        "first": "blade_tip_left_edge",
+        "first_margin": 0.236821,
+        "joint": [
+          -0.34,
+          58.75,
+          0
+        ],
+        "minimum_margin": 0.19125,
+        "second": "blade_tip_spine",
+        "second_margin": 0.19125
+      },
+      {
+        "connected": true,
+        "first": "blade_upper",
+        "first_margin": 0.25125,
+        "joint": [
+          1.28,
+          52.95,
+          0
+        ],
+        "minimum_margin": 0.23125,
+        "second": "blade_tip_right_edge",
+        "second_margin": 0.23125
+      },
+      {
+        "connected": true,
+        "first": "blade_tip_right_edge",
+        "first_margin": 0.236821,
+        "joint": [
+          0.34,
+          58.75,
+          0
+        ],
+        "minimum_margin": 0.19125,
+        "second": "blade_tip_spine",
+        "second_margin": 0.19125
+      },
+      {
+        "connected": true,
+        "first": "blade_ricasso",
+        "first_margin": 0.01375,
+        "joint": [
+          0,
+          19.35,
+          0.83
+        ],
+        "minimum_margin": 0.01375,
+        "second": "raised_front_crest",
+        "second_margin": 0.0175
+      },
+      {
+        "connected": true,
+        "first": "blade_ricasso",
+        "first_margin": 0.01375,
+        "joint": [
+          0,
+          19.35,
+          -0.83
+        ],
+        "minimum_margin": 0.01375,
+        "second": "raised_back_crest",
+        "second_margin": 0.0175
+      },
+      {
+        "connected": true,
+        "first": "raised_front_crest",
+        "first_margin": 0.01,
+        "joint": [
+          0,
+          20,
+          0.99
+        ],
+        "minimum_margin": 0.01,
+        "second": "front_crest_gem",
+        "second_margin": 0.02125
+      },
+      {
+        "connected": true,
+        "first": "guard_hub",
+        "first_margin": 0.02625,
+        "joint": [
+          0,
+          14.55,
+          1.38
+        ],
+        "minimum_margin": 0.005,
+        "second": "guard_hub_gem",
+        "second_margin": 0.005
+      },
+      {
+        "connected": true,
+        "first": "guard_hub",
+        "first_margin": 0.827947,
+        "joint": [
+          -1.45,
+          14.7,
+          0
+        ],
+        "minimum_margin": 0.325,
+        "second": "left_quillon_1",
+        "second_margin": 0.325
+      },
+      {
+        "connected": true,
+        "first": "guard_hub",
+        "first_margin": 0.825508,
+        "joint": [
+          1.4,
+          14.75,
+          0
+        ],
+        "minimum_margin": 0.34375,
+        "second": "right_quillon_1",
+        "second_margin": 0.34375
+      },
+      {
+        "connected": true,
+        "first": "left_quillon_1",
+        "first_margin": 0.343363,
+        "joint": [
+          -3.85,
+          15.05,
+          0
+        ],
+        "minimum_margin": 0.33125,
+        "second": "left_quillon_2",
+        "second_margin": 0.33125
+      },
+      {
+        "connected": true,
+        "first": "left_quillon_2",
+        "first_margin": 0.335327,
+        "joint": [
+          -5.75,
+          16.35,
+          0
+        ],
+        "minimum_margin": 0.335327,
+        "second": "left_quillon_3",
+        "second_margin": 0.35
+      },
+      {
+        "connected": true,
+        "first": "right_quillon_1",
+        "first_margin": 0.330062,
+        "joint": [
+          3.75,
+          15.55,
+          0
+        ],
+        "minimum_margin": 0.330062,
+        "second": "right_quillon_2",
+        "second_margin": 0.33125
+      },
+      {
+        "connected": true,
+        "first": "right_quillon_2",
+        "first_margin": 0.33275,
+        "joint": [
+          5.55,
+          17.45,
+          0
+        ],
+        "minimum_margin": 0.325,
+        "second": "right_quillon_3",
+        "second_margin": 0.325
+      },
+      {
+        "connected": true,
+        "first": "left_quillon_1",
+        "first_margin": 0.06125,
+        "joint": [
+          -1.45,
+          14.7,
+          1.22
+        ],
+        "minimum_margin": 0.06125,
+        "second": "left_quillon_inlay_1",
+        "second_margin": 0.095
+      },
+      {
+        "connected": true,
+        "first": "right_quillon_1",
+        "first_margin": 0.03,
+        "joint": [
+          1.4,
+          14.75,
+          1.22
+        ],
+        "minimum_margin": 0.03,
+        "second": "right_quillon_inlay_1",
+        "second_margin": 0.095
+      },
+      {
+        "connected": true,
+        "first": "left_quillon_inlay_1",
+        "first_margin": 0.095,
+        "joint": [
+          -3.85,
+          15.05,
+          1.22
+        ],
+        "minimum_margin": 0.095,
+        "second": "left_quillon_inlay_2",
+        "second_margin": 0.095
+      },
+      {
+        "connected": true,
+        "first": "left_quillon_inlay_2",
+        "first_margin": 0.095,
+        "joint": [
+          -5.75,
+          16.35,
+          1.22
+        ],
+        "minimum_margin": 0.0925,
+        "second": "left_quillon_inlay_3",
+        "second_margin": 0.0925
+      },
+      {
+        "connected": true,
+        "first": "right_quillon_inlay_1",
+        "first_margin": 0.095,
+        "joint": [
+          3.75,
+          15.55,
+          1.22
+        ],
+        "minimum_margin": 0.095,
+        "second": "right_quillon_inlay_2",
+        "second_margin": 0.095
+      },
+      {
+        "connected": true,
+        "first": "right_quillon_inlay_2",
+        "first_margin": 0.095,
+        "joint": [
+          5.55,
+          17.45,
+          1.14
+        ],
+        "minimum_margin": 0.095,
+        "second": "right_quillon_inlay_3",
+        "second_margin": 0.10875
+      },
+      {
+        "connected": true,
+        "first": "blade_ricasso",
+        "first_margin": 0.6875,
+        "joint": [
+          0,
+          15,
+          0
+        ],
+        "minimum_margin": 0.6875,
+        "second": "guard_hub",
+        "second_margin": 0.720333
+      },
+      {
+        "connected": true,
+        "first": "guard_hub",
+        "first_margin": 0.333808,
+        "joint": [
+          0,
+          13.3,
+          0
+        ],
+        "minimum_margin": 0.29375,
+        "second": "grip_top_collar",
+        "second_margin": 0.29375
+      },
+      {
+        "connected": true,
+        "first": "grip_top_collar",
+        "first_margin": 0.2625,
+        "joint": [
+          0,
+          12.95,
+          0
+        ],
+        "minimum_margin": 0.14375,
+        "second": "grip_core",
+        "second_margin": 0.14375
+      },
+      {
+        "connected": true,
+        "first": "grip_core",
+        "first_margin": 0.0875,
+        "joint": [
+          0,
+          1.4,
+          0
+        ],
+        "minimum_margin": 0.0875,
+        "second": "grip_bottom_collar",
+        "second_margin": 0.225
+      },
+      {
+        "connected": true,
+        "first": "grip_bottom_collar",
+        "first_margin": 0.175,
+        "joint": [
+          0,
+          1.05,
+          0
+        ],
+        "minimum_margin": 0.075,
+        "second": "pommel_core",
+        "second_margin": 0.075
+      },
+      {
+        "connected": true,
+        "first": "pommel_core",
+        "first_margin": 0.16875,
+        "joint": [
+          0,
+          -0.05,
+          0
+        ],
+        "minimum_margin": 0.08125,
+        "second": "pommel_cap",
+        "second_margin": 0.08125
+      },
+      {
+        "connected": true,
+        "first": "pommel_core",
+        "first_margin": 0.0475,
+        "joint": [
+          0,
+          0.48,
+          1.39
+        ],
+        "minimum_margin": 0.015,
+        "second": "pommel_gem",
+        "second_margin": 0.015
+      }
+    ],
+    "method": "shared-joint-compiled-oriented-cuboid-margin-v2",
+    "minimum_margin": 0.005
+  },
+  "blade_extents": [
+    4.8125,
+    45.03125,
+    1.6875
+  ],
+  "bones": 19,
+  "cuboids": 30,
+  "feature_inventory": {
+    "authored_texture_images": 7,
+    "blade_main_volumes": 4,
+    "crest_surfaces": 2,
+    "grip_volumes": 3,
+    "main_quillon_segments": 6,
+    "physical_crest_gems": 3,
+    "pommel_volumes": 3,
+    "quillon_inlay_segments": 6,
+    "source_projected_faces": 0,
+    "tip_volumes": 3
+  },
+  "guard_extents": [
+    15.120844,
+    7.991588,
+    2.8125
+  ],
+  "hidden_geometry_disclosure": "Reverse blade bevel, rune order, crest, and guard finish are conservative authored inference; profile thickness is a coherent prop-design prior.",
+  "model_extents": [
+    15.120844,
+    59.875,
+    3.0625
+  ],
+  "model_id": "excalibur",
+  "no_reference_image_projection": true,
+  "proportion_metrics": {
+    "blade_base_width_to_length": 0.080167,
+    "blade_profile_depth_to_length": 0.028184,
+    "grip_length_to_full_length": 0.197077,
+    "guard_span_to_length": 0.25254,
+    "overall_span_to_length": 0.25254
+  },
+  "recorded_feature_inventory_matches": true,
+  "renderer": "deterministic-orthographic-textured-cuboid-zbuffer-v2",
+  "schema_version": 1,
+  "semantic_cuboids": 30,
+  "source_silhouette": {
+    "iou": 0.515895,
+    "limitation": "The reviewed source silhouette is single-view evidence; centered normalization does not validate unseen profile decoration.",
+    "major_axis_delta_degrees": 1.618621,
+    "method": "reviewed-source-mask-reference-roll-centered-uniform-scale-iou-v1",
+    "model_major_axis_degrees_mod_180": 45.863868,
+    "precision": 0.602801,
+    "recall": 0.781582,
+    "source_major_axis_degrees_mod_180": 44.245247
+  },
+  "source_skin_cuboids": 0,
+  "texture_contract": {
+    "front_crest": true,
+    "front_rune_glyphs": 5,
+    "reverse_crest": true,
+    "reverse_rune_glyphs": 5,
+    "source_reference_pixels": false,
+    "two_sided_grip_wrap": true
+  },
+  "views": [
+    "reference-angle.png",
+    "front.png",
+    "back.png",
+    "profile.png",
+    "top.png",
+    "isometric.png",
+    "hilt-junction.png",
+    "emblem-and-runes.png",
+    "reverse-emblem.png",
+    "comparison-sheet.png"
+  ]
+}

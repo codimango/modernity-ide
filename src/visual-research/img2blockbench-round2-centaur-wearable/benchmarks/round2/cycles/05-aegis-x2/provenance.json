@@ -1,0 +1,48 @@
+{
+  "asset": "aegis_x2_turret",
+  "cycle": "round2-05",
+  "generation": {
+    "algorithm": "multi-view-aegis-hard-surface-semantic-cuboids-v1",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0
+  },
+  "perspective_evidence": {
+    "automatic_fit_or_recentering": false,
+    "camera_parameters_are_estimated": true,
+    "geometry_modified_during_evidence": false,
+    "hidden_geometry_established": false,
+    "method": "three-independent-manually-frozen-perspective-cameras-v1",
+    "runtime_camera_fitting": false,
+    "visual_hull_used": false
+  },
+  "references": [
+    {
+      "height": 1000,
+      "rights": "unknown",
+      "sha256": "31bb69536ce0f26540034096402cebc6e006ee9cb7ec56b38deb5bf04afb2e23",
+      "source": "local Round 2 image-3.png",
+      "width": 1000
+    },
+    {
+      "height": 1000,
+      "rights": "unknown",
+      "sha256": "d53b51bd62a7f64f1a4c792f1bd1005de204ed1ba0475ca4fb527784163ade4b",
+      "source": "local Round 2 image-4.png",
+      "width": 1000
+    },
+    {
+      "height": 1000,
+      "rights": "unknown",
+      "sha256": "83f83385de5d68c3b4b1f8bc7d371dc086780f4388754a8414b07f0294cfe7a6",
+      "source": "local Round 2 image-5.png",
+      "width": 1000
+    }
+  ],
+  "reviewed_masks": {
+    "source-3": "56706a75f7a93cf25a46367ebf9a5344e4a3e20271e8edf946969195096c85ac",
+    "source-4": "eb2d3089b4d234a6fe71e5efe50a62ecad392c625f31aca313c2ed8d156b1ce7",
+    "source-5": "68525ddd27c10d3106d16c3ad69f55bc352fb08f4e22c37ca872880c9777a297"
+  },
+  "single_view_hidden_geometry": "Cable routes, undersides, internal mechanisms and concealed support faces are conservative inferences across three uncalibrated views."
+}

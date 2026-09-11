@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 199517,
+      "path": "false_apple_root_beast.model-spec.json",
+      "sha256": "9ac0e39292f91917b89e29d2ba4cb01f70e5e6e12c28ad6614d05ca4fa002a97"
+    },
+    {
+      "bytes": 5548,
+      "path": "false_apple_root_beast.png",
+      "sha256": "f09a2ea8583e82ab9bc955e65e0de80022ea17c7d14e569013224daeada4ab0a"
+    },
+    {
+      "bytes": 368572,
+      "path": "false_apple_root_beast.bbmodel",
+      "sha256": "58d26cc3896c650cb70e41834899c006a8fae59e22770edb4aef94af69273218"
+    },
+    {
+      "bytes": 380716,
+      "path": "false_apple_root_beast.geo.json",
+      "sha256": "57768d55d5798c13d930d3ac45b602398541edddb60a7a5f271284b6b5d02047"
+    },
+    {
+      "bytes": 238,
+      "path": "false_apple_root_beast.audit.json",
+      "sha256": "6f69ad9fa0bd41af161dd9b679e60a398f66f11570971e937a42368e9bf3da38"
+    },
+    {
+      "bytes": 213803,
+      "path": "false_apple_root_beast.reference.png",
+      "sha256": "c6061900b7e45c555a5c3d94ca5584d2c06d91e9d8144f302c881fc3f42fdaae"
+    }
+  ],
+  "collision": {
+    "eye_height": 2.65,
+    "height": 3.8,
+    "width": 7.5
+  },
+  "generator": {
+    "lane": "agent-authored-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "false_apple_root_beast",
+  "reference": {
+    "height": 290,
+    "image": "false_apple_root_beast.reference.png",
+    "sha256": "c6061900b7e45c555a5c3d94ca5584d2c06d91e9d8144f302c881fc3f42fdaae",
+    "width": 599
+  },
+  "schema_version": 1
+}

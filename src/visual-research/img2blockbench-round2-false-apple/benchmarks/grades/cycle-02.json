@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "cycle": 2,
+  "cumulative_verdict": "PASS",
+  "cycle_1_visible_regression": "NO_VISIBLE_REGRESSION",
+  "assets": {
+    "american_goldfinch": {
+      "verdict": "PASS",
+      "immediately_recognizable": true,
+      "critical_defect": false,
+      "scores": {
+        "silhouette": 4,
+        "proportions": 4,
+        "identity_features": 5,
+        "materials_color": 4,
+        "attachment_topology": 3,
+        "3d_coherence": 3,
+        "mean": 3.83
+      }
+    },
+    "porsche_911_turbo_930": {
+      "verdict": "PASS",
+      "immediately_recognizable": true,
+      "critical_defect": false,
+      "scores": {
+        "silhouette": 4,
+        "proportions": 4,
+        "identity_features": 4,
+        "materials_color": 4,
+        "attachment_topology": 3,
+        "3d_coherence": 4,
+        "mean": 3.83
+      }
+    }
+  },
+  "required_fixes": []
+}

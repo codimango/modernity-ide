@@ -1,0 +1,28 @@
+{
+  "blocking_defects": [],
+  "decision": "independent_pass",
+  "independently_graded_commit": "527ba3add381616620e42f665e3d8e3e3cc12aca",
+  "notes": [
+    "Both supplied files are near-duplicate crops and are counted as one camera axis.",
+    "The failed upright-biped draft was replaced by a broad fused shoulder mass with an embedded face and oversized asymmetric fists.",
+    "Four diagonal organ ribbons, four overlapping swellings, and a closed loop replace the old paired trouser-like lobes.",
+    "The model intentionally has no biped feet; two lower continuations leave the frozen source camera below frame.",
+    "Every observed front surface is preserved while torso, head, brain, arms, and viscera extend only into inferred rear space.",
+    "Rear anatomy and hidden texture remain conservative single-view inference.",
+    "The source-projected line art stays grayscale, while the authored fallback returns to the user-selected dusty flesh, pink brain, and muted red-brown viscera palette.",
+    "The colorful authored palette exactly matches the earlier f07eb4f version and remains bounded Minecraft pixel art without dither or photographic collage."
+  ],
+  "reviewed_views": [
+    "reference-angle",
+    "front",
+    "back",
+    "left",
+    "right",
+    "top",
+    "isometric",
+    "face-closeup",
+    "brain-closeup",
+    "viscera-closeup"
+  ],
+  "status": "PASS"
+}

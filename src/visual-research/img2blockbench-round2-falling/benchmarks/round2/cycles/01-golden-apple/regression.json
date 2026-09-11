@@ -1,0 +1,16 @@
+{
+  "baseline_commit": "fd11a5b98fff00ac1ca03979612e7aacca5e646e",
+  "preserved_byte_identical": true,
+  "protected_git_objects": {
+    "benchmarks/cycles/01-goldfinch": "2fcffcae288f7f51a6624f950270cd31153677dd",
+    "benchmarks/cycles/02-porsche": "e86fd4047e9512c6be84a8faba577b9608739803",
+    "benchmarks/cycles/03-excalibur": "a79b27dd6aca771ae2722584297092b723908bd9",
+    "benchmarks/cycles/04-nian": "415d834cd106311957bfa9dcb6813f76662f8b14",
+    "benchmarks/cycles/05-tomato-devil": "0485abb9331800b5a359da8482d6af1e71b81d1b",
+    "benchmarks/cycles/06-scp-173": "3ad2f7a2c1a3f816d4dd78fcdaecfb09ec40c250",
+    "benchmarks/cycles/07-gamma": "3966bf56a89eca351231f3b766e3c37d5462dd65",
+    "benchmarks/grades": "08d5d485e45b357e222408214b940d6de2e001c9"
+  },
+  "round": 2,
+  "scope": "All Round 1 benchmark cycles and cumulative grade records"
+}

@@ -1,0 +1,19 @@
+{
+  "asset": "gamma_abnormality",
+  "cycle": 7,
+  "generation": {
+    "algorithm": "validated-tapered-attachment-graph-gamma-v1",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0
+  },
+  "reference": {
+    "height": 899,
+    "redistribution": "not authorized; private ignored benchmark input",
+    "rights": "unknown",
+    "sha256": "26cb7dea9090c5a1af9e9caba210472bffe0405bf2c17375132a3abb90dac63b",
+    "url": "https://static.wikia.nocookie.net/library-of-ruina/images/2/2f/GammaFullBody.png/revision/latest?cb=20200702205442",
+    "width": 592
+  },
+  "single_view_hidden_geometry": "inferred_conservatively_not_observed"
+}

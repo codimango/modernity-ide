@@ -1,0 +1,54 @@
+{
+  "algorithm": "reviewed-border-segmentation-and-semantic-depth-v1",
+  "coordinate_space": "source pixels; right and bottom bounds are exclusive",
+  "depth": {
+    "encoding": "8-bit grayscale symmetric thickness; 0 is background",
+    "image": "depth-map.png",
+    "levels": {
+      "forelegs": [
+        218,
+        226
+      ],
+      "head": [
+        176,
+        205
+      ],
+      "hindquarters": 154,
+      "horns_and_mane": [
+        88,
+        142
+      ],
+      "rear_legs": [
+        162,
+        174
+      ],
+      "silhouette": 52,
+      "torso": 198
+    },
+    "sha256": "14f91283cba58fb6dcbba8aaf7fdde22d2e71f5baefcb23d0606b6130b413fb1",
+    "source": "reviewed semantic proxy for an orthographic ray-thickness pass"
+  },
+  "foreground": {
+    "encoding": "8-bit grayscale; >=128 is foreground",
+    "foreground_fraction": 0.287438,
+    "image": "foreground-mask.png",
+    "method": "border-palette-connected-component+reviewed-chroma-shadow-rejection",
+    "reviewed_bbox_pixels": [
+      145,
+      40,
+      567,
+      442
+    ],
+    "sha256": "318a379a94a63e0faea5570ecd20d4ee4e75ff13b76ccfa6eb5910983202a721"
+  },
+  "schema_version": 1,
+  "source": {
+    "image": "../../../references/04-nian.jpg",
+    "sha256": "644faf9b0d58763d91daa70a6819c269451fa0e021852356556453758fc23d99",
+    "size": [
+      640,
+      480
+    ],
+    "source_page": "https://www.cadnav.com/3d-models/model-40150.html"
+  }
+}

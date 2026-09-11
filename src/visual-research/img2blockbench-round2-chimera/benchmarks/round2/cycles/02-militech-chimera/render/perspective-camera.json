@@ -1,0 +1,62 @@
+{
+  "calibration_basis": "Manual visual alignment constrained by visible roof, turret, chassis, and grounded leg geometry; no camera optimization runs here.",
+  "camera_parameters_are_estimated": true,
+  "geometry_modified_for_calibration": false,
+  "method": "manual-fixed-camera-calibration-v1",
+  "orbit_parameters": {
+    "distance": 110.0,
+    "near": 0.1,
+    "pitch_degrees": 10.0,
+    "principal_point": [
+      325.0,
+      367.0
+    ],
+    "roll_degrees": 0.0,
+    "target": [
+      0.0,
+      13.0,
+      0.0
+    ],
+    "vertical_fov_degrees": 40.8,
+    "yaw_degrees": 28.0
+  },
+  "reference": "original olive photograph",
+  "resolved_camera": {
+    "focal_x": 1210.0135352561717,
+    "focal_y": 1210.0135352561717,
+    "image_size": [
+      600,
+      900
+    ],
+    "near": 0.1,
+    "principal_point": [
+      325.0,
+      367.0
+    ],
+    "projection": "perspective",
+    "translation": [
+      -0.0,
+      -12.80250078915871,
+      -112.25742630967011
+    ],
+    "world_to_camera": [
+      [
+        0.882947592858927,
+        0.0,
+        -0.4694715627858908
+      ],
+      [
+        -0.0815228813442158,
+        0.9848077530122082,
+        -0.15332224047535542
+      ],
+      [
+        0.46233923485030287,
+        0.17364817766693033,
+        0.8695336349509378
+      ]
+    ]
+  },
+  "runtime_camera_fitting": false,
+  "schema_version": 1
+}

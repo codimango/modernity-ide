@@ -1,0 +1,177 @@
+{
+  "automatic_fit_or_recentering": false,
+  "camera_parameters_are_estimated": true,
+  "cameras": {
+    "source-3": {
+      "orbit_parameters": {
+        "distance": 135.0,
+        "near": 0.1,
+        "pitch_degrees": 4.0,
+        "principal_point": [
+          500.0,
+          468.0
+        ],
+        "roll_degrees": 0.0,
+        "target": [
+          0.0,
+          50.0,
+          0.0
+        ],
+        "vertical_fov_degrees": 46.0,
+        "yaw_degrees": 0.0
+      },
+      "resolved_camera": {
+        "focal_x": 1177.9261829118764,
+        "focal_y": 1177.9261829118764,
+        "image_size": [
+          1000,
+          1000
+        ],
+        "near": 0.1,
+        "principal_point": [
+          500.0,
+          468.0
+        ],
+        "projection": "perspective",
+        "translation": [
+          -0.0,
+          -49.87820251299121,
+          -138.48782368720626
+        ],
+        "world_to_camera": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.9975640502598242,
+            -0.0697564737441253
+          ],
+          [
+            0.0,
+            0.0697564737441253,
+            0.9975640502598242
+          ]
+        ]
+      }
+    },
+    "source-4": {
+      "orbit_parameters": {
+        "distance": 115.0,
+        "near": 0.1,
+        "pitch_degrees": 55.0,
+        "principal_point": [
+          508.0,
+          544.0
+        ],
+        "roll_degrees": 0.0,
+        "target": [
+          0.0,
+          48.0,
+          0.0
+        ],
+        "vertical_fov_degrees": 46.0,
+        "yaw_degrees": -50.0
+      },
+      "resolved_camera": {
+        "focal_x": 1177.9261829118764,
+        "focal_y": 1177.9261829118764,
+        "image_size": [
+          1000,
+          1000
+        ],
+        "near": 0.1,
+        "principal_point": [
+          508.0,
+          544.0
+        ],
+        "projection": "perspective",
+        "translation": [
+          -7.105427357601002e-15,
+          -27.531668944850203,
+          -154.31929812587163
+        ],
+        "world_to_camera": [
+          [
+            0.6427876096865394,
+            0.0,
+            0.766044443118978
+          ],
+          [
+            0.6275068715971331,
+            0.573576436351046,
+            -0.5265407845183633
+          ],
+          [
+            -0.43938504177070503,
+            0.8191520442889918,
+            0.3686878264946124
+          ]
+        ]
+      }
+    },
+    "source-5": {
+      "orbit_parameters": {
+        "distance": 115.0,
+        "near": 0.1,
+        "pitch_degrees": 55.0,
+        "principal_point": [
+          500.0,
+          552.0
+        ],
+        "roll_degrees": 0.0,
+        "target": [
+          0.0,
+          48.0,
+          0.0
+        ],
+        "vertical_fov_degrees": 46.0,
+        "yaw_degrees": -130.0
+      },
+      "resolved_camera": {
+        "focal_x": 1177.9261829118764,
+        "focal_y": 1177.9261829118764,
+        "image_size": [
+          1000,
+          1000
+        ],
+        "near": 0.1,
+        "principal_point": [
+          500.0,
+          552.0
+        ],
+        "projection": "perspective",
+        "translation": [
+          7.105427357601002e-15,
+          -27.531668944850203,
+          -154.31929812587163
+        ],
+        "world_to_camera": [
+          [
+            -0.6427876096865394,
+            0.0,
+            0.766044443118978
+          ],
+          [
+            0.6275068715971331,
+            0.573576436351046,
+            0.5265407845183633
+          ],
+          [
+            -0.43938504177070503,
+            0.8191520442889918,
+            -0.3686878264946124
+          ]
+        ]
+      }
+    }
+  },
+  "geometry_modified_during_evidence": false,
+  "hidden_geometry_established": false,
+  "method": "three-independent-manually-frozen-perspective-cameras-v1",
+  "runtime_camera_fitting": false,
+  "schema_version": 1,
+  "visual_hull_used": false
+}

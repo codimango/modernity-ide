@@ -1,0 +1,15 @@
+{
+  "cycle_id": "round3-04-hovercraft",
+  "hash_policy": "The first successful reconstruction, seven-view verification, and native build locks SHA-256 and byte length. Every later run must match both before reconstruction starts.",
+  "schema_version": 1,
+  "source": {
+    "byte_length": null,
+    "format": "glb",
+    "license": "unrecorded",
+    "provider": "Meshy",
+    "provider_model": "image-to-3d-texture; version unrecorded",
+    "relative_path": "round3-inputs/Meshy_AI_minecraft_hovercraft_0907011803_image-to-3d-texture.glb",
+    "sha256": null
+  },
+  "status": "awaiting-first-successful-reconstruction"
+}

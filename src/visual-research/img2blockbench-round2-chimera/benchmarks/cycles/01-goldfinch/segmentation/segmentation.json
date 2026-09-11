@@ -1,0 +1,27 @@
+{
+  "algorithm": "deterministic-border-palette-connected-component",
+  "analysis_size": [
+    96,
+    96
+  ],
+  "background_labels": [
+    7,
+    8,
+    9,
+    15
+  ],
+  "bbox_pixels": [
+    192,
+    512,
+    3072,
+    2176
+  ],
+  "foreground_fraction": 0.267687,
+  "method": "border-palette-connected-component",
+  "schema_version": 1,
+  "source_sha256": "094818044cf5373d674e42dcff666a7a37063e940b252aa841028e9ac2dcab8d",
+  "source_size": [
+    3072,
+    3072
+  ]
+}

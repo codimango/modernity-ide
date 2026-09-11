@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "status": "PASS_AUTHOR_REVIEW",
+  "model_id": "atlus_trauma_team_aerodyne",
+  "cuboids": 165,
+  "bones": 9,
+  "landmarks": 28,
+  "source_mesh": null,
+  "source_views_used": 6,
+  "three_axis_extents": [37.483459, 24.745358, 61.5625],
+  "overall_length_to_width": 1.642391,
+  "central_hull_length_to_width": 2.50787,
+  "left_side_pod_length_fraction": 0.729949,
+  "right_side_pod_length_fraction": 0.729949,
+  "declared_attachments": 46,
+  "all_declared_attachments_connected": true,
+  "all_anti_pancake_gates_pass": true,
+  "all_five_reference_direction_gates_pass": true,
+  "all_feature_gates_pass": true,
+  "native_build_audit_ok": true,
+  "source_free_release": true,
+  "retained_manifest_artifacts": 5,
+  "private_reference_bundled": false,
+  "texture": {
+    "style": "clean Minecraft panel abstraction",
+    "procedural_noise": false,
+    "source_pixels_embedded_verbatim": false,
+    "palette_roles": ["white", "gray", "teal", "red", "dark machinery", "cyan light"]
+  },
+  "remaining_uncertainty": "Internal underside surfaces not visible in the five exterior references are conservative bilateral inferences."
+}

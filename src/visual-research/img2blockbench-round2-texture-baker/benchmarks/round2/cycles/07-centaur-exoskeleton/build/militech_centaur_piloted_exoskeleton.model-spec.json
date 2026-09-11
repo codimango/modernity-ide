@@ -1,0 +1,7691 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "exo_pelvis",
+      "parent": "root",
+      "pivot": [
+        0,
+        58,
+        0
+      ]
+    },
+    {
+      "name": "torso_frame",
+      "parent": "exo_pelvis",
+      "pivot": [
+        0,
+        66,
+        -1
+      ]
+    },
+    {
+      "name": "backpack",
+      "parent": "torso_frame",
+      "pivot": [
+        0,
+        76,
+        -7
+      ]
+    },
+    {
+      "name": "pilot_pelvis",
+      "parent": "exo_pelvis",
+      "pivot": [
+        0,
+        57,
+        3
+      ]
+    },
+    {
+      "name": "pilot_torso",
+      "parent": "pilot_pelvis",
+      "pivot": [
+        0,
+        69,
+        3
+      ]
+    },
+    {
+      "name": "pilot_head",
+      "parent": "pilot_torso",
+      "pivot": [
+        0,
+        90,
+        4
+      ]
+    },
+    {
+      "name": "pilot_left_arm",
+      "parent": "pilot_torso",
+      "pivot": [
+        -6,
+        75,
+        4
+      ]
+    },
+    {
+      "name": "pilot_right_arm",
+      "parent": "pilot_torso",
+      "pivot": [
+        6,
+        75,
+        4
+      ]
+    },
+    {
+      "name": "pilot_left_leg",
+      "parent": "pilot_pelvis",
+      "pivot": [
+        -4,
+        56,
+        2
+      ]
+    },
+    {
+      "name": "pilot_right_leg",
+      "parent": "pilot_pelvis",
+      "pivot": [
+        4,
+        56,
+        2
+      ]
+    },
+    {
+      "name": "left_exo_hip",
+      "parent": "exo_pelvis",
+      "pivot": [
+        -10,
+        57,
+        0
+      ]
+    },
+    {
+      "name": "left_exo_thigh",
+      "parent": "left_exo_hip",
+      "pivot": [
+        -11,
+        55,
+        0
+      ]
+    },
+    {
+      "name": "left_exo_knee",
+      "parent": "left_exo_thigh",
+      "pivot": [
+        -22,
+        33,
+        10
+      ]
+    },
+    {
+      "name": "left_exo_shin",
+      "parent": "left_exo_knee",
+      "pivot": [
+        -22,
+        31,
+        10
+      ]
+    },
+    {
+      "name": "left_exo_ankle",
+      "parent": "left_exo_shin",
+      "pivot": [
+        -20,
+        9,
+        0
+      ]
+    },
+    {
+      "name": "left_exo_foot",
+      "parent": "left_exo_ankle",
+      "pivot": [
+        -22,
+        5,
+        3
+      ]
+    },
+    {
+      "name": "right_exo_hip",
+      "parent": "exo_pelvis",
+      "pivot": [
+        10,
+        57,
+        0
+      ]
+    },
+    {
+      "name": "right_exo_thigh",
+      "parent": "right_exo_hip",
+      "pivot": [
+        11,
+        55,
+        0
+      ]
+    },
+    {
+      "name": "right_exo_knee",
+      "parent": "right_exo_thigh",
+      "pivot": [
+        22,
+        33,
+        10
+      ]
+    },
+    {
+      "name": "right_exo_shin",
+      "parent": "right_exo_knee",
+      "pivot": [
+        22,
+        31,
+        10
+      ]
+    },
+    {
+      "name": "right_exo_ankle",
+      "parent": "right_exo_shin",
+      "pivot": [
+        20,
+        9,
+        0
+      ]
+    },
+    {
+      "name": "right_exo_foot",
+      "parent": "right_exo_ankle",
+      "pivot": [
+        22,
+        5,
+        3
+      ]
+    },
+    {
+      "name": "shield_boom",
+      "parent": "backpack",
+      "pivot": [
+        7,
+        80,
+        -6
+      ]
+    },
+    {
+      "name": "shield",
+      "parent": "shield_boom",
+      "pivot": [
+        32.005107,
+        96.396439,
+        22.180848
+      ]
+    },
+    {
+      "name": "shield_lower_actuator",
+      "parent": "torso_frame",
+      "pivot": [
+        8,
+        70,
+        2
+      ]
+    },
+    {
+      "name": "tool_boom",
+      "parent": "backpack",
+      "pivot": [
+        -7,
+        79,
+        -6
+      ]
+    },
+    {
+      "name": "thermal_weapon",
+      "parent": "tool_boom",
+      "pivot": [
+        -27,
+        71,
+        8
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 4.0,
+    "height": 4.6,
+    "width": 2.2
+  },
+  "cubes": [
+    {
+      "bone": "exo_pelvis",
+      "center": [
+        0.0,
+        58.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "pelvis_frame_core",
+      "origin": [
+        0.0,
+        58.0,
+        0.0
+      ],
+      "role": "load-bearing exoframe pelvis bridge",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        22.0,
+        9.0,
+        14.0
+      ]
+    },
+    {
+      "bone": "exo_pelvis",
+      "center": [
+        0.0,
+        58.0,
+        7.4
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "pelvis_front_armor",
+      "origin": [
+        0.0,
+        58.0,
+        7.4
+      ],
+      "role": "front pelvis armor apron",
+      "rotation": [
+        8.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        16.0,
+        6.0,
+        2.2
+      ]
+    },
+    {
+      "bone": "exo_pelvis",
+      "center": [
+        0.0,
+        59.0,
+        -7.0
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "pelvis_rear_crossbar",
+      "origin": [
+        0.0,
+        59.0,
+        -7.0
+      ],
+      "role": "rear hip load crossbar",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        25.0,
+        4.5,
+        3.0
+      ]
+    },
+    {
+      "bone": "pilot_pelvis",
+      "center": [
+        0.0,
+        60.5,
+        1.5
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "saddle_core",
+      "origin": [
+        0.0,
+        60.5,
+        1.5
+      ],
+      "role": "operator saddle nested in frame",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        10.0,
+        5.0,
+        10.0
+      ]
+    },
+    {
+      "bone": "torso_frame",
+      "center": [
+        0.0,
+        70.0,
+        -4.8
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "torso_frame_spine",
+      "origin": [
+        0.0,
+        70.0,
+        -4.8
+      ],
+      "role": "central exoframe spine behind operator",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        5.0,
+        19.0,
+        5.0
+      ]
+    },
+    {
+      "bone": "torso_frame",
+      "center": [
+        0.0,
+        77.0,
+        -2.5
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "shoulder_frame_crossbar",
+      "origin": [
+        0.0,
+        77.0,
+        -2.5
+      ],
+      "role": "broad equipment shoulder frame",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        24.0,
+        5.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "exo_pelvis",
+      "center": [
+        -10.7,
+        58.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "left_pelvis_cheek",
+      "origin": [
+        -10.7,
+        58.0,
+        0.0
+      ],
+      "role": "left layered hip cheek",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.0,
+        8.0,
+        12.0
+      ]
+    },
+    {
+      "bone": "torso_frame",
+      "center": [
+        -4.0,
+        66.0,
+        -2.0
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "left_waist_brace",
+      "origin": [
+        -4.0,
+        66.0,
+        -2.0
+      ],
+      "role": "left torso-frame waist brace",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        8.0,
+        11.0,
+        6.0
+      ]
+    },
+    {
+      "bone": "exo_pelvis",
+      "center": [
+        10.7,
+        58.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "right_pelvis_cheek",
+      "origin": [
+        10.7,
+        58.0,
+        0.0
+      ],
+      "role": "right layered hip cheek",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.0,
+        8.0,
+        12.0
+      ]
+    },
+    {
+      "bone": "torso_frame",
+      "center": [
+        4.0,
+        66.0,
+        -2.0
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "right_waist_brace",
+      "origin": [
+        4.0,
+        66.0,
+        -2.0
+      ],
+      "role": "right torso-frame waist brace",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        8.0,
+        11.0,
+        6.0
+      ]
+    },
+    {
+      "bone": "pilot_pelvis",
+      "center": [
+        0.0,
+        57.5,
+        3.0
+      ],
+      "faces": {},
+      "material": "cloth",
+      "name": "pilot_pelvis_core",
+      "origin": [
+        0.0,
+        57.5,
+        3.0
+      ],
+      "role": "operator pelvis inside exoframe",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        11.0,
+        8.0,
+        9.0
+      ]
+    },
+    {
+      "bone": "pilot_torso",
+      "center": [
+        0.0,
+        66.0,
+        3.0
+      ],
+      "faces": {},
+      "material": "cloth",
+      "name": "pilot_abdomen",
+      "origin": [
+        0.0,
+        66.0,
+        3.0
+      ],
+      "role": "operator lower torso",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        12.0,
+        11.0,
+        9.0
+      ]
+    },
+    {
+      "bone": "pilot_torso",
+      "center": [
+        0.0,
+        76.0,
+        3.0
+      ],
+      "faces": {},
+      "material": "cloth_light",
+      "name": "pilot_chest",
+      "origin": [
+        0.0,
+        76.0,
+        3.0
+      ],
+      "role": "operator broad chest",
+      "rotation": [
+        -3.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        15.0,
+        11.0,
+        10.0
+      ]
+    },
+    {
+      "bone": "pilot_head",
+      "center": [
+        0.0,
+        86.0,
+        4.0
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "pilot_neck",
+      "origin": [
+        0.0,
+        86.0,
+        4.0
+      ],
+      "role": "exposed operator neck",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.5,
+        10.0,
+        4.5
+      ]
+    },
+    {
+      "bone": "pilot_head",
+      "center": [
+        0.0,
+        94.0,
+        4.6
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "pilot_head_core",
+      "origin": [
+        0.0,
+        94.0,
+        4.6
+      ],
+      "role": "bald operator head",
+      "rotation": [
+        -4.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        9.0,
+        10.0,
+        8.5
+      ]
+    },
+    {
+      "bone": "pilot_head",
+      "center": [
+        0.0,
+        95.2,
+        9.0
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "pilot_brow",
+      "origin": [
+        0.0,
+        95.2,
+        9.0
+      ],
+      "role": "heavy augmented brow",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        8.0,
+        2.0,
+        1.1
+      ]
+    },
+    {
+      "bone": "pilot_head",
+      "center": [
+        0.0,
+        90.8,
+        8.2
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "pilot_jaw",
+      "origin": [
+        0.0,
+        90.8,
+        8.2
+      ],
+      "role": "square bearded jaw",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        3.5,
+        2.2
+      ]
+    },
+    {
+      "bone": "pilot_head",
+      "center": [
+        0.0,
+        93.2,
+        9.4
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "pilot_nose",
+      "origin": [
+        0.0,
+        93.2,
+        9.4
+      ],
+      "role": "projecting scarred operator nose",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.0,
+        3.0,
+        1.6
+      ]
+    },
+    {
+      "bone": "pilot_head",
+      "center": [
+        -4.35,
+        94.5,
+        5.5
+      ],
+      "faces": {},
+      "material": "implant",
+      "name": "pilot_left_temple_implant",
+      "origin": [
+        -4.35,
+        94.5,
+        5.5
+      ],
+      "role": "left cranial implant plate",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.1,
+        5.0,
+        4.0
+      ]
+    },
+    {
+      "bone": "pilot_head",
+      "center": [
+        -2.0,
+        95.2,
+        9.45
+      ],
+      "faces": {},
+      "material": "optic_red",
+      "name": "pilot_left_optic",
+      "origin": [
+        -2.0,
+        95.2,
+        9.45
+      ],
+      "role": "left glowing cyber-optic",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.4,
+        1.2,
+        0.9
+      ]
+    },
+    {
+      "bone": "pilot_head",
+      "center": [
+        4.35,
+        94.5,
+        5.5
+      ],
+      "faces": {},
+      "material": "implant",
+      "name": "pilot_right_temple_implant",
+      "origin": [
+        4.35,
+        94.5,
+        5.5
+      ],
+      "role": "right cranial implant plate",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.1,
+        5.0,
+        4.0
+      ]
+    },
+    {
+      "bone": "pilot_head",
+      "center": [
+        2.0,
+        95.2,
+        9.45
+      ],
+      "faces": {},
+      "material": "optic_red",
+      "name": "pilot_right_optic",
+      "origin": [
+        2.0,
+        95.2,
+        9.45
+      ],
+      "role": "right glowing cyber-optic",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.4,
+        1.2,
+        0.9
+      ]
+    },
+    {
+      "bone": "pilot_left_arm",
+      "center": [
+        -6.2,
+        83.278257,
+        4
+      ],
+      "faces": {},
+      "material": "cloth_light",
+      "name": "pilot_left_upper_arm",
+      "origin": [
+        -6.2,
+        78,
+        4
+      ],
+      "role": "operator left sleeved upper arm",
+      "rotation": [
+        22.266364,
+        0,
+        157.109448
+      ],
+      "size": [
+        4.4,
+        11.556515,
+        4.8
+      ]
+    },
+    {
+      "bone": "pilot_left_arm",
+      "center": [
+        -10,
+        71.915476,
+        8
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "pilot_left_forearm",
+      "origin": [
+        -10,
+        69,
+        8
+      ],
+      "role": "operator left forearm",
+      "rotation": [
+        43.313857,
+        0,
+        -135
+      ],
+      "size": [
+        3.6,
+        6.730952,
+        3.8
+      ]
+    },
+    {
+      "bone": "pilot_left_arm",
+      "center": [
+        -7.0,
+        66.0,
+        12.0
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "pilot_left_control_grip",
+      "origin": [
+        -7.0,
+        66.0,
+        12.0
+      ],
+      "role": "operator left hand around control",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.3,
+        3.3,
+        4.5
+      ]
+    },
+    {
+      "bone": "torso_frame",
+      "center": [
+        -7.0,
+        62.5,
+        10.5
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "pilot_left_control_stick",
+      "origin": [
+        -7.0,
+        62.5,
+        10.5
+      ],
+      "role": "left exoframe control stick",
+      "rotation": [
+        8.0,
+        0.0,
+        -5.0
+      ],
+      "size": [
+        2.0,
+        7.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "pilot_right_arm",
+      "center": [
+        6.2,
+        83.278257,
+        4
+      ],
+      "faces": {},
+      "material": "cloth_light",
+      "name": "pilot_right_upper_arm",
+      "origin": [
+        6.2,
+        78,
+        4
+      ],
+      "role": "operator right sleeved upper arm",
+      "rotation": [
+        22.266364,
+        0,
+        -157.109448
+      ],
+      "size": [
+        4.4,
+        11.556515,
+        4.8
+      ]
+    },
+    {
+      "bone": "pilot_right_arm",
+      "center": [
+        10,
+        71.915476,
+        8
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "pilot_right_forearm",
+      "origin": [
+        10,
+        69,
+        8
+      ],
+      "role": "operator right forearm",
+      "rotation": [
+        43.313857,
+        0,
+        135
+      ],
+      "size": [
+        3.6,
+        6.730952,
+        3.8
+      ]
+    },
+    {
+      "bone": "pilot_right_arm",
+      "center": [
+        7.0,
+        66.0,
+        12.0
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "pilot_right_control_grip",
+      "origin": [
+        7.0,
+        66.0,
+        12.0
+      ],
+      "role": "operator right hand around control",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.3,
+        3.3,
+        4.5
+      ]
+    },
+    {
+      "bone": "torso_frame",
+      "center": [
+        7.0,
+        62.5,
+        10.5
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "pilot_right_control_stick",
+      "origin": [
+        7.0,
+        62.5,
+        10.5
+      ],
+      "role": "right exoframe control stick",
+      "rotation": [
+        8.0,
+        0.0,
+        5.0
+      ],
+      "size": [
+        2.0,
+        7.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "pilot_left_leg",
+      "center": [
+        -4,
+        66.796411,
+        2.5
+      ],
+      "faces": {},
+      "material": "trouser_blue",
+      "name": "pilot_left_thigh",
+      "origin": [
+        -4,
+        56,
+        2.5
+      ],
+      "role": "operator left trouser thigh",
+      "rotation": [
+        14.756655,
+        0,
+        163.300756
+      ],
+      "size": [
+        5.5,
+        22.692823,
+        5.8
+      ]
+    },
+    {
+      "bone": "pilot_left_leg",
+      "center": [
+        -10,
+        45.340771,
+        8
+      ],
+      "faces": {},
+      "material": "trouser_blue",
+      "name": "pilot_left_calf",
+      "origin": [
+        -10,
+        36,
+        8
+      ],
+      "role": "operator left trouser calf",
+      "rotation": [
+        -12.363617,
+        0,
+        170.537678
+      ],
+      "size": [
+        4.3,
+        19.681542,
+        4.8
+      ]
+    },
+    {
+      "bone": "pilot_left_leg",
+      "center": [
+        -13.0,
+        17.0,
+        5.0
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "pilot_left_boot",
+      "origin": [
+        -13.0,
+        17.0,
+        5.0
+      ],
+      "role": "operator left boot retained inside exoframe ankle",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        5.5,
+        6.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "pilot_right_leg",
+      "center": [
+        4,
+        66.796411,
+        2.5
+      ],
+      "faces": {},
+      "material": "trouser_blue",
+      "name": "pilot_right_thigh",
+      "origin": [
+        4,
+        56,
+        2.5
+      ],
+      "role": "operator right trouser thigh",
+      "rotation": [
+        14.756655,
+        0,
+        -163.300756
+      ],
+      "size": [
+        5.5,
+        22.692823,
+        5.8
+      ]
+    },
+    {
+      "bone": "pilot_right_leg",
+      "center": [
+        10,
+        45.340771,
+        8
+      ],
+      "faces": {},
+      "material": "trouser_blue",
+      "name": "pilot_right_calf",
+      "origin": [
+        10,
+        36,
+        8
+      ],
+      "role": "operator right trouser calf",
+      "rotation": [
+        -12.363617,
+        0,
+        -170.537678
+      ],
+      "size": [
+        4.3,
+        19.681542,
+        4.8
+      ]
+    },
+    {
+      "bone": "pilot_right_leg",
+      "center": [
+        13.0,
+        17.0,
+        5.0
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "pilot_right_boot",
+      "origin": [
+        13.0,
+        17.0,
+        5.0
+      ],
+      "role": "operator right boot retained inside exoframe ankle",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        5.5,
+        6.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "left_exo_hip",
+      "center": [
+        -11.0,
+        56.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "left_exo_hip_block",
+      "origin": [
+        -11.0,
+        56.0,
+        0.0
+      ],
+      "role": "left powered hip housing",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        9.0,
+        9.0,
+        11.0
+      ]
+    },
+    {
+      "bone": "left_exo_hip",
+      "center": [
+        -11.0,
+        56.0,
+        5.7
+      ],
+      "faces": {},
+      "material": "brass",
+      "name": "left_hip_front_drum",
+      "origin": [
+        -11.0,
+        56.0,
+        5.7
+      ],
+      "role": "left hip front drive drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.3,
+        6.3,
+        1.7
+      ]
+    },
+    {
+      "bone": "left_exo_hip",
+      "center": [
+        -11.0,
+        56.0,
+        -5.7
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "left_hip_rear_drum",
+      "origin": [
+        -11.0,
+        56.0,
+        -5.7
+      ],
+      "role": "left hip rear drive drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.3,
+        6.3,
+        1.7
+      ]
+    },
+    {
+      "bone": "left_exo_thigh",
+      "center": [
+        -11,
+        69.693064,
+        0
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "left_exo_thigh_beam",
+      "origin": [
+        -11,
+        56,
+        0
+      ],
+      "role": "left primary powered thigh beam",
+      "rotation": [
+        21.416714,
+        0,
+        154.440035
+      ],
+      "size": [
+        4.8,
+        28.986128,
+        5.5
+      ]
+    },
+    {
+      "bone": "left_exo_thigh",
+      "center": [
+        -19.8,
+        44.5,
+        5.0
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "left_thigh_outer_armor",
+      "origin": [
+        -19.8,
+        44.5,
+        5.0
+      ],
+      "role": "left broad outer thigh armor plate",
+      "rotation": [
+        21.416714,
+        0.0,
+        154.440035
+      ],
+      "size": [
+        3.2,
+        17.0,
+        8.0
+      ]
+    },
+    {
+      "bone": "left_exo_thigh",
+      "center": [
+        -21.5,
+        44.5,
+        5.5
+      ],
+      "faces": {},
+      "material": "warning",
+      "name": "left_thigh_warning_panel",
+      "origin": [
+        -21.5,
+        44.5,
+        5.5
+      ],
+      "role": "left thigh identification panel",
+      "rotation": [
+        21.416714,
+        0.0,
+        154.440035
+      ],
+      "size": [
+        1.1,
+        8.5,
+        4.5
+      ]
+    },
+    {
+      "bone": "left_exo_thigh",
+      "center": [
+        -13.7,
+        44.5,
+        2.2
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "left_thigh_inner_rail",
+      "origin": [
+        -13.7,
+        44.5,
+        2.2
+      ],
+      "role": "left exposed inner thigh rail",
+      "rotation": [
+        21.416714,
+        0.0,
+        154.440035
+      ],
+      "size": [
+        2.4,
+        18.0,
+        2.6
+      ]
+    },
+    {
+      "bone": "left_exo_knee",
+      "center": [
+        -22.0,
+        33.0,
+        10.0
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "left_exo_knee_core",
+      "origin": [
+        -22.0,
+        33.0,
+        10.0
+      ],
+      "role": "left compact knee hinge inside open tread guard",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        7.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "left_exo_knee",
+      "center": [
+        -22.0,
+        33.0,
+        13.8
+      ],
+      "faces": {},
+      "material": "brass",
+      "name": "left_knee_front_drum",
+      "origin": [
+        -22.0,
+        33.0,
+        13.8
+      ],
+      "role": "left knee front hinge drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        5.5,
+        5.5,
+        1.8
+      ]
+    },
+    {
+      "bone": "left_exo_knee",
+      "center": [
+        -22.0,
+        33.0,
+        6.2
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "left_knee_rear_drum",
+      "origin": [
+        -22.0,
+        33.0,
+        6.2
+      ],
+      "role": "left knee rear hinge drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        5.5,
+        5.5,
+        1.8
+      ]
+    },
+    {
+      "bone": "left_exo_knee",
+      "center": [
+        -23.0,
+        37.0,
+        10.0
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "left_knee_upper_fairing",
+      "origin": [
+        -23.0,
+        37.0,
+        10.0
+      ],
+      "role": "left angular upper knee fairing",
+      "rotation": [
+        0.0,
+        0.0,
+        8.0
+      ],
+      "size": [
+        6.5,
+        2.5,
+        7.0
+      ]
+    },
+    {
+      "bone": "left_exo_knee",
+      "center": [
+        -22.0,
+        38.0,
+        14.5
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "left_knee_tread_guard_top",
+      "origin": [
+        -22.0,
+        38.0,
+        14.5
+      ],
+      "role": "left projecting open U-guard top",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        12.0,
+        2.0,
+        4.0
+      ]
+    },
+    {
+      "bone": "left_exo_knee",
+      "center": [
+        -27.0,
+        33.0,
+        14.5
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "left_knee_tread_guard_outer",
+      "origin": [
+        -27.0,
+        33.0,
+        14.5
+      ],
+      "role": "left projecting open U-guard outer rail",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.0,
+        10.0,
+        4.0
+      ]
+    },
+    {
+      "bone": "left_exo_knee",
+      "center": [
+        -22.0,
+        28.0,
+        14.5
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "left_knee_tread_guard_bottom",
+      "origin": [
+        -22.0,
+        28.0,
+        14.5
+      ],
+      "role": "left projecting open U-guard bottom",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        12.0,
+        2.0,
+        4.0
+      ]
+    },
+    {
+      "bone": "left_exo_shin",
+      "center": [
+        -20,
+        43.900115,
+        7.5
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "left_shin_rear_brace",
+      "origin": [
+        -20,
+        33,
+        7.5
+      ],
+      "role": "left open triangular rear shin linkage",
+      "rotation": [
+        -28.79298,
+        0,
+        -173.990994
+      ],
+      "size": [
+        1.9,
+        22.500229,
+        2
+      ]
+    },
+    {
+      "bone": "left_exo_shin",
+      "center": [
+        -22,
+        46.038405,
+        10
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "left_exo_shin_beam",
+      "origin": [
+        -22,
+        33,
+        10
+      ],
+      "role": "left lower powered shin beam",
+      "rotation": [
+        -22.549564,
+        0,
+        -175.236358
+      ],
+      "size": [
+        4.5,
+        27.67681,
+        5.2
+      ]
+    },
+    {
+      "bone": "left_exo_shin",
+      "center": [
+        -24.1,
+        21.0,
+        5.0
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "left_shin_outer_armor",
+      "origin": [
+        -24.1,
+        21.0,
+        5.0
+      ],
+      "role": "left long outer shin armor",
+      "rotation": [
+        -22.549564,
+        0.0,
+        -175.236358
+      ],
+      "size": [
+        3.0,
+        22.0,
+        7.3
+      ]
+    },
+    {
+      "bone": "left_exo_shin",
+      "center": [
+        -18.2,
+        21.0,
+        2.5
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "left_shin_inner_rail",
+      "origin": [
+        -18.2,
+        21.0,
+        2.5
+      ],
+      "role": "left open inner shin rail",
+      "rotation": [
+        -22.549564,
+        0.0,
+        -175.236358
+      ],
+      "size": [
+        2.2,
+        22.0,
+        2.4
+      ]
+    },
+    {
+      "bone": "left_exo_shin",
+      "center": [
+        -20,
+        36.968668,
+        7
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "left_shin_piston_casing",
+      "origin": [
+        -20,
+        31,
+        7
+      ],
+      "role": "left hydraulic shin piston casing",
+      "rotation": [
+        -32.991191,
+        0,
+        -177.137595
+      ],
+      "size": [
+        3.1,
+        12.837336,
+        3.1
+      ]
+    },
+    {
+      "bone": "left_exo_shin",
+      "center": [
+        -19.5,
+        26.031153,
+        0.5
+      ],
+      "faces": {},
+      "material": "bright_steel",
+      "name": "left_shin_piston_rod",
+      "origin": [
+        -19.5,
+        21,
+        0.5
+      ],
+      "role": "left exposed hydraulic shin rod",
+      "rotation": [
+        -5.703515,
+        0,
+        177.137595
+      ],
+      "size": [
+        1.7,
+        10.862306,
+        1.7
+      ]
+    },
+    {
+      "bone": "left_exo_ankle",
+      "center": [
+        -20.0,
+        9.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "left_exo_ankle_core",
+      "origin": [
+        -20.0,
+        9.0,
+        0.0
+      ],
+      "role": "left central ankle hinge block",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        5.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "left_exo_ankle",
+      "center": [
+        -20.0,
+        9.0,
+        3.7
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "left_ankle_front_drum",
+      "origin": [
+        -20.0,
+        9.0,
+        3.7
+      ],
+      "role": "left ankle front hinge",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.8,
+        4.8,
+        1.5
+      ]
+    },
+    {
+      "bone": "left_exo_ankle",
+      "center": [
+        -20.0,
+        9.0,
+        -3.7
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "left_ankle_rear_drum",
+      "origin": [
+        -20.0,
+        9.0,
+        -3.7
+      ],
+      "role": "left ankle rear hinge",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.8,
+        4.8,
+        1.5
+      ]
+    },
+    {
+      "bone": "left_exo_ankle",
+      "center": [
+        -20.0,
+        12.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "left_ankle_upper_segment",
+      "origin": [
+        -20.0,
+        12.0,
+        0.0
+      ],
+      "role": "left upper segmented ankle collar",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "left_exo_ankle",
+      "center": [
+        -20.0,
+        6.0,
+        1.0
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "left_ankle_lower_segment",
+      "origin": [
+        -20.0,
+        6.0,
+        1.0
+      ],
+      "role": "left lower segmented ankle collar",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        8.0
+      ]
+    },
+    {
+      "bone": "pilot_left_leg",
+      "center": [
+        -16.5,
+        14.0,
+        2.5
+      ],
+      "faces": {},
+      "material": "brass",
+      "name": "pilot_left_boot_restraint",
+      "origin": [
+        -16.5,
+        14.0,
+        2.5
+      ],
+      "role": "lateral restraint coupling pilot left boot to powered ankle",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        8.0,
+        2.4,
+        3.5
+      ]
+    },
+    {
+      "bone": "left_exo_foot",
+      "center": [
+        -22.0,
+        2.75,
+        6.0
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "left_exo_ground_foot",
+      "origin": [
+        -22.0,
+        2.75,
+        6.0
+      ],
+      "role": "left broad grounded powered foot",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        13.0,
+        5.5,
+        20.0
+      ]
+    },
+    {
+      "bone": "left_exo_foot",
+      "center": [
+        -22.0,
+        5.0,
+        8.0
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "left_foot_top_armor",
+      "origin": [
+        -22.0,
+        5.0,
+        8.0
+      ],
+      "role": "left sloped foot top armor",
+      "rotation": [
+        -8.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        11.0,
+        3.0,
+        12.0
+      ]
+    },
+    {
+      "bone": "left_exo_foot",
+      "center": [
+        -22.0,
+        2.2,
+        -5.5
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "left_heel_spur",
+      "origin": [
+        -22.0,
+        2.2,
+        -5.5
+      ],
+      "role": "left rear heel stabilizer",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        8.0,
+        4.8,
+        5.0
+      ]
+    },
+    {
+      "bone": "left_exo_foot",
+      "center": [
+        -26.0,
+        1.7,
+        16.5
+      ],
+      "faces": {
+        "south": {
+          "material": "bright_steel"
+        }
+      },
+      "material": "frame_black",
+      "name": "left_toe_1",
+      "origin": [
+        -26.0,
+        1.7,
+        16.5
+      ],
+      "role": "left articulated gripping toe 1",
+      "rotation": [
+        -12.0,
+        10.0,
+        0.0
+      ],
+      "size": [
+        2.6,
+        3.4,
+        9.0
+      ]
+    },
+    {
+      "bone": "left_exo_foot",
+      "center": [
+        -22.0,
+        1.7,
+        16.5
+      ],
+      "faces": {
+        "south": {
+          "material": "bright_steel"
+        }
+      },
+      "material": "frame_black",
+      "name": "left_toe_2",
+      "origin": [
+        -22.0,
+        1.7,
+        16.5
+      ],
+      "role": "left articulated gripping toe 2",
+      "rotation": [
+        -12.0,
+        -0.0,
+        0.0
+      ],
+      "size": [
+        2.6,
+        3.4,
+        9.0
+      ]
+    },
+    {
+      "bone": "left_exo_foot",
+      "center": [
+        -18.0,
+        1.7,
+        16.5
+      ],
+      "faces": {
+        "south": {
+          "material": "bright_steel"
+        }
+      },
+      "material": "frame_black",
+      "name": "left_toe_3",
+      "origin": [
+        -18.0,
+        1.7,
+        16.5
+      ],
+      "role": "left articulated gripping toe 3",
+      "rotation": [
+        -12.0,
+        -10.0,
+        0.0
+      ],
+      "size": [
+        2.6,
+        3.4,
+        9.0
+      ]
+    },
+    {
+      "bone": "right_exo_hip",
+      "center": [
+        11.0,
+        56.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "right_exo_hip_block",
+      "origin": [
+        11.0,
+        56.0,
+        0.0
+      ],
+      "role": "right powered hip housing",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        9.0,
+        9.0,
+        11.0
+      ]
+    },
+    {
+      "bone": "right_exo_hip",
+      "center": [
+        11.0,
+        56.0,
+        5.7
+      ],
+      "faces": {},
+      "material": "brass",
+      "name": "right_hip_front_drum",
+      "origin": [
+        11.0,
+        56.0,
+        5.7
+      ],
+      "role": "right hip front drive drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.3,
+        6.3,
+        1.7
+      ]
+    },
+    {
+      "bone": "right_exo_hip",
+      "center": [
+        11.0,
+        56.0,
+        -5.7
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "right_hip_rear_drum",
+      "origin": [
+        11.0,
+        56.0,
+        -5.7
+      ],
+      "role": "right hip rear drive drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.3,
+        6.3,
+        1.7
+      ]
+    },
+    {
+      "bone": "right_exo_thigh",
+      "center": [
+        11,
+        69.693064,
+        0
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "right_exo_thigh_beam",
+      "origin": [
+        11,
+        56,
+        0
+      ],
+      "role": "right primary powered thigh beam",
+      "rotation": [
+        21.416714,
+        0,
+        -154.440035
+      ],
+      "size": [
+        4.8,
+        28.986128,
+        5.5
+      ]
+    },
+    {
+      "bone": "right_exo_thigh",
+      "center": [
+        19.8,
+        44.5,
+        5.0
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "right_thigh_outer_armor",
+      "origin": [
+        19.8,
+        44.5,
+        5.0
+      ],
+      "role": "right broad outer thigh armor plate",
+      "rotation": [
+        21.416714,
+        0.0,
+        -154.440035
+      ],
+      "size": [
+        3.2,
+        17.0,
+        8.0
+      ]
+    },
+    {
+      "bone": "right_exo_thigh",
+      "center": [
+        21.5,
+        44.5,
+        5.5
+      ],
+      "faces": {},
+      "material": "warning",
+      "name": "right_thigh_warning_panel",
+      "origin": [
+        21.5,
+        44.5,
+        5.5
+      ],
+      "role": "right thigh identification panel",
+      "rotation": [
+        21.416714,
+        0.0,
+        -154.440035
+      ],
+      "size": [
+        1.1,
+        8.5,
+        4.5
+      ]
+    },
+    {
+      "bone": "right_exo_thigh",
+      "center": [
+        13.7,
+        44.5,
+        2.2
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "right_thigh_inner_rail",
+      "origin": [
+        13.7,
+        44.5,
+        2.2
+      ],
+      "role": "right exposed inner thigh rail",
+      "rotation": [
+        21.416714,
+        0.0,
+        -154.440035
+      ],
+      "size": [
+        2.4,
+        18.0,
+        2.6
+      ]
+    },
+    {
+      "bone": "right_exo_knee",
+      "center": [
+        22.0,
+        33.0,
+        10.0
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "right_exo_knee_core",
+      "origin": [
+        22.0,
+        33.0,
+        10.0
+      ],
+      "role": "right compact knee hinge inside open tread guard",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        7.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "right_exo_knee",
+      "center": [
+        22.0,
+        33.0,
+        13.8
+      ],
+      "faces": {},
+      "material": "brass",
+      "name": "right_knee_front_drum",
+      "origin": [
+        22.0,
+        33.0,
+        13.8
+      ],
+      "role": "right knee front hinge drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        5.5,
+        5.5,
+        1.8
+      ]
+    },
+    {
+      "bone": "right_exo_knee",
+      "center": [
+        22.0,
+        33.0,
+        6.2
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "right_knee_rear_drum",
+      "origin": [
+        22.0,
+        33.0,
+        6.2
+      ],
+      "role": "right knee rear hinge drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        5.5,
+        5.5,
+        1.8
+      ]
+    },
+    {
+      "bone": "right_exo_knee",
+      "center": [
+        23.0,
+        37.0,
+        10.0
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "right_knee_upper_fairing",
+      "origin": [
+        23.0,
+        37.0,
+        10.0
+      ],
+      "role": "right angular upper knee fairing",
+      "rotation": [
+        0.0,
+        0.0,
+        -8.0
+      ],
+      "size": [
+        6.5,
+        2.5,
+        7.0
+      ]
+    },
+    {
+      "bone": "right_exo_knee",
+      "center": [
+        22.0,
+        38.0,
+        14.5
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "right_knee_tread_guard_top",
+      "origin": [
+        22.0,
+        38.0,
+        14.5
+      ],
+      "role": "right projecting open U-guard top",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        12.0,
+        2.0,
+        4.0
+      ]
+    },
+    {
+      "bone": "right_exo_knee",
+      "center": [
+        27.0,
+        33.0,
+        14.5
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "right_knee_tread_guard_outer",
+      "origin": [
+        27.0,
+        33.0,
+        14.5
+      ],
+      "role": "right projecting open U-guard outer rail",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.0,
+        10.0,
+        4.0
+      ]
+    },
+    {
+      "bone": "right_exo_knee",
+      "center": [
+        22.0,
+        28.0,
+        14.5
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "right_knee_tread_guard_bottom",
+      "origin": [
+        22.0,
+        28.0,
+        14.5
+      ],
+      "role": "right projecting open U-guard bottom",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        12.0,
+        2.0,
+        4.0
+      ]
+    },
+    {
+      "bone": "right_exo_shin",
+      "center": [
+        20,
+        43.900115,
+        7.5
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "right_shin_rear_brace",
+      "origin": [
+        20,
+        33,
+        7.5
+      ],
+      "role": "right open triangular rear shin linkage",
+      "rotation": [
+        -28.79298,
+        0,
+        173.990994
+      ],
+      "size": [
+        1.9,
+        22.500229,
+        2
+      ]
+    },
+    {
+      "bone": "right_exo_shin",
+      "center": [
+        22,
+        46.038405,
+        10
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "right_exo_shin_beam",
+      "origin": [
+        22,
+        33,
+        10
+      ],
+      "role": "right lower powered shin beam",
+      "rotation": [
+        -22.549564,
+        0,
+        175.236358
+      ],
+      "size": [
+        4.5,
+        27.67681,
+        5.2
+      ]
+    },
+    {
+      "bone": "right_exo_shin",
+      "center": [
+        24.1,
+        21.0,
+        5.0
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "right_shin_outer_armor",
+      "origin": [
+        24.1,
+        21.0,
+        5.0
+      ],
+      "role": "right long outer shin armor",
+      "rotation": [
+        -22.549564,
+        0.0,
+        175.236358
+      ],
+      "size": [
+        3.0,
+        22.0,
+        7.3
+      ]
+    },
+    {
+      "bone": "right_exo_shin",
+      "center": [
+        18.2,
+        21.0,
+        2.5
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "right_shin_inner_rail",
+      "origin": [
+        18.2,
+        21.0,
+        2.5
+      ],
+      "role": "right open inner shin rail",
+      "rotation": [
+        -22.549564,
+        0.0,
+        175.236358
+      ],
+      "size": [
+        2.2,
+        22.0,
+        2.4
+      ]
+    },
+    {
+      "bone": "right_exo_shin",
+      "center": [
+        20,
+        36.968668,
+        7
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "right_shin_piston_casing",
+      "origin": [
+        20,
+        31,
+        7
+      ],
+      "role": "right hydraulic shin piston casing",
+      "rotation": [
+        -32.991191,
+        0,
+        177.137595
+      ],
+      "size": [
+        3.1,
+        12.837336,
+        3.1
+      ]
+    },
+    {
+      "bone": "right_exo_shin",
+      "center": [
+        19.5,
+        26.031153,
+        0.5
+      ],
+      "faces": {},
+      "material": "bright_steel",
+      "name": "right_shin_piston_rod",
+      "origin": [
+        19.5,
+        21,
+        0.5
+      ],
+      "role": "right exposed hydraulic shin rod",
+      "rotation": [
+        -5.703515,
+        0,
+        -177.137595
+      ],
+      "size": [
+        1.7,
+        10.862306,
+        1.7
+      ]
+    },
+    {
+      "bone": "right_exo_ankle",
+      "center": [
+        20.0,
+        9.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "right_exo_ankle_core",
+      "origin": [
+        20.0,
+        9.0,
+        0.0
+      ],
+      "role": "right central ankle hinge block",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        5.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "right_exo_ankle",
+      "center": [
+        20.0,
+        9.0,
+        3.7
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "right_ankle_front_drum",
+      "origin": [
+        20.0,
+        9.0,
+        3.7
+      ],
+      "role": "right ankle front hinge",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.8,
+        4.8,
+        1.5
+      ]
+    },
+    {
+      "bone": "right_exo_ankle",
+      "center": [
+        20.0,
+        9.0,
+        -3.7
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "right_ankle_rear_drum",
+      "origin": [
+        20.0,
+        9.0,
+        -3.7
+      ],
+      "role": "right ankle rear hinge",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.8,
+        4.8,
+        1.5
+      ]
+    },
+    {
+      "bone": "right_exo_ankle",
+      "center": [
+        20.0,
+        12.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "right_ankle_upper_segment",
+      "origin": [
+        20.0,
+        12.0,
+        0.0
+      ],
+      "role": "right upper segmented ankle collar",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "right_exo_ankle",
+      "center": [
+        20.0,
+        6.0,
+        1.0
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "right_ankle_lower_segment",
+      "origin": [
+        20.0,
+        6.0,
+        1.0
+      ],
+      "role": "right lower segmented ankle collar",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        8.0
+      ]
+    },
+    {
+      "bone": "pilot_right_leg",
+      "center": [
+        16.5,
+        14.0,
+        2.5
+      ],
+      "faces": {},
+      "material": "brass",
+      "name": "pilot_right_boot_restraint",
+      "origin": [
+        16.5,
+        14.0,
+        2.5
+      ],
+      "role": "lateral restraint coupling pilot right boot to powered ankle",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        8.0,
+        2.4,
+        3.5
+      ]
+    },
+    {
+      "bone": "right_exo_foot",
+      "center": [
+        22.0,
+        2.75,
+        6.0
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "right_exo_ground_foot",
+      "origin": [
+        22.0,
+        2.75,
+        6.0
+      ],
+      "role": "right broad grounded powered foot",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        13.0,
+        5.5,
+        20.0
+      ]
+    },
+    {
+      "bone": "right_exo_foot",
+      "center": [
+        22.0,
+        5.0,
+        8.0
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "right_foot_top_armor",
+      "origin": [
+        22.0,
+        5.0,
+        8.0
+      ],
+      "role": "right sloped foot top armor",
+      "rotation": [
+        -8.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        11.0,
+        3.0,
+        12.0
+      ]
+    },
+    {
+      "bone": "right_exo_foot",
+      "center": [
+        22.0,
+        2.2,
+        -5.5
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "right_heel_spur",
+      "origin": [
+        22.0,
+        2.2,
+        -5.5
+      ],
+      "role": "right rear heel stabilizer",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        8.0,
+        4.8,
+        5.0
+      ]
+    },
+    {
+      "bone": "right_exo_foot",
+      "center": [
+        18.0,
+        1.7,
+        16.5
+      ],
+      "faces": {
+        "south": {
+          "material": "bright_steel"
+        }
+      },
+      "material": "frame_black",
+      "name": "right_toe_1",
+      "origin": [
+        18.0,
+        1.7,
+        16.5
+      ],
+      "role": "right articulated gripping toe 1",
+      "rotation": [
+        -12.0,
+        -10.0,
+        0.0
+      ],
+      "size": [
+        2.6,
+        3.4,
+        9.0
+      ]
+    },
+    {
+      "bone": "right_exo_foot",
+      "center": [
+        22.0,
+        1.7,
+        16.5
+      ],
+      "faces": {
+        "south": {
+          "material": "bright_steel"
+        }
+      },
+      "material": "frame_black",
+      "name": "right_toe_2",
+      "origin": [
+        22.0,
+        1.7,
+        16.5
+      ],
+      "role": "right articulated gripping toe 2",
+      "rotation": [
+        -12.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.6,
+        3.4,
+        9.0
+      ]
+    },
+    {
+      "bone": "right_exo_foot",
+      "center": [
+        26.0,
+        1.7,
+        16.5
+      ],
+      "faces": {
+        "south": {
+          "material": "bright_steel"
+        }
+      },
+      "material": "frame_black",
+      "name": "right_toe_3",
+      "origin": [
+        26.0,
+        1.7,
+        16.5
+      ],
+      "role": "right articulated gripping toe 3",
+      "rotation": [
+        -12.0,
+        10.0,
+        0.0
+      ],
+      "size": [
+        2.6,
+        3.4,
+        9.0
+      ]
+    },
+    {
+      "bone": "backpack",
+      "center": [
+        0.0,
+        78.0,
+        -9.0
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "backpack_main",
+      "origin": [
+        0.0,
+        78.0,
+        -9.0
+      ],
+      "role": "central electronics spine between twin power cylinders",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        16.0,
+        16.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "backpack",
+      "center": [
+        0.0,
+        79.0,
+        -12.9
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "backpack_control_panel",
+      "origin": [
+        0.0,
+        79.0,
+        -12.9
+      ],
+      "role": "rear electronics control panel",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        9.0,
+        10.0,
+        1.5
+      ]
+    },
+    {
+      "bone": "backpack",
+      "center": [
+        -9.5,
+        76.0,
+        -12.0
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "backpack_left_canister",
+      "origin": [
+        -9.5,
+        76.0,
+        -12.0
+      ],
+      "role": "left distinct tall power cylinder",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        20.0,
+        8.0
+      ]
+    },
+    {
+      "bone": "backpack",
+      "center": [
+        -9.5,
+        86.2,
+        -12.0
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "backpack_left_cap_top",
+      "origin": [
+        -9.5,
+        86.2,
+        -12.0
+      ],
+      "role": "left canister upper collar",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        2.4,
+        9.0
+      ]
+    },
+    {
+      "bone": "backpack",
+      "center": [
+        -9.5,
+        65.8,
+        -12.0
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "backpack_left_cap_bottom",
+      "origin": [
+        -9.5,
+        65.8,
+        -12.0
+      ],
+      "role": "left canister lower collar",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        2.4,
+        9.0
+      ]
+    },
+    {
+      "bone": "backpack",
+      "center": [
+        -9.5,
+        76.0,
+        -12.0
+      ],
+      "faces": {},
+      "material": "brass",
+      "name": "backpack_left_mid_collar",
+      "origin": [
+        -9.5,
+        76.0,
+        -12.0
+      ],
+      "role": "left power-cylinder center band",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        2.0,
+        9.0
+      ]
+    },
+    {
+      "bone": "backpack",
+      "center": [
+        9.5,
+        76.0,
+        -12.0
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "backpack_right_canister",
+      "origin": [
+        9.5,
+        76.0,
+        -12.0
+      ],
+      "role": "right distinct tall power cylinder",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        20.0,
+        8.0
+      ]
+    },
+    {
+      "bone": "backpack",
+      "center": [
+        9.5,
+        86.2,
+        -12.0
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "backpack_right_cap_top",
+      "origin": [
+        9.5,
+        86.2,
+        -12.0
+      ],
+      "role": "right canister upper collar",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        2.4,
+        9.0
+      ]
+    },
+    {
+      "bone": "backpack",
+      "center": [
+        9.5,
+        65.8,
+        -12.0
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "backpack_right_cap_bottom",
+      "origin": [
+        9.5,
+        65.8,
+        -12.0
+      ],
+      "role": "right canister lower collar",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        2.4,
+        9.0
+      ]
+    },
+    {
+      "bone": "backpack",
+      "center": [
+        9.5,
+        76.0,
+        -12.0
+      ],
+      "faces": {},
+      "material": "brass",
+      "name": "backpack_right_mid_collar",
+      "origin": [
+        9.5,
+        76.0,
+        -12.0
+      ],
+      "role": "right power-cylinder center band",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        2.0,
+        9.0
+      ]
+    },
+    {
+      "bone": "backpack",
+      "center": [
+        -6,
+        89.4827,
+        -10
+      ],
+      "faces": {},
+      "material": "hose",
+      "name": "backpack_hose_1",
+      "origin": [
+        -6,
+        84,
+        -10
+      ],
+      "role": "arched backpack coolant hose",
+      "rotation": [
+        33.173466,
+        0,
+        -11.309932
+      ],
+      "size": [
+        1.25,
+        11.5654,
+        1.25
+      ]
+    },
+    {
+      "bone": "backpack",
+      "center": [
+        6,
+        89.4827,
+        -10
+      ],
+      "faces": {},
+      "material": "hose",
+      "name": "backpack_hose_2",
+      "origin": [
+        6,
+        84,
+        -10
+      ],
+      "role": "arched backpack coolant hose",
+      "rotation": [
+        33.173466,
+        0,
+        11.309932
+      ],
+      "size": [
+        1.25,
+        11.5654,
+        1.25
+      ]
+    },
+    {
+      "bone": "backpack",
+      "center": [
+        14.0,
+        80.0,
+        -9.0
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "backpack_horizontal_actuator",
+      "origin": [
+        14.0,
+        80.0,
+        -9.0
+      ],
+      "role": "right horizontal shoulder actuator",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        15.0,
+        7.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "backpack",
+      "center": [
+        22.0,
+        80.0,
+        -9.0
+      ],
+      "faces": {},
+      "material": "bright_steel",
+      "name": "backpack_actuator_endcap",
+      "origin": [
+        22.0,
+        80.0,
+        -9.0
+      ],
+      "role": "right shoulder actuator end cap",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.0,
+        8.0,
+        8.0
+      ]
+    },
+    {
+      "bone": "shield_boom",
+      "center": [
+        7,
+        92.161201,
+        -6
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "shield_boom_1",
+      "origin": [
+        7,
+        82,
+        -6
+      ],
+      "role": "overhead shield support boom",
+      "rotation": [
+        5.647824,
+        0,
+        -8.530766
+      ],
+      "size": [
+        5.7,
+        21.622401,
+        6.5
+      ]
+    },
+    {
+      "bone": "shield_boom",
+      "center": [
+        10.0,
+        102.0,
+        -4.0
+      ],
+      "faces": {},
+      "material": "brass",
+      "name": "shield_boom_hinge_1",
+      "origin": [
+        10.0,
+        102.0,
+        -4.0
+      ],
+      "role": "shield boom hinge drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        7.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "shield_boom",
+      "center": [
+        10,
+        109.549834,
+        -4
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "shield_boom_2",
+      "origin": [
+        10,
+        102,
+        -4
+      ],
+      "role": "overhead shield support boom",
+      "rotation": [
+        31.992817,
+        0,
+        -38.659808
+      ],
+      "size": [
+        5,
+        16.399669,
+        5.8
+      ]
+    },
+    {
+      "bone": "shield_boom",
+      "center": [
+        18.0,
+        112.0,
+        4.0
+      ],
+      "faces": {},
+      "material": "brass",
+      "name": "shield_boom_hinge_2",
+      "origin": [
+        18.0,
+        112.0,
+        4.0
+      ],
+      "role": "shield boom hinge drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        7.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "shield_boom",
+      "center": [
+        18,
+        125.687289,
+        4
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "shield_boom_3",
+      "origin": [
+        18,
+        112,
+        4
+      ],
+      "role": "overhead shield support boom",
+      "rotation": [
+        40.706263,
+        0,
+        -138.307764
+      ],
+      "size": [
+        4.3,
+        28.674578,
+        5.1
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        31.802531897258792,
+        96.50415044207408,
+        21.853187137995413
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "shield_upper_rear_pad",
+      "origin": [
+        31.802531897258792,
+        96.50415044207408,
+        21.853187137995413
+      ],
+      "role": "upper mechanical shield contact pad",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        6.0,
+        6.0,
+        3.0
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        25.0,
+        82.0,
+        23.0
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_core",
+      "origin": [
+        25.0,
+        82.0,
+        23.0
+      ],
+      "role": "central load spine of open orange cellular shield",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        3.0,
+        49.0,
+        2.5
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        37.477962784836976,
+        104.24588579195174,
+        23.81915204428899
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_top_edge_rail",
+      "origin": [
+        37.477962784836976,
+        104.24588579195174,
+        23.81915204428899
+      ],
+      "role": "top shield structural edge rail",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        33.0,
+        3.5,
+        2.0
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        13.534913082756542,
+        59.21555855614647,
+        23.81915204428899
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_bottom_edge_rail",
+      "origin": [
+        13.534913082756542,
+        59.21555855614647,
+        23.81915204428899
+      ],
+      "role": "bottom shield structural edge rail",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        33.0,
+        3.5,
+        2.0
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        14.151125220456935,
+        87.76844904319739,
+        32.82430209500041
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_left_edge_rail",
+      "origin": [
+        14.151125220456935,
+        87.76844904319739,
+        32.82430209500041
+      ],
+      "role": "left shield structural edge rail",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        2.2,
+        50.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        36.861750647136574,
+        75.69299530490083,
+        14.814001993577568
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_right_edge_rail",
+      "origin": [
+        36.861750647136574,
+        75.69299530490083,
+        14.814001993577568
+      ],
+      "role": "right shield structural edge rail",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        2.2,
+        50.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        17.796427603099417,
+        85.83020738508833,
+        30.177607965738087
+      ],
+      "faces": {},
+      "material": "shield_dark",
+      "name": "shield_grille_bay_1",
+      "origin": [
+        17.796427603099417,
+        85.83020738508833,
+        30.177607965738087
+      ],
+      "role": "separated cellular shield spar 1",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        4.2,
+        50.0,
+        1.6
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        12.14909142729992,
+        74.10953863456648,
+        30.914844805598182
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_bay_1_rib_1",
+      "origin": [
+        12.14909142729992,
+        74.10953863456648,
+        30.914844805598182
+      ],
+      "role": "shield bay 1 cellular cross rib 1",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        5.5,
+        1.0,
+        0.8
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        17.78275018073061,
+        84.7049097488736,
+        30.914844805598182
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_bay_1_rib_2",
+      "origin": [
+        17.78275018073061,
+        84.7049097488736,
+        30.914844805598182
+      ],
+      "role": "shield bay 1 cellular cross rib 2",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        5.5,
+        1.0,
+        0.8
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        23.4164089341613,
+        95.30028086318073,
+        30.914844805598182
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_bay_1_rib_3",
+      "origin": [
+        23.4164089341613,
+        95.30028086318073,
+        30.914844805598182
+      ],
+      "role": "shield bay 1 cellular cross rib 3",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        5.5,
+        1.0,
+        0.8
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        23.003959548070544,
+        83.06131353426873,
+        26.047857624010554
+      ],
+      "faces": {},
+      "material": "shield_dark",
+      "name": "shield_grille_bay_2",
+      "origin": [
+        23.003959548070544,
+        83.06131353426873,
+        26.047857624010554
+      ],
+      "role": "separated cellular shield spar 2",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        4.2,
+        50.0,
+        1.6
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        17.356623372271045,
+        71.34064478374688,
+        26.78509446387065
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_bay_2_rib_1",
+      "origin": [
+        17.356623372271045,
+        71.34064478374688,
+        26.78509446387065
+      ],
+      "role": "shield bay 2 cellular cross rib 1",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        5.5,
+        1.0,
+        0.8
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        22.990282125701736,
+        81.93601589805401,
+        26.78509446387065
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_bay_2_rib_2",
+      "origin": [
+        22.990282125701736,
+        81.93601589805401,
+        26.78509446387065
+      ],
+      "role": "shield bay 2 cellular cross rib 2",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        5.5,
+        1.0,
+        0.8
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        28.623940879132427,
+        92.53138701236114,
+        26.78509446387065
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_bay_2_rib_3",
+      "origin": [
+        28.623940879132427,
+        92.53138701236114,
+        26.78509446387065
+      ],
+      "role": "shield bay 2 cellular cross rib 3",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        5.5,
+        1.0,
+        0.8
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        28.211491493041674,
+        80.29241968344914,
+        21.918107282283025
+      ],
+      "faces": {},
+      "material": "shield_dark",
+      "name": "shield_grille_bay_3",
+      "origin": [
+        28.211491493041674,
+        80.29241968344914,
+        21.918107282283025
+      ],
+      "role": "separated cellular shield spar 3",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        4.2,
+        50.0,
+        1.6
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        22.564155317242175,
+        68.57175093292729,
+        22.655344122143116
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_bay_3_rib_1",
+      "origin": [
+        22.564155317242175,
+        68.57175093292729,
+        22.655344122143116
+      ],
+      "role": "shield bay 3 cellular cross rib 1",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        5.5,
+        1.0,
+        0.8
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        28.197814070672862,
+        79.16712204723441,
+        22.655344122143116
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_bay_3_rib_2",
+      "origin": [
+        28.197814070672862,
+        79.16712204723441,
+        22.655344122143116
+      ],
+      "role": "shield bay 3 cellular cross rib 2",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        5.5,
+        1.0,
+        0.8
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        33.83147282410355,
+        89.76249316154154,
+        22.655344122143116
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_bay_3_rib_3",
+      "origin": [
+        33.83147282410355,
+        89.76249316154154,
+        22.655344122143116
+      ],
+      "role": "shield bay 3 cellular cross rib 3",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        5.5,
+        1.0,
+        0.8
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        33.4190234380128,
+        77.52352583262955,
+        17.78835694055549
+      ],
+      "faces": {},
+      "material": "shield_dark",
+      "name": "shield_grille_bay_4",
+      "origin": [
+        33.4190234380128,
+        77.52352583262955,
+        17.78835694055549
+      ],
+      "role": "separated cellular shield spar 4",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        4.2,
+        50.0,
+        1.6
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        27.771687262213305,
+        65.80285708210769,
+        18.525593780415587
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_bay_4_rib_1",
+      "origin": [
+        27.771687262213305,
+        65.80285708210769,
+        18.525593780415587
+      ],
+      "role": "shield bay 4 cellular cross rib 1",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        5.5,
+        1.0,
+        0.8
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        33.40534601564399,
+        76.39822819641482,
+        18.525593780415587
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_bay_4_rib_2",
+      "origin": [
+        33.40534601564399,
+        76.39822819641482,
+        18.525593780415587
+      ],
+      "role": "shield bay 4 cellular cross rib 2",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        5.5,
+        1.0,
+        0.8
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        39.03900476907468,
+        86.99359931072195,
+        18.525593780415587
+      ],
+      "faces": {},
+      "material": "shield_light",
+      "name": "shield_bay_4_rib_3",
+      "origin": [
+        39.03900476907468,
+        86.99359931072195,
+        18.525593780415587
+      ],
+      "role": "shield bay 4 cellular cross rib 3",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        5.5,
+        1.0,
+        0.8
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        14.606919360874016,
+        87.5260989998416,
+        33.56153893486051
+      ],
+      "faces": {},
+      "material": "bright_steel",
+      "name": "shield_bolt_1",
+      "origin": [
+        14.606919360874016,
+        87.5260989998416,
+        33.56153893486051
+      ],
+      "role": "shield face fastener 1",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        1.4,
+        1.4,
+        2.0
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        37.31754478755366,
+        75.45064526154503,
+        15.55123883343766
+      ],
+      "faces": {},
+      "material": "bright_steel",
+      "name": "shield_bolt_2",
+      "origin": [
+        37.31754478755366,
+        75.45064526154503,
+        15.55123883343766
+      ],
+      "role": "shield face fastener 2",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        1.4,
+        1.4,
+        2.0
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        29.931067980730745,
+        95.23408535612809,
+        26.62126405501285
+      ],
+      "faces": {},
+      "material": "label",
+      "name": "shield_militech_mark_1",
+      "origin": [
+        29.931067980730745,
+        95.23408535612809,
+        26.62126405501285
+      ],
+      "role": "raised pale shield identification mark",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        3.6,
+        2.0,
+        1.8
+      ]
+    },
+    {
+      "bone": "shield",
+      "center": [
+        34.19965680013009,
+        90.69929631959064,
+        22.49151371328532
+      ],
+      "faces": {},
+      "material": "label",
+      "name": "shield_militech_mark_2",
+      "origin": [
+        34.19965680013009,
+        90.69929631959064,
+        22.49151371328532
+      ],
+      "role": "raised pale shield identification mark",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        3.6,
+        2.0,
+        1.8
+      ]
+    },
+    {
+      "bone": "shield_lower_actuator",
+      "center": [
+        7,
+        74.545268,
+        0
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "shield_lower_actuator_casing",
+      "origin": [
+        7,
+        69,
+        0
+      ],
+      "role": "lower shield hydraulic casing",
+      "rotation": [
+        39.136403,
+        0,
+        -35.537678
+      ],
+      "size": [
+        4,
+        12.090537,
+        4
+      ]
+    },
+    {
+      "bone": "shield_lower_actuator",
+      "center": [
+        12,
+        84.431121,
+        7
+      ],
+      "faces": {},
+      "material": "bright_steel",
+      "name": "shield_lower_actuator_rod",
+      "origin": [
+        12,
+        76,
+        7
+      ],
+      "role": "lower shield exposed hydraulic rod",
+      "rotation": [
+        61.745654,
+        0,
+        -107.892884
+      ],
+      "size": [
+        2.3,
+        17.762242,
+        2.3
+      ]
+    },
+    {
+      "bone": "shield_lower_actuator",
+      "center": [
+        19.59627126482563,
+        73.54751302774197,
+        21.853187137995413
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "shield_lower_rear_pad",
+      "origin": [
+        19.59627126482563,
+        73.54751302774197,
+        21.853187137995413
+      ],
+      "role": "lower mechanical shield contact pad",
+      "rotation": [
+        0.0,
+        35.0,
+        -28.0
+      ],
+      "size": [
+        5.0,
+        5.0,
+        3.0
+      ]
+    },
+    {
+      "bone": "tool_boom",
+      "center": [
+        -7,
+        92.874282,
+        -6
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "tool_boom_1",
+      "origin": [
+        -7,
+        82,
+        -6
+      ],
+      "role": "left auxiliary articulated boom",
+      "rotation": [
+        7.928669,
+        0,
+        21.801409
+      ],
+      "size": [
+        5.6,
+        22.948563,
+        6.2
+      ]
+    },
+    {
+      "bone": "tool_boom",
+      "center": [
+        -15.0,
+        102.0,
+        -3.0
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "tool_boom_hinge_1",
+      "origin": [
+        -15.0,
+        102.0,
+        -3.0
+      ],
+      "role": "auxiliary boom hinge housing",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.2,
+        6.2,
+        6.2
+      ]
+    },
+    {
+      "bone": "tool_boom",
+      "center": [
+        -15,
+        108.726812,
+        -3
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "tool_boom_2",
+      "origin": [
+        -15,
+        102,
+        -3
+      ],
+      "role": "left auxiliary articulated boom",
+      "rotation": [
+        26.485831,
+        0,
+        48.366461
+      ],
+      "size": [
+        5,
+        14.653624,
+        5.6
+      ]
+    },
+    {
+      "bone": "tool_boom",
+      "center": [
+        -24.0,
+        110.0,
+        3.0
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "tool_boom_hinge_2",
+      "origin": [
+        -24.0,
+        110.0,
+        3.0
+      ],
+      "role": "auxiliary boom hinge housing",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.2,
+        6.2,
+        6.2
+      ]
+    },
+    {
+      "bone": "tool_boom",
+      "center": [
+        -24,
+        127.613915,
+        3
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "tool_boom_3",
+      "origin": [
+        -24,
+        110,
+        3
+      ],
+      "role": "left auxiliary articulated boom",
+      "rotation": [
+        11.461331,
+        0,
+        169.99202
+      ],
+      "size": [
+        4.4,
+        36.42783,
+        5
+      ]
+    },
+    {
+      "bone": "tool_boom",
+      "center": [
+        -30.0,
+        76.0,
+        10.0
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "tool_boom_hinge_3",
+      "origin": [
+        -30.0,
+        76.0,
+        10.0
+      ],
+      "role": "auxiliary boom hinge housing",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.2,
+        6.2,
+        6.2
+      ]
+    },
+    {
+      "bone": "tool_boom",
+      "center": [
+        -31.0,
+        72.0,
+        11.0
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "tool_receiver",
+      "origin": [
+        -31.0,
+        72.0,
+        11.0
+      ],
+      "role": "deep powered thermal-weapon receiver",
+      "rotation": [
+        0.0,
+        -8.0,
+        6.0
+      ],
+      "size": [
+        12.0,
+        12.0,
+        14.0
+      ]
+    },
+    {
+      "bone": "tool_boom",
+      "center": [
+        -34.0,
+        64.0,
+        15.0
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "tool_gripper_tine_1",
+      "origin": [
+        -34.0,
+        64.0,
+        15.0
+      ],
+      "role": "auxiliary gripper tine 1",
+      "rotation": [
+        12.0,
+        0.0,
+        -8.0
+      ],
+      "size": [
+        2.0,
+        8.0,
+        6.0
+      ]
+    },
+    {
+      "bone": "tool_boom",
+      "center": [
+        -31.0,
+        64.0,
+        15.0
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "tool_gripper_tine_2",
+      "origin": [
+        -31.0,
+        64.0,
+        15.0
+      ],
+      "role": "auxiliary gripper tine 2",
+      "rotation": [
+        12.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.0,
+        8.0,
+        6.0
+      ]
+    },
+    {
+      "bone": "tool_boom",
+      "center": [
+        -28.0,
+        64.0,
+        15.0
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "tool_gripper_tine_3",
+      "origin": [
+        -28.0,
+        64.0,
+        15.0
+      ],
+      "role": "auxiliary gripper tine 3",
+      "rotation": [
+        12.0,
+        0.0,
+        8.0
+      ],
+      "size": [
+        2.0,
+        8.0,
+        6.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        -3.0,
+        72.0,
+        14.0
+      ],
+      "faces": {},
+      "material": "frame_blue",
+      "name": "thermal_weapon_core",
+      "origin": [
+        -3.0,
+        72.0,
+        14.0
+      ],
+      "role": "deep long chest-crossing thermal weapon chassis",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        60.0,
+        17.0,
+        16.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        -2.0,
+        81.0,
+        14.0
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "thermal_weapon_top_cover",
+      "origin": [
+        -2.0,
+        81.0,
+        14.0
+      ],
+      "role": "stepped thermal weapon top armor",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        55.0,
+        3.0,
+        13.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        -1.0,
+        63.3,
+        14.0
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "thermal_weapon_lower_rail",
+      "origin": [
+        -1.0,
+        63.3,
+        14.0
+      ],
+      "role": "deep thermal weapon lower reinforcement rail",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        52.0,
+        3.0,
+        12.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        -35.5,
+        72.0,
+        14.0
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "thermal_weapon_muzzle",
+      "origin": [
+        -35.5,
+        72.0,
+        14.0
+      ],
+      "role": "large pale stepped thermal emitter muzzle",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        18.0,
+        17.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        29.0,
+        72.0,
+        14.0
+      ],
+      "faces": {},
+      "material": "frame_dark",
+      "name": "thermal_weapon_rear_receiver",
+      "origin": [
+        29.0,
+        72.0,
+        14.0
+      ],
+      "role": "deep rear power receiver and shield-side endcap",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        18.0,
+        17.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        -5.0,
+        72.0,
+        22.3
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "thermal_grille_bay_1",
+      "origin": [
+        -5.0,
+        72.0,
+        22.3
+      ],
+      "role": "thermal radiator grille bay 1",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.5,
+        12.5,
+        2.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        -5.0,
+        68.5,
+        23.1
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "thermal_grille_1_rib_1",
+      "origin": [
+        -5.0,
+        68.5,
+        23.1
+      ],
+      "role": "radiator bay 1 cross rib 1",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        -5.0,
+        75.5,
+        23.1
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "thermal_grille_1_rib_2",
+      "origin": [
+        -5.0,
+        75.5,
+        23.1
+      ],
+      "role": "radiator bay 1 cross rib 2",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        3.0,
+        72.0,
+        22.3
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "thermal_grille_bay_2",
+      "origin": [
+        3.0,
+        72.0,
+        22.3
+      ],
+      "role": "thermal radiator grille bay 2",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.5,
+        12.5,
+        2.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        3.0,
+        68.5,
+        23.1
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "thermal_grille_2_rib_1",
+      "origin": [
+        3.0,
+        68.5,
+        23.1
+      ],
+      "role": "radiator bay 2 cross rib 1",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        3.0,
+        75.5,
+        23.1
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "thermal_grille_2_rib_2",
+      "origin": [
+        3.0,
+        75.5,
+        23.1
+      ],
+      "role": "radiator bay 2 cross rib 2",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        11.0,
+        72.0,
+        22.3
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "thermal_grille_bay_3",
+      "origin": [
+        11.0,
+        72.0,
+        22.3
+      ],
+      "role": "thermal radiator grille bay 3",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.5,
+        12.5,
+        2.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        11.0,
+        68.5,
+        23.1
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "thermal_grille_3_rib_1",
+      "origin": [
+        11.0,
+        68.5,
+        23.1
+      ],
+      "role": "radiator bay 3 cross rib 1",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        11.0,
+        75.5,
+        23.1
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "thermal_grille_3_rib_2",
+      "origin": [
+        11.0,
+        75.5,
+        23.1
+      ],
+      "role": "radiator bay 3 cross rib 2",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        19.0,
+        72.0,
+        22.3
+      ],
+      "faces": {},
+      "material": "frame_black",
+      "name": "thermal_grille_bay_4",
+      "origin": [
+        19.0,
+        72.0,
+        22.3
+      ],
+      "role": "thermal radiator grille bay 4",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.5,
+        12.5,
+        2.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        19.0,
+        68.5,
+        23.1
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "thermal_grille_4_rib_1",
+      "origin": [
+        19.0,
+        68.5,
+        23.1
+      ],
+      "role": "radiator bay 4 cross rib 1",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        19.0,
+        75.5,
+        23.1
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "thermal_grille_4_rib_2",
+      "origin": [
+        19.0,
+        75.5,
+        23.1
+      ],
+      "role": "radiator bay 4 cross rib 2",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        -27.0,
+        72.0,
+        22.5
+      ],
+      "faces": {},
+      "material": "heat_rose",
+      "name": "thermal_heat_tube_1",
+      "origin": [
+        -27.0,
+        72.0,
+        22.5
+      ],
+      "role": "rose thermal exchanger tube 1",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.6,
+        12.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        -24.2,
+        72.0,
+        22.5
+      ],
+      "faces": {},
+      "material": "heat_rose",
+      "name": "thermal_heat_tube_2",
+      "origin": [
+        -24.2,
+        72.0,
+        22.5
+      ],
+      "role": "rose thermal exchanger tube 2",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.6,
+        12.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        -21.4,
+        72.0,
+        22.5
+      ],
+      "faces": {},
+      "material": "heat_rose",
+      "name": "thermal_heat_tube_3",
+      "origin": [
+        -21.4,
+        72.0,
+        22.5
+      ],
+      "role": "rose thermal exchanger tube 3",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.6,
+        12.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        -18.6,
+        72.0,
+        22.5
+      ],
+      "faces": {},
+      "material": "heat_rose",
+      "name": "thermal_heat_tube_4",
+      "origin": [
+        -18.6,
+        72.0,
+        22.5
+      ],
+      "role": "rose thermal exchanger tube 4",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.6,
+        12.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        -15.8,
+        72.0,
+        22.5
+      ],
+      "faces": {},
+      "material": "heat_rose",
+      "name": "thermal_heat_tube_5",
+      "origin": [
+        -15.8,
+        72.0,
+        22.5
+      ],
+      "role": "rose thermal exchanger tube 5",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.6,
+        12.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        -28,
+        81.5,
+        30.567735
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "thermal_top_pipe_1",
+      "origin": [
+        -28,
+        81.5,
+        19
+      ],
+      "role": "upper tubular thermal guard",
+      "rotation": [
+        -6.203448,
+        90,
+        0
+      ],
+      "size": [
+        2,
+        2,
+        23.835471
+      ]
+    },
+    {
+      "bone": "thermal_weapon",
+      "center": [
+        -5,
+        84,
+        32.557747
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "thermal_top_pipe_2",
+      "origin": [
+        -5,
+        84,
+        19
+      ],
+      "role": "upper tubular thermal guard return",
+      "rotation": [
+        5.290081,
+        90,
+        0
+      ],
+      "size": [
+        2,
+        2,
+        27.815494
+      ]
+    },
+    {
+      "bone": "exo_pelvis",
+      "center": [
+        -7.5,
+        58.0,
+        7.9
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "pelvis_service_panel_1",
+      "origin": [
+        -7.5,
+        58.0,
+        7.9
+      ],
+      "role": "pelvis front service panel 1",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.4,
+        3.2,
+        0.8
+      ]
+    },
+    {
+      "bone": "exo_pelvis",
+      "center": [
+        -2.5,
+        58.0,
+        7.9
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "pelvis_service_panel_2",
+      "origin": [
+        -2.5,
+        58.0,
+        7.9
+      ],
+      "role": "pelvis front service panel 2",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.4,
+        3.2,
+        0.8
+      ]
+    },
+    {
+      "bone": "exo_pelvis",
+      "center": [
+        2.5,
+        58.0,
+        7.9
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "pelvis_service_panel_3",
+      "origin": [
+        2.5,
+        58.0,
+        7.9
+      ],
+      "role": "pelvis front service panel 3",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.4,
+        3.2,
+        0.8
+      ]
+    },
+    {
+      "bone": "exo_pelvis",
+      "center": [
+        7.5,
+        58.0,
+        7.9
+      ],
+      "faces": {},
+      "material": "edge_steel",
+      "name": "pelvis_service_panel_4",
+      "origin": [
+        7.5,
+        58.0,
+        7.9
+      ],
+      "role": "pelvis front service panel 4",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.4,
+        3.2,
+        0.8
+      ]
+    },
+    {
+      "bone": "torso_frame",
+      "center": [
+        -7.5,
+        69.031153,
+        -5
+      ],
+      "faces": {},
+      "material": "hose_yellow",
+      "name": "left_hydraulic_hose_1",
+      "origin": [
+        -7.5,
+        64,
+        -5
+      ],
+      "role": "left continuous hydraulic hose",
+      "rotation": [
+        0,
+        0,
+        153.434949
+      ],
+      "size": [
+        1.15,
+        10.622306,
+        1.15
+      ]
+    },
+    {
+      "bone": "torso_frame",
+      "center": [
+        -12,
+        63.261356,
+        -5
+      ],
+      "faces": {},
+      "material": "hose",
+      "name": "left_hydraulic_hose_2",
+      "origin": [
+        -12,
+        55,
+        -5
+      ],
+      "role": "left continuous hydraulic hose",
+      "rotation": [
+        3.469819,
+        0,
+        165.963757
+      ],
+      "size": [
+        1.15,
+        17.082712,
+        1.15
+      ]
+    },
+    {
+      "bone": "torso_frame",
+      "center": [
+        -16,
+        48.513149,
+        -4
+      ],
+      "faces": {},
+      "material": "hose",
+      "name": "left_hydraulic_hose_3",
+      "origin": [
+        -16,
+        39,
+        -4
+      ],
+      "role": "left continuous hydraulic hose",
+      "rotation": [
+        3.012788,
+        0,
+        -180
+      ],
+      "size": [
+        1.15,
+        19.586298,
+        1.15
+      ]
+    },
+    {
+      "bone": "torso_frame",
+      "center": [
+        7.5,
+        69.031153,
+        -5
+      ],
+      "faces": {},
+      "material": "hose_yellow",
+      "name": "right_hydraulic_hose_1",
+      "origin": [
+        7.5,
+        64,
+        -5
+      ],
+      "role": "right continuous hydraulic hose",
+      "rotation": [
+        0,
+        0,
+        -153.434949
+      ],
+      "size": [
+        1.15,
+        10.622306,
+        1.15
+      ]
+    },
+    {
+      "bone": "torso_frame",
+      "center": [
+        12,
+        63.261356,
+        -5
+      ],
+      "faces": {},
+      "material": "hose",
+      "name": "right_hydraulic_hose_2",
+      "origin": [
+        12,
+        55,
+        -5
+      ],
+      "role": "right continuous hydraulic hose",
+      "rotation": [
+        3.469819,
+        0,
+        -165.963757
+      ],
+      "size": [
+        1.15,
+        17.082712,
+        1.15
+      ]
+    },
+    {
+      "bone": "torso_frame",
+      "center": [
+        16,
+        48.513149,
+        -4
+      ],
+      "faces": {},
+      "material": "hose",
+      "name": "right_hydraulic_hose_3",
+      "origin": [
+        16,
+        39,
+        -4
+      ],
+      "role": "right continuous hydraulic hose",
+      "rotation": [
+        3.012788,
+        0,
+        -180
+      ],
+      "size": [
+        1.15,
+        19.586298,
+        1.15
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "multiview-pilot-inside-powered-frame-v1",
+    "anatomical_axis": "+Z front, X width, Y up",
+    "declared_attachments": [
+      {
+        "first": "pelvis_frame_core",
+        "joint": [
+          0.0,
+          58.0,
+          6.7
+        ],
+        "second": "pelvis_front_armor"
+      },
+      {
+        "first": "pelvis_frame_core",
+        "joint": [
+          0.0,
+          59.0,
+          -6.5
+        ],
+        "second": "pelvis_rear_crossbar"
+      },
+      {
+        "first": "pelvis_frame_core",
+        "joint": [
+          0.0,
+          60.0,
+          1.5
+        ],
+        "second": "saddle_core"
+      },
+      {
+        "first": "pelvis_frame_core",
+        "joint": [
+          0.0,
+          62.0,
+          -3.5
+        ],
+        "second": "torso_frame_spine"
+      },
+      {
+        "first": "torso_frame_spine",
+        "joint": [
+          0.0,
+          76.0,
+          -4.0
+        ],
+        "second": "shoulder_frame_crossbar"
+      },
+      {
+        "first": "pelvis_frame_core",
+        "joint": [
+          -9.5,
+          58.0,
+          0.0
+        ],
+        "second": "left_pelvis_cheek"
+      },
+      {
+        "first": "torso_frame_spine",
+        "joint": [
+          -2.0,
+          66.0,
+          -3.5
+        ],
+        "second": "left_waist_brace"
+      },
+      {
+        "first": "pelvis_frame_core",
+        "joint": [
+          9.5,
+          58.0,
+          0.0
+        ],
+        "second": "right_pelvis_cheek"
+      },
+      {
+        "first": "torso_frame_spine",
+        "joint": [
+          2.0,
+          66.0,
+          -3.5
+        ],
+        "second": "right_waist_brace"
+      },
+      {
+        "first": "saddle_core",
+        "joint": [
+          0.0,
+          59.0,
+          3.0
+        ],
+        "second": "pilot_pelvis_core"
+      },
+      {
+        "first": "pilot_pelvis_core",
+        "joint": [
+          0.0,
+          61.0,
+          3.0
+        ],
+        "second": "pilot_abdomen"
+      },
+      {
+        "first": "pilot_abdomen",
+        "joint": [
+          0.0,
+          70.5,
+          3.0
+        ],
+        "second": "pilot_chest"
+      },
+      {
+        "first": "pilot_chest",
+        "joint": [
+          0.0,
+          81.0,
+          4.0
+        ],
+        "second": "pilot_neck"
+      },
+      {
+        "first": "pilot_neck",
+        "joint": [
+          0.0,
+          90.0,
+          4.2
+        ],
+        "second": "pilot_head_core"
+      },
+      {
+        "first": "pilot_head_core",
+        "joint": [
+          0.0,
+          95.2,
+          8.7
+        ],
+        "second": "pilot_brow"
+      },
+      {
+        "first": "pilot_head_core",
+        "joint": [
+          0.0,
+          91.5,
+          8.1
+        ],
+        "second": "pilot_jaw"
+      },
+      {
+        "first": "pilot_head_core",
+        "joint": [
+          0.0,
+          93.2,
+          8.7
+        ],
+        "second": "pilot_nose"
+      },
+      {
+        "first": "pilot_head_core",
+        "joint": [
+          -4.0,
+          94.5,
+          5.5
+        ],
+        "second": "pilot_left_temple_implant"
+      },
+      {
+        "first": "pilot_brow",
+        "joint": [
+          -2.0,
+          95.2,
+          9.0
+        ],
+        "second": "pilot_left_optic"
+      },
+      {
+        "first": "pilot_head_core",
+        "joint": [
+          4.0,
+          94.5,
+          5.5
+        ],
+        "second": "pilot_right_temple_implant"
+      },
+      {
+        "first": "pilot_brow",
+        "joint": [
+          2.0,
+          95.2,
+          9.0
+        ],
+        "second": "pilot_right_optic"
+      },
+      {
+        "first": "pilot_chest",
+        "joint": [
+          -6.2,
+          78.0,
+          4.0
+        ],
+        "second": "pilot_left_upper_arm"
+      },
+      {
+        "first": "pilot_left_upper_arm",
+        "joint": [
+          -10.0,
+          69.0,
+          8.0
+        ],
+        "second": "pilot_left_forearm"
+      },
+      {
+        "first": "pilot_left_forearm",
+        "joint": [
+          -7.0,
+          66.0,
+          12.0
+        ],
+        "second": "pilot_left_control_grip"
+      },
+      {
+        "first": "pelvis_front_armor",
+        "joint": [
+          -7.0,
+          59.5,
+          7.2
+        ],
+        "second": "pilot_left_control_stick"
+      },
+      {
+        "first": "pilot_chest",
+        "joint": [
+          6.2,
+          78.0,
+          4.0
+        ],
+        "second": "pilot_right_upper_arm"
+      },
+      {
+        "first": "pilot_right_upper_arm",
+        "joint": [
+          10.0,
+          69.0,
+          8.0
+        ],
+        "second": "pilot_right_forearm"
+      },
+      {
+        "first": "pilot_right_forearm",
+        "joint": [
+          7.0,
+          66.0,
+          12.0
+        ],
+        "second": "pilot_right_control_grip"
+      },
+      {
+        "first": "pelvis_front_armor",
+        "joint": [
+          7.0,
+          59.5,
+          7.2
+        ],
+        "second": "pilot_right_control_stick"
+      },
+      {
+        "first": "pilot_pelvis_core",
+        "joint": [
+          -4.0,
+          56.0,
+          2.5
+        ],
+        "second": "pilot_left_thigh"
+      },
+      {
+        "first": "pilot_left_thigh",
+        "joint": [
+          -10.0,
+          36.0,
+          8.0
+        ],
+        "second": "pilot_left_calf"
+      },
+      {
+        "first": "pilot_left_calf",
+        "joint": [
+          -13.0,
+          18.0,
+          4.0
+        ],
+        "second": "pilot_left_boot"
+      },
+      {
+        "first": "pilot_pelvis_core",
+        "joint": [
+          4.0,
+          56.0,
+          2.5
+        ],
+        "second": "pilot_right_thigh"
+      },
+      {
+        "first": "pilot_right_thigh",
+        "joint": [
+          10.0,
+          36.0,
+          8.0
+        ],
+        "second": "pilot_right_calf"
+      },
+      {
+        "first": "pilot_right_calf",
+        "joint": [
+          13.0,
+          18.0,
+          4.0
+        ],
+        "second": "pilot_right_boot"
+      },
+      {
+        "first": "left_pelvis_cheek",
+        "joint": [
+          -10.0,
+          57.0,
+          0.0
+        ],
+        "second": "left_exo_hip_block"
+      },
+      {
+        "first": "left_exo_hip_block",
+        "joint": [
+          -11.0,
+          56.0,
+          5.0
+        ],
+        "second": "left_hip_front_drum"
+      },
+      {
+        "first": "left_exo_hip_block",
+        "joint": [
+          -11.0,
+          56.0,
+          -5.0
+        ],
+        "second": "left_hip_rear_drum"
+      },
+      {
+        "first": "left_exo_hip_block",
+        "joint": [
+          -11.0,
+          56.0,
+          0.0
+        ],
+        "second": "left_exo_thigh_beam"
+      },
+      {
+        "first": "left_exo_thigh_beam",
+        "joint": [
+          -18.7,
+          44.5,
+          5.0
+        ],
+        "second": "left_thigh_outer_armor"
+      },
+      {
+        "first": "left_thigh_outer_armor",
+        "joint": [
+          -21.0,
+          44.5,
+          5.5
+        ],
+        "second": "left_thigh_warning_panel"
+      },
+      {
+        "first": "left_exo_thigh_beam",
+        "joint": [
+          -14.2,
+          44.5,
+          3.0
+        ],
+        "second": "left_thigh_inner_rail"
+      },
+      {
+        "first": "left_exo_thigh_beam",
+        "joint": [
+          -22.0,
+          33.0,
+          10.0
+        ],
+        "second": "left_exo_knee_core"
+      },
+      {
+        "first": "left_exo_knee_core",
+        "joint": [
+          -22.0,
+          33.0,
+          13.0
+        ],
+        "second": "left_knee_front_drum"
+      },
+      {
+        "first": "left_exo_knee_core",
+        "joint": [
+          -22.0,
+          33.0,
+          7.0
+        ],
+        "second": "left_knee_rear_drum"
+      },
+      {
+        "first": "left_exo_knee_core",
+        "joint": [
+          -22.0,
+          36.0,
+          10.0
+        ],
+        "second": "left_knee_upper_fairing"
+      },
+      {
+        "first": "left_knee_upper_fairing",
+        "joint": [
+          -23.0,
+          37.5,
+          13.0
+        ],
+        "second": "left_knee_tread_guard_top"
+      },
+      {
+        "first": "left_knee_tread_guard_top",
+        "joint": [
+          -27.0,
+          37.5,
+          14.5
+        ],
+        "second": "left_knee_tread_guard_outer"
+      },
+      {
+        "first": "left_knee_tread_guard_outer",
+        "joint": [
+          -27.0,
+          28.5,
+          14.5
+        ],
+        "second": "left_knee_tread_guard_bottom"
+      },
+      {
+        "first": "left_exo_knee_core",
+        "joint": [
+          -20.0,
+          33.0,
+          7.5
+        ],
+        "second": "left_shin_rear_brace"
+      },
+      {
+        "first": "left_exo_knee_core",
+        "joint": [
+          -22.0,
+          33.0,
+          10.0
+        ],
+        "second": "left_exo_shin_beam"
+      },
+      {
+        "first": "left_exo_shin_beam",
+        "joint": [
+          -23.2,
+          21.0,
+          5.0
+        ],
+        "second": "left_shin_outer_armor"
+      },
+      {
+        "first": "left_exo_shin_beam",
+        "joint": [
+          -19.0,
+          21.0,
+          3.2
+        ],
+        "second": "left_shin_inner_rail"
+      },
+      {
+        "first": "left_exo_knee_core",
+        "joint": [
+          -20.0,
+          31.0,
+          7.0
+        ],
+        "second": "left_shin_piston_casing"
+      },
+      {
+        "first": "left_shin_piston_casing",
+        "joint": [
+          -19.5,
+          21.0,
+          0.5
+        ],
+        "second": "left_shin_piston_rod"
+      },
+      {
+        "first": "left_exo_shin_beam",
+        "joint": [
+          -20.0,
+          9.0,
+          0.0
+        ],
+        "second": "left_exo_ankle_core"
+      },
+      {
+        "first": "left_exo_ankle_core",
+        "joint": [
+          -20.0,
+          9.0,
+          3.0
+        ],
+        "second": "left_ankle_front_drum"
+      },
+      {
+        "first": "left_exo_ankle_core",
+        "joint": [
+          -20.0,
+          9.0,
+          -3.0
+        ],
+        "second": "left_ankle_rear_drum"
+      },
+      {
+        "first": "left_exo_ankle_core",
+        "joint": [
+          -20.0,
+          10.5,
+          0.0
+        ],
+        "second": "left_ankle_upper_segment"
+      },
+      {
+        "first": "left_exo_ankle_core",
+        "joint": [
+          -20.0,
+          7.5,
+          0.5
+        ],
+        "second": "left_ankle_lower_segment"
+      },
+      {
+        "first": "pilot_left_boot",
+        "joint": [
+          -14.5,
+          14.5,
+          3.0
+        ],
+        "second": "pilot_left_boot_restraint"
+      },
+      {
+        "first": "left_ankle_lower_segment",
+        "joint": [
+          -20.0,
+          4.6,
+          1.0
+        ],
+        "second": "left_exo_ground_foot"
+      },
+      {
+        "first": "left_exo_ground_foot",
+        "joint": [
+          -22.0,
+          4.2,
+          7.0
+        ],
+        "second": "left_foot_top_armor"
+      },
+      {
+        "first": "left_exo_ground_foot",
+        "joint": [
+          -22.0,
+          2.5,
+          -3.5
+        ],
+        "second": "left_heel_spur"
+      },
+      {
+        "first": "left_exo_ground_foot",
+        "joint": [
+          -26.0,
+          2.2,
+          12.5
+        ],
+        "second": "left_toe_1"
+      },
+      {
+        "first": "left_exo_ground_foot",
+        "joint": [
+          -22.0,
+          2.2,
+          12.5
+        ],
+        "second": "left_toe_2"
+      },
+      {
+        "first": "left_exo_ground_foot",
+        "joint": [
+          -18.0,
+          2.2,
+          12.5
+        ],
+        "second": "left_toe_3"
+      },
+      {
+        "first": "right_pelvis_cheek",
+        "joint": [
+          10.0,
+          57.0,
+          0.0
+        ],
+        "second": "right_exo_hip_block"
+      },
+      {
+        "first": "right_exo_hip_block",
+        "joint": [
+          11.0,
+          56.0,
+          5.0
+        ],
+        "second": "right_hip_front_drum"
+      },
+      {
+        "first": "right_exo_hip_block",
+        "joint": [
+          11.0,
+          56.0,
+          -5.0
+        ],
+        "second": "right_hip_rear_drum"
+      },
+      {
+        "first": "right_exo_hip_block",
+        "joint": [
+          11.0,
+          56.0,
+          0.0
+        ],
+        "second": "right_exo_thigh_beam"
+      },
+      {
+        "first": "right_exo_thigh_beam",
+        "joint": [
+          18.7,
+          44.5,
+          5.0
+        ],
+        "second": "right_thigh_outer_armor"
+      },
+      {
+        "first": "right_thigh_outer_armor",
+        "joint": [
+          21.0,
+          44.5,
+          5.5
+        ],
+        "second": "right_thigh_warning_panel"
+      },
+      {
+        "first": "right_exo_thigh_beam",
+        "joint": [
+          14.2,
+          44.5,
+          3.0
+        ],
+        "second": "right_thigh_inner_rail"
+      },
+      {
+        "first": "right_exo_thigh_beam",
+        "joint": [
+          22.0,
+          33.0,
+          10.0
+        ],
+        "second": "right_exo_knee_core"
+      },
+      {
+        "first": "right_exo_knee_core",
+        "joint": [
+          22.0,
+          33.0,
+          13.0
+        ],
+        "second": "right_knee_front_drum"
+      },
+      {
+        "first": "right_exo_knee_core",
+        "joint": [
+          22.0,
+          33.0,
+          7.0
+        ],
+        "second": "right_knee_rear_drum"
+      },
+      {
+        "first": "right_exo_knee_core",
+        "joint": [
+          22.0,
+          36.0,
+          10.0
+        ],
+        "second": "right_knee_upper_fairing"
+      },
+      {
+        "first": "right_knee_upper_fairing",
+        "joint": [
+          23.0,
+          37.5,
+          13.0
+        ],
+        "second": "right_knee_tread_guard_top"
+      },
+      {
+        "first": "right_knee_tread_guard_top",
+        "joint": [
+          27.0,
+          37.5,
+          14.5
+        ],
+        "second": "right_knee_tread_guard_outer"
+      },
+      {
+        "first": "right_knee_tread_guard_outer",
+        "joint": [
+          27.0,
+          28.5,
+          14.5
+        ],
+        "second": "right_knee_tread_guard_bottom"
+      },
+      {
+        "first": "right_exo_knee_core",
+        "joint": [
+          20.0,
+          33.0,
+          7.5
+        ],
+        "second": "right_shin_rear_brace"
+      },
+      {
+        "first": "right_exo_knee_core",
+        "joint": [
+          22.0,
+          33.0,
+          10.0
+        ],
+        "second": "right_exo_shin_beam"
+      },
+      {
+        "first": "right_exo_shin_beam",
+        "joint": [
+          23.2,
+          21.0,
+          5.0
+        ],
+        "second": "right_shin_outer_armor"
+      },
+      {
+        "first": "right_exo_shin_beam",
+        "joint": [
+          19.0,
+          21.0,
+          3.2
+        ],
+        "second": "right_shin_inner_rail"
+      },
+      {
+        "first": "right_exo_knee_core",
+        "joint": [
+          20.0,
+          31.0,
+          7.0
+        ],
+        "second": "right_shin_piston_casing"
+      },
+      {
+        "first": "right_shin_piston_casing",
+        "joint": [
+          19.5,
+          21.0,
+          0.5
+        ],
+        "second": "right_shin_piston_rod"
+      },
+      {
+        "first": "right_exo_shin_beam",
+        "joint": [
+          20.0,
+          9.0,
+          0.0
+        ],
+        "second": "right_exo_ankle_core"
+      },
+      {
+        "first": "right_exo_ankle_core",
+        "joint": [
+          20.0,
+          9.0,
+          3.0
+        ],
+        "second": "right_ankle_front_drum"
+      },
+      {
+        "first": "right_exo_ankle_core",
+        "joint": [
+          20.0,
+          9.0,
+          -3.0
+        ],
+        "second": "right_ankle_rear_drum"
+      },
+      {
+        "first": "right_exo_ankle_core",
+        "joint": [
+          20.0,
+          10.5,
+          0.0
+        ],
+        "second": "right_ankle_upper_segment"
+      },
+      {
+        "first": "right_exo_ankle_core",
+        "joint": [
+          20.0,
+          7.5,
+          0.5
+        ],
+        "second": "right_ankle_lower_segment"
+      },
+      {
+        "first": "pilot_right_boot",
+        "joint": [
+          14.5,
+          14.5,
+          3.0
+        ],
+        "second": "pilot_right_boot_restraint"
+      },
+      {
+        "first": "right_ankle_lower_segment",
+        "joint": [
+          20.0,
+          4.6,
+          1.0
+        ],
+        "second": "right_exo_ground_foot"
+      },
+      {
+        "first": "right_exo_ground_foot",
+        "joint": [
+          22.0,
+          4.2,
+          7.0
+        ],
+        "second": "right_foot_top_armor"
+      },
+      {
+        "first": "right_exo_ground_foot",
+        "joint": [
+          22.0,
+          2.5,
+          -3.5
+        ],
+        "second": "right_heel_spur"
+      },
+      {
+        "first": "right_exo_ground_foot",
+        "joint": [
+          18.0,
+          2.2,
+          12.5
+        ],
+        "second": "right_toe_1"
+      },
+      {
+        "first": "right_exo_ground_foot",
+        "joint": [
+          22.0,
+          2.2,
+          12.5
+        ],
+        "second": "right_toe_2"
+      },
+      {
+        "first": "right_exo_ground_foot",
+        "joint": [
+          26.0,
+          2.2,
+          12.5
+        ],
+        "second": "right_toe_3"
+      },
+      {
+        "first": "shoulder_frame_crossbar",
+        "joint": [
+          0.0,
+          77.0,
+          -5.5
+        ],
+        "second": "backpack_main"
+      },
+      {
+        "first": "backpack_main",
+        "joint": [
+          0.0,
+          79.0,
+          -12.4
+        ],
+        "second": "backpack_control_panel"
+      },
+      {
+        "first": "backpack_main",
+        "joint": [
+          -7.5,
+          76.0,
+          -10.0
+        ],
+        "second": "backpack_left_canister"
+      },
+      {
+        "first": "backpack_left_canister",
+        "joint": [
+          -9.5,
+          85.5,
+          -12.0
+        ],
+        "second": "backpack_left_cap_top"
+      },
+      {
+        "first": "backpack_left_canister",
+        "joint": [
+          -9.5,
+          66.5,
+          -12.0
+        ],
+        "second": "backpack_left_cap_bottom"
+      },
+      {
+        "first": "backpack_left_canister",
+        "joint": [
+          -9.5,
+          76.0,
+          -12.0
+        ],
+        "second": "backpack_left_mid_collar"
+      },
+      {
+        "first": "backpack_main",
+        "joint": [
+          7.5,
+          76.0,
+          -10.0
+        ],
+        "second": "backpack_right_canister"
+      },
+      {
+        "first": "backpack_right_canister",
+        "joint": [
+          9.5,
+          85.5,
+          -12.0
+        ],
+        "second": "backpack_right_cap_top"
+      },
+      {
+        "first": "backpack_right_canister",
+        "joint": [
+          9.5,
+          66.5,
+          -12.0
+        ],
+        "second": "backpack_right_cap_bottom"
+      },
+      {
+        "first": "backpack_right_canister",
+        "joint": [
+          9.5,
+          76.0,
+          -12.0
+        ],
+        "second": "backpack_right_mid_collar"
+      },
+      {
+        "first": "backpack_main",
+        "joint": [
+          -6.0,
+          84.0,
+          -10.0
+        ],
+        "second": "backpack_hose_1"
+      },
+      {
+        "first": "backpack_main",
+        "joint": [
+          6.0,
+          84.0,
+          -10.0
+        ],
+        "second": "backpack_hose_2"
+      },
+      {
+        "first": "backpack_main",
+        "joint": [
+          7.8,
+          80.0,
+          -9.0
+        ],
+        "second": "backpack_horizontal_actuator"
+      },
+      {
+        "first": "backpack_horizontal_actuator",
+        "joint": [
+          20.5,
+          80.0,
+          -9.0
+        ],
+        "second": "backpack_actuator_endcap"
+      },
+      {
+        "first": "backpack_main",
+        "joint": [
+          7.0,
+          82.0,
+          -6.0
+        ],
+        "second": "shield_boom_1"
+      },
+      {
+        "first": "shield_boom_1",
+        "joint": [
+          10.0,
+          102.0,
+          -4.0
+        ],
+        "second": "shield_boom_hinge_1"
+      },
+      {
+        "first": "shield_boom_1",
+        "joint": [
+          10.0,
+          102.0,
+          -4.0
+        ],
+        "second": "shield_boom_2"
+      },
+      {
+        "first": "shield_boom_2",
+        "joint": [
+          18.0,
+          112.0,
+          4.0
+        ],
+        "second": "shield_boom_hinge_2"
+      },
+      {
+        "first": "shield_boom_2",
+        "joint": [
+          18.0,
+          112.0,
+          4.0
+        ],
+        "second": "shield_boom_3"
+      },
+      {
+        "first": "shield_boom_3",
+        "joint": [
+          31.802531897258792,
+          96.50415044207408,
+          21.853187137995413
+        ],
+        "second": "shield_upper_rear_pad"
+      },
+      {
+        "first": "shield_upper_rear_pad",
+        "joint": [
+          32.0051070707775,
+          96.39643931169373,
+          22.18084795571101
+        ],
+        "second": "shield_core"
+      },
+      {
+        "first": "shield_core",
+        "joint": [
+          36.62182406051911,
+          103.00224775044862,
+          23.573406431002294
+        ],
+        "second": "shield_top_edge_rail"
+      },
+      {
+        "first": "shield_core",
+        "joint": [
+          14.087189046796349,
+          60.62076329322013,
+          23.573406431002294
+        ],
+        "second": "shield_bottom_edge_rail"
+      },
+      {
+        "first": "shield_top_edge_rail",
+        "joint": [
+          25.993837890111458,
+          109.21953326216666,
+          32.55414759347907
+        ],
+        "second": "shield_left_edge_rail"
+      },
+      {
+        "first": "shield_top_edge_rail",
+        "joint": [
+          48.023144553990704,
+          97.50634313601898,
+          15.084156495098913
+        ],
+        "second": "shield_right_edge_rail"
+      },
+      {
+        "first": "shield_top_edge_rail",
+        "joint": [
+          29.197193304594393,
+          107.51627897532222,
+          30.01377755688029
+        ],
+        "second": "shield_grille_bay_1"
+      },
+      {
+        "first": "shield_grille_bay_1",
+        "joint": [
+          11.971838150471052,
+          74.20378587364928,
+          30.628141590097034
+        ],
+        "second": "shield_bay_1_rib_1"
+      },
+      {
+        "first": "shield_grille_bay_1",
+        "joint": [
+          17.60549690390174,
+          84.79915698795641,
+          30.628141590097034
+        ],
+        "second": "shield_bay_1_rib_2"
+      },
+      {
+        "first": "shield_grille_bay_1",
+        "joint": [
+          23.239155657332432,
+          95.39452810226354,
+          30.628141590097034
+        ],
+        "second": "shield_bay_1_rib_3"
+      },
+      {
+        "first": "shield_top_edge_rail",
+        "joint": [
+          34.404725249565516,
+          104.74738512450261,
+          25.88402721515276
+        ],
+        "second": "shield_grille_bay_2"
+      },
+      {
+        "first": "shield_grille_bay_2",
+        "joint": [
+          17.17937009544218,
+          71.43489202282969,
+          26.4983912483695
+        ],
+        "second": "shield_bay_2_rib_1"
+      },
+      {
+        "first": "shield_grille_bay_2",
+        "joint": [
+          22.81302884887287,
+          82.03026313713681,
+          26.4983912483695
+        ],
+        "second": "shield_bay_2_rib_2"
+      },
+      {
+        "first": "shield_grille_bay_2",
+        "joint": [
+          28.446687602303562,
+          92.62563425144394,
+          26.4983912483695
+        ],
+        "second": "shield_bay_2_rib_3"
+      },
+      {
+        "first": "shield_top_edge_rail",
+        "joint": [
+          39.612257194536646,
+          101.97849127368303,
+          21.754276873425226
+        ],
+        "second": "shield_grille_bay_3"
+      },
+      {
+        "first": "shield_grille_bay_3",
+        "joint": [
+          22.38690204041331,
+          68.66599817201009,
+          22.36864090664197
+        ],
+        "second": "shield_bay_3_rib_1"
+      },
+      {
+        "first": "shield_grille_bay_3",
+        "joint": [
+          28.020560793844,
+          79.26136928631722,
+          22.36864090664197
+        ],
+        "second": "shield_bay_3_rib_2"
+      },
+      {
+        "first": "shield_grille_bay_3",
+        "joint": [
+          33.654219547274685,
+          89.85674040062435,
+          22.36864090664197
+        ],
+        "second": "shield_bay_3_rib_3"
+      },
+      {
+        "first": "shield_top_edge_rail",
+        "joint": [
+          44.81978913950777,
+          99.20959742286342,
+          17.624526531697693
+        ],
+        "second": "shield_grille_bay_4"
+      },
+      {
+        "first": "shield_grille_bay_4",
+        "joint": [
+          27.59443398538444,
+          65.8971043211905,
+          18.23889056491444
+        ],
+        "second": "shield_bay_4_rib_1"
+      },
+      {
+        "first": "shield_grille_bay_4",
+        "joint": [
+          33.22809273881513,
+          76.49247543549762,
+          18.23889056491444
+        ],
+        "second": "shield_bay_4_rib_2"
+      },
+      {
+        "first": "shield_grille_bay_4",
+        "joint": [
+          38.861751492245816,
+          87.08784654980475,
+          18.23889056491444
+        ],
+        "second": "shield_bay_4_rib_3"
+      },
+      {
+        "first": "shield_left_edge_rail",
+        "joint": [
+          14.22709091052645,
+          87.72805736930476,
+          32.94717490164376
+        ],
+        "second": "shield_bolt_1"
+      },
+      {
+        "first": "shield_right_edge_rail",
+        "joint": [
+          36.93771633720609,
+          75.6526036310082,
+          14.936874800220917
+        ],
+        "second": "shield_bolt_2"
+      },
+      {
+        "first": "shield_grille_bay_2",
+        "joint": [
+          29.551239530383178,
+          95.43604372559126,
+          26.006900021796106
+        ],
+        "second": "shield_militech_mark_1"
+      },
+      {
+        "first": "shield_grille_bay_3",
+        "joint": [
+          33.819828349782526,
+          90.90125468905381,
+          21.877149680068573
+        ],
+        "second": "shield_militech_mark_2"
+      },
+      {
+        "first": "right_waist_brace",
+        "joint": [
+          7.0,
+          69.0,
+          0.0
+        ],
+        "second": "shield_lower_actuator_casing"
+      },
+      {
+        "first": "shield_lower_actuator_casing",
+        "joint": [
+          12.0,
+          76.0,
+          7.0
+        ],
+        "second": "shield_lower_actuator_rod"
+      },
+      {
+        "first": "shield_lower_actuator_rod",
+        "joint": [
+          19.59627126482563,
+          73.54751302774197,
+          21.853187137995413
+        ],
+        "second": "shield_lower_rear_pad"
+      },
+      {
+        "first": "backpack_main",
+        "joint": [
+          -7.0,
+          82.0,
+          -6.0
+        ],
+        "second": "tool_boom_1"
+      },
+      {
+        "first": "tool_boom_1",
+        "joint": [
+          -15.0,
+          102.0,
+          -3.0
+        ],
+        "second": "tool_boom_hinge_1"
+      },
+      {
+        "first": "tool_boom_1",
+        "joint": [
+          -15.0,
+          102.0,
+          -3.0
+        ],
+        "second": "tool_boom_2"
+      },
+      {
+        "first": "tool_boom_2",
+        "joint": [
+          -24.0,
+          110.0,
+          3.0
+        ],
+        "second": "tool_boom_hinge_2"
+      },
+      {
+        "first": "tool_boom_2",
+        "joint": [
+          -24.0,
+          110.0,
+          3.0
+        ],
+        "second": "tool_boom_3"
+      },
+      {
+        "first": "tool_boom_3",
+        "joint": [
+          -30.0,
+          76.0,
+          10.0
+        ],
+        "second": "tool_boom_hinge_3"
+      },
+      {
+        "first": "tool_boom_3",
+        "joint": [
+          -30.0,
+          76.0,
+          10.0
+        ],
+        "second": "tool_receiver"
+      },
+      {
+        "first": "tool_receiver",
+        "joint": [
+          -34.0,
+          66.5,
+          13.5
+        ],
+        "second": "tool_gripper_tine_1"
+      },
+      {
+        "first": "tool_receiver",
+        "joint": [
+          -31.0,
+          66.5,
+          13.5
+        ],
+        "second": "tool_gripper_tine_2"
+      },
+      {
+        "first": "tool_receiver",
+        "joint": [
+          -28.0,
+          66.5,
+          13.5
+        ],
+        "second": "tool_gripper_tine_3"
+      },
+      {
+        "first": "tool_receiver",
+        "joint": [
+          -28.0,
+          72.0,
+          11.0
+        ],
+        "second": "thermal_weapon_core"
+      },
+      {
+        "first": "thermal_weapon_core",
+        "joint": [
+          -2.0,
+          80.0,
+          14.0
+        ],
+        "second": "thermal_weapon_top_cover"
+      },
+      {
+        "first": "thermal_weapon_core",
+        "joint": [
+          -1.0,
+          64.0,
+          14.0
+        ],
+        "second": "thermal_weapon_lower_rail"
+      },
+      {
+        "first": "thermal_weapon_core",
+        "joint": [
+          -32.5,
+          72.0,
+          14.0
+        ],
+        "second": "thermal_weapon_muzzle"
+      },
+      {
+        "first": "thermal_weapon_core",
+        "joint": [
+          26.5,
+          72.0,
+          14.0
+        ],
+        "second": "thermal_weapon_rear_receiver"
+      },
+      {
+        "first": "thermal_weapon_core",
+        "joint": [
+          -5.0,
+          72.0,
+          21.8
+        ],
+        "second": "thermal_grille_bay_1"
+      },
+      {
+        "first": "thermal_grille_bay_1",
+        "joint": [
+          -5.0,
+          68.5,
+          22.7
+        ],
+        "second": "thermal_grille_1_rib_1"
+      },
+      {
+        "first": "thermal_grille_bay_1",
+        "joint": [
+          -5.0,
+          75.5,
+          22.7
+        ],
+        "second": "thermal_grille_1_rib_2"
+      },
+      {
+        "first": "thermal_weapon_core",
+        "joint": [
+          3.0,
+          72.0,
+          21.8
+        ],
+        "second": "thermal_grille_bay_2"
+      },
+      {
+        "first": "thermal_grille_bay_2",
+        "joint": [
+          3.0,
+          68.5,
+          22.7
+        ],
+        "second": "thermal_grille_2_rib_1"
+      },
+      {
+        "first": "thermal_grille_bay_2",
+        "joint": [
+          3.0,
+          75.5,
+          22.7
+        ],
+        "second": "thermal_grille_2_rib_2"
+      },
+      {
+        "first": "thermal_weapon_core",
+        "joint": [
+          11.0,
+          72.0,
+          21.8
+        ],
+        "second": "thermal_grille_bay_3"
+      },
+      {
+        "first": "thermal_grille_bay_3",
+        "joint": [
+          11.0,
+          68.5,
+          22.7
+        ],
+        "second": "thermal_grille_3_rib_1"
+      },
+      {
+        "first": "thermal_grille_bay_3",
+        "joint": [
+          11.0,
+          75.5,
+          22.7
+        ],
+        "second": "thermal_grille_3_rib_2"
+      },
+      {
+        "first": "thermal_weapon_core",
+        "joint": [
+          19.0,
+          72.0,
+          21.8
+        ],
+        "second": "thermal_grille_bay_4"
+      },
+      {
+        "first": "thermal_grille_bay_4",
+        "joint": [
+          19.0,
+          68.5,
+          22.7
+        ],
+        "second": "thermal_grille_4_rib_1"
+      },
+      {
+        "first": "thermal_grille_bay_4",
+        "joint": [
+          19.0,
+          75.5,
+          22.7
+        ],
+        "second": "thermal_grille_4_rib_2"
+      },
+      {
+        "first": "thermal_weapon_core",
+        "joint": [
+          -27.0,
+          72.0,
+          21.9
+        ],
+        "second": "thermal_heat_tube_1"
+      },
+      {
+        "first": "thermal_weapon_core",
+        "joint": [
+          -24.2,
+          72.0,
+          21.9
+        ],
+        "second": "thermal_heat_tube_2"
+      },
+      {
+        "first": "thermal_weapon_core",
+        "joint": [
+          -21.4,
+          72.0,
+          21.9
+        ],
+        "second": "thermal_heat_tube_3"
+      },
+      {
+        "first": "thermal_weapon_core",
+        "joint": [
+          -18.6,
+          72.0,
+          21.9
+        ],
+        "second": "thermal_heat_tube_4"
+      },
+      {
+        "first": "thermal_weapon_core",
+        "joint": [
+          -15.8,
+          72.0,
+          21.9
+        ],
+        "second": "thermal_heat_tube_5"
+      },
+      {
+        "first": "thermal_weapon_top_cover",
+        "joint": [
+          -28.0,
+          81.5,
+          19.0
+        ],
+        "second": "thermal_top_pipe_1"
+      },
+      {
+        "first": "thermal_top_pipe_1",
+        "joint": [
+          -5.0,
+          84.0,
+          19.0
+        ],
+        "second": "thermal_top_pipe_2"
+      },
+      {
+        "first": "pelvis_front_armor",
+        "joint": [
+          -7.5,
+          58.0,
+          7.5
+        ],
+        "second": "pelvis_service_panel_1"
+      },
+      {
+        "first": "pelvis_front_armor",
+        "joint": [
+          -2.5,
+          58.0,
+          7.5
+        ],
+        "second": "pelvis_service_panel_2"
+      },
+      {
+        "first": "pelvis_front_armor",
+        "joint": [
+          2.5,
+          58.0,
+          7.5
+        ],
+        "second": "pelvis_service_panel_3"
+      },
+      {
+        "first": "pelvis_front_armor",
+        "joint": [
+          7.5,
+          58.0,
+          7.5
+        ],
+        "second": "pelvis_service_panel_4"
+      },
+      {
+        "first": "left_waist_brace",
+        "joint": [
+          -7.5,
+          64.0,
+          -5.0
+        ],
+        "second": "left_hydraulic_hose_1"
+      },
+      {
+        "first": "left_hydraulic_hose_1",
+        "joint": [
+          -12.0,
+          55.0,
+          -5.0
+        ],
+        "second": "left_hydraulic_hose_2"
+      },
+      {
+        "first": "left_hydraulic_hose_2",
+        "joint": [
+          -16.0,
+          39.0,
+          -4.0
+        ],
+        "second": "left_hydraulic_hose_3"
+      },
+      {
+        "first": "right_waist_brace",
+        "joint": [
+          7.5,
+          64.0,
+          -5.0
+        ],
+        "second": "right_hydraulic_hose_1"
+      },
+      {
+        "first": "right_hydraulic_hose_1",
+        "joint": [
+          12.0,
+          55.0,
+          -5.0
+        ],
+        "second": "right_hydraulic_hose_2"
+      },
+      {
+        "first": "right_hydraulic_hose_2",
+        "joint": [
+          16.0,
+          39.0,
+          -4.0
+        ],
+        "second": "right_hydraulic_hose_3"
+      }
+    ],
+    "exo_leg_chains": [
+      {
+        "ankle_segments": [
+          "left_ankle_upper_segment",
+          "left_exo_ankle_core",
+          "left_ankle_lower_segment"
+        ],
+        "boot_restraint": "pilot_left_boot_restraint",
+        "ground_foot": "left_exo_ground_foot",
+        "ground_minimum_y": 0.0,
+        "joints": [
+          [
+            -11.0,
+            56.0,
+            0.0
+          ],
+          [
+            -22.0,
+            33.0,
+            10.0
+          ],
+          [
+            -20.0,
+            9.0,
+            0.0
+          ]
+        ],
+        "piston": [
+          "left_shin_piston_casing",
+          "left_shin_piston_rod"
+        ],
+        "primary_segments": [
+          "left_exo_thigh_beam",
+          "left_exo_shin_beam"
+        ],
+        "side": "left",
+        "toes": [
+          "left_toe_1",
+          "left_toe_2",
+          "left_toe_3"
+        ]
+      },
+      {
+        "ankle_segments": [
+          "right_ankle_upper_segment",
+          "right_exo_ankle_core",
+          "right_ankle_lower_segment"
+        ],
+        "boot_restraint": "pilot_right_boot_restraint",
+        "ground_foot": "right_exo_ground_foot",
+        "ground_minimum_y": 0.0,
+        "joints": [
+          [
+            11.0,
+            56.0,
+            0.0
+          ],
+          [
+            22.0,
+            33.0,
+            10.0
+          ],
+          [
+            20.0,
+            9.0,
+            0.0
+          ]
+        ],
+        "piston": [
+          "right_shin_piston_casing",
+          "right_shin_piston_rod"
+        ],
+        "primary_segments": [
+          "right_exo_thigh_beam",
+          "right_exo_shin_beam"
+        ],
+        "side": "right",
+        "toes": [
+          "right_toe_1",
+          "right_toe_2",
+          "right_toe_3"
+        ]
+      }
+    ],
+    "feature_inventory": {
+      "articulated_toes": 6,
+      "auxiliary_boom_segments": 3,
+      "backpack_canister_collars": 6,
+      "backpack_canisters": 2,
+      "backpack_hoses": 2,
+      "boot_restraints": 2,
+      "exo_primary_leg_segments": 4,
+      "grounded_exo_feet": 2,
+      "human_arm_chains": 2,
+      "human_leg_chains": 2,
+      "human_pilots": 1,
+      "hydraulic_hose_segments": 6,
+      "knee_tread_guard_cuboids": 6,
+      "powered_exo_legs": 2,
+      "segmented_ankle_cuboids": 6,
+      "shield_grille_bays": 4,
+      "shield_grille_ribs": 12,
+      "shield_physical_contacts": 2,
+      "shield_support_boom_segments": 3,
+      "shin_rear_braces": 2,
+      "thermal_weapon_grille_bays": 4,
+      "thermal_weapon_heat_tubes": 5
+    },
+    "hidden_geometry_established": false,
+    "lane": "agent-authored-semantic-volume",
+    "pilot_exoframe_contacts": [
+      {
+        "first": "pilot_left_boot_restraint",
+        "joint": [
+          -17.0,
+          13.25,
+          2.0
+        ],
+        "second": "left_ankle_upper_segment",
+        "side": "left"
+      },
+      {
+        "first": "pilot_right_boot_restraint",
+        "joint": [
+          17.0,
+          13.25,
+          2.0
+        ],
+        "second": "right_ankle_upper_segment",
+        "side": "right"
+      }
+    ],
+    "pilot_leg_chains": [
+      {
+        "boot": "pilot_left_boot",
+        "joints": [
+          [
+            -4.0,
+            56,
+            2.5
+          ],
+          [
+            -10.0,
+            36,
+            8.0
+          ],
+          [
+            -13.0,
+            18,
+            4.0
+          ]
+        ],
+        "segments": [
+          "pilot_left_thigh",
+          "pilot_left_calf"
+        ],
+        "side": "left"
+      },
+      {
+        "boot": "pilot_right_boot",
+        "joints": [
+          [
+            4.0,
+            56,
+            2.5
+          ],
+          [
+            10.0,
+            36,
+            8.0
+          ],
+          [
+            13.0,
+            18,
+            4.0
+          ]
+        ],
+        "segments": [
+          "pilot_right_thigh",
+          "pilot_right_calf"
+        ],
+        "side": "right"
+      }
+    ],
+    "shield_contacts": [
+      {
+        "first": "shield_upper_rear_pad",
+        "joint": [
+          32.0051070707775,
+          96.39643931169373,
+          22.18084795571101
+        ],
+        "name": "upper_boom",
+        "second": "shield_core"
+      },
+      {
+        "first": "shield_lower_rear_pad",
+        "joint": [
+          19.798846438344334,
+          73.43980189736162,
+          22.18084795571101
+        ],
+        "name": "lower_actuator",
+        "second": "shield_core"
+      }
+    ],
+    "single_view_hidden_geometry": "not_applicable_three_uncalibrated_views",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0,
+    "view_count": 3,
+    "view_limitations": {
+      "image-6.png": "front three-quarter; shield hides right-side mechanisms",
+      "image-7.png": "side three-quarter; shield hides much of operator front",
+      "image-8.png": "rear three-quarter; exposes backpack but hides face and controls"
+    },
+    "visual_hull_used": false
+  },
+  "geometry": {
+    "precision": 20
+  },
+  "id": "militech_centaur_piloted_exoskeleton",
+  "landmarks": [
+    {
+      "center_color": "#fff0b0",
+      "center_uv": [
+        0.31,
+        0.39
+      ],
+      "color": "#ff482a",
+      "cube": "pilot_head_core",
+      "face": "south",
+      "name": "pilot_left_eye_glow",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#fff0b0",
+      "center_uv": [
+        0.69,
+        0.39
+      ],
+      "color": "#ff482a",
+      "cube": "pilot_head_core",
+      "face": "south",
+      "name": "pilot_right_eye_glow",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#17191b",
+      "center_uv": [
+        0.5,
+        0.48
+      ],
+      "color": "#d0a11f",
+      "cube": "backpack_control_panel",
+      "face": "north",
+      "name": "backpack_warning_triangle",
+      "size": [
+        4,
+        4
+      ]
+    }
+  ],
+  "materials": {
+    "brass": {
+      "base": "#a47b47",
+      "highlight": "#dbb66d",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#503921"
+    },
+    "bright_steel": {
+      "base": "#b9c1bd",
+      "highlight": "#edf1e8",
+      "pattern": "gradient",
+      "pattern_scale": 3,
+      "shade": "#666f70"
+    },
+    "cloth": {
+      "base": "#263a4d",
+      "highlight": "#536f88",
+      "pattern": "dither",
+      "pattern_scale": 4,
+      "shade": "#111e2b"
+    },
+    "cloth_light": {
+      "base": "#49677f",
+      "highlight": "#7896ae",
+      "pattern": "dither",
+      "pattern_scale": 3,
+      "shade": "#23394c"
+    },
+    "edge_steel": {
+      "base": "#69767b",
+      "highlight": "#a9b4b6",
+      "pattern": "stripes",
+      "pattern_scale": 3,
+      "shade": "#343e43"
+    },
+    "frame_black": {
+      "base": "#151c20",
+      "highlight": "#38434a",
+      "pattern": "dither",
+      "pattern_scale": 4,
+      "shade": "#080c0f"
+    },
+    "frame_blue": {
+      "base": "#2d424d",
+      "highlight": "#58717b",
+      "pattern": "dither",
+      "pattern_scale": 4,
+      "shade": "#15242c"
+    },
+    "frame_dark": {
+      "base": "#222d33",
+      "highlight": "#4d5c64",
+      "pattern": "dither",
+      "pattern_scale": 3,
+      "shade": "#0d1418"
+    },
+    "heat_rose": {
+      "base": "#ad786f",
+      "highlight": "#dda69a",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#583c39"
+    },
+    "hose": {
+      "base": "#30383b",
+      "highlight": "#596367",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#101416"
+    },
+    "hose_yellow": {
+      "base": "#b78b24",
+      "highlight": "#e3c255",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#533c08"
+    },
+    "implant": {
+      "base": "#3e4648",
+      "highlight": "#798084",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#161b1d"
+    },
+    "label": {
+      "base": "#d8ddd5",
+      "highlight": "#f7f8ee",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#747b78"
+    },
+    "optic_red": {
+      "base": "#e13a21",
+      "highlight": "#ff7b3d",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#5b0b08"
+    },
+    "rubber": {
+      "base": "#17191b",
+      "highlight": "#393d3e",
+      "pattern": "dither",
+      "pattern_scale": 5,
+      "shade": "#060708"
+    },
+    "shield": {
+      "base": "#713516",
+      "highlight": "#b4662d",
+      "pattern": "dither",
+      "pattern_scale": 4,
+      "shade": "#2d140b"
+    },
+    "shield_dark": {
+      "base": "#49200f",
+      "highlight": "#7c3b1d",
+      "pattern": "dither",
+      "pattern_scale": 5,
+      "shade": "#1c0c08"
+    },
+    "shield_light": {
+      "base": "#9b5223",
+      "highlight": "#d8843e",
+      "pattern": "stripes",
+      "pattern_scale": 3,
+      "shade": "#4b2010"
+    },
+    "skin": {
+      "base": "#9e665d",
+      "highlight": "#d99a84",
+      "pattern": "dither",
+      "pattern_scale": 3,
+      "shade": "#53312f"
+    },
+    "skin_light": {
+      "base": "#bd7b6d",
+      "highlight": "#e9aa90",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#6c3d38"
+    },
+    "trouser_blue": {
+      "base": "#3c5a72",
+      "highlight": "#7190a8",
+      "pattern": "dither",
+      "pattern_scale": 3,
+      "shade": "#1c3144"
+    },
+    "warning": {
+      "base": "#d0a11f",
+      "highlight": "#f2d75d",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#654907"
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "one visible human pilot distinct from the surrounding machine",
+      "exactly two massive articulated powered leg chains around two human legs",
+      "large diagonally carried orange shield with grille bays and edge rails",
+      "overhead shield boom plus independent lower actuator making two real contacts",
+      "twin-canister electronics backpack and exposed hydraulic hoses",
+      "opposite-side articulated auxiliary tool boom and gripper",
+      "bald cybernetic head with paired red optics",
+      "broad grounded feet with three gripping toes each"
+    ],
+    "required_views": [
+      "source-6-perspective",
+      "source-7-perspective",
+      "source-8-perspective",
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "isometric",
+      "pilot-closeup",
+      "leg-closeup",
+      "shield-contact-closeup",
+      "backpack-closeup",
+      "thermal-weapon-closeup"
+    ],
+    "review_targets": [
+      "pilot-versus-frame separation",
+      "two-leg count",
+      "human legs within frame",
+      "shield scale and diagonal",
+      "dual shield contacts",
+      "leg articulation",
+      "backpack volume",
+      "auxiliary boom",
+      "ground contacts",
+      "multiview consistency"
+    ],
+    "target_cuboids": [
+      140,
+      192
+    ]
+  },
+  "reference": {
+    "height": 1023,
+    "image": "militech_centaur_piloted_exoskeleton.reference.png",
+    "sha256": "4182ef6f34f6c701322d39b3ca07e5acf824a5b0b2804a48c6e2182c1698bf92",
+    "width": 1000
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "A bald augmented Militech operator visibly nested in a two-legged powered exoskeleton, carrying a giant orange blast shield through an overhead boom",
+    "symmetry": "asymmetric",
+    "type": "character",
+    "uncertainties": [
+      "The three studio renders are uncalibrated and partially self-occluding",
+      "The shield obscures the operator's front-right controls in two views",
+      "Small rear labels and exact cable routing are conservatively inferred",
+      "No visual-hull or hidden-geometry recovery is claimed from these views",
+      "Source rights are unknown; all three references remain ignored and local"
+    ]
+  },
+  "texture": {
+    "atlas_size": 512,
+    "density": 1,
+    "gutter": 1,
+    "palette_size": 32,
+    "quantize_source": false
+  }
+}

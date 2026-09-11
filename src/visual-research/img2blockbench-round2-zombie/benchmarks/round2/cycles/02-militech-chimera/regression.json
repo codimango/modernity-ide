@@ -1,0 +1,10 @@
+{
+  "baseline_commit": "fd11a5b98fff00ac1ca03979612e7aacca5e646e",
+  "cycle": "round2-02",
+  "fixed_camera_evidence_deterministic": true,
+  "other_benchmark_files_modified_by_this_cycle": false,
+  "suite_status": "88 tests passed, including 4 Chimera tests",
+  "scope": "Militech Chimera benchmark and focused regression test only",
+  "strict_native_validation": true,
+  "two_builds_byte_identical": true
+}

@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 16632,
+      "path": "clip_visual_hull_proof.model-spec.json",
+      "sha256": "001aadbac2b99bf8619d677a307d29af69a6759d982ed0e10bbca90ae9d49ea9"
+    },
+    {
+      "bytes": 727,
+      "path": "clip_visual_hull_proof.png",
+      "sha256": "88858a82cccae449e143acc92984b0eb1736dd558f04bb74e8d46e7a0054c1cb"
+    },
+    {
+      "bytes": 26636,
+      "path": "clip_visual_hull_proof.bbmodel",
+      "sha256": "bed5ff836e92ca640278e463dbcbabbf19ac476863eec6c124ac10ac72475a03"
+    },
+    {
+      "bytes": 31224,
+      "path": "clip_visual_hull_proof.geo.json",
+      "sha256": "1f1cef3a87f84cfab9161e2ee9b05f2a1a84846683f6d5bfd5040c615c474d19"
+    },
+    {
+      "bytes": 154,
+      "path": "clip_visual_hull_proof.audit.json",
+      "sha256": "d0e8e3001692e4afff0c4452a3188f72286ec99f112c318e79d29e853e2c8529"
+    },
+    {
+      "bytes": 1691,
+      "path": "clip_visual_hull_proof.reference.png",
+      "sha256": "9e250fdcfa37091b3eac63a7cb3f9b85fd1f28eaf54bf49b3944c46d1a777aa7"
+    }
+  ],
+  "collision": {
+    "eye_height": 1.7,
+    "height": 2.0,
+    "width": 2.0
+  },
+  "generator": {
+    "lane": "calibrated-multiview-visual-hull",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "clip_visual_hull_proof",
+  "reference": {
+    "height": 96,
+    "image": "clip_visual_hull_proof.reference.png",
+    "sha256": "9e250fdcfa37091b3eac63a7cb3f9b85fd1f28eaf54bf49b3944c46d1a777aa7",
+    "width": 96
+  },
+  "schema_version": 1
+}

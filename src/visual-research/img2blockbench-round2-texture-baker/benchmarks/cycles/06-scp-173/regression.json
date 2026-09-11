@@ -1,0 +1,17 @@
+{
+  "baseline_commit": "15b2cb0",
+  "preserved_byte_identical": true,
+  "protected_git_objects": {
+    "benchmarks/cycles/01-goldfinch": "2fcffcae288f7f51a6624f950270cd31153677dd",
+    "benchmarks/cycles/02-porsche": "73d32ed397ec9296e2646c709f4ea43e1396d542",
+    "benchmarks/cycles/03-excalibur": "6991d81f8052ec8488ef74a50ea7689b693b9389",
+    "benchmarks/cycles/04-nian": "415d834cd106311957bfa9dcb6813f76662f8b14",
+    "benchmarks/cycles/05-tomato-devil": "0485abb9331800b5a359da8482d6af1e71b81d1b",
+    "benchmarks/grades/cycle-01.json": "6e0905f0cef3eddd829ec7cbb7523958118ef39c",
+    "benchmarks/grades/cycle-02.json": "b71f8b9e57afc2e5928cd21b28095fbeab211a1f",
+    "benchmarks/grades/cycle-03.json": "096a5193ecb2fee30532ea818096a4b2a0a884b9",
+    "benchmarks/grades/cycle-04.json": "a767453781ec9b3790996324529120895d8bb8a1",
+    "benchmarks/grades/cycle-05.json": "5a705258be28d334af3ee2f3bfa43f798af4913b"
+  },
+  "scope": "Cycles 1 through 5 and their cumulative grade records"
+}

@@ -1,0 +1,4159 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pelvis",
+      "parent": "root",
+      "pivot": [
+        0,
+        43,
+        0
+      ]
+    },
+    {
+      "name": "torso",
+      "parent": "pelvis",
+      "pivot": [
+        0,
+        55,
+        0
+      ]
+    },
+    {
+      "name": "chest",
+      "parent": "torso",
+      "pivot": [
+        0,
+        64,
+        0
+      ]
+    },
+    {
+      "name": "collar",
+      "parent": "chest",
+      "pivot": [
+        0,
+        71,
+        0
+      ]
+    },
+    {
+      "name": "left_leg",
+      "parent": "pelvis",
+      "pivot": [
+        -3.2,
+        10,
+        -0.5
+      ]
+    },
+    {
+      "name": "right_leg",
+      "parent": "pelvis",
+      "pivot": [
+        3.2,
+        10,
+        -0.5
+      ]
+    },
+    {
+      "name": "tendril",
+      "parent": "pelvis",
+      "pivot": [
+        -4,
+        40,
+        6
+      ]
+    },
+    {
+      "name": "outer_head_support_left_arm_1",
+      "parent": "chest",
+      "pivot": [
+        -8,
+        67,
+        -5
+      ]
+    },
+    {
+      "name": "outer_head_support_left_arm_2",
+      "parent": "outer_head_support_left_arm_1",
+      "pivot": [
+        -19,
+        86,
+        -5.5
+      ]
+    },
+    {
+      "name": "outer_head_support_left_arm_3",
+      "parent": "outer_head_support_left_arm_2",
+      "pivot": [
+        -7,
+        86,
+        -1.5
+      ]
+    },
+    {
+      "name": "outer_head_support_right_arm_1",
+      "parent": "chest",
+      "pivot": [
+        8,
+        67,
+        -5
+      ]
+    },
+    {
+      "name": "outer_head_support_right_arm_2",
+      "parent": "outer_head_support_right_arm_1",
+      "pivot": [
+        19,
+        86,
+        -5.5
+      ]
+    },
+    {
+      "name": "outer_head_support_right_arm_3",
+      "parent": "outer_head_support_right_arm_2",
+      "pivot": [
+        7,
+        86,
+        -1.5
+      ]
+    },
+    {
+      "name": "inner_head_support_left_arm_1",
+      "parent": "chest",
+      "pivot": [
+        -7.5,
+        65.5,
+        -1.5
+      ]
+    },
+    {
+      "name": "inner_head_support_left_arm_2",
+      "parent": "inner_head_support_left_arm_1",
+      "pivot": [
+        -16,
+        75,
+        1
+      ]
+    },
+    {
+      "name": "inner_head_support_left_arm_3",
+      "parent": "inner_head_support_left_arm_2",
+      "pivot": [
+        -7,
+        81,
+        2.5
+      ]
+    },
+    {
+      "name": "inner_head_support_right_arm_1",
+      "parent": "chest",
+      "pivot": [
+        7.5,
+        65.5,
+        -1.5
+      ]
+    },
+    {
+      "name": "inner_head_support_right_arm_2",
+      "parent": "inner_head_support_right_arm_1",
+      "pivot": [
+        16,
+        75,
+        1
+      ]
+    },
+    {
+      "name": "inner_head_support_right_arm_3",
+      "parent": "inner_head_support_right_arm_2",
+      "pivot": [
+        7,
+        81,
+        2.5
+      ]
+    },
+    {
+      "name": "rear_mid_bare_left_arm_1",
+      "parent": "chest",
+      "pivot": [
+        -10,
+        65.5,
+        -6
+      ]
+    },
+    {
+      "name": "rear_mid_bare_left_arm_2",
+      "parent": "rear_mid_bare_left_arm_1",
+      "pivot": [
+        -21,
+        66,
+        -9
+      ]
+    },
+    {
+      "name": "rear_mid_bare_left_arm_3",
+      "parent": "rear_mid_bare_left_arm_2",
+      "pivot": [
+        -22,
+        48,
+        -7
+      ]
+    },
+    {
+      "name": "rear_mid_bare_right_arm_1",
+      "parent": "chest",
+      "pivot": [
+        10,
+        65.5,
+        -6
+      ]
+    },
+    {
+      "name": "rear_mid_bare_right_arm_2",
+      "parent": "rear_mid_bare_right_arm_1",
+      "pivot": [
+        21,
+        66,
+        -9
+      ]
+    },
+    {
+      "name": "rear_mid_bare_right_arm_3",
+      "parent": "rear_mid_bare_right_arm_2",
+      "pivot": [
+        22,
+        48,
+        -7
+      ]
+    },
+    {
+      "name": "upper_black_sleeved_left_arm_1",
+      "parent": "chest",
+      "pivot": [
+        -12.2,
+        64,
+        3.5
+      ]
+    },
+    {
+      "name": "upper_black_sleeved_left_arm_2",
+      "parent": "upper_black_sleeved_left_arm_1",
+      "pivot": [
+        -18,
+        52,
+        5.5
+      ]
+    },
+    {
+      "name": "upper_black_sleeved_left_arm_3",
+      "parent": "upper_black_sleeved_left_arm_2",
+      "pivot": [
+        -10,
+        47.5,
+        8
+      ]
+    },
+    {
+      "name": "upper_black_sleeved_right_arm_1",
+      "parent": "chest",
+      "pivot": [
+        12.2,
+        64,
+        3.5
+      ]
+    },
+    {
+      "name": "upper_black_sleeved_right_arm_2",
+      "parent": "upper_black_sleeved_right_arm_1",
+      "pivot": [
+        18,
+        52,
+        5.5
+      ]
+    },
+    {
+      "name": "upper_black_sleeved_right_arm_3",
+      "parent": "upper_black_sleeved_right_arm_2",
+      "pivot": [
+        10,
+        47.5,
+        8
+      ]
+    },
+    {
+      "name": "lower_black_sleeved_left_arm_1",
+      "parent": "torso",
+      "pivot": [
+        -8,
+        57,
+        3
+      ]
+    },
+    {
+      "name": "lower_black_sleeved_left_arm_2",
+      "parent": "lower_black_sleeved_left_arm_1",
+      "pivot": [
+        -18,
+        47,
+        10
+      ]
+    },
+    {
+      "name": "lower_black_sleeved_left_arm_3",
+      "parent": "lower_black_sleeved_left_arm_2",
+      "pivot": [
+        -16,
+        34,
+        13
+      ]
+    },
+    {
+      "name": "lower_black_sleeved_right_arm_1",
+      "parent": "torso",
+      "pivot": [
+        8,
+        57,
+        3
+      ]
+    },
+    {
+      "name": "lower_black_sleeved_right_arm_2",
+      "parent": "lower_black_sleeved_right_arm_1",
+      "pivot": [
+        18,
+        47,
+        10
+      ]
+    },
+    {
+      "name": "lower_black_sleeved_right_arm_3",
+      "parent": "lower_black_sleeved_right_arm_2",
+      "pivot": [
+        16,
+        34,
+        13
+      ]
+    },
+    {
+      "name": "rear_low_bare_left_arm_1",
+      "parent": "pelvis",
+      "pivot": [
+        -8,
+        46,
+        -6
+      ]
+    },
+    {
+      "name": "rear_low_bare_left_arm_2",
+      "parent": "rear_low_bare_left_arm_1",
+      "pivot": [
+        -26,
+        44,
+        -12
+      ]
+    },
+    {
+      "name": "rear_low_bare_left_arm_3",
+      "parent": "rear_low_bare_left_arm_2",
+      "pivot": [
+        -19,
+        31,
+        -9
+      ]
+    },
+    {
+      "name": "rear_low_bare_right_arm_1",
+      "parent": "pelvis",
+      "pivot": [
+        8,
+        46,
+        -6
+      ]
+    },
+    {
+      "name": "rear_low_bare_right_arm_2",
+      "parent": "rear_low_bare_right_arm_1",
+      "pivot": [
+        26,
+        44,
+        -12
+      ]
+    },
+    {
+      "name": "rear_low_bare_right_arm_3",
+      "parent": "rear_low_bare_right_arm_2",
+      "pivot": [
+        19,
+        31,
+        -9
+      ]
+    },
+    {
+      "name": "head",
+      "parent": "outer_head_support_left_arm_3",
+      "pivot": [
+        -4.25,
+        84,
+        1
+      ]
+    },
+    {
+      "name": "face_detail",
+      "parent": "head",
+      "pivot": [
+        0,
+        82,
+        2
+      ]
+    },
+    {
+      "name": "hat",
+      "parent": "head",
+      "pivot": [
+        0,
+        87,
+        0
+      ]
+    },
+    {
+      "name": "waist_tendril_1",
+      "parent": "tendril",
+      "pivot": [
+        -4,
+        40,
+        6
+      ]
+    },
+    {
+      "name": "waist_tendril_2",
+      "parent": "waist_tendril_1",
+      "pivot": [
+        -17,
+        35.5,
+        10
+      ]
+    },
+    {
+      "name": "waist_tendril_3",
+      "parent": "waist_tendril_2",
+      "pivot": [
+        -26,
+        31.5,
+        11.5
+      ]
+    },
+    {
+      "name": "waist_tendril_4",
+      "parent": "waist_tendril_3",
+      "pivot": [
+        -17,
+        28.5,
+        13
+      ]
+    },
+    {
+      "name": "waist_tendril_5",
+      "parent": "waist_tendril_4",
+      "pivot": [
+        3,
+        26.5,
+        14
+      ]
+    },
+    {
+      "name": "waist_tendril_6",
+      "parent": "waist_tendril_5",
+      "pivot": [
+        20,
+        27.5,
+        13.5
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 3.15,
+    "height": 3.6,
+    "width": 1.1
+  },
+  "cubes": [
+    {
+      "bone": "pelvis",
+      "center": [
+        0.0,
+        25.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "black_cloth",
+      "name": "skirt_core",
+      "origin": [
+        0.0,
+        25.0,
+        0.0
+      ],
+      "role": "deep black chef skirt core",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        17.0,
+        37.0,
+        13.0
+      ]
+    },
+    {
+      "bone": "pelvis",
+      "center": [
+        0.0,
+        27.0,
+        7.1
+      ],
+      "faces": {},
+      "material": "blue_sheen",
+      "name": "apron_front",
+      "origin": [
+        0.0,
+        27.0,
+        7.1
+      ],
+      "role": "forward blue-black apron plane with real thickness",
+      "rotation": [
+        0.0,
+        0.0,
+        -2.0
+      ],
+      "size": [
+        13.5,
+        33.0,
+        2.2
+      ]
+    },
+    {
+      "bone": "pelvis",
+      "center": [
+        -4.5,
+        62.141803,
+        -0.5
+      ],
+      "faces": {},
+      "material": "black_cloth",
+      "name": "left_skirt_flare",
+      "origin": [
+        -4.5,
+        44,
+        -0.5
+      ],
+      "role": "left flared skirt panel",
+      "rotation": [
+        0.78958,
+        0,
+        172.874984
+      ],
+      "size": [
+        8.5,
+        37.283605,
+        12
+      ]
+    },
+    {
+      "bone": "pelvis",
+      "center": [
+        4.5,
+        62.141803,
+        -0.5
+      ],
+      "faces": {},
+      "material": "black_shadow",
+      "name": "right_skirt_flare",
+      "origin": [
+        4.5,
+        44,
+        -0.5
+      ],
+      "role": "right flared skirt panel",
+      "rotation": [
+        0.78958,
+        0,
+        -172.874984
+      ],
+      "size": [
+        8.5,
+        37.283605,
+        12
+      ]
+    },
+    {
+      "bone": "pelvis",
+      "center": [
+        -7.2,
+        7.0,
+        1.0
+      ],
+      "faces": {},
+      "material": "black_shadow",
+      "name": "left_torn_hem",
+      "origin": [
+        -7.2,
+        7.0,
+        1.0
+      ],
+      "role": "left ragged hem tab",
+      "rotation": [
+        0.0,
+        0.0,
+        -12.0
+      ],
+      "size": [
+        5.0,
+        8.0,
+        11.0
+      ]
+    },
+    {
+      "bone": "pelvis",
+      "center": [
+        7.0,
+        7.5,
+        0.5
+      ],
+      "faces": {},
+      "material": "black_cloth",
+      "name": "right_torn_hem",
+      "origin": [
+        7.0,
+        7.5,
+        0.5
+      ],
+      "role": "right ragged hem tab",
+      "rotation": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "size": [
+        5.0,
+        8.0,
+        11.0
+      ]
+    },
+    {
+      "bone": "pelvis",
+      "center": [
+        0.0,
+        44.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "black_cloth",
+      "name": "pelvis_core",
+      "origin": [
+        0.0,
+        44.0,
+        0.0
+      ],
+      "role": "deep gathered pelvis beneath apron",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        18.0,
+        9.0,
+        13.0
+      ]
+    },
+    {
+      "bone": "pelvis",
+      "center": [
+        0.0,
+        49.3,
+        0.5
+      ],
+      "faces": {},
+      "material": "black_shadow",
+      "name": "waist_sash",
+      "origin": [
+        0.0,
+        49.3,
+        0.5
+      ],
+      "role": "thick tied waist sash",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        18.5,
+        3.2,
+        13.5
+      ]
+    },
+    {
+      "bone": "pelvis",
+      "center": [
+        0.0,
+        48.5,
+        8.0
+      ],
+      "faces": {},
+      "material": "black_cloth",
+      "name": "sash_knot",
+      "origin": [
+        0.0,
+        48.5,
+        8.0
+      ],
+      "role": "front apron knot",
+      "rotation": [
+        0.0,
+        0.0,
+        8.0
+      ],
+      "size": [
+        4.0,
+        4.0,
+        3.0
+      ]
+    },
+    {
+      "bone": "pelvis",
+      "center": [
+        -1,
+        52.677072,
+        8
+      ],
+      "faces": {},
+      "material": "black_shadow",
+      "name": "left_sash_tail",
+      "origin": [
+        -1,
+        48,
+        8
+      ],
+      "role": "left hanging apron tie",
+      "rotation": [
+        3.064048,
+        0,
+        164.475889
+      ],
+      "size": [
+        2.2,
+        10.054143,
+        1.8
+      ]
+    },
+    {
+      "bone": "pelvis",
+      "center": [
+        1,
+        53.037112,
+        8
+      ],
+      "faces": {},
+      "material": "black_cloth",
+      "name": "right_sash_tail",
+      "origin": [
+        1,
+        48,
+        8
+      ],
+      "role": "right hanging apron tie",
+      "rotation": [
+        3.984365,
+        0,
+        -174.289407
+      ],
+      "size": [
+        2.2,
+        10.774225,
+        1.8
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        0.0,
+        55.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "abdomen_jacket",
+      "origin": [
+        0.0,
+        55.0,
+        0.0
+      ],
+      "role": "fitted white double-breasted jacket waist",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        17.0,
+        10.0,
+        12.0
+      ]
+    },
+    {
+      "bone": "chest",
+      "center": [
+        0.0,
+        63.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "white_cloth",
+      "name": "chest_jacket",
+      "origin": [
+        0.0,
+        63.0,
+        0.0
+      ],
+      "role": "deep white chef jacket chest",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        20.0,
+        10.0,
+        13.0
+      ]
+    },
+    {
+      "bone": "chest",
+      "center": [
+        0.0,
+        67.5,
+        -0.3
+      ],
+      "faces": {},
+      "material": "white_cloth",
+      "name": "shoulder_bar",
+      "origin": [
+        0.0,
+        67.5,
+        -0.3
+      ],
+      "role": "broad multi-arm shoulder structure",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        24.0,
+        4.5,
+        13.5
+      ]
+    },
+    {
+      "bone": "chest",
+      "center": [
+        -12.0,
+        64.0,
+        0.5
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "left_short_sleeve",
+      "origin": [
+        -12.0,
+        64.0,
+        0.5
+      ],
+      "role": "left white rolled chef sleeve",
+      "rotation": [
+        0.0,
+        0.0,
+        -10.0
+      ],
+      "size": [
+        5.5,
+        7.5,
+        11.5
+      ]
+    },
+    {
+      "bone": "chest",
+      "center": [
+        12.0,
+        64.0,
+        0.5
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "right_short_sleeve",
+      "origin": [
+        12.0,
+        64.0,
+        0.5
+      ],
+      "role": "right white rolled chef sleeve",
+      "rotation": [
+        0.0,
+        0.0,
+        10.0
+      ],
+      "size": [
+        5.5,
+        7.5,
+        11.5
+      ]
+    },
+    {
+      "bone": "collar",
+      "center": [
+        0.0,
+        71.2,
+        0.0
+      ],
+      "faces": {
+        "south": {
+          "material": "black_shadow"
+        }
+      },
+      "material": "blood",
+      "name": "neck_stump",
+      "origin": [
+        0.0,
+        71.2,
+        0.0
+      ],
+      "role": "headless neck stump below the suspended head",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        4.5,
+        8.0
+      ]
+    },
+    {
+      "bone": "collar",
+      "center": [
+        -4.2,
+        71.0,
+        4.8
+      ],
+      "faces": {},
+      "material": "white_cloth",
+      "name": "left_collar",
+      "origin": [
+        -4.2,
+        71.0,
+        4.8
+      ],
+      "role": "left open chef collar",
+      "rotation": [
+        0.0,
+        0.0,
+        -28.0
+      ],
+      "size": [
+        6.0,
+        4.0,
+        3.2
+      ]
+    },
+    {
+      "bone": "collar",
+      "center": [
+        4.2,
+        71.0,
+        4.8
+      ],
+      "faces": {},
+      "material": "white_cloth",
+      "name": "right_collar",
+      "origin": [
+        4.2,
+        71.0,
+        4.8
+      ],
+      "role": "right open chef collar",
+      "rotation": [
+        0.0,
+        0.0,
+        28.0
+      ],
+      "size": [
+        6.0,
+        4.0,
+        3.2
+      ]
+    },
+    {
+      "bone": "left_leg",
+      "center": [
+        -3.2,
+        5.3,
+        -0.5
+      ],
+      "faces": {},
+      "material": "black_shadow",
+      "name": "left_lower_leg",
+      "origin": [
+        -3.2,
+        5.3,
+        -0.5
+      ],
+      "role": "mostly occluded left lower leg",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        5.5,
+        10.5,
+        9.0
+      ]
+    },
+    {
+      "bone": "left_leg",
+      "center": [
+        -3.2,
+        0.75,
+        2.0
+      ],
+      "faces": {},
+      "material": "black_shadow",
+      "name": "left_foot",
+      "origin": [
+        -3.2,
+        0.75,
+        2.0
+      ],
+      "role": "grounded hidden left foot",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.2,
+        1.5,
+        11.0
+      ]
+    },
+    {
+      "bone": "right_leg",
+      "center": [
+        3.2,
+        5.3,
+        -0.5
+      ],
+      "faces": {},
+      "material": "black_cloth",
+      "name": "right_lower_leg",
+      "origin": [
+        3.2,
+        5.3,
+        -0.5
+      ],
+      "role": "mostly occluded right lower leg",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        5.5,
+        10.5,
+        9.0
+      ]
+    },
+    {
+      "bone": "right_leg",
+      "center": [
+        3.2,
+        0.75,
+        2.0
+      ],
+      "faces": {},
+      "material": "black_shadow",
+      "name": "right_foot",
+      "origin": [
+        3.2,
+        0.75,
+        2.0
+      ],
+      "role": "grounded hidden right foot",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        6.2,
+        1.5,
+        11.0
+      ]
+    },
+    {
+      "bone": "outer_head_support_left_arm_1",
+      "center": [
+        -8,
+        77.980096,
+        -5
+      ],
+      "faces": {},
+      "material": "skin_shadow",
+      "name": "outer_head_support_left_arm_1",
+      "origin": [
+        -8,
+        67,
+        -5
+      ],
+      "role": "outer head support left arm segment 1",
+      "rotation": [
+        -1.30465,
+        0,
+        30.068583
+      ],
+      "size": [
+        3.8,
+        22.860191,
+        3.5
+      ]
+    },
+    {
+      "bone": "outer_head_support_left_arm_2",
+      "center": [
+        -19,
+        92.324555,
+        -5.5
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "outer_head_support_left_arm_2",
+      "origin": [
+        -19,
+        86,
+        -5.5
+      ],
+      "role": "outer head support left arm segment 2",
+      "rotation": [
+        18.434949,
+        0,
+        -90
+      ],
+      "size": [
+        3.4,
+        13.549111,
+        3.2
+      ]
+    },
+    {
+      "bone": "outer_head_support_left_arm_3",
+      "center": [
+        -7,
+        88.110243,
+        -1.5
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "outer_head_support_left_arm_3",
+      "origin": [
+        -7,
+        86,
+        -1.5
+      ],
+      "role": "outer head support left arm segment 3",
+      "rotation": [
+        36.323869,
+        0,
+        -126.027373
+      ],
+      "size": [
+        3.7,
+        5.120486,
+        3.5
+      ]
+    },
+    {
+      "bone": "outer_head_support_right_arm_1",
+      "center": [
+        8,
+        77.980096,
+        -5
+      ],
+      "faces": {},
+      "material": "skin_shadow",
+      "name": "outer_head_support_right_arm_1",
+      "origin": [
+        8,
+        67,
+        -5
+      ],
+      "role": "outer head support right arm segment 1",
+      "rotation": [
+        -1.30465,
+        0,
+        -30.068583
+      ],
+      "size": [
+        3.8,
+        22.860191,
+        3.5
+      ]
+    },
+    {
+      "bone": "outer_head_support_right_arm_2",
+      "center": [
+        19,
+        92.324555,
+        -5.5
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "outer_head_support_right_arm_2",
+      "origin": [
+        19,
+        86,
+        -5.5
+      ],
+      "role": "outer head support right arm segment 2",
+      "rotation": [
+        18.434949,
+        0,
+        90
+      ],
+      "size": [
+        3.4,
+        13.549111,
+        3.2
+      ]
+    },
+    {
+      "bone": "outer_head_support_right_arm_3",
+      "center": [
+        7,
+        88.110243,
+        -1.5
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "outer_head_support_right_arm_3",
+      "origin": [
+        7,
+        86,
+        -1.5
+      ],
+      "role": "outer head support right arm segment 3",
+      "rotation": [
+        36.323869,
+        0,
+        126.027373
+      ],
+      "size": [
+        3.7,
+        5.120486,
+        3.5
+      ]
+    },
+    {
+      "bone": "inner_head_support_left_arm_1",
+      "center": [
+        -7.5,
+        71.995191,
+        -1.5
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "inner_head_support_left_arm_1",
+      "origin": [
+        -7.5,
+        65.5,
+        -1.5
+      ],
+      "role": "inner head support left arm segment 1",
+      "rotation": [
+        11.095803,
+        0,
+        41.82017
+      ],
+      "size": [
+        3.7,
+        13.890381,
+        3.4
+      ]
+    },
+    {
+      "bone": "inner_head_support_left_arm_2",
+      "center": [
+        -16,
+        80.460082,
+        1
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "inner_head_support_left_arm_2",
+      "origin": [
+        -16,
+        75,
+        1
+      ],
+      "role": "inner head support left arm segment 2",
+      "rotation": [
+        7.895142,
+        0,
+        -56.309932
+      ],
+      "size": [
+        3.2,
+        11.820165,
+        3
+      ]
+    },
+    {
+      "bone": "inner_head_support_left_arm_3",
+      "center": [
+        -7,
+        82.586072,
+        2.5
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "inner_head_support_left_arm_3",
+      "origin": [
+        -7,
+        81,
+        2.5
+      ],
+      "role": "inner head support left arm segment 3",
+      "rotation": [
+        9.0689,
+        0,
+        -118.61046
+      ],
+      "size": [
+        3.5,
+        4.072144,
+        3.4
+      ]
+    },
+    {
+      "bone": "inner_head_support_right_arm_1",
+      "center": [
+        7.5,
+        71.995191,
+        -1.5
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "inner_head_support_right_arm_1",
+      "origin": [
+        7.5,
+        65.5,
+        -1.5
+      ],
+      "role": "inner head support right arm segment 1",
+      "rotation": [
+        11.095803,
+        0,
+        -41.82017
+      ],
+      "size": [
+        3.7,
+        13.890381,
+        3.4
+      ]
+    },
+    {
+      "bone": "inner_head_support_right_arm_2",
+      "center": [
+        16,
+        80.460082,
+        1
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "inner_head_support_right_arm_2",
+      "origin": [
+        16,
+        75,
+        1
+      ],
+      "role": "inner head support right arm segment 2",
+      "rotation": [
+        7.895142,
+        0,
+        56.309932
+      ],
+      "size": [
+        3.2,
+        11.820165,
+        3
+      ]
+    },
+    {
+      "bone": "inner_head_support_right_arm_3",
+      "center": [
+        7,
+        82.586072,
+        2.5
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "inner_head_support_right_arm_3",
+      "origin": [
+        7,
+        81,
+        2.5
+      ],
+      "role": "inner head support right arm segment 3",
+      "rotation": [
+        9.0689,
+        0,
+        118.61046
+      ],
+      "size": [
+        3.5,
+        4.072144,
+        3.4
+      ]
+    },
+    {
+      "bone": "rear_mid_bare_left_arm_1",
+      "center": [
+        -10,
+        71.206356,
+        -6
+      ],
+      "faces": {},
+      "material": "skin_shadow",
+      "name": "rear_mid_bare_left_arm_1",
+      "origin": [
+        -10,
+        65.5,
+        -6
+      ],
+      "role": "rear mid bare left arm segment 1",
+      "rotation": [
+        -15.240116,
+        0,
+        87.397438
+      ],
+      "size": [
+        3.8,
+        12.312712,
+        3.5
+      ]
+    },
+    {
+      "bone": "rear_mid_bare_left_arm_2",
+      "center": [
+        -21,
+        75.069179,
+        -9
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "rear_mid_bare_left_arm_2",
+      "origin": [
+        -21,
+        66,
+        -9
+      ],
+      "role": "rear mid bare left arm segment 2",
+      "rotation": [
+        6.330509,
+        0,
+        176.82017
+      ],
+      "size": [
+        3.2,
+        19.038357,
+        3
+      ]
+    },
+    {
+      "bone": "rear_mid_bare_left_arm_3",
+      "center": [
+        -22,
+        50.872281,
+        -7
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "rear_mid_bare_left_arm_3",
+      "origin": [
+        -22,
+        48,
+        -7
+      ],
+      "role": "rear mid bare left arm segment 3",
+      "rotation": [
+        20.374527,
+        0,
+        -158.198591
+      ],
+      "size": [
+        3.4,
+        6.644563,
+        3.2
+      ]
+    },
+    {
+      "bone": "rear_mid_bare_right_arm_1",
+      "center": [
+        10,
+        71.206356,
+        -6
+      ],
+      "faces": {},
+      "material": "skin_shadow",
+      "name": "rear_mid_bare_right_arm_1",
+      "origin": [
+        10,
+        65.5,
+        -6
+      ],
+      "role": "rear mid bare right arm segment 1",
+      "rotation": [
+        -15.240116,
+        0,
+        -87.397438
+      ],
+      "size": [
+        3.8,
+        12.312712,
+        3.5
+      ]
+    },
+    {
+      "bone": "rear_mid_bare_right_arm_2",
+      "center": [
+        21,
+        75.069179,
+        -9
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "rear_mid_bare_right_arm_2",
+      "origin": [
+        21,
+        66,
+        -9
+      ],
+      "role": "rear mid bare right arm segment 2",
+      "rotation": [
+        6.330509,
+        0,
+        -176.82017
+      ],
+      "size": [
+        3.2,
+        19.038357,
+        3
+      ]
+    },
+    {
+      "bone": "rear_mid_bare_right_arm_3",
+      "center": [
+        22,
+        50.872281,
+        -7
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "rear_mid_bare_right_arm_3",
+      "origin": [
+        22,
+        48,
+        -7
+      ],
+      "role": "rear mid bare right arm segment 3",
+      "rotation": [
+        20.374527,
+        0,
+        158.198591
+      ],
+      "size": [
+        3.4,
+        6.644563,
+        3.2
+      ]
+    },
+    {
+      "bone": "upper_black_sleeved_left_arm_1",
+      "center": [
+        -12.2,
+        70.738694,
+        3.5
+      ],
+      "faces": {},
+      "material": "black_cloth",
+      "name": "upper_black_sleeved_left_arm_1",
+      "origin": [
+        -12.2,
+        64,
+        3.5
+      ],
+      "role": "upper black sleeved left arm segment 1",
+      "rotation": [
+        8.534025,
+        0,
+        154.203974
+      ],
+      "size": [
+        4.3,
+        14.377388,
+        4.5
+      ]
+    },
+    {
+      "bone": "upper_black_sleeved_left_arm_2",
+      "center": [
+        -18,
+        56.756574,
+        5.5
+      ],
+      "faces": {},
+      "material": "black_cloth",
+      "name": "upper_black_sleeved_left_arm_2",
+      "origin": [
+        -18,
+        52,
+        5.5
+      ],
+      "role": "upper black sleeved left arm segment 2",
+      "rotation": [
+        15.235923,
+        0,
+        -119.357754
+      ],
+      "size": [
+        4,
+        10.413149,
+        4.2
+      ]
+    },
+    {
+      "bone": "upper_black_sleeved_left_arm_3",
+      "center": [
+        -10,
+        49.884848,
+        8
+      ],
+      "faces": {},
+      "material": "black_shadow",
+      "name": "upper_black_sleeved_left_arm_3",
+      "origin": [
+        -10,
+        47.5,
+        8
+      ],
+      "role": "upper black sleeved left arm segment 3",
+      "rotation": [
+        6.017285,
+        0,
+        -71.565051
+      ],
+      "size": [
+        3.8,
+        5.669696,
+        3.8
+      ]
+    },
+    {
+      "bone": "upper_black_sleeved_right_arm_1",
+      "center": [
+        12.2,
+        70.738694,
+        3.5
+      ],
+      "faces": {},
+      "material": "black_cloth",
+      "name": "upper_black_sleeved_right_arm_1",
+      "origin": [
+        12.2,
+        64,
+        3.5
+      ],
+      "role": "upper black sleeved right arm segment 1",
+      "rotation": [
+        8.534025,
+        0,
+        -154.203974
+      ],
+      "size": [
+        4.3,
+        14.377388,
+        4.5
+      ]
+    },
+    {
+      "bone": "upper_black_sleeved_right_arm_2",
+      "center": [
+        18,
+        56.756574,
+        5.5
+      ],
+      "faces": {},
+      "material": "black_cloth",
+      "name": "upper_black_sleeved_right_arm_2",
+      "origin": [
+        18,
+        52,
+        5.5
+      ],
+      "role": "upper black sleeved right arm segment 2",
+      "rotation": [
+        15.235923,
+        0,
+        119.357754
+      ],
+      "size": [
+        4,
+        10.413149,
+        4.2
+      ]
+    },
+    {
+      "bone": "upper_black_sleeved_right_arm_3",
+      "center": [
+        10,
+        49.884848,
+        8
+      ],
+      "faces": {},
+      "material": "black_shadow",
+      "name": "upper_black_sleeved_right_arm_3",
+      "origin": [
+        10,
+        47.5,
+        8
+      ],
+      "role": "upper black sleeved right arm segment 3",
+      "rotation": [
+        6.017285,
+        0,
+        71.565051
+      ],
+      "size": [
+        3.8,
+        5.669696,
+        3.8
+      ]
+    },
+    {
+      "bone": "lower_black_sleeved_left_arm_1",
+      "center": [
+        -8,
+        64.889867,
+        3
+      ],
+      "faces": {},
+      "material": "black_cloth",
+      "name": "lower_black_sleeved_left_arm_1",
+      "origin": [
+        -8,
+        57,
+        3
+      ],
+      "role": "lower black sleeved left arm segment 1",
+      "rotation": [
+        26.334248,
+        0,
+        135
+      ],
+      "size": [
+        4.1,
+        16.679734,
+        4.3
+      ]
+    },
+    {
+      "bone": "lower_black_sleeved_left_arm_2",
+      "center": [
+        -18,
+        53.745369,
+        10
+      ],
+      "faces": {},
+      "material": "black_cloth",
+      "name": "lower_black_sleeved_left_arm_2",
+      "origin": [
+        -18,
+        47,
+        10
+      ],
+      "role": "lower black sleeved left arm segment 2",
+      "rotation": [
+        12.848555,
+        0,
+        -171.253838
+      ],
+      "size": [
+        3.8,
+        14.390738,
+        4
+      ]
+    },
+    {
+      "bone": "lower_black_sleeved_left_arm_3",
+      "center": [
+        -16,
+        36.410913,
+        13
+      ],
+      "faces": {},
+      "material": "black_shadow",
+      "name": "lower_black_sleeved_left_arm_3",
+      "origin": [
+        -16,
+        34,
+        13
+      ],
+      "role": "lower black sleeved left arm segment 3",
+      "rotation": [
+        -11.969463,
+        0,
+        -122.005383
+      ],
+      "size": [
+        3.7,
+        5.721825,
+        3.8
+      ]
+    },
+    {
+      "bone": "lower_black_sleeved_right_arm_1",
+      "center": [
+        8,
+        64.889867,
+        3
+      ],
+      "faces": {},
+      "material": "black_cloth",
+      "name": "lower_black_sleeved_right_arm_1",
+      "origin": [
+        8,
+        57,
+        3
+      ],
+      "role": "lower black sleeved right arm segment 1",
+      "rotation": [
+        26.334248,
+        0,
+        -135
+      ],
+      "size": [
+        4.1,
+        16.679734,
+        4.3
+      ]
+    },
+    {
+      "bone": "lower_black_sleeved_right_arm_2",
+      "center": [
+        18,
+        53.745369,
+        10
+      ],
+      "faces": {},
+      "material": "black_cloth",
+      "name": "lower_black_sleeved_right_arm_2",
+      "origin": [
+        18,
+        47,
+        10
+      ],
+      "role": "lower black sleeved right arm segment 2",
+      "rotation": [
+        12.848555,
+        0,
+        171.253838
+      ],
+      "size": [
+        3.8,
+        14.390738,
+        4
+      ]
+    },
+    {
+      "bone": "lower_black_sleeved_right_arm_3",
+      "center": [
+        16,
+        36.410913,
+        13
+      ],
+      "faces": {},
+      "material": "black_shadow",
+      "name": "lower_black_sleeved_right_arm_3",
+      "origin": [
+        16,
+        34,
+        13
+      ],
+      "role": "lower black sleeved right arm segment 3",
+      "rotation": [
+        -11.969463,
+        0,
+        122.005383
+      ],
+      "size": [
+        3.7,
+        5.721825,
+        3.8
+      ]
+    },
+    {
+      "bone": "rear_low_bare_left_arm_1",
+      "center": [
+        -8,
+        55.539392,
+        -6
+      ],
+      "faces": {},
+      "material": "skin_shadow",
+      "name": "rear_low_bare_left_arm_1",
+      "origin": [
+        -8,
+        46,
+        -6
+      ],
+      "role": "rear low bare left arm segment 1",
+      "rotation": [
+        -18.329754,
+        0,
+        96.340192
+      ],
+      "size": [
+        3.7,
+        19.978784,
+        3.4
+      ]
+    },
+    {
+      "bone": "rear_low_bare_left_arm_2",
+      "center": [
+        -26,
+        51.53326,
+        -12
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "rear_low_bare_left_arm_2",
+      "origin": [
+        -26,
+        44,
+        -12
+      ],
+      "role": "rear low bare left arm segment 2",
+      "rotation": [
+        11.485328,
+        0,
+        -151.699244
+      ],
+      "size": [
+        3.1,
+        15.966519,
+        3
+      ]
+    },
+    {
+      "bone": "rear_low_bare_left_arm_3",
+      "center": [
+        -19,
+        33.42384,
+        -9
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "rear_low_bare_left_arm_3",
+      "origin": [
+        -19,
+        31,
+        -9
+      ],
+      "role": "rear low bare left arm segment 3",
+      "rotation": [
+        38.232404,
+        0,
+        -66.801409
+      ],
+      "size": [
+        3.2,
+        5.74768,
+        3
+      ]
+    },
+    {
+      "bone": "rear_low_bare_right_arm_1",
+      "center": [
+        8,
+        55.539392,
+        -6
+      ],
+      "faces": {},
+      "material": "skin_shadow",
+      "name": "rear_low_bare_right_arm_1",
+      "origin": [
+        8,
+        46,
+        -6
+      ],
+      "role": "rear low bare right arm segment 1",
+      "rotation": [
+        -18.329754,
+        0,
+        -96.340192
+      ],
+      "size": [
+        3.7,
+        19.978784,
+        3.4
+      ]
+    },
+    {
+      "bone": "rear_low_bare_right_arm_2",
+      "center": [
+        26,
+        51.53326,
+        -12
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "rear_low_bare_right_arm_2",
+      "origin": [
+        26,
+        44,
+        -12
+      ],
+      "role": "rear low bare right arm segment 2",
+      "rotation": [
+        11.485328,
+        0,
+        151.699244
+      ],
+      "size": [
+        3.1,
+        15.966519,
+        3
+      ]
+    },
+    {
+      "bone": "rear_low_bare_right_arm_3",
+      "center": [
+        19,
+        33.42384,
+        -9
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "rear_low_bare_right_arm_3",
+      "origin": [
+        19,
+        31,
+        -9
+      ],
+      "role": "rear low bare right arm segment 3",
+      "rotation": [
+        38.232404,
+        0,
+        66.801409
+      ],
+      "size": [
+        3.2,
+        5.74768,
+        3
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0.0,
+        82.0,
+        2.0
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "head_face",
+      "origin": [
+        0.0,
+        82.0,
+        2.0
+      ],
+      "role": "suspended human face volume",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        8.5,
+        10.0,
+        8.0
+      ]
+    },
+    {
+      "bone": "face_detail",
+      "center": [
+        0.0,
+        76.8,
+        2.0
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "chin",
+      "origin": [
+        0.0,
+        76.8,
+        2.0
+      ],
+      "role": "pointed detached chin",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        5.0,
+        3.5,
+        6.0
+      ]
+    },
+    {
+      "bone": "face_detail",
+      "center": [
+        0.0,
+        81.3,
+        6.1
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "nose",
+      "origin": [
+        0.0,
+        81.3,
+        6.1
+      ],
+      "role": "small projecting nose",
+      "rotation": [
+        6.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.4,
+        2.6,
+        1.2
+      ]
+    },
+    {
+      "bone": "face_detail",
+      "center": [
+        -4.55,
+        82.3,
+        1.5
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "left_ear",
+      "origin": [
+        -4.55,
+        82.3,
+        1.5
+      ],
+      "role": "left ear under supporting hands",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.2,
+        3.0,
+        2.4
+      ]
+    },
+    {
+      "bone": "face_detail",
+      "center": [
+        4.55,
+        82.3,
+        1.5
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "right_ear",
+      "origin": [
+        4.55,
+        82.3,
+        1.5
+      ],
+      "role": "right ear under supporting hands",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.2,
+        3.0,
+        2.4
+      ]
+    },
+    {
+      "bone": "face_detail",
+      "center": [
+        0.0,
+        86.2,
+        1.0
+      ],
+      "faces": {},
+      "material": "hair",
+      "name": "hair_cap",
+      "origin": [
+        0.0,
+        86.2,
+        1.0
+      ],
+      "role": "black hairline beneath hat",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        8.4,
+        2.2,
+        7.6
+      ]
+    },
+    {
+      "bone": "hat",
+      "center": [
+        0.0,
+        89.0,
+        1.0
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "hat_band",
+      "origin": [
+        0.0,
+        89.0,
+        1.0
+      ],
+      "role": "wide toque band",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        11.0,
+        4.0,
+        8.0
+      ]
+    },
+    {
+      "bone": "hat",
+      "center": [
+        0.0,
+        94.0,
+        1.0
+      ],
+      "faces": {},
+      "material": "white_cloth",
+      "name": "hat_crown_lower",
+      "origin": [
+        0.0,
+        94.0,
+        1.0
+      ],
+      "role": "tall fluted toque lower crown",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        10.8,
+        7.0,
+        7.8
+      ]
+    },
+    {
+      "bone": "hat",
+      "center": [
+        0.0,
+        98.5,
+        1.0
+      ],
+      "faces": {},
+      "material": "white_cloth",
+      "name": "hat_crown_upper",
+      "origin": [
+        0.0,
+        98.5,
+        1.0
+      ],
+      "role": "slightly tapered toque upper crown",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        10.0,
+        4.0,
+        7.0
+      ]
+    },
+    {
+      "bone": "hat",
+      "center": [
+        0.0,
+        101.0,
+        1.0
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "hat_top",
+      "origin": [
+        0.0,
+        101.0,
+        1.0
+      ],
+      "role": "flat toque crown cap",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        9.2,
+        1.6,
+        6.5
+      ]
+    },
+    {
+      "bone": "hat",
+      "center": [
+        -3.2,
+        95.8,
+        5.05
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "hat_pleat_1",
+      "origin": [
+        -3.2,
+        95.8,
+        5.05
+      ],
+      "role": "vertical toque pleat",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.55,
+        9.0,
+        0.7
+      ]
+    },
+    {
+      "bone": "hat",
+      "center": [
+        0.0,
+        95.8,
+        5.05
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "hat_pleat_2",
+      "origin": [
+        0.0,
+        95.8,
+        5.05
+      ],
+      "role": "vertical toque pleat",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.55,
+        9.0,
+        0.7
+      ]
+    },
+    {
+      "bone": "hat",
+      "center": [
+        3.2,
+        95.8,
+        5.05
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "hat_pleat_3",
+      "origin": [
+        3.2,
+        95.8,
+        5.05
+      ],
+      "role": "vertical toque pleat",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.55,
+        9.0,
+        0.7
+      ]
+    },
+    {
+      "bone": "waist_tendril_1",
+      "center": [
+        -4,
+        47.163274,
+        6
+      ],
+      "faces": {},
+      "material": "skin_shadow",
+      "name": "waist_tendril_1",
+      "origin": [
+        -4,
+        40,
+        6
+      ],
+      "role": "separate serpentine waist tendril segment 1",
+      "rotation": [
+        16.212579,
+        0,
+        109.093492
+      ],
+      "size": [
+        3,
+        15.026549,
+        2.8
+      ]
+    },
+    {
+      "bone": "waist_tendril_2",
+      "center": [
+        -17,
+        40.481215,
+        10
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "waist_tendril_2",
+      "origin": [
+        -17,
+        35.5,
+        10
+      ],
+      "role": "separate serpentine waist tendril segment 2",
+      "rotation": [
+        8.65971,
+        0,
+        113.962489
+      ],
+      "size": [
+        2.7,
+        10.662429,
+        2.6
+      ]
+    },
+    {
+      "bone": "waist_tendril_3",
+      "center": [
+        -26,
+        36.302343,
+        11.5
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "waist_tendril_3",
+      "origin": [
+        -26,
+        31.5,
+        11.5
+      ],
+      "role": "separate serpentine waist tendril segment 3",
+      "rotation": [
+        8.984877,
+        0,
+        -108.434949
+      ],
+      "size": [
+        2.4,
+        10.304686,
+        2.4
+      ]
+    },
+    {
+      "bone": "waist_tendril_4",
+      "center": [
+        -17,
+        38.562306,
+        13
+      ],
+      "faces": {},
+      "material": "skin_light",
+      "name": "waist_tendril_4",
+      "origin": [
+        -17,
+        28.5,
+        13
+      ],
+      "role": "separate serpentine waist tendril segment 4",
+      "rotation": [
+        2.848223,
+        0,
+        -95.710593
+      ],
+      "size": [
+        2.1,
+        20.824612,
+        2.1
+      ]
+    },
+    {
+      "bone": "waist_tendril_5",
+      "center": [
+        3,
+        35.018363,
+        14
+      ],
+      "faces": {},
+      "material": "skin",
+      "name": "waist_tendril_5",
+      "origin": [
+        3,
+        26.5,
+        14
+      ],
+      "role": "separate serpentine waist tendril segment 5",
+      "rotation": [
+        -1.681779,
+        0,
+        -86.633539
+      ],
+      "size": [
+        1.7,
+        17.736725,
+        1.7
+      ]
+    },
+    {
+      "bone": "waist_tendril_6",
+      "center": [
+        20,
+        29.041104,
+        13.5
+      ],
+      "faces": {},
+      "material": "skin_shadow",
+      "name": "waist_tendril_6",
+      "origin": [
+        20,
+        27.5,
+        13.5
+      ],
+      "role": "separate serpentine waist tendril segment 6",
+      "rotation": [
+        -29.121568,
+        0,
+        -21.801409
+      ],
+      "size": [
+        1.2,
+        3.782207,
+        1.2
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "depth-layered-twelve-arm-character-v1",
+    "anatomical_axis": "+Z front, X width, Y up",
+    "arm_chains": [
+      {
+        "depth_layer": "rear_high_to_head",
+        "hand_cube": "outer_head_support_left_arm_3",
+        "head_contact": true,
+        "joints": [
+          [
+            -8.0,
+            67.0,
+            -5.0
+          ],
+          [
+            -19.0,
+            86.0,
+            -5.5
+          ],
+          [
+            -7.0,
+            86.0,
+            -1.5
+          ],
+          [
+            -4.25,
+            84.0,
+            1.0
+          ]
+        ],
+        "mean_z": -2.75,
+        "pair": "outer_head_support",
+        "segments": [
+          "outer_head_support_left_arm_1",
+          "outer_head_support_left_arm_2",
+          "outer_head_support_left_arm_3"
+        ],
+        "side": "left"
+      },
+      {
+        "depth_layer": "rear_high_to_head",
+        "hand_cube": "outer_head_support_right_arm_3",
+        "head_contact": true,
+        "joints": [
+          [
+            8.0,
+            67.0,
+            -5.0
+          ],
+          [
+            19.0,
+            86.0,
+            -5.5
+          ],
+          [
+            7.0,
+            86.0,
+            -1.5
+          ],
+          [
+            4.25,
+            84.0,
+            1.0
+          ]
+        ],
+        "mean_z": -2.75,
+        "pair": "outer_head_support",
+        "segments": [
+          "outer_head_support_right_arm_1",
+          "outer_head_support_right_arm_2",
+          "outer_head_support_right_arm_3"
+        ],
+        "side": "right"
+      },
+      {
+        "depth_layer": "middle_crossing_to_head",
+        "hand_cube": "inner_head_support_left_arm_3",
+        "head_contact": true,
+        "joints": [
+          [
+            -7.5,
+            65.5,
+            -1.5
+          ],
+          [
+            -16.0,
+            75.0,
+            1.0
+          ],
+          [
+            -7.0,
+            81.0,
+            2.5
+          ],
+          [
+            -4.25,
+            79.5,
+            3.0
+          ]
+        ],
+        "mean_z": 1.25,
+        "pair": "inner_head_support",
+        "segments": [
+          "inner_head_support_left_arm_1",
+          "inner_head_support_left_arm_2",
+          "inner_head_support_left_arm_3"
+        ],
+        "side": "left"
+      },
+      {
+        "depth_layer": "middle_crossing_to_head",
+        "hand_cube": "inner_head_support_right_arm_3",
+        "head_contact": true,
+        "joints": [
+          [
+            7.5,
+            65.5,
+            -1.5
+          ],
+          [
+            16.0,
+            75.0,
+            1.0
+          ],
+          [
+            7.0,
+            81.0,
+            2.5
+          ],
+          [
+            4.25,
+            79.5,
+            3.0
+          ]
+        ],
+        "mean_z": 1.25,
+        "pair": "inner_head_support",
+        "segments": [
+          "inner_head_support_right_arm_1",
+          "inner_head_support_right_arm_2",
+          "inner_head_support_right_arm_3"
+        ],
+        "side": "right"
+      },
+      {
+        "depth_layer": "rear_mid",
+        "hand_cube": "rear_mid_bare_left_arm_3",
+        "head_contact": false,
+        "joints": [
+          [
+            -10.0,
+            65.5,
+            -6.0
+          ],
+          [
+            -21.0,
+            66.0,
+            -9.0
+          ],
+          [
+            -22.0,
+            48.0,
+            -7.0
+          ],
+          [
+            -20.0,
+            43.0,
+            -5.0
+          ]
+        ],
+        "mean_z": -6.75,
+        "pair": "rear_mid_bare",
+        "segments": [
+          "rear_mid_bare_left_arm_1",
+          "rear_mid_bare_left_arm_2",
+          "rear_mid_bare_left_arm_3"
+        ],
+        "side": "left"
+      },
+      {
+        "depth_layer": "rear_mid",
+        "hand_cube": "rear_mid_bare_right_arm_3",
+        "head_contact": false,
+        "joints": [
+          [
+            10.0,
+            65.5,
+            -6.0
+          ],
+          [
+            21.0,
+            66.0,
+            -9.0
+          ],
+          [
+            22.0,
+            48.0,
+            -7.0
+          ],
+          [
+            20.0,
+            43.0,
+            -5.0
+          ]
+        ],
+        "mean_z": -6.75,
+        "pair": "rear_mid_bare",
+        "segments": [
+          "rear_mid_bare_right_arm_1",
+          "rear_mid_bare_right_arm_2",
+          "rear_mid_bare_right_arm_3"
+        ],
+        "side": "right"
+      },
+      {
+        "depth_layer": "front_upper",
+        "hand_cube": "upper_black_sleeved_left_arm_3",
+        "head_contact": false,
+        "joints": [
+          [
+            -12.2,
+            64.0,
+            3.5
+          ],
+          [
+            -18.0,
+            52.0,
+            5.5
+          ],
+          [
+            -10.0,
+            47.5,
+            8.0
+          ],
+          [
+            -5.5,
+            49.0,
+            8.5
+          ]
+        ],
+        "mean_z": 6.375,
+        "pair": "upper_black_sleeved",
+        "segments": [
+          "upper_black_sleeved_left_arm_1",
+          "upper_black_sleeved_left_arm_2",
+          "upper_black_sleeved_left_arm_3"
+        ],
+        "side": "left"
+      },
+      {
+        "depth_layer": "front_upper",
+        "hand_cube": "upper_black_sleeved_right_arm_3",
+        "head_contact": false,
+        "joints": [
+          [
+            12.2,
+            64.0,
+            3.5
+          ],
+          [
+            18.0,
+            52.0,
+            5.5
+          ],
+          [
+            10.0,
+            47.5,
+            8.0
+          ],
+          [
+            5.5,
+            49.0,
+            8.5
+          ]
+        ],
+        "mean_z": 6.375,
+        "pair": "upper_black_sleeved",
+        "segments": [
+          "upper_black_sleeved_right_arm_1",
+          "upper_black_sleeved_right_arm_2",
+          "upper_black_sleeved_right_arm_3"
+        ],
+        "side": "right"
+      },
+      {
+        "depth_layer": "front_lower",
+        "hand_cube": "lower_black_sleeved_left_arm_3",
+        "head_contact": false,
+        "joints": [
+          [
+            -8.0,
+            57.0,
+            3.0
+          ],
+          [
+            -18.0,
+            47.0,
+            10.0
+          ],
+          [
+            -16.0,
+            34.0,
+            13.0
+          ],
+          [
+            -12.0,
+            31.5,
+            12.0
+          ]
+        ],
+        "mean_z": 9.5,
+        "pair": "lower_black_sleeved",
+        "segments": [
+          "lower_black_sleeved_left_arm_1",
+          "lower_black_sleeved_left_arm_2",
+          "lower_black_sleeved_left_arm_3"
+        ],
+        "side": "left"
+      },
+      {
+        "depth_layer": "front_lower",
+        "hand_cube": "lower_black_sleeved_right_arm_3",
+        "head_contact": false,
+        "joints": [
+          [
+            8.0,
+            57.0,
+            3.0
+          ],
+          [
+            18.0,
+            47.0,
+            10.0
+          ],
+          [
+            16.0,
+            34.0,
+            13.0
+          ],
+          [
+            12.0,
+            31.5,
+            12.0
+          ]
+        ],
+        "mean_z": 9.5,
+        "pair": "lower_black_sleeved",
+        "segments": [
+          "lower_black_sleeved_right_arm_1",
+          "lower_black_sleeved_right_arm_2",
+          "lower_black_sleeved_right_arm_3"
+        ],
+        "side": "right"
+      },
+      {
+        "depth_layer": "rear_low",
+        "hand_cube": "rear_low_bare_left_arm_3",
+        "head_contact": false,
+        "joints": [
+          [
+            -8.0,
+            46.0,
+            -6.0
+          ],
+          [
+            -26.0,
+            44.0,
+            -12.0
+          ],
+          [
+            -19.0,
+            31.0,
+            -9.0
+          ],
+          [
+            -15.5,
+            32.5,
+            -6.0
+          ]
+        ],
+        "mean_z": -8.25,
+        "pair": "rear_low_bare",
+        "segments": [
+          "rear_low_bare_left_arm_1",
+          "rear_low_bare_left_arm_2",
+          "rear_low_bare_left_arm_3"
+        ],
+        "side": "left"
+      },
+      {
+        "depth_layer": "rear_low",
+        "hand_cube": "rear_low_bare_right_arm_3",
+        "head_contact": false,
+        "joints": [
+          [
+            8.0,
+            46.0,
+            -6.0
+          ],
+          [
+            26.0,
+            44.0,
+            -12.0
+          ],
+          [
+            19.0,
+            31.0,
+            -9.0
+          ],
+          [
+            15.5,
+            32.5,
+            -6.0
+          ]
+        ],
+        "mean_z": -8.25,
+        "pair": "rear_low_bare",
+        "segments": [
+          "rear_low_bare_right_arm_1",
+          "rear_low_bare_right_arm_2",
+          "rear_low_bare_right_arm_3"
+        ],
+        "side": "right"
+      }
+    ],
+    "declared_attachments": [
+      {
+        "first": "skirt_core",
+        "joint": [
+          0.0,
+          40.0,
+          6.0
+        ],
+        "second": "apron_front"
+      },
+      {
+        "first": "skirt_core",
+        "joint": [
+          -4.5,
+          42.5,
+          -0.5
+        ],
+        "second": "left_skirt_flare"
+      },
+      {
+        "first": "skirt_core",
+        "joint": [
+          4.5,
+          42.5,
+          -0.5
+        ],
+        "second": "right_skirt_flare"
+      },
+      {
+        "first": "left_skirt_flare",
+        "joint": [
+          -7.7,
+          10.0,
+          0.5
+        ],
+        "second": "left_torn_hem"
+      },
+      {
+        "first": "right_skirt_flare",
+        "joint": [
+          7.5,
+          10.0,
+          0.5
+        ],
+        "second": "right_torn_hem"
+      },
+      {
+        "first": "skirt_core",
+        "joint": [
+          0.0,
+          42.5,
+          0.0
+        ],
+        "second": "pelvis_core"
+      },
+      {
+        "first": "pelvis_core",
+        "joint": [
+          0.0,
+          48.0,
+          0.0
+        ],
+        "second": "waist_sash"
+      },
+      {
+        "first": "waist_sash",
+        "joint": [
+          0.0,
+          49.0,
+          6.5
+        ],
+        "second": "sash_knot"
+      },
+      {
+        "first": "sash_knot",
+        "joint": [
+          -1.0,
+          48.0,
+          8.0
+        ],
+        "second": "left_sash_tail"
+      },
+      {
+        "first": "sash_knot",
+        "joint": [
+          1.0,
+          48.0,
+          8.0
+        ],
+        "second": "right_sash_tail"
+      },
+      {
+        "first": "waist_sash",
+        "joint": [
+          0.0,
+          50.5,
+          0.0
+        ],
+        "second": "abdomen_jacket"
+      },
+      {
+        "first": "abdomen_jacket",
+        "joint": [
+          0.0,
+          59.0,
+          0.0
+        ],
+        "second": "chest_jacket"
+      },
+      {
+        "first": "chest_jacket",
+        "joint": [
+          0.0,
+          66.0,
+          0.0
+        ],
+        "second": "shoulder_bar"
+      },
+      {
+        "first": "shoulder_bar",
+        "joint": [
+          -11.5,
+          66.0,
+          0.0
+        ],
+        "second": "left_short_sleeve"
+      },
+      {
+        "first": "shoulder_bar",
+        "joint": [
+          11.5,
+          66.0,
+          0.0
+        ],
+        "second": "right_short_sleeve"
+      },
+      {
+        "first": "shoulder_bar",
+        "joint": [
+          0.0,
+          69.5,
+          0.0
+        ],
+        "second": "neck_stump"
+      },
+      {
+        "first": "neck_stump",
+        "joint": [
+          -2.5,
+          71.0,
+          3.4
+        ],
+        "second": "left_collar"
+      },
+      {
+        "first": "neck_stump",
+        "joint": [
+          2.5,
+          71.0,
+          3.4
+        ],
+        "second": "right_collar"
+      },
+      {
+        "first": "skirt_core",
+        "joint": [
+          -3.2,
+          9.0,
+          -0.5
+        ],
+        "second": "left_lower_leg"
+      },
+      {
+        "first": "left_lower_leg",
+        "joint": [
+          -3.2,
+          1.0,
+          0.0
+        ],
+        "second": "left_foot"
+      },
+      {
+        "first": "skirt_core",
+        "joint": [
+          3.2,
+          9.0,
+          -0.5
+        ],
+        "second": "right_lower_leg"
+      },
+      {
+        "first": "right_lower_leg",
+        "joint": [
+          3.2,
+          1.0,
+          0.0
+        ],
+        "second": "right_foot"
+      },
+      {
+        "first": "shoulder_bar",
+        "joint": [
+          -8.0,
+          67.0,
+          -5.0
+        ],
+        "second": "outer_head_support_left_arm_1"
+      },
+      {
+        "first": "outer_head_support_left_arm_1",
+        "joint": [
+          -19.0,
+          86.0,
+          -5.5
+        ],
+        "second": "outer_head_support_left_arm_2"
+      },
+      {
+        "first": "outer_head_support_left_arm_2",
+        "joint": [
+          -7.0,
+          86.0,
+          -1.5
+        ],
+        "second": "outer_head_support_left_arm_3"
+      },
+      {
+        "first": "shoulder_bar",
+        "joint": [
+          8.0,
+          67.0,
+          -5.0
+        ],
+        "second": "outer_head_support_right_arm_1"
+      },
+      {
+        "first": "outer_head_support_right_arm_1",
+        "joint": [
+          19.0,
+          86.0,
+          -5.5
+        ],
+        "second": "outer_head_support_right_arm_2"
+      },
+      {
+        "first": "outer_head_support_right_arm_2",
+        "joint": [
+          7.0,
+          86.0,
+          -1.5
+        ],
+        "second": "outer_head_support_right_arm_3"
+      },
+      {
+        "first": "shoulder_bar",
+        "joint": [
+          -7.5,
+          65.5,
+          -1.5
+        ],
+        "second": "inner_head_support_left_arm_1"
+      },
+      {
+        "first": "inner_head_support_left_arm_1",
+        "joint": [
+          -16.0,
+          75.0,
+          1.0
+        ],
+        "second": "inner_head_support_left_arm_2"
+      },
+      {
+        "first": "inner_head_support_left_arm_2",
+        "joint": [
+          -7.0,
+          81.0,
+          2.5
+        ],
+        "second": "inner_head_support_left_arm_3"
+      },
+      {
+        "first": "shoulder_bar",
+        "joint": [
+          7.5,
+          65.5,
+          -1.5
+        ],
+        "second": "inner_head_support_right_arm_1"
+      },
+      {
+        "first": "inner_head_support_right_arm_1",
+        "joint": [
+          16.0,
+          75.0,
+          1.0
+        ],
+        "second": "inner_head_support_right_arm_2"
+      },
+      {
+        "first": "inner_head_support_right_arm_2",
+        "joint": [
+          7.0,
+          81.0,
+          2.5
+        ],
+        "second": "inner_head_support_right_arm_3"
+      },
+      {
+        "first": "shoulder_bar",
+        "joint": [
+          -10.0,
+          65.5,
+          -6.0
+        ],
+        "second": "rear_mid_bare_left_arm_1"
+      },
+      {
+        "first": "rear_mid_bare_left_arm_1",
+        "joint": [
+          -21.0,
+          66.0,
+          -9.0
+        ],
+        "second": "rear_mid_bare_left_arm_2"
+      },
+      {
+        "first": "rear_mid_bare_left_arm_2",
+        "joint": [
+          -22.0,
+          48.0,
+          -7.0
+        ],
+        "second": "rear_mid_bare_left_arm_3"
+      },
+      {
+        "first": "shoulder_bar",
+        "joint": [
+          10.0,
+          65.5,
+          -6.0
+        ],
+        "second": "rear_mid_bare_right_arm_1"
+      },
+      {
+        "first": "rear_mid_bare_right_arm_1",
+        "joint": [
+          21.0,
+          66.0,
+          -9.0
+        ],
+        "second": "rear_mid_bare_right_arm_2"
+      },
+      {
+        "first": "rear_mid_bare_right_arm_2",
+        "joint": [
+          22.0,
+          48.0,
+          -7.0
+        ],
+        "second": "rear_mid_bare_right_arm_3"
+      },
+      {
+        "first": "left_short_sleeve",
+        "joint": [
+          -12.2,
+          64.0,
+          3.5
+        ],
+        "second": "upper_black_sleeved_left_arm_1"
+      },
+      {
+        "first": "upper_black_sleeved_left_arm_1",
+        "joint": [
+          -18.0,
+          52.0,
+          5.5
+        ],
+        "second": "upper_black_sleeved_left_arm_2"
+      },
+      {
+        "first": "upper_black_sleeved_left_arm_2",
+        "joint": [
+          -10.0,
+          47.5,
+          8.0
+        ],
+        "second": "upper_black_sleeved_left_arm_3"
+      },
+      {
+        "first": "right_short_sleeve",
+        "joint": [
+          12.2,
+          64.0,
+          3.5
+        ],
+        "second": "upper_black_sleeved_right_arm_1"
+      },
+      {
+        "first": "upper_black_sleeved_right_arm_1",
+        "joint": [
+          18.0,
+          52.0,
+          5.5
+        ],
+        "second": "upper_black_sleeved_right_arm_2"
+      },
+      {
+        "first": "upper_black_sleeved_right_arm_2",
+        "joint": [
+          10.0,
+          47.5,
+          8.0
+        ],
+        "second": "upper_black_sleeved_right_arm_3"
+      },
+      {
+        "first": "abdomen_jacket",
+        "joint": [
+          -8.0,
+          57.0,
+          3.0
+        ],
+        "second": "lower_black_sleeved_left_arm_1"
+      },
+      {
+        "first": "lower_black_sleeved_left_arm_1",
+        "joint": [
+          -18.0,
+          47.0,
+          10.0
+        ],
+        "second": "lower_black_sleeved_left_arm_2"
+      },
+      {
+        "first": "lower_black_sleeved_left_arm_2",
+        "joint": [
+          -16.0,
+          34.0,
+          13.0
+        ],
+        "second": "lower_black_sleeved_left_arm_3"
+      },
+      {
+        "first": "abdomen_jacket",
+        "joint": [
+          8.0,
+          57.0,
+          3.0
+        ],
+        "second": "lower_black_sleeved_right_arm_1"
+      },
+      {
+        "first": "lower_black_sleeved_right_arm_1",
+        "joint": [
+          18.0,
+          47.0,
+          10.0
+        ],
+        "second": "lower_black_sleeved_right_arm_2"
+      },
+      {
+        "first": "lower_black_sleeved_right_arm_2",
+        "joint": [
+          16.0,
+          34.0,
+          13.0
+        ],
+        "second": "lower_black_sleeved_right_arm_3"
+      },
+      {
+        "first": "pelvis_core",
+        "joint": [
+          -8.0,
+          46.0,
+          -6.0
+        ],
+        "second": "rear_low_bare_left_arm_1"
+      },
+      {
+        "first": "rear_low_bare_left_arm_1",
+        "joint": [
+          -26.0,
+          44.0,
+          -12.0
+        ],
+        "second": "rear_low_bare_left_arm_2"
+      },
+      {
+        "first": "rear_low_bare_left_arm_2",
+        "joint": [
+          -19.0,
+          31.0,
+          -9.0
+        ],
+        "second": "rear_low_bare_left_arm_3"
+      },
+      {
+        "first": "pelvis_core",
+        "joint": [
+          8.0,
+          46.0,
+          -6.0
+        ],
+        "second": "rear_low_bare_right_arm_1"
+      },
+      {
+        "first": "rear_low_bare_right_arm_1",
+        "joint": [
+          26.0,
+          44.0,
+          -12.0
+        ],
+        "second": "rear_low_bare_right_arm_2"
+      },
+      {
+        "first": "rear_low_bare_right_arm_2",
+        "joint": [
+          19.0,
+          31.0,
+          -9.0
+        ],
+        "second": "rear_low_bare_right_arm_3"
+      },
+      {
+        "first": "outer_head_support_left_arm_3",
+        "joint": [
+          -4.25,
+          84.0,
+          1.0
+        ],
+        "second": "head_face"
+      },
+      {
+        "first": "head_face",
+        "joint": [
+          0.0,
+          77.3,
+          2.0
+        ],
+        "second": "chin"
+      },
+      {
+        "first": "head_face",
+        "joint": [
+          0.0,
+          81.5,
+          5.9
+        ],
+        "second": "nose"
+      },
+      {
+        "first": "head_face",
+        "joint": [
+          -4.1,
+          82.3,
+          1.5
+        ],
+        "second": "left_ear"
+      },
+      {
+        "first": "head_face",
+        "joint": [
+          4.1,
+          82.3,
+          1.5
+        ],
+        "second": "right_ear"
+      },
+      {
+        "first": "head_face",
+        "joint": [
+          0.0,
+          86.0,
+          2.0
+        ],
+        "second": "hair_cap"
+      },
+      {
+        "first": "head_face",
+        "joint": [
+          0.0,
+          87.0,
+          1.0
+        ],
+        "second": "hat_band"
+      },
+      {
+        "first": "hat_band",
+        "joint": [
+          0.0,
+          91.0,
+          1.0
+        ],
+        "second": "hat_crown_lower"
+      },
+      {
+        "first": "hat_crown_lower",
+        "joint": [
+          0.0,
+          97.2,
+          1.0
+        ],
+        "second": "hat_crown_upper"
+      },
+      {
+        "first": "hat_crown_upper",
+        "joint": [
+          0.0,
+          100.2,
+          1.0
+        ],
+        "second": "hat_top"
+      },
+      {
+        "first": "hat_crown_lower",
+        "joint": [
+          -3.2,
+          95.0,
+          4.8
+        ],
+        "second": "hat_pleat_1"
+      },
+      {
+        "first": "hat_crown_lower",
+        "joint": [
+          0.0,
+          95.0,
+          4.8
+        ],
+        "second": "hat_pleat_2"
+      },
+      {
+        "first": "hat_crown_lower",
+        "joint": [
+          3.2,
+          95.0,
+          4.8
+        ],
+        "second": "hat_pleat_3"
+      },
+      {
+        "first": "pelvis_core",
+        "joint": [
+          -4.0,
+          40.0,
+          6.0
+        ],
+        "second": "waist_tendril_1"
+      },
+      {
+        "first": "waist_tendril_1",
+        "joint": [
+          -17.0,
+          35.5,
+          10.0
+        ],
+        "second": "waist_tendril_2"
+      },
+      {
+        "first": "waist_tendril_2",
+        "joint": [
+          -26.0,
+          31.5,
+          11.5
+        ],
+        "second": "waist_tendril_3"
+      },
+      {
+        "first": "waist_tendril_3",
+        "joint": [
+          -17.0,
+          28.5,
+          13.0
+        ],
+        "second": "waist_tendril_4"
+      },
+      {
+        "first": "waist_tendril_4",
+        "joint": [
+          3.0,
+          26.5,
+          14.0
+        ],
+        "second": "waist_tendril_5"
+      },
+      {
+        "first": "waist_tendril_5",
+        "joint": [
+          20.0,
+          27.5,
+          13.5
+        ],
+        "second": "waist_tendril_6"
+      }
+    ],
+    "feature_inventory": {
+      "arm_pairs": 6,
+      "arm_segments": 36,
+      "bare_arm_pairs": 4,
+      "black_sleeved_arm_pairs": 2,
+      "chef_hat_cuboids": 7,
+      "detached_heads": 1,
+      "distinct_arm_depth_bands": 6,
+      "grounded_feet": 2,
+      "head_support_arm_pairs": 2,
+      "head_support_contacts": 4,
+      "head_support_hands": 4,
+      "individual_arms": 12,
+      "tendril_segments": 6,
+      "waist_tendrils": 1
+    },
+    "frame_clipping": [
+      "bottom"
+    ],
+    "head_support_contacts": [
+      {
+        "hand_cube": "outer_head_support_left_arm_3",
+        "head_cube": "head_face",
+        "joint": [
+          -4.25,
+          84.0,
+          1.0
+        ],
+        "pair": "outer_head_support",
+        "side": "left"
+      },
+      {
+        "hand_cube": "outer_head_support_right_arm_3",
+        "head_cube": "head_face",
+        "joint": [
+          4.25,
+          84.0,
+          1.0
+        ],
+        "pair": "outer_head_support",
+        "side": "right"
+      },
+      {
+        "hand_cube": "inner_head_support_left_arm_3",
+        "head_cube": "head_face",
+        "joint": [
+          -4.25,
+          79.5,
+          3.0
+        ],
+        "pair": "inner_head_support",
+        "side": "left"
+      },
+      {
+        "hand_cube": "inner_head_support_right_arm_3",
+        "head_cube": "head_face",
+        "joint": [
+          4.25,
+          79.5,
+          3.0
+        ],
+        "pair": "inner_head_support",
+        "side": "right"
+      }
+    ],
+    "lane": "agent-authored-semantic-volume",
+    "single_view_hidden_geometry": "inferred_conservatively_not_observed",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0,
+    "tendril": {
+      "classification": "independent_non_arm_appendage",
+      "depth_layer": "frontmost",
+      "joints": [
+        [
+          -4.0,
+          40.0,
+          6.0
+        ],
+        [
+          -17.0,
+          35.5,
+          10.0
+        ],
+        [
+          -26.0,
+          31.5,
+          11.5
+        ],
+        [
+          -17.0,
+          28.5,
+          13.0
+        ],
+        [
+          3.0,
+          26.5,
+          14.0
+        ],
+        [
+          20.0,
+          27.5,
+          13.5
+        ],
+        [
+          21.0,
+          30.0,
+          12.0
+        ]
+      ],
+      "segments": [
+        "waist_tendril_1",
+        "waist_tendril_2",
+        "waist_tendril_3",
+        "waist_tendril_4",
+        "waist_tendril_5",
+        "waist_tendril_6"
+      ]
+    }
+  },
+  "geometry": {
+    "precision": 20
+  },
+  "id": "falling_devil_twelve_armed_chef",
+  "landmarks": [
+    {
+      "center_color": "#2a1b21",
+      "center_uv": [
+        0.31,
+        0.4
+      ],
+      "color": "#2a1b21",
+      "cube": "head_face",
+      "face": "south",
+      "name": "left_closed_eye",
+      "size": [
+        3,
+        1
+      ]
+    },
+    {
+      "center_color": "#2a1b21",
+      "center_uv": [
+        0.69,
+        0.4
+      ],
+      "color": "#2a1b21",
+      "cube": "head_face",
+      "face": "south",
+      "name": "right_closed_eye",
+      "size": [
+        3,
+        1
+      ]
+    },
+    {
+      "center_color": "#2b1118",
+      "center_uv": [
+        0.5,
+        0.72
+      ],
+      "color": "#6f313c",
+      "cube": "head_face",
+      "face": "south",
+      "name": "vertical_lip",
+      "size": [
+        1,
+        3
+      ]
+    },
+    {
+      "center_color": "#3e2225",
+      "center_uv": [
+        0.5,
+        0.72
+      ],
+      "color": "#7a4a45",
+      "cube": "nose",
+      "face": "south",
+      "name": "nose_shadow",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#71212d",
+      "center_uv": [
+        0.5,
+        0.22
+      ],
+      "color": "#1a1017",
+      "cube": "neck_stump",
+      "face": "south",
+      "name": "open_neck",
+      "size": [
+        4,
+        2
+      ]
+    },
+    {
+      "center_color": "#31353a",
+      "center_uv": [
+        0.4,
+        0.56
+      ],
+      "color": "#727575",
+      "cube": "chest_jacket",
+      "face": "south",
+      "name": "jacket_buttons_left",
+      "size": [
+        1,
+        5
+      ]
+    },
+    {
+      "center_color": "#31353a",
+      "center_uv": [
+        0.6,
+        0.56
+      ],
+      "color": "#727575",
+      "cube": "chest_jacket",
+      "face": "south",
+      "name": "jacket_buttons_right",
+      "size": [
+        1,
+        5
+      ]
+    },
+    {
+      "center_color": "#222a57",
+      "center_uv": [
+        0.54,
+        0.46
+      ],
+      "color": "#3f4d91",
+      "cube": "apron_front",
+      "face": "south",
+      "name": "apron_center_highlight",
+      "size": [
+        5,
+        18
+      ]
+    },
+    {
+      "center_color": "#686f75",
+      "center_uv": [
+        0.20370370370370372,
+        0.5
+      ],
+      "color": "#8d969b",
+      "cube": "hat_crown_lower",
+      "face": "south",
+      "name": "hat_pleat_shadow_1",
+      "size": [
+        1,
+        8
+      ]
+    },
+    {
+      "center_color": "#686f75",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#8d969b",
+      "cube": "hat_crown_lower",
+      "face": "south",
+      "name": "hat_pleat_shadow_2",
+      "size": [
+        1,
+        8
+      ]
+    },
+    {
+      "center_color": "#686f75",
+      "center_uv": [
+        0.7962962962962964,
+        0.5
+      ],
+      "color": "#8d969b",
+      "cube": "hat_crown_lower",
+      "face": "south",
+      "name": "hat_pleat_shadow_3",
+      "size": [
+        1,
+        8
+      ]
+    }
+  ],
+  "materials": {
+    "black_cloth": {
+      "base": "#181a27",
+      "highlight": "#383f70",
+      "pattern": "dither",
+      "pattern_scale": 3,
+      "shade": "#090a0f"
+    },
+    "black_shadow": {
+      "base": "#0d0f18",
+      "highlight": "#252a4c",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#05060a"
+    },
+    "blood": {
+      "base": "#7a2431",
+      "highlight": "#b84a52",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#310b12"
+    },
+    "blue_sheen": {
+      "base": "#283064",
+      "highlight": "#5663a8",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#10142e"
+    },
+    "eye": {
+      "base": "#292027",
+      "highlight": "#5e4447",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#0b080b"
+    },
+    "hair": {
+      "base": "#14131a",
+      "highlight": "#35303b",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#07070a"
+    },
+    "lip": {
+      "base": "#692f39",
+      "highlight": "#bb6670",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#2b1118"
+    },
+    "skin": {
+      "base": "#dc937b",
+      "highlight": "#ffd0a8",
+      "pattern": "dither",
+      "pattern_scale": 3,
+      "shade": "#8d4c45"
+    },
+    "skin_light": {
+      "base": "#efaa8e",
+      "highlight": "#ffd8b8",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#a55f52"
+    },
+    "skin_shadow": {
+      "base": "#b86e63",
+      "highlight": "#eaa28a",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#713b3b"
+    },
+    "white_cloth": {
+      "base": "#e4ded2",
+      "highlight": "#fff8e9",
+      "pattern": "dither",
+      "pattern_scale": 4,
+      "shade": "#8f9292"
+    },
+    "white_shadow": {
+      "base": "#b8bab5",
+      "highlight": "#ebe6dc",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#696e73"
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "exactly six visible arm pairs and twelve individually articulated arms",
+      "two distinct head-support pairs with four physical hand-to-head contacts",
+      "detached human head with closed eyes beneath a tall fluted chef toque",
+      "white double-breasted chef jacket over deep blue-black apron and skirt",
+      "two overlapping black-sleeved arm pairs remain separable in depth",
+      "independent flesh-colored waist tendril crossing the foreground",
+      "substantial torso, skirt, head, and limb depth rather than a relief panel"
+    ],
+    "required_views": [
+      "source-perspective",
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "isometric",
+      "head-support-closeup",
+      "arm-layer-closeup",
+      "tendril-closeup"
+    ],
+    "review_targets": [
+      "six arm-pair count",
+      "four hand-to-head contacts",
+      "detached head gap",
+      "arm depth separation",
+      "tendril classification",
+      "chef silhouette",
+      "facial expression",
+      "torso volume",
+      "joint continuity"
+    ],
+    "target_cuboids": [
+      70,
+      110
+    ]
+  },
+  "reference": {
+    "height": 501,
+    "image": "../../../../image-12.png",
+    "sha256": "e2824aa87127cb8922be7e37ae0942f9abfbf8413fbe39ce133edf4ed06c18fb",
+    "width": 399
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "A headless chef-bodied Falling Devil with a separately supported head, tall toque, six visible arm pairs, black apron, and independent flesh tendril",
+    "symmetry": "bilateral",
+    "type": "character",
+    "uncertainties": [
+      "Only one frontal illustration is observed; rear markings and exact hidden arm-root ordering are conservative semantic inference",
+      "The source crops the feet at the bottom edge, so footwear is intentionally plain",
+      "Some overlapping elbows are partly occluded; arm count follows six traceable pairs",
+      "Source rights are unknown and the ignored reference remains local only"
+    ]
+  },
+  "texture": {
+    "atlas_size": 512,
+    "density": 2,
+    "gutter": 1,
+    "palette_size": 24,
+    "quantize_source": false
+  }
+}

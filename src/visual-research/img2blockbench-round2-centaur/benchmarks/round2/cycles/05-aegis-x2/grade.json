@@ -1,0 +1,23 @@
+{
+  "asset": "aegis_x2_turret",
+  "blockers": [],
+  "cycle": 5,
+  "grader": "independent_read_only_codex_terminal",
+  "mean": 3.83,
+  "notes": [
+    "Opposed weapon asymmetry, four grounded supports, segmented pedestal, yaw/pitch cradle, drive drums, pistons, and cabling are visibly present.",
+    "The cannon is somewhat long and the launcher compact relative to the references, but neither is a critical mismatch.",
+    "All three source comparisons use distinct fixed cameras without runtime fitting, cropping, scaling, or recentering."
+  ],
+  "round": 2,
+  "schema_version": 1,
+  "scores": {
+    "3d_coherence": 4,
+    "attachment_topology": 4,
+    "identity": 4,
+    "materials_color": 4,
+    "proportions": 3,
+    "silhouette": 4
+  },
+  "verdict": "PASS"
+}

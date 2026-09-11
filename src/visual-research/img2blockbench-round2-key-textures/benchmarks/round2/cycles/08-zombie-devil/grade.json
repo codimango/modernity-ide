@@ -1,0 +1,29 @@
+{
+  "asset": "zombie_devil_exposed_brain",
+  "blockers": [],
+  "caveat": "The visceral assembly remains angular and cage-like, but no longer constitutes a critical biped mismatch.",
+  "cycle": 8,
+  "grader": "independent_read_only_codex_terminal",
+  "mean": 3.67,
+  "round": 2,
+  "schema_version": 1,
+  "scores": {
+    "3d_coherence": 4,
+    "attachment_topology": 4,
+    "identity": 4,
+    "materials_color": 4,
+    "proportions": 3,
+    "silhouette": 3
+  },
+  "verdict": "PASS",
+  "verified": {
+    "attachments_connected": "187/187",
+    "broad_fused_zombie_devil": true,
+    "duplicate_views_counted_as_one_axis": true,
+    "embedded_screaming_face": true,
+    "exposed_grooved_brain": true,
+    "grounded_feet": 0,
+    "massive_asymmetric_arms": true,
+    "runtime_camera_fitting": false
+  }
+}

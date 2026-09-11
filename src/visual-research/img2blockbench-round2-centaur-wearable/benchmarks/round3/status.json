@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "round": "round3",
+  "status": "IN_PROGRESS",
+  "gate_status": "PENDING",
+  "cumulative_pass": false,
+  "blocking_reasons": [
+    "MISSING_PRIVATE_INPUT"
+  ],
+  "pipeline_grade": {
+    "status": "PASS",
+    "graded_commit": "640b8e7fe4e1179d2ce58fc16c9bb9935e6f4feb",
+    "targeted_tests": "25/25",
+    "full_tests": "169/169"
+  },
+  "cycles": [
+    {
+      "cycle": "round3-01",
+      "slug": "01-biblical-angel",
+      "asset": "Biblically accurate angel",
+      "model_id": "biblical_angel_many_eyed_six_wing",
+      "status": "PASS",
+      "grade": {
+        "decision": "pass",
+        "status": "FINAL",
+        "graded_commit": "640b8e7fe4e1179d2ce58fc16c9bb9935e6f4feb",
+        "exact_commit_grade": "pass"
+      },
+      "input": {
+        "kind": "image",
+        "relative_path": "round3-inputs/biblically-accurate-angel.png",
+        "private": true,
+        "committed": false
+      }
+    },
+    {
+      "cycle": "round3-02",
+      "slug": "02-atlus",
+      "asset": "Zetatech Atlus",
+      "model_id": "atlus_trauma_team_aerodyne",
+      "status": "PASS",
+      "grade": {
+        "decision": "pass",
+        "status": "FINAL",
+        "graded_commit": "640b8e7fe4e1179d2ce58fc16c9bb9935e6f4feb",
+        "exact_commit_grade": "pass"
+      },
+      "input": {
+        "kind": "image-multiview",
+        "relative_path": "round3-inputs/atlus.png",
+        "private": true,
+        "committed": false
+      }
+    },
+    {
+      "cycle": "round3-03",
+      "slug": "03-off-road-truck",
+      "asset": "Minecraft-style off-road truck",
+      "model_id": "minecraft_off_road_truck_mesh",
+      "status": "PENDING_INPUT",
+      "grade": {
+        "decision": null,
+        "status": "NOT_STARTED",
+        "graded_commit": null,
+        "exact_commit_grade": "not-started"
+      },
+      "blocker": {
+        "code": "MISSING_PRIVATE_INPUT"
+      },
+      "input": {
+        "kind": "glb",
+        "relative_path": "round3-inputs/Minecraft-style off-road truck.glb",
+        "private": true,
+        "committed": false
+      }
+    },
+    {
+      "cycle": "round3-04",
+      "slug": "04-hovercraft",
+      "asset": "Meshy Minecraft hovercraft",
+      "model_id": "meshy_minecraft_hovercraft_mesh",
+      "status": "PENDING_INPUT",
+      "grade": {
+        "decision": null,
+        "status": "NOT_STARTED",
+        "graded_commit": null,
+        "exact_commit_grade": "not-started"
+      },
+      "blocker": {
+        "code": "MISSING_PRIVATE_INPUT"
+      },
+      "input": {
+        "kind": "glb",
+        "relative_path": "round3-inputs/Meshy_AI_minecraft_hovercraft_0907011803_image-to-3d-texture.glb",
+        "private": true,
+        "committed": false
+      }
+    }
+  ],
+  "input_policy": {
+    "directory": "round3-inputs/",
+    "gitignored": true,
+    "source_media_committed": false
+  },
+  "repository_delivery": {
+    "scope": "LOCAL_ONLY",
+    "remote_configured": false,
+    "public_push_performed": false,
+    "pull_request_created": false
+  }
+}

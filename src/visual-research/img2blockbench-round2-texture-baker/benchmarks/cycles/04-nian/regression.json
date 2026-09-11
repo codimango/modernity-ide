@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "ed09970",
+  "comparison": "fresh baseline git-archive rebuild versus fresh cycle-04 rebuild",
+  "all_prior_tracked_trees_unchanged": true,
+  "all_fresh_outputs_byte_identical": true,
+  "assets": {
+    "american_goldfinch": {
+      "fresh_files_compared": 14,
+      "all_match": true,
+      "bbmodel_sha256": "5df13994a35b82e4adec24e4c8c83e830c4463510bd574dc1111ce2e000e4d66",
+      "front_sha256": "3220a3df9237b64072d3a4832afe1e9c8b4da645ff69a61a3ceef5bdd797a66d"
+    },
+    "porsche_911_turbo_930": {
+      "fresh_files_compared": 14,
+      "all_match": true,
+      "bbmodel_sha256": "83fe72cf059ce58cf832244f78901d3779b9a7190a2267d6fe282062997cc64f",
+      "front_sha256": "6dec39bdc7af8f23eb952c3e2e57da78de23e1366cc331d1748cc94ed443867d"
+    },
+    "excalibur": {
+      "fresh_files_compared": 14,
+      "all_match": true,
+      "bbmodel_sha256": "64da2ddc61452221719634469d2c7b53935ee449a0bb28e187ecc5e5b1baf764",
+      "front_sha256": "62bafaba327d6a79295fe520e261f8283dc3c70e98bd107e2c23b2a2eb2b5658"
+    }
+  }
+}

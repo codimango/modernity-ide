@@ -1,0 +1,6628 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "robe",
+      "parent": "root",
+      "pivot": [
+        2.5,
+        34,
+        0
+      ]
+    },
+    {
+      "name": "head",
+      "parent": "robe",
+      "pivot": [
+        4,
+        68,
+        0
+      ]
+    },
+    {
+      "name": "split_head_left_base_1",
+      "parent": "head",
+      "pivot": [
+        4,
+        74,
+        0
+      ]
+    },
+    {
+      "name": "split_head_left_base_2",
+      "parent": "split_head_left_base_1",
+      "pivot": [
+        2,
+        77,
+        0.75
+      ]
+    },
+    {
+      "name": "split_head_right_base_1",
+      "parent": "head",
+      "pivot": [
+        4,
+        74,
+        0
+      ]
+    },
+    {
+      "name": "split_head_right_base_2",
+      "parent": "split_head_right_base_1",
+      "pivot": [
+        6,
+        77.25,
+        -0.75
+      ]
+    },
+    {
+      "name": "split_head_left_peak_1",
+      "parent": "split_head_left_base_2",
+      "pivot": [
+        0,
+        80,
+        1.5
+      ]
+    },
+    {
+      "name": "split_head_left_peak_2",
+      "parent": "split_head_left_peak_1",
+      "pivot": [
+        -1,
+        83,
+        2
+      ]
+    },
+    {
+      "name": "split_head_right_peak_1",
+      "parent": "split_head_right_base_2",
+      "pivot": [
+        8,
+        80.5,
+        -1.5
+      ]
+    },
+    {
+      "name": "split_head_right_peak_2",
+      "parent": "split_head_right_peak_1",
+      "pivot": [
+        9.5,
+        83.75,
+        -2
+      ]
+    },
+    {
+      "name": "mandible_1_inner_1",
+      "parent": "head",
+      "pivot": [
+        -3.5,
+        70,
+        -4
+      ]
+    },
+    {
+      "name": "mandible_1_inner_2",
+      "parent": "mandible_1_inner_1",
+      "pivot": [
+        -8,
+        68.25,
+        -4.5
+      ]
+    },
+    {
+      "name": "mandible_1_outer_1",
+      "parent": "mandible_1_inner_2",
+      "pivot": [
+        -12.5,
+        66.5,
+        -5
+      ]
+    },
+    {
+      "name": "mandible_1_outer_2",
+      "parent": "mandible_1_outer_1",
+      "pivot": [
+        -16.75,
+        66.5,
+        -5.1
+      ]
+    },
+    {
+      "name": "mandible_1_hook_1",
+      "parent": "mandible_1_outer_2",
+      "pivot": [
+        -21,
+        66.5,
+        -5.2
+      ]
+    },
+    {
+      "name": "mandible_2_inner_1",
+      "parent": "head",
+      "pivot": [
+        -2,
+        72,
+        0
+      ]
+    },
+    {
+      "name": "mandible_2_inner_2",
+      "parent": "mandible_2_inner_1",
+      "pivot": [
+        -7.5,
+        72,
+        0.1
+      ]
+    },
+    {
+      "name": "mandible_2_outer_1",
+      "parent": "mandible_2_inner_2",
+      "pivot": [
+        -13,
+        72,
+        0.2
+      ]
+    },
+    {
+      "name": "mandible_2_outer_2",
+      "parent": "mandible_2_outer_1",
+      "pivot": [
+        -17,
+        74.5,
+        0.1
+      ]
+    },
+    {
+      "name": "mandible_2_hook_1",
+      "parent": "mandible_2_outer_2",
+      "pivot": [
+        -21,
+        77,
+        0
+      ]
+    },
+    {
+      "name": "mandible_3_inner_1",
+      "parent": "head",
+      "pivot": [
+        -0.5,
+        74,
+        4
+      ]
+    },
+    {
+      "name": "mandible_3_inner_2",
+      "parent": "mandible_3_inner_1",
+      "pivot": [
+        -5.25,
+        75.75,
+        4.5
+      ]
+    },
+    {
+      "name": "mandible_3_outer_1",
+      "parent": "mandible_3_inner_2",
+      "pivot": [
+        -10,
+        77.5,
+        5
+      ]
+    },
+    {
+      "name": "mandible_3_outer_2",
+      "parent": "mandible_3_outer_1",
+      "pivot": [
+        -14,
+        80.75,
+        5.1
+      ]
+    },
+    {
+      "name": "mandible_3_hook_1",
+      "parent": "mandible_3_outer_2",
+      "pivot": [
+        -18,
+        84,
+        5.2
+      ]
+    },
+    {
+      "name": "mandible_4_inner_1",
+      "parent": "head",
+      "pivot": [
+        2,
+        75.5,
+        -4
+      ]
+    },
+    {
+      "name": "mandible_4_inner_2",
+      "parent": "mandible_4_inner_1",
+      "pivot": [
+        0.25,
+        79.25,
+        -4.5
+      ]
+    },
+    {
+      "name": "mandible_4_outer_1",
+      "parent": "mandible_4_inner_2",
+      "pivot": [
+        -1.5,
+        83,
+        -5
+      ]
+    },
+    {
+      "name": "mandible_4_outer_2",
+      "parent": "mandible_4_outer_1",
+      "pivot": [
+        -2.75,
+        86.5,
+        -5.1
+      ]
+    },
+    {
+      "name": "mandible_4_hook_1",
+      "parent": "mandible_4_outer_2",
+      "pivot": [
+        -4,
+        90,
+        -5.2
+      ]
+    },
+    {
+      "name": "mandible_5_inner_1",
+      "parent": "head",
+      "pivot": [
+        4,
+        76,
+        0
+      ]
+    },
+    {
+      "name": "mandible_5_inner_2",
+      "parent": "mandible_5_inner_1",
+      "pivot": [
+        3.5,
+        80,
+        0.2
+      ]
+    },
+    {
+      "name": "mandible_5_outer_1",
+      "parent": "mandible_5_inner_2",
+      "pivot": [
+        3,
+        84,
+        0.4
+      ]
+    },
+    {
+      "name": "mandible_5_outer_2",
+      "parent": "mandible_5_outer_1",
+      "pivot": [
+        4.5,
+        86.5,
+        0.2
+      ]
+    },
+    {
+      "name": "mandible_5_hook_1",
+      "parent": "mandible_5_outer_2",
+      "pivot": [
+        6,
+        89,
+        0
+      ]
+    },
+    {
+      "name": "mandible_6_inner_1",
+      "parent": "head",
+      "pivot": [
+        6,
+        75.5,
+        4
+      ]
+    },
+    {
+      "name": "mandible_6_inner_2",
+      "parent": "mandible_6_inner_1",
+      "pivot": [
+        7.25,
+        79.5,
+        4.5
+      ]
+    },
+    {
+      "name": "mandible_6_outer_1",
+      "parent": "mandible_6_inner_2",
+      "pivot": [
+        8.5,
+        83.5,
+        5
+      ]
+    },
+    {
+      "name": "mandible_6_outer_2",
+      "parent": "mandible_6_outer_1",
+      "pivot": [
+        7.75,
+        86.75,
+        5.1
+      ]
+    },
+    {
+      "name": "mandible_6_hook_1",
+      "parent": "mandible_6_outer_2",
+      "pivot": [
+        7,
+        90,
+        5.2
+      ]
+    },
+    {
+      "name": "mandible_7_inner_1",
+      "parent": "head",
+      "pivot": [
+        8,
+        74,
+        -4
+      ]
+    },
+    {
+      "name": "mandible_7_inner_2",
+      "parent": "mandible_7_inner_1",
+      "pivot": [
+        10.5,
+        78,
+        -4.5
+      ]
+    },
+    {
+      "name": "mandible_7_outer_1",
+      "parent": "mandible_7_inner_2",
+      "pivot": [
+        13,
+        82,
+        -5
+      ]
+    },
+    {
+      "name": "mandible_7_outer_2",
+      "parent": "mandible_7_outer_1",
+      "pivot": [
+        12.5,
+        85.75,
+        -5.1
+      ]
+    },
+    {
+      "name": "mandible_7_hook_1",
+      "parent": "mandible_7_outer_2",
+      "pivot": [
+        12,
+        89.5,
+        -5.2
+      ]
+    },
+    {
+      "name": "mandible_8_inner_1",
+      "parent": "head",
+      "pivot": [
+        10,
+        71,
+        4
+      ]
+    },
+    {
+      "name": "mandible_8_inner_2",
+      "parent": "mandible_8_inner_1",
+      "pivot": [
+        13,
+        74,
+        4.5
+      ]
+    },
+    {
+      "name": "mandible_8_outer_1",
+      "parent": "mandible_8_inner_2",
+      "pivot": [
+        16,
+        77,
+        5
+      ]
+    },
+    {
+      "name": "mandible_8_outer_2",
+      "parent": "mandible_8_outer_1",
+      "pivot": [
+        16.5,
+        80.75,
+        5.1
+      ]
+    },
+    {
+      "name": "mandible_8_hook_1",
+      "parent": "mandible_8_outer_2",
+      "pivot": [
+        17,
+        84.5,
+        5.2
+      ]
+    },
+    {
+      "name": "chest_maw",
+      "parent": "head",
+      "pivot": [
+        1,
+        66,
+        4
+      ]
+    },
+    {
+      "name": "mask",
+      "parent": "head",
+      "pivot": [
+        12.5,
+        74.5,
+        4.4
+      ]
+    },
+    {
+      "name": "mechanical_leg_1_upper_1",
+      "parent": "robe",
+      "pivot": [
+        -9,
+        29,
+        -4
+      ]
+    },
+    {
+      "name": "mechanical_leg_1_lower_1",
+      "parent": "mechanical_leg_1_upper_1",
+      "pivot": [
+        -21,
+        21,
+        -5
+      ]
+    },
+    {
+      "name": "mechanical_leg_1_toe_1",
+      "parent": "mechanical_leg_1_lower_1",
+      "pivot": [
+        -28,
+        11,
+        -5.5
+      ]
+    },
+    {
+      "name": "mechanical_leg_2_upper_1",
+      "parent": "robe",
+      "pivot": [
+        -5,
+        28,
+        6.5
+      ]
+    },
+    {
+      "name": "mechanical_leg_2_lower_1",
+      "parent": "mechanical_leg_2_upper_1",
+      "pivot": [
+        -14,
+        18,
+        7.5
+      ]
+    },
+    {
+      "name": "mechanical_leg_2_toe_1",
+      "parent": "mechanical_leg_2_lower_1",
+      "pivot": [
+        -16,
+        8,
+        8
+      ]
+    },
+    {
+      "name": "mechanical_leg_3_upper_1",
+      "parent": "robe",
+      "pivot": [
+        9,
+        28.5,
+        6.5
+      ]
+    },
+    {
+      "name": "mechanical_leg_3_lower_1",
+      "parent": "mechanical_leg_3_upper_1",
+      "pivot": [
+        17,
+        18,
+        7.5
+      ]
+    },
+    {
+      "name": "mechanical_leg_3_toe_1",
+      "parent": "mechanical_leg_3_lower_1",
+      "pivot": [
+        17,
+        8,
+        8
+      ]
+    },
+    {
+      "name": "mechanical_leg_4_upper_1",
+      "parent": "robe",
+      "pivot": [
+        13,
+        29.5,
+        -4
+      ]
+    },
+    {
+      "name": "mechanical_leg_4_lower_1",
+      "parent": "mechanical_leg_4_upper_1",
+      "pivot": [
+        23,
+        21,
+        -5
+      ]
+    },
+    {
+      "name": "mechanical_leg_4_toe_1",
+      "parent": "mechanical_leg_4_lower_1",
+      "pivot": [
+        29,
+        11,
+        -5.5
+      ]
+    },
+    {
+      "name": "upper_ring",
+      "parent": "robe",
+      "pivot": [
+        6.2,
+        54.75,
+        4
+      ]
+    },
+    {
+      "name": "lower_ring",
+      "parent": "robe",
+      "pivot": [
+        1.7,
+        38.15,
+        4
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 4.7,
+    "height": 5.4,
+    "width": 1.4
+  },
+  "cubes": [
+    {
+      "bone": "robe",
+      "center": [
+        3.0,
+        50.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "robe",
+      "name": "torso_core",
+      "origin": [
+        3.0,
+        50.0,
+        0.0
+      ],
+      "role": "narrow deep upper robe torso",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        22.0,
+        40.0,
+        12.0
+      ]
+    },
+    {
+      "bone": "robe",
+      "center": [
+        -7.5,
+        35.0,
+        -1.0
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "left_hanging_fold",
+      "origin": [
+        -7.5,
+        35.0,
+        -1.0
+      ],
+      "role": "long viewer-left hanging robe fold",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8.0,
+        52.0,
+        10.0
+      ]
+    },
+    {
+      "bone": "robe",
+      "center": [
+        0.5,
+        31.5,
+        2.0
+      ],
+      "faces": {},
+      "material": "void",
+      "name": "center_hanging_fold",
+      "origin": [
+        0.5,
+        31.5,
+        2.0
+      ],
+      "role": "central hanging robe fold",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        9.0,
+        57.0,
+        10.0
+      ]
+    },
+    {
+      "bone": "robe",
+      "center": [
+        10.0,
+        36.0,
+        -1.5
+      ],
+      "faces": {},
+      "material": "robe_mid",
+      "name": "right_hanging_fold",
+      "origin": [
+        10.0,
+        36.0,
+        -1.5
+      ],
+      "role": "long viewer-right hanging robe fold",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8.0,
+        62.0,
+        10.0
+      ]
+    },
+    {
+      "bone": "robe",
+      "center": [
+        -6,
+        51.710519,
+        -1.8
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "hem_far_left",
+      "origin": [
+        -6,
+        34,
+        -1.8
+      ],
+      "role": "flared torn robe hem panel",
+      "rotation": [
+        0.485275,
+        0,
+        153.145579
+      ],
+      "size": [
+        7.2,
+        36.721039,
+        8.5
+      ]
+    },
+    {
+      "bone": "robe",
+      "center": [
+        -3,
+        51.988526,
+        2.6
+      ],
+      "faces": {},
+      "material": "robe_mid",
+      "name": "hem_left",
+      "origin": [
+        -3,
+        35,
+        2.6
+      ],
+      "role": "flared torn robe hem panel",
+      "rotation": [
+        2.023991,
+        0,
+        166.373005
+      ],
+      "size": [
+        8,
+        35.277051,
+        8.5
+      ]
+    },
+    {
+      "bone": "robe",
+      "center": [
+        2,
+        50.120872,
+        -2.5
+      ],
+      "faces": {},
+      "material": "void",
+      "name": "hem_center",
+      "origin": [
+        2,
+        34,
+        -2.5
+      ],
+      "role": "flared torn robe hem panel",
+      "rotation": [
+        -2.310815,
+        0,
+        178.2212
+      ],
+      "size": [
+        8.5,
+        33.541743,
+        8.5
+      ]
+    },
+    {
+      "bone": "robe",
+      "center": [
+        7,
+        56.127672,
+        2.2
+      ],
+      "faces": {},
+      "material": "robe",
+      "name": "hem_right",
+      "origin": [
+        7,
+        38,
+        2.2
+      ],
+      "role": "flared torn robe hem panel",
+      "rotation": [
+        2.529366,
+        0,
+        -171.265865
+      ],
+      "size": [
+        8,
+        37.555344,
+        8.5
+      ]
+    },
+    {
+      "bone": "robe",
+      "center": [
+        10,
+        52.194839,
+        -2
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "hem_far_right",
+      "origin": [
+        10,
+        35,
+        -2
+      ],
+      "role": "flared torn robe hem panel",
+      "rotation": [
+        1.33298,
+        0,
+        -160.458279
+      ],
+      "size": [
+        7.2,
+        35.689679,
+        8.5
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        4.0,
+        73.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "head_core",
+      "origin": [
+        4.0,
+        73.0,
+        0.0
+      ],
+      "role": "deep split cranium and upper chest anchor",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        18.0,
+        12.0,
+        9.0
+      ]
+    },
+    {
+      "bone": "split_head_left_base_1",
+      "center": [
+        4,
+        75.841365,
+        0
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "split_head_left_base_1",
+      "origin": [
+        4,
+        74,
+        0
+      ],
+      "role": "viewer-left half of split cranium tapered segment 1",
+      "rotation": [
+        11.750674,
+        0,
+        33.690068
+      ],
+      "size": [
+        4.225,
+        4.58273,
+        4.95
+      ]
+    },
+    {
+      "bone": "split_head_left_base_2",
+      "center": [
+        2,
+        78.841365,
+        0.75
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "split_head_left_base_2",
+      "origin": [
+        2,
+        77,
+        0.75
+      ],
+      "role": "viewer-left half of split cranium tapered segment 2",
+      "rotation": [
+        11.750674,
+        0,
+        33.690068
+      ],
+      "size": [
+        3.675,
+        4.58273,
+        4.45
+      ]
+    },
+    {
+      "bone": "split_head_right_base_1",
+      "center": [
+        4,
+        75.944544,
+        0
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "split_head_right_base_1",
+      "origin": [
+        4,
+        74,
+        0
+      ],
+      "role": "viewer-right half of split cranium tapered segment 1",
+      "rotation": [
+        -11.118996,
+        0,
+        -31.607502
+      ],
+      "size": [
+        4.175,
+        4.789087,
+        4.9
+      ]
+    },
+    {
+      "bone": "split_head_right_base_2",
+      "center": [
+        6,
+        79.194544,
+        -0.75
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "split_head_right_base_2",
+      "origin": [
+        6,
+        77.25,
+        -0.75
+      ],
+      "role": "viewer-right half of split cranium tapered segment 2",
+      "rotation": [
+        -11.118996,
+        0,
+        -31.607502
+      ],
+      "size": [
+        3.525,
+        4.789087,
+        4.3
+      ]
+    },
+    {
+      "bone": "split_head_left_peak_1",
+      "center": [
+        0,
+        81.600781,
+        1.5
+      ],
+      "faces": {},
+      "material": "blood",
+      "name": "split_head_left_peak_1",
+      "origin": [
+        0,
+        80,
+        1.5
+      ],
+      "role": "bloodied viewer-left split head peak tapered segment 1",
+      "rotation": [
+        8.984877,
+        0,
+        18.434949
+      ],
+      "size": [
+        2.825,
+        4.101562,
+        3.6
+      ]
+    },
+    {
+      "bone": "split_head_left_peak_2",
+      "center": [
+        -1,
+        84.600781,
+        2
+      ],
+      "faces": {},
+      "material": "blood",
+      "name": "split_head_left_peak_2",
+      "origin": [
+        -1,
+        83,
+        2
+      ],
+      "role": "bloodied viewer-left split head peak tapered segment 2",
+      "rotation": [
+        8.984877,
+        0,
+        18.434949
+      ],
+      "size": [
+        2.075,
+        4.101562,
+        2.8
+      ]
+    },
+    {
+      "bone": "split_head_right_peak_1",
+      "center": [
+        8,
+        82.307104,
+        -1.5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "split_head_right_peak_1",
+      "origin": [
+        8,
+        80.5,
+        -1.5
+      ],
+      "role": "viewer-right split head peak tapered segment 1",
+      "rotation": [
+        -7.951968,
+        0,
+        -24.775141
+      ],
+      "size": [
+        2.65,
+        4.514208,
+        3.4
+      ]
+    },
+    {
+      "bone": "split_head_right_peak_2",
+      "center": [
+        9.5,
+        85.557104,
+        -2
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "split_head_right_peak_2",
+      "origin": [
+        9.5,
+        83.75,
+        -2
+      ],
+      "role": "viewer-right split head peak tapered segment 2",
+      "rotation": [
+        -7.951968,
+        0,
+        -24.775141
+      ],
+      "size": [
+        1.95,
+        4.514208,
+        2.6
+      ]
+    },
+    {
+      "bone": "mandible_1_inner_1",
+      "center": [
+        -3.5,
+        72.427061,
+        -4
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_1_inner_1",
+      "origin": [
+        -3.5,
+        70,
+        -4
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 1",
+      "rotation": [
+        -5.912252,
+        0,
+        111.250506
+      ],
+      "size": [
+        2.825,
+        5.694122,
+        2.925
+      ]
+    },
+    {
+      "bone": "mandible_1_inner_2",
+      "center": [
+        -8,
+        70.677061,
+        -4.5
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_1_inner_2",
+      "origin": [
+        -8,
+        68.25,
+        -4.5
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 2",
+      "rotation": [
+        -5.912252,
+        0,
+        111.250506
+      ],
+      "size": [
+        2.275,
+        5.694122,
+        2.375
+      ]
+    },
+    {
+      "bone": "mandible_1_outer_1",
+      "center": [
+        -12.5,
+        68.625588,
+        -5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_1_outer_1",
+      "origin": [
+        -12.5,
+        66.5,
+        -5
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 1",
+      "rotation": [
+        -1.347887,
+        0,
+        90
+      ],
+      "size": [
+        1.6425,
+        5.091176,
+        1.7425
+      ]
+    },
+    {
+      "bone": "mandible_1_outer_2",
+      "center": [
+        -16.75,
+        68.625588,
+        -5.1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_1_outer_2",
+      "origin": [
+        -16.75,
+        66.5,
+        -5.1
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 2",
+      "rotation": [
+        -1.347887,
+        0,
+        90
+      ],
+      "size": [
+        1.0275,
+        5.091176,
+        1.1275
+      ]
+    },
+    {
+      "bone": "mandible_1_hook_1",
+      "center": [
+        -21,
+        69.001999,
+        -5.2
+      ],
+      "faces": {},
+      "material": "blood",
+      "name": "mandible_1_hook_1",
+      "origin": [
+        -21,
+        66.5,
+        -5.2
+      ],
+      "role": "inward hooked bloodied terminal fang tapered segment 1",
+      "rotation": [
+        2.29061,
+        0,
+        -143.130102
+      ],
+      "size": [
+        0.615,
+        5.843998,
+        0.67
+      ]
+    },
+    {
+      "bone": "mandible_2_inner_1",
+      "center": [
+        -2,
+        74.750455,
+        0
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_2_inner_1",
+      "origin": [
+        -2,
+        72,
+        0
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 1",
+      "rotation": [
+        1.041627,
+        0,
+        90
+      ],
+      "size": [
+        2.825,
+        6.340909,
+        2.925
+      ]
+    },
+    {
+      "bone": "mandible_2_inner_2",
+      "center": [
+        -7.5,
+        74.750455,
+        0.1
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_2_inner_2",
+      "origin": [
+        -7.5,
+        72,
+        0.1
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 2",
+      "rotation": [
+        1.041627,
+        0,
+        90
+      ],
+      "size": [
+        2.275,
+        6.340909,
+        2.375
+      ]
+    },
+    {
+      "bone": "mandible_2_outer_1",
+      "center": [
+        -13,
+        74.359025,
+        0.2
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_2_outer_1",
+      "origin": [
+        -13,
+        72,
+        0.2
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 1",
+      "rotation": [
+        -1.214486,
+        0,
+        57.994617
+      ],
+      "size": [
+        1.6425,
+        5.55805,
+        1.7425
+      ]
+    },
+    {
+      "bone": "mandible_2_outer_2",
+      "center": [
+        -17,
+        76.859025,
+        0.1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_2_outer_2",
+      "origin": [
+        -17,
+        74.5,
+        0.1
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 2",
+      "rotation": [
+        -1.214486,
+        0,
+        57.994617
+      ],
+      "size": [
+        1.0275,
+        5.55805,
+        1.1275
+      ]
+    },
+    {
+      "bone": "mandible_2_hook_1",
+      "center": [
+        -21,
+        79.152905,
+        0
+      ],
+      "faces": {},
+      "material": "blood",
+      "name": "mandible_2_hook_1",
+      "origin": [
+        -21,
+        77,
+        0
+      ],
+      "role": "inward hooked bloodied terminal fang tapered segment 1",
+      "rotation": [
+        2.662282,
+        0,
+        -144.462322
+      ],
+      "size": [
+        0.615,
+        5.14581,
+        0.67
+      ]
+    },
+    {
+      "bone": "mandible_3_inner_1",
+      "center": [
+        -0.5,
+        76.543374,
+        4
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_3_inner_1",
+      "origin": [
+        -0.5,
+        74,
+        4
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 1",
+      "rotation": [
+        5.640977,
+        0,
+        69.775141
+      ],
+      "size": [
+        2.825,
+        5.926747,
+        2.925
+      ]
+    },
+    {
+      "bone": "mandible_3_inner_2",
+      "center": [
+        -5.25,
+        78.293374,
+        4.5
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_3_inner_2",
+      "origin": [
+        -5.25,
+        75.75,
+        4.5
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 2",
+      "rotation": [
+        5.640977,
+        0,
+        69.775141
+      ],
+      "size": [
+        2.275,
+        5.926747,
+        2.375
+      ]
+    },
+    {
+      "bone": "mandible_3_outer_1",
+      "center": [
+        -10,
+        80.077426,
+        5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_3_outer_1",
+      "origin": [
+        -10,
+        77.5,
+        5
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 1",
+      "rotation": [
+        1.111562,
+        0,
+        50.906141
+      ],
+      "size": [
+        1.6425,
+        5.994852,
+        1.7425
+      ]
+    },
+    {
+      "bone": "mandible_3_outer_2",
+      "center": [
+        -14,
+        83.327426,
+        5.1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_3_outer_2",
+      "origin": [
+        -14,
+        80.75,
+        5.1
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 2",
+      "rotation": [
+        1.111562,
+        0,
+        50.906141
+      ],
+      "size": [
+        1.0275,
+        5.994852,
+        1.1275
+      ]
+    },
+    {
+      "bone": "mandible_3_hook_1",
+      "center": [
+        -18,
+        86.27651,
+        5.2
+      ],
+      "faces": {},
+      "material": "blood",
+      "name": "mandible_3_hook_1",
+      "origin": [
+        -18,
+        84,
+        5.2
+      ],
+      "role": "inward hooked bloodied terminal fang tapered segment 1",
+      "rotation": [
+        -2.517635,
+        0,
+        -146.659293
+      ],
+      "size": [
+        0.615,
+        5.393021,
+        0.67
+      ]
+    },
+    {
+      "bone": "mandible_4_inner_1",
+      "center": [
+        2,
+        77.584167,
+        -4
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_4_inner_1",
+      "origin": [
+        2,
+        75.5,
+        -4
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 1",
+      "rotation": [
+        -6.889334,
+        0,
+        25.016893
+      ],
+      "size": [
+        2.825,
+        5.008333,
+        2.925
+      ]
+    },
+    {
+      "bone": "mandible_4_inner_2",
+      "center": [
+        0.25,
+        81.334167,
+        -4.5
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_4_inner_2",
+      "origin": [
+        0.25,
+        79.25,
+        -4.5
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 2",
+      "rotation": [
+        -6.889334,
+        0,
+        25.016893
+      ],
+      "size": [
+        2.275,
+        5.008333,
+        2.375
+      ]
+    },
+    {
+      "bone": "mandible_4_outer_1",
+      "center": [
+        -1.5,
+        84.858931,
+        -5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_4_outer_1",
+      "origin": [
+        -1.5,
+        83,
+        -5
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 1",
+      "rotation": [
+        -1.541281,
+        0,
+        19.653824
+      ],
+      "size": [
+        1.6425,
+        4.557862,
+        1.7425
+      ]
+    },
+    {
+      "bone": "mandible_4_outer_2",
+      "center": [
+        -2.75,
+        88.358931,
+        -5.1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_4_outer_2",
+      "origin": [
+        -2.75,
+        86.5,
+        -5.1
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 2",
+      "rotation": [
+        -1.541281,
+        0,
+        19.653824
+      ],
+      "size": [
+        1.0275,
+        4.557862,
+        1.1275
+      ]
+    },
+    {
+      "bone": "mandible_4_hook_1",
+      "center": [
+        -4,
+        91.882153,
+        -5.2
+      ],
+      "faces": {},
+      "material": "blood",
+      "name": "mandible_4_hook_1",
+      "origin": [
+        -4,
+        90,
+        -5.2
+      ],
+      "role": "inward hooked bloodied terminal fang tapered segment 1",
+      "rotation": [
+        3.045596,
+        0,
+        -151.38954
+      ],
+      "size": [
+        0.615,
+        4.604306,
+        0.67
+      ]
+    },
+    {
+      "bone": "mandible_5_inner_1",
+      "center": [
+        4,
+        78.018044,
+        0
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_5_inner_1",
+      "origin": [
+        4,
+        76,
+        0
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 1",
+      "rotation": [
+        2.840338,
+        0,
+        7.125016
+      ],
+      "size": [
+        2.825,
+        4.876087,
+        2.925
+      ]
+    },
+    {
+      "bone": "mandible_5_inner_2",
+      "center": [
+        3.5,
+        82.018044,
+        0.2
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_5_inner_2",
+      "origin": [
+        3.5,
+        80,
+        0.2
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 2",
+      "rotation": [
+        2.840338,
+        0,
+        7.125016
+      ],
+      "size": [
+        2.275,
+        4.876087,
+        2.375
+      ]
+    },
+    {
+      "bone": "mandible_5_outer_1",
+      "center": [
+        3,
+        85.461164,
+        0.4
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_5_outer_1",
+      "origin": [
+        3,
+        84,
+        0.4
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 1",
+      "rotation": [
+        -3.92431,
+        0,
+        -30.963757
+      ],
+      "size": [
+        1.6425,
+        3.762328,
+        1.7425
+      ]
+    },
+    {
+      "bone": "mandible_5_outer_2",
+      "center": [
+        4.5,
+        87.961164,
+        0.2
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_5_outer_2",
+      "origin": [
+        4.5,
+        86.5,
+        0.2
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 2",
+      "rotation": [
+        -3.92431,
+        0,
+        -30.963757
+      ],
+      "size": [
+        1.0275,
+        3.762328,
+        1.1275
+      ]
+    },
+    {
+      "bone": "mandible_5_hook_1",
+      "center": [
+        6,
+        90.805547,
+        0
+      ],
+      "faces": {},
+      "material": "blood",
+      "name": "mandible_5_hook_1",
+      "origin": [
+        6,
+        89,
+        0
+      ],
+      "role": "inward hooked bloodied terminal fang tapered segment 1",
+      "rotation": [
+        3.174944,
+        0,
+        160.559965
+      ],
+      "size": [
+        0.615,
+        4.451094,
+        0.67
+      ]
+    },
+    {
+      "bone": "mandible_6_inner_1",
+      "center": [
+        6,
+        77.610243,
+        4
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_6_inner_1",
+      "origin": [
+        6,
+        75.5,
+        4
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 1",
+      "rotation": [
+        6.803797,
+        0,
+        -17.354025
+      ],
+      "size": [
+        2.825,
+        5.060486,
+        2.925
+      ]
+    },
+    {
+      "bone": "mandible_6_inner_2",
+      "center": [
+        7.25,
+        81.610243,
+        4.5
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_6_inner_2",
+      "origin": [
+        7.25,
+        79.5,
+        4.5
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 2",
+      "rotation": [
+        6.803797,
+        0,
+        -17.354025
+      ],
+      "size": [
+        2.275,
+        5.060486,
+        2.375
+      ]
+    },
+    {
+      "bone": "mandible_6_outer_1",
+      "center": [
+        8.5,
+        85.168457,
+        5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_6_outer_1",
+      "origin": [
+        8.5,
+        83.5,
+        5
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 1",
+      "rotation": [
+        1.717286,
+        0,
+        12.994617
+      ],
+      "size": [
+        1.6425,
+        4.176915,
+        1.7425
+      ]
+    },
+    {
+      "bone": "mandible_6_outer_2",
+      "center": [
+        7.75,
+        88.418457,
+        5.1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_6_outer_2",
+      "origin": [
+        7.75,
+        86.75,
+        5.1
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 2",
+      "rotation": [
+        1.717286,
+        0,
+        12.994617
+      ],
+      "size": [
+        1.0275,
+        4.176915,
+        1.1275
+      ]
+    },
+    {
+      "bone": "mandible_6_hook_1",
+      "center": [
+        7,
+        91.926136,
+        5.2
+      ],
+      "faces": {},
+      "material": "blood",
+      "name": "mandible_6_hook_1",
+      "origin": [
+        7,
+        90,
+        5.2
+      ],
+      "role": "inward hooked bloodied terminal fang tapered segment 1",
+      "rotation": [
+        -2.975987,
+        0,
+        -152.102729
+      ],
+      "size": [
+        0.615,
+        4.692272,
+        0.67
+      ]
+    },
+    {
+      "bone": "mandible_7_inner_1",
+      "center": [
+        8,
+        76.371708,
+        -4
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_7_inner_1",
+      "origin": [
+        8,
+        74,
+        -4
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 1",
+      "rotation": [
+        -6.050746,
+        0,
+        -32.005383
+      ],
+      "size": [
+        2.825,
+        5.583416,
+        2.925
+      ]
+    },
+    {
+      "bone": "mandible_7_inner_2",
+      "center": [
+        10.5,
+        80.371708,
+        -4.5
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_7_inner_2",
+      "origin": [
+        10.5,
+        78,
+        -4.5
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 2",
+      "rotation": [
+        -6.050746,
+        0,
+        -32.005383
+      ],
+      "size": [
+        2.275,
+        5.583416,
+        2.375
+      ]
+    },
+    {
+      "bone": "mandible_7_outer_1",
+      "center": [
+        13,
+        83.892254,
+        -5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_7_outer_1",
+      "origin": [
+        13,
+        82,
+        -5
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 1",
+      "rotation": [
+        -1.514132,
+        0,
+        7.594643
+      ],
+      "size": [
+        1.6425,
+        4.624508,
+        1.7425
+      ]
+    },
+    {
+      "bone": "mandible_7_outer_2",
+      "center": [
+        12.5,
+        87.642254,
+        -5.1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_7_outer_2",
+      "origin": [
+        12.5,
+        85.75,
+        -5.1
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 2",
+      "rotation": [
+        -1.514132,
+        0,
+        7.594643
+      ],
+      "size": [
+        1.0275,
+        4.624508,
+        1.1275
+      ]
+    },
+    {
+      "bone": "mandible_7_hook_1",
+      "center": [
+        12,
+        91.470406,
+        -5.2
+      ],
+      "faces": {},
+      "material": "blood",
+      "name": "mandible_7_hook_1",
+      "origin": [
+        12,
+        89.5,
+        -5.2
+      ],
+      "role": "inward hooked bloodied terminal fang tapered segment 1",
+      "rotation": [
+        2.909066,
+        0,
+        -152.783888
+      ],
+      "size": [
+        0.615,
+        4.780812,
+        0.67
+      ]
+    },
+    {
+      "bone": "mandible_8_inner_1",
+      "center": [
+        10,
+        73.136001,
+        4
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_8_inner_1",
+      "origin": [
+        10,
+        71,
+        4
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 1",
+      "rotation": [
+        6.721369,
+        0,
+        -45
+      ],
+      "size": [
+        2.825,
+        5.112002,
+        2.925
+      ]
+    },
+    {
+      "bone": "mandible_8_inner_2",
+      "center": [
+        13,
+        76.136001,
+        4.5
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mandible_8_inner_2",
+      "origin": [
+        13,
+        74,
+        4.5
+      ],
+      "role": "upper hooked jaw mandible not an antler tapered segment 2",
+      "rotation": [
+        6.721369,
+        0,
+        -45
+      ],
+      "size": [
+        2.275,
+        5.112002,
+        2.375
+      ]
+    },
+    {
+      "bone": "mandible_8_outer_1",
+      "center": [
+        16,
+        78.892254,
+        5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_8_outer_1",
+      "origin": [
+        16,
+        77,
+        5
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 1",
+      "rotation": [
+        1.514132,
+        0,
+        -7.594643
+      ],
+      "size": [
+        1.6425,
+        4.624508,
+        1.7425
+      ]
+    },
+    {
+      "bone": "mandible_8_outer_2",
+      "center": [
+        16.5,
+        82.642254,
+        5.1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "mandible_8_outer_2",
+      "origin": [
+        16.5,
+        80.75,
+        5.1
+      ],
+      "role": "blood-darkened cutting arm of upper mandible tapered segment 2",
+      "rotation": [
+        1.514132,
+        0,
+        -7.594643
+      ],
+      "size": [
+        1.0275,
+        4.624508,
+        1.1275
+      ]
+    },
+    {
+      "bone": "mandible_8_hook_1",
+      "center": [
+        17,
+        86.49875,
+        5.2
+      ],
+      "faces": {},
+      "material": "blood",
+      "name": "mandible_8_hook_1",
+      "origin": [
+        17,
+        84.5,
+        5.2
+      ],
+      "role": "inward hooked bloodied terminal fang tapered segment 1",
+      "rotation": [
+        -2.867778,
+        0,
+        157.9321
+      ],
+      "size": [
+        0.615,
+        4.837499,
+        0.67
+      ]
+    },
+    {
+      "bone": "chest_maw",
+      "center": [
+        1.0,
+        65.5,
+        4.7
+      ],
+      "faces": {},
+      "material": "maw",
+      "name": "chest_maw",
+      "origin": [
+        1.0,
+        65.5,
+        4.7
+      ],
+      "role": "vertical chest maw cavity",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.0,
+        17.0,
+        1.4
+      ]
+    },
+    {
+      "bone": "chest_maw",
+      "center": [
+        -0.6499999999999999,
+        59.7,
+        5.55
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "maw_tooth_1",
+      "origin": [
+        -1.0499999999999998,
+        59.7,
+        5.1
+      ],
+      "role": "alternating tooth in vertical chest maw",
+      "rotation": [
+        0,
+        0,
+        -18
+      ],
+      "size": [
+        1.25,
+        1.5,
+        0.8
+      ]
+    },
+    {
+      "bone": "chest_maw",
+      "center": [
+        2.65,
+        62.3,
+        5.55
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "maw_tooth_2",
+      "origin": [
+        3.05,
+        62.3,
+        5.1
+      ],
+      "role": "alternating tooth in vertical chest maw",
+      "rotation": [
+        0,
+        0,
+        18
+      ],
+      "size": [
+        1.25,
+        1.5,
+        0.8
+      ]
+    },
+    {
+      "bone": "chest_maw",
+      "center": [
+        -0.6499999999999999,
+        64.9,
+        5.55
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "maw_tooth_3",
+      "origin": [
+        -1.0499999999999998,
+        64.9,
+        5.1
+      ],
+      "role": "alternating tooth in vertical chest maw",
+      "rotation": [
+        0,
+        0,
+        -18
+      ],
+      "size": [
+        1.25,
+        1.5,
+        0.8
+      ]
+    },
+    {
+      "bone": "chest_maw",
+      "center": [
+        2.65,
+        67.5,
+        5.55
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "maw_tooth_4",
+      "origin": [
+        3.05,
+        67.5,
+        5.1
+      ],
+      "role": "alternating tooth in vertical chest maw",
+      "rotation": [
+        0,
+        0,
+        18
+      ],
+      "size": [
+        1.25,
+        1.5,
+        0.8
+      ]
+    },
+    {
+      "bone": "chest_maw",
+      "center": [
+        -0.6499999999999999,
+        70.1,
+        5.55
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "maw_tooth_5",
+      "origin": [
+        -1.0499999999999998,
+        70.1,
+        5.1
+      ],
+      "role": "alternating tooth in vertical chest maw",
+      "rotation": [
+        0,
+        0,
+        -18
+      ],
+      "size": [
+        1.25,
+        1.5,
+        0.8
+      ]
+    },
+    {
+      "bone": "mask",
+      "center": [
+        12.5,
+        76,
+        4.2
+      ],
+      "faces": {},
+      "material": "mask_shadow",
+      "name": "mask_mount",
+      "origin": [
+        12.5,
+        74.5,
+        4.2
+      ],
+      "role": "short hidden mount holding mask ahead of mandibles",
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "size": [
+        0.7,
+        3.4,
+        0.7
+      ]
+    },
+    {
+      "bone": "mask",
+      "center": [
+        12.5,
+        71.1,
+        8.0
+      ],
+      "faces": {},
+      "material": "mask",
+      "name": "mask_1",
+      "origin": [
+        12.5,
+        71.1,
+        8.0
+      ],
+      "role": "stepped expressionless mask oval",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.6,
+        1.7,
+        2.0
+      ]
+    },
+    {
+      "bone": "mask",
+      "center": [
+        12.7,
+        72.8,
+        8.0
+      ],
+      "faces": {},
+      "material": "mask",
+      "name": "mask_2",
+      "origin": [
+        12.7,
+        72.8,
+        8.0
+      ],
+      "role": "stepped expressionless mask oval",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.0,
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "mask",
+      "center": [
+        12.85,
+        74.8,
+        8.0
+      ],
+      "faces": {},
+      "material": "mask",
+      "name": "mask_3",
+      "origin": [
+        12.85,
+        74.8,
+        8.0
+      ],
+      "role": "stepped expressionless mask oval",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.0,
+        2.1,
+        2.0
+      ]
+    },
+    {
+      "bone": "mask",
+      "center": [
+        12.8,
+        76.8,
+        8.0
+      ],
+      "faces": {},
+      "material": "mask",
+      "name": "mask_4",
+      "origin": [
+        12.8,
+        76.8,
+        8.0
+      ],
+      "role": "stepped expressionless mask oval",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.5,
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "mask",
+      "center": [
+        12.5,
+        78.5,
+        8.0
+      ],
+      "faces": {},
+      "material": "mask",
+      "name": "mask_5",
+      "origin": [
+        12.5,
+        78.5,
+        8.0
+      ],
+      "role": "stepped expressionless mask oval",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.8,
+        1.5,
+        2.0
+      ]
+    },
+    {
+      "bone": "mask",
+      "center": [
+        11.45,
+        76.0,
+        9.1
+      ],
+      "faces": {},
+      "material": "mask_shadow",
+      "name": "mask_left_eye",
+      "origin": [
+        11.45,
+        76.0,
+        9.1
+      ],
+      "role": "left blank mask eye",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.95,
+        0.45,
+        0.35
+      ]
+    },
+    {
+      "bone": "mask",
+      "center": [
+        14.0,
+        76.0,
+        9.1
+      ],
+      "faces": {},
+      "material": "mask_shadow",
+      "name": "mask_right_eye",
+      "origin": [
+        14.0,
+        76.0,
+        9.1
+      ],
+      "role": "right blank mask eye",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.95,
+        0.45,
+        0.35
+      ]
+    },
+    {
+      "bone": "mask",
+      "center": [
+        12.75,
+        73.1,
+        9.1
+      ],
+      "faces": {},
+      "material": "mask_shadow",
+      "name": "mask_mouth",
+      "origin": [
+        12.75,
+        73.1,
+        9.1
+      ],
+      "role": "expressionless mask mouth",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.9,
+        0.3,
+        0.35
+      ]
+    },
+    {
+      "bone": "mechanical_leg_1_upper_1",
+      "center": [
+        -9,
+        36.228416,
+        -4
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "mechanical_leg_1_upper_1",
+      "origin": [
+        -9,
+        29,
+        -4
+      ],
+      "role": "upper mechanical leg strut tapered segment 1",
+      "rotation": [
+        -3.966399,
+        0,
+        123.690068
+      ],
+      "size": [
+        3.6,
+        15.456832,
+        2.85
+      ]
+    },
+    {
+      "bone": "mechanical_leg_1_lower_1",
+      "center": [
+        -21,
+        27.108396,
+        -5
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mechanical_leg_1_lower_1",
+      "origin": [
+        -21,
+        21,
+        -5
+      ],
+      "role": "lower mechanical leg strut tapered segment 1",
+      "rotation": [
+        -2.345615,
+        0,
+        145.00798
+      ],
+      "size": [
+        2.7,
+        13.216792,
+        2.15
+      ]
+    },
+    {
+      "bone": "mechanical_leg_1_toe_1",
+      "center": [
+        -28,
+        16.369823,
+        -5.5
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "mechanical_leg_1_toe_1",
+      "origin": [
+        -28,
+        11,
+        -5.5
+      ],
+      "role": "terminal hooked mechanical claw toe tapered segment 1",
+      "rotation": [
+        -2.668454,
+        0,
+        163.761158
+      ],
+      "size": [
+        1.5,
+        11.739646,
+        1.325
+      ]
+    },
+    {
+      "bone": "mechanical_leg_1_upper_1",
+      "center": [
+        -21.0,
+        21.0,
+        -5.0
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "mechanical_leg_1_knee_hinge",
+      "origin": [
+        -21.0,
+        21.0,
+        -5.0
+      ],
+      "role": "visible mechanical pivot hinge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.2,
+        4.2,
+        4.2
+      ]
+    },
+    {
+      "bone": "mechanical_leg_1_lower_1",
+      "center": [
+        -28.0,
+        11.0,
+        -5.5
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "mechanical_leg_1_ankle_hinge",
+      "origin": [
+        -28.0,
+        11.0,
+        -5.5
+      ],
+      "role": "visible mechanical pivot hinge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        3.2,
+        3.2
+      ]
+    },
+    {
+      "bone": "mechanical_leg_2_upper_1",
+      "center": [
+        -5,
+        34.745369,
+        6.5
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "mechanical_leg_2_upper_1",
+      "origin": [
+        -5,
+        28,
+        6.5
+      ],
+      "role": "upper mechanical leg strut tapered segment 1",
+      "rotation": [
+        4.250945,
+        0,
+        138.012788
+      ],
+      "size": [
+        3.6,
+        14.490738,
+        2.85
+      ]
+    },
+    {
+      "bone": "mechanical_leg_2_lower_1",
+      "center": [
+        -14,
+        23.105144,
+        7.5
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mechanical_leg_2_lower_1",
+      "origin": [
+        -14,
+        18,
+        7.5
+      ],
+      "role": "lower mechanical leg strut tapered segment 1",
+      "rotation": [
+        2.806909,
+        0,
+        168.690068
+      ],
+      "size": [
+        2.7,
+        11.210289,
+        2.15
+      ]
+    },
+    {
+      "bone": "mechanical_leg_2_toe_1",
+      "center": [
+        -16,
+        13.063102,
+        8
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "mechanical_leg_2_toe_1",
+      "origin": [
+        -16,
+        8,
+        8
+      ],
+      "role": "terminal hooked mechanical claw toe tapered segment 1",
+      "rotation": [
+        2.830236,
+        0,
+        136.201833
+      ],
+      "size": [
+        1.5,
+        11.126204,
+        1.325
+      ]
+    },
+    {
+      "bone": "mechanical_leg_2_upper_1",
+      "center": [
+        -14.0,
+        18.0,
+        7.5
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "mechanical_leg_2_knee_hinge",
+      "origin": [
+        -14.0,
+        18.0,
+        7.5
+      ],
+      "role": "visible mechanical pivot hinge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.2,
+        4.2,
+        4.2
+      ]
+    },
+    {
+      "bone": "mechanical_leg_2_lower_1",
+      "center": [
+        -16.0,
+        8.0,
+        8.0
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "mechanical_leg_2_ankle_hinge",
+      "origin": [
+        -16.0,
+        8.0,
+        8.0
+      ],
+      "role": "visible mechanical pivot hinge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        3.2,
+        3.2
+      ]
+    },
+    {
+      "bone": "mechanical_leg_3_upper_1",
+      "center": [
+        9,
+        35.119101,
+        6.5
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "mechanical_leg_3_upper_1",
+      "origin": [
+        9,
+        28.5,
+        6.5
+      ],
+      "role": "upper mechanical leg strut tapered segment 1",
+      "rotation": [
+        4.33219,
+        0,
+        -142.696052
+      ],
+      "size": [
+        3.6,
+        14.238202,
+        2.85
+      ]
+    },
+    {
+      "bone": "mechanical_leg_3_lower_1",
+      "center": [
+        17,
+        23.006246,
+        7.5
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mechanical_leg_3_lower_1",
+      "origin": [
+        17,
+        18,
+        7.5
+      ],
+      "role": "lower mechanical leg strut tapered segment 1",
+      "rotation": [
+        2.862405,
+        0,
+        -180
+      ],
+      "size": [
+        2.7,
+        11.012492,
+        2.15
+      ]
+    },
+    {
+      "bone": "mechanical_leg_3_toe_1",
+      "center": [
+        17,
+        12.731279,
+        8
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "mechanical_leg_3_toe_1",
+      "origin": [
+        17,
+        8,
+        8
+      ],
+      "role": "terminal hooked mechanical claw toe tapered segment 1",
+      "rotation": [
+        3.02891,
+        0,
+        -140.582606
+      ],
+      "size": [
+        1.5,
+        10.462558,
+        1.325
+      ]
+    },
+    {
+      "bone": "mechanical_leg_3_upper_1",
+      "center": [
+        17.0,
+        18.0,
+        7.5
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "mechanical_leg_3_knee_hinge",
+      "origin": [
+        17.0,
+        18.0,
+        7.5
+      ],
+      "role": "visible mechanical pivot hinge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.2,
+        4.2,
+        4.2
+      ]
+    },
+    {
+      "bone": "mechanical_leg_3_lower_1",
+      "center": [
+        17.0,
+        8.0,
+        8.0
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "mechanical_leg_3_ankle_hinge",
+      "origin": [
+        17.0,
+        8.0,
+        8.0
+      ],
+      "role": "visible mechanical pivot hinge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        3.2,
+        3.2
+      ]
+    },
+    {
+      "bone": "mechanical_leg_4_upper_1",
+      "center": [
+        13,
+        36.081223,
+        -4
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "mechanical_leg_4_upper_1",
+      "origin": [
+        13,
+        29.5,
+        -4
+      ],
+      "role": "upper mechanical leg strut tapered segment 1",
+      "rotation": [
+        -4.357172,
+        0,
+        -130.364537
+      ],
+      "size": [
+        3.6,
+        14.162447,
+        2.85
+      ]
+    },
+    {
+      "bone": "mechanical_leg_4_lower_1",
+      "center": [
+        23,
+        26.836309,
+        -5
+      ],
+      "faces": {},
+      "material": "robe_edge",
+      "name": "mechanical_leg_4_lower_1",
+      "origin": [
+        23,
+        21,
+        -5
+      ],
+      "role": "lower mechanical leg strut tapered segment 1",
+      "rotation": [
+        -2.455033,
+        0,
+        -149.036243
+      ],
+      "size": [
+        2.7,
+        12.672618,
+        2.15
+      ]
+    },
+    {
+      "bone": "mechanical_leg_4_toe_1",
+      "center": [
+        29,
+        16.252142,
+        -5.5
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "mechanical_leg_4_toe_1",
+      "origin": [
+        29,
+        11,
+        -5.5
+      ],
+      "role": "terminal hooked mechanical claw toe tapered segment 1",
+      "rotation": [
+        -2.728288,
+        0,
+        -169.011349
+      ],
+      "size": [
+        1.5,
+        11.504285,
+        1.325
+      ]
+    },
+    {
+      "bone": "mechanical_leg_4_upper_1",
+      "center": [
+        23.0,
+        21.0,
+        -5.0
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "mechanical_leg_4_knee_hinge",
+      "origin": [
+        23.0,
+        21.0,
+        -5.0
+      ],
+      "role": "visible mechanical pivot hinge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.2,
+        4.2,
+        4.2
+      ]
+    },
+    {
+      "bone": "mechanical_leg_4_lower_1",
+      "center": [
+        29.0,
+        11.0,
+        -5.5
+      ],
+      "faces": {},
+      "material": "joint",
+      "name": "mechanical_leg_4_ankle_hinge",
+      "origin": [
+        29.0,
+        11.0,
+        -5.5
+      ],
+      "role": "visible mechanical pivot hinge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        3.2,
+        3.2
+      ]
+    },
+    {
+      "bone": "upper_ring",
+      "center": [
+        6.2,
+        55.85,
+        5.8
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "upper_ring_hanger",
+      "origin": [
+        6.2,
+        54.75,
+        5.8
+      ],
+      "role": "silver ring hanger",
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "size": [
+        0.45,
+        2.6,
+        0.45
+      ]
+    },
+    {
+      "bone": "upper_ring",
+      "center": [
+        6.2,
+        55.228354,
+        8
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "upper_ring_segment_1",
+      "origin": [
+        6.2,
+        54.75,
+        8
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        -112.5
+      ],
+      "size": [
+        0.38,
+        1.196709,
+        0.38
+      ]
+    },
+    {
+      "bone": "upper_ring",
+      "center": [
+        7.083883,
+        54.862238,
+        8
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "upper_ring_segment_2",
+      "origin": [
+        7.083883,
+        54.383883,
+        8
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        -157.5
+      ],
+      "size": [
+        0.38,
+        1.196709,
+        0.38
+      ]
+    },
+    {
+      "bone": "upper_ring",
+      "center": [
+        7.45,
+        53.978354,
+        8
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "upper_ring_segment_3",
+      "origin": [
+        7.45,
+        53.5,
+        8
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        157.5
+      ],
+      "size": [
+        0.38,
+        1.196709,
+        0.38
+      ]
+    },
+    {
+      "bone": "upper_ring",
+      "center": [
+        7.083883,
+        53.094471,
+        8
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "upper_ring_segment_4",
+      "origin": [
+        7.083883,
+        52.616117,
+        8
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        112.5
+      ],
+      "size": [
+        0.38,
+        1.196709,
+        0.38
+      ]
+    },
+    {
+      "bone": "upper_ring",
+      "center": [
+        6.2,
+        52.728354,
+        8
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "upper_ring_segment_5",
+      "origin": [
+        6.2,
+        52.25,
+        8
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        67.5
+      ],
+      "size": [
+        0.38,
+        1.196709,
+        0.38
+      ]
+    },
+    {
+      "bone": "upper_ring",
+      "center": [
+        5.316117,
+        53.094471,
+        8
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "upper_ring_segment_6",
+      "origin": [
+        5.316117,
+        52.616117,
+        8
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        22.5
+      ],
+      "size": [
+        0.38,
+        1.196709,
+        0.38
+      ]
+    },
+    {
+      "bone": "upper_ring",
+      "center": [
+        4.95,
+        53.978354,
+        8
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "upper_ring_segment_7",
+      "origin": [
+        4.95,
+        53.5,
+        8
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        -22.5
+      ],
+      "size": [
+        0.38,
+        1.196709,
+        0.38
+      ]
+    },
+    {
+      "bone": "upper_ring",
+      "center": [
+        5.316117,
+        54.862238,
+        8
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "upper_ring_segment_8",
+      "origin": [
+        5.316117,
+        54.383883,
+        8
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        -67.5
+      ],
+      "size": [
+        0.38,
+        1.196709,
+        0.38
+      ]
+    },
+    {
+      "bone": "lower_ring",
+      "center": [
+        1.7,
+        39.35,
+        5.8
+      ],
+      "faces": {},
+      "material": "silver_dark",
+      "name": "lower_ring_hanger",
+      "origin": [
+        1.7,
+        38.15,
+        5.8
+      ],
+      "role": "silver ring hanger",
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "size": [
+        0.45,
+        2.8,
+        0.45
+      ]
+    },
+    {
+      "bone": "lower_ring",
+      "center": [
+        1.7,
+        38.781428,
+        8.2
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "lower_ring_segment_1",
+      "origin": [
+        1.7,
+        38.15,
+        8.2
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        -112.5
+      ],
+      "size": [
+        0.38,
+        1.502855,
+        0.38
+      ]
+    },
+    {
+      "bone": "lower_ring",
+      "center": [
+        2.866726,
+        38.298154,
+        8.2
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "lower_ring_segment_2",
+      "origin": [
+        2.866726,
+        37.666726,
+        8.2
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        -157.5
+      ],
+      "size": [
+        0.38,
+        1.502855,
+        0.38
+      ]
+    },
+    {
+      "bone": "lower_ring",
+      "center": [
+        3.35,
+        37.131428,
+        8.2
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "lower_ring_segment_3",
+      "origin": [
+        3.35,
+        36.5,
+        8.2
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        157.5
+      ],
+      "size": [
+        0.38,
+        1.502855,
+        0.38
+      ]
+    },
+    {
+      "bone": "lower_ring",
+      "center": [
+        2.866726,
+        35.964701,
+        8.2
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "lower_ring_segment_4",
+      "origin": [
+        2.866726,
+        35.333274,
+        8.2
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        112.5
+      ],
+      "size": [
+        0.38,
+        1.502855,
+        0.38
+      ]
+    },
+    {
+      "bone": "lower_ring",
+      "center": [
+        1.7,
+        35.481428,
+        8.2
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "lower_ring_segment_5",
+      "origin": [
+        1.7,
+        34.85,
+        8.2
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        67.5
+      ],
+      "size": [
+        0.38,
+        1.502855,
+        0.38
+      ]
+    },
+    {
+      "bone": "lower_ring",
+      "center": [
+        0.533274,
+        35.964701,
+        8.2
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "lower_ring_segment_6",
+      "origin": [
+        0.533274,
+        35.333274,
+        8.2
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        22.5
+      ],
+      "size": [
+        0.38,
+        1.502855,
+        0.38
+      ]
+    },
+    {
+      "bone": "lower_ring",
+      "center": [
+        0.05,
+        37.131428,
+        8.2
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "lower_ring_segment_7",
+      "origin": [
+        0.05,
+        36.5,
+        8.2
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        -22.5
+      ],
+      "size": [
+        0.38,
+        1.502855,
+        0.38
+      ]
+    },
+    {
+      "bone": "lower_ring",
+      "center": [
+        0.533274,
+        38.298154,
+        8.2
+      ],
+      "faces": {},
+      "material": "silver",
+      "name": "lower_ring_segment_8",
+      "origin": [
+        0.533274,
+        37.666726,
+        8.2
+      ],
+      "role": "octagonal silver hanging ring",
+      "rotation": [
+        0,
+        0,
+        -67.5
+      ],
+      "size": [
+        0.38,
+        1.502855,
+        0.38
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "validated-tapered-attachment-graph-gamma-v1",
+    "anatomical_axis": "+Z front, X width, Y up",
+    "attachment_contract": {
+      "external_root_attachments_included": true,
+      "method": "named graph joints plus compiled oriented-cuboid margin audit"
+    },
+    "branch_graphs": [
+      {
+        "attachments": [
+          {
+            "first": "head_core",
+            "joint": [
+              4.0,
+              74.0,
+              0.0
+            ],
+            "second": "split_head_left_base_1"
+          },
+          {
+            "first": "split_head_left_base_1",
+            "joint": [
+              2.0,
+              77.0,
+              0.75
+            ],
+            "second": "split_head_left_base_2"
+          },
+          {
+            "first": "head_core",
+            "joint": [
+              4.0,
+              74.0,
+              0.0
+            ],
+            "second": "split_head_right_base_1"
+          },
+          {
+            "first": "split_head_right_base_1",
+            "joint": [
+              6.0,
+              77.25,
+              -0.75
+            ],
+            "second": "split_head_right_base_2"
+          },
+          {
+            "first": "split_head_left_base_2",
+            "joint": [
+              0.0,
+              80.0,
+              1.5
+            ],
+            "second": "split_head_left_peak_1"
+          },
+          {
+            "first": "split_head_left_peak_1",
+            "joint": [
+              -1.0,
+              83.0,
+              2.0
+            ],
+            "second": "split_head_left_peak_2"
+          },
+          {
+            "first": "split_head_right_base_2",
+            "joint": [
+              8.0,
+              80.5,
+              -1.5
+            ],
+            "second": "split_head_right_peak_1"
+          },
+          {
+            "first": "split_head_right_peak_1",
+            "joint": [
+              9.5,
+              83.75,
+              -2.0
+            ],
+            "second": "split_head_right_peak_2"
+          }
+        ],
+        "edges": [
+          {
+            "end": "left_cleft",
+            "end_depth": 4.2,
+            "end_thickness": 3.4,
+            "material": "flesh",
+            "name": "left_base",
+            "role": "viewer-left half of split cranium",
+            "segments": [
+              "split_head_left_base_1",
+              "split_head_left_base_2"
+            ],
+            "start": "skull_root",
+            "start_depth": 5.2,
+            "start_thickness": 4.5
+          },
+          {
+            "end": "right_cleft",
+            "end_depth": 4,
+            "end_thickness": 3.2,
+            "material": "robe_edge",
+            "name": "right_base",
+            "role": "viewer-right half of split cranium",
+            "segments": [
+              "split_head_right_base_1",
+              "split_head_right_base_2"
+            ],
+            "start": "skull_root",
+            "start_depth": 5.2,
+            "start_thickness": 4.5
+          },
+          {
+            "end": "left_peak",
+            "end_depth": 2.4,
+            "end_thickness": 1.7,
+            "material": "blood",
+            "name": "left_peak",
+            "role": "bloodied viewer-left split head peak",
+            "segments": [
+              "split_head_left_peak_1",
+              "split_head_left_peak_2"
+            ],
+            "start": "left_cleft",
+            "start_depth": 4,
+            "start_thickness": 3.2
+          },
+          {
+            "end": "right_peak",
+            "end_depth": 2.2,
+            "end_thickness": 1.6,
+            "material": "flesh",
+            "name": "right_peak",
+            "role": "viewer-right split head peak",
+            "segments": [
+              "split_head_right_peak_1",
+              "split_head_right_peak_2"
+            ],
+            "start": "right_cleft",
+            "start_depth": 3.8,
+            "start_thickness": 3
+          }
+        ],
+        "name": "split_head",
+        "nodes": [
+          {
+            "name": "left_cleft",
+            "point": [
+              0,
+              80,
+              1.5
+            ]
+          },
+          {
+            "name": "left_peak",
+            "point": [
+              -2,
+              86,
+              2.5
+            ]
+          },
+          {
+            "name": "right_cleft",
+            "point": [
+              8,
+              80.5,
+              -1.5
+            ]
+          },
+          {
+            "name": "right_peak",
+            "point": [
+              11,
+              87,
+              -2.5
+            ]
+          },
+          {
+            "name": "skull_root",
+            "point": [
+              4,
+              74,
+              0
+            ]
+          }
+        ],
+        "parent_bone": "head",
+        "parent_cube": "head_core",
+        "root_node": "skull_root",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "head_core",
+            "joint": [
+              -3.5,
+              70.0,
+              -4.0
+            ],
+            "second": "mandible_1_inner_1"
+          },
+          {
+            "first": "mandible_1_inner_1",
+            "joint": [
+              -8.0,
+              68.25,
+              -4.5
+            ],
+            "second": "mandible_1_inner_2"
+          },
+          {
+            "first": "mandible_1_inner_2",
+            "joint": [
+              -12.5,
+              66.5,
+              -5.0
+            ],
+            "second": "mandible_1_outer_1"
+          },
+          {
+            "first": "mandible_1_outer_1",
+            "joint": [
+              -16.75,
+              66.5,
+              -5.1
+            ],
+            "second": "mandible_1_outer_2"
+          },
+          {
+            "first": "mandible_1_outer_2",
+            "joint": [
+              -21.0,
+              66.5,
+              -5.2
+            ],
+            "second": "mandible_1_hook_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knuckle",
+            "end_depth": 2.1,
+            "end_thickness": 2,
+            "material": "robe_edge",
+            "name": "inner",
+            "role": "upper hooked jaw mandible not an antler",
+            "segments": [
+              "mandible_1_inner_1",
+              "mandible_1_inner_2"
+            ],
+            "start": "root",
+            "start_depth": 3.2,
+            "start_thickness": 3.1
+          },
+          {
+            "end": "tip",
+            "end_depth": 0.82,
+            "end_thickness": 0.72,
+            "material": "flesh",
+            "name": "outer",
+            "role": "blood-darkened cutting arm of upper mandible",
+            "segments": [
+              "mandible_1_outer_1",
+              "mandible_1_outer_2"
+            ],
+            "start": "knuckle",
+            "start_depth": 2.05,
+            "start_thickness": 1.95
+          },
+          {
+            "end": "hook",
+            "end_depth": 0.44,
+            "end_thickness": 0.38,
+            "material": "blood",
+            "name": "hook",
+            "role": "inward hooked bloodied terminal fang",
+            "segments": [
+              "mandible_1_hook_1"
+            ],
+            "start": "tip",
+            "start_depth": 0.9,
+            "start_thickness": 0.85
+          }
+        ],
+        "name": "mandible_1",
+        "nodes": [
+          {
+            "name": "hook",
+            "point": [
+              -18,
+              62.5,
+              -5
+            ]
+          },
+          {
+            "name": "knuckle",
+            "point": [
+              -12.5,
+              66.5,
+              -5
+            ]
+          },
+          {
+            "name": "root",
+            "point": [
+              -3.5,
+              70,
+              -4
+            ]
+          },
+          {
+            "name": "tip",
+            "point": [
+              -21,
+              66.5,
+              -5.2
+            ]
+          }
+        ],
+        "parent_bone": "head",
+        "parent_cube": "head_core",
+        "root_node": "root",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "head_core",
+            "joint": [
+              -2.0,
+              72.0,
+              0.0
+            ],
+            "second": "mandible_2_inner_1"
+          },
+          {
+            "first": "mandible_2_inner_1",
+            "joint": [
+              -7.5,
+              72.0,
+              0.1
+            ],
+            "second": "mandible_2_inner_2"
+          },
+          {
+            "first": "mandible_2_inner_2",
+            "joint": [
+              -13.0,
+              72.0,
+              0.2
+            ],
+            "second": "mandible_2_outer_1"
+          },
+          {
+            "first": "mandible_2_outer_1",
+            "joint": [
+              -17.0,
+              74.5,
+              0.1
+            ],
+            "second": "mandible_2_outer_2"
+          },
+          {
+            "first": "mandible_2_outer_2",
+            "joint": [
+              -21.0,
+              77.0,
+              0.0
+            ],
+            "second": "mandible_2_hook_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knuckle",
+            "end_depth": 2.1,
+            "end_thickness": 2,
+            "material": "robe_edge",
+            "name": "inner",
+            "role": "upper hooked jaw mandible not an antler",
+            "segments": [
+              "mandible_2_inner_1",
+              "mandible_2_inner_2"
+            ],
+            "start": "root",
+            "start_depth": 3.2,
+            "start_thickness": 3.1
+          },
+          {
+            "end": "tip",
+            "end_depth": 0.82,
+            "end_thickness": 0.72,
+            "material": "flesh",
+            "name": "outer",
+            "role": "blood-darkened cutting arm of upper mandible",
+            "segments": [
+              "mandible_2_outer_1",
+              "mandible_2_outer_2"
+            ],
+            "start": "knuckle",
+            "start_depth": 2.05,
+            "start_thickness": 1.95
+          },
+          {
+            "end": "hook",
+            "end_depth": 0.44,
+            "end_thickness": 0.38,
+            "material": "blood",
+            "name": "hook",
+            "role": "inward hooked bloodied terminal fang",
+            "segments": [
+              "mandible_2_hook_1"
+            ],
+            "start": "tip",
+            "start_depth": 0.9,
+            "start_thickness": 0.85
+          }
+        ],
+        "name": "mandible_2",
+        "nodes": [
+          {
+            "name": "hook",
+            "point": [
+              -18.5,
+              73.5,
+              0.2
+            ]
+          },
+          {
+            "name": "knuckle",
+            "point": [
+              -13,
+              72,
+              0.2
+            ]
+          },
+          {
+            "name": "root",
+            "point": [
+              -2,
+              72,
+              0
+            ]
+          },
+          {
+            "name": "tip",
+            "point": [
+              -21,
+              77,
+              0
+            ]
+          }
+        ],
+        "parent_bone": "head",
+        "parent_cube": "head_core",
+        "root_node": "root",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "head_core",
+            "joint": [
+              -0.5,
+              74.0,
+              4.0
+            ],
+            "second": "mandible_3_inner_1"
+          },
+          {
+            "first": "mandible_3_inner_1",
+            "joint": [
+              -5.25,
+              75.75,
+              4.5
+            ],
+            "second": "mandible_3_inner_2"
+          },
+          {
+            "first": "mandible_3_inner_2",
+            "joint": [
+              -10.0,
+              77.5,
+              5.0
+            ],
+            "second": "mandible_3_outer_1"
+          },
+          {
+            "first": "mandible_3_outer_1",
+            "joint": [
+              -14.0,
+              80.75,
+              5.1
+            ],
+            "second": "mandible_3_outer_2"
+          },
+          {
+            "first": "mandible_3_outer_2",
+            "joint": [
+              -18.0,
+              84.0,
+              5.2
+            ],
+            "second": "mandible_3_hook_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knuckle",
+            "end_depth": 2.1,
+            "end_thickness": 2,
+            "material": "robe_edge",
+            "name": "inner",
+            "role": "upper hooked jaw mandible not an antler",
+            "segments": [
+              "mandible_3_inner_1",
+              "mandible_3_inner_2"
+            ],
+            "start": "root",
+            "start_depth": 3.2,
+            "start_thickness": 3.1
+          },
+          {
+            "end": "tip",
+            "end_depth": 0.82,
+            "end_thickness": 0.72,
+            "material": "flesh",
+            "name": "outer",
+            "role": "blood-darkened cutting arm of upper mandible",
+            "segments": [
+              "mandible_3_outer_1",
+              "mandible_3_outer_2"
+            ],
+            "start": "knuckle",
+            "start_depth": 2.05,
+            "start_thickness": 1.95
+          },
+          {
+            "end": "hook",
+            "end_depth": 0.44,
+            "end_thickness": 0.38,
+            "material": "blood",
+            "name": "hook",
+            "role": "inward hooked bloodied terminal fang",
+            "segments": [
+              "mandible_3_hook_1"
+            ],
+            "start": "tip",
+            "start_depth": 0.9,
+            "start_thickness": 0.85
+          }
+        ],
+        "name": "mandible_3",
+        "nodes": [
+          {
+            "name": "hook",
+            "point": [
+              -15.5,
+              80.2,
+              5
+            ]
+          },
+          {
+            "name": "knuckle",
+            "point": [
+              -10,
+              77.5,
+              5
+            ]
+          },
+          {
+            "name": "root",
+            "point": [
+              -0.5,
+              74,
+              4
+            ]
+          },
+          {
+            "name": "tip",
+            "point": [
+              -18,
+              84,
+              5.2
+            ]
+          }
+        ],
+        "parent_bone": "head",
+        "parent_cube": "head_core",
+        "root_node": "root",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "head_core",
+            "joint": [
+              2.0,
+              75.5,
+              -4.0
+            ],
+            "second": "mandible_4_inner_1"
+          },
+          {
+            "first": "mandible_4_inner_1",
+            "joint": [
+              0.25,
+              79.25,
+              -4.5
+            ],
+            "second": "mandible_4_inner_2"
+          },
+          {
+            "first": "mandible_4_inner_2",
+            "joint": [
+              -1.5,
+              83.0,
+              -5.0
+            ],
+            "second": "mandible_4_outer_1"
+          },
+          {
+            "first": "mandible_4_outer_1",
+            "joint": [
+              -2.75,
+              86.5,
+              -5.1
+            ],
+            "second": "mandible_4_outer_2"
+          },
+          {
+            "first": "mandible_4_outer_2",
+            "joint": [
+              -4.0,
+              90.0,
+              -5.2
+            ],
+            "second": "mandible_4_hook_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knuckle",
+            "end_depth": 2.1,
+            "end_thickness": 2,
+            "material": "robe_edge",
+            "name": "inner",
+            "role": "upper hooked jaw mandible not an antler",
+            "segments": [
+              "mandible_4_inner_1",
+              "mandible_4_inner_2"
+            ],
+            "start": "root",
+            "start_depth": 3.2,
+            "start_thickness": 3.1
+          },
+          {
+            "end": "tip",
+            "end_depth": 0.82,
+            "end_thickness": 0.72,
+            "material": "flesh",
+            "name": "outer",
+            "role": "blood-darkened cutting arm of upper mandible",
+            "segments": [
+              "mandible_4_outer_1",
+              "mandible_4_outer_2"
+            ],
+            "start": "knuckle",
+            "start_depth": 2.05,
+            "start_thickness": 1.95
+          },
+          {
+            "end": "hook",
+            "end_depth": 0.44,
+            "end_thickness": 0.38,
+            "material": "blood",
+            "name": "hook",
+            "role": "inward hooked bloodied terminal fang",
+            "segments": [
+              "mandible_4_hook_1"
+            ],
+            "start": "tip",
+            "start_depth": 0.9,
+            "start_thickness": 0.85
+          }
+        ],
+        "name": "mandible_4",
+        "nodes": [
+          {
+            "name": "hook",
+            "point": [
+              -2.2,
+              86.7,
+              -5
+            ]
+          },
+          {
+            "name": "knuckle",
+            "point": [
+              -1.5,
+              83,
+              -5
+            ]
+          },
+          {
+            "name": "root",
+            "point": [
+              2,
+              75.5,
+              -4
+            ]
+          },
+          {
+            "name": "tip",
+            "point": [
+              -4,
+              90,
+              -5.2
+            ]
+          }
+        ],
+        "parent_bone": "head",
+        "parent_cube": "head_core",
+        "root_node": "root",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "head_core",
+            "joint": [
+              4.0,
+              76.0,
+              0.0
+            ],
+            "second": "mandible_5_inner_1"
+          },
+          {
+            "first": "mandible_5_inner_1",
+            "joint": [
+              3.5,
+              80.0,
+              0.2
+            ],
+            "second": "mandible_5_inner_2"
+          },
+          {
+            "first": "mandible_5_inner_2",
+            "joint": [
+              3.0,
+              84.0,
+              0.4
+            ],
+            "second": "mandible_5_outer_1"
+          },
+          {
+            "first": "mandible_5_outer_1",
+            "joint": [
+              4.5,
+              86.5,
+              0.2
+            ],
+            "second": "mandible_5_outer_2"
+          },
+          {
+            "first": "mandible_5_outer_2",
+            "joint": [
+              6.0,
+              89.0,
+              0.0
+            ],
+            "second": "mandible_5_hook_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knuckle",
+            "end_depth": 2.1,
+            "end_thickness": 2,
+            "material": "robe_edge",
+            "name": "inner",
+            "role": "upper hooked jaw mandible not an antler",
+            "segments": [
+              "mandible_5_inner_1",
+              "mandible_5_inner_2"
+            ],
+            "start": "root",
+            "start_depth": 3.2,
+            "start_thickness": 3.1
+          },
+          {
+            "end": "tip",
+            "end_depth": 0.82,
+            "end_thickness": 0.72,
+            "material": "flesh",
+            "name": "outer",
+            "role": "blood-darkened cutting arm of upper mandible",
+            "segments": [
+              "mandible_5_outer_1",
+              "mandible_5_outer_2"
+            ],
+            "start": "knuckle",
+            "start_depth": 2.05,
+            "start_thickness": 1.95
+          },
+          {
+            "end": "hook",
+            "end_depth": 0.44,
+            "end_thickness": 0.38,
+            "material": "blood",
+            "name": "hook",
+            "role": "inward hooked bloodied terminal fang",
+            "segments": [
+              "mandible_5_hook_1"
+            ],
+            "start": "tip",
+            "start_depth": 0.9,
+            "start_thickness": 0.85
+          }
+        ],
+        "name": "mandible_5",
+        "nodes": [
+          {
+            "name": "hook",
+            "point": [
+              4.8,
+              85.6,
+              0.2
+            ]
+          },
+          {
+            "name": "knuckle",
+            "point": [
+              3,
+              84,
+              0.4
+            ]
+          },
+          {
+            "name": "root",
+            "point": [
+              4,
+              76,
+              0
+            ]
+          },
+          {
+            "name": "tip",
+            "point": [
+              6,
+              89,
+              0
+            ]
+          }
+        ],
+        "parent_bone": "head",
+        "parent_cube": "head_core",
+        "root_node": "root",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "head_core",
+            "joint": [
+              6.0,
+              75.5,
+              4.0
+            ],
+            "second": "mandible_6_inner_1"
+          },
+          {
+            "first": "mandible_6_inner_1",
+            "joint": [
+              7.25,
+              79.5,
+              4.5
+            ],
+            "second": "mandible_6_inner_2"
+          },
+          {
+            "first": "mandible_6_inner_2",
+            "joint": [
+              8.5,
+              83.5,
+              5.0
+            ],
+            "second": "mandible_6_outer_1"
+          },
+          {
+            "first": "mandible_6_outer_1",
+            "joint": [
+              7.75,
+              86.75,
+              5.1
+            ],
+            "second": "mandible_6_outer_2"
+          },
+          {
+            "first": "mandible_6_outer_2",
+            "joint": [
+              7.0,
+              90.0,
+              5.2
+            ],
+            "second": "mandible_6_hook_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knuckle",
+            "end_depth": 2.1,
+            "end_thickness": 2,
+            "material": "robe_edge",
+            "name": "inner",
+            "role": "upper hooked jaw mandible not an antler",
+            "segments": [
+              "mandible_6_inner_1",
+              "mandible_6_inner_2"
+            ],
+            "start": "root",
+            "start_depth": 3.2,
+            "start_thickness": 3.1
+          },
+          {
+            "end": "tip",
+            "end_depth": 0.82,
+            "end_thickness": 0.72,
+            "material": "flesh",
+            "name": "outer",
+            "role": "blood-darkened cutting arm of upper mandible",
+            "segments": [
+              "mandible_6_outer_1",
+              "mandible_6_outer_2"
+            ],
+            "start": "knuckle",
+            "start_depth": 2.05,
+            "start_thickness": 1.95
+          },
+          {
+            "end": "hook",
+            "end_depth": 0.44,
+            "end_thickness": 0.38,
+            "material": "blood",
+            "name": "hook",
+            "role": "inward hooked bloodied terminal fang",
+            "segments": [
+              "mandible_6_hook_1"
+            ],
+            "start": "tip",
+            "start_depth": 0.9,
+            "start_thickness": 0.85
+          }
+        ],
+        "name": "mandible_6",
+        "nodes": [
+          {
+            "name": "hook",
+            "point": [
+              8.8,
+              86.6,
+              5
+            ]
+          },
+          {
+            "name": "knuckle",
+            "point": [
+              8.5,
+              83.5,
+              5
+            ]
+          },
+          {
+            "name": "root",
+            "point": [
+              6,
+              75.5,
+              4
+            ]
+          },
+          {
+            "name": "tip",
+            "point": [
+              7,
+              90,
+              5.2
+            ]
+          }
+        ],
+        "parent_bone": "head",
+        "parent_cube": "head_core",
+        "root_node": "root",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "head_core",
+            "joint": [
+              8.0,
+              74.0,
+              -4.0
+            ],
+            "second": "mandible_7_inner_1"
+          },
+          {
+            "first": "mandible_7_inner_1",
+            "joint": [
+              10.5,
+              78.0,
+              -4.5
+            ],
+            "second": "mandible_7_inner_2"
+          },
+          {
+            "first": "mandible_7_inner_2",
+            "joint": [
+              13.0,
+              82.0,
+              -5.0
+            ],
+            "second": "mandible_7_outer_1"
+          },
+          {
+            "first": "mandible_7_outer_1",
+            "joint": [
+              12.5,
+              85.75,
+              -5.1
+            ],
+            "second": "mandible_7_outer_2"
+          },
+          {
+            "first": "mandible_7_outer_2",
+            "joint": [
+              12.0,
+              89.5,
+              -5.2
+            ],
+            "second": "mandible_7_hook_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knuckle",
+            "end_depth": 2.1,
+            "end_thickness": 2,
+            "material": "robe_edge",
+            "name": "inner",
+            "role": "upper hooked jaw mandible not an antler",
+            "segments": [
+              "mandible_7_inner_1",
+              "mandible_7_inner_2"
+            ],
+            "start": "root",
+            "start_depth": 3.2,
+            "start_thickness": 3.1
+          },
+          {
+            "end": "tip",
+            "end_depth": 0.82,
+            "end_thickness": 0.72,
+            "material": "flesh",
+            "name": "outer",
+            "role": "blood-darkened cutting arm of upper mandible",
+            "segments": [
+              "mandible_7_outer_1",
+              "mandible_7_outer_2"
+            ],
+            "start": "knuckle",
+            "start_depth": 2.05,
+            "start_thickness": 1.95
+          },
+          {
+            "end": "hook",
+            "end_depth": 0.44,
+            "end_thickness": 0.38,
+            "material": "blood",
+            "name": "hook",
+            "role": "inward hooked bloodied terminal fang",
+            "segments": [
+              "mandible_7_hook_1"
+            ],
+            "start": "tip",
+            "start_depth": 0.9,
+            "start_thickness": 0.85
+          }
+        ],
+        "name": "mandible_7",
+        "nodes": [
+          {
+            "name": "hook",
+            "point": [
+              13.8,
+              86,
+              -5
+            ]
+          },
+          {
+            "name": "knuckle",
+            "point": [
+              13,
+              82,
+              -5
+            ]
+          },
+          {
+            "name": "root",
+            "point": [
+              8,
+              74,
+              -4
+            ]
+          },
+          {
+            "name": "tip",
+            "point": [
+              12,
+              89.5,
+              -5.2
+            ]
+          }
+        ],
+        "parent_bone": "head",
+        "parent_cube": "head_core",
+        "root_node": "root",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "head_core",
+            "joint": [
+              10.0,
+              71.0,
+              4.0
+            ],
+            "second": "mandible_8_inner_1"
+          },
+          {
+            "first": "mandible_8_inner_1",
+            "joint": [
+              13.0,
+              74.0,
+              4.5
+            ],
+            "second": "mandible_8_inner_2"
+          },
+          {
+            "first": "mandible_8_inner_2",
+            "joint": [
+              16.0,
+              77.0,
+              5.0
+            ],
+            "second": "mandible_8_outer_1"
+          },
+          {
+            "first": "mandible_8_outer_1",
+            "joint": [
+              16.5,
+              80.75,
+              5.1
+            ],
+            "second": "mandible_8_outer_2"
+          },
+          {
+            "first": "mandible_8_outer_2",
+            "joint": [
+              17.0,
+              84.5,
+              5.2
+            ],
+            "second": "mandible_8_hook_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knuckle",
+            "end_depth": 2.1,
+            "end_thickness": 2,
+            "material": "robe_edge",
+            "name": "inner",
+            "role": "upper hooked jaw mandible not an antler",
+            "segments": [
+              "mandible_8_inner_1",
+              "mandible_8_inner_2"
+            ],
+            "start": "root",
+            "start_depth": 3.2,
+            "start_thickness": 3.1
+          },
+          {
+            "end": "tip",
+            "end_depth": 0.82,
+            "end_thickness": 0.72,
+            "material": "flesh",
+            "name": "outer",
+            "role": "blood-darkened cutting arm of upper mandible",
+            "segments": [
+              "mandible_8_outer_1",
+              "mandible_8_outer_2"
+            ],
+            "start": "knuckle",
+            "start_depth": 2.05,
+            "start_thickness": 1.95
+          },
+          {
+            "end": "hook",
+            "end_depth": 0.44,
+            "end_thickness": 0.38,
+            "material": "blood",
+            "name": "hook",
+            "role": "inward hooked bloodied terminal fang",
+            "segments": [
+              "mandible_8_hook_1"
+            ],
+            "start": "tip",
+            "start_depth": 0.9,
+            "start_thickness": 0.85
+          }
+        ],
+        "name": "mandible_8",
+        "nodes": [
+          {
+            "name": "hook",
+            "point": [
+              15.5,
+              80.8,
+              5
+            ]
+          },
+          {
+            "name": "knuckle",
+            "point": [
+              16,
+              77,
+              5
+            ]
+          },
+          {
+            "name": "root",
+            "point": [
+              10,
+              71,
+              4
+            ]
+          },
+          {
+            "name": "tip",
+            "point": [
+              17,
+              84.5,
+              5.2
+            ]
+          }
+        ],
+        "parent_bone": "head",
+        "parent_cube": "head_core",
+        "root_node": "root",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "hem_far_left",
+            "joint": [
+              -9.0,
+              29.0,
+              -4.0
+            ],
+            "second": "mechanical_leg_1_upper_1"
+          },
+          {
+            "first": "mechanical_leg_1_upper_1",
+            "joint": [
+              -21.0,
+              21.0,
+              -5.0
+            ],
+            "second": "mechanical_leg_1_lower_1"
+          },
+          {
+            "first": "mechanical_leg_1_lower_1",
+            "joint": [
+              -28.0,
+              11.0,
+              -5.5
+            ],
+            "second": "mechanical_leg_1_toe_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knee",
+            "end_depth": 2.5,
+            "end_thickness": 3.2,
+            "material": "joint",
+            "name": "upper",
+            "role": "upper mechanical leg strut",
+            "segments": [
+              "mechanical_leg_1_upper_1"
+            ],
+            "start": "hip",
+            "start_depth": 3.2,
+            "start_thickness": 4
+          },
+          {
+            "end": "ankle",
+            "end_depth": 1.8,
+            "end_thickness": 2.2,
+            "material": "robe_edge",
+            "name": "lower",
+            "role": "lower mechanical leg strut",
+            "segments": [
+              "mechanical_leg_1_lower_1"
+            ],
+            "start": "knee",
+            "start_depth": 2.5,
+            "start_thickness": 3.2
+          },
+          {
+            "end": "toe",
+            "end_depth": 0.85,
+            "end_thickness": 0.8,
+            "material": "silver_dark",
+            "name": "toe",
+            "role": "terminal hooked mechanical claw toe",
+            "segments": [
+              "mechanical_leg_1_toe_1"
+            ],
+            "start": "ankle",
+            "start_depth": 1.8,
+            "start_thickness": 2.2
+          }
+        ],
+        "name": "mechanical_leg_1",
+        "nodes": [
+          {
+            "name": "ankle",
+            "point": [
+              -28,
+              11,
+              -5.5
+            ]
+          },
+          {
+            "name": "hip",
+            "point": [
+              -9,
+              29,
+              -4
+            ]
+          },
+          {
+            "name": "knee",
+            "point": [
+              -21,
+              21,
+              -5
+            ]
+          },
+          {
+            "name": "toe",
+            "point": [
+              -31,
+              0.7,
+              -6
+            ]
+          }
+        ],
+        "parent_bone": "robe",
+        "parent_cube": "hem_far_left",
+        "root_node": "hip",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "hem_left",
+            "joint": [
+              -5.0,
+              28.0,
+              6.5
+            ],
+            "second": "mechanical_leg_2_upper_1"
+          },
+          {
+            "first": "mechanical_leg_2_upper_1",
+            "joint": [
+              -14.0,
+              18.0,
+              7.5
+            ],
+            "second": "mechanical_leg_2_lower_1"
+          },
+          {
+            "first": "mechanical_leg_2_lower_1",
+            "joint": [
+              -16.0,
+              8.0,
+              8.0
+            ],
+            "second": "mechanical_leg_2_toe_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knee",
+            "end_depth": 2.5,
+            "end_thickness": 3.2,
+            "material": "joint",
+            "name": "upper",
+            "role": "upper mechanical leg strut",
+            "segments": [
+              "mechanical_leg_2_upper_1"
+            ],
+            "start": "hip",
+            "start_depth": 3.2,
+            "start_thickness": 4
+          },
+          {
+            "end": "ankle",
+            "end_depth": 1.8,
+            "end_thickness": 2.2,
+            "material": "robe_edge",
+            "name": "lower",
+            "role": "lower mechanical leg strut",
+            "segments": [
+              "mechanical_leg_2_lower_1"
+            ],
+            "start": "knee",
+            "start_depth": 2.5,
+            "start_thickness": 3.2
+          },
+          {
+            "end": "toe",
+            "end_depth": 0.85,
+            "end_thickness": 0.8,
+            "material": "silver_dark",
+            "name": "toe",
+            "role": "terminal hooked mechanical claw toe",
+            "segments": [
+              "mechanical_leg_2_toe_1"
+            ],
+            "start": "ankle",
+            "start_depth": 1.8,
+            "start_thickness": 2.2
+          }
+        ],
+        "name": "mechanical_leg_2",
+        "nodes": [
+          {
+            "name": "ankle",
+            "point": [
+              -16,
+              8,
+              8
+            ]
+          },
+          {
+            "name": "hip",
+            "point": [
+              -5,
+              28,
+              6.5
+            ]
+          },
+          {
+            "name": "knee",
+            "point": [
+              -14,
+              18,
+              7.5
+            ]
+          },
+          {
+            "name": "toe",
+            "point": [
+              -23,
+              0.7,
+              8.5
+            ]
+          }
+        ],
+        "parent_bone": "robe",
+        "parent_cube": "hem_left",
+        "root_node": "hip",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "hem_right",
+            "joint": [
+              9.0,
+              28.5,
+              6.5
+            ],
+            "second": "mechanical_leg_3_upper_1"
+          },
+          {
+            "first": "mechanical_leg_3_upper_1",
+            "joint": [
+              17.0,
+              18.0,
+              7.5
+            ],
+            "second": "mechanical_leg_3_lower_1"
+          },
+          {
+            "first": "mechanical_leg_3_lower_1",
+            "joint": [
+              17.0,
+              8.0,
+              8.0
+            ],
+            "second": "mechanical_leg_3_toe_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knee",
+            "end_depth": 2.5,
+            "end_thickness": 3.2,
+            "material": "joint",
+            "name": "upper",
+            "role": "upper mechanical leg strut",
+            "segments": [
+              "mechanical_leg_3_upper_1"
+            ],
+            "start": "hip",
+            "start_depth": 3.2,
+            "start_thickness": 4
+          },
+          {
+            "end": "ankle",
+            "end_depth": 1.8,
+            "end_thickness": 2.2,
+            "material": "robe_edge",
+            "name": "lower",
+            "role": "lower mechanical leg strut",
+            "segments": [
+              "mechanical_leg_3_lower_1"
+            ],
+            "start": "knee",
+            "start_depth": 2.5,
+            "start_thickness": 3.2
+          },
+          {
+            "end": "toe",
+            "end_depth": 0.85,
+            "end_thickness": 0.8,
+            "material": "silver_dark",
+            "name": "toe",
+            "role": "terminal hooked mechanical claw toe",
+            "segments": [
+              "mechanical_leg_3_toe_1"
+            ],
+            "start": "ankle",
+            "start_depth": 1.8,
+            "start_thickness": 2.2
+          }
+        ],
+        "name": "mechanical_leg_3",
+        "nodes": [
+          {
+            "name": "ankle",
+            "point": [
+              17,
+              8,
+              8
+            ]
+          },
+          {
+            "name": "hip",
+            "point": [
+              9,
+              28.5,
+              6.5
+            ]
+          },
+          {
+            "name": "knee",
+            "point": [
+              17,
+              18,
+              7.5
+            ]
+          },
+          {
+            "name": "toe",
+            "point": [
+              23,
+              0.7,
+              8.5
+            ]
+          }
+        ],
+        "parent_bone": "robe",
+        "parent_cube": "hem_right",
+        "root_node": "hip",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      },
+      {
+        "attachments": [
+          {
+            "first": "hem_far_right",
+            "joint": [
+              13.0,
+              29.5,
+              -4.0
+            ],
+            "second": "mechanical_leg_4_upper_1"
+          },
+          {
+            "first": "mechanical_leg_4_upper_1",
+            "joint": [
+              23.0,
+              21.0,
+              -5.0
+            ],
+            "second": "mechanical_leg_4_lower_1"
+          },
+          {
+            "first": "mechanical_leg_4_lower_1",
+            "joint": [
+              29.0,
+              11.0,
+              -5.5
+            ],
+            "second": "mechanical_leg_4_toe_1"
+          }
+        ],
+        "edges": [
+          {
+            "end": "knee",
+            "end_depth": 2.5,
+            "end_thickness": 3.2,
+            "material": "joint",
+            "name": "upper",
+            "role": "upper mechanical leg strut",
+            "segments": [
+              "mechanical_leg_4_upper_1"
+            ],
+            "start": "hip",
+            "start_depth": 3.2,
+            "start_thickness": 4
+          },
+          {
+            "end": "ankle",
+            "end_depth": 1.8,
+            "end_thickness": 2.2,
+            "material": "robe_edge",
+            "name": "lower",
+            "role": "lower mechanical leg strut",
+            "segments": [
+              "mechanical_leg_4_lower_1"
+            ],
+            "start": "knee",
+            "start_depth": 2.5,
+            "start_thickness": 3.2
+          },
+          {
+            "end": "toe",
+            "end_depth": 0.85,
+            "end_thickness": 0.8,
+            "material": "silver_dark",
+            "name": "toe",
+            "role": "terminal hooked mechanical claw toe",
+            "segments": [
+              "mechanical_leg_4_toe_1"
+            ],
+            "start": "ankle",
+            "start_depth": 1.8,
+            "start_thickness": 2.2
+          }
+        ],
+        "name": "mechanical_leg_4",
+        "nodes": [
+          {
+            "name": "ankle",
+            "point": [
+              29,
+              11,
+              -5.5
+            ]
+          },
+          {
+            "name": "hip",
+            "point": [
+              13,
+              29.5,
+              -4
+            ]
+          },
+          {
+            "name": "knee",
+            "point": [
+              23,
+              21,
+              -5
+            ]
+          },
+          {
+            "name": "toe",
+            "point": [
+              31,
+              0.7,
+              -6
+            ]
+          }
+        ],
+        "parent_bone": "robe",
+        "parent_cube": "hem_far_right",
+        "root_node": "hip",
+        "taper_method": "piecewise-constant-midpoint-sampling"
+      }
+    ],
+    "declared_attachments": [
+      {
+        "first": "torso_core",
+        "joint": [
+          4.0,
+          68.0,
+          0.0
+        ],
+        "second": "head_core"
+      },
+      {
+        "first": "torso_core",
+        "joint": [
+          -5.0,
+          60.0,
+          0.0
+        ],
+        "second": "left_hanging_fold"
+      },
+      {
+        "first": "torso_core",
+        "joint": [
+          1.0,
+          59.0,
+          1.0
+        ],
+        "second": "center_hanging_fold"
+      },
+      {
+        "first": "torso_core",
+        "joint": [
+          9.0,
+          62.0,
+          -1.0
+        ],
+        "second": "right_hanging_fold"
+      },
+      {
+        "first": "torso_core",
+        "joint": [
+          -6.0,
+          34.0,
+          -1.8
+        ],
+        "second": "hem_far_left"
+      },
+      {
+        "first": "torso_core",
+        "joint": [
+          -3.0,
+          35.0,
+          2.6
+        ],
+        "second": "hem_left"
+      },
+      {
+        "first": "torso_core",
+        "joint": [
+          2.0,
+          34.0,
+          -2.5
+        ],
+        "second": "hem_center"
+      },
+      {
+        "first": "torso_core",
+        "joint": [
+          7.0,
+          38.0,
+          2.2
+        ],
+        "second": "hem_right"
+      },
+      {
+        "first": "torso_core",
+        "joint": [
+          10.0,
+          35.0,
+          -2.0
+        ],
+        "second": "hem_far_right"
+      },
+      {
+        "first": "head_core",
+        "joint": [
+          4.0,
+          74.0,
+          0.0
+        ],
+        "second": "split_head_left_base_1"
+      },
+      {
+        "first": "split_head_left_base_1",
+        "joint": [
+          2.0,
+          77.0,
+          0.75
+        ],
+        "second": "split_head_left_base_2"
+      },
+      {
+        "first": "head_core",
+        "joint": [
+          4.0,
+          74.0,
+          0.0
+        ],
+        "second": "split_head_right_base_1"
+      },
+      {
+        "first": "split_head_right_base_1",
+        "joint": [
+          6.0,
+          77.25,
+          -0.75
+        ],
+        "second": "split_head_right_base_2"
+      },
+      {
+        "first": "split_head_left_base_2",
+        "joint": [
+          0.0,
+          80.0,
+          1.5
+        ],
+        "second": "split_head_left_peak_1"
+      },
+      {
+        "first": "split_head_left_peak_1",
+        "joint": [
+          -1.0,
+          83.0,
+          2.0
+        ],
+        "second": "split_head_left_peak_2"
+      },
+      {
+        "first": "split_head_right_base_2",
+        "joint": [
+          8.0,
+          80.5,
+          -1.5
+        ],
+        "second": "split_head_right_peak_1"
+      },
+      {
+        "first": "split_head_right_peak_1",
+        "joint": [
+          9.5,
+          83.75,
+          -2.0
+        ],
+        "second": "split_head_right_peak_2"
+      },
+      {
+        "first": "head_core",
+        "joint": [
+          -3.5,
+          70.0,
+          -4.0
+        ],
+        "second": "mandible_1_inner_1"
+      },
+      {
+        "first": "mandible_1_inner_1",
+        "joint": [
+          -8.0,
+          68.25,
+          -4.5
+        ],
+        "second": "mandible_1_inner_2"
+      },
+      {
+        "first": "mandible_1_inner_2",
+        "joint": [
+          -12.5,
+          66.5,
+          -5.0
+        ],
+        "second": "mandible_1_outer_1"
+      },
+      {
+        "first": "mandible_1_outer_1",
+        "joint": [
+          -16.75,
+          66.5,
+          -5.1
+        ],
+        "second": "mandible_1_outer_2"
+      },
+      {
+        "first": "mandible_1_outer_2",
+        "joint": [
+          -21.0,
+          66.5,
+          -5.2
+        ],
+        "second": "mandible_1_hook_1"
+      },
+      {
+        "first": "head_core",
+        "joint": [
+          -2.0,
+          72.0,
+          0.0
+        ],
+        "second": "mandible_2_inner_1"
+      },
+      {
+        "first": "mandible_2_inner_1",
+        "joint": [
+          -7.5,
+          72.0,
+          0.1
+        ],
+        "second": "mandible_2_inner_2"
+      },
+      {
+        "first": "mandible_2_inner_2",
+        "joint": [
+          -13.0,
+          72.0,
+          0.2
+        ],
+        "second": "mandible_2_outer_1"
+      },
+      {
+        "first": "mandible_2_outer_1",
+        "joint": [
+          -17.0,
+          74.5,
+          0.1
+        ],
+        "second": "mandible_2_outer_2"
+      },
+      {
+        "first": "mandible_2_outer_2",
+        "joint": [
+          -21.0,
+          77.0,
+          0.0
+        ],
+        "second": "mandible_2_hook_1"
+      },
+      {
+        "first": "head_core",
+        "joint": [
+          -0.5,
+          74.0,
+          4.0
+        ],
+        "second": "mandible_3_inner_1"
+      },
+      {
+        "first": "mandible_3_inner_1",
+        "joint": [
+          -5.25,
+          75.75,
+          4.5
+        ],
+        "second": "mandible_3_inner_2"
+      },
+      {
+        "first": "mandible_3_inner_2",
+        "joint": [
+          -10.0,
+          77.5,
+          5.0
+        ],
+        "second": "mandible_3_outer_1"
+      },
+      {
+        "first": "mandible_3_outer_1",
+        "joint": [
+          -14.0,
+          80.75,
+          5.1
+        ],
+        "second": "mandible_3_outer_2"
+      },
+      {
+        "first": "mandible_3_outer_2",
+        "joint": [
+          -18.0,
+          84.0,
+          5.2
+        ],
+        "second": "mandible_3_hook_1"
+      },
+      {
+        "first": "head_core",
+        "joint": [
+          2.0,
+          75.5,
+          -4.0
+        ],
+        "second": "mandible_4_inner_1"
+      },
+      {
+        "first": "mandible_4_inner_1",
+        "joint": [
+          0.25,
+          79.25,
+          -4.5
+        ],
+        "second": "mandible_4_inner_2"
+      },
+      {
+        "first": "mandible_4_inner_2",
+        "joint": [
+          -1.5,
+          83.0,
+          -5.0
+        ],
+        "second": "mandible_4_outer_1"
+      },
+      {
+        "first": "mandible_4_outer_1",
+        "joint": [
+          -2.75,
+          86.5,
+          -5.1
+        ],
+        "second": "mandible_4_outer_2"
+      },
+      {
+        "first": "mandible_4_outer_2",
+        "joint": [
+          -4.0,
+          90.0,
+          -5.2
+        ],
+        "second": "mandible_4_hook_1"
+      },
+      {
+        "first": "head_core",
+        "joint": [
+          4.0,
+          76.0,
+          0.0
+        ],
+        "second": "mandible_5_inner_1"
+      },
+      {
+        "first": "mandible_5_inner_1",
+        "joint": [
+          3.5,
+          80.0,
+          0.2
+        ],
+        "second": "mandible_5_inner_2"
+      },
+      {
+        "first": "mandible_5_inner_2",
+        "joint": [
+          3.0,
+          84.0,
+          0.4
+        ],
+        "second": "mandible_5_outer_1"
+      },
+      {
+        "first": "mandible_5_outer_1",
+        "joint": [
+          4.5,
+          86.5,
+          0.2
+        ],
+        "second": "mandible_5_outer_2"
+      },
+      {
+        "first": "mandible_5_outer_2",
+        "joint": [
+          6.0,
+          89.0,
+          0.0
+        ],
+        "second": "mandible_5_hook_1"
+      },
+      {
+        "first": "head_core",
+        "joint": [
+          6.0,
+          75.5,
+          4.0
+        ],
+        "second": "mandible_6_inner_1"
+      },
+      {
+        "first": "mandible_6_inner_1",
+        "joint": [
+          7.25,
+          79.5,
+          4.5
+        ],
+        "second": "mandible_6_inner_2"
+      },
+      {
+        "first": "mandible_6_inner_2",
+        "joint": [
+          8.5,
+          83.5,
+          5.0
+        ],
+        "second": "mandible_6_outer_1"
+      },
+      {
+        "first": "mandible_6_outer_1",
+        "joint": [
+          7.75,
+          86.75,
+          5.1
+        ],
+        "second": "mandible_6_outer_2"
+      },
+      {
+        "first": "mandible_6_outer_2",
+        "joint": [
+          7.0,
+          90.0,
+          5.2
+        ],
+        "second": "mandible_6_hook_1"
+      },
+      {
+        "first": "head_core",
+        "joint": [
+          8.0,
+          74.0,
+          -4.0
+        ],
+        "second": "mandible_7_inner_1"
+      },
+      {
+        "first": "mandible_7_inner_1",
+        "joint": [
+          10.5,
+          78.0,
+          -4.5
+        ],
+        "second": "mandible_7_inner_2"
+      },
+      {
+        "first": "mandible_7_inner_2",
+        "joint": [
+          13.0,
+          82.0,
+          -5.0
+        ],
+        "second": "mandible_7_outer_1"
+      },
+      {
+        "first": "mandible_7_outer_1",
+        "joint": [
+          12.5,
+          85.75,
+          -5.1
+        ],
+        "second": "mandible_7_outer_2"
+      },
+      {
+        "first": "mandible_7_outer_2",
+        "joint": [
+          12.0,
+          89.5,
+          -5.2
+        ],
+        "second": "mandible_7_hook_1"
+      },
+      {
+        "first": "head_core",
+        "joint": [
+          10.0,
+          71.0,
+          4.0
+        ],
+        "second": "mandible_8_inner_1"
+      },
+      {
+        "first": "mandible_8_inner_1",
+        "joint": [
+          13.0,
+          74.0,
+          4.5
+        ],
+        "second": "mandible_8_inner_2"
+      },
+      {
+        "first": "mandible_8_inner_2",
+        "joint": [
+          16.0,
+          77.0,
+          5.0
+        ],
+        "second": "mandible_8_outer_1"
+      },
+      {
+        "first": "mandible_8_outer_1",
+        "joint": [
+          16.5,
+          80.75,
+          5.1
+        ],
+        "second": "mandible_8_outer_2"
+      },
+      {
+        "first": "mandible_8_outer_2",
+        "joint": [
+          17.0,
+          84.5,
+          5.2
+        ],
+        "second": "mandible_8_hook_1"
+      },
+      {
+        "first": "torso_core",
+        "joint": [
+          1.0,
+          65.0,
+          4.0
+        ],
+        "second": "chest_maw"
+      },
+      {
+        "first": "chest_maw",
+        "joint": [
+          -0.6499999999999999,
+          59.7,
+          5.2
+        ],
+        "second": "maw_tooth_1"
+      },
+      {
+        "first": "chest_maw",
+        "joint": [
+          2.65,
+          62.3,
+          5.2
+        ],
+        "second": "maw_tooth_2"
+      },
+      {
+        "first": "chest_maw",
+        "joint": [
+          -0.6499999999999999,
+          64.9,
+          5.2
+        ],
+        "second": "maw_tooth_3"
+      },
+      {
+        "first": "chest_maw",
+        "joint": [
+          2.65,
+          67.5,
+          5.2
+        ],
+        "second": "maw_tooth_4"
+      },
+      {
+        "first": "chest_maw",
+        "joint": [
+          -0.6499999999999999,
+          70.1,
+          5.2
+        ],
+        "second": "maw_tooth_5"
+      },
+      {
+        "first": "head_core",
+        "joint": [
+          12.5,
+          74.5,
+          4.2
+        ],
+        "second": "mask_mount"
+      },
+      {
+        "first": "mask_mount",
+        "joint": [
+          12.5,
+          74.5,
+          7.2
+        ],
+        "second": "mask_3"
+      },
+      {
+        "first": "mask_1",
+        "joint": [
+          12.3,
+          71.87,
+          8.0
+        ],
+        "second": "mask_2"
+      },
+      {
+        "first": "mask_2",
+        "joint": [
+          12.3,
+          73.775,
+          8.0
+        ],
+        "second": "mask_3"
+      },
+      {
+        "first": "mask_3",
+        "joint": [
+          12.3,
+          75.825,
+          8.0
+        ],
+        "second": "mask_4"
+      },
+      {
+        "first": "mask_4",
+        "joint": [
+          12.3,
+          77.775,
+          8.0
+        ],
+        "second": "mask_5"
+      },
+      {
+        "first": "mask_3",
+        "joint": [
+          11.45,
+          75.82,
+          8.97
+        ],
+        "second": "mask_left_eye"
+      },
+      {
+        "first": "mask_3",
+        "joint": [
+          14.0,
+          75.82,
+          8.97
+        ],
+        "second": "mask_right_eye"
+      },
+      {
+        "first": "mask_2",
+        "joint": [
+          12.75,
+          73.1,
+          8.97
+        ],
+        "second": "mask_mouth"
+      },
+      {
+        "first": "hem_far_left",
+        "joint": [
+          -9.0,
+          29.0,
+          -4.0
+        ],
+        "second": "mechanical_leg_1_upper_1"
+      },
+      {
+        "first": "mechanical_leg_1_upper_1",
+        "joint": [
+          -21.0,
+          21.0,
+          -5.0
+        ],
+        "second": "mechanical_leg_1_lower_1"
+      },
+      {
+        "first": "mechanical_leg_1_lower_1",
+        "joint": [
+          -28.0,
+          11.0,
+          -5.5
+        ],
+        "second": "mechanical_leg_1_toe_1"
+      },
+      {
+        "first": "mechanical_leg_1_upper_1",
+        "joint": [
+          -21.0,
+          21.0,
+          -5.0
+        ],
+        "second": "mechanical_leg_1_knee_hinge"
+      },
+      {
+        "first": "mechanical_leg_1_knee_hinge",
+        "joint": [
+          -21.0,
+          21.0,
+          -5.0
+        ],
+        "second": "mechanical_leg_1_lower_1"
+      },
+      {
+        "first": "mechanical_leg_1_lower_1",
+        "joint": [
+          -28.0,
+          11.0,
+          -5.5
+        ],
+        "second": "mechanical_leg_1_ankle_hinge"
+      },
+      {
+        "first": "mechanical_leg_1_ankle_hinge",
+        "joint": [
+          -28.0,
+          11.0,
+          -5.5
+        ],
+        "second": "mechanical_leg_1_toe_1"
+      },
+      {
+        "first": "hem_left",
+        "joint": [
+          -5.0,
+          28.0,
+          6.5
+        ],
+        "second": "mechanical_leg_2_upper_1"
+      },
+      {
+        "first": "mechanical_leg_2_upper_1",
+        "joint": [
+          -14.0,
+          18.0,
+          7.5
+        ],
+        "second": "mechanical_leg_2_lower_1"
+      },
+      {
+        "first": "mechanical_leg_2_lower_1",
+        "joint": [
+          -16.0,
+          8.0,
+          8.0
+        ],
+        "second": "mechanical_leg_2_toe_1"
+      },
+      {
+        "first": "mechanical_leg_2_upper_1",
+        "joint": [
+          -14.0,
+          18.0,
+          7.5
+        ],
+        "second": "mechanical_leg_2_knee_hinge"
+      },
+      {
+        "first": "mechanical_leg_2_knee_hinge",
+        "joint": [
+          -14.0,
+          18.0,
+          7.5
+        ],
+        "second": "mechanical_leg_2_lower_1"
+      },
+      {
+        "first": "mechanical_leg_2_lower_1",
+        "joint": [
+          -16.0,
+          8.0,
+          8.0
+        ],
+        "second": "mechanical_leg_2_ankle_hinge"
+      },
+      {
+        "first": "mechanical_leg_2_ankle_hinge",
+        "joint": [
+          -16.0,
+          8.0,
+          8.0
+        ],
+        "second": "mechanical_leg_2_toe_1"
+      },
+      {
+        "first": "hem_right",
+        "joint": [
+          9.0,
+          28.5,
+          6.5
+        ],
+        "second": "mechanical_leg_3_upper_1"
+      },
+      {
+        "first": "mechanical_leg_3_upper_1",
+        "joint": [
+          17.0,
+          18.0,
+          7.5
+        ],
+        "second": "mechanical_leg_3_lower_1"
+      },
+      {
+        "first": "mechanical_leg_3_lower_1",
+        "joint": [
+          17.0,
+          8.0,
+          8.0
+        ],
+        "second": "mechanical_leg_3_toe_1"
+      },
+      {
+        "first": "mechanical_leg_3_upper_1",
+        "joint": [
+          17.0,
+          18.0,
+          7.5
+        ],
+        "second": "mechanical_leg_3_knee_hinge"
+      },
+      {
+        "first": "mechanical_leg_3_knee_hinge",
+        "joint": [
+          17.0,
+          18.0,
+          7.5
+        ],
+        "second": "mechanical_leg_3_lower_1"
+      },
+      {
+        "first": "mechanical_leg_3_lower_1",
+        "joint": [
+          17.0,
+          8.0,
+          8.0
+        ],
+        "second": "mechanical_leg_3_ankle_hinge"
+      },
+      {
+        "first": "mechanical_leg_3_ankle_hinge",
+        "joint": [
+          17.0,
+          8.0,
+          8.0
+        ],
+        "second": "mechanical_leg_3_toe_1"
+      },
+      {
+        "first": "hem_far_right",
+        "joint": [
+          13.0,
+          29.5,
+          -4.0
+        ],
+        "second": "mechanical_leg_4_upper_1"
+      },
+      {
+        "first": "mechanical_leg_4_upper_1",
+        "joint": [
+          23.0,
+          21.0,
+          -5.0
+        ],
+        "second": "mechanical_leg_4_lower_1"
+      },
+      {
+        "first": "mechanical_leg_4_lower_1",
+        "joint": [
+          29.0,
+          11.0,
+          -5.5
+        ],
+        "second": "mechanical_leg_4_toe_1"
+      },
+      {
+        "first": "mechanical_leg_4_upper_1",
+        "joint": [
+          23.0,
+          21.0,
+          -5.0
+        ],
+        "second": "mechanical_leg_4_knee_hinge"
+      },
+      {
+        "first": "mechanical_leg_4_knee_hinge",
+        "joint": [
+          23.0,
+          21.0,
+          -5.0
+        ],
+        "second": "mechanical_leg_4_lower_1"
+      },
+      {
+        "first": "mechanical_leg_4_lower_1",
+        "joint": [
+          29.0,
+          11.0,
+          -5.5
+        ],
+        "second": "mechanical_leg_4_ankle_hinge"
+      },
+      {
+        "first": "mechanical_leg_4_ankle_hinge",
+        "joint": [
+          29.0,
+          11.0,
+          -5.5
+        ],
+        "second": "mechanical_leg_4_toe_1"
+      },
+      {
+        "first": "torso_core",
+        "joint": [
+          6.2,
+          54.75,
+          5.8
+        ],
+        "second": "upper_ring_hanger"
+      },
+      {
+        "first": "upper_ring_hanger",
+        "joint": [
+          6.2,
+          54.75,
+          8.0
+        ],
+        "second": "upper_ring_segment_1"
+      },
+      {
+        "first": "upper_ring_segment_1",
+        "joint": [
+          7.083883476483185,
+          54.383883476483184,
+          8.0
+        ],
+        "second": "upper_ring_segment_2"
+      },
+      {
+        "first": "upper_ring_segment_2",
+        "joint": [
+          7.45,
+          53.5,
+          8.0
+        ],
+        "second": "upper_ring_segment_3"
+      },
+      {
+        "first": "upper_ring_segment_3",
+        "joint": [
+          7.083883476483185,
+          52.616116523516816,
+          8.0
+        ],
+        "second": "upper_ring_segment_4"
+      },
+      {
+        "first": "upper_ring_segment_4",
+        "joint": [
+          6.2,
+          52.25,
+          8.0
+        ],
+        "second": "upper_ring_segment_5"
+      },
+      {
+        "first": "upper_ring_segment_5",
+        "joint": [
+          5.316116523516816,
+          52.616116523516816,
+          8.0
+        ],
+        "second": "upper_ring_segment_6"
+      },
+      {
+        "first": "upper_ring_segment_6",
+        "joint": [
+          4.95,
+          53.5,
+          8.0
+        ],
+        "second": "upper_ring_segment_7"
+      },
+      {
+        "first": "upper_ring_segment_7",
+        "joint": [
+          5.316116523516816,
+          54.383883476483184,
+          8.0
+        ],
+        "second": "upper_ring_segment_8"
+      },
+      {
+        "first": "upper_ring_segment_8",
+        "joint": [
+          6.2,
+          54.75,
+          8.0
+        ],
+        "second": "upper_ring_segment_1"
+      },
+      {
+        "first": "torso_core",
+        "joint": [
+          1.7,
+          38.15,
+          5.8
+        ],
+        "second": "lower_ring_hanger"
+      },
+      {
+        "first": "lower_ring_hanger",
+        "joint": [
+          1.7,
+          38.15,
+          8.2
+        ],
+        "second": "lower_ring_segment_1"
+      },
+      {
+        "first": "lower_ring_segment_1",
+        "joint": [
+          2.866726188957803,
+          37.6667261889578,
+          8.2
+        ],
+        "second": "lower_ring_segment_2"
+      },
+      {
+        "first": "lower_ring_segment_2",
+        "joint": [
+          3.3499999999999996,
+          36.5,
+          8.2
+        ],
+        "second": "lower_ring_segment_3"
+      },
+      {
+        "first": "lower_ring_segment_3",
+        "joint": [
+          2.866726188957803,
+          35.3332738110422,
+          8.2
+        ],
+        "second": "lower_ring_segment_4"
+      },
+      {
+        "first": "lower_ring_segment_4",
+        "joint": [
+          1.7,
+          34.85,
+          8.2
+        ],
+        "second": "lower_ring_segment_5"
+      },
+      {
+        "first": "lower_ring_segment_5",
+        "joint": [
+          0.5332738110421966,
+          35.3332738110422,
+          8.2
+        ],
+        "second": "lower_ring_segment_6"
+      },
+      {
+        "first": "lower_ring_segment_6",
+        "joint": [
+          0.050000000000000044,
+          36.5,
+          8.2
+        ],
+        "second": "lower_ring_segment_7"
+      },
+      {
+        "first": "lower_ring_segment_7",
+        "joint": [
+          0.5332738110421964,
+          37.6667261889578,
+          8.2
+        ],
+        "second": "lower_ring_segment_8"
+      },
+      {
+        "first": "lower_ring_segment_8",
+        "joint": [
+          1.7,
+          38.15,
+          8.2
+        ],
+        "second": "lower_ring_segment_1"
+      }
+    ],
+    "feature_inventory": {
+      "expressionless_masks": 1,
+      "mandible_depth_layers": 3,
+      "mandible_segments": 40,
+      "maw_teeth": 5,
+      "mechanical_hinges": 8,
+      "mechanical_leg_chains": 4,
+      "mechanical_leg_depth_layers": 2,
+      "mechanical_leg_segments": 12,
+      "ring_segments": 16,
+      "silver_ring_assemblies": 2,
+      "split_head_halves": 2,
+      "upper_mandible_chains": 8,
+      "vertical_chest_maws": 1
+    },
+    "lane": "agent-authored-semantic-volume",
+    "lower_strut_interpretation": "four mechanical legs, not antlers or weapons",
+    "ring_assemblies": [
+      {
+        "name": "upper_ring",
+        "radius": 1.25,
+        "segments": [
+          "upper_ring_segment_1",
+          "upper_ring_segment_2",
+          "upper_ring_segment_3",
+          "upper_ring_segment_4",
+          "upper_ring_segment_5",
+          "upper_ring_segment_6",
+          "upper_ring_segment_7",
+          "upper_ring_segment_8"
+        ]
+      },
+      {
+        "name": "lower_ring",
+        "radius": 1.65,
+        "segments": [
+          "lower_ring_segment_1",
+          "lower_ring_segment_2",
+          "lower_ring_segment_3",
+          "lower_ring_segment_4",
+          "lower_ring_segment_5",
+          "lower_ring_segment_6",
+          "lower_ring_segment_7",
+          "lower_ring_segment_8"
+        ]
+      }
+    ],
+    "single_view_hidden_geometry": "inferred_conservatively_not_observed",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0,
+    "upper_fan_interpretation": "mandibles and split head, not antlers or weapons"
+  },
+  "geometry": {
+    "precision": 20
+  },
+  "id": "gamma_abnormality",
+  "landmarks": [],
+  "materials": {
+    "blood": {
+      "base": "#592124",
+      "highlight": "#943735",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#280f13"
+    },
+    "flesh": {
+      "base": "#342024",
+      "highlight": "#603238",
+      "pattern": "dither",
+      "pattern_scale": 3,
+      "shade": "#130e12"
+    },
+    "joint": {
+      "base": "#292d33",
+      "highlight": "#666d75",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#0d0f12"
+    },
+    "mask": {
+      "base": "#d6d5d0",
+      "highlight": "#f5f3ed",
+      "pattern": "gradient",
+      "pattern_scale": 4,
+      "shade": "#8c8b88"
+    },
+    "mask_shadow": {
+      "base": "#87888a",
+      "highlight": "#bababb",
+      "pattern": "dither",
+      "pattern_scale": 3,
+      "shade": "#46474b"
+    },
+    "maw": {
+      "base": "#170d12",
+      "highlight": "#4a1e27",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#050407"
+    },
+    "robe": {
+      "base": "#24262e",
+      "highlight": "#444752",
+      "pattern": "gradient",
+      "pattern_scale": 7,
+      "shade": "#101117"
+    },
+    "robe_edge": {
+      "base": "#17191f",
+      "highlight": "#353844",
+      "pattern": "dither",
+      "pattern_scale": 4,
+      "shade": "#08090c"
+    },
+    "robe_mid": {
+      "base": "#30323a",
+      "highlight": "#555864",
+      "pattern": "stripes",
+      "pattern_scale": 6,
+      "shade": "#15171d"
+    },
+    "silver": {
+      "base": "#9ca4aa",
+      "highlight": "#e1e6e8",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#41474d"
+    },
+    "silver_dark": {
+      "base": "#555d64",
+      "highlight": "#8d969d",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#252a30"
+    },
+    "tooth": {
+      "base": "#c7c2b4",
+      "highlight": "#f2eee1",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#74716c"
+    },
+    "void": {
+      "base": "#111217",
+      "highlight": "#282a31",
+      "pattern": "dither",
+      "pattern_scale": 5,
+      "shade": "#07080b"
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "tall wide grey-black flared robe",
+      "high off-center expressionless white mask",
+      "split head halves framing a vertical chest maw",
+      "exactly eight bloodied upper mandible claw chains",
+      "two unequal hanging silver ring assemblies",
+      "exactly four clawed mechanical leg chains with visible hinges and toes",
+      "three upper appendage depth layers and two leg depth layers"
+    ],
+    "required_views": [
+      "reference-angle",
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "isometric",
+      "face-split-head",
+      "maw-eight-claw",
+      "ring",
+      "leg-joint"
+    ],
+    "review_targets": [
+      "source silhouette",
+      "mask placement",
+      "mandible count",
+      "split head",
+      "maw identity",
+      "ring asymmetry",
+      "mechanical leg topology",
+      "true depth"
+    ],
+    "target_cuboids": [
+      95,
+      150
+    ]
+  },
+  "reference": {
+    "height": 899,
+    "image": "../../references/07-gamma.png",
+    "sha256": "26cb7dea9090c5a1af9e9caba210472bffe0405bf2c17375132a3abb90dac63b",
+    "width": 592
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "Tall flared black-robed Gamma with an off-center white mask, split head, vertical chest maw, eight bloodied upper mandibles, two silver rings, and four hinged mechanical legs",
+    "symmetry": "asymmetric",
+    "type": "character",
+    "uncertainties": [
+      "The transparent source supplies only one oblique frontal view; back surfaces and exact appendage depth are conservative semantic inference",
+      "Source rights and original character licensing are unknown; the reference is retained only in the private ignored benchmark workspace"
+    ]
+  },
+  "texture": {
+    "atlas_size": 512,
+    "density": 2,
+    "gutter": 1,
+    "palette_size": 24,
+    "quantize_source": false
+  }
+}

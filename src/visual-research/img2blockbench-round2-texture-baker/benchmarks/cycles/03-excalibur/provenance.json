@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "cycle": 3,
+  "subject": "Excalibur",
+  "source": {
+    "url": "https://static.wikia.nocookie.net/typemoon/images/e/e3/ExcaliburVisualNovel.png/revision/latest?cb=20201202083711",
+    "local_path": "../../references/03-excalibur.png",
+    "sha256": "c4cda78a427ac1d2704df6ec8bde6a755361cbcf73628871fe60cfa97f726fcd",
+    "dimensions": [800, 600],
+    "license_status": "No redistribution license identified; local benchmark use only"
+  },
+  "inputs": {
+    "generator": "prepare-inputs.py",
+    "foreground_mask": "inputs/foreground-mask.png",
+    "foreground_mask_sha256": "bd1a3b6cb24c6daeb981152a9d268f05a84a88d8b17ac85aa5515d40c1f0505b",
+    "mesh_provider": null,
+    "method": "reviewed source silhouette plus agent-authored semantic prop reconstruction"
+  },
+  "reconstruction": {
+    "generator": "prepare-semantic-model.py",
+    "algorithm": "purpose-built-tapered-hard-surface-sword-v1",
+    "source_projection": false,
+    "source_skin_cuboids": 0,
+    "reference_roll_degrees": 44.244512,
+    "geometry_precision": 32,
+    "texture_density": 4,
+    "hidden_geometry": "reverse heraldry and physical depth are disclosed authored inference"
+  }
+}

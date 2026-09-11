@@ -1,0 +1,2993 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "body",
+      "parent": "root",
+      "pivot": [
+        0,
+        13,
+        0
+      ]
+    },
+    {
+      "name": "pelvis",
+      "parent": "body",
+      "pivot": [
+        0,
+        13,
+        -7
+      ]
+    },
+    {
+      "name": "chest",
+      "parent": "body",
+      "pivot": [
+        0,
+        15,
+        5
+      ]
+    },
+    {
+      "name": "neck",
+      "parent": "chest",
+      "pivot": [
+        0,
+        20,
+        9
+      ]
+    },
+    {
+      "name": "head",
+      "parent": "neck",
+      "pivot": [
+        0,
+        23,
+        12
+      ]
+    },
+    {
+      "name": "jaw",
+      "parent": "head",
+      "pivot": [
+        0,
+        20,
+        16
+      ]
+    },
+    {
+      "name": "mane",
+      "parent": "chest",
+      "pivot": [
+        0,
+        21,
+        7
+      ]
+    },
+    {
+      "name": "tail_base",
+      "parent": "pelvis",
+      "pivot": [
+        0,
+        13.0,
+        -5.4
+      ]
+    },
+    {
+      "name": "tail_tip",
+      "parent": "tail_base",
+      "pivot": [
+        0.2,
+        14.4,
+        -7.7
+      ]
+    },
+    {
+      "name": "rear_near_upper",
+      "parent": "pelvis",
+      "pivot": [
+        -3.6,
+        13.8,
+        -4.0
+      ]
+    },
+    {
+      "name": "rear_near_lower",
+      "parent": "rear_near_upper",
+      "pivot": [
+        -3.6,
+        7.3,
+        -5.8
+      ]
+    },
+    {
+      "name": "rear_near_paw",
+      "parent": "rear_near_lower",
+      "pivot": [
+        -3.6,
+        2.4,
+        -5.0
+      ]
+    },
+    {
+      "name": "rear_far_upper",
+      "parent": "pelvis",
+      "pivot": [
+        3.6,
+        13.8,
+        -2.0
+      ]
+    },
+    {
+      "name": "rear_far_lower",
+      "parent": "rear_far_upper",
+      "pivot": [
+        3.6,
+        7.3,
+        -3.6
+      ]
+    },
+    {
+      "name": "rear_far_paw",
+      "parent": "rear_far_lower",
+      "pivot": [
+        3.6,
+        2.4,
+        -2.8
+      ]
+    },
+    {
+      "name": "front_near_upper",
+      "parent": "chest",
+      "pivot": [
+        -4.5,
+        20.0,
+        8.0
+      ]
+    },
+    {
+      "name": "front_near_lower",
+      "parent": "front_near_upper",
+      "pivot": [
+        -4.6,
+        11.8,
+        10.2
+      ]
+    },
+    {
+      "name": "front_near_paw",
+      "parent": "front_near_lower",
+      "pivot": [
+        -4.2,
+        5.0,
+        7.8
+      ]
+    },
+    {
+      "name": "front_far_upper",
+      "parent": "chest",
+      "pivot": [
+        4.5,
+        20.0,
+        9.0
+      ]
+    },
+    {
+      "name": "front_far_lower",
+      "parent": "front_far_upper",
+      "pivot": [
+        4.6,
+        11.8,
+        11.0
+      ]
+    },
+    {
+      "name": "front_far_paw",
+      "parent": "front_far_lower",
+      "pivot": [
+        4.2,
+        5.0,
+        11.8
+      ]
+    },
+    {
+      "name": "horn_near_base",
+      "parent": "head",
+      "pivot": [
+        -4.5,
+        27.0,
+        14.0
+      ]
+    },
+    {
+      "name": "horn_near_mid",
+      "parent": "horn_near_base",
+      "pivot": [
+        -7.0,
+        30.0,
+        14.0
+      ]
+    },
+    {
+      "name": "horn_near_curve",
+      "parent": "horn_near_mid",
+      "pivot": [
+        -10.8,
+        30.0,
+        15.5
+      ]
+    },
+    {
+      "name": "horn_near_return",
+      "parent": "horn_near_curve",
+      "pivot": [
+        -11.3,
+        28.0,
+        18.5
+      ]
+    },
+    {
+      "name": "horn_near_tip",
+      "parent": "horn_near_return",
+      "pivot": [
+        -10.8,
+        27.5,
+        20.8
+      ]
+    },
+    {
+      "name": "horn_far_base",
+      "parent": "head",
+      "pivot": [
+        4.5,
+        27.0,
+        14.0
+      ]
+    },
+    {
+      "name": "horn_far_mid",
+      "parent": "horn_far_base",
+      "pivot": [
+        7.0,
+        30.0,
+        14.0
+      ]
+    },
+    {
+      "name": "horn_far_curve",
+      "parent": "horn_far_mid",
+      "pivot": [
+        10.8,
+        30.0,
+        15.5
+      ]
+    },
+    {
+      "name": "horn_far_return",
+      "parent": "horn_far_curve",
+      "pivot": [
+        11.3,
+        28.0,
+        18.5
+      ]
+    },
+    {
+      "name": "horn_far_tip",
+      "parent": "horn_far_return",
+      "pivot": [
+        10.8,
+        27.5,
+        20.8
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 1.62,
+    "height": 2.05,
+    "width": 1.05
+  },
+  "cubes": [
+    {
+      "bone": "body",
+      "center": [
+        0,
+        14.9,
+        0.8
+      ],
+      "faces": {},
+      "material": "burgundy_fur",
+      "name": "torso_core",
+      "origin": [
+        0,
+        14.9,
+        0.8
+      ],
+      "role": "barrel torso",
+      "rotation": [
+        -22,
+        0,
+        0
+      ],
+      "size": [
+        9,
+        9,
+        5.4
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        18.0,
+        4.4
+      ],
+      "faces": {},
+      "material": "burgundy_fur",
+      "name": "ribcage",
+      "origin": [
+        0,
+        18.0,
+        4.4
+      ],
+      "role": "deep ribcage",
+      "rotation": [
+        -28,
+        0,
+        0
+      ],
+      "size": [
+        11.5,
+        12.5,
+        5
+      ]
+    },
+    {
+      "bone": "pelvis",
+      "center": [
+        0,
+        12.0,
+        -3.0
+      ],
+      "faces": {},
+      "material": "deep_burgundy",
+      "name": "pelvis_mass",
+      "origin": [
+        0,
+        12.0,
+        -3.0
+      ],
+      "role": "rounded pelvis",
+      "rotation": [
+        -26,
+        0,
+        0
+      ],
+      "size": [
+        7.5,
+        7,
+        4.8
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        11.4,
+        1.3
+      ],
+      "faces": {},
+      "material": "belly_gray",
+      "name": "belly",
+      "origin": [
+        0,
+        11.4,
+        1.3
+      ],
+      "role": "gray belly",
+      "rotation": [
+        -16,
+        0,
+        0
+      ],
+      "size": [
+        8,
+        4,
+        5
+      ]
+    },
+    {
+      "bone": "chest",
+      "center": [
+        0,
+        20.8,
+        8.1
+      ],
+      "faces": {},
+      "material": "burgundy_fur",
+      "name": "shoulder_mass",
+      "origin": [
+        0,
+        20.8,
+        8.1
+      ],
+      "role": "powerful shoulders",
+      "rotation": [
+        -28,
+        0,
+        0
+      ],
+      "size": [
+        15.5,
+        17,
+        6
+      ]
+    },
+    {
+      "bone": "neck",
+      "center": [
+        0,
+        22.0,
+        11.5
+      ],
+      "faces": {},
+      "material": "green_skin",
+      "name": "neck_core",
+      "origin": [
+        0,
+        22.0,
+        11.5
+      ],
+      "role": "upright neck",
+      "rotation": [
+        -16,
+        0,
+        0
+      ],
+      "size": [
+        10.5,
+        7.5,
+        5.5
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        24.2,
+        14.5
+      ],
+      "faces": {},
+      "material": "green_skin",
+      "name": "head_cranium",
+      "origin": [
+        0,
+        24.2,
+        14.5
+      ],
+      "role": "green cranium",
+      "rotation": [
+        -10,
+        0,
+        0
+      ],
+      "size": [
+        6.8,
+        5.8,
+        6
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        25.1,
+        18.0
+      ],
+      "faces": {},
+      "material": "dark_green",
+      "name": "brow",
+      "origin": [
+        0,
+        25.1,
+        18.0
+      ],
+      "role": "heavy brow",
+      "rotation": [
+        -12,
+        0,
+        0
+      ],
+      "size": [
+        8.2,
+        2.6,
+        2.8
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        22.1,
+        19.5
+      ],
+      "faces": {},
+      "material": "green_skin",
+      "name": "muzzle",
+      "origin": [
+        0,
+        22.1,
+        19.5
+      ],
+      "role": "broad muzzle",
+      "rotation": [
+        -14,
+        0,
+        0
+      ],
+      "size": [
+        5.3,
+        3,
+        2.8
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        0,
+        20.5,
+        19.2
+      ],
+      "faces": {},
+      "material": "green_skin",
+      "name": "jaw",
+      "origin": [
+        0,
+        20.5,
+        19.2
+      ],
+      "role": "attached jaw",
+      "rotation": [
+        -8,
+        0,
+        0
+      ],
+      "size": [
+        5,
+        2.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        0,
+        20.6,
+        20.9
+      ],
+      "faces": {},
+      "material": "mouth_red",
+      "name": "mouth",
+      "origin": [
+        0,
+        20.6,
+        20.9
+      ],
+      "role": "open red mouth",
+      "rotation": [
+        -8,
+        0,
+        0
+      ],
+      "size": [
+        4.6,
+        2.2,
+        0.7
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        23.0,
+        21.0
+      ],
+      "faces": {},
+      "material": "nose_dark",
+      "name": "nose",
+      "origin": [
+        0,
+        23.0,
+        21.0
+      ],
+      "role": "dark nose",
+      "rotation": [
+        -14,
+        0,
+        0
+      ],
+      "size": [
+        3.8,
+        1.8,
+        0.9
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -4.7,
+        25,
+        11.5
+      ],
+      "faces": {},
+      "material": "green_skin",
+      "name": "left_ear",
+      "origin": [
+        -4.7,
+        25,
+        11.5
+      ],
+      "role": "near ear",
+      "rotation": [
+        18,
+        0,
+        -8
+      ],
+      "size": [
+        2.2,
+        4,
+        2
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        4.7,
+        25,
+        11.5
+      ],
+      "faces": {},
+      "material": "green_skin",
+      "name": "right_ear",
+      "origin": [
+        4.7,
+        25,
+        11.5
+      ],
+      "role": "far ear",
+      "rotation": [
+        18,
+        0,
+        8
+      ],
+      "size": [
+        2.2,
+        4,
+        2
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        0,
+        25.0,
+        5.5
+      ],
+      "faces": {},
+      "material": "gold_mane",
+      "name": "mane_back",
+      "origin": [
+        0,
+        25.0,
+        5.5
+      ],
+      "role": "rear mane volume",
+      "rotation": [
+        22,
+        0,
+        0
+      ],
+      "size": [
+        9,
+        5.2,
+        4.2
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        0,
+        22.2,
+        9.0
+      ],
+      "faces": {},
+      "material": "gold_mane",
+      "name": "mane_shoulder",
+      "origin": [
+        0,
+        22.2,
+        9.0
+      ],
+      "role": "shoulder mane volume",
+      "rotation": [
+        -18,
+        0,
+        0
+      ],
+      "size": [
+        10.8,
+        6.2,
+        4.5
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        0,
+        28.3,
+        11.0
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_crown",
+      "origin": [
+        0,
+        28.3,
+        11.0
+      ],
+      "role": "crown mane",
+      "rotation": [
+        -18,
+        0,
+        0
+      ],
+      "size": [
+        8,
+        4.4,
+        4
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        -6.1,
+        21.0,
+        15.0
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_near_cheek",
+      "origin": [
+        -6.1,
+        21.0,
+        15.0
+      ],
+      "role": "near cheek mane",
+      "rotation": [
+        -24,
+        0,
+        -28
+      ],
+      "size": [
+        2.8,
+        7.2,
+        3.6
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        6.1,
+        21.0,
+        15.0
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_far_cheek",
+      "origin": [
+        6.1,
+        21.0,
+        15.0
+      ],
+      "role": "far cheek mane",
+      "rotation": [
+        -24,
+        0,
+        28
+      ],
+      "size": [
+        2.8,
+        7.2,
+        3.6
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        0,
+        15.8,
+        16.2
+      ],
+      "faces": {},
+      "material": "gold_mane",
+      "name": "mane_beard",
+      "origin": [
+        0,
+        15.8,
+        16.2
+      ],
+      "role": "mane beard",
+      "rotation": [
+        -28,
+        0,
+        0
+      ],
+      "size": [
+        5.4,
+        5.2,
+        2.8
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        0,
+        14.0,
+        13.0
+      ],
+      "faces": {},
+      "material": "gold_mane",
+      "name": "mane_chest",
+      "origin": [
+        0,
+        14.0,
+        13.0
+      ],
+      "role": "lower chest mane",
+      "rotation": [
+        -30,
+        0,
+        0
+      ],
+      "size": [
+        7.2,
+        5.2,
+        3.6
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        0,
+        31.0,
+        9.5
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_spike_high",
+      "origin": [
+        0,
+        31.0,
+        9.5
+      ],
+      "role": "high crown flame",
+      "rotation": [
+        -24,
+        0,
+        0
+      ],
+      "size": [
+        5,
+        5,
+        4
+      ]
+    },
+    {
+      "bone": "horn_near_base",
+      "center": [
+        -5.75,
+        28.5,
+        14.0
+      ],
+      "faces": {},
+      "material": "horn_brown",
+      "name": "horn_near_base",
+      "origin": [
+        -5.75,
+        28.5,
+        14.0
+      ],
+      "role": "near horn base",
+      "rotation": [
+        0,
+        0,
+        39.8
+      ],
+      "size": [
+        3.7,
+        4.4,
+        3.7
+      ]
+    },
+    {
+      "bone": "horn_near_mid",
+      "center": [
+        -8.9,
+        30.0,
+        14.75
+      ],
+      "faces": {},
+      "material": "horn_brown",
+      "name": "horn_near_mid",
+      "origin": [
+        -8.9,
+        30.0,
+        14.75
+      ],
+      "role": "near horn upper outward sweep",
+      "rotation": [
+        21.5,
+        0,
+        90.0
+      ],
+      "size": [
+        3.0,
+        4.6,
+        3.0
+      ]
+    },
+    {
+      "bone": "horn_near_curve",
+      "center": [
+        -11.05,
+        29.0,
+        17.0
+      ],
+      "faces": {},
+      "material": "horn_brown",
+      "name": "horn_near_curve",
+      "origin": [
+        -11.05,
+        29.0,
+        17.0
+      ],
+      "role": "near horn descending curve",
+      "rotation": [
+        55.5,
+        0,
+        166.0
+      ],
+      "size": [
+        2.3,
+        4.1,
+        2.3
+      ]
+    },
+    {
+      "bone": "horn_near_return",
+      "center": [
+        -11.05,
+        27.75,
+        19.65
+      ],
+      "faces": {},
+      "material": "horn_brown",
+      "name": "horn_near_return",
+      "origin": [
+        -11.05,
+        27.75,
+        19.65
+      ],
+      "role": "near horn lower return",
+      "rotation": [
+        72.9,
+        0,
+        -135.0
+      ],
+      "size": [
+        1.7,
+        2.9,
+        1.7
+      ]
+    },
+    {
+      "bone": "horn_near_tip",
+      "center": [
+        -10.3,
+        28.35,
+        22.15
+      ],
+      "faces": {},
+      "material": "horn_tip",
+      "name": "horn_near_tip",
+      "origin": [
+        -10.3,
+        28.35,
+        22.15
+      ],
+      "role": "near horn inward ivory tip",
+      "rotation": [
+        53.9,
+        0,
+        -30.5
+      ],
+      "size": [
+        1.1,
+        3.8,
+        1.1
+      ]
+    },
+    {
+      "bone": "horn_far_base",
+      "center": [
+        5.75,
+        28.5,
+        14.0
+      ],
+      "faces": {},
+      "material": "horn_brown",
+      "name": "horn_far_base",
+      "origin": [
+        5.75,
+        28.5,
+        14.0
+      ],
+      "role": "far horn base",
+      "rotation": [
+        0,
+        0,
+        -39.8
+      ],
+      "size": [
+        3.7,
+        4.4,
+        3.7
+      ]
+    },
+    {
+      "bone": "horn_far_mid",
+      "center": [
+        8.9,
+        30.0,
+        14.75
+      ],
+      "faces": {},
+      "material": "horn_brown",
+      "name": "horn_far_mid",
+      "origin": [
+        8.9,
+        30.0,
+        14.75
+      ],
+      "role": "far horn upper outward sweep",
+      "rotation": [
+        21.5,
+        0,
+        -90.0
+      ],
+      "size": [
+        3.0,
+        4.6,
+        3.0
+      ]
+    },
+    {
+      "bone": "horn_far_curve",
+      "center": [
+        11.05,
+        29.0,
+        17.0
+      ],
+      "faces": {},
+      "material": "horn_brown",
+      "name": "horn_far_curve",
+      "origin": [
+        11.05,
+        29.0,
+        17.0
+      ],
+      "role": "far horn descending curve",
+      "rotation": [
+        55.5,
+        0,
+        -166.0
+      ],
+      "size": [
+        2.3,
+        4.1,
+        2.3
+      ]
+    },
+    {
+      "bone": "horn_far_return",
+      "center": [
+        11.05,
+        27.75,
+        19.65
+      ],
+      "faces": {},
+      "material": "horn_brown",
+      "name": "horn_far_return",
+      "origin": [
+        11.05,
+        27.75,
+        19.65
+      ],
+      "role": "far horn lower return",
+      "rotation": [
+        72.9,
+        0,
+        135.0
+      ],
+      "size": [
+        1.7,
+        2.9,
+        1.7
+      ]
+    },
+    {
+      "bone": "horn_far_tip",
+      "center": [
+        10.3,
+        28.35,
+        22.15
+      ],
+      "faces": {},
+      "material": "horn_tip",
+      "name": "horn_far_tip",
+      "origin": [
+        10.3,
+        28.35,
+        22.15
+      ],
+      "role": "far horn inward ivory tip",
+      "rotation": [
+        53.9,
+        0,
+        30.5
+      ],
+      "size": [
+        1.1,
+        3.8,
+        1.1
+      ]
+    },
+    {
+      "bone": "rear_near_upper",
+      "center": [
+        -3.6,
+        10.3,
+        -4.8
+      ],
+      "faces": {},
+      "material": "burgundy_fur",
+      "name": "rear_near_upper",
+      "origin": [
+        -3.6,
+        10.3,
+        -4.8
+      ],
+      "role": "rear_near upper leg",
+      "rotation": [
+        28,
+        0,
+        0
+      ],
+      "size": [
+        3.8,
+        6.5,
+        3.6
+      ]
+    },
+    {
+      "bone": "rear_near_lower",
+      "center": [
+        -3.6,
+        5.1,
+        -5.8
+      ],
+      "faces": {},
+      "material": "burgundy_fur",
+      "name": "rear_near_lower",
+      "origin": [
+        -3.6,
+        5.1,
+        -5.8
+      ],
+      "role": "rear_near lower leg",
+      "rotation": [
+        -35,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        5.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "rear_near_paw",
+      "center": [
+        -3.6,
+        1.25,
+        -4.6
+      ],
+      "faces": {},
+      "material": "burgundy_fur",
+      "name": "rear_near_paw",
+      "origin": [
+        -3.6,
+        1.25,
+        -4.6
+      ],
+      "role": "rear_near attached paw",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.6,
+        2.5,
+        3
+      ]
+    },
+    {
+      "bone": "rear_far_upper",
+      "center": [
+        3.6,
+        10.3,
+        -2.6
+      ],
+      "faces": {},
+      "material": "burgundy_fur",
+      "name": "rear_far_upper",
+      "origin": [
+        3.6,
+        10.3,
+        -2.6
+      ],
+      "role": "rear_far upper leg",
+      "rotation": [
+        28,
+        0,
+        0
+      ],
+      "size": [
+        3.8,
+        6.5,
+        3.6
+      ]
+    },
+    {
+      "bone": "rear_far_lower",
+      "center": [
+        3.6,
+        5.1,
+        -3.6
+      ],
+      "faces": {},
+      "material": "burgundy_fur",
+      "name": "rear_far_lower",
+      "origin": [
+        3.6,
+        5.1,
+        -3.6
+      ],
+      "role": "rear_far lower leg",
+      "rotation": [
+        -35,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        5.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "rear_far_paw",
+      "center": [
+        3.6,
+        1.25,
+        -2.4
+      ],
+      "faces": {},
+      "material": "burgundy_fur",
+      "name": "rear_far_paw",
+      "origin": [
+        3.6,
+        1.25,
+        -2.4
+      ],
+      "role": "rear_far attached paw",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.6,
+        2.5,
+        3
+      ]
+    },
+    {
+      "bone": "front_near_upper",
+      "center": [
+        -4.5,
+        15.3,
+        9.5
+      ],
+      "faces": {
+        "west": {
+          "source_texture": {
+            "center": [
+              0,
+              0
+            ],
+            "data_uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAWCAYAAAAb+hYkAAAAqElEQVR42mPssQz4z0AiYMIlUbwhmHRNDPw6xGuC2/DxChk24XEiEwMZgIkUG2DiRNuEbBDTi/fvGYo3BDO8eP+e4cX79xiK0cVfvH8PsanUfg5D98EUnLagyzGWaNj/xyaBDZTaz0H1E0wAGdxaM4lGQY5sG8wWbLYRbROygeQ579XP7wzION5iMlaFyGoI2qQWkkeen9BtJ8tPLLhMXngij7xMiAsAABBfTRQidIYaAAAAAElFTkSuQmCC",
+            "flip_y": true,
+            "offset": [
+              0,
+              0
+            ],
+            "repeat": [
+              1,
+              1
+            ],
+            "rotation": 0,
+            "wrap": [
+              1001,
+              1001
+            ]
+          }
+        }
+      },
+      "material": "deep_burgundy",
+      "name": "front_near_upper",
+      "origin": [
+        -4.5,
+        15.3,
+        9.5
+      ],
+      "role": "front_near upper leg",
+      "rotation": [
+        -10,
+        0,
+        -2
+      ],
+      "size": [
+        6.8,
+        11,
+        6.5
+      ]
+    },
+    {
+      "bone": "front_near_lower",
+      "center": [
+        -4.3,
+        8.4,
+        8.8
+      ],
+      "faces": {},
+      "material": "deep_burgundy",
+      "name": "front_near_lower",
+      "origin": [
+        -4.3,
+        8.4,
+        8.8
+      ],
+      "role": "front_near lower leg",
+      "rotation": [
+        8,
+        0,
+        3
+      ],
+      "size": [
+        5.7,
+        8.5,
+        5.5
+      ]
+    },
+    {
+      "bone": "front_near_paw",
+      "center": [
+        -4.1,
+        3.0,
+        6.0
+      ],
+      "faces": {},
+      "material": "deep_burgundy",
+      "name": "front_near_paw",
+      "origin": [
+        -4.1,
+        3.0,
+        6.0
+      ],
+      "role": "front_near attached paw",
+      "rotation": [
+        -12,
+        0,
+        -2
+      ],
+      "size": [
+        6.5,
+        4.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "front_far_upper",
+      "center": [
+        4.5,
+        15.3,
+        10.5
+      ],
+      "faces": {},
+      "material": "deep_burgundy",
+      "name": "front_far_upper",
+      "origin": [
+        4.5,
+        15.3,
+        10.5
+      ],
+      "role": "front_far upper leg",
+      "rotation": [
+        -10,
+        0,
+        2
+      ],
+      "size": [
+        6.8,
+        11,
+        6.5
+      ]
+    },
+    {
+      "bone": "front_far_lower",
+      "center": [
+        4.3,
+        8.4,
+        11.0
+      ],
+      "faces": {},
+      "material": "deep_burgundy",
+      "name": "front_far_lower",
+      "origin": [
+        4.3,
+        8.4,
+        11.0
+      ],
+      "role": "front_far lower leg",
+      "rotation": [
+        8,
+        0,
+        -3
+      ],
+      "size": [
+        5.7,
+        8.5,
+        5.5
+      ]
+    },
+    {
+      "bone": "front_far_paw",
+      "center": [
+        4.1,
+        3.0,
+        12.5
+      ],
+      "faces": {},
+      "material": "deep_burgundy",
+      "name": "front_far_paw",
+      "origin": [
+        4.1,
+        3.0,
+        12.5
+      ],
+      "role": "front_far attached paw",
+      "rotation": [
+        -12,
+        0,
+        2
+      ],
+      "size": [
+        6.5,
+        4.8,
+        3.2
+      ]
+    },
+    {
+      "bone": "rear_near_paw",
+      "center": [
+        -4.5,
+        0.65,
+        -2.8
+      ],
+      "faces": {},
+      "material": "claw_ivory",
+      "name": "rear_near_claw_1",
+      "origin": [
+        -4.5,
+        0.65,
+        -2.8
+      ],
+      "role": "rear_near claw",
+      "rotation": [
+        0,
+        0,
+        -8
+      ],
+      "size": [
+        0.8,
+        1.0,
+        1.4
+      ]
+    },
+    {
+      "bone": "rear_near_paw",
+      "center": [
+        -2.7,
+        0.65,
+        -2.8
+      ],
+      "faces": {},
+      "material": "claw_ivory",
+      "name": "rear_near_claw_2",
+      "origin": [
+        -2.7,
+        0.65,
+        -2.8
+      ],
+      "role": "rear_near claw",
+      "rotation": [
+        0,
+        0,
+        -8
+      ],
+      "size": [
+        0.8,
+        1.0,
+        1.4
+      ]
+    },
+    {
+      "bone": "rear_far_paw",
+      "center": [
+        2.7,
+        0.65,
+        -0.5999999999999996
+      ],
+      "faces": {},
+      "material": "claw_ivory",
+      "name": "rear_far_claw_1",
+      "origin": [
+        2.7,
+        0.65,
+        -0.5999999999999996
+      ],
+      "role": "rear_far claw",
+      "rotation": [
+        0,
+        0,
+        -8
+      ],
+      "size": [
+        0.8,
+        1.0,
+        1.4
+      ]
+    },
+    {
+      "bone": "rear_far_paw",
+      "center": [
+        4.5,
+        0.65,
+        -0.5999999999999996
+      ],
+      "faces": {},
+      "material": "claw_ivory",
+      "name": "rear_far_claw_2",
+      "origin": [
+        4.5,
+        0.65,
+        -0.5999999999999996
+      ],
+      "role": "rear_far claw",
+      "rotation": [
+        0,
+        0,
+        -8
+      ],
+      "size": [
+        0.8,
+        1.0,
+        1.4
+      ]
+    },
+    {
+      "bone": "front_near_paw",
+      "center": [
+        -5.35,
+        0.65,
+        8.2
+      ],
+      "faces": {},
+      "material": "claw_ivory",
+      "name": "front_near_claw_1",
+      "origin": [
+        -5.35,
+        0.65,
+        8.2
+      ],
+      "role": "front_near claw",
+      "rotation": [
+        0,
+        0,
+        -8
+      ],
+      "size": [
+        1.0,
+        1.1,
+        1.6
+      ]
+    },
+    {
+      "bone": "front_near_paw",
+      "center": [
+        -2.8499999999999996,
+        0.65,
+        8.2
+      ],
+      "faces": {},
+      "material": "claw_ivory",
+      "name": "front_near_claw_2",
+      "origin": [
+        -2.8499999999999996,
+        0.65,
+        8.2
+      ],
+      "role": "front_near claw",
+      "rotation": [
+        0,
+        0,
+        -8
+      ],
+      "size": [
+        1.0,
+        1.1,
+        1.6
+      ]
+    },
+    {
+      "bone": "front_far_paw",
+      "center": [
+        2.8499999999999996,
+        0.65,
+        13.399999999999999
+      ],
+      "faces": {},
+      "material": "claw_ivory",
+      "name": "front_far_claw_1",
+      "origin": [
+        2.8499999999999996,
+        0.65,
+        13.399999999999999
+      ],
+      "role": "front_far claw",
+      "rotation": [
+        0,
+        0,
+        -8
+      ],
+      "size": [
+        1.0,
+        1.1,
+        1.6
+      ]
+    },
+    {
+      "bone": "front_far_paw",
+      "center": [
+        5.35,
+        0.65,
+        13.399999999999999
+      ],
+      "faces": {},
+      "material": "claw_ivory",
+      "name": "front_far_claw_2",
+      "origin": [
+        5.35,
+        0.65,
+        13.399999999999999
+      ],
+      "role": "front_far claw",
+      "rotation": [
+        0,
+        0,
+        -8
+      ],
+      "size": [
+        1.0,
+        1.1,
+        1.6
+      ]
+    },
+    {
+      "bone": "tail_base",
+      "center": [
+        0,
+        13.5,
+        -6.2
+      ],
+      "faces": {},
+      "material": "burgundy_fur",
+      "name": "tail_base",
+      "origin": [
+        0,
+        13.0,
+        -5.4
+      ],
+      "role": "attached tail base",
+      "rotation": [
+        22,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        3,
+        3
+      ]
+    },
+    {
+      "bone": "tail_base",
+      "center": [
+        0.2,
+        14.2,
+        -7.5
+      ],
+      "faces": {},
+      "material": "burgundy_fur",
+      "name": "tail_mid",
+      "origin": [
+        0,
+        13.7,
+        -6.7
+      ],
+      "role": "short tail middle",
+      "rotation": [
+        26,
+        -8,
+        0
+      ],
+      "size": [
+        2.5,
+        2.3,
+        2.5
+      ]
+    },
+    {
+      "bone": "tail_tip",
+      "center": [
+        0.4,
+        14.7,
+        -8.5
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "tail_tip",
+      "origin": [
+        0.2,
+        14.4,
+        -7.7
+      ],
+      "role": "gold tail tip",
+      "rotation": [
+        20,
+        -10,
+        0
+      ],
+      "size": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -1.5,
+        20.5,
+        21.1
+      ],
+      "faces": {},
+      "material": "tooth_ivory",
+      "name": "upper_left_fang",
+      "origin": [
+        -1.5,
+        20.5,
+        21.1
+      ],
+      "role": "upper near fang",
+      "rotation": [
+        0,
+        0,
+        -6
+      ],
+      "size": [
+        1.0,
+        2.8,
+        0.8
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        1.5,
+        20.5,
+        21.1
+      ],
+      "faces": {},
+      "material": "tooth_ivory",
+      "name": "upper_right_fang",
+      "origin": [
+        1.5,
+        20.5,
+        21.1
+      ],
+      "role": "upper far fang",
+      "rotation": [
+        0,
+        0,
+        6
+      ],
+      "size": [
+        1.0,
+        2.8,
+        0.8
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        -3.2,
+        29.5,
+        10.0
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_crown_near_flame",
+      "origin": [
+        -3.2,
+        28.2,
+        10.0
+      ],
+      "role": "near crown flame tuft",
+      "rotation": [
+        12,
+        0,
+        -20
+      ],
+      "size": [
+        2.5,
+        4.5,
+        2.7
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        3.2,
+        29.5,
+        10.0
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_crown_far_flame",
+      "origin": [
+        3.2,
+        28.2,
+        10.0
+      ],
+      "role": "far crown flame tuft",
+      "rotation": [
+        12,
+        0,
+        20
+      ],
+      "size": [
+        2.5,
+        4.5,
+        2.7
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        0,
+        27,
+        4.5
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_rear_flame",
+      "origin": [
+        0,
+        25.8,
+        5
+      ],
+      "role": "rear mane flame tuft",
+      "rotation": [
+        18,
+        0,
+        0
+      ],
+      "size": [
+        3.6,
+        4.5,
+        2.7
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        0,
+        12.5,
+        16.2
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_beard_tip",
+      "origin": [
+        0,
+        13.8,
+        15.8
+      ],
+      "role": "lower beard flame tuft",
+      "rotation": [
+        -18,
+        0,
+        0
+      ],
+      "size": [
+        2.7,
+        4,
+        2.3
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        -6.7,
+        24.8,
+        6
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_near_rear_tuft",
+      "origin": [
+        -6.1,
+        22.8,
+        6.5
+      ],
+      "role": "near swept rear mane tuft",
+      "rotation": [
+        25,
+        0,
+        -24
+      ],
+      "size": [
+        2.7,
+        6.2,
+        3.2
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        6.7,
+        24.8,
+        6
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_far_rear_tuft",
+      "origin": [
+        6.1,
+        22.8,
+        6.5
+      ],
+      "role": "far swept rear mane tuft",
+      "rotation": [
+        25,
+        0,
+        24
+      ],
+      "size": [
+        2.7,
+        6.2,
+        3.2
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        -6.3,
+        17.0,
+        15.2
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_near_lower_tuft",
+      "origin": [
+        -5.7,
+        18.8,
+        14.5
+      ],
+      "role": "near lower mane tuft",
+      "rotation": [
+        -30,
+        0,
+        -20
+      ],
+      "size": [
+        2.7,
+        5.4,
+        2.7
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        6.3,
+        17.0,
+        15.2
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_far_lower_tuft",
+      "origin": [
+        5.7,
+        18.8,
+        14.5
+      ],
+      "role": "far lower mane tuft",
+      "rotation": [
+        -30,
+        0,
+        20
+      ],
+      "size": [
+        2.7,
+        5.4,
+        2.7
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        -3.6,
+        27.5,
+        7.0
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_near_crown_tuft",
+      "origin": [
+        -3.6,
+        26.2,
+        7.5
+      ],
+      "role": "near rear crown tuft",
+      "rotation": [
+        18,
+        0,
+        -18
+      ],
+      "size": [
+        2.7,
+        5,
+        2.7
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        3.6,
+        27.5,
+        7.0
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_far_crown_tuft",
+      "origin": [
+        3.6,
+        26.2,
+        7.5
+      ],
+      "role": "far rear crown tuft",
+      "rotation": [
+        18,
+        0,
+        18
+      ],
+      "size": [
+        2.7,
+        5,
+        2.7
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        -7.4,
+        22.3,
+        11.5
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_near_shoulder_flame",
+      "origin": [
+        -6.6,
+        20.2,
+        10.5
+      ],
+      "role": "near shoulder flame tuft",
+      "rotation": [
+        28,
+        0,
+        -26
+      ],
+      "size": [
+        2.7,
+        7.2,
+        3.6
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        7.4,
+        22.3,
+        11.5
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_far_shoulder_flame",
+      "origin": [
+        6.6,
+        20.2,
+        10.5
+      ],
+      "role": "far shoulder flame tuft",
+      "rotation": [
+        28,
+        0,
+        26
+      ],
+      "size": [
+        2.7,
+        7.2,
+        3.6
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        -6.7,
+        14.5,
+        14.0
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_near_chest_flame",
+      "origin": [
+        -5.9,
+        16.2,
+        13.5
+      ],
+      "role": "near chest flame tuft",
+      "rotation": [
+        -30,
+        0,
+        -24
+      ],
+      "size": [
+        2.7,
+        5.4,
+        3.2
+      ]
+    },
+    {
+      "bone": "mane",
+      "center": [
+        6.7,
+        14.5,
+        14.0
+      ],
+      "faces": {},
+      "material": "flame_tip",
+      "name": "mane_far_chest_flame",
+      "origin": [
+        5.9,
+        16.2,
+        13.5
+      ],
+      "role": "far chest flame tuft",
+      "rotation": [
+        -30,
+        0,
+        24
+      ],
+      "size": [
+        2.7,
+        5.4,
+        3.2
+      ]
+    },
+    {
+      "bone": "chest",
+      "center": [
+        -5.2,
+        19.0,
+        7.8
+      ],
+      "faces": {},
+      "material": "burgundy_fur",
+      "name": "shoulder_near_cap",
+      "origin": [
+        -5.2,
+        19.0,
+        7.8
+      ],
+      "role": "massive near shoulder cap",
+      "rotation": [
+        -20,
+        0,
+        -10
+      ],
+      "size": [
+        6.2,
+        10.5,
+        6.5
+      ]
+    },
+    {
+      "bone": "chest",
+      "center": [
+        5.2,
+        19.0,
+        7.8
+      ],
+      "faces": {},
+      "material": "burgundy_fur",
+      "name": "shoulder_far_cap",
+      "origin": [
+        5.2,
+        19.0,
+        7.8
+      ],
+      "role": "massive far shoulder cap",
+      "rotation": [
+        -20,
+        0,
+        10
+      ],
+      "size": [
+        6.2,
+        10.5,
+        6.5
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -3.0,
+        21.8,
+        19.3
+      ],
+      "faces": {},
+      "material": "green_skin",
+      "name": "green_near_cheek",
+      "origin": [
+        -3.0,
+        22.3,
+        18.5
+      ],
+      "role": "near sculpted green cheek",
+      "rotation": [
+        -10,
+        0,
+        -10
+      ],
+      "size": [
+        2.2,
+        4,
+        2.8
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        3.0,
+        21.8,
+        19.3
+      ],
+      "faces": {},
+      "material": "green_skin",
+      "name": "green_far_cheek",
+      "origin": [
+        3.0,
+        22.3,
+        18.5
+      ],
+      "role": "far sculpted green cheek",
+      "rotation": [
+        -10,
+        0,
+        10
+      ],
+      "size": [
+        2.2,
+        4,
+        2.8
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -1.2,
+        19.8,
+        20.8
+      ],
+      "faces": {},
+      "material": "tooth_ivory",
+      "name": "lower_left_fang",
+      "origin": [
+        -1.2,
+        20.3,
+        20.5
+      ],
+      "role": "lower near fang",
+      "rotation": [
+        0,
+        0,
+        5
+      ],
+      "size": [
+        0.8,
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        1.2,
+        19.8,
+        20.8
+      ],
+      "faces": {},
+      "material": "tooth_ivory",
+      "name": "lower_right_fang",
+      "origin": [
+        1.2,
+        20.3,
+        20.5
+      ],
+      "role": "lower far fang",
+      "rotation": [
+        0,
+        0,
+        -5
+      ],
+      "size": [
+        0.8,
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "bone": "front_near_paw",
+      "center": [
+        -4.1,
+        0.7,
+        7.4
+      ],
+      "faces": {},
+      "material": "deep_burgundy",
+      "name": "front_near_paw_pad",
+      "origin": [
+        -4.1,
+        0.7,
+        7.4
+      ],
+      "role": "near front paw pad",
+      "rotation": [
+        0,
+        -5,
+        0
+      ],
+      "size": [
+        5.8,
+        1.4,
+        1.8
+      ]
+    },
+    {
+      "bone": "front_far_paw",
+      "center": [
+        4.1,
+        0.7,
+        13.9
+      ],
+      "faces": {},
+      "material": "deep_burgundy",
+      "name": "front_far_paw_pad",
+      "origin": [
+        4.1,
+        0.7,
+        13.9
+      ],
+      "role": "far front paw pad",
+      "rotation": [
+        0,
+        5,
+        0
+      ],
+      "size": [
+        5.8,
+        1.4,
+        1.8
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        -4.56,
+        14.9,
+        0.8
+      ],
+      "faces": {
+        "west": {
+          "source_texture": {
+            "center": [
+              0,
+              0
+            ],
+            "data_uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAOCAYAAAAWo42rAAAAwElEQVR42mPcFJrxnwEJqDucZVALyWPYnHMUWZiBBZsiBn4dBt8pCPHNOUchCuEKGKwZGBgYGG7NTYMrgoijmcjAwMBwa80khpsHjJFEJjEwMBgzMKErRFWE4LMgrGVgmB22Fa4gdZU3Ch/D6tRV3hjs2WFbUa22D7uL4lZkcaaDq5RRBHEBFBNhbkVnMzAwMDA9/PKFgRjAhE0Qm1MYq4194HEdl/QSxcpbayYxLJonjmnionnicNOQFTEwMDAAAEaeQlLmz/PqAAAAAElFTkSuQmCC",
+            "flip_y": true,
+            "offset": [
+              0,
+              0
+            ],
+            "repeat": [
+              1,
+              1
+            ],
+            "rotation": 0,
+            "wrap": [
+              1001,
+              1001
+            ]
+          }
+        }
+      },
+      "material": "burgundy_fur",
+      "name": "rump_spiral_decal",
+      "origin": [
+        -4.56,
+        14.9,
+        0.8
+      ],
+      "role": "flush near-rump pixel texture decal",
+      "rotation": [
+        -22,
+        0,
+        0
+      ],
+      "size": [
+        0.1,
+        7.0,
+        4.6
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "reviewed-semantic-volume-with-flush-pixel-motifs-v8",
+    "anatomical_axis": "head along positive Z; bilateral width along X; Y up",
+    "lane": "agent-authored-semantic-hybrid",
+    "reference_view_direction": [
+      -1.0,
+      0.32,
+      0.6
+    ],
+    "semantic_parts": {
+      "attached_claws": 8,
+      "body_volumes": 8,
+      "fangs": 4,
+      "front_paw_pads": 2,
+      "head_and_face": 10,
+      "horn_segments": 10,
+      "limb_chains": 4,
+      "limb_segments_per_chain": 3,
+      "mane_volumes": 22,
+      "pixel_motif_faces": 2,
+      "surface_decal_cuboids": 1,
+      "tail_segments": 3
+    },
+    "source_facing_texture": {
+      "bilateral_landmarks": true,
+      "flush_motif_faces": [
+        "rump_spiral_decal/west",
+        "front_near_upper/west"
+      ],
+      "mask_sha256": "318a379a94a63e0faea5570ecd20d4ee4e75ff13b76ccfa6eb5910983202a721",
+      "method": "source-derived procedural palette with flush embedded pixel motifs",
+      "opaque_hidden_sides": true,
+      "semantic_side_regions_mirrored": false,
+      "silhouette_skin_cuboids": 0
+    },
+    "source_mesh": null,
+    "source_mesh_reason": "CADNav offers proprietary non-commercial .max only; no GLB/GLTF was used",
+    "source_view": "near side viewed primarily from negative X"
+  },
+  "geometry": {
+    "precision": 16
+  },
+  "id": "nian_beast",
+  "landmarks": [
+    {
+      "center_color": "#f2d35b",
+      "center_uv": [
+        0.72,
+        0.45
+      ],
+      "color": "#171215",
+      "cube": "head_cranium",
+      "face": "west",
+      "name": "near_eye",
+      "size": [
+        3,
+        3
+      ]
+    },
+    {
+      "center_color": "#f2d35b",
+      "center_uv": [
+        0.28,
+        0.45
+      ],
+      "color": "#171215",
+      "cube": "head_cranium",
+      "face": "east",
+      "name": "far_eye",
+      "size": [
+        3,
+        3
+      ]
+    },
+    {
+      "center_color": "#352429",
+      "center_uv": [
+        0.65,
+        0.5
+      ],
+      "color": "#09080a",
+      "cube": "nose",
+      "face": "west",
+      "name": "near_nostril",
+      "size": [
+        2,
+        1
+      ]
+    },
+    {
+      "center_color": "#352429",
+      "center_uv": [
+        0.35,
+        0.5
+      ],
+      "color": "#09080a",
+      "cube": "nose",
+      "face": "east",
+      "name": "far_nostril",
+      "size": [
+        2,
+        1
+      ]
+    },
+    {
+      "center_color": "#f2d35b",
+      "center_uv": [
+        0.28,
+        0.55
+      ],
+      "color": "#171215",
+      "cube": "brow",
+      "face": "south",
+      "name": "front_left_eye",
+      "size": [
+        3,
+        2
+      ]
+    },
+    {
+      "center_color": "#f2d35b",
+      "center_uv": [
+        0.72,
+        0.55
+      ],
+      "color": "#171215",
+      "cube": "brow",
+      "face": "south",
+      "name": "front_right_eye",
+      "size": [
+        3,
+        2
+      ]
+    },
+    {
+      "center_color": "#09080a",
+      "center_uv": [
+        0.32,
+        0.5
+      ],
+      "color": "#09080a",
+      "cube": "nose",
+      "face": "south",
+      "name": "front_left_nostril",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#09080a",
+      "center_uv": [
+        0.68,
+        0.5
+      ],
+      "color": "#09080a",
+      "cube": "nose",
+      "face": "south",
+      "name": "front_right_nostril",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#6e202b",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#241319",
+      "cube": "mouth",
+      "face": "south",
+      "name": "mouth_center",
+      "size": [
+        5,
+        2
+      ]
+    },
+    {
+      "center_color": "#f0d5ac",
+      "center_uv": [
+        0.52,
+        0.5
+      ],
+      "color": "#c99a72",
+      "cube": "horn_near_mid",
+      "face": "west",
+      "name": "horn_near_mid_cream_band",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#f0d5ac",
+      "center_uv": [
+        0.52,
+        0.5
+      ],
+      "color": "#c99a72",
+      "cube": "horn_near_curve",
+      "face": "west",
+      "name": "horn_near_curve_cream_band",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#f0d5ac",
+      "center_uv": [
+        0.52,
+        0.5
+      ],
+      "color": "#c99a72",
+      "cube": "horn_near_return",
+      "face": "west",
+      "name": "horn_near_return_cream_band",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#f0d5ac",
+      "center_uv": [
+        0.52,
+        0.5
+      ],
+      "color": "#c99a72",
+      "cube": "horn_far_mid",
+      "face": "east",
+      "name": "horn_far_mid_cream_band",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#f0d5ac",
+      "center_uv": [
+        0.52,
+        0.5
+      ],
+      "color": "#c99a72",
+      "cube": "horn_far_curve",
+      "face": "east",
+      "name": "horn_far_curve_cream_band",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#f0d5ac",
+      "center_uv": [
+        0.52,
+        0.5
+      ],
+      "color": "#c99a72",
+      "cube": "horn_far_return",
+      "face": "east",
+      "name": "horn_far_return_cream_band",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#13180f",
+      "center_uv": [
+        0.58,
+        0.48
+      ],
+      "color": "#26321b",
+      "cube": "brow",
+      "face": "west",
+      "name": "near_angry_brow",
+      "size": [
+        4,
+        1
+      ]
+    },
+    {
+      "center_color": "#13180f",
+      "center_uv": [
+        0.42,
+        0.48
+      ],
+      "color": "#26321b",
+      "cube": "brow",
+      "face": "east",
+      "name": "far_angry_brow",
+      "size": [
+        4,
+        1
+      ]
+    },
+    {
+      "center_color": "#29391d",
+      "center_uv": [
+        0.5,
+        0.62
+      ],
+      "color": "#526b31",
+      "cube": "green_near_cheek",
+      "face": "west",
+      "name": "near_cheek_shadow",
+      "size": [
+        2,
+        3
+      ]
+    },
+    {
+      "center_color": "#29391d",
+      "center_uv": [
+        0.5,
+        0.62
+      ],
+      "color": "#526b31",
+      "cube": "green_far_cheek",
+      "face": "east",
+      "name": "far_cheek_shadow",
+      "size": [
+        2,
+        3
+      ]
+    }
+  ],
+  "materials": {
+    "belly_gray": {
+      "base": "#777873",
+      "highlight": "#aaa99b",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#454943"
+    },
+    "burgundy_fur": {
+      "base": "#9a3f58",
+      "highlight": "#df7d87",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#421d35"
+    },
+    "claw_ivory": {
+      "base": "#e8d6ad",
+      "highlight": "#fff5d2",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#8d765e"
+    },
+    "cream_marking": {
+      "base": "#f4d68a",
+      "highlight": "#fff2b4",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#aa7542"
+    },
+    "dark_green": {
+      "base": "#526b31",
+      "highlight": "#879b50",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#29391d"
+    },
+    "deep_burgundy": {
+      "base": "#74283f",
+      "highlight": "#b85870",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#351324"
+    },
+    "flame_tip": {
+      "base": "#ffd447",
+      "highlight": "#fff08a",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#e86f22"
+    },
+    "gold_mane": {
+      "base": "#f0a62b",
+      "highlight": "#ffe064",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#c65d20"
+    },
+    "green_skin": {
+      "base": "#a9c45b",
+      "highlight": "#d9df83",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#566d32"
+    },
+    "horn_brown": {
+      "base": "#6c463f",
+      "highlight": "#c39a7d",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#382724"
+    },
+    "horn_tip": {
+      "base": "#d9b795",
+      "highlight": "#f5dcc0",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#725447"
+    },
+    "mouth_red": {
+      "base": "#8f3138",
+      "highlight": "#d55a58",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#43191e"
+    },
+    "nose_dark": {
+      "base": "#2c2427",
+      "highlight": "#5a4848",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#100d10"
+    },
+    "tooth_ivory": {
+      "base": "#f2e3ba",
+      "highlight": "#fff9df",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#a99572"
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "paired curled ram horns",
+      "golden flame mane and beard",
+      "green fanged face",
+      "cream spiral flank markings",
+      "four attached heavy legs and paws"
+    ],
+    "required_views": [
+      "reference-angle",
+      "front",
+      "back",
+      "left",
+      "right",
+      "top-profile",
+      "isometric",
+      "head-closeups",
+      "joint-closeup"
+    ],
+    "review_targets": [
+      "silhouette",
+      "anatomical volume",
+      "limb attachment",
+      "horn attachment",
+      "mane volume",
+      "texture continuity"
+    ],
+    "target_cuboids": [
+      75,
+      85
+    ]
+  },
+  "reference": {
+    "height": 480,
+    "image": "../../references/04-nian.jpg",
+    "sha256": "644faf9b0d58763d91daa70a6819c269451fa0e021852356556453758fc23d99",
+    "width": 640
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "Agent-authored volumetric Nian with golden mane, ram horns, fanged green face, spiral-marked burgundy body, and four grounded legs",
+    "symmetry": "bilateral",
+    "type": "mob",
+    "uncertainties": [
+      "The single source view does not reveal exact far-side markings",
+      "The proprietary source-page .max mesh was not used"
+    ]
+  },
+  "texture": {
+    "atlas_size": 512,
+    "density": 2,
+    "gutter": 1,
+    "palette_size": 32,
+    "quantize_source": true
+  }
+}

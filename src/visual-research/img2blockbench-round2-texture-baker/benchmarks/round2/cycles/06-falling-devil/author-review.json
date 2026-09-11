@@ -1,0 +1,45 @@
+{
+  "asset": "falling_devil_twelve_armed_chef",
+  "author_decision": "READY_FOR_INDEPENDENT_REVIEW",
+  "critical_geometry_defect_observed": false,
+  "cycle": "round2-06",
+  "identity_review": {
+    "all_six_arm_pairs_visible_across_review_views": true,
+    "black_sleeved_pairs_remain_distinct_in_depth": true,
+    "detached_head_and_four_support_hands_visible": true,
+    "foreground_tendril_is_not_presented_as_an_arm": true,
+    "model_reads_as_the_headless_falling_devil_chef": true,
+    "torso_and_skirt_have_substantial_side_depth": true
+  },
+  "limitations": [
+    "Only one frontal illustration is observed; rear materials and hidden arm-root ordering are inferred conservatively.",
+    "The source clips the feet, so footwear is plain inferred geometry rather than a source-backed identity feature.",
+    "The arm silhouettes are intentionally Minecraft-native cuboids and do not reproduce every drawn finger contour.",
+    "Static geometry was reviewed; no animation was authored or approved."
+  ],
+  "quantitative_checks": {
+    "all_77_declared_attachments_connected": true,
+    "all_four_head_support_contacts_touch": true,
+    "arm_depth_span": 16.966112,
+    "fixed_camera_iou": 0.700233,
+    "fixed_camera_keypoint_mean_error_subject_heights": 0.018635,
+    "six_arm_pairs": true,
+    "torso_depth_to_width": 0.564583,
+    "two_builds_byte_identical": true
+  },
+  "reviewed_views": [
+    "source-perspective.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "head-support-closeup.png",
+    "arm-layer-closeup.png",
+    "tendril-closeup.png",
+    "body-depth-closeup.png",
+    "perspective-silhouette-overlap.png",
+    "comparison-sheet.png"
+  ]
+}

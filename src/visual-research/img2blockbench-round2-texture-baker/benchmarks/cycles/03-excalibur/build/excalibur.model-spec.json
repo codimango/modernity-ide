@@ -1,0 +1,1645 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "sword",
+      "parent": "root",
+      "pivot": [
+        0,
+        14.5,
+        0
+      ]
+    },
+    {
+      "name": "blade",
+      "parent": "sword",
+      "pivot": [
+        0,
+        14.5,
+        0
+      ]
+    },
+    {
+      "name": "crest",
+      "parent": "blade",
+      "pivot": [
+        0,
+        19.25,
+        0
+      ]
+    },
+    {
+      "name": "guard",
+      "parent": "sword",
+      "pivot": [
+        0,
+        14.25,
+        0
+      ]
+    },
+    {
+      "name": "grip",
+      "parent": "sword",
+      "pivot": [
+        0,
+        13,
+        0
+      ]
+    },
+    {
+      "name": "pommel",
+      "parent": "grip",
+      "pivot": [
+        0,
+        1.15,
+        0
+      ]
+    },
+    {
+      "name": "left_quillon_1",
+      "parent": "guard",
+      "pivot": [
+        -1.45,
+        14.7,
+        0
+      ]
+    },
+    {
+      "name": "left_quillon_2",
+      "parent": "left_quillon_1",
+      "pivot": [
+        -3.85,
+        15.05,
+        0
+      ]
+    },
+    {
+      "name": "left_quillon_3",
+      "parent": "left_quillon_2",
+      "pivot": [
+        -5.75,
+        16.35,
+        0
+      ]
+    },
+    {
+      "name": "right_quillon_1",
+      "parent": "guard",
+      "pivot": [
+        1.4,
+        14.75,
+        0
+      ]
+    },
+    {
+      "name": "right_quillon_2",
+      "parent": "right_quillon_1",
+      "pivot": [
+        3.75,
+        15.55,
+        0
+      ]
+    },
+    {
+      "name": "right_quillon_3",
+      "parent": "right_quillon_2",
+      "pivot": [
+        5.55,
+        17.45,
+        0
+      ]
+    },
+    {
+      "name": "left_quillon_inlay_1",
+      "parent": "guard",
+      "pivot": [
+        -1.45,
+        14.7,
+        1.22
+      ]
+    },
+    {
+      "name": "left_quillon_inlay_2",
+      "parent": "left_quillon_inlay_1",
+      "pivot": [
+        -3.85,
+        15.05,
+        1.22
+      ]
+    },
+    {
+      "name": "left_quillon_inlay_3",
+      "parent": "left_quillon_inlay_2",
+      "pivot": [
+        -5.75,
+        16.35,
+        1.22
+      ]
+    },
+    {
+      "name": "right_quillon_inlay_1",
+      "parent": "guard",
+      "pivot": [
+        1.4,
+        14.75,
+        1.22
+      ]
+    },
+    {
+      "name": "right_quillon_inlay_2",
+      "parent": "right_quillon_inlay_1",
+      "pivot": [
+        3.75,
+        15.55,
+        1.22
+      ]
+    },
+    {
+      "name": "right_quillon_inlay_3",
+      "parent": "right_quillon_inlay_2",
+      "pivot": [
+        5.55,
+        17.45,
+        1.14
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 3.0,
+    "height": 3.75,
+    "width": 0.45
+  },
+  "cubes": [
+    {
+      "bone": "blade",
+      "center": [
+        0,
+        19.0,
+        0
+      ],
+      "faces": {
+        "north": {
+          "flip_x": true,
+          "material": "blade_face"
+        },
+        "south": {
+          "material": "blade_face"
+        }
+      },
+      "material": "blade_ivory",
+      "name": "blade_ricasso",
+      "origin": [
+        0,
+        19.0,
+        0
+      ],
+      "role": "broad ivory ricasso carrying the heraldic crest",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.8,
+        9.4,
+        1.7
+      ]
+    },
+    {
+      "bone": "blade",
+      "center": [
+        0,
+        29.2,
+        0
+      ],
+      "faces": {
+        "north": {
+          "material": "rune_reverse"
+        },
+        "south": {
+          "material": "rune_face"
+        }
+      },
+      "material": "blade_ivory",
+      "name": "blade_rune_field",
+      "origin": [
+        0,
+        29.2,
+        0
+      ],
+      "role": "long lower blade with readable authored rune column",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.35,
+        12.0,
+        1.58
+      ]
+    },
+    {
+      "bone": "blade",
+      "center": [
+        0,
+        40.3,
+        0
+      ],
+      "faces": {
+        "north": {
+          "flip_x": true,
+          "material": "blade_face"
+        },
+        "south": {
+          "material": "blade_face"
+        }
+      },
+      "material": "blade_ivory",
+      "name": "blade_middle",
+      "origin": [
+        0,
+        40.3,
+        0
+      ],
+      "role": "long gently narrowing blade middle",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.72,
+        10.8,
+        1.46
+      ]
+    },
+    {
+      "bone": "blade",
+      "center": [
+        0,
+        49.4,
+        0
+      ],
+      "faces": {
+        "north": {
+          "flip_x": true,
+          "material": "blade_face"
+        },
+        "south": {
+          "material": "blade_face"
+        }
+      },
+      "material": "blade_ivory",
+      "name": "blade_upper",
+      "origin": [
+        0,
+        49.4,
+        0
+      ],
+      "role": "slender upper blade before the converging point",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.08,
+        7.8,
+        1.34
+      ]
+    },
+    {
+      "bone": "blade",
+      "center": [
+        0,
+        56.1,
+        0
+      ],
+      "faces": {},
+      "material": "blade_face",
+      "name": "blade_tip_spine",
+      "origin": [
+        0,
+        56.1,
+        0
+      ],
+      "role": "narrow central spine ending in the blade point",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.08,
+        6.5,
+        1.16
+      ]
+    },
+    {
+      "bone": "blade",
+      "center": [
+        -1.28,
+        55.887839,
+        0
+      ],
+      "faces": {},
+      "material": "edge_metal",
+      "name": "blade_tip_left_edge",
+      "origin": [
+        -1.28,
+        52.95,
+        0
+      ],
+      "role": "converging left cutting edge forming a geometric point",
+      "rotation": [
+        0,
+        0,
+        -9.205824
+      ],
+      "size": [
+        1,
+        6.355679,
+        1.18
+      ]
+    },
+    {
+      "bone": "blade",
+      "center": [
+        1.28,
+        55.887839,
+        0
+      ],
+      "faces": {},
+      "material": "edge_metal",
+      "name": "blade_tip_right_edge",
+      "origin": [
+        1.28,
+        52.95,
+        0
+      ],
+      "role": "converging right cutting edge forming a geometric point",
+      "rotation": [
+        0,
+        0,
+        9.205824
+      ],
+      "size": [
+        1,
+        6.355679,
+        1.18
+      ]
+    },
+    {
+      "bone": "crest",
+      "center": [
+        0,
+        19.35,
+        0.91
+      ],
+      "faces": {},
+      "material": "crest_front",
+      "name": "raised_front_crest",
+      "origin": [
+        0,
+        19.35,
+        0.91
+      ],
+      "role": "raised transparent gold shield and navy flower crest on observed face",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.85,
+        6.05,
+        0.18
+      ]
+    },
+    {
+      "bone": "crest",
+      "center": [
+        0,
+        19.35,
+        -0.91
+      ],
+      "faces": {},
+      "material": "crest_back",
+      "name": "raised_back_crest",
+      "origin": [
+        0,
+        19.35,
+        -0.91
+      ],
+      "role": "authored gold shield and navy rune crest on inferred reverse face",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.85,
+        6.05,
+        0.18
+      ]
+    },
+    {
+      "bone": "crest",
+      "center": [
+        0,
+        20.0,
+        1.08
+      ],
+      "faces": {},
+      "material": "navy",
+      "name": "front_crest_gem",
+      "origin": [
+        0,
+        20.0,
+        1.08
+      ],
+      "role": "physical navy lozenge at the center of the front crest",
+      "rotation": [
+        0,
+        0,
+        28
+      ],
+      "size": [
+        0.92,
+        1.65,
+        0.22
+      ]
+    },
+    {
+      "bone": "guard",
+      "center": [
+        0,
+        14.35,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "guard_hub",
+      "origin": [
+        0,
+        14.35,
+        0
+      ],
+      "role": "thick gold hilt junction joining blade guard and grip",
+      "rotation": [
+        0,
+        0,
+        4
+      ],
+      "size": [
+        4.5,
+        2.75,
+        2.8
+      ]
+    },
+    {
+      "bone": "guard",
+      "center": [
+        0,
+        14.55,
+        1.5
+      ],
+      "faces": {},
+      "material": "navy",
+      "name": "guard_hub_gem",
+      "origin": [
+        0,
+        14.55,
+        1.5
+      ],
+      "role": "navy diamond at the structural hilt junction",
+      "rotation": [
+        0,
+        0,
+        45
+      ],
+      "size": [
+        1.35,
+        1.35,
+        0.24
+      ]
+    },
+    {
+      "bone": "left_quillon_1",
+      "center": [
+        -1.45,
+        15.912693,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "left_quillon_1",
+      "origin": [
+        -1.45,
+        14.7,
+        0
+      ],
+      "role": "broad left swept gold quillon segment 1",
+      "rotation": [
+        0,
+        0,
+        81.702855
+      ],
+      "size": [
+        2.75,
+        3.105387,
+        2.55
+      ]
+    },
+    {
+      "bone": "left_quillon_2",
+      "center": [
+        -3.85,
+        16.201086,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "left_quillon_2",
+      "origin": [
+        -3.85,
+        15.05,
+        0
+      ],
+      "role": "broad left swept gold quillon segment 2",
+      "rotation": [
+        0,
+        0,
+        55.619655
+      ],
+      "size": [
+        2.35,
+        2.982173,
+        2.42
+      ]
+    },
+    {
+      "bone": "left_quillon_3",
+      "center": [
+        -5.75,
+        17.647353,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "left_quillon_3",
+      "origin": [
+        -5.75,
+        16.35,
+        0
+      ],
+      "role": "broad left swept gold quillon segment 3",
+      "rotation": [
+        0,
+        0,
+        25.083594
+      ],
+      "size": [
+        1.72,
+        3.274706,
+        2.15
+      ]
+    },
+    {
+      "bone": "right_quillon_1",
+      "center": [
+        1.4,
+        15.991219,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "right_quillon_1",
+      "origin": [
+        1.4,
+        14.75,
+        0
+      ],
+      "role": "steeper asymmetric right swept gold quillon segment 1",
+      "rotation": [
+        0,
+        0,
+        -71.200115
+      ],
+      "size": [
+        2.55,
+        3.162438,
+        2.5
+      ]
+    },
+    {
+      "bone": "right_quillon_2",
+      "center": [
+        3.75,
+        16.858625,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "right_quillon_2",
+      "origin": [
+        3.75,
+        15.55,
+        0
+      ],
+      "role": "steeper asymmetric right swept gold quillon segment 2",
+      "rotation": [
+        0,
+        0,
+        -43.451842
+      ],
+      "size": [
+        2.15,
+        3.29725,
+        2.35
+      ]
+    },
+    {
+      "bone": "right_quillon_3",
+      "center": [
+        5.55,
+        18.920544,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "right_quillon_3",
+      "origin": [
+        5.55,
+        17.45,
+        0
+      ],
+      "role": "steeper asymmetric right swept gold quillon segment 3",
+      "rotation": [
+        0,
+        0,
+        -17.818889
+      ],
+      "size": [
+        1.62,
+        3.621088,
+        2.08
+      ]
+    },
+    {
+      "bone": "left_quillon_inlay_1",
+      "center": [
+        -1.45,
+        15.912693,
+        1.22
+      ],
+      "faces": {},
+      "material": "navy",
+      "name": "left_quillon_inlay_1",
+      "origin": [
+        -1.45,
+        14.7,
+        1.22
+      ],
+      "role": "navy front groove following the left quillon segment 1",
+      "rotation": [
+        0,
+        0,
+        81.702855
+      ],
+      "size": [
+        0.42,
+        2.785387,
+        0.22
+      ]
+    },
+    {
+      "bone": "left_quillon_inlay_2",
+      "center": [
+        -3.85,
+        16.201086,
+        1.22
+      ],
+      "faces": {},
+      "material": "navy",
+      "name": "left_quillon_inlay_2",
+      "origin": [
+        -3.85,
+        15.05,
+        1.22
+      ],
+      "role": "navy front groove following the left quillon segment 2",
+      "rotation": [
+        0,
+        0,
+        55.619655
+      ],
+      "size": [
+        0.38,
+        2.662173,
+        0.22
+      ]
+    },
+    {
+      "bone": "left_quillon_inlay_3",
+      "center": [
+        -5.75,
+        17.651201,
+        1.22
+      ],
+      "faces": {},
+      "material": "navy",
+      "name": "left_quillon_inlay_3",
+      "origin": [
+        -5.75,
+        16.35,
+        1.22
+      ],
+      "role": "navy front groove following the left quillon segment 3",
+      "rotation": [
+        -4.407644,
+        0,
+        25.083594
+      ],
+      "size": [
+        0.32,
+        2.962403,
+        0.2
+      ]
+    },
+    {
+      "bone": "right_quillon_inlay_1",
+      "center": [
+        1.4,
+        15.991219,
+        1.22
+      ],
+      "faces": {},
+      "material": "navy",
+      "name": "right_quillon_inlay_1",
+      "origin": [
+        1.4,
+        14.75,
+        1.22
+      ],
+      "role": "navy front groove following the asymmetric right quillon segment 1",
+      "rotation": [
+        0,
+        0,
+        -71.200115
+      ],
+      "size": [
+        0.42,
+        2.842438,
+        0.22
+      ]
+    },
+    {
+      "bone": "right_quillon_inlay_2",
+      "center": [
+        3.75,
+        16.859236,
+        1.22
+      ],
+      "faces": {},
+      "material": "navy",
+      "name": "right_quillon_inlay_2",
+      "origin": [
+        3.75,
+        15.55,
+        1.22
+      ],
+      "role": "navy front groove following the asymmetric right quillon segment 2",
+      "rotation": [
+        -1.750782,
+        0,
+        -43.451842
+      ],
+      "size": [
+        0.38,
+        2.978473,
+        0.22
+      ]
+    },
+    {
+      "bone": "right_quillon_inlay_3",
+      "center": [
+        5.55,
+        18.92361,
+        1.14
+      ],
+      "faces": {},
+      "material": "navy",
+      "name": "right_quillon_inlay_3",
+      "origin": [
+        5.55,
+        17.45,
+        1.14
+      ],
+      "role": "navy front groove following the asymmetric right quillon segment 3",
+      "rotation": [
+        -3.696282,
+        0,
+        -17.818889
+      ],
+      "size": [
+        0.32,
+        3.307219,
+        0.2
+      ]
+    },
+    {
+      "bone": "grip",
+      "center": [
+        0,
+        7.2,
+        0
+      ],
+      "faces": {
+        "north": {
+          "material": "grip_back"
+        },
+        "south": {
+          "material": "grip_front"
+        }
+      },
+      "material": "grip_blue",
+      "name": "grip_core",
+      "origin": [
+        0,
+        7.2,
+        0
+      ],
+      "role": "substantial blue leather grip with two-sided diagonal wrap",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        11.8,
+        2.08
+      ]
+    },
+    {
+      "bone": "grip",
+      "center": [
+        0,
+        13.15,
+        0
+      ],
+      "faces": {},
+      "material": "gold_dark",
+      "name": "grip_top_collar",
+      "origin": [
+        0,
+        13.15,
+        0
+      ],
+      "role": "gold upper collar locked into the guard hub",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.85,
+        0.9,
+        2.55
+      ]
+    },
+    {
+      "bone": "grip",
+      "center": [
+        0,
+        1.25,
+        0
+      ],
+      "faces": {},
+      "material": "gold_dark",
+      "name": "grip_bottom_collar",
+      "origin": [
+        0,
+        1.25,
+        0
+      ],
+      "role": "gold lower collar locked into the pommel",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.72,
+        0.72,
+        2.48
+      ]
+    },
+    {
+      "bone": "pommel",
+      "center": [
+        0,
+        0.45,
+        0
+      ],
+      "faces": {},
+      "material": "gold",
+      "name": "pommel_core",
+      "origin": [
+        0,
+        0.45,
+        0
+      ],
+      "role": "weighty gold oval-block pommel",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.05,
+        1.35,
+        2.85
+      ]
+    },
+    {
+      "bone": "pommel",
+      "center": [
+        0,
+        -0.25,
+        0
+      ],
+      "faces": {},
+      "material": "gold_dark",
+      "name": "pommel_cap",
+      "origin": [
+        0,
+        -0.25,
+        0
+      ],
+      "role": "dark gold terminal cap",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.35,
+        0.55,
+        2.25
+      ]
+    },
+    {
+      "bone": "pommel",
+      "center": [
+        0,
+        0.48,
+        1.46
+      ],
+      "faces": {},
+      "material": "navy",
+      "name": "pommel_gem",
+      "origin": [
+        0,
+        0.48,
+        1.46
+      ],
+      "role": "small blue pommel jewel visible from the front",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.0,
+        0.72,
+        0.2
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "purpose-built-tapered-hard-surface-sword-v1",
+    "anatomical_axis": "+Y blade tip, +Z observed/front face, X guard span",
+    "declared_attachments": [
+      {
+        "first": "blade_ricasso",
+        "joint": [
+          0,
+          23.4,
+          0
+        ],
+        "second": "blade_rune_field"
+      },
+      {
+        "first": "blade_rune_field",
+        "joint": [
+          0,
+          35.0,
+          0
+        ],
+        "second": "blade_middle"
+      },
+      {
+        "first": "blade_middle",
+        "joint": [
+          0,
+          45.6,
+          0
+        ],
+        "second": "blade_upper"
+      },
+      {
+        "first": "blade_upper",
+        "joint": [
+          0,
+          53.0,
+          0
+        ],
+        "second": "blade_tip_spine"
+      },
+      {
+        "first": "blade_upper",
+        "joint": [
+          -1.28,
+          52.95,
+          0
+        ],
+        "second": "blade_tip_left_edge"
+      },
+      {
+        "first": "blade_tip_left_edge",
+        "joint": [
+          -0.34,
+          58.75,
+          0
+        ],
+        "second": "blade_tip_spine"
+      },
+      {
+        "first": "blade_upper",
+        "joint": [
+          1.28,
+          52.95,
+          0
+        ],
+        "second": "blade_tip_right_edge"
+      },
+      {
+        "first": "blade_tip_right_edge",
+        "joint": [
+          0.34,
+          58.75,
+          0
+        ],
+        "second": "blade_tip_spine"
+      },
+      {
+        "first": "blade_ricasso",
+        "joint": [
+          0,
+          19.35,
+          0.83
+        ],
+        "second": "raised_front_crest"
+      },
+      {
+        "first": "blade_ricasso",
+        "joint": [
+          0,
+          19.35,
+          -0.83
+        ],
+        "second": "raised_back_crest"
+      },
+      {
+        "first": "raised_front_crest",
+        "joint": [
+          0,
+          20.0,
+          0.99
+        ],
+        "second": "front_crest_gem"
+      },
+      {
+        "first": "guard_hub",
+        "joint": [
+          0,
+          14.55,
+          1.38
+        ],
+        "second": "guard_hub_gem"
+      },
+      {
+        "first": "guard_hub",
+        "joint": [
+          -1.45,
+          14.7,
+          0.0
+        ],
+        "second": "left_quillon_1"
+      },
+      {
+        "first": "guard_hub",
+        "joint": [
+          1.4,
+          14.75,
+          0.0
+        ],
+        "second": "right_quillon_1"
+      },
+      {
+        "first": "left_quillon_1",
+        "joint": [
+          -3.85,
+          15.05,
+          0.0
+        ],
+        "second": "left_quillon_2"
+      },
+      {
+        "first": "left_quillon_2",
+        "joint": [
+          -5.75,
+          16.35,
+          0.0
+        ],
+        "second": "left_quillon_3"
+      },
+      {
+        "first": "right_quillon_1",
+        "joint": [
+          3.75,
+          15.55,
+          0.0
+        ],
+        "second": "right_quillon_2"
+      },
+      {
+        "first": "right_quillon_2",
+        "joint": [
+          5.55,
+          17.45,
+          0.0
+        ],
+        "second": "right_quillon_3"
+      },
+      {
+        "first": "left_quillon_1",
+        "joint": [
+          -1.45,
+          14.7,
+          1.22
+        ],
+        "second": "left_quillon_inlay_1"
+      },
+      {
+        "first": "right_quillon_1",
+        "joint": [
+          1.4,
+          14.75,
+          1.22
+        ],
+        "second": "right_quillon_inlay_1"
+      },
+      {
+        "first": "left_quillon_inlay_1",
+        "joint": [
+          -3.85,
+          15.05,
+          1.22
+        ],
+        "second": "left_quillon_inlay_2"
+      },
+      {
+        "first": "left_quillon_inlay_2",
+        "joint": [
+          -5.75,
+          16.35,
+          1.22
+        ],
+        "second": "left_quillon_inlay_3"
+      },
+      {
+        "first": "right_quillon_inlay_1",
+        "joint": [
+          3.75,
+          15.55,
+          1.22
+        ],
+        "second": "right_quillon_inlay_2"
+      },
+      {
+        "first": "right_quillon_inlay_2",
+        "joint": [
+          5.55,
+          17.45,
+          1.14
+        ],
+        "second": "right_quillon_inlay_3"
+      },
+      {
+        "first": "blade_ricasso",
+        "joint": [
+          0,
+          15.0,
+          0
+        ],
+        "second": "guard_hub"
+      },
+      {
+        "first": "guard_hub",
+        "joint": [
+          0,
+          13.3,
+          0
+        ],
+        "second": "grip_top_collar"
+      },
+      {
+        "first": "grip_top_collar",
+        "joint": [
+          0,
+          12.95,
+          0
+        ],
+        "second": "grip_core"
+      },
+      {
+        "first": "grip_core",
+        "joint": [
+          0,
+          1.4,
+          0
+        ],
+        "second": "grip_bottom_collar"
+      },
+      {
+        "first": "grip_bottom_collar",
+        "joint": [
+          0,
+          1.05,
+          0
+        ],
+        "second": "pommel_core"
+      },
+      {
+        "first": "pommel_core",
+        "joint": [
+          0,
+          -0.05,
+          0
+        ],
+        "second": "pommel_cap"
+      },
+      {
+        "first": "pommel_core",
+        "joint": [
+          0,
+          0.48,
+          1.39
+        ],
+        "second": "pommel_gem"
+      }
+    ],
+    "feature_inventory": {
+      "authored_texture_images": 7,
+      "blade_main_volumes": 4,
+      "crest_surfaces": 2,
+      "grip_volumes": 3,
+      "main_quillon_segments": 6,
+      "physical_crest_gems": 3,
+      "pommel_volumes": 3,
+      "quillon_inlay_segments": 6,
+      "source_projected_faces": 0,
+      "tip_volumes": 3
+    },
+    "lane": "agent-authored-semantic-volume",
+    "procedural_textures": {
+      "blade_bevel": true,
+      "front_crest": true,
+      "front_rune_glyphs": 5,
+      "reverse_crest": true,
+      "reverse_rune_glyphs": 5,
+      "source_reference_pixels": false,
+      "two_sided_grip_wrap": true
+    },
+    "reference_roll_degrees": 44.244512,
+    "single_view_hidden_geometry": "Reverse blade bevel, rune order, crest, and guard finish are conservative authored inference; profile thickness is a coherent prop-design prior.",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0
+  },
+  "geometry": {
+    "precision": 32
+  },
+  "id": "excalibur",
+  "landmarks": [],
+  "materials": {
+    "blade_face": {
+      "base": "#eee9cf",
+      "highlight": "#fffdf1",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#c5b77e",
+      "source_texture": {
+        "center": [
+          0,
+          0
+        ],
+        "data_uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABgCAYAAAB8InCYAAAAmklEQVR42u3ZMQrCYAwG0K+uLi1YcXUQb+nidXqDnsAjdPIAHf7JWQctIjg4CEV83xRChgeZQqpTf7zmkXazm8rU630+TdPeZ8s45FLOWTbb93OrZ7/vDkmSRWYOAAAAAAAAAAAAAMBXAGUcXu4DKwAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4T8D0M7ACAAAAAAAAAAAAgJ8D3ADV1BJDE9U7FwAAAABJRU5ErkJggg==",
+        "flip_y": true,
+        "offset": [
+          0,
+          0
+        ],
+        "repeat": [
+          1,
+          1
+        ],
+        "rotation": 0,
+        "wrap": [
+          1001,
+          1001
+        ]
+      }
+    },
+    "blade_ivory": {
+      "base": "#eee9cf",
+      "highlight": "#fffdf1",
+      "pattern": "gradient",
+      "pattern_scale": 3,
+      "shade": "#bcae76"
+    },
+    "crest_back": {
+      "base": "#d6ba58",
+      "highlight": "#fff0a1",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#745b1d",
+      "source_texture": {
+        "center": [
+          0,
+          0
+        ],
+        "data_uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAABACAYAAABcIPRGAAACOUlEQVR42u1aMU7DQBC8O1FHeQItBTK8gEcgU+YNUahDAT3whpRYeURegCxewA8if8BURsY4573d2eyBsl0S6zyzO3uezdm5U9iG11y83W/a7xvNFyr3OtME/vr0/Os7NBGvke0+8GEs1yuHrIrXyDY1OjISIl4b+G1547bVTo2I15BJB3wYVCIpZDxaJmPAU4mkVMUfE7gGkUkCMfAc0Bwyy/XqIAHWcyAFeFE2rq5m5DUpVWETSM14UTZJJDhEgpaN6MAf+py1lSjKxp1fXI788gm/V7QCfr7w/b2Zk3lpFWINDJcQBSBaSgG11aUAm7o2ZScKx8q8ViWCBXgkiWAF3qQHhkF9OGkmQSwhaxLBZRCSJARrANIKBqss1tUMIr+A9O1UQLHr+utP2QgSAY4f0m561SaeAmjqhXI0dEd3o1k9iSXgszFzEjDmZg4BwtQLoWRg4oVysNJsAhrgi7JJ/lOLTeDh7l0lm49v1zoExuwE2hIME0PxQVlMZNK1spjITAaafsMhSHAa2HSgyWIi42ZtCF6yDpnAocGGK6UYeOoOlFwBynRGIRG7JgW8c6DzgW21+3F6U1czV5Qfk+ClEmT1AEVKlEpIpSNqYuqgPySBlI54FxojMZbVDnRMOlzwKkN9jARK9zACiP+MJNmHVIAqJbR0oBKikNAAD+2BFDmhwKufD3RZRzeu6luLU2+4ILOvUoGYlNDg1SQ0RkIDfDZnZNlGu9+0L/dXbf9lwT9J4lTK/xxf++1APD+VtJUAAAAASUVORK5CYII=",
+        "flip_y": true,
+        "offset": [
+          0,
+          0
+        ],
+        "repeat": [
+          1,
+          1
+        ],
+        "rotation": 0,
+        "wrap": [
+          1001,
+          1001
+        ]
+      }
+    },
+    "crest_front": {
+      "base": "#d6ba58",
+      "highlight": "#fff0a1",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#745b1d",
+      "source_texture": {
+        "center": [
+          0,
+          0
+        ],
+        "data_uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAABACAYAAABcIPRGAAACdklEQVR42u1au04CQRTdmVibjf9hkNZGbW0NlPsNBGsosEe/wRJiSys2tMT4H4bwA2thxkyGmd17Z84dwHA7lmE459zn7G5RnGy/piQ3rzev9d8flZXIf51JAn95mu5cQxNREmrbwF0bjIYF0itKQm2qGTIpRJQ08IfeTfE2/xAjoiTCxAB3jUqEQ0ahw8QHnEuE4xWVE7gEkVYCTeDbQHd62+Jzfp5MZjAaBglE9QGK2p3elkXC7EnxSjQBapgY8O5nCSIa3YVd8NTvYk3nAm+vQRJpJKDKStm1ORV8zPqmBIYMcylqcnIDEkJuYlHAX9/es0XgVCItqbwBTyGRNYnR1SRbCHHAu6pLeUFLqBUC67ueor5II2tTGu0JnTtm0fvonOpLeEEj1VstF6TfrpYLmBd1yiEEBSK0f9sYQSLAmYcoXkCqD8kBTihRQ2yvZTQE1v6cbZyWLIeoc4GWPMgY1ZtCJ5WEWAhx4j7FG3qfBxrEXvpQwBubzLrFZNY9jANNKhExAtybTzE27q/lCHBcLAmeTMAeJ6TBc+Ygtge44GMaHEf9LH2AQ4ILXpSADZxCIgZ8Fg9QSGS7rUJVKQQodD2lLLMf8l1cvifHvd0EfaJQKxDbA6qs1PfXXXLSmjW+tRzw0TkQm3AuCURHZ99eV2Wlfp9eTnf6AicZfeC56kd7gHvQR3ZeWBl182HcX5NDwl0XCx7SB9x8aCOBnmSTHjHZ+ZA7dGAe8OVDSGVk6EBHCQoJCfDQWYhTmVDgxYc5o7rkEVRJvPDX9s4c8sU/uAeaQgkNXiyEfCQkwGc90Byl1ZvX+vnxqrZfFjxKEidX/mf7ATioYCSiUHgNAAAAAElFTkSuQmCC",
+        "flip_y": true,
+        "offset": [
+          0,
+          0
+        ],
+        "repeat": [
+          1,
+          1
+        ],
+        "rotation": 0,
+        "wrap": [
+          1001,
+          1001
+        ]
+      }
+    },
+    "edge_metal": {
+      "base": "#ddd5b5",
+      "highlight": "#fffef2",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#9c8d58"
+    },
+    "gold": {
+      "base": "#d6ba58",
+      "highlight": "#fff0a1",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#745b1d"
+    },
+    "gold_dark": {
+      "base": "#9d7b2e",
+      "highlight": "#dec56e",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#4c3510"
+    },
+    "grip_back": {
+      "base": "#173276",
+      "highlight": "#5a79d0",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#09143d",
+      "source_texture": {
+        "center": [
+          0,
+          0
+        ],
+        "data_uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAABgCAYAAAAHBrJUAAABNElEQVR42u3VIWuCQRzH8d8zDwxzSVCetL4mLIwFgyAIvgCDsIWxsrDhKxkuWMRgMPgCTHYxGGWwYDCNJyyZFuQWxh2e3Ok9PlwY+/3Tw8PD9x+O5z7RebkmsTeFUgXHptq408/Lj5XzuzMEnr+9oH57BREqrEaEiO5O5gVxMY/YEp/O3rMtiIt5ZxQA1vPuaQta7Uev8OXNi/8CWxQAPr++nWGvM7CFx6O+/pMnw2f9fj+sJrJdFQ+dnjMMAJtkAQBo3r8dvSrEoagrfFG+Nu6iQyPShtOOcQaD1yd9m6roqWFjgQoDgJRbbJJFpqixQMWl3P6eepTz8sB7wW44xIhQYXpAD+gBPaAH9IAe0AN6QA/oAT2gB/SAHtADekAP6AE9oAf0gB7QA3pAD+gBPfjXHvwARoC+SadGfb0AAAAASUVORK5CYII=",
+        "flip_y": true,
+        "offset": [
+          0,
+          0
+        ],
+        "repeat": [
+          1,
+          1
+        ],
+        "rotation": 0,
+        "wrap": [
+          1001,
+          1001
+        ]
+      }
+    },
+    "grip_blue": {
+      "base": "#173276",
+      "highlight": "#5a79d0",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#09143d"
+    },
+    "grip_front": {
+      "base": "#173276",
+      "highlight": "#5a79d0",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#09143d",
+      "source_texture": {
+        "center": [
+          0,
+          0
+        ],
+        "data_uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAABgCAYAAAAHBrJUAAABRklEQVR42u2VL4sCQRyG3/UEQc90oJjsNsFwXFAQhIP7AAZBg1gVP4oGi+nChfsAl7aLwSiCwXDpMJhMBtkLx2+YG2dc/6xF3jfNbphn35nZebxUthrAyGOmiLCUX5v4eu+q5/xzT41rLwU19q4BSObLFb6nAysojogiE+sgf7KIDuACRQ4wQbF2f4RbJgYA7f4ItwL9WyId8vkxjgSgjqmrgQtkHlMnIJmpBADgeQ/WJi7QyQBpEAR7CEh+tHqj4wSdDZAIKJ0tqXc2EAD8bHahgIP/QBps1zPtq2GF5Z4Sf4BTNvnYXSSwsFb+ZBHewBaZWAfJ8kgL8xYV2EW3qYDeWkO1B/rkZzewNTJ94IM+oA/oA/qAPqAP6AP6gD6gD+gD+oA+oA/oA/qAPqAP6AP6gD6gD+gD+oA+oA/oA/qAPrgjH/wCEfpoFsw0cgMAAAAASUVORK5CYII=",
+        "flip_y": true,
+        "offset": [
+          0,
+          0
+        ],
+        "repeat": [
+          1,
+          1
+        ],
+        "rotation": 0,
+        "wrap": [
+          1001,
+          1001
+        ]
+      }
+    },
+    "navy": {
+      "base": "#152263",
+      "highlight": "#5365b8",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#080d30"
+    },
+    "rune_face": {
+      "base": "#eee9cf",
+      "highlight": "#fffdf1",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#bcae76",
+      "source_texture": {
+        "center": [
+          0,
+          0
+        ],
+        "data_uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABgCAYAAAB8InCYAAACcElEQVR42u1aPU8CQRAdyXU2kogxJhYWxqvUlu7+BMaSP2BiS2NjQWviH6A04g8goaEjdkgFNBYSGgoqay10Ye+yd/s1M+fHbnUhl3vvhr2Z92Z267l/+wHfq7Z/LC5hZ+8ETFe19nXvajmF99UrbFeP1Pftbn7vP90AAEAFSl6BQCDwuwlMBm0AABh2m/wEBPjj3ZUXiYoP+Hi0gNPzAxiPFqnfSQlkwQEgRYKUgAo8TlopEm8vDzQEisDrjY7yXjQCReDyctkPRgTipKUFF1EQJFT3eEVA93biMxRE0SNgEmJdlLw2YRGJYbfpBG79GZpE4vDskjYRqUjIb8+SirMkXELvXYwE2MX1vTIZsZTjvEz4/xTRajlN+YOgCW1W5KIHbDYoKgEb1RMnBBEwyXZyNTSJQuTy3bsKFpJN6AOOZkxkcPJqWATukpK9ipEvuHcEZE3Aas3yhIkLCZRyLJMgc0a+ipm0GPmQQKuGpM7IloTQiaXoAbZMGLpk7JLMtgGFLslsm1DokszUfJJJsqKHBUnmI8kiX2B5f9QbHZjPerQE8kLuYkxRW7XkmZAC3PgvUIHrsiNqJoyT1nowYZoRS8uEZMVIFVKRbieD9loNzWe93NHt358ZsRgT3cyI1JiYzIzIjEkROIsx0Y1tWIyJMByqh5OObEzyQVBE7E0q1aSMtUmV54xLIyBmBsGcBgKBADsBm44YqSZ0OcLzIzRhhOGK5Sm60ITo5Tj71nma0FaSRRg1f3Pdtu4ToR3jcdWFaMd4XHUh2jEeV2mGcoyHTZQWkWATpbpjPCyiNO8YD/vkVOeW2OaGPt2yIEg+ARMuFpNbYAW5AAAAAElFTkSuQmCC",
+        "flip_y": true,
+        "offset": [
+          0,
+          0
+        ],
+        "repeat": [
+          1,
+          1
+        ],
+        "rotation": 0,
+        "wrap": [
+          1001,
+          1001
+        ]
+      }
+    },
+    "rune_reverse": {
+      "base": "#eee9cf",
+      "highlight": "#fffdf1",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#bcae76",
+      "source_texture": {
+        "center": [
+          0,
+          0
+        ],
+        "data_uri": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAABgCAYAAAB8InCYAAAChElEQVR42u1aPUsDQRAdj2uCjQEjNhYWYkhjLaTIPxACAcv8BNtAsDGQNj8hpRBJYyOksQgEsbIJxsZCuxSpJKUWcczdsbnbj7d7qLtNwrEw7+Z2Z96bma2H0dUnfa/S/hH/pZ29Y5JdxdJq72I+o4/FK20XD8X7dtfPRzeXREQUUM7LA/AAfjeA5/suERFNBk33ANh4pdozAhGYGK+3CzTsLKneLsSeWwWQNE5EMRBWAYiMl2utGIi3p2s7ANKMnzb6wr0wAGnGo0vnPEgBKNdamcbZCwxCtMfIA1lvx9eQgcI9IOPiLC8ZHcI0EJNBU8u48jWU8cTBybndQCQCEX17J6E4CULH9cbJiI1NxxfCYOQkHW+KhP+PES3ms5g+8JxQZYWq6VjlcEIBqDCe6RjsgVU2NIt4RgDKtVYsJYsiH9+A95c7O4dQNiVbvQU2QECyoQkISDbUyYJQZeTUA7IU3bkysg7AhnG4MrIaCSvVHty40idg7oc0rh0JfZHKUzLkebFCyVRomTQAWSoWTVAyXggRLjWJlMaH0DRMB2jjqgWK0NRw9HycNvrKrDhEuVxHmHpCoiTNRMWotOgIjYRMSFQiYm6R0FoySrqUQy3/RsXpptYtXJjwZ8lVmPCZcNK0yuoX6YAIkP0iIrLTM0ozbirXIS0bE7kOa9lwvfjx9gz/CWTdrFO09kUqSJHKuTLKRZ6TZM/Ai1MPwANw2jkddpY/vDD3OSJdENA5Ih1KFiJUcbSXxJQMXqBIvvUmXqiaJUOEMF2D6CrXiWBjPLqjPDBOqDvKA+OEuvUDCCd0VqZLA+GsTJc1xmN9jihtjMeqLsga49ElqpAxHuet2z9FSL4AEXoi5JXmdlIAAAAASUVORK5CYII=",
+        "flip_y": true,
+        "offset": [
+          0,
+          0
+        ],
+        "repeat": [
+          1,
+          1
+        ],
+        "rotation": 0,
+        "wrap": [
+          1001,
+          1001
+        ]
+      }
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "clean long ivory blade with a geometric point and substantial thin profile",
+      "readable five-glyph rune column on the observed face and distinct reverse inscription",
+      "raised gold-and-navy heraldic crest above the guard",
+      "connected ornate asymmetric swept gold quillons with navy inlay",
+      "fully enclosed blue diagonally wrapped grip",
+      "gold collars and gemmed pommel"
+    ],
+    "required_views": [
+      "front",
+      "back",
+      "profile",
+      "top",
+      "isometric",
+      "reference-angle",
+      "hilt-junction-closeup",
+      "emblem-closeup"
+    ],
+    "review_targets": [
+      "blade taper",
+      "rune readability",
+      "front and reverse finish",
+      "crest identity",
+      "guard asymmetry",
+      "hilt attachment",
+      "nonzero profile thickness"
+    ],
+    "target_cuboids": [
+      30,
+      55
+    ]
+  },
+  "reference": {
+    "height": 600,
+    "image": "excalibur.reference.png",
+    "sha256": "c4cda78a427ac1d2704df6ec8bde6a755361cbcf73628871fe60cfa97f726fcd",
+    "width": 800
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "Native volumetric Excalibur with a long ivory runed blade, raised navy-gold crest, asymmetric swept gold guard, blue wrapped grip, and gold pommel",
+    "symmetry": "asymmetric",
+    "type": "sword",
+    "uncertainties": [
+      "The supplied artwork is a single oblique presentation; reverse heraldry is authored rather than observed",
+      "The reference glow is represented by bright pixel bevels rather than emissive geometry",
+      "No source pixels, silhouette skin, or depth-field relief cuboids are used"
+    ]
+  },
+  "texture": {
+    "atlas_size": 512,
+    "density": 4,
+    "gutter": 1,
+    "palette_size": 48,
+    "quantize_source": false
+  }
+}

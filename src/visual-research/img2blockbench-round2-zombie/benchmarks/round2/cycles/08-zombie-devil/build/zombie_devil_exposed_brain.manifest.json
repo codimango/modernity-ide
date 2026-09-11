@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 133229,
+      "path": "zombie_devil_exposed_brain.model-spec.json",
+      "sha256": "5861b6d4fe558e2e17ad54897574529701ea6bac8482854a053e0f7cef1224e4"
+    },
+    {
+      "bytes": 23938,
+      "path": "zombie_devil_exposed_brain.png",
+      "sha256": "40380409afeb3dd2287f1ae5811bab4a506cfc557f068bc5130ec91791879e7f"
+    },
+    {
+      "bytes": 337232,
+      "path": "zombie_devil_exposed_brain.bbmodel",
+      "sha256": "a6b6905f1815efff9c32f1870fb1ae2afcbfc2de786e3e049ae0a4f6d3d4bd32"
+    },
+    {
+      "bytes": 365276,
+      "path": "zombie_devil_exposed_brain.geo.json",
+      "sha256": "0ad0a4eb997a39bcbffabc8a7c3989ac6e4a60bd09887dda437178f8a01c3a14"
+    },
+    {
+      "bytes": 238,
+      "path": "zombie_devil_exposed_brain.audit.json",
+      "sha256": "19233f3bf1bdfced6d7de95dd7be36de9bd6167b3ee6f06fc01ababcd9a9c013"
+    },
+    {
+      "bytes": 374611,
+      "path": "zombie_devil_exposed_brain.reference.png",
+      "sha256": "e3c594bc2fc60a63fa7f510fd6557e761219b731be2654a599fc751d024c96df"
+    }
+  ],
+  "collision": {
+    "eye_height": 4.0,
+    "height": 5.5,
+    "width": 6.5
+  },
+  "generator": {
+    "lane": "agent-authored-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "zombie_devil_exposed_brain",
+  "reference": {
+    "height": 754,
+    "image": "zombie_devil_exposed_brain.reference.png",
+    "sha256": "e3c594bc2fc60a63fa7f510fd6557e761219b731be2654a599fc751d024c96df",
+    "width": 513
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,284 @@
+{
+  "attachments": {
+    "all_connected": true,
+    "attachments": [
+      {
+        "connected": true,
+        "first": "torso_volume_002",
+        "first_margin": 0.3,
+        "joint": [
+          0,
+          30.2,
+          0
+        ],
+        "minimum_margin": 0.3,
+        "second": "neck_core",
+        "second_margin": 1.825
+      },
+      {
+        "connected": true,
+        "first": "neck_core",
+        "first_margin": 0.925,
+        "joint": [
+          0,
+          32.7,
+          0
+        ],
+        "minimum_margin": 0.325,
+        "second": "head_volume_021",
+        "second_margin": 0.325
+      },
+      {
+        "connected": true,
+        "first": "torso_volume_003",
+        "first_margin": 0.85,
+        "joint": [
+          -2,
+          12.35,
+          0
+        ],
+        "minimum_margin": 0.475,
+        "second": "left_leg_1",
+        "second_margin": 0.475
+      },
+      {
+        "connected": true,
+        "first": "left_leg_1",
+        "first_margin": 0.4609,
+        "joint": [
+          -2.1,
+          6.1,
+          0.1
+        ],
+        "minimum_margin": 0.4609,
+        "second": "left_leg_2",
+        "second_margin": 0.475
+      },
+      {
+        "connected": true,
+        "first": "torso_volume_003",
+        "first_margin": 0.85,
+        "joint": [
+          2,
+          12.35,
+          0
+        ],
+        "minimum_margin": 0.475,
+        "second": "right_leg_1",
+        "second_margin": 0.475
+      },
+      {
+        "connected": true,
+        "first": "right_leg_1",
+        "first_margin": 0.4609,
+        "joint": [
+          2.1,
+          6.1,
+          -0.1
+        ],
+        "minimum_margin": 0.4609,
+        "second": "right_leg_2",
+        "second_margin": 0.475
+      },
+      {
+        "connected": true,
+        "first": "torso_volume_002",
+        "first_margin": 0.1575,
+        "joint": [
+          -2.78,
+          29.8,
+          0.1
+        ],
+        "minimum_margin": 0.1575,
+        "second": "viewer_left_arm_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "viewer_left_arm_1",
+        "first_margin": 0.523564,
+        "joint": [
+          -4.65,
+          26.4,
+          0.7
+        ],
+        "minimum_margin": 0.523564,
+        "second": "viewer_left_arm_2",
+        "second_margin": 0.525
+      },
+      {
+        "connected": true,
+        "first": "viewer_left_arm_2",
+        "first_margin": 0.49447,
+        "joint": [
+          -3.85,
+          27.55,
+          2.1
+        ],
+        "minimum_margin": 0.49447,
+        "second": "viewer_left_arm_fist",
+        "second_margin": 1.325
+      },
+      {
+        "connected": true,
+        "first": "viewer_left_arm_fist",
+        "first_margin": 1.325,
+        "joint": [
+          -3.85,
+          27.55,
+          2.1
+        ],
+        "minimum_margin": 0.1,
+        "second": "viewer_left_arm_knuckles",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "torso_volume_002",
+        "first_margin": 0.1575,
+        "joint": [
+          2.78,
+          29.8,
+          0
+        ],
+        "minimum_margin": 0.1575,
+        "second": "viewer_right_arm_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "viewer_right_arm_1",
+        "first_margin": 0.500655,
+        "joint": [
+          5.35,
+          26.8,
+          0.7
+        ],
+        "minimum_margin": 0.500655,
+        "second": "viewer_right_arm_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "viewer_right_arm_2",
+        "first_margin": 0.538131,
+        "joint": [
+          6.55,
+          28.45,
+          2.1
+        ],
+        "minimum_margin": 0.538131,
+        "second": "viewer_right_arm_fist",
+        "second_margin": 1.325
+      },
+      {
+        "connected": true,
+        "first": "viewer_right_arm_fist",
+        "first_margin": 1.325,
+        "joint": [
+          6.55,
+          28.45,
+          2.1
+        ],
+        "minimum_margin": 0.1,
+        "second": "viewer_right_arm_knuckles",
+        "second_margin": 0.1
+      }
+    ],
+    "method": "shared-joint-compiled-oriented-cuboid-margin-v2",
+    "minimum_margin": 0.1
+  },
+  "bones": 14,
+  "cuboids": 79,
+  "face_contract_pass": true,
+  "face_feature_groups": {
+    "central_black_slit": true,
+    "jagged_mouth_teeth": 4,
+    "left_edge_red_smear": true,
+    "lower_black_sockets": 2,
+    "red_forehead_flame": true,
+    "triangular_nose": true,
+    "upper_green_discs": 2
+  },
+  "feature_inventory": {
+    "arm_segments": 4,
+    "decal_mapped_front_faces": 43,
+    "fist_volumes": 4,
+    "geometric_face_pads": 0,
+    "head_volumes": 43,
+    "leg_segments": 4,
+    "procedural_face_decal_images": 1,
+    "surface_cracks": 4,
+    "torso_volumes": 19
+  },
+  "front_silhouette": {
+    "iou": 0.814957,
+    "limitation": "front silhouette only; it does not validate hidden profile or back geometry",
+    "method": "foreground-threshold-height-normalized-centered-iou-v1",
+    "precision": 0.823178,
+    "recall": 0.987893,
+    "source_background_rgb": [
+      248,
+      248,
+      248
+    ],
+    "threshold": 18
+  },
+  "hidden_geometry_disclosure": "inferred_conservatively_not_observed",
+  "model_extents": [
+    14.728721,
+    48.318481,
+    10.0
+  ],
+  "model_id": "scp_173",
+  "no_reference_image_projection": true,
+  "procedural_decal": {
+    "geometric_protrusion": 0,
+    "image_count": 1,
+    "mapped_front_faces": 43,
+    "painted_surface": "south/front only"
+  },
+  "proportion_metrics": {
+    "ground_gap": 0.0,
+    "head_depth_to_width": 1.0,
+    "head_height_to_height": 0.323375,
+    "head_width_to_height": 0.20696,
+    "leg_height_to_height": 0.273029,
+    "overall_width_to_height": 0.304826,
+    "torso_depth_to_width": 0.949153,
+    "torso_width_to_height": 0.152633
+  },
+  "recorded_feature_inventory_matches": true,
+  "renderer": "deterministic-orthographic-textured-cuboid-zbuffer-v2",
+  "schema_version": 1,
+  "semantic_cuboids": 79,
+  "source_measurements": {
+    "body_width_to_height": 0.149,
+    "head_width_to_height": 0.202,
+    "leg_height_to_height": 0.24,
+    "method": "manual source-pixel bounding boxes divided by observed 872-pixel subject height",
+    "neck_width_to_height": 0.109,
+    "overall_width_to_height": 0.28,
+    "subject_bbox_pixels": [
+      252,
+      64,
+      496,
+      935
+    ]
+  },
+  "source_skin_cuboids": 0,
+  "views": [
+    "reference-angle.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "face-closeup.png",
+    "left-head-closeup.png",
+    "right-head-closeup.png",
+    "arm-joints.png",
+    "comparison-sheet.png"
+  ]
+}

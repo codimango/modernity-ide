@@ -1,0 +1,27 @@
+{
+  "asset": "zombie_devil_exposed_brain",
+  "critical_defects": [],
+  "cycle": 8,
+  "grader": "independent_read_only_codex_terminal",
+  "mean": 3.67,
+  "quantitative": {
+    "declared_links_connected": "187/187",
+    "duplicate_rgb_correlation": 0.999919,
+    "fixed_camera_iou": 0.643458,
+    "independent_observed_camera_axes": 1,
+    "keypoint_mean_error_subject_heights": 0.069759,
+    "normalized_silhouette_iou": 0.642441,
+    "unit_tests_after_cumulative_rebase": "111/111 PASS"
+  },
+  "round": 2,
+  "schema_version": 1,
+  "scores": {
+    "3d_coherence": 4,
+    "attachment_topology": 4,
+    "identity": 4,
+    "materials_color": 4,
+    "proportions": 3,
+    "silhouette": 3
+  },
+  "verdict": "PASS"
+}

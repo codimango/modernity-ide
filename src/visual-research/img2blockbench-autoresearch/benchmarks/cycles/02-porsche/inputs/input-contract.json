@@ -1,0 +1,25 @@
+{
+  "coordinate_space": "source pixels; left/top inclusive, right/bottom exclusive",
+  "depth": {
+    "encoding": "8-bit grayscale symmetric thickness; 0 is background, 255 is maximum",
+    "image": "depth-map.png",
+    "sha256": "01eb08c4c77e3c8bd0607a38fa98a2e81f6a3a15822e45bfb8c35f77564dcba0",
+    "source": "manually reviewed proxy for a mesh ray-hit thickness pass"
+  },
+  "foreground": {
+    "encoding": "8-bit grayscale; >=128 is foreground",
+    "image": "foreground-mask.png",
+    "reviewed_bbox_pixels": [
+      448,
+      224,
+      1254,
+      517
+    ],
+    "sha256": "da62644afadd2f56b50a91ae1bf532182fde02e2cdf4cba031789dbc644a1878"
+  },
+  "schema_version": 1,
+  "source_size": [
+    1859,
+    609
+  ]
+}

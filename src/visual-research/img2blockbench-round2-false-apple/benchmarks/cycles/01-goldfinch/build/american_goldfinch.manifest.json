@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 62303,
+      "path": "american_goldfinch.model-spec.json",
+      "sha256": "a8dbff110c351479d547e06557603d56af989b84c90ae53056773afb37d5e326"
+    },
+    {
+      "bytes": 13856,
+      "path": "american_goldfinch.png",
+      "sha256": "b9d081cab0bf8d6ac91e7cd570a3382aa98273fd63cd370b2b568cd07faa0bba"
+    },
+    {
+      "bytes": 195041,
+      "path": "american_goldfinch.bbmodel",
+      "sha256": "bc88e42ded62fa0992afce1293d6a388a21597c2495eff61627d34f475e86a87"
+    },
+    {
+      "bytes": 196839,
+      "path": "american_goldfinch.geo.json",
+      "sha256": "d4baa9595c897edc31fcc98d7e5e4038083ee6b3700db6bcd094a232effe57f9"
+    },
+    {
+      "bytes": 213,
+      "path": "american_goldfinch.audit.json",
+      "sha256": "12c725484ca3ef13c2acd9fd6fbdcdcd5b6748ec881f3ca71e907ebc0346e6c7"
+    },
+    {
+      "bytes": 742230,
+      "path": "american_goldfinch.reference.jpg",
+      "sha256": "094818044cf5373d674e42dcff666a7a37063e940b252aa841028e9ac2dcab8d"
+    }
+  ],
+  "collision": {
+    "eye_height": 1.0,
+    "height": 1.15,
+    "width": 0.75
+  },
+  "generator": {
+    "lane": "agent-authored-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "american_goldfinch",
+  "reference": {
+    "height": 3072,
+    "image": "american_goldfinch.reference.jpg",
+    "sha256": "094818044cf5373d674e42dcff666a7a37063e940b252aa841028e9ac2dcab8d",
+    "width": 3072
+  },
+  "schema_version": 1
+}

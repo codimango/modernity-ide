@@ -1,0 +1,39 @@
+{
+  "artifact_sha256": {
+    "bbmodel": "1ae2b41595c48a351601dcf7e5a4f6924246b2d15329da6aaf37052b934a2c64",
+    "comparison_sheet": "07d425e27108751be66c887cfcd42b51aa6518cea78fb3b341a98aa787762124",
+    "evaluation": "d524c4b822ffb3e24ce666a7816ec861937cc3e54f1c091cfbf1339e54c390e1",
+    "geo_json": "55f0a386c6db7feeb5d44f3fa3289e5b5366b093d43014b675888be0b0cc69d5",
+    "model_spec": "737cbf1166007c9c8fd9cc765fac6d9b1a85e7248a2226c027d09f48e4fb25b4",
+    "texture": "e980a37c5e616cff9058015ba67ae0d4d052b11bef28f7caf54b58927276aae7",
+    "zip": "229ac3948173a00fea0b66389909514f27d5a0cd51c128eb7e71236ec4971c0b"
+  },
+  "asset": "golden_apple_rooted",
+  "author_checks": {
+    "all_154_declared_links_connected": true,
+    "apple_depth_to_width": 1.060606,
+    "audit_ok": true,
+    "four_roots_in_four_xz_quadrants": true,
+    "keypoint_mean_error_subject_heights": 0.022501,
+    "negative_space_removed_voxels": 382,
+    "black_proxy_solids": 0,
+    "no_reference_image_projection": true,
+    "source_alpha_silhouette_iou": 0.705691,
+    "source_frame_clipping_disclosed": true,
+    "source_skin_cuboids": 0,
+    "strict_validation": true,
+    "two_builds_byte_identical": true
+  },
+  "bones": 42,
+  "cuboids": 155,
+  "cycle": 1,
+  "general_improvement": {
+    "capabilities_added": [
+      "deterministic ellipsoidal negative-space subtraction before greedy merging",
+      "machine-readable carved-face inventory for interior material treatment"
+    ],
+    "module": "skill/img2blockbench/scripts/semantic_geometry.py"
+  },
+  "model_id": "golden_apple_rooted",
+  "round": 2
+}

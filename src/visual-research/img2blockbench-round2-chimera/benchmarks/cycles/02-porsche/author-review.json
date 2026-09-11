@@ -1,0 +1,24 @@
+{
+  "decision": "READY_FOR_BLIND_REVIEW",
+  "gate_scope": "author-side inspection only; not an independent grade",
+  "inspected_views": [
+    "reference-angle",
+    "front",
+    "back",
+    "left",
+    "right",
+    "top",
+    "isometric",
+    "wheel-closeup",
+    "greenhouse-livery",
+    "front-lamps"
+  ],
+  "notes": [
+    "The model is a complete deep vehicle rather than a two-sided or layered relief.",
+    "All four enlarged wheel assemblies are visible from relevant views, ground within 0.009 units of one another, and join two full axles.",
+    "The front has paired recessed alpha-masked round lamps; the rear has lamps, bumper, exhausts, and a thin connected whale-tail.",
+    "Both sides have raked windows, mirrors, doors, multi-part flared fenders, and mirrored authored red-white livery.",
+    "The single observed view does not establish exact hidden surfaces; that uncertainty remains explicit."
+  ],
+  "schema_version": 1
+}

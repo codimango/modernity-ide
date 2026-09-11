@@ -1,0 +1,8 @@
+{
+  "baseline_commit": "3f8c71940b3b7a12a0b288c4c6381c6e578dd3b6",
+  "cycle": "round2-04",
+  "existing_geometry_and_evidence_apis_sufficient": true,
+  "other_benchmark_files_modified": false,
+  "suite_status": "90 tests passed, including 3 False Apple tests",
+  "scope": "False Apple benchmark, focused regression test, native build, and review evidence only"
+}

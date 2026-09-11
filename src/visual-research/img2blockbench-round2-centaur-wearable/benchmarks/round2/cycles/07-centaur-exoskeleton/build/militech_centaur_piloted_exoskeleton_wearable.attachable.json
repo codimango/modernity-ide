@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "geometry": {
+        "default": "geometry.militech_centaur_piloted_exoskeleton_wearable"
+      },
+      "identifier": "img2blockbench:militech_centaur_exoskeleton",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "textures": {
+        "default": "textures/entity/militech_centaur_piloted_exoskeleton_wearable"
+      }
+    }
+  }
+}

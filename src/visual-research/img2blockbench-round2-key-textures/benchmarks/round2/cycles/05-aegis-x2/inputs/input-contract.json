@@ -1,0 +1,63 @@
+{
+  "coordinate_space": "raw 1000x1000 source pixels; no crop or recentering",
+  "limitation": "Masks exclude studio floors, cast shadows, reflections, and corner logos. Dark cavities and thin cables are conservatively joined where their source edges are visually continuous; masks do not establish hidden geometry.",
+  "method": "reviewed-background-separation-with-semantic-inclusions-v1",
+  "rights": "unknown; private ignored benchmark references only",
+  "schema_version": 1,
+  "views": {
+    "source-3": {
+      "bbox": [
+        176,
+        83,
+        877,
+        1000
+      ],
+      "mask": "source-3-mask.png",
+      "mask_sha256": "56706a75f7a93cf25a46367ebf9a5344e4a3e20271e8edf946969195096c85ac",
+      "source": "image-3.png",
+      "source_sha256": "31bb69536ce0f26540034096402cebc6e006ee9cb7ec56b38deb5bf04afb2e23",
+      "touches_frame_edges": {
+        "bottom": true,
+        "left": false,
+        "right": false,
+        "top": false
+      }
+    },
+    "source-4": {
+      "bbox": [
+        98,
+        85,
+        886,
+        962
+      ],
+      "mask": "source-4-mask.png",
+      "mask_sha256": "eb2d3089b4d234a6fe71e5efe50a62ecad392c625f31aca313c2ed8d156b1ce7",
+      "source": "image-4.png",
+      "source_sha256": "d53b51bd62a7f64f1a4c792f1bd1005de204ed1ba0475ca4fb527784163ade4b",
+      "touches_frame_edges": {
+        "bottom": false,
+        "left": false,
+        "right": false,
+        "top": false
+      }
+    },
+    "source-5": {
+      "bbox": [
+        93,
+        91,
+        970,
+        967
+      ],
+      "mask": "source-5-mask.png",
+      "mask_sha256": "68525ddd27c10d3106d16c3ad69f55bc352fb08f4e22c37ca872880c9777a297",
+      "source": "image-5.png",
+      "source_sha256": "83f83385de5d68c3b4b1f8bc7d371dc086780f4388754a8414b07f0294cfe7a6",
+      "touches_frame_edges": {
+        "bottom": false,
+        "left": false,
+        "right": false,
+        "top": false
+      }
+    }
+  }
+}

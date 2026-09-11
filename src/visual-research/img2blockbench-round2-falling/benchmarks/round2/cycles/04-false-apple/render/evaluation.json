@@ -1,0 +1,2973 @@
+{
+  "all_proportion_gates_pass": true,
+  "alpha_silhouette": {
+    "alpha_threshold": 16,
+    "iou": 0.638953,
+    "keypoints": {
+      "count": 8,
+      "maximum_error_subject_heights": 0.050469,
+      "mean_error_subject_heights": 0.029835,
+      "points": {
+        "apple_center": {
+          "error_subject_heights": 0.015444,
+          "reference": [
+            0.177586,
+            0.358621
+          ],
+          "rendered": [
+            0.191642,
+            0.352221
+          ]
+        },
+        "apple_stem_tip": {
+          "error_subject_heights": 0.011751,
+          "reference": [
+            0.132759,
+            0.0
+          ],
+          "rendered": [
+            0.142295,
+            0.006865
+          ]
+        },
+        "head_body_socket": {
+          "error_subject_heights": 0.024192,
+          "reference": [
+            -0.325862,
+            0.444828
+          ],
+          "rendered": [
+            -0.33472,
+            0.46734
+          ]
+        },
+        "maw_center": {
+          "error_subject_heights": 0.044118,
+          "reference": [
+            -0.691379,
+            0.57931
+          ],
+          "rendered": [
+            -0.729491,
+            0.601535
+          ]
+        },
+        "near_hand_outer_tip": {
+          "error_subject_heights": 0.014718,
+          "reference": [
+            -0.27069,
+            0.982759
+          ],
+          "rendered": [
+            -0.285373,
+            0.981755
+          ]
+        },
+        "rear_arch_crown": {
+          "error_subject_heights": 0.038516,
+          "reference": [
+            0.684483,
+            0.27931
+          ],
+          "rendered": [
+            0.718003,
+            0.29828
+          ]
+        },
+        "rear_arch_outer_tip": {
+          "error_subject_heights": 0.050469,
+          "reference": [
+            1.02931,
+            0.824138
+          ],
+          "rendered": [
+            0.981184,
+            0.839337
+          ]
+        },
+        "skull_crown": {
+          "error_subject_heights": 0.039474,
+          "reference": [
+            -0.591379,
+            0.103448
+          ],
+          "rendered": [
+            -0.630798,
+            0.105538
+          ]
+        }
+      }
+    },
+    "limitation": "front alpha silhouette and annotated keypoints only; hidden-side geometry still requires multi-view inspection. A source touching the frame may contain clipped appendages, so IoU cannot establish their off-frame continuation.",
+    "method": "alpha-mask-aspect-preserving-height-normalized-centered-iou-v1",
+    "precision": 0.809125,
+    "recall": 0.752356,
+    "reference_aspect_ratio": 2.064516,
+    "reference_transform": {
+      "bbox": [
+        0,
+        0,
+        599,
+        290
+      ],
+      "normalized_height": 496,
+      "normalized_width": 1024,
+      "scale": 1.710344828,
+      "source_height": 290,
+      "source_width": 599,
+      "touches_frame_edges": {
+        "bottom": true,
+        "left": true,
+        "right": true,
+        "top": true
+      }
+    },
+    "rendered_aspect_ratio": 1.987903,
+    "rendered_transform": {
+      "bbox": [
+        86,
+        42,
+        873,
+        438
+      ],
+      "normalized_height": 496,
+      "normalized_width": 986,
+      "scale": 1.252525253,
+      "source_height": 396,
+      "source_width": 787,
+      "touches_frame_edges": {
+        "bottom": false,
+        "left": false,
+        "right": false,
+        "top": false
+      }
+    },
+    "source_touches_frame": true,
+    "target_height": 496
+  },
+  "attachments": {
+    "all_connected": true,
+    "attachments": [
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 5,
+        "joint": [
+          0,
+          25,
+          0
+        ],
+        "minimum_margin": 0.8,
+        "second": "spine_headward_1",
+        "second_margin": 0.8
+      },
+      {
+        "connected": true,
+        "first": "spine_headward_1",
+        "first_margin": 0.8,
+        "joint": [
+          -4.5,
+          26.5,
+          0.25
+        ],
+        "minimum_margin": 0.8,
+        "second": "spine_headward_2",
+        "second_margin": 0.8
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 5,
+        "joint": [
+          0,
+          25,
+          0
+        ],
+        "minimum_margin": 0.8,
+        "second": "spine_rearward_1",
+        "second_margin": 0.8
+      },
+      {
+        "connected": true,
+        "first": "spine_rearward_1",
+        "first_margin": 0.799586,
+        "joint": [
+          5.333333,
+          24.666667,
+          -0.5
+        ],
+        "minimum_margin": 0.799586,
+        "second": "spine_rearward_2",
+        "second_margin": 0.800001
+      },
+      {
+        "connected": true,
+        "first": "spine_rearward_2",
+        "first_margin": 0.799585,
+        "joint": [
+          10.666667,
+          24.333333,
+          -1
+        ],
+        "minimum_margin": 0.799585,
+        "second": "spine_rearward_3",
+        "second_margin": 0.799999
+      },
+      {
+        "connected": true,
+        "first": "spine_headward_2",
+        "first_margin": 0.8,
+        "joint": [
+          -9,
+          28,
+          0.5
+        ],
+        "minimum_margin": 0.8,
+        "second": "spine_head_socket_1",
+        "second_margin": 0.8
+      },
+      {
+        "connected": true,
+        "first": "spine_head_socket_1",
+        "first_margin": 0.800646,
+        "joint": [
+          -14.5,
+          30,
+          0.25
+        ],
+        "minimum_margin": 0.8,
+        "second": "spine_head_socket_2",
+        "second_margin": 0.8
+      },
+      {
+        "connected": true,
+        "first": "spine_rearward_3",
+        "first_margin": 0.799587,
+        "joint": [
+          16,
+          24,
+          -1.5
+        ],
+        "minimum_margin": 0.799587,
+        "second": "spine_rear_arch_1",
+        "second_margin": 0.8
+      },
+      {
+        "connected": true,
+        "first": "spine_rear_arch_1",
+        "first_margin": 0.799656,
+        "joint": [
+          23.5,
+          22.5,
+          -3.25
+        ],
+        "minimum_margin": 0.799656,
+        "second": "spine_rear_arch_2",
+        "second_margin": 0.8
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 3,
+        "joint": [
+          5,
+          27,
+          0
+        ],
+        "minimum_margin": 0.65,
+        "second": "lure_support_lower_1",
+        "second_margin": 0.65
+      },
+      {
+        "connected": true,
+        "first": "lure_support_lower_1",
+        "first_margin": 0.649026,
+        "joint": [
+          8,
+          30,
+          0
+        ],
+        "minimum_margin": 0.649026,
+        "second": "lure_support_upper_1",
+        "second_margin": 0.65
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_001",
+        "first_margin": 0,
+        "joint": [
+          -56.9,
+          36,
+          -3.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_002",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_001",
+        "first_margin": 0,
+        "joint": [
+          -56.9,
+          36,
+          3.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_003",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_001",
+        "first_margin": 0,
+        "joint": [
+          -54.8,
+          36,
+          -1.75
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_004",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_001",
+        "first_margin": 0,
+        "joint": [
+          -54.8,
+          36,
+          -3.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_005",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_001",
+        "first_margin": 0,
+        "joint": [
+          -54.8,
+          37.8,
+          1.75
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_007",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_001",
+        "first_margin": 0,
+        "joint": [
+          -54.8,
+          37.8,
+          3.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_008",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_002",
+        "first_margin": 0,
+        "joint": [
+          -54.8,
+          36,
+          -7
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_006",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_003",
+        "first_margin": 0,
+        "joint": [
+          -54.8,
+          36,
+          7
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_009",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_004",
+        "first_margin": 0,
+        "joint": [
+          -50.6,
+          36,
+          -3.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_010",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_004",
+        "first_margin": 0,
+        "joint": [
+          -50.6,
+          37.8,
+          -1.75
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_012",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_005",
+        "first_margin": 0,
+        "joint": [
+          -50.6,
+          36,
+          -7
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_011",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_006",
+        "first_margin": 0,
+        "joint": [
+          -50.6,
+          36,
+          -10.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_013",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_007",
+        "first_margin": 0,
+        "joint": [
+          -48.5,
+          43.2,
+          3.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_014",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_007",
+        "first_margin": 0,
+        "joint": [
+          -46.4,
+          41.4,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_019",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_007",
+        "first_margin": 0,
+        "joint": [
+          -46.4,
+          41.4,
+          1.75
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_020",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_008",
+        "first_margin": 0,
+        "joint": [
+          -50.6,
+          41.4,
+          7
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_015",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_009",
+        "first_margin": 0,
+        "joint": [
+          -50.6,
+          37.8,
+          10.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_016",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_010",
+        "first_margin": 0,
+        "joint": [
+          -44.3,
+          36,
+          -7
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_017",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_010",
+        "first_margin": 0,
+        "joint": [
+          -42.2,
+          36,
+          -5.25
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_022",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_010",
+        "first_margin": 0,
+        "joint": [
+          -42.2,
+          21.6,
+          -3.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_023",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_011",
+        "first_margin": 0,
+        "joint": [
+          -46.4,
+          36,
+          -10.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_018",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_014",
+        "first_margin": 0,
+        "joint": [
+          -44.3,
+          45,
+          7
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_021",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_014",
+        "first_margin": 0,
+        "joint": [
+          -42.2,
+          43.2,
+          5.25
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_025",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_017",
+        "first_margin": 0,
+        "joint": [
+          -38,
+          36,
+          -10.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_024",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_017",
+        "first_margin": 0,
+        "joint": [
+          -31.7,
+          36,
+          -7
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_032",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_017",
+        "first_margin": 0,
+        "joint": [
+          -31.7,
+          36,
+          -10.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_034",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_017",
+        "first_margin": 0,
+        "joint": [
+          -29.6,
+          36,
+          -8.75
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_039",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_017",
+        "first_margin": 0,
+        "joint": [
+          -29.6,
+          36,
+          -10.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_041",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_019",
+        "first_margin": 0,
+        "joint": [
+          -38,
+          41.4,
+          -1.75
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_027",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_020",
+        "first_margin": 0,
+        "joint": [
+          -35.9,
+          43.2,
+          3.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_028",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_020",
+        "first_margin": 0,
+        "joint": [
+          -33.8,
+          43.2,
+          1.75
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_033",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_020",
+        "first_margin": 0,
+        "joint": [
+          -33.8,
+          41.4,
+          3.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_035",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_021",
+        "first_margin": 0,
+        "joint": [
+          -40.1,
+          45,
+          10.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_026",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_021",
+        "first_margin": 0,
+        "joint": [
+          -38,
+          45,
+          8.75
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_029",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_021",
+        "first_margin": 0,
+        "joint": [
+          -38,
+          43.2,
+          10.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_030",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_027",
+        "first_margin": 0,
+        "joint": [
+          -31.7,
+          19.8,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_031",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_027",
+        "first_margin": 0,
+        "joint": [
+          -29.6,
+          36,
+          -1.75
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_037",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_029",
+        "first_margin": 0,
+        "joint": [
+          -31.7,
+          37.8,
+          10.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_036",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_029",
+        "first_margin": 0,
+        "joint": [
+          -29.6,
+          41.4,
+          7
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_038",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_029",
+        "first_margin": 0,
+        "joint": [
+          -29.6,
+          39.6,
+          8.75
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_040",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_029",
+        "first_margin": 0,
+        "joint": [
+          -29.6,
+          36,
+          10.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_042",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_032",
+        "first_margin": 0,
+        "joint": [
+          -25.4,
+          36,
+          -5.25
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_043",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_032",
+        "first_margin": 0,
+        "joint": [
+          -25.4,
+          36,
+          -7
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_045",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_037",
+        "first_margin": 0,
+        "joint": [
+          -23.3,
+          36,
+          3.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_044",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_037",
+        "first_margin": 0,
+        "joint": [
+          -21.2,
+          36,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_047",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_037",
+        "first_margin": 0,
+        "joint": [
+          -21.2,
+          36,
+          -3.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_048",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_037",
+        "first_margin": 0,
+        "joint": [
+          -21.2,
+          36,
+          3.5
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_049",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_038",
+        "first_margin": 0,
+        "joint": [
+          -25.4,
+          36,
+          7
+        ],
+        "minimum_margin": 0,
+        "second": "skull_volume_046",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "spine_head_socket_2",
+        "first_margin": 0.800646,
+        "joint": [
+          -20,
+          32,
+          0
+        ],
+        "minimum_margin": 0.800646,
+        "second": "skull_volume_047",
+        "second_margin": 1.2
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_001",
+        "first_margin": 0,
+        "joint": [
+          -56.6,
+          11.333334,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_002",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_001",
+        "first_margin": 0,
+        "joint": [
+          -56.6,
+          14,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_003",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_001",
+        "first_margin": 0,
+        "joint": [
+          -56.6,
+          16.666666,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_004",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_002",
+        "first_margin": 0,
+        "joint": [
+          -53.2,
+          8.666666,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_005",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_002",
+        "first_margin": 0,
+        "joint": [
+          -53.2,
+          10,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_006",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_002",
+        "first_margin": 0,
+        "joint": [
+          -53.2,
+          11.333334,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_007",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_003",
+        "first_margin": 0,
+        "joint": [
+          -53.2,
+          16.666666,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_008",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_004",
+        "first_margin": 0,
+        "joint": [
+          -53.2,
+          19.333334,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_009",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_005",
+        "first_margin": 0,
+        "joint": [
+          -49.8,
+          7.333333,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_010",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_006",
+        "first_margin": 0,
+        "joint": [
+          -46.4,
+          10,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_012",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_008",
+        "first_margin": 0,
+        "joint": [
+          -48.1,
+          19.333334,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_011",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_010",
+        "first_margin": 0,
+        "joint": [
+          -37.9,
+          8.666666,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_013",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_010",
+        "first_margin": 0,
+        "joint": [
+          -36.2,
+          7.333333,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_016",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_011",
+        "first_margin": 0,
+        "joint": [
+          -37.9,
+          19.333334,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_015",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_011",
+        "first_margin": 0,
+        "joint": [
+          -36.2,
+          20.666667,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_017",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_012",
+        "first_margin": 0,
+        "joint": [
+          -39.6,
+          14,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_014",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_013",
+        "first_margin": 0,
+        "joint": [
+          -32.8,
+          10,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_018",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_013",
+        "first_margin": 0,
+        "joint": [
+          -32.8,
+          11.333334,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_019",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_014",
+        "first_margin": 0,
+        "joint": [
+          -32.8,
+          16.666666,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_020",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_018",
+        "first_margin": 0,
+        "joint": [
+          -29.4,
+          11.333334,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "lower_jaw_volume_021",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_023",
+        "first_margin": 1.133333,
+        "joint": [
+          -40.1,
+          20.466667,
+          -1.75
+        ],
+        "minimum_margin": 1.133333,
+        "second": "lower_jaw_volume_011",
+        "second_margin": 1.133333
+      },
+      {
+        "connected": true,
+        "first": "skull_volume_044",
+        "first_margin": 0.4,
+        "joint": [
+          -25,
+          30,
+          5
+        ],
+        "minimum_margin": 0.4,
+        "second": "upper_gum_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "upper_gum_1",
+        "first_margin": 0.551134,
+        "joint": [
+          -38,
+          25.5,
+          10.5
+        ],
+        "minimum_margin": 0.55,
+        "second": "upper_gum_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "lower_jaw_volume_020",
+        "first_margin": 0.333333,
+        "joint": [
+          -30,
+          17,
+          4
+        ],
+        "minimum_margin": 0.333333,
+        "second": "lower_gum_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "lower_gum_1",
+        "first_margin": 0.550661,
+        "joint": [
+          -41,
+          18,
+          10.5
+        ],
+        "minimum_margin": 0.55,
+        "second": "lower_gum_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "upper_gum_1",
+        "first_margin": 2.041847,
+        "joint": [
+          -28,
+          28.9,
+          6.3
+        ],
+        "minimum_margin": 0.279167,
+        "second": "upper_tooth_1",
+        "second_margin": 0.279167
+      },
+      {
+        "connected": true,
+        "first": "upper_gum_1",
+        "first_margin": 2.070924,
+        "joint": [
+          -33,
+          27.2,
+          8.4
+        ],
+        "minimum_margin": 0.279167,
+        "second": "upper_tooth_2",
+        "second_margin": 0.279167
+      },
+      {
+        "connected": true,
+        "first": "upper_gum_1",
+        "first_margin": 1.735702,
+        "joint": [
+          -37,
+          25.9,
+          10
+        ],
+        "minimum_margin": 0.279167,
+        "second": "upper_tooth_3",
+        "second_margin": 0.279167
+      },
+      {
+        "connected": true,
+        "first": "upper_gum_2",
+        "first_margin": 1.585579,
+        "joint": [
+          -42,
+          25.1,
+          10
+        ],
+        "minimum_margin": 0.279167,
+        "second": "upper_tooth_4",
+        "second_margin": 0.279167
+      },
+      {
+        "connected": true,
+        "first": "upper_gum_2",
+        "first_margin": 1.552695,
+        "joint": [
+          -47,
+          24.6,
+          9.2
+        ],
+        "minimum_margin": 0.279167,
+        "second": "upper_tooth_5",
+        "second_margin": 0.279167
+      },
+      {
+        "connected": true,
+        "first": "upper_gum_2",
+        "first_margin": 1.550248,
+        "joint": [
+          -51.5,
+          24.1,
+          8.2
+        ],
+        "minimum_margin": 0.279167,
+        "second": "upper_tooth_6",
+        "second_margin": 0.279167
+      },
+      {
+        "connected": true,
+        "first": "lower_gum_1",
+        "first_margin": 1.666254,
+        "joint": [
+          -31,
+          17.2,
+          5.1
+        ],
+        "minimum_margin": 0.279167,
+        "second": "lower_tooth_1",
+        "second_margin": 0.279167
+      },
+      {
+        "connected": true,
+        "first": "lower_gum_1",
+        "first_margin": 1.845679,
+        "joint": [
+          -36,
+          17.6,
+          7.8
+        ],
+        "minimum_margin": 0.279167,
+        "second": "lower_tooth_2",
+        "second_margin": 0.279167
+      },
+      {
+        "connected": true,
+        "first": "lower_gum_1",
+        "first_margin": 1.670355,
+        "joint": [
+          -40,
+          17.9,
+          10
+        ],
+        "minimum_margin": 0.279167,
+        "second": "lower_tooth_3",
+        "second_margin": 0.279167
+      },
+      {
+        "connected": true,
+        "first": "lower_gum_2",
+        "first_margin": 1.471591,
+        "joint": [
+          -45,
+          17.6,
+          9.7
+        ],
+        "minimum_margin": 0.279167,
+        "second": "lower_tooth_4",
+        "second_margin": 0.279167
+      },
+      {
+        "connected": true,
+        "first": "lower_gum_2",
+        "first_margin": 1.464489,
+        "joint": [
+          -50,
+          17,
+          8.6
+        ],
+        "minimum_margin": 0.279167,
+        "second": "lower_tooth_5",
+        "second_margin": 0.279167
+      },
+      {
+        "connected": true,
+        "first": "lower_gum_2",
+        "first_margin": 1.460938,
+        "joint": [
+          -53.5,
+          16.7,
+          7.8
+        ],
+        "minimum_margin": 0.279167,
+        "second": "lower_tooth_6",
+        "second_margin": 0.279167
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          12,
+          47.4,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_002",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          12,
+          30.6,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_003",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          22.666666,
+          39,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_004",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          12,
+          39,
+          9
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_005",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          12,
+          39,
+          -9
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_006",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          1.333334,
+          39,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_007",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          12,
+          30.6,
+          -7.5
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_011",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          22.666666,
+          46,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_012",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          22.666666,
+          32,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_013",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          21.333333,
+          47.4,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_014",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          2.666667,
+          47.4,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_015",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          1.333334,
+          46,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_016",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          1.333334,
+          32,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_017",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          17.333333,
+          30.6,
+          7.5
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_022",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          12,
+          46,
+          9
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_023",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          12,
+          46,
+          -9
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_024",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          12,
+          32,
+          9
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_025",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          12,
+          32,
+          -9
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_026",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0,
+        "joint": [
+          6.666667,
+          30.6,
+          7.5
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_028",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_002",
+        "first_margin": 0,
+        "joint": [
+          18.666667,
+          50.2,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_020",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_002",
+        "first_margin": 0,
+        "joint": [
+          5.333333,
+          50.2,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_027",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_003",
+        "first_margin": 0,
+        "joint": [
+          12,
+          27.8,
+          -3
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_009",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_003",
+        "first_margin": 0,
+        "joint": [
+          18.666667,
+          27.8,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_021",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_003",
+        "first_margin": 0,
+        "joint": [
+          5.333333,
+          27.8,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_029",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_003",
+        "first_margin": 0,
+        "joint": [
+          16,
+          27.8,
+          1.5
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_032",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_004",
+        "first_margin": 0,
+        "joint": [
+          25.333334,
+          39,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_008",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_004",
+        "first_margin": 0,
+        "joint": [
+          25.333334,
+          43.2,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_018",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_004",
+        "first_margin": 0,
+        "joint": [
+          25.333334,
+          34.8,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_019",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_007",
+        "first_margin": 0,
+        "joint": [
+          -1.333333,
+          39,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_010",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_007",
+        "first_margin": 0,
+        "joint": [
+          -1.333333,
+          43.2,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_030",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_007",
+        "first_margin": 0,
+        "joint": [
+          -1.333333,
+          34.8,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "apple_lure_volume_031",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "lure_support_upper_1",
+        "first_margin": 0.65074,
+        "joint": [
+          10,
+          32,
+          0
+        ],
+        "minimum_margin": 0.65074,
+        "second": "apple_lure_volume_001",
+        "second_margin": 1.4
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_002",
+        "first_margin": 0.2,
+        "joint": [
+          17,
+          50,
+          0
+        ],
+        "minimum_margin": 0.2,
+        "second": "crooked_stem_lower_1",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "crooked_stem_lower_1",
+        "first_margin": 0.29825,
+        "joint": [
+          14.5,
+          54,
+          -0.5
+        ],
+        "minimum_margin": 0.29825,
+        "second": "crooked_stem_middle_1",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "crooked_stem_middle_1",
+        "first_margin": 0.300603,
+        "joint": [
+          12.5,
+          57,
+          0.25
+        ],
+        "minimum_margin": 0.25,
+        "second": "crooked_stem_tip_1",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_017",
+        "first_margin": 0.333333,
+        "joint": [
+          1,
+          32,
+          5
+        ],
+        "minimum_margin": 0.333333,
+        "second": "left_flesh_drip_upper_1",
+        "second_margin": 0.35
+      },
+      {
+        "connected": true,
+        "first": "left_flesh_drip_upper_1",
+        "first_margin": 0.350166,
+        "joint": [
+          -1,
+          25,
+          7
+        ],
+        "minimum_margin": 0.35,
+        "second": "left_flesh_drip_lower_1",
+        "second_margin": 0.35
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_001",
+        "first_margin": 0.4,
+        "joint": [
+          13,
+          31,
+          -5
+        ],
+        "minimum_margin": 0.35,
+        "second": "middle_flesh_drip_upper_1",
+        "second_margin": 0.35
+      },
+      {
+        "connected": true,
+        "first": "middle_flesh_drip_upper_1",
+        "first_margin": 0.351531,
+        "joint": [
+          14,
+          24,
+          -7
+        ],
+        "minimum_margin": 0.35,
+        "second": "middle_flesh_drip_lower_1",
+        "second_margin": 0.35
+      },
+      {
+        "connected": true,
+        "first": "apple_lure_volume_013",
+        "first_margin": 1.333333,
+        "joint": [
+          24,
+          32,
+          4
+        ],
+        "minimum_margin": 0.35,
+        "second": "right_flesh_drip_upper_1",
+        "second_margin": 0.35
+      },
+      {
+        "connected": true,
+        "first": "right_flesh_drip_upper_1",
+        "first_margin": 0.35,
+        "joint": [
+          27,
+          26,
+          6
+        ],
+        "minimum_margin": 0.35,
+        "second": "right_flesh_drip_lower_1",
+        "second_margin": 0.35
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 2,
+        "joint": [
+          -1,
+          20,
+          7
+        ],
+        "minimum_margin": 0.55,
+        "second": "near_fore_hand_root_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_fore_hand_root_1",
+        "first_margin": 0.550253,
+        "joint": [
+          3,
+          18.5,
+          9.5
+        ],
+        "minimum_margin": 0.55,
+        "second": "near_fore_hand_root_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_fore_hand_root_2",
+        "first_margin": 0.550253,
+        "joint": [
+          7,
+          17,
+          12
+        ],
+        "minimum_margin": 0.55,
+        "second": "near_fore_hand_arm_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_fore_hand_arm_1",
+        "first_margin": 0.551742,
+        "joint": [
+          12.5,
+          13.5,
+          14
+        ],
+        "minimum_margin": 0.55,
+        "second": "near_fore_hand_arm_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_fore_hand_arm_2",
+        "first_margin": 0.551742,
+        "joint": [
+          18,
+          10,
+          16
+        ],
+        "minimum_margin": 0.55,
+        "second": "near_fore_hand_forearm_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_fore_hand_forearm_1",
+        "first_margin": 0.548153,
+        "joint": [
+          14.5,
+          7,
+          17.5
+        ],
+        "minimum_margin": 0.548153,
+        "second": "near_fore_hand_forearm_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_fore_hand_forearm_2",
+        "first_margin": 0.548153,
+        "joint": [
+          11,
+          4,
+          19
+        ],
+        "minimum_margin": 0.548153,
+        "second": "near_fore_hand_palm_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_fore_hand_palm_1",
+        "first_margin": 0.548466,
+        "joint": [
+          5.5,
+          2.9,
+          20
+        ],
+        "minimum_margin": 0.548466,
+        "second": "near_fore_hand_palm_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_fore_hand_forearm_2",
+        "first_margin": 0.548153,
+        "joint": [
+          11,
+          4,
+          19
+        ],
+        "minimum_margin": 0.548153,
+        "second": "near_fore_hand_spur_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_fore_hand_palm_2",
+        "first_margin": 0.548466,
+        "joint": [
+          0,
+          1.8,
+          21
+        ],
+        "minimum_margin": 0.548466,
+        "second": "near_fore_hand_inner_digit_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_fore_hand_inner_digit_1",
+        "first_margin": 0.549539,
+        "joint": [
+          3.5,
+          1.45,
+          23
+        ],
+        "minimum_margin": 0.549539,
+        "second": "near_fore_hand_inner_digit_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_fore_hand_palm_2",
+        "first_margin": 0.548466,
+        "joint": [
+          0,
+          1.8,
+          21
+        ],
+        "minimum_margin": 0.548466,
+        "second": "near_fore_hand_middle_digit_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_fore_hand_middle_digit_1",
+        "first_margin": 0.552073,
+        "joint": [
+          -3.5,
+          1.4,
+          24
+        ],
+        "minimum_margin": 0.55,
+        "second": "near_fore_hand_middle_digit_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_fore_hand_palm_2",
+        "first_margin": 0.548466,
+        "joint": [
+          0,
+          1.8,
+          21
+        ],
+        "minimum_margin": 0.548466,
+        "second": "near_fore_hand_outer_digit_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_fore_hand_outer_digit_1",
+        "first_margin": 0.55095,
+        "joint": [
+          -8.5,
+          1.5,
+          22.5
+        ],
+        "minimum_margin": 0.55,
+        "second": "near_fore_hand_outer_digit_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 2,
+        "joint": [
+          -4,
+          20,
+          -7
+        ],
+        "minimum_margin": 0.55,
+        "second": "far_under_root_root_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_under_root_root_1",
+        "first_margin": 0.548153,
+        "joint": [
+          -8.5,
+          17.5,
+          -9
+        ],
+        "minimum_margin": 0.548153,
+        "second": "far_under_root_root_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_under_root_root_2",
+        "first_margin": 0.548153,
+        "joint": [
+          -13,
+          15,
+          -11
+        ],
+        "minimum_margin": 0.548153,
+        "second": "far_under_root_arm_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_under_root_arm_1",
+        "first_margin": 0.551021,
+        "joint": [
+          -15,
+          11,
+          -13
+        ],
+        "minimum_margin": 0.55,
+        "second": "far_under_root_arm_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_under_root_arm_2",
+        "first_margin": 0.551021,
+        "joint": [
+          -17,
+          7,
+          -15
+        ],
+        "minimum_margin": 0.55,
+        "second": "far_under_root_palm_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_under_root_palm_1",
+        "first_margin": 0.55145,
+        "joint": [
+          -20,
+          1.8,
+          -17
+        ],
+        "minimum_margin": 0.55,
+        "second": "far_under_root_inner_digit_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_under_root_inner_digit_1",
+        "first_margin": 0.550055,
+        "joint": [
+          -17,
+          1.45,
+          -19.5
+        ],
+        "minimum_margin": 0.475,
+        "second": "far_under_root_inner_digit_2",
+        "second_margin": 0.475
+      },
+      {
+        "connected": true,
+        "first": "far_under_root_palm_1",
+        "first_margin": 0.55145,
+        "joint": [
+          -20,
+          1.8,
+          -17
+        ],
+        "minimum_margin": 0.55,
+        "second": "far_under_root_outer_digit_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_under_root_outer_digit_1",
+        "first_margin": 0.551273,
+        "joint": [
+          -24.5,
+          1.5,
+          -18.5
+        ],
+        "minimum_margin": 0.508333,
+        "second": "far_under_root_outer_digit_2",
+        "second_margin": 0.508333
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 2,
+        "joint": [
+          7,
+          20,
+          7
+        ],
+        "minimum_margin": 0.55,
+        "second": "near_right_root_root_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_right_root_root_1",
+        "first_margin": 0.548777,
+        "joint": [
+          13.5,
+          18,
+          9
+        ],
+        "minimum_margin": 0.548777,
+        "second": "near_right_root_root_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_right_root_root_2",
+        "first_margin": 0.548777,
+        "joint": [
+          20,
+          16,
+          11
+        ],
+        "minimum_margin": 0.548777,
+        "second": "near_right_root_arm_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_right_root_arm_1",
+        "first_margin": 0.550129,
+        "joint": [
+          25,
+          12,
+          13
+        ],
+        "minimum_margin": 0.55,
+        "second": "near_right_root_arm_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_right_root_arm_2",
+        "first_margin": 0.550129,
+        "joint": [
+          30,
+          8,
+          15
+        ],
+        "minimum_margin": 0.55,
+        "second": "near_right_root_forearm_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_right_root_forearm_1",
+        "first_margin": 0.547953,
+        "joint": [
+          33.5,
+          4.9,
+          16
+        ],
+        "minimum_margin": 0.547953,
+        "second": "near_right_root_forearm_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_right_root_forearm_2",
+        "first_margin": 0.547953,
+        "joint": [
+          37,
+          1.8,
+          17
+        ],
+        "minimum_margin": 0.547953,
+        "second": "near_right_root_inner_digit_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_right_root_inner_digit_1",
+        "first_margin": 0.551062,
+        "joint": [
+          35.5,
+          1.45,
+          20.5
+        ],
+        "minimum_margin": 0.5,
+        "second": "near_right_root_inner_digit_2",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "near_right_root_forearm_2",
+        "first_margin": 0.547953,
+        "joint": [
+          37,
+          1.8,
+          17
+        ],
+        "minimum_margin": 0.547953,
+        "second": "near_right_root_middle_digit_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_right_root_middle_digit_1",
+        "first_margin": 0.551045,
+        "joint": [
+          40,
+          1.4,
+          20
+        ],
+        "minimum_margin": 0.533333,
+        "second": "near_right_root_middle_digit_2",
+        "second_margin": 0.533333
+      },
+      {
+        "connected": true,
+        "first": "near_right_root_forearm_2",
+        "first_margin": 0.547953,
+        "joint": [
+          37,
+          1.8,
+          17
+        ],
+        "minimum_margin": 0.547953,
+        "second": "near_right_root_outer_digit_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "near_right_root_outer_digit_1",
+        "first_margin": 0.550021,
+        "joint": [
+          43.5,
+          1.5,
+          18
+        ],
+        "minimum_margin": 0.55,
+        "second": "near_right_root_outer_digit_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "spine_rear_arch_2",
+        "first_margin": 0.799656,
+        "joint": [
+          31,
+          21,
+          -5
+        ],
+        "minimum_margin": 0.55,
+        "second": "far_rear_arch_arch_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_rear_arch_arch_1",
+        "first_margin": 0.549823,
+        "joint": [
+          34,
+          28.5,
+          -8
+        ],
+        "minimum_margin": 0.549823,
+        "second": "far_rear_arch_arch_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_rear_arch_arch_2",
+        "first_margin": 0.549823,
+        "joint": [
+          37,
+          36,
+          -11
+        ],
+        "minimum_margin": 0.549823,
+        "second": "far_rear_arch_crown_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_rear_arch_crown_1",
+        "first_margin": 0.550474,
+        "joint": [
+          44,
+          42,
+          -14
+        ],
+        "minimum_margin": 0.55,
+        "second": "far_rear_arch_shin_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_rear_arch_shin_1",
+        "first_margin": 0.551341,
+        "joint": [
+          43.666667,
+          33.333333,
+          -14.666667
+        ],
+        "minimum_margin": 0.549999,
+        "second": "far_rear_arch_shin_2",
+        "second_margin": 0.549999
+      },
+      {
+        "connected": true,
+        "first": "far_rear_arch_shin_2",
+        "first_margin": 0.551342,
+        "joint": [
+          43.333333,
+          24.666667,
+          -15.333333
+        ],
+        "minimum_margin": 0.550001,
+        "second": "far_rear_arch_shin_3",
+        "second_margin": 0.550001
+      },
+      {
+        "connected": true,
+        "first": "far_rear_arch_shin_3",
+        "first_margin": 0.55134,
+        "joint": [
+          43,
+          16,
+          -16
+        ],
+        "minimum_margin": 0.55,
+        "second": "far_rear_arch_wrist_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_rear_arch_wrist_1",
+        "first_margin": 0.548777,
+        "joint": [
+          44,
+          9,
+          -16.5
+        ],
+        "minimum_margin": 0.548777,
+        "second": "far_rear_arch_wrist_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_rear_arch_wrist_2",
+        "first_margin": 0.548777,
+        "joint": [
+          45,
+          2,
+          -17
+        ],
+        "minimum_margin": 0.548777,
+        "second": "far_rear_arch_inner_digit_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_rear_arch_inner_digit_1",
+        "first_margin": 0.550624,
+        "joint": [
+          42,
+          1.55,
+          -21
+        ],
+        "minimum_margin": 0.533333,
+        "second": "far_rear_arch_inner_digit_2",
+        "second_margin": 0.533333
+      },
+      {
+        "connected": true,
+        "first": "far_rear_arch_wrist_2",
+        "first_margin": 0.548777,
+        "joint": [
+          45,
+          2,
+          -17
+        ],
+        "minimum_margin": 0.548777,
+        "second": "far_rear_arch_middle_digit_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_rear_arch_middle_digit_1",
+        "first_margin": 0.550063,
+        "joint": [
+          48.5,
+          1.5,
+          -20.5
+        ],
+        "minimum_margin": 0.55,
+        "second": "far_rear_arch_middle_digit_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_rear_arch_wrist_2",
+        "first_margin": 0.548777,
+        "joint": [
+          45,
+          2,
+          -17
+        ],
+        "minimum_margin": 0.548777,
+        "second": "far_rear_arch_outer_digit_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "far_rear_arch_outer_digit_1",
+        "first_margin": 0.550834,
+        "joint": [
+          52.5,
+          5.5,
+          -18
+        ],
+        "minimum_margin": 0.55,
+        "second": "far_rear_arch_outer_digit_2",
+        "second_margin": 0.55
+      }
+    ],
+    "method": "shared-joint-compiled-oriented-cuboid-margin-v2",
+    "minimum_margin": 0.0
+  },
+  "bones": 79,
+  "cuboids": 189,
+  "declared_link_tree_covers_every_cube": true,
+  "feature_inventory": {
+    "apple_cuboids": 32,
+    "apple_exposed_cut_faces": 12,
+    "apple_flesh_drips": 3,
+    "apple_removed_voxels": 25,
+    "far_root_limbs": 2,
+    "identity_patches": 3,
+    "lower_jaw_cuboids": 21,
+    "maw_teeth": 12,
+    "near_root_limbs": 2,
+    "root_limbs": 4,
+    "root_segments": 50,
+    "skull_cuboids": 49,
+    "skull_exposed_cut_faces": 53,
+    "skull_removed_voxels": 78
+  },
+  "keypoint_mean_gate_at_most_0.06_subject_heights": true,
+  "model_id": "false_apple_root_beast",
+  "negative_space": {
+    "black_maw_proxy_solids": 0,
+    "maw_is_empty_geometry_not_black_proxy": true,
+    "method": "voxel-center ellipsoid CSG subtraction before greedy cuboid merging",
+    "skull_exposed_cut_faces": 53,
+    "skull_removed_voxels": 78
+  },
+  "part_local_depth_audit": {
+    "method": "explicit selected-oriented-cuboid world bounds; no reusable API required",
+    "parts": {
+      "apple": {
+        "effective_world_extents": [
+          32.0,
+          28.0,
+          24.0
+        ],
+        "lower": [
+          -4.0,
+          25.0,
+          -12.0
+        ],
+        "selection_rule": [
+          "apple_lure_volume_001",
+          "apple_lure_volume_002",
+          "apple_lure_volume_003",
+          "apple_lure_volume_004",
+          "apple_lure_volume_005",
+          "apple_lure_volume_006",
+          "apple_lure_volume_007",
+          "apple_lure_volume_008",
+          "apple_lure_volume_009",
+          "apple_lure_volume_010",
+          "apple_lure_volume_011",
+          "apple_lure_volume_012",
+          "apple_lure_volume_013",
+          "apple_lure_volume_014",
+          "apple_lure_volume_015",
+          "apple_lure_volume_016",
+          "apple_lure_volume_017",
+          "apple_lure_volume_018",
+          "apple_lure_volume_019",
+          "apple_lure_volume_020",
+          "apple_lure_volume_021",
+          "apple_lure_volume_022",
+          "apple_lure_volume_023",
+          "apple_lure_volume_024",
+          "apple_lure_volume_025",
+          "apple_lure_volume_026",
+          "apple_lure_volume_027",
+          "apple_lure_volume_028",
+          "apple_lure_volume_029",
+          "apple_lure_volume_030",
+          "apple_lure_volume_031",
+          "apple_lure_volume_032"
+        ],
+        "upper": [
+          28.0,
+          53.0,
+          12.0
+        ]
+      },
+      "far_roots": {
+        "effective_world_extents": [
+          90.572725,
+          44.95499,
+          24.760826
+        ],
+        "lower": [
+          -29.720816,
+          0.166049,
+          -25.761003
+        ],
+        "selection_rule": [
+          "far_rear_arch_arch_1",
+          "far_rear_arch_arch_2",
+          "far_rear_arch_crown_1",
+          "far_rear_arch_inner_digit_1",
+          "far_rear_arch_inner_digit_2",
+          "far_rear_arch_middle_digit_1",
+          "far_rear_arch_middle_digit_2",
+          "far_rear_arch_outer_digit_1",
+          "far_rear_arch_outer_digit_2",
+          "far_rear_arch_shin_1",
+          "far_rear_arch_shin_2",
+          "far_rear_arch_shin_3",
+          "far_rear_arch_wrist_1",
+          "far_rear_arch_wrist_2",
+          "far_under_root_arm_1",
+          "far_under_root_arm_2",
+          "far_under_root_inner_digit_1",
+          "far_under_root_inner_digit_2",
+          "far_under_root_outer_digit_1",
+          "far_under_root_outer_digit_2",
+          "far_under_root_palm_1",
+          "far_under_root_root_1",
+          "far_under_root_root_2"
+        ],
+        "upper": [
+          60.851909,
+          45.12104,
+          -1.000177
+        ]
+      },
+      "head_and_maw": {
+        "effective_world_extents": [
+          43.0,
+          48.0,
+          28.0
+        ],
+        "lower": [
+          -60.0,
+          6.0,
+          -14.0
+        ],
+        "selection_rule": [
+          "lower_gum_1",
+          "lower_gum_2",
+          "lower_jaw_volume_001",
+          "lower_jaw_volume_002",
+          "lower_jaw_volume_003",
+          "lower_jaw_volume_004",
+          "lower_jaw_volume_005",
+          "lower_jaw_volume_006",
+          "lower_jaw_volume_007",
+          "lower_jaw_volume_008",
+          "lower_jaw_volume_009",
+          "lower_jaw_volume_010",
+          "lower_jaw_volume_011",
+          "lower_jaw_volume_012",
+          "lower_jaw_volume_013",
+          "lower_jaw_volume_014",
+          "lower_jaw_volume_015",
+          "lower_jaw_volume_016",
+          "lower_jaw_volume_017",
+          "lower_jaw_volume_018",
+          "lower_jaw_volume_019",
+          "lower_jaw_volume_020",
+          "lower_jaw_volume_021",
+          "lower_tooth_1",
+          "lower_tooth_2",
+          "lower_tooth_3",
+          "lower_tooth_4",
+          "lower_tooth_5",
+          "lower_tooth_6",
+          "skull_volume_001",
+          "skull_volume_002",
+          "skull_volume_003",
+          "skull_volume_004",
+          "skull_volume_005",
+          "skull_volume_006",
+          "skull_volume_007",
+          "skull_volume_008",
+          "skull_volume_009",
+          "skull_volume_010",
+          "skull_volume_011",
+          "skull_volume_012",
+          "skull_volume_013",
+          "skull_volume_014",
+          "skull_volume_015",
+          "skull_volume_016",
+          "skull_volume_017",
+          "skull_volume_018",
+          "skull_volume_019",
+          "skull_volume_020",
+          "skull_volume_021",
+          "skull_volume_022",
+          "skull_volume_023",
+          "skull_volume_024",
+          "skull_volume_025",
+          "skull_volume_026",
+          "skull_volume_027",
+          "skull_volume_028",
+          "skull_volume_029",
+          "skull_volume_030",
+          "skull_volume_031",
+          "skull_volume_032",
+          "skull_volume_033",
+          "skull_volume_034",
+          "skull_volume_035",
+          "skull_volume_036",
+          "skull_volume_037",
+          "skull_volume_038",
+          "skull_volume_039",
+          "skull_volume_040",
+          "skull_volume_041",
+          "skull_volume_042",
+          "skull_volume_043",
+          "skull_volume_044",
+          "skull_volume_045",
+          "skull_volume_046",
+          "skull_volume_047",
+          "skull_volume_048",
+          "skull_volume_049",
+          "upper_gum_1",
+          "upper_gum_2",
+          "upper_tooth_1",
+          "upper_tooth_2",
+          "upper_tooth_3",
+          "upper_tooth_4",
+          "upper_tooth_5",
+          "upper_tooth_6"
+        ],
+        "upper": [
+          -17.0,
+          54.0,
+          14.0
+        ]
+      },
+      "near_roots": {
+        "effective_world_extents": [
+          68.332788,
+          24.822505,
+          24.933679
+        ],
+        "lower": [
+          -17.674407,
+          -0.076112,
+          2.887407
+        ],
+        "selection_rule": [
+          "near_fore_hand_arm_1",
+          "near_fore_hand_arm_2",
+          "near_fore_hand_forearm_1",
+          "near_fore_hand_forearm_2",
+          "near_fore_hand_inner_digit_1",
+          "near_fore_hand_inner_digit_2",
+          "near_fore_hand_middle_digit_1",
+          "near_fore_hand_middle_digit_2",
+          "near_fore_hand_outer_digit_1",
+          "near_fore_hand_outer_digit_2",
+          "near_fore_hand_palm_1",
+          "near_fore_hand_palm_2",
+          "near_fore_hand_root_1",
+          "near_fore_hand_root_2",
+          "near_fore_hand_spur_1",
+          "near_right_root_arm_1",
+          "near_right_root_arm_2",
+          "near_right_root_forearm_1",
+          "near_right_root_forearm_2",
+          "near_right_root_inner_digit_1",
+          "near_right_root_inner_digit_2",
+          "near_right_root_middle_digit_1",
+          "near_right_root_middle_digit_2",
+          "near_right_root_outer_digit_1",
+          "near_right_root_outer_digit_2",
+          "near_right_root_root_1",
+          "near_right_root_root_2"
+        ],
+        "upper": [
+          50.658381,
+          24.746393,
+          27.821086
+        ]
+      },
+      "trunk": {
+        "effective_world_extents": [
+          56.193023,
+          20.477943,
+          19.539807
+        ],
+        "lower": [
+          -22.50258,
+          16.0,
+          -10.539807
+        ],
+        "selection_rule": [
+          "body_core",
+          "lure_support_lower_1",
+          "lure_support_upper_1",
+          "spine_head_socket_1",
+          "spine_head_socket_2",
+          "spine_headward_1",
+          "spine_headward_2",
+          "spine_rear_arch_1",
+          "spine_rear_arch_2",
+          "spine_rearward_1",
+          "spine_rearward_2",
+          "spine_rearward_3"
+        ],
+        "upper": [
+          33.690443,
+          36.477943,
+          9.0
+        ]
+      }
+    },
+    "selection_is_recorded": true
+  },
+  "proportion_gates": {
+    "all_root_limbs_contact_ground_band": true,
+    "apple_depth_to_width_at_least_0.75": true,
+    "at_least_two_limb_root_z_layers": true,
+    "head_maw_depth_to_height_at_least_0.55": true
+  },
+  "proportions": {
+    "apple_depth_to_width": 0.75,
+    "head_maw_depth_to_height": 0.583333,
+    "model_extents": [
+      120.851909,
+      60.498238,
+      53.58209
+    ],
+    "root_layer_center_separation": 28.734837,
+    "root_layer_centers_z": {
+      "far": -13.38059,
+      "near": 15.354247
+    }
+  },
+  "recorded_feature_inventory_matches": true,
+  "reference_frame_clipping": {
+    "declared_edges": [
+      "left",
+      "right",
+      "top",
+      "bottom"
+    ],
+    "iou_cannot_establish_off_frame_continuation": true,
+    "measured_edges": {
+      "bottom": true,
+      "left": true,
+      "right": true,
+      "top": true
+    }
+  },
+  "reference_rights": "unknown; private ignored benchmark reference only",
+  "renderer": "deterministic-orthographic-textured-cuboid-zbuffer-v2-light-review",
+  "root_ground_contacts": {
+    "far_rear_arch": 0.245148,
+    "far_under_root": 0.433587,
+    "near_fore_hand": 0.081509,
+    "near_right_root": 0.202965
+  },
+  "schema_version": 1,
+  "semantic_cuboids": 189,
+  "single_view_hidden_geometry": "inferred_conservatively_not_observed",
+  "source_iou_gate_at_least_0.62": true,
+  "source_projection": false,
+  "source_skin_cuboids": 0,
+  "views": [
+    "reference-angle.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "maw-closeup.png",
+    "apple-closeup.png",
+    "near-root-closeup.png",
+    "far-root-closeup.png",
+    "silhouette-overlap.png",
+    "comparison-sheet.png"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "cycle": 3,
+  "cumulative_verdict": "PASS",
+  "prior_asset_regression": "NONE_DETECTED",
+  "assets": {
+    "american_goldfinch": {
+      "verdict": "PASS",
+      "mean": 3.90,
+      "scores": [4.3, 4.0, 4.6, 4.2, 3.2, 3.1]
+    },
+    "porsche_911_turbo_930": {
+      "verdict": "PASS",
+      "mean": 3.92,
+      "scores": [4.5, 4.5, 4.5, 4.0, 3.0, 3.0]
+    },
+    "excalibur": {
+      "verdict": "PASS",
+      "mean": 4.40,
+      "scores": [4.9, 4.8, 4.5, 4.4, 4.2, 3.6],
+      "silhouette_iou": 0.959239,
+      "silhouette_recall": 0.984562
+    }
+  },
+  "score_order": [
+    "silhouette",
+    "proportions",
+    "identity_features",
+    "materials_color",
+    "attachment_topology",
+    "3d_coherence"
+  ],
+  "required_fixes": []
+}

@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 54163,
+      "path": "porsche_911_turbo_930.model-spec.json",
+      "sha256": "4d4a2d49698352cb40d9cbe2f6870523a9a8ae8c27cdf0ecf31cea62752aea9c"
+    },
+    {
+      "bytes": 3025,
+      "path": "porsche_911_turbo_930.png",
+      "sha256": "f41c66b99d9c01b19f7a046001d229c6439510a50c9564b5e526cc8f07ba9e5a"
+    },
+    {
+      "bytes": 162151,
+      "path": "porsche_911_turbo_930.bbmodel",
+      "sha256": "79715e96c05485b2cf80f1b0691e8dc676eaed5dfdd4345023ad579d84a8049d"
+    },
+    {
+      "bytes": 189294,
+      "path": "porsche_911_turbo_930.geo.json",
+      "sha256": "d7ea00cf43214c89a9f87d40f67dfcba9ea4007cd5e7c7881fb07efadb27d71d"
+    },
+    {
+      "bytes": 213,
+      "path": "porsche_911_turbo_930.audit.json",
+      "sha256": "b7dbc048b7cd9c0baabf51ff1d8638ad663fe998c87e8f5d3e2317c868b6f40b"
+    },
+    {
+      "bytes": 1005503,
+      "path": "porsche_911_turbo_930.reference.png",
+      "sha256": "3b161a5f5e5c4a1ab3aa1034ceb5e6f0f727e51f6f7d0135ed4bae0e67c3f1d1"
+    }
+  ],
+  "collision": {
+    "eye_height": 1.05,
+    "height": 1.25,
+    "width": 1.9
+  },
+  "generator": {
+    "lane": "agent-authored-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "porsche_911_turbo_930",
+  "reference": {
+    "height": 609,
+    "image": "porsche_911_turbo_930.reference.png",
+    "sha256": "3b161a5f5e5c4a1ab3aa1034ceb5e6f0f727e51f6f7d0135ed4bae0e67c3f1d1",
+    "width": 1859
+  },
+  "schema_version": 1
+}

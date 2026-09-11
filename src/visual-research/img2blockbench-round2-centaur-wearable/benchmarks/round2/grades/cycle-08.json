@@ -1,0 +1,37 @@
+{
+  "asset": "zombie_devil_exposed_brain",
+  "critical_defects": [],
+  "cycle": 8,
+  "graded_commit": "527ba3add381616620e42f665e3d8e3e3cc12aca",
+  "grader": "independent_read_only_codex_terminal_color_restore",
+  "mean": 3.333333,
+  "quantitative": {
+    "arms_depth_to_width": 0.341463,
+    "brain_depth_to_width": 1.166667,
+    "chromatic_opaque_texel_fraction": 0.916654,
+    "chromatic_opaque_texels": 161366,
+    "declared_links_connected": "187/187",
+    "duplicate_rgb_correlation": 0.999919,
+    "fixed_camera_iou": 0.645798,
+    "geometry_fingerprint_sha256": "aafbaafe270e8701a296b18be1cc9745949086092bdd2dee396fa3442ced01d3",
+    "head_depth_to_width": 0.833333,
+    "independent_observed_camera_axes": 1,
+    "keypoint_mean_error_subject_heights": 0.069759,
+    "normalized_silhouette_iou": 0.644959,
+    "opaque_texels": 176038,
+    "source_palette_colors": 16,
+    "source_palette_max_channel_spread": 1,
+    "torso_depth_to_width": 0.75
+  },
+  "round": 2,
+  "schema_version": 1,
+  "scores": {
+    "3d_coherence": 3,
+    "attachment_topology": 3,
+    "identity": 4,
+    "materials_color": 4,
+    "proportions": 3,
+    "silhouette": 3
+  },
+  "verdict": "PASS"
+}

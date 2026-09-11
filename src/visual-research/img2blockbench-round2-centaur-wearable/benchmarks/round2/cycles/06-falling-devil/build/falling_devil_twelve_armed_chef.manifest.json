@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 494764,
+      "path": "falling_devil_twelve_armed_chef.model-spec.json",
+      "sha256": "cbb30fe280601f3b76e5a9297b7cc6b4b6483b24d49b85d53dde8bd5e82e6b53"
+    },
+    {
+      "bytes": 12231,
+      "path": "falling_devil_twelve_armed_chef.png",
+      "sha256": "bb6b35bf975d565f373289d4794834e06aed517a1c6c02b45d2bf2386ddc79e6"
+    },
+    {
+      "bytes": 170908,
+      "path": "falling_devil_twelve_armed_chef.bbmodel",
+      "sha256": "219420c8d9157cb970527bbe2ffc886e974ac425ffe1a2b1d3f6255bca652bad"
+    },
+    {
+      "bytes": 160731,
+      "path": "falling_devil_twelve_armed_chef.geo.json",
+      "sha256": "175704e3731d34527f484329b0e7e01384a64c480c35ba9a63f7edbe3d98d51a"
+    },
+    {
+      "bytes": 214,
+      "path": "falling_devil_twelve_armed_chef.audit.json",
+      "sha256": "b6cfc3bb50feb311c4c975f01fd444134363cc6772d2c1342c82b4090525b9bd"
+    },
+    {
+      "bytes": 172516,
+      "path": "falling_devil_twelve_armed_chef.reference.png",
+      "sha256": "e2824aa87127cb8922be7e37ae0942f9abfbf8413fbe39ce133edf4ed06c18fb"
+    }
+  ],
+  "collision": {
+    "eye_height": 3.15,
+    "height": 3.6,
+    "width": 1.1
+  },
+  "generator": {
+    "lane": "agent-authored-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "falling_devil_twelve_armed_chef",
+  "reference": {
+    "height": 501,
+    "image": "falling_devil_twelve_armed_chef.reference.png",
+    "sha256": "e2824aa87127cb8922be7e37ae0942f9abfbf8413fbe39ce133edf4ed06c18fb",
+    "width": 399
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,48 @@
+{
+  "asset": "greta_shark_chef",
+  "author_decision": "READY_FOR_INDEPENDENT_VISUAL_REVIEW",
+  "critical_geometry_defect_observed": false,
+  "cycle": "round2-03",
+  "identity_review": {
+    "attached_articulated_tail_and_single_forked_caudal_fin_visible": true,
+    "blue_shoulder_tattoo_and_red_eye_visible": true,
+    "broad_deep_suited_biped_visible": true,
+    "chef_hat_and_dorsal_fin_visible": true,
+    "four_distinct_toothed_mouths_visible_across_main_and_detail_views": true,
+    "held_large_cleaver_axe_visible": true,
+    "horizontal_tapered_shark_snout_and_jaw_visible": true,
+    "source_reads_as_shark_headed_suited_chef": true
+  },
+  "limitations": [
+    "Only one transparent illustration is observed.",
+    "Rear materials, the leg-occluded tail root, and exact appendage depth are inferred.",
+    "The main source-scale view cannot resolve every tooth pixel; the four dedicated cavities and eight tooth rows are verified in closeups and the native atlas.",
+    "Static geometry was reviewed; no animation was authored or approved."
+  ],
+  "quantitative_checks": {
+    "all_71_declared_attachments_connected": true,
+    "alpha_silhouette_iou": 0.68495,
+    "head_depth_to_body_width": 0.592076,
+    "keypoint_max_error_subject_heights": 0.070994,
+    "keypoint_mean_error_subject_heights": 0.029263,
+    "source_frame_clipped": false,
+    "strict_native_audit": true,
+    "torso_depth_to_body_width": 0.66087,
+    "two_builds_byte_identical": true
+  },
+  "reviewed_views": [
+    "reference-angle.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "head-mouth.png",
+    "hand-mouth.png",
+    "tail-mouths.png",
+    "axe-contact.png",
+    "silhouette-overlap.png",
+    "comparison-sheet.png"
+  ]
+}

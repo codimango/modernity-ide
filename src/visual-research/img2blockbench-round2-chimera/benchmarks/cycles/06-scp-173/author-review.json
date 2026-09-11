@@ -1,0 +1,23 @@
+{
+  "author_checks": {
+    "all_declared_attachments_connected": true,
+    "bilateral_head_closeups_present": true,
+    "face_decal_geometric_protrusion": 0,
+    "face_decal_source_reference_pixels": false,
+    "geometric_face_pads": 0,
+    "head_depth_to_width": 1.0,
+    "source_facing_silhouette_iou": 0.814957,
+    "torso_depth_to_width": 0.949153
+  },
+  "prior_release_grade": {
+    "mean": 3.73,
+    "verdict": "FAIL"
+  },
+  "remediation": [
+    "Replaced all projecting face pads with one flush procedural decal sliced across the stepped head surface.",
+    "Deepened the head and torso and exposed their rounded stepped volume in bilateral close-ups.",
+    "Lengthened the split legs and enlarged/reposed the two arms asymmetrically.",
+    "Reduced repetitive surface noise and retained only four sparse geometric cracks."
+  ],
+  "status": "author_visual_pass_ready_for_independent_regrade"
+}

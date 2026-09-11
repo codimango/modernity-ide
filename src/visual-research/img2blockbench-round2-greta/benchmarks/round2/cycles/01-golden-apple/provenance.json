@@ -1,0 +1,20 @@
+{
+  "asset": "golden_apple_rooted",
+  "cycle": 1,
+  "generation": {
+    "algorithm": "carved-ellipsoid-plus-branch-graphs-golden-apple-v2",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0
+  },
+  "reference": {
+    "height": 704,
+    "local_path": "../../../../image-1.png",
+    "redistribution": "not authorized; private ignored benchmark input",
+    "rights": "unknown",
+    "sha256": "228b2a37073397cd167486e5720a21a22f97d89e35e78e7e52f5aeb49207b10f",
+    "width": 600
+  },
+  "round": 2,
+  "single_view_hidden_geometry": "inferred_conservatively_not_observed"
+}

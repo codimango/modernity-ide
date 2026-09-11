@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "name": "img2blockbench-platform",
+  "version_source": "pyproject.toml",
+  "platform_status": "release-candidate",
+  "model_spec_schema": 1,
+  "supported_python": ">=3.10",
+  "required_files": [
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "docs/AUTORESEARCH.md",
+    "docs/AUTORESEARCH_CYCLES.md",
+    "docs/METRICS_AND_REGRESSIONS.md",
+    "docs/PLATFORM.md",
+    "docs/TECHNICAL_DESIGN.md",
+    "pyproject.toml",
+    "skill/img2blockbench/SKILL.md",
+    "release/manifest.json"
+  ],
+  "required_trees": [
+    {
+      "path": "skill/img2blockbench/agents",
+      "suffixes": [
+        ".yaml",
+        ".yml"
+      ]
+    },
+    {
+      "path": "skill/img2blockbench/references",
+      "suffixes": [
+        ".md"
+      ]
+    },
+    {
+      "path": "skill/img2blockbench/scripts",
+      "suffixes": [
+        ".py"
+      ]
+    }
+  ],
+  "optional_files": [
+    "PLATFORM.md",
+    "docs/ARCHITECTURE.md",
+    "docs/LIMITS.md"
+  ],
+  "excluded_roots": [
+    ".git",
+    ".github",
+    "benchmarks",
+    "demo",
+    "examples",
+    "round2-inputs",
+    "round3-inputs",
+    "tests",
+    "tools"
+  ],
+  "excluded_suffixes": [
+    ".bbmodel",
+    ".glb",
+    ".gltf",
+    ".gif",
+    ".jpeg",
+    ".jpg",
+    ".mp4",
+    ".png",
+    ".webp",
+    ".zip"
+  ],
+  "capabilities": [
+    "agent-authored semantic cuboid models",
+    "single-image native relief",
+    "six-axis mesh ray reconstruction",
+    "calibrated multi-view and clip visual hulls",
+    "seven-angle holistic model review",
+    "calibrated Minecraft-style texture baking",
+    "Three.js import and preview",
+    "player-wearable shell export",
+    "deterministic Blockbench and Bedrock bundles"
+  ],
+  "cli_commands": [
+    "probe",
+    "new",
+    "validate",
+    "review",
+    "build",
+    "bake-reference-textures",
+    "preview-threejs",
+    "from-threejs",
+    "from-image",
+    "from-mesh",
+    "from-views",
+    "extract-clip-views",
+    "render-relief",
+    "audit"
+  ],
+  "artifact_contract": [
+    ".bbmodel",
+    ".png texture atlas",
+    ".geo.json",
+    ".model-spec.json",
+    ".audit.json",
+    ".manifest.json",
+    ".zip",
+    "optional seven-angle review manifest and PNGs"
+  ],
+  "research_status": {
+    "round1": "passed",
+    "round2": "passed",
+    "round3_engine": "passed",
+    "round3_angel": "passed",
+    "round3_atlus": "passed",
+    "round3_private_glb_assets": "pending-input"
+  },
+  "known_limits": [
+    "single-image relief does not recover hidden anatomy",
+    "calibrated multiview does not recover hidden concavities or rig semantics",
+    "semantic resemblance still requires agent or human visual review",
+    "external reference policy omits the source file but not deliberately transferred texture pixels",
+    "source meshes and third-party generators are external inputs"
+  ]
+}

@@ -1,0 +1,3605 @@
+{
+  "all_perspective_aspirations_pass": true,
+  "all_two_shield_contacts_touch": true,
+  "attachments": {
+    "all_connected": true,
+    "attachments": [
+      {
+        "connected": true,
+        "first": "pelvis_frame_core",
+        "first_margin": 0.3,
+        "joint": [
+          0,
+          58,
+          6.7
+        ],
+        "minimum_margin": 0.3,
+        "second": "pelvis_front_armor",
+        "second_margin": 0.406812
+      },
+      {
+        "connected": true,
+        "first": "pelvis_frame_core",
+        "first_margin": 0.5,
+        "joint": [
+          0,
+          59,
+          -6.5
+        ],
+        "minimum_margin": 0.5,
+        "second": "pelvis_rear_crossbar",
+        "second_margin": 1
+      },
+      {
+        "connected": true,
+        "first": "pelvis_frame_core",
+        "first_margin": 2.5,
+        "joint": [
+          0,
+          60,
+          1.5
+        ],
+        "minimum_margin": 2,
+        "second": "saddle_core",
+        "second_margin": 2
+      },
+      {
+        "connected": true,
+        "first": "pelvis_frame_core",
+        "first_margin": 0.5,
+        "joint": [
+          0,
+          62,
+          -3.5
+        ],
+        "minimum_margin": 0.5,
+        "second": "torso_frame_spine",
+        "second_margin": 1.2
+      },
+      {
+        "connected": true,
+        "first": "torso_frame_spine",
+        "first_margin": 1.7,
+        "joint": [
+          0,
+          76,
+          -4
+        ],
+        "minimum_margin": 1.5,
+        "second": "shoulder_frame_crossbar",
+        "second_margin": 1.5
+      },
+      {
+        "connected": true,
+        "first": "pelvis_frame_core",
+        "first_margin": 1.5,
+        "joint": [
+          -9.5,
+          58,
+          0
+        ],
+        "minimum_margin": 0.8,
+        "second": "left_pelvis_cheek",
+        "second_margin": 0.8
+      },
+      {
+        "connected": true,
+        "first": "torso_frame_spine",
+        "first_margin": 0.5,
+        "joint": [
+          -2,
+          66,
+          -3.5
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_waist_brace",
+        "second_margin": 1.5
+      },
+      {
+        "connected": true,
+        "first": "pelvis_frame_core",
+        "first_margin": 1.5,
+        "joint": [
+          9.5,
+          58,
+          0
+        ],
+        "minimum_margin": 0.8,
+        "second": "right_pelvis_cheek",
+        "second_margin": 0.8
+      },
+      {
+        "connected": true,
+        "first": "torso_frame_spine",
+        "first_margin": 0.5,
+        "joint": [
+          2,
+          66,
+          -3.5
+        ],
+        "minimum_margin": 0.5,
+        "second": "right_waist_brace",
+        "second_margin": 1.5
+      },
+      {
+        "connected": true,
+        "first": "saddle_core",
+        "first_margin": 1,
+        "joint": [
+          0,
+          59,
+          3
+        ],
+        "minimum_margin": 1,
+        "second": "pilot_pelvis_core",
+        "second_margin": 2.5
+      },
+      {
+        "connected": true,
+        "first": "pilot_pelvis_core",
+        "first_margin": 0.5,
+        "joint": [
+          0,
+          61,
+          3
+        ],
+        "minimum_margin": 0.5,
+        "second": "pilot_abdomen",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "pilot_abdomen",
+        "first_margin": 1,
+        "joint": [
+          0,
+          70.5,
+          3
+        ],
+        "minimum_margin": 0.007538,
+        "second": "pilot_chest",
+        "second_margin": 0.007538
+      },
+      {
+        "connected": true,
+        "first": "pilot_chest",
+        "first_margin": 0.559188,
+        "joint": [
+          0,
+          81,
+          4
+        ],
+        "minimum_margin": 0,
+        "second": "pilot_neck",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "pilot_neck",
+        "first_margin": 1,
+        "joint": [
+          0,
+          90,
+          4.2
+        ],
+        "minimum_margin": 1,
+        "second": "pilot_head_core",
+        "second_margin": 1.037646
+      },
+      {
+        "connected": true,
+        "first": "pilot_head_core",
+        "first_margin": 0.07628,
+        "joint": [
+          0,
+          95.2,
+          8.7
+        ],
+        "minimum_margin": 0.07628,
+        "second": "pilot_brow",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "pilot_head_core",
+        "first_margin": 0.932917,
+        "joint": [
+          0,
+          91.5,
+          8.1
+        ],
+        "minimum_margin": 0.932917,
+        "second": "pilot_jaw",
+        "second_margin": 1
+      },
+      {
+        "connected": true,
+        "first": "pilot_head_core",
+        "first_margin": 0.215793,
+        "joint": [
+          0,
+          93.2,
+          8.7
+        ],
+        "minimum_margin": 0.1,
+        "second": "pilot_nose",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "pilot_head_core",
+        "first_margin": 0.5,
+        "joint": [
+          -4,
+          94.5,
+          5.5
+        ],
+        "minimum_margin": 0.2,
+        "second": "pilot_left_temple_implant",
+        "second_margin": 0.2
+      },
+      {
+        "connected": true,
+        "first": "pilot_brow",
+        "first_margin": 0.55,
+        "joint": [
+          -2,
+          95.2,
+          9
+        ],
+        "minimum_margin": 0,
+        "second": "pilot_left_optic",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "pilot_head_core",
+        "first_margin": 0.5,
+        "joint": [
+          4,
+          94.5,
+          5.5
+        ],
+        "minimum_margin": 0.2,
+        "second": "pilot_right_temple_implant",
+        "second_margin": 0.2
+      },
+      {
+        "connected": true,
+        "first": "pilot_brow",
+        "first_margin": 0.55,
+        "joint": [
+          2,
+          95.2,
+          9
+        ],
+        "minimum_margin": 0,
+        "second": "pilot_right_optic",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "pilot_chest",
+        "first_margin": 1.3,
+        "joint": [
+          -6.2,
+          78,
+          4
+        ],
+        "minimum_margin": 0.5,
+        "second": "pilot_left_upper_arm",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "pilot_left_upper_arm",
+        "first_margin": 0.493485,
+        "joint": [
+          -10,
+          69,
+          8
+        ],
+        "minimum_margin": 0.45,
+        "second": "pilot_left_forearm",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "pilot_left_forearm",
+        "first_margin": 0.469048,
+        "joint": [
+          -7,
+          66,
+          12
+        ],
+        "minimum_margin": 0.469048,
+        "second": "pilot_left_control_grip",
+        "second_margin": 1.65
+      },
+      {
+        "connected": true,
+        "first": "pelvis_front_armor",
+        "first_margin": 0.693187,
+        "joint": [
+          -7,
+          59.5,
+          7.2
+        ],
+        "minimum_margin": 0.081229,
+        "second": "pilot_left_control_stick",
+        "second_margin": 0.081229
+      },
+      {
+        "connected": true,
+        "first": "pilot_chest",
+        "first_margin": 1.3,
+        "joint": [
+          6.2,
+          78,
+          4
+        ],
+        "minimum_margin": 0.5,
+        "second": "pilot_right_upper_arm",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "pilot_right_upper_arm",
+        "first_margin": 0.493485,
+        "joint": [
+          10,
+          69,
+          8
+        ],
+        "minimum_margin": 0.45,
+        "second": "pilot_right_forearm",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "pilot_right_forearm",
+        "first_margin": 0.469048,
+        "joint": [
+          7,
+          66,
+          12
+        ],
+        "minimum_margin": 0.469048,
+        "second": "pilot_right_control_grip",
+        "second_margin": 1.65
+      },
+      {
+        "connected": true,
+        "first": "pelvis_front_armor",
+        "first_margin": 0.693187,
+        "joint": [
+          7,
+          59.5,
+          7.2
+        ],
+        "minimum_margin": 0.081229,
+        "second": "pilot_right_control_stick",
+        "second_margin": 0.081229
+      },
+      {
+        "connected": true,
+        "first": "pilot_pelvis_core",
+        "first_margin": 1.5,
+        "joint": [
+          -4,
+          56,
+          2.5
+        ],
+        "minimum_margin": 0.55,
+        "second": "pilot_left_thigh",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "pilot_left_thigh",
+        "first_margin": 0.557177,
+        "joint": [
+          -10,
+          36,
+          8
+        ],
+        "minimum_margin": 0.5,
+        "second": "pilot_left_calf",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "pilot_left_calf",
+        "first_margin": 0.518458,
+        "joint": [
+          -13,
+          18,
+          4
+        ],
+        "minimum_margin": 0.518458,
+        "second": "pilot_left_boot",
+        "second_margin": 2
+      },
+      {
+        "connected": true,
+        "first": "pilot_pelvis_core",
+        "first_margin": 1.5,
+        "joint": [
+          4,
+          56,
+          2.5
+        ],
+        "minimum_margin": 0.55,
+        "second": "pilot_right_thigh",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "pilot_right_thigh",
+        "first_margin": 0.557177,
+        "joint": [
+          10,
+          36,
+          8
+        ],
+        "minimum_margin": 0.5,
+        "second": "pilot_right_calf",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "pilot_right_calf",
+        "first_margin": 0.518458,
+        "joint": [
+          13,
+          18,
+          4
+        ],
+        "minimum_margin": 0.518458,
+        "second": "pilot_right_boot",
+        "second_margin": 2
+      },
+      {
+        "connected": true,
+        "first": "left_pelvis_cheek",
+        "first_margin": 1.3,
+        "joint": [
+          -10,
+          57,
+          0
+        ],
+        "minimum_margin": 1.3,
+        "second": "left_exo_hip_block",
+        "second_margin": 3.5
+      },
+      {
+        "connected": true,
+        "first": "left_exo_hip_block",
+        "first_margin": 0.5,
+        "joint": [
+          -11,
+          56,
+          5
+        ],
+        "minimum_margin": 0.15,
+        "second": "left_hip_front_drum",
+        "second_margin": 0.15
+      },
+      {
+        "connected": true,
+        "first": "left_exo_hip_block",
+        "first_margin": 0.5,
+        "joint": [
+          -11,
+          56,
+          -5
+        ],
+        "minimum_margin": 0.15,
+        "second": "left_hip_rear_drum",
+        "second_margin": 0.15
+      },
+      {
+        "connected": true,
+        "first": "left_exo_hip_block",
+        "first_margin": 4.5,
+        "joint": [
+          -11,
+          56,
+          0
+        ],
+        "minimum_margin": 0.8,
+        "second": "left_exo_thigh_beam",
+        "second_margin": 0.8
+      },
+      {
+        "connected": true,
+        "first": "left_exo_thigh_beam",
+        "first_margin": 0.415305,
+        "joint": [
+          -18.7,
+          44.5,
+          5
+        ],
+        "minimum_margin": 0.415305,
+        "second": "left_thigh_outer_armor",
+        "second_margin": 0.607652
+      },
+      {
+        "connected": true,
+        "first": "left_thigh_outer_armor",
+        "first_margin": 0.517439,
+        "joint": [
+          -21,
+          44.5,
+          5.5
+        ],
+        "minimum_margin": 0.098933,
+        "second": "left_thigh_warning_panel",
+        "second_margin": 0.098933
+      },
+      {
+        "connected": true,
+        "first": "left_exo_thigh_beam",
+        "first_margin": 0.325091,
+        "joint": [
+          -14.2,
+          44.5,
+          3
+        ],
+        "minimum_margin": 0.325091,
+        "second": "left_thigh_inner_rail",
+        "second_margin": 0.634013
+      },
+      {
+        "connected": true,
+        "first": "left_exo_thigh_beam",
+        "first_margin": 0.813872,
+        "joint": [
+          -22,
+          33,
+          10
+        ],
+        "minimum_margin": 0.813872,
+        "second": "left_exo_knee_core",
+        "second_margin": 3.5
+      },
+      {
+        "connected": true,
+        "first": "left_exo_knee_core",
+        "first_margin": 0.5,
+        "joint": [
+          -22,
+          33,
+          13
+        ],
+        "minimum_margin": 0.1,
+        "second": "left_knee_front_drum",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "left_exo_knee_core",
+        "first_margin": 0.5,
+        "joint": [
+          -22,
+          33,
+          7
+        ],
+        "minimum_margin": 0.1,
+        "second": "left_knee_rear_drum",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "left_exo_knee_core",
+        "first_margin": 0.5,
+        "joint": [
+          -22,
+          36,
+          10
+        ],
+        "minimum_margin": 0.120559,
+        "second": "left_knee_upper_fairing",
+        "second_margin": 0.120559
+      },
+      {
+        "connected": true,
+        "first": "left_knee_upper_fairing",
+        "first_margin": 0.5,
+        "joint": [
+          -23,
+          37.5,
+          13
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_knee_tread_guard_top",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "left_knee_tread_guard_top",
+        "first_margin": 0.5,
+        "joint": [
+          -27,
+          37.5,
+          14.5
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_knee_tread_guard_outer",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "left_knee_tread_guard_outer",
+        "first_margin": 0.5,
+        "joint": [
+          -27,
+          28.5,
+          14.5
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_knee_tread_guard_bottom",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "left_exo_knee_core",
+        "first_margin": 1,
+        "joint": [
+          -20,
+          33,
+          7.5
+        ],
+        "minimum_margin": 0.35,
+        "second": "left_shin_rear_brace",
+        "second_margin": 0.35
+      },
+      {
+        "connected": true,
+        "first": "left_exo_knee_core",
+        "first_margin": 3.5,
+        "joint": [
+          -22,
+          33,
+          10
+        ],
+        "minimum_margin": 0.8,
+        "second": "left_exo_shin_beam",
+        "second_margin": 0.8
+      },
+      {
+        "connected": true,
+        "first": "left_exo_shin_beam",
+        "first_margin": 0.057599,
+        "joint": [
+          -23.2,
+          21,
+          5
+        ],
+        "minimum_margin": 0.057599,
+        "second": "left_shin_outer_armor",
+        "second_margin": 0.603109
+      },
+      {
+        "connected": true,
+        "first": "left_exo_shin_beam",
+        "first_margin": 0.256909,
+        "joint": [
+          -19,
+          21,
+          3.2
+        ],
+        "minimum_margin": 0.256909,
+        "second": "left_shin_inner_rail",
+        "second_margin": 0.302763
+      },
+      {
+        "connected": true,
+        "first": "left_exo_knee_core",
+        "first_margin": 0.5,
+        "joint": [
+          -20,
+          31,
+          7
+        ],
+        "minimum_margin": 0.45,
+        "second": "left_shin_piston_casing",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "left_shin_piston_casing",
+        "first_margin": 0.462664,
+        "joint": [
+          -19.5,
+          21,
+          0.5
+        ],
+        "minimum_margin": 0.4,
+        "second": "left_shin_piston_rod",
+        "second_margin": 0.4
+      },
+      {
+        "connected": true,
+        "first": "left_exo_shin_beam",
+        "first_margin": 0.82319,
+        "joint": [
+          -20,
+          9,
+          0
+        ],
+        "minimum_margin": 0.82319,
+        "second": "left_exo_ankle_core",
+        "second_margin": 2.5
+      },
+      {
+        "connected": true,
+        "first": "left_exo_ankle_core",
+        "first_margin": 0.5,
+        "joint": [
+          -20,
+          9,
+          3
+        ],
+        "minimum_margin": 0.05,
+        "second": "left_ankle_front_drum",
+        "second_margin": 0.05
+      },
+      {
+        "connected": true,
+        "first": "left_exo_ankle_core",
+        "first_margin": 0.5,
+        "joint": [
+          -20,
+          9,
+          -3
+        ],
+        "minimum_margin": 0.05,
+        "second": "left_ankle_rear_drum",
+        "second_margin": 0.05
+      },
+      {
+        "connected": true,
+        "first": "left_exo_ankle_core",
+        "first_margin": 1,
+        "joint": [
+          -20,
+          10.5,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "left_ankle_upper_segment",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "left_exo_ankle_core",
+        "first_margin": 1,
+        "joint": [
+          -20,
+          7.5,
+          0.5
+        ],
+        "minimum_margin": 0,
+        "second": "left_ankle_lower_segment",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "pilot_left_boot",
+        "first_margin": 0.5,
+        "joint": [
+          -14.5,
+          14.5,
+          3
+        ],
+        "minimum_margin": 0.5,
+        "second": "pilot_left_boot_restraint",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "left_ankle_lower_segment",
+        "first_margin": 0.1,
+        "joint": [
+          -20,
+          4.6,
+          1
+        ],
+        "minimum_margin": 0.1,
+        "second": "left_exo_ground_foot",
+        "second_margin": 0.9
+      },
+      {
+        "connected": true,
+        "first": "left_exo_ground_foot",
+        "first_margin": 1.3,
+        "joint": [
+          -22,
+          4.2,
+          7
+        ],
+        "minimum_margin": 0.846959,
+        "second": "left_foot_top_armor",
+        "second_margin": 0.846959
+      },
+      {
+        "connected": true,
+        "first": "left_exo_ground_foot",
+        "first_margin": 0.5,
+        "joint": [
+          -22,
+          2.5,
+          -3.5
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_heel_spur",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "left_exo_ground_foot",
+        "first_margin": 2.2,
+        "joint": [
+          -26,
+          2.2,
+          12.5
+        ],
+        "minimum_margin": 0.391914,
+        "second": "left_toe_1",
+        "second_margin": 0.391914
+      },
+      {
+        "connected": true,
+        "first": "left_exo_ground_foot",
+        "first_margin": 2.2,
+        "joint": [
+          -22,
+          2.2,
+          12.5
+        ],
+        "minimum_margin": 0.379279,
+        "second": "left_toe_2",
+        "second_margin": 0.379279
+      },
+      {
+        "connected": true,
+        "first": "left_exo_ground_foot",
+        "first_margin": 2.2,
+        "joint": [
+          -18,
+          2.2,
+          12.5
+        ],
+        "minimum_margin": 0.391914,
+        "second": "left_toe_3",
+        "second_margin": 0.391914
+      },
+      {
+        "connected": true,
+        "first": "right_pelvis_cheek",
+        "first_margin": 1.3,
+        "joint": [
+          10,
+          57,
+          0
+        ],
+        "minimum_margin": 1.3,
+        "second": "right_exo_hip_block",
+        "second_margin": 3.5
+      },
+      {
+        "connected": true,
+        "first": "right_exo_hip_block",
+        "first_margin": 0.5,
+        "joint": [
+          11,
+          56,
+          5
+        ],
+        "minimum_margin": 0.15,
+        "second": "right_hip_front_drum",
+        "second_margin": 0.15
+      },
+      {
+        "connected": true,
+        "first": "right_exo_hip_block",
+        "first_margin": 0.5,
+        "joint": [
+          11,
+          56,
+          -5
+        ],
+        "minimum_margin": 0.15,
+        "second": "right_hip_rear_drum",
+        "second_margin": 0.15
+      },
+      {
+        "connected": true,
+        "first": "right_exo_hip_block",
+        "first_margin": 4.5,
+        "joint": [
+          11,
+          56,
+          0
+        ],
+        "minimum_margin": 0.8,
+        "second": "right_exo_thigh_beam",
+        "second_margin": 0.8
+      },
+      {
+        "connected": true,
+        "first": "right_exo_thigh_beam",
+        "first_margin": 0.415305,
+        "joint": [
+          18.7,
+          44.5,
+          5
+        ],
+        "minimum_margin": 0.415305,
+        "second": "right_thigh_outer_armor",
+        "second_margin": 0.607652
+      },
+      {
+        "connected": true,
+        "first": "right_thigh_outer_armor",
+        "first_margin": 0.517439,
+        "joint": [
+          21,
+          44.5,
+          5.5
+        ],
+        "minimum_margin": 0.098933,
+        "second": "right_thigh_warning_panel",
+        "second_margin": 0.098933
+      },
+      {
+        "connected": true,
+        "first": "right_exo_thigh_beam",
+        "first_margin": 0.325091,
+        "joint": [
+          14.2,
+          44.5,
+          3
+        ],
+        "minimum_margin": 0.325091,
+        "second": "right_thigh_inner_rail",
+        "second_margin": 0.634013
+      },
+      {
+        "connected": true,
+        "first": "right_exo_thigh_beam",
+        "first_margin": 0.813872,
+        "joint": [
+          22,
+          33,
+          10
+        ],
+        "minimum_margin": 0.813872,
+        "second": "right_exo_knee_core",
+        "second_margin": 3.5
+      },
+      {
+        "connected": true,
+        "first": "right_exo_knee_core",
+        "first_margin": 0.5,
+        "joint": [
+          22,
+          33,
+          13
+        ],
+        "minimum_margin": 0.1,
+        "second": "right_knee_front_drum",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "right_exo_knee_core",
+        "first_margin": 0.5,
+        "joint": [
+          22,
+          33,
+          7
+        ],
+        "minimum_margin": 0.1,
+        "second": "right_knee_rear_drum",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "right_exo_knee_core",
+        "first_margin": 0.5,
+        "joint": [
+          22,
+          36,
+          10
+        ],
+        "minimum_margin": 0.120559,
+        "second": "right_knee_upper_fairing",
+        "second_margin": 0.120559
+      },
+      {
+        "connected": true,
+        "first": "right_knee_upper_fairing",
+        "first_margin": 0.5,
+        "joint": [
+          23,
+          37.5,
+          13
+        ],
+        "minimum_margin": 0.5,
+        "second": "right_knee_tread_guard_top",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "right_knee_tread_guard_top",
+        "first_margin": 0.5,
+        "joint": [
+          27,
+          37.5,
+          14.5
+        ],
+        "minimum_margin": 0.5,
+        "second": "right_knee_tread_guard_outer",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "right_knee_tread_guard_outer",
+        "first_margin": 0.5,
+        "joint": [
+          27,
+          28.5,
+          14.5
+        ],
+        "minimum_margin": 0.5,
+        "second": "right_knee_tread_guard_bottom",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "right_exo_knee_core",
+        "first_margin": 1,
+        "joint": [
+          20,
+          33,
+          7.5
+        ],
+        "minimum_margin": 0.35,
+        "second": "right_shin_rear_brace",
+        "second_margin": 0.35
+      },
+      {
+        "connected": true,
+        "first": "right_exo_knee_core",
+        "first_margin": 3.5,
+        "joint": [
+          22,
+          33,
+          10
+        ],
+        "minimum_margin": 0.8,
+        "second": "right_exo_shin_beam",
+        "second_margin": 0.8
+      },
+      {
+        "connected": true,
+        "first": "right_exo_shin_beam",
+        "first_margin": 0.057599,
+        "joint": [
+          23.2,
+          21,
+          5
+        ],
+        "minimum_margin": 0.057599,
+        "second": "right_shin_outer_armor",
+        "second_margin": 0.603109
+      },
+      {
+        "connected": true,
+        "first": "right_exo_shin_beam",
+        "first_margin": 0.256909,
+        "joint": [
+          19,
+          21,
+          3.2
+        ],
+        "minimum_margin": 0.256909,
+        "second": "right_shin_inner_rail",
+        "second_margin": 0.302763
+      },
+      {
+        "connected": true,
+        "first": "right_exo_knee_core",
+        "first_margin": 0.5,
+        "joint": [
+          20,
+          31,
+          7
+        ],
+        "minimum_margin": 0.45,
+        "second": "right_shin_piston_casing",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "right_shin_piston_casing",
+        "first_margin": 0.462664,
+        "joint": [
+          19.5,
+          21,
+          0.5
+        ],
+        "minimum_margin": 0.4,
+        "second": "right_shin_piston_rod",
+        "second_margin": 0.4
+      },
+      {
+        "connected": true,
+        "first": "right_exo_shin_beam",
+        "first_margin": 0.82319,
+        "joint": [
+          20,
+          9,
+          0
+        ],
+        "minimum_margin": 0.82319,
+        "second": "right_exo_ankle_core",
+        "second_margin": 2.5
+      },
+      {
+        "connected": true,
+        "first": "right_exo_ankle_core",
+        "first_margin": 0.5,
+        "joint": [
+          20,
+          9,
+          3
+        ],
+        "minimum_margin": 0.05,
+        "second": "right_ankle_front_drum",
+        "second_margin": 0.05
+      },
+      {
+        "connected": true,
+        "first": "right_exo_ankle_core",
+        "first_margin": 0.5,
+        "joint": [
+          20,
+          9,
+          -3
+        ],
+        "minimum_margin": 0.05,
+        "second": "right_ankle_rear_drum",
+        "second_margin": 0.05
+      },
+      {
+        "connected": true,
+        "first": "right_exo_ankle_core",
+        "first_margin": 1,
+        "joint": [
+          20,
+          10.5,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "right_ankle_upper_segment",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "right_exo_ankle_core",
+        "first_margin": 1,
+        "joint": [
+          20,
+          7.5,
+          0.5
+        ],
+        "minimum_margin": 0,
+        "second": "right_ankle_lower_segment",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "pilot_right_boot",
+        "first_margin": 0.5,
+        "joint": [
+          14.5,
+          14.5,
+          3
+        ],
+        "minimum_margin": 0.5,
+        "second": "pilot_right_boot_restraint",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "right_ankle_lower_segment",
+        "first_margin": 0.1,
+        "joint": [
+          20,
+          4.6,
+          1
+        ],
+        "minimum_margin": 0.1,
+        "second": "right_exo_ground_foot",
+        "second_margin": 0.9
+      },
+      {
+        "connected": true,
+        "first": "right_exo_ground_foot",
+        "first_margin": 1.3,
+        "joint": [
+          22,
+          4.2,
+          7
+        ],
+        "minimum_margin": 0.846959,
+        "second": "right_foot_top_armor",
+        "second_margin": 0.846959
+      },
+      {
+        "connected": true,
+        "first": "right_exo_ground_foot",
+        "first_margin": 0.5,
+        "joint": [
+          22,
+          2.5,
+          -3.5
+        ],
+        "minimum_margin": 0.5,
+        "second": "right_heel_spur",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "right_exo_ground_foot",
+        "first_margin": 2.2,
+        "joint": [
+          18,
+          2.2,
+          12.5
+        ],
+        "minimum_margin": 0.391914,
+        "second": "right_toe_1",
+        "second_margin": 0.391914
+      },
+      {
+        "connected": true,
+        "first": "right_exo_ground_foot",
+        "first_margin": 2.2,
+        "joint": [
+          22,
+          2.2,
+          12.5
+        ],
+        "minimum_margin": 0.379279,
+        "second": "right_toe_2",
+        "second_margin": 0.379279
+      },
+      {
+        "connected": true,
+        "first": "right_exo_ground_foot",
+        "first_margin": 2.2,
+        "joint": [
+          26,
+          2.2,
+          12.5
+        ],
+        "minimum_margin": 0.391914,
+        "second": "right_toe_3",
+        "second_margin": 0.391914
+      },
+      {
+        "connected": true,
+        "first": "shoulder_frame_crossbar",
+        "first_margin": 0.5,
+        "joint": [
+          0,
+          77,
+          -5.5
+        ],
+        "minimum_margin": 0,
+        "second": "backpack_main",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "backpack_main",
+        "first_margin": 0.1,
+        "joint": [
+          0,
+          79,
+          -12.4
+        ],
+        "minimum_margin": 0.1,
+        "second": "backpack_control_panel",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "backpack_main",
+        "first_margin": 0.5,
+        "joint": [
+          -7.5,
+          76,
+          -10
+        ],
+        "minimum_margin": 0.5,
+        "second": "backpack_left_canister",
+        "second_margin": 1
+      },
+      {
+        "connected": true,
+        "first": "backpack_left_canister",
+        "first_margin": 0.5,
+        "joint": [
+          -9.5,
+          85.5,
+          -12
+        ],
+        "minimum_margin": 0.5,
+        "second": "backpack_left_cap_top",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "backpack_left_canister",
+        "first_margin": 0.5,
+        "joint": [
+          -9.5,
+          66.5,
+          -12
+        ],
+        "minimum_margin": 0.5,
+        "second": "backpack_left_cap_bottom",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "backpack_left_canister",
+        "first_margin": 3,
+        "joint": [
+          -9.5,
+          76,
+          -12
+        ],
+        "minimum_margin": 1,
+        "second": "backpack_left_mid_collar",
+        "second_margin": 1
+      },
+      {
+        "connected": true,
+        "first": "backpack_main",
+        "first_margin": 0.5,
+        "joint": [
+          7.5,
+          76,
+          -10
+        ],
+        "minimum_margin": 0.5,
+        "second": "backpack_right_canister",
+        "second_margin": 1
+      },
+      {
+        "connected": true,
+        "first": "backpack_right_canister",
+        "first_margin": 0.5,
+        "joint": [
+          9.5,
+          85.5,
+          -12
+        ],
+        "minimum_margin": 0.5,
+        "second": "backpack_right_cap_top",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "backpack_right_canister",
+        "first_margin": 0.5,
+        "joint": [
+          9.5,
+          66.5,
+          -12
+        ],
+        "minimum_margin": 0.5,
+        "second": "backpack_right_cap_bottom",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "backpack_right_canister",
+        "first_margin": 3,
+        "joint": [
+          9.5,
+          76,
+          -12
+        ],
+        "minimum_margin": 1,
+        "second": "backpack_right_mid_collar",
+        "second_margin": 1
+      },
+      {
+        "connected": true,
+        "first": "backpack_main",
+        "first_margin": 2,
+        "joint": [
+          -6,
+          84,
+          -10
+        ],
+        "minimum_margin": 0.3,
+        "second": "backpack_hose_1",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "backpack_main",
+        "first_margin": 2,
+        "joint": [
+          6,
+          84,
+          -10
+        ],
+        "minimum_margin": 0.3,
+        "second": "backpack_hose_2",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "backpack_main",
+        "first_margin": 0.2,
+        "joint": [
+          7.8,
+          80,
+          -9
+        ],
+        "minimum_margin": 0.2,
+        "second": "backpack_horizontal_actuator",
+        "second_margin": 1.3
+      },
+      {
+        "connected": true,
+        "first": "backpack_horizontal_actuator",
+        "first_margin": 1,
+        "joint": [
+          20.5,
+          80,
+          -9
+        ],
+        "minimum_margin": 0,
+        "second": "backpack_actuator_endcap",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "backpack_main",
+        "first_margin": 0.5,
+        "joint": [
+          7,
+          82,
+          -6
+        ],
+        "minimum_margin": 0.5,
+        "second": "shield_boom_1",
+        "second_margin": 0.65
+      },
+      {
+        "connected": true,
+        "first": "shield_boom_1",
+        "first_margin": 0.627599,
+        "joint": [
+          10,
+          102,
+          -4
+        ],
+        "minimum_margin": 0.627599,
+        "second": "shield_boom_hinge_1",
+        "second_margin": 3.5
+      },
+      {
+        "connected": true,
+        "first": "shield_boom_1",
+        "first_margin": 0.627599,
+        "joint": [
+          10,
+          102,
+          -4
+        ],
+        "minimum_margin": 0.627599,
+        "second": "shield_boom_2",
+        "second_margin": 0.65
+      },
+      {
+        "connected": true,
+        "first": "shield_boom_2",
+        "first_margin": 0.650331,
+        "joint": [
+          18,
+          112,
+          4
+        ],
+        "minimum_margin": 0.650331,
+        "second": "shield_boom_hinge_2",
+        "second_margin": 3.5
+      },
+      {
+        "connected": true,
+        "first": "shield_boom_2",
+        "first_margin": 0.650331,
+        "joint": [
+          18,
+          112,
+          4
+        ],
+        "minimum_margin": 0.65,
+        "second": "shield_boom_3",
+        "second_margin": 0.65
+      },
+      {
+        "connected": true,
+        "first": "shield_boom_3",
+        "first_margin": 0.625422,
+        "joint": [
+          31.802532,
+          96.50415,
+          21.853187
+        ],
+        "minimum_margin": 0.625422,
+        "second": "shield_upper_rear_pad",
+        "second_margin": 1.496813
+      },
+      {
+        "connected": true,
+        "first": "shield_upper_rear_pad",
+        "first_margin": 1.096813,
+        "joint": [
+          32.005107,
+          96.396439,
+          22.180848
+        ],
+        "minimum_margin": 0.25,
+        "second": "shield_core",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "shield_core",
+        "first_margin": 0.5,
+        "joint": [
+          36.621824,
+          103.002248,
+          23.573406
+        ],
+        "minimum_margin": 0.245886,
+        "second": "shield_top_edge_rail",
+        "second_margin": 0.245886
+      },
+      {
+        "connected": true,
+        "first": "shield_core",
+        "first_margin": 0.5,
+        "joint": [
+          14.087189,
+          60.620763,
+          23.573406
+        ],
+        "minimum_margin": 0.234441,
+        "second": "shield_bottom_edge_rail",
+        "second_margin": 0.234441
+      },
+      {
+        "connected": true,
+        "first": "shield_top_edge_rail",
+        "first_margin": 0.745886,
+        "joint": [
+          25.993838,
+          109.219533,
+          32.554148
+        ],
+        "minimum_margin": 0.481551,
+        "second": "shield_left_edge_rail",
+        "second_margin": 0.481551
+      },
+      {
+        "connected": true,
+        "first": "shield_top_edge_rail",
+        "first_margin": 0.745886,
+        "joint": [
+          48.023145,
+          97.506343,
+          15.084156
+        ],
+        "minimum_margin": 0.507005,
+        "second": "shield_right_edge_rail",
+        "second_margin": 0.507005
+      },
+      {
+        "connected": true,
+        "first": "shield_top_edge_rail",
+        "first_margin": 0.745886,
+        "joint": [
+          29.197193,
+          107.516279,
+          30.013778
+        ],
+        "minimum_margin": 0.519793,
+        "second": "shield_grille_bay_1",
+        "second_margin": 0.519793
+      },
+      {
+        "connected": true,
+        "first": "shield_grille_bay_1",
+        "first_margin": 0.272392,
+        "joint": [
+          11.971838,
+          74.203786,
+          30.628142
+        ],
+        "minimum_margin": 0.064845,
+        "second": "shield_bay_1_rib_1",
+        "second_margin": 0.064845
+      },
+      {
+        "connected": true,
+        "first": "shield_grille_bay_1",
+        "first_margin": 0.272392,
+        "joint": [
+          17.605497,
+          84.799157,
+          30.628142
+        ],
+        "minimum_margin": 0.064845,
+        "second": "shield_bay_1_rib_2",
+        "second_margin": 0.064845
+      },
+      {
+        "connected": true,
+        "first": "shield_grille_bay_1",
+        "first_margin": 0.272392,
+        "joint": [
+          23.239156,
+          95.394528,
+          30.628142
+        ],
+        "minimum_margin": 0.064845,
+        "second": "shield_bay_1_rib_3",
+        "second_margin": 0.064845
+      },
+      {
+        "connected": true,
+        "first": "shield_top_edge_rail",
+        "first_margin": 0.745886,
+        "joint": [
+          34.404725,
+          104.747385,
+          25.884027
+        ],
+        "minimum_margin": 0.488686,
+        "second": "shield_grille_bay_2",
+        "second_margin": 0.488686
+      },
+      {
+        "connected": true,
+        "first": "shield_grille_bay_2",
+        "first_margin": 0.252142,
+        "joint": [
+          17.17937,
+          71.434892,
+          26.498391
+        ],
+        "minimum_margin": 0.035094,
+        "second": "shield_bay_2_rib_1",
+        "second_margin": 0.035094
+      },
+      {
+        "connected": true,
+        "first": "shield_grille_bay_2",
+        "first_margin": 0.252142,
+        "joint": [
+          22.813029,
+          82.030263,
+          26.498391
+        ],
+        "minimum_margin": 0.035094,
+        "second": "shield_bay_2_rib_2",
+        "second_margin": 0.035094
+      },
+      {
+        "connected": true,
+        "first": "shield_grille_bay_2",
+        "first_margin": 0.252142,
+        "joint": [
+          28.446688,
+          92.625634,
+          26.498391
+        ],
+        "minimum_margin": 0.035094,
+        "second": "shield_bay_2_rib_3",
+        "second_margin": 0.035094
+      },
+      {
+        "connected": true,
+        "first": "shield_top_edge_rail",
+        "first_margin": 0.745886,
+        "joint": [
+          39.612257,
+          101.978491,
+          21.754277
+        ],
+        "minimum_margin": 0.50758,
+        "second": "shield_grille_bay_3",
+        "second_margin": 0.50758
+      },
+      {
+        "connected": true,
+        "first": "shield_grille_bay_3",
+        "first_margin": 0.231893,
+        "joint": [
+          22.386902,
+          68.665998,
+          22.368641
+        ],
+        "minimum_margin": 0.055344,
+        "second": "shield_bay_3_rib_1",
+        "second_margin": 0.055344
+      },
+      {
+        "connected": true,
+        "first": "shield_grille_bay_3",
+        "first_margin": 0.231893,
+        "joint": [
+          28.020561,
+          79.261369,
+          22.368641
+        ],
+        "minimum_margin": 0.055344,
+        "second": "shield_bay_3_rib_2",
+        "second_margin": 0.055344
+      },
+      {
+        "connected": true,
+        "first": "shield_grille_bay_3",
+        "first_margin": 0.231893,
+        "joint": [
+          33.65422,
+          89.85674,
+          22.368641
+        ],
+        "minimum_margin": 0.055344,
+        "second": "shield_bay_3_rib_3",
+        "second_margin": 0.055344
+      },
+      {
+        "connected": true,
+        "first": "shield_top_edge_rail",
+        "first_margin": 0.745886,
+        "joint": [
+          44.819789,
+          99.209597,
+          17.624527
+        ],
+        "minimum_margin": 0.476474,
+        "second": "shield_grille_bay_4",
+        "second_margin": 0.476474
+      },
+      {
+        "connected": true,
+        "first": "shield_grille_bay_4",
+        "first_margin": 0.261643,
+        "joint": [
+          27.594434,
+          65.897104,
+          18.238891
+        ],
+        "minimum_margin": 0.025594,
+        "second": "shield_bay_4_rib_1",
+        "second_margin": 0.025594
+      },
+      {
+        "connected": true,
+        "first": "shield_grille_bay_4",
+        "first_margin": 0.261643,
+        "joint": [
+          33.228093,
+          76.492475,
+          18.238891
+        ],
+        "minimum_margin": 0.025594,
+        "second": "shield_bay_4_rib_2",
+        "second_margin": 0.025594
+      },
+      {
+        "connected": true,
+        "first": "shield_grille_bay_4",
+        "first_margin": 0.261643,
+        "joint": [
+          38.861751,
+          87.087847,
+          18.238891
+        ],
+        "minimum_margin": 0.025594,
+        "second": "shield_bay_4_rib_3",
+        "second_margin": 0.025594
+      },
+      {
+        "connected": true,
+        "first": "shield_left_edge_rail",
+        "first_margin": 0.825698,
+        "joint": [
+          14.227091,
+          87.728057,
+          32.947175
+        ],
+        "minimum_margin": 0.261539,
+        "second": "shield_bolt_1",
+        "second_margin": 0.261539
+      },
+      {
+        "connected": true,
+        "first": "shield_right_edge_rail",
+        "first_margin": 0.835998,
+        "joint": [
+          36.937716,
+          75.652604,
+          14.936875
+        ],
+        "minimum_margin": 0.251239,
+        "second": "shield_bolt_2",
+        "second_margin": 0.251239
+      },
+      {
+        "connected": true,
+        "first": "shield_grille_bay_2",
+        "first_margin": 0.747858,
+        "joint": [
+          29.55124,
+          95.436044,
+          26.0069
+        ],
+        "minimum_margin": 0.171264,
+        "second": "shield_militech_mark_1",
+        "second_margin": 0.171264
+      },
+      {
+        "connected": true,
+        "first": "shield_grille_bay_3",
+        "first_margin": 0.768107,
+        "joint": [
+          33.819828,
+          90.901255,
+          21.87715
+        ],
+        "minimum_margin": 0.141514,
+        "second": "shield_militech_mark_2",
+        "second_margin": 0.141514
+      },
+      {
+        "connected": true,
+        "first": "right_waist_brace",
+        "first_margin": 1,
+        "joint": [
+          7,
+          69,
+          0
+        ],
+        "minimum_margin": 0.5,
+        "second": "shield_lower_actuator_casing",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "shield_lower_actuator_casing",
+        "first_margin": 0.509463,
+        "joint": [
+          12,
+          76,
+          7
+        ],
+        "minimum_margin": 0.45,
+        "second": "shield_lower_actuator_rod",
+        "second_margin": 0.45
+      },
+      {
+        "connected": true,
+        "first": "shield_lower_actuator_rod",
+        "first_margin": 0.437758,
+        "joint": [
+          19.596271,
+          73.547513,
+          21.853187
+        ],
+        "minimum_margin": 0.437758,
+        "second": "shield_lower_rear_pad",
+        "second_margin": 1.496813
+      },
+      {
+        "connected": true,
+        "first": "backpack_main",
+        "first_margin": 0.5,
+        "joint": [
+          -7,
+          82,
+          -6
+        ],
+        "minimum_margin": 0.5,
+        "second": "tool_boom_1",
+        "second_margin": 0.6
+      },
+      {
+        "connected": true,
+        "first": "tool_boom_1",
+        "first_margin": 0.601437,
+        "joint": [
+          -15,
+          102,
+          -3
+        ],
+        "minimum_margin": 0.601437,
+        "second": "tool_boom_hinge_1",
+        "second_margin": 3.1
+      },
+      {
+        "connected": true,
+        "first": "tool_boom_1",
+        "first_margin": 0.601437,
+        "joint": [
+          -15,
+          102,
+          -3
+        ],
+        "minimum_margin": 0.6,
+        "second": "tool_boom_2",
+        "second_margin": 0.6
+      },
+      {
+        "connected": true,
+        "first": "tool_boom_2",
+        "first_margin": 0.596376,
+        "joint": [
+          -24,
+          110,
+          3
+        ],
+        "minimum_margin": 0.596376,
+        "second": "tool_boom_hinge_2",
+        "second_margin": 3.1
+      },
+      {
+        "connected": true,
+        "first": "tool_boom_2",
+        "first_margin": 0.596376,
+        "joint": [
+          -24,
+          110,
+          3
+        ],
+        "minimum_margin": 0.596376,
+        "second": "tool_boom_3",
+        "second_margin": 0.6
+      },
+      {
+        "connected": true,
+        "first": "tool_boom_3",
+        "first_margin": 0.62217,
+        "joint": [
+          -30,
+          76,
+          10
+        ],
+        "minimum_margin": 0.62217,
+        "second": "tool_boom_hinge_3",
+        "second_margin": 3.1
+      },
+      {
+        "connected": true,
+        "first": "tool_boom_3",
+        "first_margin": 0.62217,
+        "joint": [
+          -30,
+          76,
+          10
+        ],
+        "minimum_margin": 0.62217,
+        "second": "tool_receiver",
+        "second_margin": 2.126441
+      },
+      {
+        "connected": true,
+        "first": "tool_receiver",
+        "first_margin": 0.843715,
+        "joint": [
+          -34,
+          66.5,
+          13.5
+        ],
+        "minimum_margin": 0.652067,
+        "second": "tool_gripper_tine_1",
+        "second_margin": 0.652067
+      },
+      {
+        "connected": true,
+        "first": "tool_receiver",
+        "first_margin": 0.53013,
+        "joint": [
+          -31,
+          66.5,
+          13.5
+        ],
+        "minimum_margin": 0.53013,
+        "second": "tool_gripper_tine_2",
+        "second_margin": 1
+      },
+      {
+        "connected": true,
+        "first": "tool_receiver",
+        "first_margin": 0.216544,
+        "joint": [
+          -28,
+          66.5,
+          13.5
+        ],
+        "minimum_margin": 0.216544,
+        "second": "tool_gripper_tine_3",
+        "second_margin": 0.652067
+      },
+      {
+        "connected": true,
+        "first": "tool_receiver",
+        "first_margin": 3.04547,
+        "joint": [
+          -28,
+          72,
+          11
+        ],
+        "minimum_margin": 3.04547,
+        "second": "thermal_weapon_core",
+        "second_margin": 5
+      },
+      {
+        "connected": true,
+        "first": "thermal_weapon_core",
+        "first_margin": 0.5,
+        "joint": [
+          -2,
+          80,
+          14
+        ],
+        "minimum_margin": 0.5,
+        "second": "thermal_weapon_top_cover",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "thermal_weapon_core",
+        "first_margin": 0.5,
+        "joint": [
+          -1,
+          64,
+          14
+        ],
+        "minimum_margin": 0.5,
+        "second": "thermal_weapon_lower_rail",
+        "second_margin": 0.8
+      },
+      {
+        "connected": true,
+        "first": "thermal_weapon_core",
+        "first_margin": 0.5,
+        "joint": [
+          -32.5,
+          72,
+          14
+        ],
+        "minimum_margin": 0.5,
+        "second": "thermal_weapon_muzzle",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "thermal_weapon_core",
+        "first_margin": 0.5,
+        "joint": [
+          26.5,
+          72,
+          14
+        ],
+        "minimum_margin": 0.5,
+        "second": "thermal_weapon_rear_receiver",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "thermal_weapon_core",
+        "first_margin": 0.2,
+        "joint": [
+          -5,
+          72,
+          21.8
+        ],
+        "minimum_margin": 0.2,
+        "second": "thermal_grille_bay_1",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "thermal_grille_bay_1",
+        "first_margin": 0.6,
+        "joint": [
+          -5,
+          68.5,
+          22.7
+        ],
+        "minimum_margin": 0.1,
+        "second": "thermal_grille_1_rib_1",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "thermal_grille_bay_1",
+        "first_margin": 0.6,
+        "joint": [
+          -5,
+          75.5,
+          22.7
+        ],
+        "minimum_margin": 0.1,
+        "second": "thermal_grille_1_rib_2",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "thermal_weapon_core",
+        "first_margin": 0.2,
+        "joint": [
+          3,
+          72,
+          21.8
+        ],
+        "minimum_margin": 0.2,
+        "second": "thermal_grille_bay_2",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "thermal_grille_bay_2",
+        "first_margin": 0.6,
+        "joint": [
+          3,
+          68.5,
+          22.7
+        ],
+        "minimum_margin": 0.1,
+        "second": "thermal_grille_2_rib_1",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "thermal_grille_bay_2",
+        "first_margin": 0.6,
+        "joint": [
+          3,
+          75.5,
+          22.7
+        ],
+        "minimum_margin": 0.1,
+        "second": "thermal_grille_2_rib_2",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "thermal_weapon_core",
+        "first_margin": 0.2,
+        "joint": [
+          11,
+          72,
+          21.8
+        ],
+        "minimum_margin": 0.2,
+        "second": "thermal_grille_bay_3",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "thermal_grille_bay_3",
+        "first_margin": 0.6,
+        "joint": [
+          11,
+          68.5,
+          22.7
+        ],
+        "minimum_margin": 0.1,
+        "second": "thermal_grille_3_rib_1",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "thermal_grille_bay_3",
+        "first_margin": 0.6,
+        "joint": [
+          11,
+          75.5,
+          22.7
+        ],
+        "minimum_margin": 0.1,
+        "second": "thermal_grille_3_rib_2",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "thermal_weapon_core",
+        "first_margin": 0.2,
+        "joint": [
+          19,
+          72,
+          21.8
+        ],
+        "minimum_margin": 0.2,
+        "second": "thermal_grille_bay_4",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "thermal_grille_bay_4",
+        "first_margin": 0.6,
+        "joint": [
+          19,
+          68.5,
+          22.7
+        ],
+        "minimum_margin": 0.1,
+        "second": "thermal_grille_4_rib_1",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "thermal_grille_bay_4",
+        "first_margin": 0.6,
+        "joint": [
+          19,
+          75.5,
+          22.7
+        ],
+        "minimum_margin": 0.1,
+        "second": "thermal_grille_4_rib_2",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "thermal_weapon_core",
+        "first_margin": 0.1,
+        "joint": [
+          -27,
+          72,
+          21.9
+        ],
+        "minimum_margin": 0.1,
+        "second": "thermal_heat_tube_1",
+        "second_margin": 0.4
+      },
+      {
+        "connected": true,
+        "first": "thermal_weapon_core",
+        "first_margin": 0.1,
+        "joint": [
+          -24.2,
+          72,
+          21.9
+        ],
+        "minimum_margin": 0.1,
+        "second": "thermal_heat_tube_2",
+        "second_margin": 0.4
+      },
+      {
+        "connected": true,
+        "first": "thermal_weapon_core",
+        "first_margin": 0.1,
+        "joint": [
+          -21.4,
+          72,
+          21.9
+        ],
+        "minimum_margin": 0.1,
+        "second": "thermal_heat_tube_3",
+        "second_margin": 0.4
+      },
+      {
+        "connected": true,
+        "first": "thermal_weapon_core",
+        "first_margin": 0.1,
+        "joint": [
+          -18.6,
+          72,
+          21.9
+        ],
+        "minimum_margin": 0.1,
+        "second": "thermal_heat_tube_4",
+        "second_margin": 0.4
+      },
+      {
+        "connected": true,
+        "first": "thermal_weapon_core",
+        "first_margin": 0.1,
+        "joint": [
+          -15.8,
+          72,
+          21.9
+        ],
+        "minimum_margin": 0.1,
+        "second": "thermal_heat_tube_5",
+        "second_margin": 0.4
+      },
+      {
+        "connected": true,
+        "first": "thermal_weapon_top_cover",
+        "first_margin": 1,
+        "joint": [
+          -28,
+          81.5,
+          19
+        ],
+        "minimum_margin": 0.35,
+        "second": "thermal_top_pipe_1",
+        "second_margin": 0.35
+      },
+      {
+        "connected": true,
+        "first": "thermal_top_pipe_1",
+        "first_margin": 0.364529,
+        "joint": [
+          -5,
+          84,
+          19
+        ],
+        "minimum_margin": 0.35,
+        "second": "thermal_top_pipe_2",
+        "second_margin": 0.35
+      },
+      {
+        "connected": true,
+        "first": "pelvis_front_armor",
+        "first_margin": 0.5,
+        "joint": [
+          -7.5,
+          58,
+          7.5
+        ],
+        "minimum_margin": 0,
+        "second": "pelvis_service_panel_1",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "pelvis_front_armor",
+        "first_margin": 1.000973,
+        "joint": [
+          -2.5,
+          58,
+          7.5
+        ],
+        "minimum_margin": 0,
+        "second": "pelvis_service_panel_2",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "pelvis_front_armor",
+        "first_margin": 1.000973,
+        "joint": [
+          2.5,
+          58,
+          7.5
+        ],
+        "minimum_margin": 0,
+        "second": "pelvis_service_panel_3",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "pelvis_front_armor",
+        "first_margin": 0.5,
+        "joint": [
+          7.5,
+          58,
+          7.5
+        ],
+        "minimum_margin": 0,
+        "second": "pelvis_service_panel_4",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "left_waist_brace",
+        "first_margin": 0,
+        "joint": [
+          -7.5,
+          64,
+          -5
+        ],
+        "minimum_margin": 0,
+        "second": "left_hydraulic_hose_1",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "left_hydraulic_hose_1",
+        "first_margin": 0.287694,
+        "joint": [
+          -12,
+          55,
+          -5
+        ],
+        "minimum_margin": 0.287694,
+        "second": "left_hydraulic_hose_2",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "left_hydraulic_hose_2",
+        "first_margin": 0.277288,
+        "joint": [
+          -16,
+          39,
+          -4
+        ],
+        "minimum_margin": 0.277288,
+        "second": "left_hydraulic_hose_3",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "right_waist_brace",
+        "first_margin": 0,
+        "joint": [
+          7.5,
+          64,
+          -5
+        ],
+        "minimum_margin": 0,
+        "second": "right_hydraulic_hose_1",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "right_hydraulic_hose_1",
+        "first_margin": 0.287694,
+        "joint": [
+          12,
+          55,
+          -5
+        ],
+        "minimum_margin": 0.287694,
+        "second": "right_hydraulic_hose_2",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "right_hydraulic_hose_2",
+        "first_margin": 0.277288,
+        "joint": [
+          16,
+          39,
+          -4
+        ],
+        "minimum_margin": 0.277288,
+        "second": "right_hydraulic_hose_3",
+        "second_margin": 0.3
+      }
+    ],
+    "method": "shared-joint-compiled-oriented-cuboid-margin-v2",
+    "minimum_margin": 0.0
+  },
+  "bones": 28,
+  "both_exo_feet_grounded": true,
+  "both_pilot_boots_retained_in_exoframe": true,
+  "camera_parameters_are_estimated": true,
+  "cuboids": 192,
+  "declared_link_tree_covers_every_cube": true,
+  "evidence_files": [
+    "perspective-cameras.json"
+  ],
+  "feature_inventory": {
+    "articulated_toes": 6,
+    "auxiliary_boom_segments": 3,
+    "backpack_canister_collars": 6,
+    "backpack_canisters": 2,
+    "backpack_hoses": 2,
+    "boot_restraints": 2,
+    "exo_primary_leg_segments": 4,
+    "grounded_exo_feet": 2,
+    "human_arm_chains": 2,
+    "human_leg_chains": 2,
+    "human_pilots": 1,
+    "hydraulic_hose_segments": 6,
+    "knee_tread_guard_cuboids": 6,
+    "powered_exo_legs": 2,
+    "segmented_ankle_cuboids": 6,
+    "shield_grille_bays": 4,
+    "shield_grille_ribs": 12,
+    "shield_physical_contacts": 2,
+    "shield_support_boom_segments": 3,
+    "shin_rear_braces": 2,
+    "thermal_weapon_grille_bays": 4,
+    "thermal_weapon_heat_tubes": 5
+  },
+  "ground_contacts": [
+    {
+      "foot": "left_exo_ground_foot",
+      "grounded": true,
+      "maximum_y": 5.5,
+      "minimum_y": 0.0,
+      "side": "left"
+    },
+    {
+      "foot": "right_exo_ground_foot",
+      "grounded": true,
+      "maximum_y": 5.5,
+      "minimum_y": 0.0,
+      "side": "right"
+    }
+  ],
+  "hidden_geometry_established": false,
+  "leg_nesting_audit": {
+    "materials_are_distinct": true,
+    "method": "authored-joint-centerline-and-explicit-restraint-v1",
+    "minimum_ankle_centerline_x_separation": 7.0,
+    "minimum_knee_centerline_x_separation": 12.0,
+    "sides": {
+      "left": {
+        "ankle_centerline_x_separation": 7.0,
+        "boot_restraint": "pilot_left_boot_restraint",
+        "exo_ankle": [
+          -20.0,
+          9.0,
+          0.0
+        ],
+        "exo_knee": [
+          -22.0,
+          33.0,
+          10.0
+        ],
+        "exo_material": "frame_dark/frame_blue/edge_steel",
+        "knee_centerline_x_separation": 12.0,
+        "pilot_ankle": [
+          -13.0,
+          18,
+          4.0
+        ],
+        "pilot_knee": [
+          -10.0,
+          36,
+          8.0
+        ],
+        "pilot_material": "trouser_blue"
+      },
+      "right": {
+        "ankle_centerline_x_separation": 7.0,
+        "boot_restraint": "pilot_right_boot_restraint",
+        "exo_ankle": [
+          20.0,
+          9.0,
+          0.0
+        ],
+        "exo_knee": [
+          22.0,
+          33.0,
+          10.0
+        ],
+        "exo_material": "frame_dark/frame_blue/edge_steel",
+        "knee_centerline_x_separation": 12.0,
+        "pilot_ankle": [
+          13.0,
+          18,
+          4.0
+        ],
+        "pilot_knee": [
+          10.0,
+          36,
+          8.0
+        ],
+        "pilot_material": "trouser_blue"
+      }
+    }
+  },
+  "model_id": "militech_centaur_piloted_exoskeleton",
+  "part_local_depth_audit": {
+    "exoframe": {
+      "depth_to_width": 0.564789,
+      "effective_world_extents": [
+        71.0,
+        113.998454,
+        40.1
+      ],
+      "selection_count": 130
+    },
+    "pilot": {
+      "depth_to_width": 0.408147,
+      "effective_world_extents": [
+        41.0,
+        86.484285,
+        16.73404
+      ],
+      "selection_count": 28
+    },
+    "shield": {
+      "depth_to_width": 0.873096,
+      "effective_world_extents": [
+        50.481194,
+        64.458641,
+        44.074903
+      ],
+      "selection_count": 34
+    }
+  },
+  "perspective_camera_contract": {
+    "automatic_fit_or_recentering": false,
+    "camera_parameters_are_estimated": true,
+    "cameras": {
+      "source-6": {
+        "orbit_parameters": {
+          "distance": 190.0,
+          "near": 0.1,
+          "pitch_degrees": 0.0,
+          "principal_point": [
+            500.0,
+            513.0
+          ],
+          "roll_degrees": 0.0,
+          "target": [
+            4.0,
+            55.0,
+            4.0
+          ],
+          "vertical_fov_degrees": 35.0,
+          "yaw_degrees": -5.0
+        },
+        "resolved_camera": {
+          "focal_x": 1622.2707414087834,
+          "focal_y": 1622.2707414087834,
+          "image_size": [
+            1000,
+            1023
+          ],
+          "near": 0.1,
+          "principal_point": [
+            500.0,
+            513.0
+          ],
+          "projection": "perspective",
+          "translation": [
+            -4.333401763357617,
+            -55.0,
+            -193.63615582137635
+          ],
+          "world_to_camera": [
+            [
+              0.9961946980917455,
+              0.0,
+              0.08715574274765817
+            ],
+            [
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              -0.08715574274765817,
+              0.0,
+              0.9961946980917455
+            ]
+          ]
+        }
+      },
+      "source-7": {
+        "orbit_parameters": {
+          "distance": 184.0,
+          "near": 0.1,
+          "pitch_degrees": 1.0,
+          "principal_point": [
+            510.0,
+            515.0
+          ],
+          "roll_degrees": 0.0,
+          "target": [
+            2.0,
+            54.0,
+            2.0
+          ],
+          "vertical_fov_degrees": 35.0,
+          "yaw_degrees": 70.0
+        },
+        "resolved_camera": {
+          "focal_x": 1622.2707414087834,
+          "focal_y": 1622.2707414087834,
+          "image_size": [
+            1000,
+            1023
+          ],
+          "near": 0.1,
+          "principal_point": [
+            510.0,
+            515.0
+          ],
+          "projection": "perspective",
+          "translation": [
+            1.195344954920479,
+            -53.947037594254866,
+            -187.5054650537123
+          ],
+          "world_to_camera": [
+            [
+              0.3420201433256688,
+              0.0,
+              -0.9396926207859083
+            ],
+            [
+              -0.0163998975440718,
+              0.9998476951563913,
+              -0.005969074551057532
+            ],
+            [
+              0.9395495010482593,
+              0.01745240643728351,
+              0.3419680520012286
+            ]
+          ]
+        }
+      },
+      "source-8": {
+        "orbit_parameters": {
+          "distance": 188.0,
+          "near": 0.1,
+          "pitch_degrees": 1.0,
+          "principal_point": [
+            500.0,
+            515.0
+          ],
+          "roll_degrees": 0.0,
+          "target": [
+            0.0,
+            53.0,
+            0.0
+          ],
+          "vertical_fov_degrees": 35.0,
+          "yaw_degrees": 178.0
+        },
+        "resolved_camera": {
+          "focal_x": 1622.2707414087834,
+          "focal_y": 1622.2707414087834,
+          "image_size": [
+            1000,
+            1023
+          ],
+          "near": 0.1,
+          "principal_point": [
+            500.0,
+            515.0
+          ],
+          "projection": "perspective",
+          "translation": [
+            -0.0,
+            -52.99192784328873,
+            -188.92497754117608
+          ],
+          "world_to_camera": [
+            [
+              -0.9993908270190957,
+              0.0,
+              -0.034899496702501136
+            ],
+            [
+              -0.0006090802009086855,
+              0.9998476951563912,
+              0.017441774902830158
+            ],
+            [
+              0.03489418134011384,
+              0.01745240643728351,
+              -0.9992386149554826
+            ]
+          ]
+        }
+      }
+    },
+    "geometry_modified_during_evidence": false,
+    "hidden_geometry_established": false,
+    "method": "three-independent-manually-frozen-perspective-cameras-v1",
+    "runtime_camera_fitting": false,
+    "schema_version": 1,
+    "visual_hull_used": false
+  },
+  "perspective_source_evidence": {
+    "source-6": {
+      "alignment": "raw source pixels; no automatic fitting or recentering",
+      "calibration_basis": "manual view direction, vertical occupancy, and subject-center estimate; no runtime mask fitting, cropping, scaling, translation, or recentering",
+      "camera": {
+        "focal_x": 1622.2707414087834,
+        "focal_y": 1622.2707414087834,
+        "image_size": [
+          1000,
+          1023
+        ],
+        "near": 0.1,
+        "principal_point": [
+          500.0,
+          513.0
+        ],
+        "projection": "perspective",
+        "translation": [
+          -4.333401763357617,
+          -55.0,
+          -193.63615582137635
+        ],
+        "world_to_camera": [
+          [
+            0.9961946980917455,
+            0.0,
+            0.08715574274765817
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            -0.08715574274765817,
+            0.0,
+            0.9961946980917455
+          ]
+        ]
+      },
+      "camera_parameters_are_estimated": true,
+      "held_out_keypoints": true,
+      "hidden_geometry_established": false,
+      "keypoints": {
+        "alignment": "raw pixels; no crop, fit, scale, translation, or recentering",
+        "count": 8,
+        "image_size": [
+          1000,
+          1023
+        ],
+        "maximum_error_image_heights": 0.173776,
+        "maximum_error_subject_heights": 0.177596,
+        "mean_error_image_heights": 0.060525,
+        "mean_error_subject_heights": 0.061855,
+        "method": "raw-fixed-frame-keypoint-error-v1",
+        "normalization": "raw Euclidean pixel distance divided by reference mask bounding-box height",
+        "points": {
+          "head": {
+            "delta_pixels": [
+              31.255317,
+              63.340735
+            ],
+            "error_image_heights": 0.069044,
+            "error_pixels": 70.632454,
+            "error_subject_heights": 0.070562,
+            "reference_pixels": [
+              435.0,
+              115.0
+            ],
+            "rendered_pixels": [
+              466.255317,
+              178.340735
+            ]
+          },
+          "left_foot": {
+            "delta_pixels": [
+              70.302013,
+              23.35261
+            ],
+            "error_image_heights": 0.072414,
+            "error_pixels": 74.07913,
+            "error_subject_heights": 0.074005,
+            "reference_pixels": [
+              205.0,
+              946.0
+            ],
+            "rendered_pixels": [
+              275.302013,
+              969.35261
+            ]
+          },
+          "left_knee": {
+            "delta_pixels": [
+              25.48744,
+              59.36107
+            ],
+            "error_image_heights": 0.063149,
+            "error_pixels": 64.601442,
+            "error_subject_heights": 0.064537,
+            "reference_pixels": [
+              248.0,
+              650.0
+            ],
+            "rendered_pixels": [
+              273.48744,
+              709.36107
+            ]
+          },
+          "pelvis": {
+            "delta_pixels": [
+              -6.30495,
+              2.866201
+            ],
+            "error_image_heights": 0.00677,
+            "error_pixels": 6.925857,
+            "error_subject_heights": 0.006919,
+            "reference_pixels": [
+              470.0,
+              485.0
+            ],
+            "rendered_pixels": [
+              463.69505,
+              487.866201
+            ]
+          },
+          "right_foot": {
+            "delta_pixels": [
+              -5.062289,
+              12.121266
+            ],
+            "error_image_heights": 0.012841,
+            "error_pixels": 13.1359,
+            "error_subject_heights": 0.013123,
+            "reference_pixels": [
+              660.0,
+              948.0
+            ],
+            "rendered_pixels": [
+              654.937711,
+              960.121266
+            ]
+          },
+          "right_knee": {
+            "delta_pixels": [
+              21.311669,
+              50.30369
+            ],
+            "error_image_heights": 0.053404,
+            "error_pixels": 54.631937,
+            "error_subject_heights": 0.054577,
+            "reference_pixels": [
+              640.0,
+              655.0
+            ],
+            "rendered_pixels": [
+              661.311669,
+              705.30369
+            ]
+          },
+          "shield_center": {
+            "delta_pixels": [
+              -30.178617,
+              14.670569
+            ],
+            "error_image_heights": 0.032801,
+            "error_pixels": 33.555544,
+            "error_subject_heights": 0.033522,
+            "reference_pixels": [
+              742.0,
+              245.0
+            ],
+            "rendered_pixels": [
+              711.821383,
+              259.670569
+            ]
+          },
+          "tool_tip": {
+            "delta_pixels": [
+              89.216474,
+              153.765268
+            ],
+            "error_image_heights": 0.173776,
+            "error_pixels": 177.773274,
+            "error_subject_heights": 0.177596,
+            "reference_pixels": [
+              102.0,
+              206.0
+            ],
+            "rendered_pixels": [
+              191.216474,
+              359.765268
+            ]
+          }
+        },
+        "reference_subject_height_pixels": 1001.0
+      },
+      "method": "fixed-camera-perspective-evidence-v1",
+      "schema_version": 1,
+      "silhouette": {
+        "alignment": "raw pixels; no crop, fit, scale, translation, or recentering",
+        "image_size": [
+          1000,
+          1023
+        ],
+        "intersection_pixels": 319741,
+        "iou": 0.567833,
+        "method": "raw-fixed-frame-mask-iou-v1",
+        "precision": 0.786904,
+        "recall": 0.671016,
+        "reference_bbox": [
+          71,
+          0,
+          970,
+          1001
+        ],
+        "reference_foreground_pixels": 476503,
+        "reference_may_be_clipped": true,
+        "reference_touches_frame_edges": {
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "top": true
+        },
+        "rendered_foreground_pixels": 406328,
+        "threshold": 128,
+        "union_pixels": 563090
+      },
+      "visual_hull_used": false
+    },
+    "source-7": {
+      "alignment": "raw source pixels; no automatic fitting or recentering",
+      "calibration_basis": "manual view direction, vertical occupancy, and subject-center estimate; no runtime mask fitting, cropping, scaling, translation, or recentering",
+      "camera": {
+        "focal_x": 1622.2707414087834,
+        "focal_y": 1622.2707414087834,
+        "image_size": [
+          1000,
+          1023
+        ],
+        "near": 0.1,
+        "principal_point": [
+          510.0,
+          515.0
+        ],
+        "projection": "perspective",
+        "translation": [
+          1.195344954920479,
+          -53.947037594254866,
+          -187.5054650537123
+        ],
+        "world_to_camera": [
+          [
+            0.3420201433256688,
+            0.0,
+            -0.9396926207859083
+          ],
+          [
+            -0.0163998975440718,
+            0.9998476951563913,
+            -0.005969074551057532
+          ],
+          [
+            0.9395495010482593,
+            0.01745240643728351,
+            0.3419680520012286
+          ]
+        ]
+      },
+      "camera_parameters_are_estimated": true,
+      "held_out_keypoints": true,
+      "hidden_geometry_established": false,
+      "keypoints": {
+        "alignment": "raw pixels; no crop, fit, scale, translation, or recentering",
+        "count": 7,
+        "image_size": [
+          1000,
+          1023
+        ],
+        "maximum_error_image_heights": 0.187412,
+        "maximum_error_subject_heights": 0.194051,
+        "mean_error_image_heights": 0.080379,
+        "mean_error_subject_heights": 0.083226,
+        "method": "raw-fixed-frame-keypoint-error-v1",
+        "normalization": "raw Euclidean pixel distance divided by reference mask bounding-box height",
+        "points": {
+          "boom_crown": {
+            "delta_pixels": [
+              -117.154058,
+              -151.764132
+            ],
+            "error_image_heights": 0.187412,
+            "error_pixels": 191.722261,
+            "error_subject_heights": 0.194051,
+            "reference_pixels": [
+              662.0,
+              107.0
+            ],
+            "rendered_pixels": [
+              544.845942,
+              -44.764132
+            ]
+          },
+          "head": {
+            "delta_pixels": [
+              -56.528243,
+              51.792526
+            ],
+            "error_image_heights": 0.074944,
+            "error_pixels": 76.667515,
+            "error_subject_heights": 0.077599,
+            "reference_pixels": [
+              539.0,
+              111.0
+            ],
+            "rendered_pixels": [
+              482.471757,
+              162.792526
+            ]
+          },
+          "near_foot": {
+            "delta_pixels": [
+              -32.65293,
+              77.084235
+            ],
+            "error_image_heights": 0.081833,
+            "error_pixels": 83.714952,
+            "error_subject_heights": 0.084732,
+            "reference_pixels": [
+              573.0,
+              946.0
+            ],
+            "rendered_pixels": [
+              540.34707,
+              1023.084235
+            ]
+          },
+          "near_knee": {
+            "delta_pixels": [
+              -16.745903,
+              57.92137
+            ],
+            "error_image_heights": 0.058938,
+            "error_pixels": 60.293535,
+            "error_subject_heights": 0.061026,
+            "reference_pixels": [
+              520.0,
+              670.0
+            ],
+            "rendered_pixels": [
+              503.254097,
+              727.92137
+            ]
+          },
+          "pelvis": {
+            "delta_pixels": [
+              -31.601911,
+              9.820858
+            ],
+            "error_image_heights": 0.032349,
+            "error_pixels": 33.092749,
+            "error_subject_heights": 0.033495,
+            "reference_pixels": [
+              552.0,
+              470.0
+            ],
+            "rendered_pixels": [
+              520.398089,
+              479.820858
+            ]
+          },
+          "shield_center": {
+            "delta_pixels": [
+              79.571522,
+              -20.270993
+            ],
+            "error_image_heights": 0.080267,
+            "error_pixels": 82.112973,
+            "error_subject_heights": 0.08311,
+            "reference_pixels": [
+              306.0,
+              247.0
+            ],
+            "rendered_pixels": [
+              385.571522,
+              226.729007
+            ]
+          },
+          "shield_lower": {
+            "delta_pixels": [
+              1.801006,
+              -47.953578
+            ],
+            "error_image_heights": 0.046908,
+            "error_pixels": 47.987387,
+            "error_subject_heights": 0.04857,
+            "reference_pixels": [
+              346.0,
+              515.0
+            ],
+            "rendered_pixels": [
+              347.801006,
+              467.046422
+            ]
+          }
+        },
+        "reference_subject_height_pixels": 988.0
+      },
+      "method": "fixed-camera-perspective-evidence-v1",
+      "schema_version": 1,
+      "silhouette": {
+        "alignment": "raw pixels; no crop, fit, scale, translation, or recentering",
+        "image_size": [
+          1000,
+          1023
+        ],
+        "intersection_pixels": 214047,
+        "iou": 0.463441,
+        "method": "raw-fixed-frame-mask-iou-v1",
+        "precision": 0.67026,
+        "recall": 0.600306,
+        "reference_bbox": [
+          170,
+          0,
+          902,
+          988
+        ],
+        "reference_foreground_pixels": 356563,
+        "reference_may_be_clipped": true,
+        "reference_touches_frame_edges": {
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "top": true
+        },
+        "rendered_foreground_pixels": 319349,
+        "threshold": 128,
+        "union_pixels": 461865
+      },
+      "visual_hull_used": false
+    },
+    "source-8": {
+      "alignment": "raw source pixels; no automatic fitting or recentering",
+      "calibration_basis": "manual view direction, vertical occupancy, and subject-center estimate; no runtime mask fitting, cropping, scaling, translation, or recentering",
+      "camera": {
+        "focal_x": 1622.2707414087834,
+        "focal_y": 1622.2707414087834,
+        "image_size": [
+          1000,
+          1023
+        ],
+        "near": 0.1,
+        "principal_point": [
+          500.0,
+          515.0
+        ],
+        "projection": "perspective",
+        "translation": [
+          -0.0,
+          -52.99192784328873,
+          -188.92497754117608
+        ],
+        "world_to_camera": [
+          [
+            -0.9993908270190957,
+            0.0,
+            -0.034899496702501136
+          ],
+          [
+            -0.0006090802009086855,
+            0.9998476951563912,
+            0.017441774902830158
+          ],
+          [
+            0.03489418134011384,
+            0.01745240643728351,
+            -0.9992386149554826
+          ]
+        ]
+      },
+      "camera_parameters_are_estimated": true,
+      "held_out_keypoints": true,
+      "hidden_geometry_established": false,
+      "keypoints": {
+        "alignment": "raw pixels; no crop, fit, scale, translation, or recentering",
+        "count": 8,
+        "image_size": [
+          1000,
+          1023
+        ],
+        "maximum_error_image_heights": 0.101143,
+        "maximum_error_subject_heights": 0.107,
+        "mean_error_image_heights": 0.068855,
+        "mean_error_subject_heights": 0.072842,
+        "method": "raw-fixed-frame-keypoint-error-v1",
+        "normalization": "raw Euclidean pixel distance divided by reference mask bounding-box height",
+        "points": {
+          "backpack_center": {
+            "delta_pixels": [
+              -100.146518,
+              -19.65835
+            ],
+            "error_image_heights": 0.099763,
+            "error_pixels": 102.057708,
+            "error_subject_heights": 0.105541,
+            "reference_pixels": [
+              603.0,
+              309.0
+            ],
+            "rendered_pixels": [
+              502.853482,
+              289.34165
+            ]
+          },
+          "head": {
+            "delta_pixels": [
+              -47.357277,
+              12.737133
+            ],
+            "error_image_heights": 0.047938,
+            "error_pixels": 49.040251,
+            "error_subject_heights": 0.050714,
+            "reference_pixels": [
+              546.0,
+              155.0
+            ],
+            "rendered_pixels": [
+              498.642723,
+              167.737133
+            ]
+          },
+          "left_foot": {
+            "delta_pixels": [
+              -31.507644,
+              -5.851791
+            ],
+            "error_image_heights": 0.031326,
+            "error_pixels": 32.046452,
+            "error_subject_heights": 0.03314,
+            "reference_pixels": [
+              346.0,
+              940.0
+            ],
+            "rendered_pixels": [
+              314.492356,
+              934.148209
+            ]
+          },
+          "left_knee": {
+            "delta_pixels": [
+              -46.396717,
+              -12.127875
+            ],
+            "error_image_heights": 0.046877,
+            "error_pixels": 47.955611,
+            "error_subject_heights": 0.049592,
+            "reference_pixels": [
+              363.0,
+              690.0
+            ],
+            "rendered_pixels": [
+              316.603283,
+              677.872125
+            ]
+          },
+          "pelvis": {
+            "delta_pixels": [
+              -66.0,
+              -63.15896
+            ],
+            "error_image_heights": 0.089297,
+            "error_pixels": 91.351268,
+            "error_subject_heights": 0.094469,
+            "reference_pixels": [
+              566.0,
+              535.0
+            ],
+            "rendered_pixels": [
+              500.0,
+              471.84104
+            ]
+          },
+          "right_foot": {
+            "delta_pixels": [
+              -77.420872,
+              -11.363407
+            ],
+            "error_image_heights": 0.076491,
+            "error_pixels": 78.250357,
+            "error_subject_heights": 0.080921,
+            "reference_pixels": [
+              758.0,
+              942.0
+            ],
+            "rendered_pixels": [
+              680.579128,
+              930.636593
+            ]
+          },
+          "right_knee": {
+            "delta_pixels": [
+              -46.704444,
+              -36.602146
+            ],
+            "error_image_heights": 0.058004,
+            "error_pixels": 59.338202,
+            "error_subject_heights": 0.061363,
+            "reference_pixels": [
+              723.0,
+              713.0
+            ],
+            "rendered_pixels": [
+              676.295556,
+              676.397854
+            ]
+          },
+          "shield_center": {
+            "delta_pixels": [
+              103.412981,
+              -3.403924
+            ],
+            "error_image_heights": 0.101143,
+            "error_pixels": 103.468987,
+            "error_subject_heights": 0.107,
+            "reference_pixels": [
+              197.0,
+              291.0
+            ],
+            "rendered_pixels": [
+              300.412981,
+              287.596076
+            ]
+          }
+        },
+        "reference_subject_height_pixels": 967.0
+      },
+      "method": "fixed-camera-perspective-evidence-v1",
+      "schema_version": 1,
+      "silhouette": {
+        "alignment": "raw pixels; no crop, fit, scale, translation, or recentering",
+        "image_size": [
+          1000,
+          1023
+        ],
+        "intersection_pixels": 261330,
+        "iou": 0.526309,
+        "method": "raw-fixed-frame-mask-iou-v1",
+        "precision": 0.740475,
+        "recall": 0.645353,
+        "reference_bbox": [
+          76,
+          18,
+          902,
+          985
+        ],
+        "reference_foreground_pixels": 404941,
+        "reference_may_be_clipped": false,
+        "reference_touches_frame_edges": {
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "top": false
+        },
+        "rendered_foreground_pixels": 352922,
+        "threshold": 128,
+        "union_pixels": 496533
+      },
+      "visual_hull_used": false
+    }
+  },
+  "perspective_source_gates": {
+    "source-6": {
+      "iou": 0.567833,
+      "iou_pass": true,
+      "keypoint_mean_error_subject_heights": 0.061855,
+      "keypoint_pass": true,
+      "target_iou_at_least": 0.5,
+      "target_keypoint_mean_error_subject_heights_at_most": 0.09
+    },
+    "source-7": {
+      "iou": 0.463441,
+      "iou_pass": true,
+      "keypoint_mean_error_subject_heights": 0.083226,
+      "keypoint_pass": true,
+      "target_iou_at_least": 0.45,
+      "target_keypoint_mean_error_subject_heights_at_most": 0.09
+    },
+    "source-8": {
+      "iou": 0.526309,
+      "iou_pass": true,
+      "keypoint_mean_error_subject_heights": 0.072842,
+      "keypoint_pass": true,
+      "target_iou_at_least": 0.5,
+      "target_keypoint_mean_error_subject_heights_at_most": 0.09
+    }
+  },
+  "pilot_exoframe_contact_constraints": {
+    "all_connected": true,
+    "attachments": [
+      {
+        "connected": true,
+        "first": "pilot_left_boot_restraint",
+        "first_margin": 0.45,
+        "joint": [
+          -17,
+          13.25,
+          2
+        ],
+        "minimum_margin": 0.25,
+        "second": "left_ankle_upper_segment",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "pilot_right_boot_restraint",
+        "first_margin": 0.45,
+        "joint": [
+          17,
+          13.25,
+          2
+        ],
+        "minimum_margin": 0.25,
+        "second": "right_ankle_upper_segment",
+        "second_margin": 0.25
+      }
+    ],
+    "method": "shared-joint-compiled-oriented-cuboid-margin-v2",
+    "minimum_margin": 0.25
+  },
+  "recorded_feature_inventory_matches": true,
+  "reference_rights": "unknown; private ignored benchmark references only",
+  "renderer": "deterministic-orthographic-and-three-fixed-perspective-cuboid-zbuffer-v1",
+  "root_cubes": [
+    "pelvis_frame_core"
+  ],
+  "schema_version": 1,
+  "semantic_cuboids": 192,
+  "shield_contact_constraints": {
+    "all_connected": true,
+    "attachments": [
+      {
+        "connected": true,
+        "first": "shield_upper_rear_pad",
+        "first_margin": 1.096813,
+        "joint": [
+          32.005107,
+          96.396439,
+          22.180848
+        ],
+        "minimum_margin": 0.25,
+        "second": "shield_core",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "shield_lower_rear_pad",
+        "first_margin": 1.096813,
+        "joint": [
+          19.798846,
+          73.439802,
+          22.180848
+        ],
+        "minimum_margin": 0.25,
+        "second": "shield_core",
+        "second_margin": 0.25
+      }
+    ],
+    "method": "shared-joint-compiled-oriented-cuboid-margin-v2",
+    "minimum_margin": 0.25
+  },
+  "source_projection": false,
+  "source_skin_cuboids": 0,
+  "views": [
+    "source-6-perspective.png",
+    "source-6-silhouette-overlap.png",
+    "source-7-perspective.png",
+    "source-7-silhouette-overlap.png",
+    "source-8-perspective.png",
+    "source-8-silhouette-overlap.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "pilot-closeup.png",
+    "leg-closeup.png",
+    "shield-contact-closeup.png",
+    "backpack-closeup.png",
+    "thermal-weapon-closeup.png",
+    "comparison-sheet.png"
+  ],
+  "visual_hull_used": false
+}

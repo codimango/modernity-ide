@@ -1,0 +1,66 @@
+{
+  "asset": "militech_centaur_piloted_exoskeleton",
+  "conclusions": {
+    "machine_configuration": "A human-worn military exoskeleton, not a humanoid robot containing a decorative human figure.",
+    "operator_interface": "The exposed operator occupies an open central frame, grips a waist-height control yoke, and places both feet in powered boot cradles.",
+    "powered_assemblies": "Independent mechanical hip, knee, ankle, shield-arm, weapon-arm, and spine-power assemblies surround the replaceable wearer.",
+    "weapon_mapping": "The machine's left arm carries the ballistic shield; its right arm carries the thermal weapon powered by the spine unit."
+  },
+  "gallery": {
+    "page": "https://cyberpunk.fandom.com/wiki/Militech_Centaur",
+    "page_id": 20143,
+    "retrieval": "MediaWiki API",
+    "sources": [
+      {
+        "file": "front.jpg",
+        "role": "official front render",
+        "sha256": "ad43af46d4d00cd34b6602bbab9aed38dbca7a04e5a77ea6bc79733babbb0780",
+        "url": "https://static.wikia.nocookie.net/cyberpunk/images/7/77/Militech_Centaur_Front.jpg/revision/latest?cb=20211201111547"
+      },
+      {
+        "file": "right.jpg",
+        "role": "official right render",
+        "sha256": "c85efc63a98927a4247908d9bcec67618a46204ca80331238d9880c5c89e53a7",
+        "url": "https://static.wikia.nocookie.net/cyberpunk/images/d/d7/Militech_Centaur_Right.jpg/revision/latest?cb=20211201111605"
+      },
+      {
+        "file": "left.jpg",
+        "role": "official left render",
+        "sha256": "6dd18576e274aee4937009eeb9f0937efa28c7c025c57be196143a1df1ba30dc",
+        "url": "https://static.wikia.nocookie.net/cyberpunk/images/8/87/Militech_Centaur_Left.jpg/revision/latest?cb=20211201111619"
+      },
+      {
+        "file": "back.jpg",
+        "role": "official back render",
+        "sha256": "13e34593ce60dd83d2a73c4f965774d0952043eda7c46a680190ec840bcd51e9",
+        "url": "https://static.wikia.nocookie.net/cyberpunk/images/e/e4/Militech_Centaur_Back.jpg/revision/latest?cb=20211201111316"
+      },
+      {
+        "file": "concept-01.jpg",
+        "role": "Ben Andrews front and rear wearable-frame concept",
+        "sha256": "42903e0c5bd1486e4b3c85e255b7c65a036ae8bcff5d1373bbdccdaa1c0b30d4",
+        "url": "https://static.wikia.nocookie.net/cyberpunk/images/e/e9/Ben-andrews-ben-andrews-militech-centaur-01-cyberpunk2077.jpg/revision/latest?cb=20241211045625"
+      },
+      {
+        "file": "concept-02.jpg",
+        "role": "Ben Andrews rear thermal-weapon concept",
+        "sha256": "89546b3c0c733802c19a977be3712461088d7814ae8c5f8acee60204575d8c83",
+        "url": "https://static.wikia.nocookie.net/cyberpunk/images/2/2d/Ben-andrews-ben-andrews-militech-centaur-02-cyberpunk2077.jpg/revision/latest?cb=20241211045639"
+      }
+    ]
+  },
+  "video_review": {
+    "inspected_timestamps_seconds": [
+      83,
+      87,
+      128,
+      132
+    ],
+    "role": "Secondary motion and wearer-fit evidence only; compressed gameplay is not used for texture transfer or exact geometry.",
+    "title": "Cyberpunk 2077 - Euralio Alma Boss Fight",
+    "url": "https://www.youtube.com/watch?v=M7q588adYbA",
+    "video_id": "M7q588adYbA"
+  },
+  "rights": "External images and video remain ignored local research inputs; redistribution rights were not established.",
+  "schema_version": 1
+}

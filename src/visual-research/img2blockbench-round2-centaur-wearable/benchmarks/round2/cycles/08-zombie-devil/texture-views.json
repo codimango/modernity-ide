@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "views": [
+    {
+      "id": "primary-front",
+      "image": "../../../../image-11.png",
+      "image_sha256": "e3c594bc2fc60a63fa7f510fd6557e761219b731be2654a599fc751d024c96df",
+      "mask": "inputs/foreground-mask.png",
+      "mask_sha256": "e2e7179114033bbbed7309895f68329fd5dc99d32ba8283be627da982bd189d1",
+      "camera": {
+        "projection": "perspective",
+        "image_size": [513, 754],
+        "focal_x": 1700.5371058805954,
+        "focal_y": 1700.5371058805954,
+        "principal_point": [260.0, 377.0],
+        "world_to_camera": [
+          [1.0, 0.0, 0.0],
+          [0.0, 1.0, 0.0],
+          [0.0, 0.0, 1.0]
+        ],
+        "translation": [-0.0, -15.0, -360.0],
+        "near": 0.1
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "asset": "militech_centaur_piloted_exoskeleton",
+  "blockers": [],
+  "caveat": "The source-7 side view remains the least faithful and the shield is more openly slatted than the source panel.",
+  "cycle": 7,
+  "grader": "independent_read_only_codex_terminal",
+  "mean": 3.67,
+  "round": 2,
+  "schema_version": 1,
+  "scores": {
+    "3d_coherence": 4,
+    "attachment_topology": 4,
+    "identity": 4,
+    "materials_color": 4,
+    "proportions": 3,
+    "silhouette": 3
+  },
+  "verdict": "PASS",
+  "verified": {
+    "crouched_splayed_exo_legs": true,
+    "human_legs_visibly_nested": true,
+    "open_u_knees": true,
+    "pilot_boot_to_exoframe_contacts": "2/2",
+    "shield_contacts": "2/2",
+    "three_claw_toes_per_foot": true,
+    "twin_backpack_canisters": true
+  }
+}

@@ -1,0 +1,1801 @@
+{
+  "all_arm_wrists_grounded": true,
+  "arm_depth_to_body_depth": 1.133566,
+  "arm_extents": [
+    34.627659,
+    19.019274,
+    28.339142
+  ],
+  "arm_span_to_body_width": 1.374795,
+  "arm_wrist_heights": [
+    0.400001,
+    0.4,
+    0.4,
+    0.4,
+    0.4,
+    0.4,
+    0.4,
+    0.400001
+  ],
+  "attachments": {
+    "all_connected": true,
+    "attachments": [
+      {
+        "connected": true,
+        "first": "body_volume_031",
+        "first_margin": 0.625,
+        "joint": [
+          0,
+          39,
+          -0.2
+        ],
+        "minimum_margin": 0.625,
+        "second": "stem_hub",
+        "second_margin": 1.187987
+      },
+      {
+        "connected": true,
+        "first": "stem_hub",
+        "first_margin": 1.3875,
+        "joint": [
+          0,
+          39.2,
+          -0.2
+        ],
+        "minimum_margin": 0.3,
+        "second": "stem_leaf_1_1",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "stem_leaf_1_1",
+        "first_margin": 0.3,
+        "joint": [
+          -3.5,
+          40,
+          0
+        ],
+        "minimum_margin": 0.1875,
+        "second": "stem_leaf_1_2",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "stem_hub",
+        "first_margin": 1.3875,
+        "joint": [
+          0,
+          39.2,
+          -0.2
+        ],
+        "minimum_margin": 0.3,
+        "second": "stem_leaf_2_1",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "stem_leaf_2_1",
+        "first_margin": 0.3,
+        "joint": [
+          -2.2,
+          40.7,
+          0.5
+        ],
+        "minimum_margin": 0.175,
+        "second": "stem_leaf_2_2",
+        "second_margin": 0.175
+      },
+      {
+        "connected": true,
+        "first": "stem_hub",
+        "first_margin": 1.3875,
+        "joint": [
+          0,
+          39.2,
+          -0.2
+        ],
+        "minimum_margin": 0.3,
+        "second": "stem_leaf_3_1",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "stem_leaf_3_1",
+        "first_margin": 0.3,
+        "joint": [
+          0,
+          41.2,
+          0
+        ],
+        "minimum_margin": 0.175,
+        "second": "stem_leaf_3_2",
+        "second_margin": 0.175
+      },
+      {
+        "connected": true,
+        "first": "stem_hub",
+        "first_margin": 1.3875,
+        "joint": [
+          0,
+          39.2,
+          -0.2
+        ],
+        "minimum_margin": 0.3,
+        "second": "stem_leaf_4_1",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "stem_leaf_4_1",
+        "first_margin": 0.3,
+        "joint": [
+          2.8,
+          40.7,
+          0.4
+        ],
+        "minimum_margin": 0.175,
+        "second": "stem_leaf_4_2",
+        "second_margin": 0.175
+      },
+      {
+        "connected": true,
+        "first": "stem_hub",
+        "first_margin": 1.3875,
+        "joint": [
+          0,
+          39.2,
+          -0.2
+        ],
+        "minimum_margin": 0.3,
+        "second": "stem_leaf_5_1",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "stem_leaf_5_1",
+        "first_margin": 0.3,
+        "joint": [
+          4,
+          40,
+          -0.5
+        ],
+        "minimum_margin": 0.1875,
+        "second": "stem_leaf_5_2",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "stem_hub",
+        "first_margin": 1.3875,
+        "joint": [
+          0,
+          39.2,
+          -0.2
+        ],
+        "minimum_margin": 0.3,
+        "second": "stem_leaf_6_1",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "stem_leaf_6_1",
+        "first_margin": 0.3,
+        "joint": [
+          0.8,
+          40,
+          -2.8
+        ],
+        "minimum_margin": 0.1875,
+        "second": "stem_leaf_6_2",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "body_volume_020",
+        "first_margin": 0.3,
+        "joint": [
+          -5.8,
+          33.75,
+          7
+        ],
+        "minimum_margin": 0.3,
+        "second": "eye_stalk_1_1",
+        "second_margin": 0.3125
+      },
+      {
+        "connected": true,
+        "first": "eye_stalk_1_1",
+        "first_margin": 0.296488,
+        "joint": [
+          -7.1,
+          36.25,
+          11.3
+        ],
+        "minimum_margin": 0.296488,
+        "second": "eye_bulb_1",
+        "second_margin": 0.85
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_1",
+        "first_margin": 0.375,
+        "joint": [
+          -7.223625,
+          36.304944,
+          11.986803
+        ],
+        "minimum_margin": 0.108032,
+        "second": "iris_1",
+        "second_margin": 0.108032
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_1",
+        "first_margin": 0.85,
+        "joint": [
+          -7.1,
+          36.25,
+          11.3
+        ],
+        "minimum_margin": 0.75,
+        "second": "eye_band_horizontal_1",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "body_volume_020",
+        "first_margin": 0.3125,
+        "joint": [
+          -7,
+          30.75,
+          7
+        ],
+        "minimum_margin": 0.3125,
+        "second": "eye_stalk_2_1",
+        "second_margin": 0.3125
+      },
+      {
+        "connected": true,
+        "first": "eye_stalk_2_1",
+        "first_margin": 0.290641,
+        "joint": [
+          -8.3,
+          32.5,
+          11.8
+        ],
+        "minimum_margin": 0.290641,
+        "second": "eye_bulb_2",
+        "second_margin": 0.95
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_2",
+        "first_margin": 0.392,
+        "joint": [
+          -8.412005,
+          32.516001,
+          12.600039
+        ],
+        "minimum_margin": 0.098069,
+        "second": "iris_2",
+        "second_margin": 0.098069
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_2",
+        "first_margin": 0.95,
+        "joint": [
+          -8.3,
+          32.5,
+          11.8
+        ],
+        "minimum_margin": 0.8125,
+        "second": "eye_band_horizontal_2",
+        "second_margin": 0.8125
+      },
+      {
+        "connected": true,
+        "first": "body_volume_033",
+        "first_margin": 0.5,
+        "joint": [
+          -0.8,
+          30.75,
+          10
+        ],
+        "minimum_margin": 0.3125,
+        "second": "eye_stalk_3_1",
+        "second_margin": 0.3125
+      },
+      {
+        "connected": true,
+        "first": "eye_stalk_3_1",
+        "first_margin": 0.298191,
+        "joint": [
+          -0.2,
+          33.5,
+          14.3
+        ],
+        "minimum_margin": 0.298191,
+        "second": "eye_bulb_3",
+        "second_margin": 1.3
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_3",
+        "first_margin": 0.443,
+        "joint": [
+          -0.2,
+          33.590272,
+          15.428395
+        ],
+        "minimum_margin": 0.115258,
+        "second": "iris_3",
+        "second_margin": 0.115258
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_3",
+        "first_margin": 1.3,
+        "joint": [
+          -0.2,
+          33.5,
+          14.3
+        ],
+        "minimum_margin": 1.0625,
+        "second": "eye_band_horizontal_3",
+        "second_margin": 1.0625
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_3",
+        "first_margin": 1.3,
+        "joint": [
+          -0.2,
+          33.5,
+          14.3
+        ],
+        "minimum_margin": 1.05,
+        "second": "eye_band_vertical_3",
+        "second_margin": 1.05
+      },
+      {
+        "connected": true,
+        "first": "body_volume_035",
+        "first_margin": 0.2,
+        "joint": [
+          3.3,
+          28.25,
+          10.716666
+        ],
+        "minimum_margin": 0.2,
+        "second": "eye_stalk_4_1",
+        "second_margin": 0.3125
+      },
+      {
+        "connected": true,
+        "first": "eye_stalk_4_1",
+        "first_margin": 0.289738,
+        "joint": [
+          4.7,
+          30.75,
+          15.8
+        ],
+        "minimum_margin": 0.289738,
+        "second": "eye_bulb_4",
+        "second_margin": 1.675
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_4",
+        "first_margin": 0.4845,
+        "joint": [
+          4.821826,
+          30.780457,
+          17.322831
+        ],
+        "minimum_margin": 0.072155,
+        "second": "iris_4",
+        "second_margin": 0.072155
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_4",
+        "first_margin": 1.675,
+        "joint": [
+          4.7,
+          30.75,
+          15.8
+        ],
+        "minimum_margin": 1.375,
+        "second": "eye_band_horizontal_4",
+        "second_margin": 1.375
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_4",
+        "first_margin": 1.675,
+        "joint": [
+          4.7,
+          30.75,
+          15.8
+        ],
+        "minimum_margin": 1.3625,
+        "second": "eye_band_vertical_4",
+        "second_margin": 1.3625
+      },
+      {
+        "connected": true,
+        "first": "body_volume_044",
+        "first_margin": 0.625,
+        "joint": [
+          6.5,
+          33.75,
+          7
+        ],
+        "minimum_margin": 0.3125,
+        "second": "eye_stalk_5_1",
+        "second_margin": 0.3125
+      },
+      {
+        "connected": true,
+        "first": "eye_stalk_5_1",
+        "first_margin": 0.281561,
+        "joint": [
+          9.3,
+          36.25,
+          11.8
+        ],
+        "minimum_margin": 0.281561,
+        "second": "eye_bulb_5",
+        "second_margin": 0.8125
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_5",
+        "first_margin": 0.3485,
+        "joint": [
+          9.417267,
+          36.302119,
+          12.451482
+        ],
+        "minimum_margin": 0.072711,
+        "second": "iris_5",
+        "second_margin": 0.072711
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_5",
+        "first_margin": 0.8125,
+        "joint": [
+          9.3,
+          36.25,
+          11.8
+        ],
+        "minimum_margin": 0.6875,
+        "second": "eye_band_horizontal_5",
+        "second_margin": 0.6875
+      },
+      {
+        "connected": true,
+        "first": "body_volume_058",
+        "first_margin": 0.225,
+        "joint": [
+          9.1,
+          27.75,
+          7.5
+        ],
+        "minimum_margin": 0.225,
+        "second": "eye_stalk_6_1",
+        "second_margin": 0.3125
+      },
+      {
+        "connected": true,
+        "first": "eye_stalk_6_1",
+        "first_margin": 0.294544,
+        "joint": [
+          11.5,
+          30.25,
+          11.3
+        ],
+        "minimum_margin": 0.294544,
+        "second": "eye_bulb_6",
+        "second_margin": 1.1875
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_6",
+        "first_margin": 0.426,
+        "joint": [
+          11.81209,
+          30.25,
+          12.275282
+        ],
+        "minimum_margin": 0.078267,
+        "second": "iris_6",
+        "second_margin": 0.078267
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_6",
+        "first_margin": 1.1875,
+        "joint": [
+          11.5,
+          30.25,
+          11.3
+        ],
+        "minimum_margin": 1,
+        "second": "eye_band_horizontal_6",
+        "second_margin": 1
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_6",
+        "first_margin": 1.1875,
+        "joint": [
+          11.5,
+          30.25,
+          11.3
+        ],
+        "minimum_margin": 1,
+        "second": "eye_band_vertical_6",
+        "second_margin": 1
+      },
+      {
+        "connected": true,
+        "first": "body_volume_046",
+        "first_margin": 0.195833,
+        "joint": [
+          6,
+          22.75,
+          8.633333
+        ],
+        "minimum_margin": 0.195833,
+        "second": "eye_stalk_7_1",
+        "second_margin": 0.3125
+      },
+      {
+        "connected": true,
+        "first": "eye_stalk_7_1",
+        "first_margin": 0.314139,
+        "joint": [
+          7.6,
+          25,
+          12.8
+        ],
+        "minimum_margin": 0.314139,
+        "second": "eye_bulb_7",
+        "second_margin": 0.9
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_7",
+        "first_margin": 0.339,
+        "joint": [
+          7.701965,
+          24.970867,
+          13.52832
+        ],
+        "minimum_margin": 0.088733,
+        "second": "iris_7",
+        "second_margin": 0.088733
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_7",
+        "first_margin": 0.9,
+        "joint": [
+          7.6,
+          25,
+          12.8
+        ],
+        "minimum_margin": 0.75,
+        "second": "eye_band_horizontal_7",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "body_volume_028",
+        "first_margin": 0.3,
+        "joint": [
+          -4,
+          24.25,
+          10.2
+        ],
+        "minimum_margin": 0.3,
+        "second": "eye_stalk_8_1",
+        "second_margin": 0.3125
+      },
+      {
+        "connected": true,
+        "first": "eye_stalk_8_1",
+        "first_margin": 0.284708,
+        "joint": [
+          -5.2,
+          27.25,
+          15.8
+        ],
+        "minimum_margin": 0.284708,
+        "second": "eye_bulb_8",
+        "second_margin": 1.55
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_8",
+        "first_margin": 0.4675,
+        "joint": [
+          -5.313238,
+          27.25,
+          17.215478
+        ],
+        "minimum_margin": 0.089841,
+        "second": "iris_8",
+        "second_margin": 0.089841
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_8",
+        "first_margin": 1.55,
+        "joint": [
+          -5.2,
+          27.25,
+          15.8
+        ],
+        "minimum_margin": 1.3125,
+        "second": "eye_band_horizontal_8",
+        "second_margin": 1.3125
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_8",
+        "first_margin": 1.55,
+        "joint": [
+          -5.2,
+          27.25,
+          15.8
+        ],
+        "minimum_margin": 1.3,
+        "second": "eye_band_vertical_8",
+        "second_margin": 1.3
+      },
+      {
+        "connected": true,
+        "first": "body_volume_013",
+        "first_margin": 0.225,
+        "joint": [
+          -8.9,
+          23.75,
+          7.5
+        ],
+        "minimum_margin": 0.225,
+        "second": "eye_stalk_9_1",
+        "second_margin": 0.3125
+      },
+      {
+        "connected": true,
+        "first": "eye_stalk_9_1",
+        "first_margin": 0.29254,
+        "joint": [
+          -11.5,
+          25.75,
+          11.3
+        ],
+        "minimum_margin": 0.29254,
+        "second": "eye_bulb_9",
+        "second_margin": 1.125
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_9",
+        "first_margin": 0.373,
+        "joint": [
+          -11.790146,
+          25.75,
+          12.206708
+        ],
+        "minimum_margin": 0.072193,
+        "second": "iris_9",
+        "second_margin": 0.072193
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_9",
+        "first_margin": 1.125,
+        "joint": [
+          -11.5,
+          25.75,
+          11.3
+        ],
+        "minimum_margin": 0.9375,
+        "second": "eye_band_horizontal_9",
+        "second_margin": 0.9375
+      },
+      {
+        "connected": true,
+        "first": "body_volume_020",
+        "first_margin": 0.1875,
+        "joint": [
+          -6,
+          19,
+          7
+        ],
+        "minimum_margin": 0.1875,
+        "second": "eye_stalk_10_1",
+        "second_margin": 0.3125
+      },
+      {
+        "connected": true,
+        "first": "eye_stalk_10_1",
+        "first_margin": 0.295864,
+        "joint": [
+          -7.4,
+          21,
+          10.8
+        ],
+        "minimum_margin": 0.295864,
+        "second": "eye_bulb_10",
+        "second_margin": 1.0625
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_10",
+        "first_margin": 0.409,
+        "joint": [
+          -7.579427,
+          20.955143,
+          11.697134
+        ],
+        "minimum_margin": 0.130515,
+        "second": "iris_10",
+        "second_margin": 0.130515
+      },
+      {
+        "connected": true,
+        "first": "eye_bulb_10",
+        "first_margin": 1.0625,
+        "joint": [
+          -7.4,
+          21,
+          10.8
+        ],
+        "minimum_margin": 0.875,
+        "second": "eye_band_horizontal_10",
+        "second_margin": 0.875
+      },
+      {
+        "connected": true,
+        "first": "body_volume_023",
+        "first_margin": 0.875,
+        "joint": [
+          -4.5,
+          16.5,
+          -5
+        ],
+        "minimum_margin": 0.4375,
+        "second": "arm_1_1",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "arm_1_1",
+        "first_margin": 0.397675,
+        "joint": [
+          -8.5,
+          9.5,
+          -8
+        ],
+        "minimum_margin": 0.397675,
+        "second": "arm_1_2",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "arm_1_2",
+        "first_margin": 0.417043,
+        "joint": [
+          -8.2,
+          1.8,
+          -7
+        ],
+        "minimum_margin": 0.417043,
+        "second": "arm_1_3",
+        "second_margin": 0.425
+      },
+      {
+        "connected": true,
+        "first": "body_volume_009",
+        "first_margin": 0.2125,
+        "joint": [
+          -8,
+          17.4,
+          -1
+        ],
+        "minimum_margin": 0.2125,
+        "second": "arm_2_1",
+        "second_margin": 0.4
+      },
+      {
+        "connected": true,
+        "first": "arm_2_1",
+        "first_margin": 0.392665,
+        "joint": [
+          -11.5,
+          9.5,
+          -2.5
+        ],
+        "minimum_margin": 0.392665,
+        "second": "arm_2_2",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "arm_2_2",
+        "first_margin": 0.404322,
+        "joint": [
+          -13,
+          1.8,
+          -0.5
+        ],
+        "minimum_margin": 0.404322,
+        "second": "arm_2_3",
+        "second_margin": 0.425
+      },
+      {
+        "connected": true,
+        "first": "body_volume_024",
+        "first_margin": 0.2,
+        "joint": [
+          -5.3,
+          16.5,
+          4.5
+        ],
+        "minimum_margin": 0.2,
+        "second": "arm_3_1",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "arm_3_1",
+        "first_margin": 0.391106,
+        "joint": [
+          -9.5,
+          9.3,
+          7.5
+        ],
+        "minimum_margin": 0.391106,
+        "second": "arm_3_2",
+        "second_margin": 0.425
+      },
+      {
+        "connected": true,
+        "first": "arm_3_2",
+        "first_margin": 0.437913,
+        "joint": [
+          -11.5,
+          1.8,
+          7.5
+        ],
+        "minimum_margin": 0.425,
+        "second": "arm_3_3",
+        "second_margin": 0.425
+      },
+      {
+        "connected": true,
+        "first": "body_volume_031",
+        "first_margin": 0.25,
+        "joint": [
+          -2.5,
+          14.8,
+          4
+        ],
+        "minimum_margin": 0.25,
+        "second": "arm_4_1",
+        "second_margin": 0.425
+      },
+      {
+        "connected": true,
+        "first": "arm_4_1",
+        "first_margin": 0.395138,
+        "joint": [
+          -4,
+          7,
+          7.5
+        ],
+        "minimum_margin": 0.395138,
+        "second": "arm_4_2",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "arm_4_2",
+        "first_margin": 0.450014,
+        "joint": [
+          -5,
+          1.5,
+          8
+        ],
+        "minimum_margin": 0.4375,
+        "second": "arm_4_3",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "body_volume_031",
+        "first_margin": 0.183334,
+        "joint": [
+          2,
+          14.8,
+          4.066666
+        ],
+        "minimum_margin": 0.183334,
+        "second": "arm_5_1",
+        "second_margin": 0.425
+      },
+      {
+        "connected": true,
+        "first": "arm_5_1",
+        "first_margin": 0.409032,
+        "joint": [
+          3.8,
+          7,
+          7.7
+        ],
+        "minimum_margin": 0.409032,
+        "second": "arm_5_2",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "arm_5_2",
+        "first_margin": 0.450014,
+        "joint": [
+          4.8,
+          1.5,
+          8.2
+        ],
+        "minimum_margin": 0.4375,
+        "second": "arm_5_3",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "body_volume_024",
+        "first_margin": 0.2125,
+        "joint": [
+          5.1,
+          16.5,
+          4.5
+        ],
+        "minimum_margin": 0.2125,
+        "second": "arm_6_1",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "arm_6_1",
+        "first_margin": 0.419555,
+        "joint": [
+          9.5,
+          9.3,
+          7.5
+        ],
+        "minimum_margin": 0.419555,
+        "second": "arm_6_2",
+        "second_margin": 0.425
+      },
+      {
+        "connected": true,
+        "first": "arm_6_2",
+        "first_margin": 0.437913,
+        "joint": [
+          11.5,
+          1.8,
+          7.5
+        ],
+        "minimum_margin": 0.425,
+        "second": "arm_6_3",
+        "second_margin": 0.425
+      },
+      {
+        "connected": true,
+        "first": "body_volume_047",
+        "first_margin": 0.2125,
+        "joint": [
+          8,
+          17.4,
+          -1
+        ],
+        "minimum_margin": 0.2125,
+        "second": "arm_7_1",
+        "second_margin": 0.4
+      },
+      {
+        "connected": true,
+        "first": "arm_7_1",
+        "first_margin": 0.392665,
+        "joint": [
+          11.5,
+          9.5,
+          -2.5
+        ],
+        "minimum_margin": 0.392665,
+        "second": "arm_7_2",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "arm_7_2",
+        "first_margin": 0.404322,
+        "joint": [
+          13,
+          1.8,
+          -0.5
+        ],
+        "minimum_margin": 0.404322,
+        "second": "arm_7_3",
+        "second_margin": 0.425
+      },
+      {
+        "connected": true,
+        "first": "body_volume_023",
+        "first_margin": 0.8125,
+        "joint": [
+          4.5,
+          16.5,
+          -5
+        ],
+        "minimum_margin": 0.4375,
+        "second": "arm_8_1",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "arm_8_1",
+        "first_margin": 0.397675,
+        "joint": [
+          8.5,
+          9.5,
+          -8
+        ],
+        "minimum_margin": 0.397675,
+        "second": "arm_8_2",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "arm_8_2",
+        "first_margin": 0.417043,
+        "joint": [
+          8.2,
+          1.8,
+          -7
+        ],
+        "minimum_margin": 0.417043,
+        "second": "arm_8_3",
+        "second_margin": 0.425
+      },
+      {
+        "connected": true,
+        "first": "arm_1_3",
+        "first_margin": 0.397525,
+        "joint": [
+          -7.2,
+          0.4,
+          -8
+        ],
+        "minimum_margin": 0.1875,
+        "second": "arm_1_palm",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "arm_2_3",
+        "first_margin": 0.407052,
+        "joint": [
+          -13.7,
+          0.4,
+          1
+        ],
+        "minimum_margin": 0.1875,
+        "second": "arm_2_palm",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "arm_3_3",
+        "first_margin": 0.412658,
+        "joint": [
+          -12,
+          0.4,
+          8.8
+        ],
+        "minimum_margin": 0.175,
+        "second": "arm_3_palm",
+        "second_margin": 0.175
+      },
+      {
+        "connected": true,
+        "first": "arm_4_3",
+        "first_margin": 0.404958,
+        "joint": [
+          -5,
+          0.4,
+          10
+        ],
+        "minimum_margin": 0.1875,
+        "second": "arm_4_palm",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "arm_5_3",
+        "first_margin": 0.404958,
+        "joint": [
+          4.8,
+          0.4,
+          10.2
+        ],
+        "minimum_margin": 0.2,
+        "second": "arm_5_palm",
+        "second_margin": 0.2
+      },
+      {
+        "connected": true,
+        "first": "arm_6_3",
+        "first_margin": 0.412658,
+        "joint": [
+          12,
+          0.4,
+          8.8
+        ],
+        "minimum_margin": 0.175,
+        "second": "arm_6_palm",
+        "second_margin": 0.175
+      },
+      {
+        "connected": true,
+        "first": "arm_7_3",
+        "first_margin": 0.407052,
+        "joint": [
+          13.7,
+          0.4,
+          1
+        ],
+        "minimum_margin": 0.1875,
+        "second": "arm_7_palm",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "arm_8_3",
+        "first_margin": 0.397525,
+        "joint": [
+          7.2,
+          0.4,
+          -8
+        ],
+        "minimum_margin": 0.1875,
+        "second": "arm_8_palm",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "arm_1_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          -4.61906,
+          0.4,
+          -9.096016
+        ],
+        "minimum_margin": 0.153983,
+        "second": "arm_1_finger_1",
+        "second_margin": 0.153983
+      },
+      {
+        "connected": true,
+        "first": "arm_1_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          -5.114035,
+          0.4,
+          -9.59099
+        ],
+        "minimum_margin": 0.15901,
+        "second": "arm_1_finger_2",
+        "second_margin": 0.15901
+      },
+      {
+        "connected": true,
+        "first": "arm_1_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          -5.60901,
+          0.4,
+          -10.085965
+        ],
+        "minimum_margin": 0.164035,
+        "second": "arm_1_finger_3",
+        "second_margin": 0.164035
+      },
+      {
+        "connected": true,
+        "first": "arm_1_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          -6.103984,
+          0.4,
+          -10.58094
+        ],
+        "minimum_margin": 0.169059,
+        "second": "arm_1_finger_4",
+        "second_margin": 0.169059
+      },
+      {
+        "connected": true,
+        "first": "arm_2_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          -15.750995,
+          0.4,
+          2.912046
+        ],
+        "minimum_margin": 0.162046,
+        "second": "arm_2_finger_1",
+        "second_margin": 0.162046
+      },
+      {
+        "connected": true,
+        "first": "arm_2_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          -15.116666,
+          0.4,
+          3.208066
+        ],
+        "minimum_margin": 0.208066,
+        "second": "arm_2_finger_2",
+        "second_margin": 0.208066
+      },
+      {
+        "connected": true,
+        "first": "arm_2_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          -14.482338,
+          0.4,
+          3.504086
+        ],
+        "minimum_margin": 0.191586,
+        "second": "arm_2_finger_3",
+        "second_margin": 0.191586
+      },
+      {
+        "connected": true,
+        "first": "arm_2_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          -13.84801,
+          0.4,
+          3.800106
+        ],
+        "minimum_margin": 0.175106,
+        "second": "arm_2_finger_4",
+        "second_margin": 0.175106
+      },
+      {
+        "connected": true,
+        "first": "arm_3_palm",
+        "first_margin": 0.225,
+        "joint": [
+          -13.913358,
+          0.4,
+          10.849771
+        ],
+        "minimum_margin": 0.162271,
+        "second": "arm_3_finger_1",
+        "second_margin": 0.162271
+      },
+      {
+        "connected": true,
+        "first": "arm_3_palm",
+        "first_margin": 0.225,
+        "joint": [
+          -13.260017,
+          0.4,
+          11.101056
+        ],
+        "minimum_margin": 0.163556,
+        "second": "arm_3_finger_2",
+        "second_margin": 0.163556
+      },
+      {
+        "connected": true,
+        "first": "arm_3_palm",
+        "first_margin": 0.225,
+        "joint": [
+          -12.606675,
+          0.4,
+          11.352341
+        ],
+        "minimum_margin": 0.164841,
+        "second": "arm_3_finger_3",
+        "second_margin": 0.164841
+      },
+      {
+        "connected": true,
+        "first": "arm_3_palm",
+        "first_margin": 0.225,
+        "joint": [
+          -11.953333,
+          0.4,
+          11.603627
+        ],
+        "minimum_margin": 0.166127,
+        "second": "arm_3_finger_4",
+        "second_margin": 0.166127
+      },
+      {
+        "connected": true,
+        "first": "arm_4_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          -6.05,
+          0.4,
+          12.6
+        ],
+        "minimum_margin": 0.1625,
+        "second": "arm_4_finger_1",
+        "second_margin": 0.1625
+      },
+      {
+        "connected": true,
+        "first": "arm_4_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          -5.35,
+          0.4,
+          12.6
+        ],
+        "minimum_margin": 0.1625,
+        "second": "arm_4_finger_2",
+        "second_margin": 0.1625
+      },
+      {
+        "connected": true,
+        "first": "arm_4_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          -4.65,
+          0.4,
+          12.6
+        ],
+        "minimum_margin": 0.1625,
+        "second": "arm_4_finger_3",
+        "second_margin": 0.1625
+      },
+      {
+        "connected": true,
+        "first": "arm_4_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          -3.95,
+          0.4,
+          12.6
+        ],
+        "minimum_margin": 0.1625,
+        "second": "arm_4_finger_4",
+        "second_margin": 0.1625
+      },
+      {
+        "connected": true,
+        "first": "arm_5_palm",
+        "first_margin": 0.2,
+        "joint": [
+          3.75,
+          0.4,
+          12.8
+        ],
+        "minimum_margin": 0.175,
+        "second": "arm_5_finger_1",
+        "second_margin": 0.175
+      },
+      {
+        "connected": true,
+        "first": "arm_5_palm",
+        "first_margin": 0.2,
+        "joint": [
+          4.45,
+          0.4,
+          12.8
+        ],
+        "minimum_margin": 0.175,
+        "second": "arm_5_finger_2",
+        "second_margin": 0.175
+      },
+      {
+        "connected": true,
+        "first": "arm_5_palm",
+        "first_margin": 0.2,
+        "joint": [
+          5.15,
+          0.4,
+          12.8
+        ],
+        "minimum_margin": 0.175,
+        "second": "arm_5_finger_3",
+        "second_margin": 0.175
+      },
+      {
+        "connected": true,
+        "first": "arm_5_palm",
+        "first_margin": 0.2,
+        "joint": [
+          5.85,
+          0.4,
+          12.8
+        ],
+        "minimum_margin": 0.175,
+        "second": "arm_5_finger_4",
+        "second_margin": 0.175
+      },
+      {
+        "connected": true,
+        "first": "arm_6_palm",
+        "first_margin": 0.225,
+        "joint": [
+          11.953333,
+          0.4,
+          11.603627
+        ],
+        "minimum_margin": 0.166127,
+        "second": "arm_6_finger_1",
+        "second_margin": 0.166127
+      },
+      {
+        "connected": true,
+        "first": "arm_6_palm",
+        "first_margin": 0.225,
+        "joint": [
+          12.606675,
+          0.4,
+          11.352341
+        ],
+        "minimum_margin": 0.164841,
+        "second": "arm_6_finger_2",
+        "second_margin": 0.164841
+      },
+      {
+        "connected": true,
+        "first": "arm_6_palm",
+        "first_margin": 0.225,
+        "joint": [
+          13.260017,
+          0.4,
+          11.101056
+        ],
+        "minimum_margin": 0.163556,
+        "second": "arm_6_finger_3",
+        "second_margin": 0.163556
+      },
+      {
+        "connected": true,
+        "first": "arm_6_palm",
+        "first_margin": 0.225,
+        "joint": [
+          13.913358,
+          0.4,
+          10.849771
+        ],
+        "minimum_margin": 0.162271,
+        "second": "arm_6_finger_4",
+        "second_margin": 0.162271
+      },
+      {
+        "connected": true,
+        "first": "arm_7_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          13.84801,
+          0.4,
+          3.800106
+        ],
+        "minimum_margin": 0.175106,
+        "second": "arm_7_finger_1",
+        "second_margin": 0.175106
+      },
+      {
+        "connected": true,
+        "first": "arm_7_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          14.482338,
+          0.4,
+          3.504086
+        ],
+        "minimum_margin": 0.191586,
+        "second": "arm_7_finger_2",
+        "second_margin": 0.191586
+      },
+      {
+        "connected": true,
+        "first": "arm_7_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          15.116666,
+          0.4,
+          3.208066
+        ],
+        "minimum_margin": 0.208066,
+        "second": "arm_7_finger_3",
+        "second_margin": 0.208066
+      },
+      {
+        "connected": true,
+        "first": "arm_7_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          15.750995,
+          0.4,
+          2.912046
+        ],
+        "minimum_margin": 0.162046,
+        "second": "arm_7_finger_4",
+        "second_margin": 0.162046
+      },
+      {
+        "connected": true,
+        "first": "arm_8_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          6.103984,
+          0.4,
+          -10.58094
+        ],
+        "minimum_margin": 0.169059,
+        "second": "arm_8_finger_1",
+        "second_margin": 0.169059
+      },
+      {
+        "connected": true,
+        "first": "arm_8_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          5.60901,
+          0.4,
+          -10.085965
+        ],
+        "minimum_margin": 0.164035,
+        "second": "arm_8_finger_2",
+        "second_margin": 0.164035
+      },
+      {
+        "connected": true,
+        "first": "arm_8_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          5.114035,
+          0.4,
+          -9.59099
+        ],
+        "minimum_margin": 0.15901,
+        "second": "arm_8_finger_3",
+        "second_margin": 0.15901
+      },
+      {
+        "connected": true,
+        "first": "arm_8_palm",
+        "first_margin": 0.2125,
+        "joint": [
+          4.61906,
+          0.4,
+          -9.096016
+        ],
+        "minimum_margin": 0.153983,
+        "second": "arm_8_finger_4",
+        "second_margin": 0.153983
+      }
+    ],
+    "method": "shared-joint-compiled-oriented-cuboid-margin-v2",
+    "minimum_margin": 0.072155
+  },
+  "body_depth_to_width": 0.992556,
+  "body_extents": [
+    25.1875,
+    25.625,
+    25.0
+  ],
+  "body_to_full_height": 0.579261,
+  "body_width_to_height": 0.982927,
+  "bones": 68,
+  "cuboids": 192,
+  "eye_layout": {
+    "annotation_method": "manual source-pixel centers normalized by annotated globe bbox; not an independent fidelity score",
+    "asymmetry_preserved": true,
+    "maximum_error_body_widths": 0.017938,
+    "modeled_centers_normalized": [
+      [
+        0.221836,
+        0.131707
+      ],
+      [
+        0.174194,
+        0.278049
+      ],
+      [
+        0.495782,
+        0.239024
+      ],
+      [
+        0.690323,
+        0.346341
+      ],
+      [
+        0.872953,
+        0.131707
+      ],
+      [
+        0.960298,
+        0.365854
+      ],
+      [
+        0.805459,
+        0.570732
+      ],
+      [
+        0.29727,
+        0.482927
+      ],
+      [
+        0.047146,
+        0.541463
+      ],
+      [
+        0.209926,
+        0.726829
+      ]
+    ],
+    "rms_error_body_widths": 0.01268,
+    "source_body_bbox_pixels": [
+      18,
+      68,
+      463,
+      519
+    ],
+    "source_eye_centers_pixels": [
+      [
+        111,
+        122
+      ],
+      [
+        89,
+        190
+      ],
+      [
+        236,
+        172
+      ],
+      [
+        325,
+        221
+      ],
+      [
+        410,
+        122
+      ],
+      [
+        450,
+        230
+      ],
+      [
+        378,
+        325
+      ],
+      [
+        147,
+        284
+      ],
+      [
+        31,
+        312
+      ],
+      [
+        107,
+        397
+      ]
+    ],
+    "source_targets_normalized": [
+      [
+        0.208989,
+        0.119734
+      ],
+      [
+        0.159551,
+        0.27051
+      ],
+      [
+        0.489888,
+        0.230599
+      ],
+      [
+        0.689888,
+        0.339246
+      ],
+      [
+        0.880899,
+        0.119734
+      ],
+      [
+        0.970787,
+        0.359202
+      ],
+      [
+        0.808989,
+        0.569845
+      ],
+      [
+        0.289888,
+        0.478936
+      ],
+      [
+        0.029213,
+        0.54102
+      ],
+      [
+        0.2,
+        0.72949
+      ]
+    ]
+  },
+  "feature_contract_pass": true,
+  "feature_inventory": {
+    "arm_chains": 8,
+    "arm_palms": 8,
+    "arm_segments": 24,
+    "body_volumes": 61,
+    "eye_assemblies": 10,
+    "eye_stalk_segments": 10,
+    "grounded_fingers": 32,
+    "mouth_teeth": 5,
+    "pupil_landmarks": 10,
+    "red_irises": 10,
+    "rounded_eye_bands": 14,
+    "stem_leaf_segments": 12,
+    "stem_leaves": 6
+  },
+  "ground_endpoint_band": [
+    0.3,
+    0.5
+  ],
+  "model_extents": [
+    34.627659,
+    44.237412,
+    30.802585
+  ],
+  "model_id": "tomato_devil",
+  "mouth": {
+    "length_to_body_height": 0.526829,
+    "measured_size": [
+      0.625,
+      13.5,
+      0.8125
+    ],
+    "orientation": "vertical",
+    "width_to_body_width": 0.024814
+  },
+  "recorded_feature_inventory_matches": true,
+  "renderer": "deterministic-orthographic-textured-cuboid-zbuffer-v2",
+  "schema_version": 1,
+  "semantic_cuboids": 192,
+  "source_skin_cuboids": 0,
+  "views": [
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "ten-eyes.png",
+    "zipper-mouth.png",
+    "arm-joints.png",
+    "comparison-sheet.png"
+  ]
+}

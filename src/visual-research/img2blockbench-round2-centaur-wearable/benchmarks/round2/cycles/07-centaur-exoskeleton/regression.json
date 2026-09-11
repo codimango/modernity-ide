@@ -1,0 +1,15 @@
+{
+  "baseline_commit": "22ab928",
+  "cycle": "round2-07-correction",
+  "fixed_camera_parameters_reused": true,
+  "independently_graded_commit": "df4ad06",
+  "other_benchmark_files_modified": true,
+  "scope": "Centaur wearable-shell correction plus repository-wide Minecraft texture policy",
+  "render_evidence_regenerated": true,
+  "suite_status": "139 tests passed, including wearable, texture-style, powered-leg-mass, and Centaur gates",
+  "user_corrections": [
+    "Centaur is exported as a replaceable-player exoskeleton rather than only an occupied character model",
+    "Reference-guided textures retain a Minecraft pixel-art abstraction instead of random noise or photographic collage",
+    "Powered hips, thighs, knees, shins, ankles, and feet no longer read as spindly beneath the shield and thermal weapon"
+  ]
+}

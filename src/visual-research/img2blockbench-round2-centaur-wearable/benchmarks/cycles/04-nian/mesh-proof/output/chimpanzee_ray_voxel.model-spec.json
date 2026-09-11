@@ -1,0 +1,2704 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 1.641379,
+    "height": 1.931034,
+    "width": 2.0
+  },
+  "cubes": [
+    {
+      "bone": "root",
+      "center": [
+        -8.827586,
+        2.758621,
+        -10.482759
+      ],
+      "faces": {
+        "south": {
+          "material": "mesh_07"
+        },
+        "west": {
+          "material": "mesh_07"
+        }
+      },
+      "material": "mesh_09",
+      "name": "mesh_c01_001",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        1.103448,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -9.37931,
+        4.413793,
+        -10.482759
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_15"
+        },
+        "south": {
+          "material": "mesh_15"
+        }
+      },
+      "material": "mesh_08",
+      "name": "mesh_c01_002",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.62069,
+        2.206897,
+        4.413793
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -9.931034,
+        6.62069,
+        -9.931034
+      ],
+      "faces": {
+        "north": {
+          "material": "mesh_11"
+        },
+        "west": {
+          "material": "mesh_03"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_003",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        2.206897,
+        5.517241
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -6.62069,
+        7.172414,
+        -7.724138
+      ],
+      "faces": {},
+      "material": "mesh_13",
+      "name": "mesh_c01_004",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.103448,
+        1.103448,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -9.931034,
+        8.827586,
+        -8.827586
+      ],
+      "faces": {
+        "down": {
+          "material": "mesh_03"
+        },
+        "north": {
+          "material": "mesh_05"
+        },
+        "west": {
+          "material": "mesh_03"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_005",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        2.206897,
+        5.517241
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -6.62069,
+        8.827586,
+        -7.724138
+      ],
+      "faces": {},
+      "material": "mesh_00",
+      "name": "mesh_c01_006",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.103448,
+        2.206897,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -9.37931,
+        11.034483,
+        -8.275862
+      ],
+      "faces": {
+        "north": {
+          "material": "mesh_05"
+        },
+        "west": {
+          "material": "mesh_03"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_007",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.62069,
+        2.206897,
+        4.413793
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -9.37931,
+        11.586207,
+        -5.517241
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_14"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_008",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.413793,
+        1.103448,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -8.827586,
+        13.793103,
+        -7.172414
+      ],
+      "faces": {
+        "north": {
+          "material": "mesh_05"
+        },
+        "west": {
+          "material": "mesh_03"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_009",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        3.310345,
+        4.413793
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        8.275862,
+        2.758621,
+        -11.586207
+      ],
+      "faces": {
+        "north": {
+          "material": "mesh_15"
+        }
+      },
+      "material": "mesh_10",
+      "name": "mesh_c01_010",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.62069,
+        1.103448,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        8.275862,
+        4.413793,
+        -12.137931
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_15"
+        },
+        "north": {
+          "material": "mesh_11"
+        }
+      },
+      "material": "mesh_10",
+      "name": "mesh_c01_011",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.62069,
+        2.206897,
+        5.517241
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        8.827586,
+        6.62069,
+        -11.034483
+      ],
+      "faces": {
+        "down": {
+          "material": "mesh_11"
+        },
+        "north": {
+          "material": "mesh_08"
+        },
+        "west": {
+          "material": "mesh_02"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_012",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        2.206897,
+        5.517241
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        5.517241,
+        11.034483,
+        -9.37931
+      ],
+      "faces": {},
+      "material": "mesh_02",
+      "name": "mesh_c01_013",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.103448,
+        2.206897,
+        4.413793
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        8.827586,
+        9.37931,
+        -12.137931
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_00"
+        }
+      },
+      "material": "mesh_08",
+      "name": "mesh_c01_014",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        3.310345,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        8.827586,
+        9.931034,
+        -9.37931
+      ],
+      "faces": {
+        "north": {
+          "material": "mesh_08"
+        },
+        "west": {
+          "material": "mesh_02"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_015",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        4.413793,
+        4.413793
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        8.275862,
+        12.689655,
+        -11.034483
+      ],
+      "faces": {
+        "west": {
+          "material": "mesh_05"
+        }
+      },
+      "material": "mesh_08",
+      "name": "mesh_c01_016",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.413793,
+        1.103448,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        8.275862,
+        13.793103,
+        -8.275862
+      ],
+      "faces": {
+        "north": {
+          "material": "mesh_08"
+        },
+        "up": {
+          "material": "mesh_08"
+        },
+        "west": {
+          "material": "mesh_01"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_017",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.62069,
+        3.310345,
+        4.413793
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.0,
+        21.517241,
+        -15.448276
+      ],
+      "faces": {},
+      "material": "mesh_11",
+      "name": "mesh_c01_018",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        3.310345,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        21.517241,
+        -14.344828
+      ],
+      "faces": {
+        "down": {
+          "material": "mesh_10"
+        },
+        "east": {
+          "material": "mesh_08"
+        }
+      },
+      "material": "mesh_11",
+      "name": "mesh_c01_019",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.62069,
+        5.517241,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        27.034483,
+        -14.344828
+      ],
+      "faces": {},
+      "material": "mesh_11",
+      "name": "mesh_c01_020",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.413793,
+        1.103448,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        24.275862,
+        -13.241379
+      ],
+      "faces": {
+        "down": {
+          "material": "mesh_09"
+        }
+      },
+      "material": "mesh_08",
+      "name": "mesh_c01_021",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8.827586,
+        11.034483,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.0,
+        24.827586,
+        -12.137931
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_04"
+        },
+        "up": {
+          "material": "mesh_05"
+        },
+        "west": {
+          "material": "mesh_02"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_022",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        9.931034,
+        9.931034,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        19.310345,
+        -9.931034
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_02"
+        },
+        "west": {
+          "material": "mesh_03"
+        }
+      },
+      "material": "mesh_01",
+      "name": "mesh_c01_023",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8.827586,
+        1.103448,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        7.724138,
+        16.0,
+        -9.931034
+      ],
+      "faces": {},
+      "material": "mesh_05",
+      "name": "mesh_c01_024",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        1.103448,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        17.655172,
+        -7.172414
+      ],
+      "faces": {
+        "north": {
+          "material": "mesh_05"
+        },
+        "west": {
+          "material": "mesh_03"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_025",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        22.068966,
+        4.413793,
+        4.413793
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -8.827586,
+        19.310345,
+        -4.413793
+      ],
+      "faces": {},
+      "material": "mesh_00",
+      "name": "mesh_c01_026",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.310345,
+        1.103448,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        17.655172,
+        -3.862069
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_00"
+        },
+        "north": {
+          "material": "mesh_00"
+        },
+        "up": {
+          "material": "mesh_00"
+        },
+        "west": {
+          "material": "mesh_00"
+        }
+      },
+      "material": "mesh_04",
+      "name": "mesh_c01_027",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.241379,
+        4.413793,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.0,
+        21.517241,
+        -9.931034
+      ],
+      "faces": {
+        "west": {
+          "material": "mesh_01"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_028",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        9.931034,
+        3.310345,
+        3.310345
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -5.517241,
+        23.724138,
+        -9.931034
+      ],
+      "faces": {
+        "north": {
+          "material": "mesh_10"
+        },
+        "south": {
+          "material": "mesh_02"
+        },
+        "west": {
+          "material": "mesh_02"
+        }
+      },
+      "material": "mesh_01",
+      "name": "mesh_c01_029",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.310345,
+        1.103448,
+        3.310345
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        4.965517,
+        23.724138,
+        -9.931034
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_10"
+        },
+        "north": {
+          "material": "mesh_10"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_030",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.206897,
+        1.103448,
+        3.310345
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -7.172414,
+        22.068966,
+        -7.172414
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_00"
+        }
+      },
+      "material": "mesh_06",
+      "name": "mesh_c01_031",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.62069,
+        4.413793,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -8.827586,
+        22.068966,
+        -4.965517
+      ],
+      "faces": {
+        "north": {
+          "material": "mesh_03"
+        },
+        "up": {
+          "material": "mesh_03"
+        },
+        "west": {
+          "material": "mesh_06"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_032",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.310345,
+        4.413793,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -6.62069,
+        22.068966,
+        -4.413793
+      ],
+      "faces": {
+        "down": {
+          "material": "mesh_00"
+        }
+      },
+      "material": "mesh_03",
+      "name": "mesh_c01_033",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.103448,
+        4.413793,
+        3.310345
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        6.62069,
+        22.068966,
+        -7.172414
+      ],
+      "faces": {
+        "south": {
+          "material": "mesh_04"
+        },
+        "up": {
+          "material": "mesh_00"
+        },
+        "west": {
+          "material": "mesh_00"
+        }
+      },
+      "material": "mesh_05",
+      "name": "mesh_c01_034",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        4.413793,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        7.172414,
+        22.068966,
+        -4.965517
+      ],
+      "faces": {
+        "up": {
+          "material": "mesh_13"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_035",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.413793,
+        4.413793,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        9.931034,
+        20.413793,
+        -6.62069
+      ],
+      "faces": {},
+      "material": "mesh_00",
+      "name": "mesh_c01_036",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.103448,
+        1.103448,
+        3.310345
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        5.517241,
+        22.068966,
+        -3.310345
+      ],
+      "faces": {
+        "up": {
+          "material": "mesh_12"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_037",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.103448,
+        4.413793,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -5.517241,
+        26.482759,
+        -10.482759
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_01"
+        },
+        "south": {
+          "material": "mesh_09"
+        },
+        "up": {
+          "material": "mesh_03"
+        }
+      },
+      "material": "mesh_11",
+      "name": "mesh_c01_038",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.310345,
+        4.413793,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        5.517241,
+        26.482759,
+        -10.482759
+      ],
+      "faces": {
+        "south": {
+          "material": "mesh_04"
+        },
+        "up": {
+          "material": "mesh_00"
+        },
+        "west": {
+          "material": "mesh_04"
+        }
+      },
+      "material": "mesh_11",
+      "name": "mesh_c01_039",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.310345,
+        4.413793,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.0,
+        29.241379,
+        -10.482759
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_01"
+        }
+      },
+      "material": "mesh_06",
+      "name": "mesh_c01_040",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        9.931034,
+        1.103448,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.0,
+        27.034483,
+        -8.275862
+      ],
+      "faces": {
+        "north": {
+          "material": "mesh_06"
+        },
+        "up": {
+          "material": "mesh_01"
+        },
+        "west": {
+          "material": "mesh_01"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_041",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        9.931034,
+        5.517241,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        25.37931,
+        -6.62069
+      ],
+      "faces": {
+        "west": {
+          "material": "mesh_05"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_042",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        11.034483,
+        2.206897,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        25.37931,
+        -4.413793
+      ],
+      "faces": {
+        "down": {
+          "material": "mesh_00"
+        },
+        "east": {
+          "material": "mesh_00"
+        },
+        "north": {
+          "material": "mesh_00"
+        },
+        "west": {
+          "material": "mesh_03"
+        }
+      },
+      "material": "mesh_02",
+      "name": "mesh_c01_043",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.241379,
+        2.206897,
+        3.310345
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        27.034483,
+        -6.068966
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_02"
+        },
+        "west": {
+          "material": "mesh_02"
+        }
+      },
+      "material": "mesh_01",
+      "name": "mesh_c01_044",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        11.034483,
+        1.103448,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -7.724138,
+        0.551724,
+        7.172414
+      ],
+      "faces": {},
+      "material": "mesh_07",
+      "name": "mesh_c01_045",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        1.103448,
+        6.62069
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -7.724138,
+        1.655172,
+        6.62069
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_07"
+        },
+        "south": {
+          "material": "mesh_07"
+        }
+      },
+      "material": "mesh_08",
+      "name": "mesh_c01_046",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        1.103448,
+        7.724138
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -7.724138,
+        3.310345,
+        7.724138
+      ],
+      "faces": {
+        "down": {
+          "material": "mesh_07"
+        },
+        "north": {
+          "material": "mesh_01"
+        },
+        "west": {
+          "material": "mesh_03"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_047",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        2.206897,
+        5.517241
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        6.62069,
+        0.551724,
+        6.068966
+      ],
+      "faces": {
+        "west": {
+          "material": "mesh_09"
+        }
+      },
+      "material": "mesh_07",
+      "name": "mesh_c01_048",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        1.103448,
+        6.62069
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        6.62069,
+        1.655172,
+        6.068966
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_07"
+        },
+        "south": {
+          "material": "mesh_07"
+        },
+        "west": {
+          "material": "mesh_10"
+        }
+      },
+      "material": "mesh_08",
+      "name": "mesh_c01_049",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        1.103448,
+        8.827586
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        6.62069,
+        3.310345,
+        7.172414
+      ],
+      "faces": {
+        "down": {
+          "material": "mesh_02"
+        },
+        "north": {
+          "material": "mesh_02"
+        },
+        "west": {
+          "material": "mesh_01"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_050",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.517241,
+        2.206897,
+        4.413793
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.0,
+        12.689655,
+        3.310345
+      ],
+      "faces": {},
+      "material": "mesh_00",
+      "name": "mesh_c01_051",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        7.724138,
+        1.103448,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -9.931034,
+        8.827586,
+        6.62069
+      ],
+      "faces": {},
+      "material": "mesh_03",
+      "name": "mesh_c01_052",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.103448,
+        8.827586,
+        5.517241
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.0,
+        8.827586,
+        6.62069
+      ],
+      "faces": {
+        "north": {
+          "material": "mesh_02"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_053",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        18.758621,
+        8.827586,
+        5.517241
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        16.551724,
+        -1.103448
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_00"
+        },
+        "up": {
+          "material": "mesh_00"
+        },
+        "west": {
+          "material": "mesh_01"
+        }
+      },
+      "material": "mesh_04",
+      "name": "mesh_c01_054",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.241379,
+        4.413793,
+        3.310345
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        16.0,
+        2.206897
+      ],
+      "faces": {
+        "north": {
+          "material": "mesh_04"
+        },
+        "up": {
+          "material": "mesh_02"
+        },
+        "west": {
+          "material": "mesh_01"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_055",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.241379,
+        5.517241,
+        3.310345
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -8.275862,
+        13.793103,
+        6.62069
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_00"
+        },
+        "south": {
+          "material": "mesh_00"
+        }
+      },
+      "material": "mesh_03",
+      "name": "mesh_c01_056",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.206897,
+        1.103448,
+        5.517241
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -8.275862,
+        16.551724,
+        7.172414
+      ],
+      "faces": {},
+      "material": "mesh_03",
+      "name": "mesh_c01_057",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.206897,
+        4.413793,
+        4.413793
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.551724,
+        16.0,
+        6.62069
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_03"
+        },
+        "west": {
+          "material": "mesh_01"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_058",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        15.448276,
+        5.517241,
+        5.517241
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        8.827586,
+        15.448276,
+        7.172414
+      ],
+      "faces": {},
+      "material": "mesh_00",
+      "name": "mesh_c01_059",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.103448,
+        4.413793,
+        4.413793
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.0,
+        14.896552,
+        9.931034
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_13"
+        },
+        "west": {
+          "material": "mesh_12"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_060",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        9.931034,
+        1.103448,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        16.0,
+        9.931034
+      ],
+      "faces": {
+        "west": {
+          "material": "mesh_14"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_061",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        17.655172,
+        1.103448,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        17.655172,
+        9.931034
+      ],
+      "faces": {
+        "west": {
+          "material": "mesh_02"
+        }
+      },
+      "material": "mesh_00",
+      "name": "mesh_c01_062",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.241379,
+        2.206897,
+        1.103448
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        0.0,
+        16.551724,
+        11.586207
+      ],
+      "faces": {},
+      "material": "mesh_00",
+      "name": "mesh_c01_063",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.310345,
+        4.413793,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        15.448276,
+        14.344828
+      ],
+      "faces": {},
+      "material": "mesh_00",
+      "name": "mesh_c01_064",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.206897,
+        4.413793,
+        3.310345
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -6.62069,
+        20.413793,
+        2.206897
+      ],
+      "faces": {
+        "up": {
+          "material": "mesh_03"
+        }
+      },
+      "material": "mesh_02",
+      "name": "mesh_c01_065",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.103448,
+        3.310345,
+        9.931034
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -1.655172,
+        21.517241,
+        6.068966
+      ],
+      "faces": {
+        "north": {
+          "material": "mesh_02"
+        }
+      },
+      "material": "mesh_01",
+      "name": "mesh_c01_066",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8.827586,
+        1.103448,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        3.862069,
+        21.517241,
+        6.068966
+      ],
+      "faces": {},
+      "material": "mesh_01",
+      "name": "mesh_c01_067",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.206897,
+        1.103448,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        5.517241,
+        20.413793,
+        2.206897
+      ],
+      "faces": {},
+      "material": "mesh_00",
+      "name": "mesh_c01_068",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.103448,
+        3.310345,
+        9.931034
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        19.862069,
+        8.827586
+      ],
+      "faces": {
+        "down": {
+          "material": "mesh_00"
+        },
+        "east": {
+          "material": "mesh_00"
+        },
+        "south": {
+          "material": "mesh_00"
+        },
+        "west": {
+          "material": "mesh_02"
+        }
+      },
+      "material": "mesh_01",
+      "name": "mesh_c01_069",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.241379,
+        2.206897,
+        3.310345
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        23.724138,
+        -1.655172
+      ],
+      "faces": {
+        "down": {
+          "material": "mesh_00"
+        },
+        "east": {
+          "material": "mesh_00"
+        },
+        "north": {
+          "material": "mesh_01"
+        },
+        "up": {
+          "material": "mesh_01"
+        },
+        "west": {
+          "material": "mesh_03"
+        }
+      },
+      "material": "mesh_02",
+      "name": "mesh_c01_070",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.241379,
+        3.310345,
+        2.206897
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        22.62069,
+        2.206897
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_00"
+        },
+        "north": {
+          "material": "mesh_00"
+        },
+        "west": {
+          "material": "mesh_02"
+        }
+      },
+      "material": "mesh_01",
+      "name": "mesh_c01_071",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.241379,
+        1.103448,
+        5.517241
+      ]
+    },
+    {
+      "bone": "root",
+      "center": [
+        -0.551724,
+        23.724138,
+        1.103448
+      ],
+      "faces": {
+        "east": {
+          "material": "mesh_00"
+        },
+        "west": {
+          "material": "mesh_03"
+        }
+      },
+      "material": "mesh_01",
+      "name": "mesh_c01_072",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "role": "source mesh component 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        13.241379,
+        1.103448,
+        3.310345
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "orthographic-ray-voxel-adaptive-cuboids-v1",
+    "color_transfer": {
+      "face_material_overrides": 117,
+      "method": "barycentric ray-hit sampling with per-cuboid face palette",
+      "palette": [
+        "#0b0b0b",
+        "#292828",
+        "#373736",
+        "#494848",
+        "#181716",
+        "#676666",
+        "#595858",
+        "#45331b",
+        "#757473",
+        "#4b3924",
+        "#6a553a",
+        "#cbb795",
+        "#130d0c",
+        "#0d110b",
+        "#14140c",
+        "#57442c"
+      ],
+      "palette_entries": 16,
+      "sources": [
+        "uv-texture"
+      ]
+    },
+    "lane": "mesh-ray-voxel",
+    "mesh": {
+      "canonical_transform": [
+        40.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        37.0,
+        0.0,
+        12.55,
+        0.0,
+        0.0,
+        -27.0,
+        -3.5,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "effective_model_transform": [
+        45.736308547,
+        0.0,
+        0.0,
+        -0.42609057,
+        0.0,
+        42.306085406,
+        0.0,
+        14.873020902,
+        0.0,
+        0.0,
+        -30.872008269,
+        -0.023277456,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "format": "glb",
+      "geometries": 1,
+      "license": "unrecorded",
+      "normalization": {
+        "centered_axes": [
+          "x",
+          "z"
+        ],
+        "grounded_y": 0,
+        "model_extents": [
+          25.37931,
+          30.896552,
+          32.0
+        ],
+        "scale": 1.143407714,
+        "target_size": 32.0
+      },
+      "path": "../../../../examples/chimpanzee/lane2/source.glb",
+      "provider": "Trellis",
+      "provider_model": "unrecorded",
+      "sha256": "5f4f30207e68102ac83585eac940ff1acaf1d45c2c3d5446cabbb34a9b256d90",
+      "triangles": 7942,
+      "vertices": 6272,
+      "watertight": false
+    },
+    "reference_origin": "mesh-ray-albedo projection",
+    "source_mesh_overlap": {
+      "cuboid_voxels": 3838,
+      "cuboids": 72,
+      "dominant_color_fraction": 0.496403,
+      "intersection_voxels": 1946,
+      "mean_silhouette_iou": 0.956008,
+      "method": "adaptive binary 3D cuboid decomposition",
+      "model_precision": 0.507035,
+      "orthographic_views": {
+        "front": {
+          "bidirectional_depth_mae": 0.009577,
+          "iou": 0.893305,
+          "model_pixels": 478,
+          "model_precision": 0.893305,
+          "source_coverage": 1.0,
+          "source_pixels": 427
+        },
+        "side": {
+          "bidirectional_depth_mae": 0.012784,
+          "iou": 0.989247,
+          "model_pixels": 372,
+          "model_precision": 0.989247,
+          "source_coverage": 1.0,
+          "source_pixels": 368
+        },
+        "top": {
+          "bidirectional_depth_mae": 0.022477,
+          "iou": 0.985472,
+          "model_pixels": 413,
+          "model_precision": 0.985472,
+          "source_coverage": 1.0,
+          "source_pixels": 407
+        }
+      },
+      "source_coverage": 1.0,
+      "source_voxels": 1946,
+      "surface_f1_tolerance_voxels": 1,
+      "surface_f1_tolerant": 0.935582,
+      "surface_precision_tolerant": 0.895479,
+      "surface_recall_tolerant": 0.979445,
+      "union_voxels": 3838,
+      "voxel_iou": 0.507035
+    },
+    "voxelization": {
+      "components": {
+        "after_cleanup": 1,
+        "before_cleanup": 1,
+        "connectivity": 6,
+        "minimum_voxels": 2,
+        "raw_voxels": 1946,
+        "removed_voxels": 0,
+        "retained_voxels": 1946,
+        "sizes": [
+          1946
+        ]
+      },
+      "fill_mode_requested": "surface",
+      "fill_mode_resolved": "surface",
+      "grid_dimensions": [
+        23,
+        28,
+        29
+      ],
+      "ray_evidence": {
+        "bidirectional_rays": 4246,
+        "direction_count": 6,
+        "method": "three orthographic ray grids evaluated bidirectionally",
+        "odd_parity_rays": 0,
+        "surface_voxels": 1946,
+        "triangle_intersections": 2518,
+        "unique_direction_rays": 2123
+      },
+      "surface_thickness_voxels": 1,
+      "voxel_pitch_source_units": 0.965052328
+    }
+  },
+  "geometry": {
+    "precision": 64
+  },
+  "id": "chimpanzee_ray_voxel",
+  "landmarks": [],
+  "materials": {
+    "mesh_00": {
+      "base": "#0b0b0b",
+      "highlight": "#0d0d0d",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#070707"
+    },
+    "mesh_01": {
+      "base": "#292828",
+      "highlight": "#302f2f",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#191919"
+    },
+    "mesh_02": {
+      "base": "#373736",
+      "highlight": "#414140",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#222221"
+    },
+    "mesh_03": {
+      "base": "#494848",
+      "highlight": "#565555",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#2d2d2d"
+    },
+    "mesh_04": {
+      "base": "#181716",
+      "highlight": "#1c1b1a",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#0f0e0e"
+    },
+    "mesh_05": {
+      "base": "#676666",
+      "highlight": "#7a7878",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#403f3f"
+    },
+    "mesh_06": {
+      "base": "#595858",
+      "highlight": "#696868",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#373737"
+    },
+    "mesh_07": {
+      "base": "#45331b",
+      "highlight": "#513c20",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#2b2011"
+    },
+    "mesh_08": {
+      "base": "#757473",
+      "highlight": "#8a8988",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#494847"
+    },
+    "mesh_09": {
+      "base": "#4b3924",
+      "highlight": "#58432a",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#2e2316"
+    },
+    "mesh_10": {
+      "base": "#6a553a",
+      "highlight": "#7d6444",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#423524"
+    },
+    "mesh_11": {
+      "base": "#cbb795",
+      "highlight": "#f0d8b0",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#7e715c"
+    },
+    "mesh_12": {
+      "base": "#130d0c",
+      "highlight": "#160f0e",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#0c0807"
+    },
+    "mesh_13": {
+      "base": "#0d110b",
+      "highlight": "#0f140d",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#080b07"
+    },
+    "mesh_14": {
+      "base": "#14140c",
+      "highlight": "#18180e",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#0c0c07"
+    },
+    "mesh_15": {
+      "base": "#57442c",
+      "highlight": "#675034",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#362a1b"
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "source-mesh six-direction silhouette",
+      "mesh-derived surface palette"
+    ],
+    "required_views": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "isometric"
+    ],
+    "review_targets": [
+      "silhouette",
+      "volume",
+      "components",
+      "texture"
+    ],
+    "target_cuboids": [
+      1,
+      72
+    ]
+  },
+  "reference": {
+    "height": 252,
+    "image": "chimpanzee_ray_voxel.reference.png",
+    "sha256": "704e00f65d5e88fbf4bebe10585e95f725b79db55bca4e58595ae18831af6547",
+    "width": 207
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "Static ray-voxel reconstruction of the bundled textured chimpanzee source mesh",
+    "symmetry": "none",
+    "type": "mob",
+    "uncertainties": [
+      "Voxel resolution and cuboid budget approximate curved surfaces",
+      "Rig semantics cannot be inferred from an unrigged triangle mesh"
+    ]
+  },
+  "texture": {
+    "atlas_size": 256,
+    "density": 1,
+    "gutter": 1,
+    "palette_size": 16
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "asset": "false_apple_root_beast",
+  "author_decision": "READY_FOR_INDEPENDENT_REVIEW",
+  "critical_geometry_defect_observed": false,
+  "cycle": "round2-04",
+  "identity_review": {
+    "apple_lure_and_fleshy_body_junction_visible": true,
+    "gaping_viewer_left_maw_and_teeth_visible": true,
+    "large_root_hand_and_rear_arch_visible": true,
+    "long_horizontal_trunk_visible": true,
+    "model_reads_as_an_asymmetric_root_creature_not_a_biped": true,
+    "near_and_far_root_layers_visible_in_side_and_top_views": true
+  },
+  "limitations": [
+    "Only one flattened illustration is observed; rear surfaces and exact limb order are inferred conservatively.",
+    "The source alpha touches all four frame edges, so IoU cannot establish off-frame continuation.",
+    "The coarse native skull approximates painterly bark and the exact tooth count is interpretive.",
+    "The dark overlap beneath the apple is ambiguous and is represented as a connected fleshy peduncle.",
+    "Static geometry was reviewed; no animation was authored or approved."
+  ],
+  "quantitative_checks": {
+    "all_188_declared_attachments_connected": true,
+    "alpha_silhouette_iou": 0.638953,
+    "apple_depth_to_width": 0.75,
+    "head_maw_depth_to_height": 0.583333,
+    "keypoint_mean_error_subject_heights": 0.029835,
+    "maw_black_proxy_solids": 0,
+    "maw_removed_voxels": 78,
+    "near_far_root_layer_center_separation": 28.734837,
+    "strict_native_audit": true,
+    "two_builds_byte_identical": true
+  },
+  "reviewed_views": [
+    "reference-angle.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "maw-closeup.png",
+    "apple-closeup.png",
+    "near-root-closeup.png",
+    "far-root-closeup.png",
+    "silhouette-overlap.png",
+    "comparison-sheet.png"
+  ]
+}

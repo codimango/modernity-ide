@@ -1,0 +1,37 @@
+{
+  "asset": "biblical_angel_many_eyed_six_wing",
+  "cycle": "round3-01",
+  "decision": "PASS_AUTHOR_REVIEW",
+  "independently_graded_commit": "640b8e7fe4e1179d2ce58fc16c9bb9935e6f4feb",
+  "reviewed_views": [
+    "front",
+    "back",
+    "left",
+    "right",
+    "top",
+    "bottom",
+    "isometric",
+    "eye-crown-closeup",
+    "rear-eyes-closeup",
+    "wing-layers-closeup",
+    "side-depth-closeup",
+    "wing-tip-closeup",
+    "crown-wrap-closeup",
+    "model-only-all-angle-sheet"
+  ],
+  "notes": [
+    "A first render with coplanar wing spokes was rejected by the author despite passing structural metrics.",
+    "The first accepted-by-metrics revision was independently rejected because every wing cube still had zero Y yaw; this second visual revision corrects that false positive.",
+    "The accepted revision uses radial sweeps of 42.7 degrees rearward, 21.0 degrees through the middle sector, and 40.1 degrees forward, with nonzero yaw on all 108 wing-shape cuboids.",
+    "Every distal primary and overlap vane uses three strictly narrowing segments ending at no more than 1.4 by 1.0 units, with fifteen distinct terminal lengths.",
+    "The eye crown is an eight-part ring with four 38-degree corner segments and persistent side-facing eyes rather than separate front/back bars.",
+    "The central eye is deliberately oversized and the body uses stepped front, rear, side, upper, and lower shells.",
+    "Side renders expose distinct front, middle, and rear wings plus a lateral eye; side silhouette area is now 67.4 percent of the front.",
+    "A final independent recheck passed after shortening the thinnest stages into compact caps; maximum terminal length is now 5.933 units rather than 9.843.",
+    "Bottom coverage was inspected and reaches 75.0 percent of frontal silhouette area; all fourteen required model-only renders are SHA-256 pinned.",
+    "The source-containing comparison is retained only in the ignored local-review directory, while the committed all-angle sheet is model-only.",
+    "The release builder marks the private source optional and unbundled, then re-hashes a self-consistent source-free manifest and ZIP.",
+    "The palette is a crisp Minecraft abstraction; no reference pixels, dithering, or generated noise are embedded."
+  ],
+  "remaining_caveat": "Only the front is source-observed; holistic rear/side anatomy is plausible inference and remains labeled as such."
+}

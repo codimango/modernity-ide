@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "suite": "round-2-general-subjects",
+  "policy": "Private local evaluation only. Source files are ignored and must not be redistributed without permission.",
+  "assets": [
+    {
+      "selection_index": 1,
+      "id": "off_road_truck",
+      "kind": "textured_glb",
+      "source": "/Users/derekwang1/Downloads/Minecraft-style off-road truck.glb",
+      "status": "pending_copy_due_to_macos_downloads_access"
+    },
+    {
+      "selection_index": 2,
+      "id": "militech_hovercraft",
+      "kind": "textured_glb",
+      "source": "/Users/derekwang1/Downloads/Meshy_AI_minecraft_hovercraft_0907011803_image-to-3d-texture.glb",
+      "status": "pending_copy_due_to_macos_downloads_access"
+    },
+    {
+      "selection_index": 3,
+      "id": "militech_chimera",
+      "kind": "image",
+      "source": "image.png",
+      "sha256": "55ed303da9e7484812f0827922fceb0b07a8bac68ccc1a9c03e39702419eada2",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "selection_index": 4,
+      "id": "golden_apple",
+      "kind": "transparent_image",
+      "source": "image-1.png",
+      "sha256": "228b2a37073397cd167486e5720a21a22f97d89e35e78e7e52f5aeb49207b10f",
+      "width": 600,
+      "height": 704
+    },
+    {
+      "selection_index": 5,
+      "id": "false_apple",
+      "kind": "transparent_image",
+      "source": "image-2.png",
+      "sha256": "c6061900b7e45c555a5c3d94ca5584d2c06d91e9d8144f302c881fc3f42fdaae",
+      "width": 599,
+      "height": 290
+    },
+    {
+      "selection_index": 6,
+      "id": "aegis_x2_turret",
+      "kind": "uncalibrated_multiview_images",
+      "sources": ["image-3.png", "image-4.png", "image-5.png"],
+      "sha256": [
+        "31bb69536ce0f26540034096402cebc6e006ee9cb7ec56b38deb5bf04afb2e23",
+        "d53b51bd62a7f64f1a4c792f1bd1005de204ed1ba0475ca4fb527784163ade4b",
+        "83f83385de5d68c3b4b1f8bc7d371dc086780f4388754a8414b07f0294cfe7a6"
+      ],
+      "width": 1000,
+      "height": 1000
+    },
+    {
+      "selection_index": 7,
+      "id": "centaur_exoskeleton",
+      "kind": "uncalibrated_multiview_images",
+      "sources": ["image-6.png", "image-7.png", "image-8.png"],
+      "sha256": [
+        "4182ef6f34f6c701322d39b3ca07e5acf824a5b0b2804a48c6e2182c1698bf92",
+        "c1286f3eb14a6a4642d1c55c73e0edaf3c59f9f3c7b264469d3c8e0d1997f799",
+        "fa98828914ac3d04907d2452ff5627511ce877608c8273c007f7ae167723411c"
+      ],
+      "width": 1000,
+      "height": 1023
+    },
+    {
+      "selection_index": 8,
+      "id": "greta",
+      "kind": "transparent_image",
+      "source": "image-9.png",
+      "sha256": "a0519be7ef788e3ea2d01b3fa1dcd310912c5489a58b3cb675fa8b4962626178",
+      "width": 600,
+      "height": 766
+    },
+    {
+      "selection_index": 9,
+      "id": "zombie_devil",
+      "kind": "duplicate_crop_images",
+      "sources": ["image-10.png", "image-11.png"],
+      "sha256": [
+        "77d658a02c89ce685490832c78b0467f10cc06662548570c2ee9d2497cbe03d6",
+        "e3c594bc2fc60a63fa7f510fd6557e761219b731be2654a599fc751d024c96df"
+      ],
+      "dimensions": [[369, 542], [513, 754]],
+      "note": "These are duplicate crops from one view and must count as one observed camera axis."
+    },
+    {
+      "selection_index": 10,
+      "id": "falling_devil",
+      "kind": "image",
+      "source": "image-12.png",
+      "sha256": "e2824aa87127cb8922be7e37ae0942f9abfbf8413fbe39ce133edf4ed06c18fb",
+      "width": 399,
+      "height": 501
+    }
+  ]
+}

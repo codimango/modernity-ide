@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 122484,
+      "path": "tomato_devil.model-spec.json",
+      "sha256": "defdd5130ee8de60d684d4a9de874ccbfe3e38a117604854c2eb7a3c0f99f1bd"
+    },
+    {
+      "bytes": 13282,
+      "path": "tomato_devil.png",
+      "sha256": "93f3fcc9e0b8f0bdfabe0c97e91642e3dd7120dfa90f6fae91ff3857b2571388"
+    },
+    {
+      "bytes": 352681,
+      "path": "tomato_devil.bbmodel",
+      "sha256": "5763a43615bf39f83f0a211863e8142737ed08a266d752ec458fa8512b4c87f4"
+    },
+    {
+      "bytes": 383841,
+      "path": "tomato_devil.geo.json",
+      "sha256": "398eacfd88e5e8c12acf99667a8868b6708936f34a3a2a85e7300ba833edce58"
+    },
+    {
+      "bytes": 238,
+      "path": "tomato_devil.audit.json",
+      "sha256": "babde2d4ad918b92e8b7c5a5d17a9515d7eba0a4fb6d6095f21be22414f33e67"
+    },
+    {
+      "bytes": 620159,
+      "path": "tomato_devil.reference.png",
+      "sha256": "a14835e56a9e35dbc01a532e2170d47a7f32c38476041a58ce716e017b31f651"
+    }
+  ],
+  "collision": {
+    "eye_height": 2.05,
+    "height": 2.45,
+    "width": 1.45
+  },
+  "generator": {
+    "lane": "agent-authored-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "tomato_devil",
+  "reference": {
+    "height": 764,
+    "image": "tomato_devil.reference.png",
+    "sha256": "a14835e56a9e35dbc01a532e2170d47a7f32c38476041a58ce716e017b31f651",
+    "width": 492
+  },
+  "schema_version": 1
+}

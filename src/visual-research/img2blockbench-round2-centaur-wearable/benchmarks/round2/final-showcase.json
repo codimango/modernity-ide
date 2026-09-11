@@ -1,0 +1,40 @@
+{
+  "layout": "four rows; source left, generated fixed-camera render right",
+  "output_sha256": "c458316a5f8b290d0cc32ec023d656665752cc3deb2fcf18e752961dd04b56e6",
+  "pairs": [
+    {
+      "cycle": 2,
+      "label": "Militech Chimera: olive camouflage reference",
+      "render": "benchmarks/round2/cycles/02-militech-chimera/render/source-perspective.png",
+      "render_sha256": "22647eef89af52bc72297efcf2983b033d154676e76e9be622b06c79138992e8",
+      "source": "image.png",
+      "source_sha256": "55ed303da9e7484812f0827922fceb0b07a8bac68ccc1a9c03e39702419eada2"
+    },
+    {
+      "cycle": 5,
+      "label": "Aegis X2: oblique reference",
+      "render": "benchmarks/round2/cycles/05-aegis-x2/render/source-4-perspective.png",
+      "render_sha256": "a35e85ad312b22dfdbc7d50090c8b145bed9cc4d97c5fdf784d6c9e310344d60",
+      "source": "image-4.png",
+      "source_sha256": "d53b51bd62a7f64f1a4c792f1bd1005de204ed1ba0475ca4fb527784163ade4b"
+    },
+    {
+      "cycle": 7,
+      "label": "Militech Centaur: front reference",
+      "render": "benchmarks/round2/cycles/07-centaur-exoskeleton/render/source-6-perspective.png",
+      "render_sha256": "7449dec260cb9d25f7d252169d9796a82ac4090f1ab4fdf4d46cea65c888dbff",
+      "source": "image-6.png",
+      "source_sha256": "4182ef6f34f6c701322d39b3ca07e5acf824a5b0b2804a48c6e2182c1698bf92"
+    },
+    {
+      "cycle": 8,
+      "label": "Zombie Devil: single independent view",
+      "render": "benchmarks/round2/cycles/08-zombie-devil/render/reference-angle.png",
+      "render_sha256": "6f28316f792a36f3db6e3a84b4297b2f52472eb1a3af81bac9c8358bf4d1390c",
+      "source": "image-11.png",
+      "source_sha256": "e3c594bc2fc60a63fa7f510fd6557e761219b731be2654a599fc751d024c96df"
+    }
+  ],
+  "post_render_alignment": false,
+  "schema_version": 1
+}

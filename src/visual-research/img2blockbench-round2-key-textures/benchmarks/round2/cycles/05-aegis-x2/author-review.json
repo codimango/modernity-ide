@@ -1,0 +1,35 @@
+{
+  "asset": "aegis_x2_turret",
+  "author_decision": "READY_FOR_INDEPENDENT_REVIEW",
+  "critical_geometry_defect_observed": false,
+  "cycle": "round2-05",
+  "identity_review": {
+    "four_radial_grounded_outtriggers_visible": true,
+    "long_cannon_and_muzzle_visible": true,
+    "opposed_bulky_launcher_and_grip_visible": true,
+    "paired_pitch_drive_drums_visible": true,
+    "segmented_pedestal_and_yaw_ring_visible": true,
+    "texture_seams_bolts_labels_and_cables_visible": true
+  },
+  "limitations": [
+    "The references provide no camera metadata; each camera is a frozen manual estimate.",
+    "Source 3 clips the bottom of multiple supports, so their off-frame continuation is not observed.",
+    "Cable routes, undersides, internal mechanisms and concealed faces are conservatively inferred.",
+    "Stepped cuboids intentionally approximate the source's round manufactured housings.",
+    "Static geometry was reviewed; no animation was authored or approved."
+  ],
+  "quantitative_checks": {
+    "all_144_declared_attachments_connected": true,
+    "all_four_supports_grounded": true,
+    "all_three_fixed_camera_aspirations_pass": true,
+    "cuboids": 145,
+    "source_3_iou": 0.635555,
+    "source_3_keypoint_error_subject_heights": 0.038758,
+    "source_4_iou": 0.665274,
+    "source_4_keypoint_error_subject_heights": 0.036311,
+    "source_5_iou": 0.630694,
+    "source_5_keypoint_error_subject_heights": 0.037577,
+    "strict_native_audit": true,
+    "two_builds_byte_identical": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "asset": "falling_devil_twelve_armed_chef",
+  "blockers": [],
+  "cycle": 6,
+  "grader": "independent_read_only_codex_terminal",
+  "mean": 4.0,
+  "notes": [
+    "Exactly six visually distinct arm pairs are present, including two head-support pairs, one rear-mid bare pair, two sleeved pairs, and one rear-low bare pair.",
+    "All four support hands visibly meet the detached head, while the waist tendril remains a separate structure.",
+    "Chef hat, detached neck gap, jacket, apron, and six depth bands remain recognizable across canonical views."
+  ],
+  "round": 2,
+  "schema_version": 1,
+  "scores": {
+    "3d_coherence": 4,
+    "attachment_topology": 4,
+    "identity": 4,
+    "materials_color": 4,
+    "proportions": 4,
+    "silhouette": 4
+  },
+  "verdict": "PASS"
+}

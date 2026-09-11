@@ -1,0 +1,29 @@
+{
+  "asset": "biblical_angel_many_eyed_six_wing",
+  "cycle": "round3-01",
+  "generator": "agent-authored holistic native-cuboid model",
+  "input": {
+    "filename": "round3-inputs/biblically-accurate-angel.png",
+    "height": 714,
+    "kind": "single frontal RGBA painterly illustration",
+    "sha256": "1b4e05b4fa70f51fa37d4eb054b7355274fcfd576936402ca7db1515b391826c",
+    "tracked": false,
+    "width": 744
+  },
+  "license": "unknown; private ignored benchmark reference only",
+  "mesh_provider": null,
+  "observed_views": [
+    "front"
+  ],
+  "route": "Route 2 agentic-vision Minecraft abstraction",
+  "source_projection": false,
+  "unseen_geometry_policy": "rear, side, and top topology are explicitly labeled conservative agent inference",
+  "contextual_research": {
+    "asset_identity_match": false,
+    "geometry_measurement_used": false,
+    "kind": "search-result thumbnail for a different cherubim depiction",
+    "local_ignored_thumbnail_sha256": "bb4df16f1f10d3f229451880c9fe6aad6772a1bf8a21708922579798f135899e",
+    "purpose": "general confirmation that fore/aft wing overlap and a deep vertical core are plausible angelic abstractions",
+    "youtube_video_id": "zrIKGpHbRlc"
+  }
+}

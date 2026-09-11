@@ -1,0 +1,35 @@
+{
+  "asset": "zombie_devil_exposed_brain",
+  "bones": 24,
+  "cuboids": 188,
+  "fixed_view_diagnostics": {
+    "height_normalized_silhouette_iou": 0.644959,
+    "mean_keypoint_error_subject_heights": 0.069759,
+    "raw_fixed_camera_silhouette_iou": 0.645798
+  },
+  "independent_observed_camera_axes": 1,
+  "near_duplicate_rgb_correlation": 0.999919,
+  "rear_depth": {
+    "arms_depth_to_width": 0.341463,
+    "brain_depth_to_width": 1.166667,
+    "front_surfaces_preserved": true,
+    "head_depth_to_width": 0.833333,
+    "rear_depth_is_inferred": true,
+    "torso_depth_to_width": 0.75
+  },
+  "source_camera_has_no_auto_fit_or_recentering": true,
+  "strict_audit": true,
+  "texture": {
+    "authored_fallback_palette": "user-selected-stylized-color",
+    "chromatic_opaque_texel_fraction": 0.916654,
+    "colors_per_material_at_most": 2,
+    "dithering": false,
+    "source_projection_is_grayscale": true,
+    "source_projection_palette": "manga-monochrome",
+    "source_fraction": 0.064265,
+    "source_observed_faces": 232,
+    "source_observed_texels": 8177,
+    "style": "minecraft"
+  },
+  "trailing_continuations_clipped_by_fixed_camera": true
+}

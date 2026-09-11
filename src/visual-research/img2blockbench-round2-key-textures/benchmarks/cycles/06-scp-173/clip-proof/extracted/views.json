@@ -1,0 +1,56 @@
+{
+  "calibration": {
+    "projection": "orthographic-yaw",
+    "volume_bounds": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        1,
+        2,
+        1
+      ]
+    ]
+  },
+  "clip_provenance": {
+    "camera_motion": "not inferred; every timestamp and azimuth is caller supplied",
+    "extracted_frames": 2,
+    "ffmpeg_executable": "ffmpeg",
+    "path": "../turntable.mp4",
+    "sample_request": "../samples.json",
+    "sample_request_sha256": "533ab8c922d87d8dcc021e1cb996005f988f449503ac4d046d60881561fcf9fa",
+    "sha256": "605b188f331d450fb1f97438ffe36b5b8a62515cda3156046e9c6a242a54dd4d"
+  },
+  "reference_view": "front",
+  "schema_version": 1,
+  "views": [
+    {
+      "azimuth_degrees": 0.0,
+      "center_px": [
+        48.0,
+        80.0
+      ],
+      "evidence_kind": "observed",
+      "id": "front",
+      "image": "frames/front.png",
+      "mask": "../front-mask.png",
+      "pixels_per_unit": 28.0,
+      "timestamp_seconds": 0.0
+    },
+    {
+      "azimuth_degrees": 90.0,
+      "center_px": [
+        48.0,
+        80.0
+      ],
+      "evidence_kind": "observed",
+      "id": "side",
+      "image": "frames/side.png",
+      "mask": "../side-mask.png",
+      "pixels_per_unit": 28.0,
+      "timestamp_seconds": 1.0
+    }
+  ]
+}

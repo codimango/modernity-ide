@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "cycle_id": "round3-04-hovercraft",
+  "model": {
+    "id": "meshy_minecraft_hovercraft_mesh",
+    "description": "A holistic Minecraft-style hovercraft reconstructed from the complete user-supplied Meshy textured mesh rather than a single camera projection.",
+    "subject_type": "vehicle"
+  },
+  "source": {
+    "relative_path": "round3-inputs/Meshy_AI_minecraft_hovercraft_0907011803_image-to-3d-texture.glb",
+    "provider": "Meshy",
+    "provider_model": "image-to-3d-texture; version unrecorded",
+    "license": "unrecorded"
+  },
+  "reconstruction": {
+    "resolution": 36,
+    "max_cuboids": 96,
+    "target_size": 40.0,
+    "palette_size": 24,
+    "fill_mode": "auto",
+    "surface_thickness": 1,
+    "min_component_voxels": 2,
+    "min_component_fraction": 0.0003,
+    "geometry_precision": 64,
+    "texture_density": 1,
+    "canonical_transform": null
+  },
+  "review": {
+    "required_views": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "bottom",
+      "isometric"
+    ],
+    "separate_agent_required": true,
+    "automated_evidence_is_not_visual_approval": true
+  },
+  "outputs": {
+    "input_contract": "input-contract.json",
+    "model_spec": "model-spec.json",
+    "evidence": "mesh-evidence.json",
+    "build": "build",
+    "results": "results.json"
+  }
+}

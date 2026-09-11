@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 72245,
+      "path": "greta_shark_chef.model-spec.json",
+      "sha256": "1db963f42b4c6ba1e02b1a31552bc7d6f9e70cc4541623f690f7617f6bfb50d1"
+    },
+    {
+      "bytes": 2527,
+      "path": "greta_shark_chef.png",
+      "sha256": "d98e4e12ef15c7aa95cb7a5fda6d04b7689a8b15f8cc90dad92342fa206ee141"
+    },
+    {
+      "bytes": 138361,
+      "path": "greta_shark_chef.bbmodel",
+      "sha256": "80ea18fa6d09edf18f5a8cc496ac1e6d5a965a2cee2e39b012faeeac8109e236"
+    },
+    {
+      "bytes": 145470,
+      "path": "greta_shark_chef.geo.json",
+      "sha256": "7b1b95bce333a4382cd5674dbcd7704c38db09044683a0a6f6a0d23893797bda"
+    },
+    {
+      "bytes": 212,
+      "path": "greta_shark_chef.audit.json",
+      "sha256": "0c52bb09476a6eb04a87c1ba704df8e7dfeb806ed26ac4912a806e096d571abc"
+    },
+    {
+      "bytes": 363125,
+      "path": "greta_shark_chef.reference.png",
+      "sha256": "a0519be7ef788e3ea2d01b3fa1dcd310912c5489a58b3cb675fa8b4962626178"
+    }
+  ],
+  "collision": {
+    "eye_height": 3.15,
+    "height": 3.6,
+    "width": 1.1
+  },
+  "generator": {
+    "lane": "agent-authored-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "greta_shark_chef",
+  "reference": {
+    "height": 766,
+    "image": "greta_shark_chef.reference.png",
+    "sha256": "a0519be7ef788e3ea2d01b3fa1dcd310912c5489a58b3cb675fa8b4962626178",
+    "width": 600
+  },
+  "schema_version": 1
+}

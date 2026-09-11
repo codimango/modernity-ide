@@ -1,0 +1,167 @@
+{
+  "algorithm": "orthographic-ray-voxel-adaptive-cuboids-v1",
+  "color_transfer": {
+    "face_material_overrides": 117,
+    "method": "barycentric ray-hit sampling with per-cuboid face palette",
+    "palette": [
+      "#0b0b0b",
+      "#292828",
+      "#373736",
+      "#494848",
+      "#181716",
+      "#676666",
+      "#595858",
+      "#45331b",
+      "#757473",
+      "#4b3924",
+      "#6a553a",
+      "#cbb795",
+      "#130d0c",
+      "#0d110b",
+      "#14140c",
+      "#57442c"
+    ],
+    "palette_entries": 16,
+    "sources": [
+      "uv-texture"
+    ]
+  },
+  "schema_version": 1,
+  "source": {
+    "canonical_transform": [
+      40.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      37.0,
+      0.0,
+      12.55,
+      0.0,
+      0.0,
+      -27.0,
+      -3.5,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "effective_model_transform": [
+      45.736308547,
+      0.0,
+      0.0,
+      -0.42609057,
+      0.0,
+      42.306085406,
+      0.0,
+      14.873020902,
+      0.0,
+      0.0,
+      -30.872008269,
+      -0.023277456,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "format": "glb",
+    "geometries": 1,
+    "license": "unrecorded",
+    "normalization": {
+      "centered_axes": [
+        "x",
+        "z"
+      ],
+      "grounded_y": 0,
+      "model_extents": [
+        25.37931,
+        30.896552,
+        32.0
+      ],
+      "scale": 1.143407714,
+      "target_size": 32.0
+    },
+    "path": "../../../../examples/chimpanzee/lane2/source.glb",
+    "provider": "Trellis",
+    "provider_model": "unrecorded",
+    "sha256": "5f4f30207e68102ac83585eac940ff1acaf1d45c2c3d5446cabbb34a9b256d90",
+    "triangles": 7942,
+    "vertices": 6272,
+    "watertight": false
+  },
+  "source_mesh_overlap": {
+    "cuboid_voxels": 3838,
+    "cuboids": 72,
+    "dominant_color_fraction": 0.496403,
+    "intersection_voxels": 1946,
+    "mean_silhouette_iou": 0.956008,
+    "method": "adaptive binary 3D cuboid decomposition",
+    "model_precision": 0.507035,
+    "orthographic_views": {
+      "front": {
+        "bidirectional_depth_mae": 0.009577,
+        "iou": 0.893305,
+        "model_pixels": 478,
+        "model_precision": 0.893305,
+        "source_coverage": 1.0,
+        "source_pixels": 427
+      },
+      "side": {
+        "bidirectional_depth_mae": 0.012784,
+        "iou": 0.989247,
+        "model_pixels": 372,
+        "model_precision": 0.989247,
+        "source_coverage": 1.0,
+        "source_pixels": 368
+      },
+      "top": {
+        "bidirectional_depth_mae": 0.022477,
+        "iou": 0.985472,
+        "model_pixels": 413,
+        "model_precision": 0.985472,
+        "source_coverage": 1.0,
+        "source_pixels": 407
+      }
+    },
+    "source_coverage": 1.0,
+    "source_voxels": 1946,
+    "surface_f1_tolerance_voxels": 1,
+    "surface_f1_tolerant": 0.935582,
+    "surface_precision_tolerant": 0.895479,
+    "surface_recall_tolerant": 0.979445,
+    "union_voxels": 3838,
+    "voxel_iou": 0.507035
+  },
+  "voxelization": {
+    "components": {
+      "after_cleanup": 1,
+      "before_cleanup": 1,
+      "connectivity": 6,
+      "minimum_voxels": 2,
+      "raw_voxels": 1946,
+      "removed_voxels": 0,
+      "retained_voxels": 1946,
+      "sizes": [
+        1946
+      ]
+    },
+    "fill_mode_requested": "surface",
+    "fill_mode_resolved": "surface",
+    "grid_dimensions": [
+      23,
+      28,
+      29
+    ],
+    "ray_evidence": {
+      "bidirectional_rays": 4246,
+      "direction_count": 6,
+      "method": "three orthographic ray grids evaluated bidirectionally",
+      "odd_parity_rays": 0,
+      "surface_voxels": 1946,
+      "triangle_intersections": 2518,
+      "unique_direction_rays": 2123
+    },
+    "surface_thickness_voxels": 1,
+    "voxel_pitch_source_units": 0.965052328
+  }
+}

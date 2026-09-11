@@ -1,0 +1,43 @@
+{
+  "asset": "militech_centaur_piloted_exoskeleton",
+  "cycle": "round2-07",
+  "metrics": {
+    "bones": 28,
+    "cuboids": 192,
+    "declared_links_connected": "191/191",
+    "grounded_exo_feet": "2/2",
+    "perspective_iou": {
+      "source-6": 0.603863,
+      "source-7": 0.47559,
+      "source-8": 0.542573
+    },
+    "perspective_keypoint_mean_subject_heights": {
+      "source-6": 0.061311,
+      "source-7": 0.07981,
+      "source-8": 0.073091
+    },
+    "pilot_exoframe_contacts": "2/2",
+    "shield_contacts": "2/2",
+    "texture": {
+      "atlas_size": 1024,
+      "colors_per_material_at_most": 4,
+      "dithering": false,
+      "global_palette_colors": 24,
+      "source_fraction": 0.208461,
+      "source_observed_faces": 486,
+      "source_observed_texels": 14749,
+      "style": "minecraft",
+      "texture_density": 1
+    },
+    "wearable": {
+      "attachment_points": 6,
+      "bones": 21,
+      "cuboids": 168,
+      "player_anchor_after_fit": [0, 0, 0],
+      "removed_occupant_bones": 7
+    },
+    "powered_leg_mass_gate": "2/2"
+  },
+  "status": "PASS",
+  "visual_review_required": true
+}

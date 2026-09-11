@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1048317,
+      "path": "militech_chimera.model-spec.json",
+      "sha256": "0a8100a429cf85a049e86cfd1246342b795bf6242bc1d7fd2bad68edcc6a352a"
+    },
+    {
+      "bytes": 9347,
+      "path": "militech_chimera.png",
+      "sha256": "243b6b0fe61b495b16feea7feae64dcaf4477961bcd9e9cbaa429305aa3b2115"
+    },
+    {
+      "bytes": 304481,
+      "path": "militech_chimera.bbmodel",
+      "sha256": "606332e67596f27a4a4b17434d22da1ff1f3e3a9dbef905da19d45b89a673c2f"
+    },
+    {
+      "bytes": 342171,
+      "path": "militech_chimera.geo.json",
+      "sha256": "4a3f8f3a4de5e3c6a07442afa6ba44603fbf1853a6cbbe4c39579dc1757b60e9"
+    },
+    {
+      "bytes": 240,
+      "path": "militech_chimera.audit.json",
+      "sha256": "e3e03efc26eb187e47262e3a100ffd460dcb049d9951038784eee4a748479a73"
+    },
+    {
+      "bytes": 309469,
+      "path": "militech_chimera.reference.png",
+      "sha256": "55ed303da9e7484812f0827922fceb0b07a8bac68ccc1a9c03e39702419eada2"
+    }
+  ],
+  "collision": {
+    "eye_height": 2.25,
+    "height": 2.7,
+    "width": 3.6
+  },
+  "generator": {
+    "lane": "agent-authored-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "militech_chimera",
+  "reference": {
+    "height": 900,
+    "image": "militech_chimera.reference.png",
+    "sha256": "55ed303da9e7484812f0827922fceb0b07a8bac68ccc1a9c03e39702419eada2",
+    "width": 600
+  },
+  "schema_version": 1
+}

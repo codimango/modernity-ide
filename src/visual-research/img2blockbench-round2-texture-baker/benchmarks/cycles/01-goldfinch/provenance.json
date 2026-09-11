@@ -1,0 +1,18 @@
+{
+  "cycle": 1,
+  "distribution": "local-private-evaluation-only",
+  "geometry": {
+    "algorithm": "greedy-ellipsoid-articulated-bird-v1",
+    "hidden_geometry": "conservative bilateral semantic inference",
+    "source_mesh": null,
+    "source_skin_cuboids": 0
+  },
+  "reference": {
+    "credit": "Brian E. Kushner/Shutterstock (as credited by National Geographic Kids)",
+    "license": "No redistribution license identified",
+    "sha256": "094818044cf5373d674e42dcff666a7a37063e940b252aa841028e9ac2dcab8d",
+    "url": "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch_square.jpg"
+  },
+  "route": "agent-authored-semantic-volume",
+  "schema_version": 1
+}

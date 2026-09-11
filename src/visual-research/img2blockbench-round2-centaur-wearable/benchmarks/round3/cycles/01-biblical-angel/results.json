@@ -1,0 +1,24 @@
+{
+  "all_view_diversity_gates_pass": true,
+  "asset": "biblical_angel_many_eyed_six_wing",
+  "cycle": "round3-01",
+  "metrics": {
+    "back_to_front_area": 0.981761,
+    "bilateral_wings": 6,
+    "body_depth_to_width": 0.955629,
+    "bottom_to_front_area": 0.750201,
+    "broad_overlap_vanes": 12,
+    "cuboids": 189,
+    "depth_to_width": 0.47418,
+    "geometric_eyes": 21,
+    "minimum_side_to_front_area": 0.673758,
+    "primary_feathers": 18,
+    "three_stage_taper_profiles": 30,
+    "top_to_front_area": 0.750201,
+    "wing_depth_span": 30.0,
+    "wing_nonzero_yaw_fraction": 1.0,
+    "wrapped_eye_crown_segments": 8
+  },
+  "status": "ready_for_independent_review",
+  "visual_review_required": true
+}

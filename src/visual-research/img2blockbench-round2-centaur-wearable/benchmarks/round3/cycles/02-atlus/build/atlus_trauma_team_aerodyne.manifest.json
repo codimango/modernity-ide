@@ -1,0 +1,59 @@
+{
+  "artifacts": [
+    {
+      "bytes": 98882,
+      "path": "atlus_trauma_team_aerodyne.model-spec.json",
+      "sha256": "8d5c1ad574987bb9a4fb7fa867d26ee64bc0a3eda13058727058effff3c44d20"
+    },
+    {
+      "bytes": 3455,
+      "path": "atlus_trauma_team_aerodyne.png",
+      "sha256": "a15ce4edcbab67d4a791b06066808832673155de6f5891eee12ef6f8265c427d"
+    },
+    {
+      "bytes": 265746,
+      "path": "atlus_trauma_team_aerodyne.bbmodel",
+      "sha256": "d6167ec4e99fac88bf1734612bcc643cf4ffd018632822164496391ab78022cd"
+    },
+    {
+      "bytes": 319025,
+      "path": "atlus_trauma_team_aerodyne.geo.json",
+      "sha256": "e1ddda87b4b05d89682643ebab3639c130abdd3af42270c34f489c5843a647b6"
+    },
+    {
+      "bytes": 237,
+      "path": "atlus_trauma_team_aerodyne.audit.json",
+      "sha256": "2aa86b67819b8d55e10210e312723d7d45b03ed99e7012e0139f55a76ed83fea"
+    }
+  ],
+  "collision": {
+    "eye_height": 1.8,
+    "height": 2.5,
+    "width": 4.5
+  },
+  "generator": {
+    "lane": "agent-authored-holistic-semantic-volume",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "atlus_trauma_team_aerodyne",
+  "private_optional_artifacts": [
+    {
+      "bundled": false,
+      "filename": "atlus.png",
+      "kind": "source_reference",
+      "required_for_model_use": false,
+      "sha256": "5458ba42d698b38ed2a0a3a55e17a4608a2a4579f3bcdfc22a9b3e7018c74a25"
+    }
+  ],
+  "reference": {
+    "availability": "private-optional",
+    "bundled": false,
+    "height": 340,
+    "image": "atlus.png",
+    "required_for_model_use": false,
+    "sha256": "5458ba42d698b38ed2a0a3a55e17a4608a2a4579f3bcdfc22a9b3e7018c74a25",
+    "width": 712
+  },
+  "schema_version": 1
+}

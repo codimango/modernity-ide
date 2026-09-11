@@ -1,0 +1,8 @@
+{
+  "baseline_commit": "9cb643a8ff4a5db5b306a64d893b4103bdcc518f",
+  "cycle": "round2-06",
+  "fixed_camera_evidence_reused": true,
+  "other_benchmark_files_modified": false,
+  "scope": "Falling Devil benchmark, focused regression tests, native build, and review evidence only",
+  "suite_status": "98 tests passed, including 4 Falling Devil tests"
+}

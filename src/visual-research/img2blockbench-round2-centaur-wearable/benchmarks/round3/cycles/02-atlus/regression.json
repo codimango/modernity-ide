@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "cycle": "02-atlus",
+  "independently_graded_commit": "640b8e7fe4e1179d2ce58fc16c9bb9935e6f4feb",
+  "gates": {
+    "strict_spec_valid": true,
+    "cuboids_between_140_and_170": true,
+    "five_hash_bound_geometry_views": true,
+    "all_five_directional_gates_pass": true,
+    "length_to_width_at_least_1_15": true,
+    "central_hull_length_to_width_at_least_1_75": true,
+    "both_side_pods_cover_at_least_65_percent_length": true,
+    "front_and_back_are_visibly_distinct": true,
+    "top_and_underside_are_visibly_distinct": true,
+    "two_four_barrel_weapon_clusters": true,
+    "layered_front_and_rear_pod_louvers": true,
+    "chunky_ventral_machinery": true,
+    "all_46_declared_attachments_connected": true,
+    "all_material_patterns_solid": true,
+    "procedural_noise_absent": true,
+    "native_build_audit_ok": true,
+    "required_renders_exist": true,
+    "required_render_hashes_recompute": true,
+    "committed_renders_are_model_only": true,
+    "reference_paths_are_repo_relative": true,
+    "build_manifest_has_no_reference_png": true,
+    "all_manifest_artifact_hashes_recompute": true,
+    "source_free_zip_has_no_reference_png": true
+  },
+  "passed": true
+}

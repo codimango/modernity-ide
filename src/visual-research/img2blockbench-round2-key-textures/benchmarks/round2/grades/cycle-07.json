@@ -1,0 +1,26 @@
+{
+  "asset": "militech_centaur_piloted_exoskeleton",
+  "critical_defects": [],
+  "cycle": 7,
+  "grader": "independent_read_only_codex_terminal",
+  "mean": 3.67,
+  "quantitative": {
+    "declared_links_connected": "191/191",
+    "fixed_perspective_iou": [0.567833, 0.463441, 0.526309],
+    "keypoint_mean_error_subject_heights": [0.061855, 0.083226, 0.072842],
+    "pilot_boot_to_exoframe_contacts": "2/2",
+    "shield_contacts": "2/2",
+    "unit_tests": "107/107 PASS"
+  },
+  "round": 2,
+  "schema_version": 1,
+  "scores": {
+    "3d_coherence": 4,
+    "attachment_topology": 4,
+    "identity": 4,
+    "materials_color": 4,
+    "proportions": 3,
+    "silhouette": 3
+  },
+  "verdict": "PASS"
+}

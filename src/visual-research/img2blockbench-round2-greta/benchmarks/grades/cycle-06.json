@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "cycle": 6,
+  "commit": "9a5d6eddb3f8f605dac8d523d1c6bab09dce71f4",
+  "cumulative_verdict": "PASS",
+  "overall_visual_mean": 4.19,
+  "prior_asset_regression": "NONE_DETECTED",
+  "assets": {
+    "american_goldfinch": {"verdict": "PASS", "mean": 4.17, "scores": [4, 4, 5, 4, 4, 4]},
+    "porsche_911_turbo_930": {"verdict": "PASS", "mean": 4.0, "scores": [4, 4, 4, 4, 4, 4]},
+    "excalibur": {"verdict": "PASS", "mean": 4.67, "scores": [5, 5, 5, 5, 4, 4]},
+    "nian_beast": {"verdict": "PASS", "mean": 4.17, "scores": [4, 4, 5, 4, 4, 4]},
+    "tomato_devil": {"verdict": "PASS", "mean": 4.17, "scores": [4, 4, 5, 4, 4, 4]},
+    "scp_173": {"verdict": "PASS", "mean": 4.0, "scores": [4, 4, 5, 4, 4, 3]}
+  },
+  "features": {
+    "decoded_frame_validation": "PASS",
+    "atomic_manifest_publication": "PASS",
+    "real_ffmpeg_two_observed_view_proof": "PASS",
+    "exclusive_observed_proxy_attribution": "PASS",
+    "tests": "60/60 PASS"
+  },
+  "required_fixes": []
+}

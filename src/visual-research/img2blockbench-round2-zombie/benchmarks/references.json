@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "suite": "general-subject-seven-cycle",
+  "selection_policy": "The seven user-supplied real-world and illustrated references are cumulative gates.",
+  "references": [
+    {
+      "cycle": 1,
+      "id": "american_goldfinch",
+      "subject": "American goldfinch",
+      "category": "animal photograph",
+      "url": "https://i.natgeofe.com/k/520e971d-7a22-4a6f-90dc-258df74e45bc/american-goldfinch_square.jpg"
+    },
+    {
+      "cycle": 2,
+      "id": "porsche_911_turbo_930",
+      "subject": "Porsche 911 Turbo (930)",
+      "category": "vehicle render",
+      "url": "https://static.wikia.nocookie.net/cyberpunk/images/4/48/Porsche_911_Turbo_%28930%29_Database_CP2077.png/revision/latest?cb=20210222110630"
+    },
+    {
+      "cycle": 3,
+      "id": "excalibur",
+      "subject": "Excalibur",
+      "category": "weapon illustration",
+      "url": "https://static.wikia.nocookie.net/typemoon/images/e/e3/ExcaliburVisualNovel.png/revision/latest?cb=20201202083711"
+    },
+    {
+      "cycle": 4,
+      "id": "nian_beast",
+      "subject": "Nian beast",
+      "category": "creature render",
+      "url": "https://img.cadnav.com/allimg/170525/cadnav-1F525195118.jpg"
+    },
+    {
+      "cycle": 5,
+      "id": "tomato_devil",
+      "subject": "Tomato Devil",
+      "category": "creature illustration",
+      "url": "https://static.wikia.nocookie.net/chainsaw-man/images/d/d1/Tomato_Devil.png/revision/latest?cb=20230420064751"
+    },
+    {
+      "cycle": 6,
+      "id": "scp_173",
+      "subject": "SCP-173",
+      "category": "statue photograph",
+      "url": "https://ih1.redbubble.net/image.966205334.5539/flat,750x,075,f-pad,750x1000,f8f8f8.jpg",
+      "note": "The request labels this SCP-174, but the linked image depicts SCP-173. The benchmark preserves both facts."
+    },
+    {
+      "cycle": 7,
+      "id": "gamma_full_body",
+      "subject": "Gamma full-body character",
+      "category": "humanoid character illustration",
+      "url": "https://static.wikia.nocookie.net/library-of-ruina/images/2/2f/GammaFullBody.png/revision/latest?cb=20200702205442"
+    }
+  ]
+}

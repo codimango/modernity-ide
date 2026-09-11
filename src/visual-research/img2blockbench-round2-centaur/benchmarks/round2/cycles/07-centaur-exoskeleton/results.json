@@ -1,0 +1,26 @@
+{
+  "asset": "militech_centaur_piloted_exoskeleton",
+  "cycle": "round2-07",
+  "metrics": {
+    "bones": 28,
+    "cuboids": 192,
+    "declared_links_connected": "191/191",
+    "grounded_exo_feet": "2/2",
+    "human_exo_ankle_centerline_gap": 7.0,
+    "human_exo_knee_centerline_gap": 12.0,
+    "perspective_iou": {
+      "source-6": 0.567833,
+      "source-7": 0.463441,
+      "source-8": 0.526309
+    },
+    "perspective_keypoint_mean_subject_heights": {
+      "source-6": 0.061855,
+      "source-7": 0.083226,
+      "source-8": 0.072842
+    },
+    "pilot_exoframe_contacts": "2/2",
+    "shield_contacts": "2/2"
+  },
+  "status": "PASS",
+  "visual_review_required": true
+}

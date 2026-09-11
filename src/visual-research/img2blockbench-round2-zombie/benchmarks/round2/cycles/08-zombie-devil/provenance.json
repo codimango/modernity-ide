@@ -1,0 +1,17 @@
+{
+  "asset": "zombie_devil_exposed_brain",
+  "inputs": [
+    {
+      "filename": "image-11.png",
+      "role": "primary higher-resolution crop",
+      "sha256": "e3c594bc2fc60a63fa7f510fd6557e761219b731be2654a599fc751d024c96df"
+    },
+    {
+      "filename": "image-10.png",
+      "role": "duplicate lower-resolution crop; provenance only",
+      "sha256": "77d658a02c89ce685490832c78b0467f10cc06662548570c2ee9d2497cbe03d6"
+    }
+  ],
+  "license": "unknown; local benchmark input only",
+  "source_mesh": null
+}

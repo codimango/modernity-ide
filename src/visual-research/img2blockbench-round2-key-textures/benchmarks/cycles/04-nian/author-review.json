@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "status": "READY_FOR_STRICT_CUMULATIVE_REVIEW",
+  "self_assigned_pass": false,
+  "strict_cumulative_gate": "PENDING",
+  "latest_specialist_review": {
+    "reviewer": "separate strict Nian topology and visual gate",
+    "verdict": "GO",
+    "scope": "exact final v8 comparison sheet after anatomy, attachment, and material corrections",
+    "comparison_sheet_sha256": "36d07e366a345e70668457ceb627cbeefdbd6fdb469cf86cb134cb110bb8a087",
+    "reference_angle_sha256": "9f1cde8ba98503b50f064bd52470d94bef24b18e9ee6423d5eb1ab16575afe7a",
+    "category_calls": {
+      "silhouette": 4.0,
+      "proportions": 4.0,
+      "identity": 4.0,
+      "materials_color": 4.0,
+      "topology_attachment": 3.0,
+      "three_dimensional_coherence": 3.0
+    },
+    "release_notes": [
+      "The square-pixel rump mark reads as a C curl with a central void and inner return.",
+      "The foreleg mark reads as one tapered three-prong flame at thumbnail and full size.",
+      "The 0.1-unit fur-matched decal is visually flush with no plaque or silhouette artifact.",
+      "All reviewed limb, tail, and horn attachments remain continuous."
+    ]
+  },
+  "blind_failure_history": [
+    {
+      "candidate": "65-cuboid semantic revision",
+      "verdict": "FAIL",
+      "scores": {
+        "silhouette": 2.8,
+        "proportions": 2.6,
+        "identity": 3.4,
+        "materials_color": 3.7
+      },
+      "reason": "long level torso, weak forequarter hierarchy, cramped horns, sparse mane, and elongated box face"
+    },
+    {
+      "candidate": "first 79-cuboid semantic correction",
+      "verdict": "FAIL",
+      "scores": {
+        "silhouette": 3.0,
+        "proportions": 3.0
+      },
+      "reason": "rectangular barrel, pillar forelegs, insufficient forward horn curl, and weak facial framing"
+    },
+    {
+      "candidate": "compact anatomy before rear-joint correction",
+      "verdict": "FAIL",
+      "scores": {
+        "silhouette": 3.5,
+        "proportions": 3.1,
+        "identity": 3.8,
+        "materials_color": 4.2,
+        "topology_attachment": 2.2,
+        "three_dimensional_coherence": 3.0
+      },
+      "reason": "visibly detached hind foot plus upright massing and generic rectangular markings"
+    },
+    {
+      "candidate": "89-cuboid anatomy with ten cream relief pieces",
+      "verdict": "FAIL",
+      "scores": {
+        "silhouette": 4.0,
+        "proportions": 4.0,
+        "identity": 4.0,
+        "materials_color": 2.0,
+        "topology_attachment": 3.0,
+        "three_dimensional_coherence": 3.0
+      },
+      "reason": "raised cream pieces read as plaques and staples rather than fur markings"
+    },
+    {
+      "candidate": "first flush 32-pixel motif pass",
+      "verdict": "FAIL",
+      "scores": {
+        "silhouette": 4.0,
+        "proportions": 4.0,
+        "identity": 4.0,
+        "materials_color": 3.0,
+        "topology_attachment": 3.0,
+        "three_dimensional_coherence": 3.0
+      },
+      "reason": "UV resampling and occlusion reduced the spiral to chevrons and the flames to forked runes"
+    }
+  ],
+  "identity_features_visible": {
+    "golden_flame_mane": true,
+    "paired_forward_curled_brown_horns": true,
+    "upturned_pale_horn_tips": true,
+    "green_fanged_face": true,
+    "burgundy_front_heavy_quadruped_body": true,
+    "flush_cream_spiral_marking": true,
+    "flush_three_prong_foreleg_flame": true,
+    "bent_load_bearing_forelimbs": true,
+    "smaller_connected_crouched_hindquarters": true
+  },
+  "evidence": {
+    "reference_view_silhouette_iou": 0.75329,
+    "reference_view_silhouette_recall": 0.869311,
+    "reference_view_silhouette_precision": 0.849493,
+    "semantic_profile_silhouette_iou": 0.661169,
+    "semantic_profile_silhouette_recall": 0.798111,
+    "semantic_profile_silhouette_precision": 0.793957,
+    "alignment": "uniform-scale-translation-grid-search-no-warp",
+    "reference_view_direction": [-1.0, 0.32, 0.6],
+    "bilateral_full_body_silhouette_iou": 0.972976,
+    "bilateral_head_silhouette_iou": 1.0,
+    "main_trunk_z_span": 16.5,
+    "shoulder_top_minus_rump_top": 13.8,
+    "shoulder_to_rump_width_ratio": 2.066667,
+    "front_to_rear_upper_limb_width_ratio": 1.789474,
+    "front_chain_pitch_degrees": [10.0, 8.0, 12.0],
+    "green_face_y_span": 8.0,
+    "horn_span": 24.4,
+    "horn_tip_forward_z": 22.15,
+    "near_rear_ankle_vertical_overlap": 0.689163,
+    "far_rear_ankle_vertical_overlap": 0.696333,
+    "semantic_anatomy_cuboids": 79,
+    "flush_surface_decal_cuboids": 1,
+    "source_skin_cuboids": 0,
+    "bones": 32,
+    "all_required_chains_connected": true,
+    "maximum_required_chain_gap": 0.0,
+    "native_audit_ok": true,
+    "legacy_regression_byte_identical": true,
+    "generic_mesh_route_executable": true,
+    "generic_mesh_triangle_overlap_iou": 0.8191
+  },
+  "visual_review": [
+    "The v8 candidate is a true native quadruped volume with no image-depth walls, contour panels, or photographic skin cuboids.",
+    "A short rising trunk and high wide shoulder replace the level barrel and diminish the connected crouched rump.",
+    "The front limbs use three connected pitched volumes plus compact pads, while the narrower rear chains visibly overlap their paws.",
+    "Twenty-two overlapping mane and beard volumes frame the crown, cheeks, shoulders, chest, and jaw.",
+    "Each horn projects outward and forward around the face, with a thick base, broad open curl, narrowing return, and upturned pale tip.",
+    "The identity marks use opaque embedded pixel art on existing or fur-matched flush surfaces instead of raised color-only geometry."
+  ],
+  "limitations": [
+    "Far-side markings are conservative inferences from one three-quarter reference.",
+    "Curves and flame shapes remain intentionally Minecraft-native stepped abstractions.",
+    "Uniform alignment compensates only scale and translation; silhouette scores are evaluation evidence, not construction inputs.",
+    "The source page offers only a proprietary non-commercial .max file, so it was not represented as usable GLB input.",
+    "The generic mesh route emits a static one-bone model; semantic rigging remains a separate reviewed pass.",
+    "Final cumulative pass/fail remains reserved for the independent cumulative grader."
+  ]
+}

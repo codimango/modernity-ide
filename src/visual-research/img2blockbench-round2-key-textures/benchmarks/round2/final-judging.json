@@ -1,0 +1,90 @@
+{
+  "all_assets_pass": true,
+  "assets": {
+    "aegis_x2": {
+      "blockers": [],
+      "scores": {
+        "3d_coherence": 4,
+        "identity": 4,
+        "materials_color": 4,
+        "proportions": 3,
+        "silhouette": 4,
+        "topology_attachments": 4
+      },
+      "verdict": "PASS"
+    },
+    "chimera": {
+      "blockers": [],
+      "scores": {
+        "3d_coherence": 4,
+        "identity": 4,
+        "materials_color": 3,
+        "proportions": 3,
+        "silhouette": 3,
+        "topology_attachments": 4
+      },
+      "verdict": "PASS",
+      "verification": "Exactly six articulated leg chains: 24 leg bones, six feet, 18 toes, and 18 shin plates. All 191 declared links connect. Top, side, and isometric evidence confirm six legs; this is no longer the rejected abstract four-legged proxy."
+    },
+    "centaur": {
+      "blockers": [],
+      "non_blocking_note": "The side view and slatted shield remain the least faithful aspects, but the nested pilot legs, exoframe, weapon, shield contacts, and backpack read correctly.",
+      "scores": {
+        "3d_coherence": 4,
+        "identity": 4,
+        "materials_color": 4,
+        "proportions": 3,
+        "silhouette": 3,
+        "topology_attachments": 4
+      },
+      "verdict": "PASS"
+    },
+    "zombie_devil": {
+      "blockers": [],
+      "non_blocking_note": "The viscera remain angular, and the two references are near-duplicates, so unseen geometry is correctly treated as unestablished.",
+      "scores": {
+        "3d_coherence": 4,
+        "identity": 4,
+        "materials_color": 4,
+        "proportions": 3,
+        "silhouette": 3,
+        "topology_attachments": 4
+      },
+      "verdict": "PASS"
+    }
+  },
+  "audit": "All four compiler audits report zero errors; only the intentional high-cuboid-count warning remains.",
+  "cumulative_verdict": "PASS",
+  "evidence_integrity": {
+    "details": "Metrics use raw fixed frames without fit, scale, translation, or recentering. Cameras are manually estimated and then frozen. Chimera display crops are common review crops only; recorded IoUs remain raw-frame values.",
+    "raw_iou": {
+      "aegis_x2": [
+        0.635555,
+        0.665274,
+        0.630694
+      ],
+      "centaur": [
+        0.567833,
+        0.463441,
+        0.526309
+      ],
+      "chimera": [
+        0.605818,
+        0.632529
+      ],
+      "zombie_devil": [
+        0.643458
+      ]
+    },
+    "verdict": "HONEST"
+  },
+  "grader": "independent_read_only_codex_terminal",
+  "policy": "Each selected asset passes only when every 1-4 rubric category is at least 3 and there is no critical structural mismatch. The cumulative gate passes only when all four assets pass.",
+  "schema_version": 1,
+  "selected_cycles": [
+    2,
+    5,
+    7,
+    8
+  ]
+}

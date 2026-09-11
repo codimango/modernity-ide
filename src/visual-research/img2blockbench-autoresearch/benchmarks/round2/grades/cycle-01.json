@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "round": 2,
+  "cycle": 1,
+  "asset": "golden_apple_rooted",
+  "verdict": "PASS",
+  "grader": "independent_read_only_codex_terminal",
+  "mean": 3.83,
+  "scores": {
+    "silhouette": 4,
+    "proportions": 4,
+    "identity": 4,
+    "materials_color": 4,
+    "attachment_topology": 3,
+    "3d_coherence": 4
+  },
+  "quantitative": {
+    "alpha_silhouette_iou": 0.705691,
+    "keypoint_mean_error_subject_heights": 0.022501,
+    "apple_depth_to_width": 1.060606,
+    "removed_voxels": 382,
+    "black_proxy_solids": 0,
+    "declared_links_connected": "154/154",
+    "unit_tests": "71/71 PASS"
+  },
+  "resolved_blockers": [
+    "replaced a painted bite slab with genuine subtractive voxel geometry",
+    "increased rounded silhouette resolution",
+    "staggered lateral and weight-bearing roots",
+    "strengthened gold and cream highlight contrast"
+  ],
+  "critical_defects": []
+}

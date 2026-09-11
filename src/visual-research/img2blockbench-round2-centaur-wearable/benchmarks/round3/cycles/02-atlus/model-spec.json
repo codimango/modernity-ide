@@ -1,0 +1,5766 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "chassis",
+      "parent": "root",
+      "pivot": [
+        0,
+        9,
+        0
+      ]
+    },
+    {
+      "name": "nose",
+      "parent": "chassis",
+      "pivot": [
+        0,
+        11,
+        18.75
+      ]
+    },
+    {
+      "name": "cabin",
+      "parent": "chassis",
+      "pivot": [
+        0,
+        14,
+        0
+      ]
+    },
+    {
+      "name": "rear",
+      "parent": "chassis",
+      "pivot": [
+        0,
+        11,
+        -20
+      ]
+    },
+    {
+      "name": "roof",
+      "parent": "cabin",
+      "pivot": [
+        0,
+        19,
+        -2.5
+      ]
+    },
+    {
+      "name": "left_pod",
+      "parent": "chassis",
+      "pivot": [
+        -13.5,
+        11,
+        0
+      ]
+    },
+    {
+      "name": "right_pod",
+      "parent": "chassis",
+      "pivot": [
+        13.5,
+        11,
+        0
+      ]
+    },
+    {
+      "name": "undercarriage",
+      "parent": "chassis",
+      "pivot": [
+        0,
+        7,
+        0
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 1.8,
+    "height": 2.5,
+    "width": 4.5
+  },
+  "cubes": [
+    {
+      "bone": "chassis",
+      "center": [
+        0,
+        8.2,
+        -0.625
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "belly_keel",
+      "origin": [
+        0,
+        8.2,
+        -0.625
+      ],
+      "role": "full-length armored belly",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        18,
+        4.5,
+        42.5
+      ]
+    },
+    {
+      "bone": "chassis",
+      "center": [
+        0,
+        10.6,
+        0.0
+      ],
+      "faces": {},
+      "material": "teal_dark",
+      "name": "lower_fuselage",
+      "origin": [
+        0,
+        10.6,
+        0.0
+      ],
+      "role": "deep central load-bearing fuselage",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        22,
+        5.0,
+        42.5
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        0,
+        13.6,
+        -0.625
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "mid_fuselage",
+      "origin": [
+        0,
+        13.6,
+        -0.625
+      ],
+      "role": "broad pressurized cabin volume",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        23,
+        6.2,
+        38.75
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        0,
+        17.0,
+        -2.5
+      ],
+      "faces": {},
+      "material": "white",
+      "name": "upper_cabin",
+      "origin": [
+        0,
+        17.0,
+        -2.5
+      ],
+      "role": "raised central cabin crown",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        20,
+        3.7,
+        28.75
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        0,
+        19.1,
+        -2.75
+      ],
+      "faces": {},
+      "material": "white_bright",
+      "name": "roof_spine",
+      "origin": [
+        0,
+        19.1,
+        -2.75
+      ],
+      "role": "long armored roof spine",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        15,
+        1.1,
+        23.75
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        0,
+        18.4,
+        10.375
+      ],
+      "faces": {},
+      "material": "white",
+      "name": "roof_front_slope",
+      "origin": [
+        0,
+        18.4,
+        10.375
+      ],
+      "role": "sloped forward roof transition",
+      "rotation": [
+        12,
+        0,
+        0
+      ],
+      "size": [
+        17,
+        2.0,
+        6.75
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        14.3,
+        17.875
+      ],
+      "faces": {},
+      "material": "white",
+      "name": "nose_deck",
+      "origin": [
+        0,
+        14.3,
+        17.875
+      ],
+      "role": "broad descending prow deck",
+      "rotation": [
+        10,
+        0,
+        0
+      ],
+      "size": [
+        21,
+        4.3,
+        11.25
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        12.1,
+        23.875
+      ],
+      "faces": {},
+      "material": "white_bright",
+      "name": "nose_mid",
+      "origin": [
+        0,
+        12.1,
+        23.875
+      ],
+      "role": "faceted forward prow",
+      "rotation": [
+        8,
+        0,
+        0
+      ],
+      "size": [
+        19,
+        4.2,
+        8.375
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        10.4,
+        28.75
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "nose_tip",
+      "origin": [
+        0,
+        10.4,
+        28.75
+      ],
+      "role": "blunt armored nose tip",
+      "rotation": [
+        7,
+        0,
+        0
+      ],
+      "size": [
+        15,
+        3.2,
+        3.75
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        9.1,
+        24.375
+      ],
+      "faces": {},
+      "material": "teal_dark",
+      "name": "nose_lower",
+      "origin": [
+        0,
+        9.1,
+        24.375
+      ],
+      "role": "recessed lower prow",
+      "rotation": [
+        7,
+        0,
+        0
+      ],
+      "size": [
+        17,
+        3.0,
+        8.75
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        9.7,
+        30.5625
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "front_grille",
+      "origin": [
+        0,
+        9.7,
+        30.5625
+      ],
+      "role": "ribbed-looking forward cooling grille",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        11.0,
+        3.0,
+        1.0
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        -5.2,
+        16.1,
+        13.0
+      ],
+      "faces": {},
+      "material": "glass",
+      "name": "left_windscreen",
+      "origin": [
+        -5.2,
+        16.1,
+        13.0
+      ],
+      "role": "left forward cockpit glazing",
+      "rotation": [
+        11,
+        0,
+        0
+      ],
+      "size": [
+        8.2,
+        2.6,
+        0.8125
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        5.2,
+        16.1,
+        13.0
+      ],
+      "faces": {},
+      "material": "glass",
+      "name": "right_windscreen",
+      "origin": [
+        5.2,
+        16.1,
+        13.0
+      ],
+      "role": "right forward cockpit glazing",
+      "rotation": [
+        11,
+        0,
+        0
+      ],
+      "size": [
+        8.2,
+        2.6,
+        0.8125
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        0,
+        17.7,
+        12.5
+      ],
+      "faces": {},
+      "material": "white_bright",
+      "name": "windscreen_brow",
+      "origin": [
+        0,
+        17.7,
+        12.5
+      ],
+      "role": "thick cockpit brow",
+      "rotation": [
+        8,
+        0,
+        0
+      ],
+      "size": [
+        17.2,
+        0.8,
+        1.5
+      ]
+    },
+    {
+      "bone": "rear",
+      "center": [
+        0,
+        13.5,
+        -20.25
+      ],
+      "faces": {},
+      "material": "white",
+      "name": "rear_cabin",
+      "origin": [
+        0,
+        13.5,
+        -20.25
+      ],
+      "role": "deep rear cabin and machinery bay",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        21,
+        7.0,
+        9.375
+      ]
+    },
+    {
+      "bone": "rear",
+      "center": [
+        0,
+        16.8,
+        -21.25
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "rear_upper_taper",
+      "origin": [
+        0,
+        16.8,
+        -21.25
+      ],
+      "role": "tapered upper rear armor",
+      "rotation": [
+        -7,
+        0,
+        0
+      ],
+      "size": [
+        17,
+        3.0,
+        8.75
+      ]
+    },
+    {
+      "bone": "rear",
+      "center": [
+        0,
+        9.3,
+        -25.75
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "rear_bumper",
+      "origin": [
+        0,
+        9.3,
+        -25.75
+      ],
+      "role": "rear impact and thruster beam",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        18,
+        3.0,
+        2.25
+      ]
+    },
+    {
+      "bone": "rear",
+      "center": [
+        0,
+        13.0,
+        -25.3125
+      ],
+      "faces": {},
+      "material": "white_bright",
+      "name": "rear_service_panel",
+      "origin": [
+        0,
+        13.0,
+        -25.3125
+      ],
+      "role": "rear service hatch",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        10,
+        4.6,
+        0.875
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        -10.8,
+        13.0,
+        -1.875
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_cabin_rail",
+      "origin": [
+        -10.8,
+        13.0,
+        -1.875
+      ],
+      "role": "left longitudinal cabin edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.0,
+        5.5,
+        32.5
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        10.8,
+        13.0,
+        -1.875
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_cabin_rail",
+      "origin": [
+        10.8,
+        13.0,
+        -1.875
+      ],
+      "role": "right longitudinal cabin edge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.0,
+        5.5,
+        32.5
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -9.9,
+        11.4,
+        11.25
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_pod_bridge_front",
+      "origin": [
+        -9.9,
+        11.4,
+        11.25
+      ],
+      "role": "left forward nacelle bridge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.2,
+        2.4,
+        6.5
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -9.9,
+        11.2,
+        -11.25
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_pod_bridge_rear",
+      "origin": [
+        -9.9,
+        11.2,
+        -11.25
+      ],
+      "role": "left rear nacelle bridge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.2,
+        2.4,
+        6.5
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        11.7,
+        -0.625
+      ],
+      "faces": {},
+      "material": "teal",
+      "name": "left_pod_core",
+      "origin": [
+        -14.0,
+        11.7,
+        -0.625
+      ],
+      "role": "left full-depth teal nacelle",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        7.8,
+        8.8,
+        31.875
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -13.7,
+        15.3,
+        -1.25
+      ],
+      "faces": {},
+      "material": "white",
+      "name": "left_pod_upper",
+      "origin": [
+        -13.7,
+        15.3,
+        -1.25
+      ],
+      "role": "left upper nacelle cowling",
+      "rotation": [
+        0,
+        0,
+        -4
+      ],
+      "size": [
+        7.2,
+        3.2,
+        28.125
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        8.1,
+        -1.875
+      ],
+      "faces": {},
+      "material": "teal_dark",
+      "name": "left_pod_lower",
+      "origin": [
+        -14.0,
+        8.1,
+        -1.875
+      ],
+      "role": "left lower nacelle keel",
+      "rotation": [
+        0,
+        0,
+        4
+      ],
+      "size": [
+        6.8,
+        2.2,
+        25.625
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.2,
+        12.8,
+        15.875
+      ],
+      "faces": {},
+      "material": "teal_light",
+      "name": "left_front_shoulder",
+      "origin": [
+        -14.2,
+        12.8,
+        15.875
+      ],
+      "role": "left large forward pod shoulder",
+      "rotation": [
+        5,
+        0,
+        -4
+      ],
+      "size": [
+        8.5,
+        8.3,
+        8.75
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        16.5,
+        16.375
+      ],
+      "faces": {},
+      "material": "white_bright",
+      "name": "left_front_brow",
+      "origin": [
+        -14.0,
+        16.5,
+        16.375
+      ],
+      "role": "left white forward pod brow",
+      "rotation": [
+        5,
+        0,
+        -4
+      ],
+      "size": [
+        7.8,
+        1.5,
+        7.5
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.2,
+        12.4,
+        20.0
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "left_intake_frame",
+      "origin": [
+        -14.2,
+        12.4,
+        20.0
+      ],
+      "role": "left forward intake frame",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.4,
+        6.0,
+        1.5
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.2,
+        12.4,
+        20.875
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "left_intake",
+      "origin": [
+        -14.2,
+        12.4,
+        20.875
+      ],
+      "role": "left dark forward intake cavity",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.6,
+        4.3,
+        1.0
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        11.8,
+        -17.5
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "left_rear_housing",
+      "origin": [
+        -14.0,
+        11.8,
+        -17.5
+      ],
+      "role": "left rear nacelle machinery",
+      "rotation": [
+        -4,
+        0,
+        -4
+      ],
+      "size": [
+        7.6,
+        8.3,
+        7.875
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        11.4,
+        -21.75
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_rear_cap",
+      "origin": [
+        -14.0,
+        11.4,
+        -21.75
+      ],
+      "role": "left rear nacelle exhaust frame",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.3,
+        6.3,
+        1.75
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        11.4,
+        -22.75
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "left_rear_throat",
+      "origin": [
+        -14.0,
+        11.4,
+        -22.75
+      ],
+      "role": "left rear nacelle dark exhaust",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.5,
+        4.5,
+        0.875
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        11.4,
+        -23.25
+      ],
+      "faces": {},
+      "material": "blue_light",
+      "name": "left_rear_core",
+      "origin": [
+        -14.0,
+        11.4,
+        -23.25
+      ],
+      "role": "left cyan rear drive core",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.6,
+        2.6,
+        0.625
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -17.95,
+        13.0,
+        -1.875
+      ],
+      "faces": {},
+      "material": "white_bright",
+      "name": "left_outer_door",
+      "origin": [
+        -17.95,
+        13.0,
+        -1.875
+      ],
+      "role": "left broad Trauma Team side door",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.72,
+        8.0,
+        22.5
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -18.15,
+        17.0,
+        -1.875
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_door_top",
+      "origin": [
+        -18.15,
+        17.0,
+        -1.875
+      ],
+      "role": "left raised door top seam",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.52,
+        0.65,
+        23.125
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -18.15,
+        9.0,
+        -1.875
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_door_bottom",
+      "origin": [
+        -18.15,
+        9.0,
+        -1.875
+      ],
+      "role": "left raised door bottom seam",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.52,
+        0.65,
+        23.125
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -18.15,
+        13.0,
+        9.375
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_door_front",
+      "origin": [
+        -18.15,
+        13.0,
+        9.375
+      ],
+      "role": "left raised forward door seam",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.52,
+        7.4,
+        0.8125
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -18.15,
+        13.0,
+        -13.125
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_door_rear",
+      "origin": [
+        -18.15,
+        13.0,
+        -13.125
+      ],
+      "role": "left raised rear door seam",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.52,
+        7.4,
+        0.8125
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        17.4,
+        5.5
+      ],
+      "faces": {},
+      "material": "red",
+      "name": "left_top_sensor",
+      "origin": [
+        -14.0,
+        17.4,
+        5.5
+      ],
+      "role": "left nacelle roof sensor",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.0,
+        0.9,
+        4.0
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        6.2,
+        -2.5
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_bottom_fin",
+      "origin": [
+        -14.0,
+        6.2,
+        -2.5
+      ],
+      "role": "left stabilizing underside fin",
+      "rotation": [
+        0,
+        0,
+        4
+      ],
+      "size": [
+        3.0,
+        3.0,
+        9.0
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -17.0,
+        9.0,
+        14.125
+      ],
+      "faces": {},
+      "material": "white",
+      "name": "left_forward_strake",
+      "origin": [
+        -17.0,
+        9.0,
+        14.125
+      ],
+      "role": "left forward lower strake",
+      "rotation": [
+        6,
+        0,
+        -4
+      ],
+      "size": [
+        2.0,
+        2.2,
+        8.75
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -17.0,
+        8.8,
+        -13.25
+      ],
+      "faces": {},
+      "material": "white",
+      "name": "left_rear_strake",
+      "origin": [
+        -17.0,
+        8.8,
+        -13.25
+      ],
+      "role": "left rear lower strake",
+      "rotation": [
+        -6,
+        0,
+        -4
+      ],
+      "size": [
+        2.0,
+        2.2,
+        7.75
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        9.9,
+        11.4,
+        11.25
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_pod_bridge_front",
+      "origin": [
+        9.9,
+        11.4,
+        11.25
+      ],
+      "role": "right forward nacelle bridge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.2,
+        2.4,
+        6.5
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        9.9,
+        11.2,
+        -11.25
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_pod_bridge_rear",
+      "origin": [
+        9.9,
+        11.2,
+        -11.25
+      ],
+      "role": "right rear nacelle bridge",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.2,
+        2.4,
+        6.5
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        11.7,
+        -0.625
+      ],
+      "faces": {},
+      "material": "teal",
+      "name": "right_pod_core",
+      "origin": [
+        14.0,
+        11.7,
+        -0.625
+      ],
+      "role": "right full-depth teal nacelle",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        7.8,
+        8.8,
+        31.875
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        13.7,
+        15.3,
+        -1.25
+      ],
+      "faces": {},
+      "material": "white",
+      "name": "right_pod_upper",
+      "origin": [
+        13.7,
+        15.3,
+        -1.25
+      ],
+      "role": "right upper nacelle cowling",
+      "rotation": [
+        0,
+        0,
+        4
+      ],
+      "size": [
+        7.2,
+        3.2,
+        28.125
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        8.1,
+        -1.875
+      ],
+      "faces": {},
+      "material": "teal_dark",
+      "name": "right_pod_lower",
+      "origin": [
+        14.0,
+        8.1,
+        -1.875
+      ],
+      "role": "right lower nacelle keel",
+      "rotation": [
+        0,
+        0,
+        -4
+      ],
+      "size": [
+        6.8,
+        2.2,
+        25.625
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.2,
+        12.8,
+        15.875
+      ],
+      "faces": {},
+      "material": "teal_light",
+      "name": "right_front_shoulder",
+      "origin": [
+        14.2,
+        12.8,
+        15.875
+      ],
+      "role": "right large forward pod shoulder",
+      "rotation": [
+        5,
+        0,
+        4
+      ],
+      "size": [
+        8.5,
+        8.3,
+        8.75
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        16.5,
+        16.375
+      ],
+      "faces": {},
+      "material": "white_bright",
+      "name": "right_front_brow",
+      "origin": [
+        14.0,
+        16.5,
+        16.375
+      ],
+      "role": "right white forward pod brow",
+      "rotation": [
+        5,
+        0,
+        4
+      ],
+      "size": [
+        7.8,
+        1.5,
+        7.5
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.2,
+        12.4,
+        20.0
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "right_intake_frame",
+      "origin": [
+        14.2,
+        12.4,
+        20.0
+      ],
+      "role": "right forward intake frame",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.4,
+        6.0,
+        1.5
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.2,
+        12.4,
+        20.875
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "right_intake",
+      "origin": [
+        14.2,
+        12.4,
+        20.875
+      ],
+      "role": "right dark forward intake cavity",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.6,
+        4.3,
+        1.0
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        11.8,
+        -17.5
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "right_rear_housing",
+      "origin": [
+        14.0,
+        11.8,
+        -17.5
+      ],
+      "role": "right rear nacelle machinery",
+      "rotation": [
+        -4,
+        0,
+        4
+      ],
+      "size": [
+        7.6,
+        8.3,
+        7.875
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        11.4,
+        -21.75
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_rear_cap",
+      "origin": [
+        14.0,
+        11.4,
+        -21.75
+      ],
+      "role": "right rear nacelle exhaust frame",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.3,
+        6.3,
+        1.75
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        11.4,
+        -22.75
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "right_rear_throat",
+      "origin": [
+        14.0,
+        11.4,
+        -22.75
+      ],
+      "role": "right rear nacelle dark exhaust",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.5,
+        4.5,
+        0.875
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        11.4,
+        -23.25
+      ],
+      "faces": {},
+      "material": "blue_light",
+      "name": "right_rear_core",
+      "origin": [
+        14.0,
+        11.4,
+        -23.25
+      ],
+      "role": "right cyan rear drive core",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.6,
+        2.6,
+        0.625
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        17.95,
+        13.0,
+        -1.875
+      ],
+      "faces": {},
+      "material": "white_bright",
+      "name": "right_outer_door",
+      "origin": [
+        17.95,
+        13.0,
+        -1.875
+      ],
+      "role": "right broad Trauma Team side door",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.72,
+        8.0,
+        22.5
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        18.15,
+        17.0,
+        -1.875
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_door_top",
+      "origin": [
+        18.15,
+        17.0,
+        -1.875
+      ],
+      "role": "right raised door top seam",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.52,
+        0.65,
+        23.125
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        18.15,
+        9.0,
+        -1.875
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_door_bottom",
+      "origin": [
+        18.15,
+        9.0,
+        -1.875
+      ],
+      "role": "right raised door bottom seam",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.52,
+        0.65,
+        23.125
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        18.15,
+        13.0,
+        9.375
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_door_front",
+      "origin": [
+        18.15,
+        13.0,
+        9.375
+      ],
+      "role": "right raised forward door seam",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.52,
+        7.4,
+        0.8125
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        18.15,
+        13.0,
+        -13.125
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_door_rear",
+      "origin": [
+        18.15,
+        13.0,
+        -13.125
+      ],
+      "role": "right raised rear door seam",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.52,
+        7.4,
+        0.8125
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        17.4,
+        5.5
+      ],
+      "faces": {},
+      "material": "red",
+      "name": "right_top_sensor",
+      "origin": [
+        14.0,
+        17.4,
+        5.5
+      ],
+      "role": "right nacelle roof sensor",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.0,
+        0.9,
+        4.0
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        6.2,
+        -2.5
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_bottom_fin",
+      "origin": [
+        14.0,
+        6.2,
+        -2.5
+      ],
+      "role": "right stabilizing underside fin",
+      "rotation": [
+        0,
+        0,
+        -4
+      ],
+      "size": [
+        3.0,
+        3.0,
+        9.0
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        17.0,
+        9.0,
+        14.125
+      ],
+      "faces": {},
+      "material": "white",
+      "name": "right_forward_strake",
+      "origin": [
+        17.0,
+        9.0,
+        14.125
+      ],
+      "role": "right forward lower strake",
+      "rotation": [
+        6,
+        0,
+        4
+      ],
+      "size": [
+        2.0,
+        2.2,
+        8.75
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        17.0,
+        8.8,
+        -13.25
+      ],
+      "faces": {},
+      "material": "white",
+      "name": "right_rear_strake",
+      "origin": [
+        17.0,
+        8.8,
+        -13.25
+      ],
+      "role": "right rear lower strake",
+      "rotation": [
+        -6,
+        0,
+        4
+      ],
+      "size": [
+        2.0,
+        2.2,
+        7.75
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        -13.5,
+        9.155422,
+        11.25
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "front_left_gear_strut",
+      "origin": [
+        -13.5,
+        8,
+        11.25
+      ],
+      "role": "front left integrated upper hover pylon",
+      "rotation": [
+        -12.495983,
+        0,
+        167.195734
+      ],
+      "size": [
+        4,
+        3.010844,
+        4
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        -14,
+        7.162959,
+        10.75
+      ],
+      "faces": {},
+      "material": "teal_dark",
+      "name": "front_left_gear_lower",
+      "origin": [
+        -14,
+        5.8,
+        10.75
+      ],
+      "role": "front left chunky lower hover pylon",
+      "rotation": [
+        7.907163,
+        0,
+        -180
+      ],
+      "size": [
+        5,
+        3.425917,
+        5
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        -14.0,
+        1.6,
+        11.5625
+      ],
+      "faces": {
+        "down": {
+          "material": "blue_light"
+        }
+      },
+      "material": "rubber",
+      "name": "front_left_gear_shoe",
+      "origin": [
+        -14.0,
+        1.6,
+        11.5625
+      ],
+      "role": "front left broad hover and landing housing",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        7.0,
+        3.2,
+        9.375
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        -16.8,
+        4.6,
+        11.0
+      ],
+      "faces": {},
+      "material": "teal_dark",
+      "name": "front_left_gear_armor",
+      "origin": [
+        -16.8,
+        4.6,
+        11.0
+      ],
+      "role": "front left outer hover-pylon armor",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        5.5,
+        5.5
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        -14.0,
+        0.8,
+        16.25
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "front_left_gear_toe",
+      "origin": [
+        -14.0,
+        0.8,
+        16.25
+      ],
+      "role": "front left forward hover-housing lip",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.0,
+        1.6,
+        1.5
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        13.5,
+        9.155422,
+        11.25
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "front_right_gear_strut",
+      "origin": [
+        13.5,
+        8,
+        11.25
+      ],
+      "role": "front right integrated upper hover pylon",
+      "rotation": [
+        -12.495983,
+        0,
+        -167.195734
+      ],
+      "size": [
+        4,
+        3.010844,
+        4
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        14,
+        7.162959,
+        10.75
+      ],
+      "faces": {},
+      "material": "teal_dark",
+      "name": "front_right_gear_lower",
+      "origin": [
+        14,
+        5.8,
+        10.75
+      ],
+      "role": "front right chunky lower hover pylon",
+      "rotation": [
+        7.907163,
+        0,
+        -180
+      ],
+      "size": [
+        5,
+        3.425917,
+        5
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        14.0,
+        1.6,
+        11.5625
+      ],
+      "faces": {
+        "down": {
+          "material": "blue_light"
+        }
+      },
+      "material": "rubber",
+      "name": "front_right_gear_shoe",
+      "origin": [
+        14.0,
+        1.6,
+        11.5625
+      ],
+      "role": "front right broad hover and landing housing",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        7.0,
+        3.2,
+        9.375
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        16.8,
+        4.6,
+        11.0
+      ],
+      "faces": {},
+      "material": "teal_dark",
+      "name": "front_right_gear_armor",
+      "origin": [
+        16.8,
+        4.6,
+        11.0
+      ],
+      "role": "front right outer hover-pylon armor",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        5.5,
+        5.5
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        14.0,
+        0.8,
+        16.25
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "front_right_gear_toe",
+      "origin": [
+        14.0,
+        0.8,
+        16.25
+      ],
+      "role": "front right forward hover-housing lip",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.0,
+        1.6,
+        1.5
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        -13.5,
+        9.155422,
+        -12.5
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "rear_left_gear_strut",
+      "origin": [
+        -13.5,
+        8,
+        -12.5
+      ],
+      "role": "rear left integrated upper hover pylon",
+      "rotation": [
+        -12.495983,
+        0,
+        167.195734
+      ],
+      "size": [
+        4,
+        3.010844,
+        4
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        -14,
+        7.162959,
+        -13
+      ],
+      "faces": {},
+      "material": "teal_dark",
+      "name": "rear_left_gear_lower",
+      "origin": [
+        -14,
+        5.8,
+        -13
+      ],
+      "role": "rear left chunky lower hover pylon",
+      "rotation": [
+        7.907163,
+        0,
+        -180
+      ],
+      "size": [
+        5,
+        3.425917,
+        5
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        -14.0,
+        1.6,
+        -12.1875
+      ],
+      "faces": {
+        "down": {
+          "material": "blue_light"
+        }
+      },
+      "material": "rubber",
+      "name": "rear_left_gear_shoe",
+      "origin": [
+        -14.0,
+        1.6,
+        -12.1875
+      ],
+      "role": "rear left broad hover and landing housing",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        7.0,
+        3.2,
+        9.375
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        -16.8,
+        4.6,
+        -12.75
+      ],
+      "faces": {},
+      "material": "teal_dark",
+      "name": "rear_left_gear_armor",
+      "origin": [
+        -16.8,
+        4.6,
+        -12.75
+      ],
+      "role": "rear left outer hover-pylon armor",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        5.5,
+        5.5
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        -14.0,
+        0.8,
+        -7.5
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "rear_left_gear_toe",
+      "origin": [
+        -14.0,
+        0.8,
+        -7.5
+      ],
+      "role": "rear left forward hover-housing lip",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.0,
+        1.6,
+        1.5
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        13.5,
+        9.155422,
+        -12.5
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "rear_right_gear_strut",
+      "origin": [
+        13.5,
+        8,
+        -12.5
+      ],
+      "role": "rear right integrated upper hover pylon",
+      "rotation": [
+        -12.495983,
+        0,
+        -167.195734
+      ],
+      "size": [
+        4,
+        3.010844,
+        4
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        14,
+        7.162959,
+        -13
+      ],
+      "faces": {},
+      "material": "teal_dark",
+      "name": "rear_right_gear_lower",
+      "origin": [
+        14,
+        5.8,
+        -13
+      ],
+      "role": "rear right chunky lower hover pylon",
+      "rotation": [
+        7.907163,
+        0,
+        -180
+      ],
+      "size": [
+        5,
+        3.425917,
+        5
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        14.0,
+        1.6,
+        -12.1875
+      ],
+      "faces": {
+        "down": {
+          "material": "blue_light"
+        }
+      },
+      "material": "rubber",
+      "name": "rear_right_gear_shoe",
+      "origin": [
+        14.0,
+        1.6,
+        -12.1875
+      ],
+      "role": "rear right broad hover and landing housing",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        7.0,
+        3.2,
+        9.375
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        16.8,
+        4.6,
+        -12.75
+      ],
+      "faces": {},
+      "material": "teal_dark",
+      "name": "rear_right_gear_armor",
+      "origin": [
+        16.8,
+        4.6,
+        -12.75
+      ],
+      "role": "rear right outer hover-pylon armor",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        5.5,
+        5.5
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        14.0,
+        0.8,
+        -7.5
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "rear_right_gear_toe",
+      "origin": [
+        14.0,
+        0.8,
+        -7.5
+      ],
+      "role": "rear right forward hover-housing lip",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.0,
+        1.6,
+        1.5
+      ]
+    },
+    {
+      "bone": "rear",
+      "center": [
+        -6.2,
+        11.0,
+        -26.375
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "rear_thruster_left_frame",
+      "origin": [
+        -6.2,
+        11.0,
+        -26.375
+      ],
+      "role": "left central rear thruster frame",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.0,
+        4.5,
+        1.5
+      ]
+    },
+    {
+      "bone": "rear",
+      "center": [
+        -6.2,
+        11.0,
+        -27.25
+      ],
+      "faces": {},
+      "material": "blue_light",
+      "name": "rear_thruster_left_core",
+      "origin": [
+        -6.2,
+        11.0,
+        -27.25
+      ],
+      "role": "left central rear cyan thruster",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        2.8,
+        0.75
+      ]
+    },
+    {
+      "bone": "rear",
+      "center": [
+        6.2,
+        11.0,
+        -26.375
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "rear_thruster_right_frame",
+      "origin": [
+        6.2,
+        11.0,
+        -26.375
+      ],
+      "role": "right central rear thruster frame",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.0,
+        4.5,
+        1.5
+      ]
+    },
+    {
+      "bone": "rear",
+      "center": [
+        6.2,
+        11.0,
+        -27.25
+      ],
+      "faces": {},
+      "material": "blue_light",
+      "name": "rear_thruster_right_core",
+      "origin": [
+        6.2,
+        11.0,
+        -27.25
+      ],
+      "role": "right central rear cyan thruster",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        2.8,
+        0.75
+      ]
+    },
+    {
+      "bone": "rear",
+      "center": [
+        0,
+        8.0,
+        -26.25
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "rear_thruster_center_frame",
+      "origin": [
+        0,
+        8.0,
+        -26.25
+      ],
+      "role": "lower central rear thruster frame",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.0,
+        2.3,
+        1.25
+      ]
+    },
+    {
+      "bone": "rear",
+      "center": [
+        0,
+        8.0,
+        -27.0
+      ],
+      "faces": {},
+      "material": "blue_light",
+      "name": "rear_thruster_center_core",
+      "origin": [
+        0,
+        8.0,
+        -27.0
+      ],
+      "role": "lower central rear cyan thruster",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.5,
+        1.3,
+        0.625
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        0,
+        19.75,
+        -2.5
+      ],
+      "faces": {},
+      "material": "white_bright",
+      "name": "roof_medical_panel",
+      "origin": [
+        0,
+        19.75,
+        -2.5
+      ],
+      "role": "raised roof medical identification panel",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8.2,
+        0.45,
+        8.75
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        -5.5,
+        19.9,
+        7.0
+      ],
+      "faces": {},
+      "material": "red",
+      "name": "roof_front_beacon_left",
+      "origin": [
+        -5.5,
+        19.9,
+        7.0
+      ],
+      "role": "left red roof beacon",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.3,
+        0.7,
+        1.625
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        5.5,
+        19.9,
+        7.0
+      ],
+      "faces": {},
+      "material": "red",
+      "name": "roof_front_beacon_right",
+      "origin": [
+        5.5,
+        19.9,
+        7.0
+      ],
+      "role": "right red roof beacon",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.3,
+        0.7,
+        1.625
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        -5.5,
+        19.9,
+        -11.875
+      ],
+      "faces": {},
+      "material": "red",
+      "name": "roof_rear_beacon_left",
+      "origin": [
+        -5.5,
+        19.9,
+        -11.875
+      ],
+      "role": "left rear roof beacon",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.3,
+        0.7,
+        1.625
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        5.5,
+        19.9,
+        -11.875
+      ],
+      "faces": {},
+      "material": "red",
+      "name": "roof_rear_beacon_right",
+      "origin": [
+        5.5,
+        19.9,
+        -11.875
+      ],
+      "role": "right rear roof beacon",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.3,
+        0.7,
+        1.625
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        -6.2,
+        19.9,
+        0.75
+      ],
+      "faces": {},
+      "material": "glass",
+      "name": "roof_sensor_left",
+      "origin": [
+        -6.2,
+        19.9,
+        0.75
+      ],
+      "role": "left roof optical sensor",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        0.8,
+        2.75
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        6.2,
+        19.9,
+        0.75
+      ],
+      "faces": {},
+      "material": "glass",
+      "name": "roof_sensor_right",
+      "origin": [
+        6.2,
+        19.9,
+        0.75
+      ],
+      "role": "right roof optical sensor",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        0.8,
+        2.75
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        -5.8,
+        16.3,
+        16.5
+      ],
+      "faces": {},
+      "material": "red",
+      "name": "nose_red_chevron_left",
+      "origin": [
+        -5.8,
+        16.3,
+        16.5
+      ],
+      "role": "left raised red prow marking",
+      "rotation": [
+        10,
+        0,
+        0
+      ],
+      "size": [
+        5.0,
+        0.55,
+        1.25
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        5.8,
+        16.3,
+        16.5
+      ],
+      "faces": {},
+      "material": "red",
+      "name": "nose_red_chevron_right",
+      "origin": [
+        5.8,
+        16.3,
+        16.5
+      ],
+      "role": "right raised red prow marking",
+      "rotation": [
+        10,
+        0,
+        0
+      ],
+      "size": [
+        5.0,
+        0.55,
+        1.25
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        -8.6,
+        13.2,
+        23.75
+      ],
+      "faces": {},
+      "material": "white",
+      "name": "left_nose_cheek",
+      "origin": [
+        -8.6,
+        13.2,
+        23.75
+      ],
+      "role": "left tapered armored prow cheek",
+      "rotation": [
+        5,
+        11,
+        -2
+      ],
+      "size": [
+        4.2,
+        4.8,
+        11.25
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        -10.25,
+        16.5,
+        10.0
+      ],
+      "faces": {},
+      "material": "glass",
+      "name": "left_canopy_side",
+      "origin": [
+        -10.25,
+        16.5,
+        10.0
+      ],
+      "role": "left angled canopy side glazing",
+      "rotation": [
+        4,
+        0,
+        -2
+      ],
+      "size": [
+        0.65,
+        2.8,
+        6.75
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        -4.8,
+        7.1,
+        23.125
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_nose_weapon_housing",
+      "origin": [
+        -4.8,
+        7.1,
+        23.125
+      ],
+      "role": "left under-nose four-barrel weapon housing",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.0,
+        2.5,
+        6.0
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        -5.45,
+        6.55,
+        29.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_nose_weapon_barrel_1",
+      "origin": [
+        -5.45,
+        6.55,
+        29.0
+      ],
+      "role": "left under-nose weapon barrel 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.62,
+        0.62,
+        9.0
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        -5.45,
+        6.55,
+        33.5625
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "left_nose_weapon_muzzle_1",
+      "origin": [
+        -5.45,
+        6.55,
+        33.5625
+      ],
+      "role": "left weapon muzzle collar 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.0,
+        1.0,
+        0.75
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        -5.45,
+        7.6499999999999995,
+        29.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_nose_weapon_barrel_2",
+      "origin": [
+        -5.45,
+        7.6499999999999995,
+        29.0
+      ],
+      "role": "left under-nose weapon barrel 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.62,
+        0.62,
+        9.0
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        -5.45,
+        7.6499999999999995,
+        33.5625
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "left_nose_weapon_muzzle_2",
+      "origin": [
+        -5.45,
+        7.6499999999999995,
+        33.5625
+      ],
+      "role": "left weapon muzzle collar 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.0,
+        1.0,
+        0.75
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        -4.1499999999999995,
+        6.55,
+        29.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_nose_weapon_barrel_3",
+      "origin": [
+        -4.1499999999999995,
+        6.55,
+        29.0
+      ],
+      "role": "left under-nose weapon barrel 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.62,
+        0.62,
+        9.0
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        -4.1499999999999995,
+        6.55,
+        33.5625
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "left_nose_weapon_muzzle_3",
+      "origin": [
+        -4.1499999999999995,
+        6.55,
+        33.5625
+      ],
+      "role": "left weapon muzzle collar 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.0,
+        1.0,
+        0.75
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        -4.1499999999999995,
+        7.6499999999999995,
+        29.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_nose_weapon_barrel_4",
+      "origin": [
+        -4.1499999999999995,
+        7.6499999999999995,
+        29.0
+      ],
+      "role": "left under-nose weapon barrel 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.62,
+        0.62,
+        9.0
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        -4.1499999999999995,
+        7.6499999999999995,
+        33.5625
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "left_nose_weapon_muzzle_4",
+      "origin": [
+        -4.1499999999999995,
+        7.6499999999999995,
+        33.5625
+      ],
+      "role": "left weapon muzzle collar 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.0,
+        1.0,
+        0.75
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        9.8,
+        -23.4375
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "left_rear_pod_louver_1",
+      "origin": [
+        -14.0,
+        9.8,
+        -23.4375
+      ],
+      "role": "left rear hover-pod exhaust louver",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.8,
+        0.42,
+        0.8125
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        10.8,
+        -23.4375
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "left_rear_pod_louver_2",
+      "origin": [
+        -14.0,
+        10.8,
+        -23.4375
+      ],
+      "role": "left rear hover-pod exhaust louver",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.8,
+        0.42,
+        0.8125
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        11.8,
+        -23.4375
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "left_rear_pod_louver_3",
+      "origin": [
+        -14.0,
+        11.8,
+        -23.4375
+      ],
+      "role": "left rear hover-pod exhaust louver",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.8,
+        0.42,
+        0.8125
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        12.8,
+        -23.4375
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "left_rear_pod_louver_4",
+      "origin": [
+        -14.0,
+        12.8,
+        -23.4375
+      ],
+      "role": "left rear hover-pod exhaust louver",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.8,
+        0.42,
+        0.8125
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        8.6,
+        13.2,
+        23.75
+      ],
+      "faces": {},
+      "material": "white",
+      "name": "right_nose_cheek",
+      "origin": [
+        8.6,
+        13.2,
+        23.75
+      ],
+      "role": "right tapered armored prow cheek",
+      "rotation": [
+        5,
+        -11,
+        2
+      ],
+      "size": [
+        4.2,
+        4.8,
+        11.25
+      ]
+    },
+    {
+      "bone": "cabin",
+      "center": [
+        10.25,
+        16.5,
+        10.0
+      ],
+      "faces": {},
+      "material": "glass",
+      "name": "right_canopy_side",
+      "origin": [
+        10.25,
+        16.5,
+        10.0
+      ],
+      "role": "right angled canopy side glazing",
+      "rotation": [
+        4,
+        0,
+        2
+      ],
+      "size": [
+        0.65,
+        2.8,
+        6.75
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        4.8,
+        7.1,
+        23.125
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_nose_weapon_housing",
+      "origin": [
+        4.8,
+        7.1,
+        23.125
+      ],
+      "role": "right under-nose four-barrel weapon housing",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.0,
+        2.5,
+        6.0
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        4.1499999999999995,
+        6.55,
+        29.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_nose_weapon_barrel_1",
+      "origin": [
+        4.1499999999999995,
+        6.55,
+        29.0
+      ],
+      "role": "right under-nose weapon barrel 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.62,
+        0.62,
+        9.0
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        4.1499999999999995,
+        6.55,
+        33.5625
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "right_nose_weapon_muzzle_1",
+      "origin": [
+        4.1499999999999995,
+        6.55,
+        33.5625
+      ],
+      "role": "right weapon muzzle collar 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.0,
+        1.0,
+        0.75
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        4.1499999999999995,
+        7.6499999999999995,
+        29.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_nose_weapon_barrel_2",
+      "origin": [
+        4.1499999999999995,
+        7.6499999999999995,
+        29.0
+      ],
+      "role": "right under-nose weapon barrel 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.62,
+        0.62,
+        9.0
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        4.1499999999999995,
+        7.6499999999999995,
+        33.5625
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "right_nose_weapon_muzzle_2",
+      "origin": [
+        4.1499999999999995,
+        7.6499999999999995,
+        33.5625
+      ],
+      "role": "right weapon muzzle collar 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.0,
+        1.0,
+        0.75
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        5.45,
+        6.55,
+        29.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_nose_weapon_barrel_3",
+      "origin": [
+        5.45,
+        6.55,
+        29.0
+      ],
+      "role": "right under-nose weapon barrel 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.62,
+        0.62,
+        9.0
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        5.45,
+        6.55,
+        33.5625
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "right_nose_weapon_muzzle_3",
+      "origin": [
+        5.45,
+        6.55,
+        33.5625
+      ],
+      "role": "right weapon muzzle collar 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.0,
+        1.0,
+        0.75
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        5.45,
+        7.6499999999999995,
+        29.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_nose_weapon_barrel_4",
+      "origin": [
+        5.45,
+        7.6499999999999995,
+        29.0
+      ],
+      "role": "right under-nose weapon barrel 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.62,
+        0.62,
+        9.0
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        5.45,
+        7.6499999999999995,
+        33.5625
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "right_nose_weapon_muzzle_4",
+      "origin": [
+        5.45,
+        7.6499999999999995,
+        33.5625
+      ],
+      "role": "right weapon muzzle collar 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.0,
+        1.0,
+        0.75
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        9.8,
+        -23.4375
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "right_rear_pod_louver_1",
+      "origin": [
+        14.0,
+        9.8,
+        -23.4375
+      ],
+      "role": "right rear hover-pod exhaust louver",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.8,
+        0.42,
+        0.8125
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        10.8,
+        -23.4375
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "right_rear_pod_louver_2",
+      "origin": [
+        14.0,
+        10.8,
+        -23.4375
+      ],
+      "role": "right rear hover-pod exhaust louver",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.8,
+        0.42,
+        0.8125
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        11.8,
+        -23.4375
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "right_rear_pod_louver_3",
+      "origin": [
+        14.0,
+        11.8,
+        -23.4375
+      ],
+      "role": "right rear hover-pod exhaust louver",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.8,
+        0.42,
+        0.8125
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        12.8,
+        -23.4375
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "right_rear_pod_louver_4",
+      "origin": [
+        14.0,
+        12.8,
+        -23.4375
+      ],
+      "role": "right rear hover-pod exhaust louver",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.8,
+        0.42,
+        0.8125
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        0,
+        6.2,
+        -1.25
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "ventral_equipment_bay",
+      "origin": [
+        0,
+        6.2,
+        -1.25
+      ],
+      "role": "chunky central ventral equipment bay",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        14.0,
+        2.4,
+        22.5
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        0,
+        5.2,
+        13.125
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "ventral_forward_gimbal",
+      "origin": [
+        0,
+        5.2,
+        13.125
+      ],
+      "role": "forward underside sensor and weapon gimbal",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.5,
+        3.4,
+        7.5
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        0,
+        4.3,
+        15.0
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "ventral_gimbal_core",
+      "origin": [
+        0,
+        4.3,
+        15.0
+      ],
+      "role": "dark forward gimbal core",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.0,
+        2.0,
+        4.0
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        -4.5,
+        5.0,
+        -10.625
+      ],
+      "faces": {},
+      "material": "teal_dark",
+      "name": "ventral_left_tank",
+      "origin": [
+        -4.5,
+        5.0,
+        -10.625
+      ],
+      "role": "left underside machinery tank",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.0,
+        3.0,
+        10.0
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        4.5,
+        5.0,
+        -10.625
+      ],
+      "faces": {},
+      "material": "teal_dark",
+      "name": "ventral_right_tank",
+      "origin": [
+        4.5,
+        5.0,
+        -10.625
+      ],
+      "role": "right underside machinery tank",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.0,
+        3.0,
+        10.0
+      ]
+    },
+    {
+      "bone": "undercarriage",
+      "center": [
+        0,
+        5.0,
+        -18.125
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "ventral_rear_guard",
+      "origin": [
+        0,
+        5.0,
+        -18.125
+      ],
+      "role": "rear underside machinery guard",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        11.0,
+        2.0,
+        4.375
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        8.45,
+        31.125
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "front_grille_louver_1",
+      "origin": [
+        0,
+        8.45,
+        31.125
+      ],
+      "role": "front cooling grille horizontal louver",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        11.5,
+        0.28,
+        0.6875
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        8.9,
+        31.125
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "front_grille_louver_2",
+      "origin": [
+        0,
+        8.9,
+        31.125
+      ],
+      "role": "front cooling grille horizontal louver",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        11.5,
+        0.28,
+        0.6875
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        9.35,
+        31.125
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "front_grille_louver_3",
+      "origin": [
+        0,
+        9.35,
+        31.125
+      ],
+      "role": "front cooling grille horizontal louver",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        11.5,
+        0.28,
+        0.6875
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        9.8,
+        31.125
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "front_grille_louver_4",
+      "origin": [
+        0,
+        9.8,
+        31.125
+      ],
+      "role": "front cooling grille horizontal louver",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        11.5,
+        0.28,
+        0.6875
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        10.25,
+        31.125
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "front_grille_louver_5",
+      "origin": [
+        0,
+        10.25,
+        31.125
+      ],
+      "role": "front cooling grille horizontal louver",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        11.5,
+        0.28,
+        0.6875
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        10.7,
+        31.125
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "front_grille_louver_6",
+      "origin": [
+        0,
+        10.7,
+        31.125
+      ],
+      "role": "front cooling grille horizontal louver",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        11.5,
+        0.28,
+        0.6875
+      ]
+    },
+    {
+      "bone": "nose",
+      "center": [
+        0,
+        11.15,
+        31.125
+      ],
+      "faces": {},
+      "material": "white_shadow",
+      "name": "front_grille_louver_7",
+      "origin": [
+        0,
+        11.15,
+        31.125
+      ],
+      "role": "front cooling grille horizontal louver",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        11.5,
+        0.28,
+        0.6875
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.2,
+        10.7,
+        21.525
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_front_pod_rib_1",
+      "origin": [
+        -14.2,
+        10.7,
+        21.525
+      ],
+      "role": "left forward hover-pod cooling rib",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.2,
+        0.38,
+        0.6875
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.2,
+        11.6,
+        21.525
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_front_pod_rib_2",
+      "origin": [
+        -14.2,
+        11.6,
+        21.525
+      ],
+      "role": "left forward hover-pod cooling rib",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.2,
+        0.38,
+        0.6875
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.2,
+        12.5,
+        21.525
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_front_pod_rib_3",
+      "origin": [
+        -14.2,
+        12.5,
+        21.525
+      ],
+      "role": "left forward hover-pod cooling rib",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.2,
+        0.38,
+        0.6875
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.2,
+        13.4,
+        21.525
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "left_front_pod_rib_4",
+      "origin": [
+        -14.2,
+        13.4,
+        21.525
+      ],
+      "role": "left forward hover-pod cooling rib",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.2,
+        0.38,
+        0.6875
+      ]
+    },
+    {
+      "bone": "rear",
+      "center": [
+        -10.6,
+        14.0,
+        -25.9
+      ],
+      "faces": {},
+      "material": "red",
+      "name": "left_rear_light_rail",
+      "origin": [
+        -10.6,
+        14.0,
+        -25.9
+      ],
+      "role": "left vertical rear emergency light rail",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        6.5,
+        0.65
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        -4.5,
+        19.8,
+        -1.875
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "left_roof_turbine_port",
+      "origin": [
+        -4.5,
+        19.8,
+        -1.875
+      ],
+      "role": "left square Minecraft abstraction of roof turbine port",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        0.75,
+        4.0
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        6.3,
+        11.25
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "left_front_hover_nozzle",
+      "origin": [
+        -14.0,
+        6.3,
+        11.25
+      ],
+      "role": "left front downward hover nozzle",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.4,
+        1.2,
+        4.25
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        5.55,
+        11.25
+      ],
+      "faces": {},
+      "material": "blue_light",
+      "name": "left_front_hover_core",
+      "origin": [
+        -14.0,
+        5.55,
+        11.25
+      ],
+      "role": "left front cyan downward hover core",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.1,
+        0.45,
+        2.625
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        6.3,
+        -12.5
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "left_rear_hover_nozzle",
+      "origin": [
+        -14.0,
+        6.3,
+        -12.5
+      ],
+      "role": "left rear downward hover nozzle",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.4,
+        1.2,
+        4.25
+      ]
+    },
+    {
+      "bone": "left_pod",
+      "center": [
+        -14.0,
+        5.55,
+        -12.5
+      ],
+      "faces": {},
+      "material": "blue_light",
+      "name": "left_rear_hover_core",
+      "origin": [
+        -14.0,
+        5.55,
+        -12.5
+      ],
+      "role": "left rear cyan downward hover core",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.1,
+        0.45,
+        2.625
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.2,
+        10.7,
+        21.525
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_front_pod_rib_1",
+      "origin": [
+        14.2,
+        10.7,
+        21.525
+      ],
+      "role": "right forward hover-pod cooling rib",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.2,
+        0.38,
+        0.6875
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.2,
+        11.6,
+        21.525
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_front_pod_rib_2",
+      "origin": [
+        14.2,
+        11.6,
+        21.525
+      ],
+      "role": "right forward hover-pod cooling rib",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.2,
+        0.38,
+        0.6875
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.2,
+        12.5,
+        21.525
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_front_pod_rib_3",
+      "origin": [
+        14.2,
+        12.5,
+        21.525
+      ],
+      "role": "right forward hover-pod cooling rib",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.2,
+        0.38,
+        0.6875
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.2,
+        13.4,
+        21.525
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "right_front_pod_rib_4",
+      "origin": [
+        14.2,
+        13.4,
+        21.525
+      ],
+      "role": "right forward hover-pod cooling rib",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.2,
+        0.38,
+        0.6875
+      ]
+    },
+    {
+      "bone": "rear",
+      "center": [
+        10.6,
+        14.0,
+        -25.9
+      ],
+      "faces": {},
+      "material": "red",
+      "name": "right_rear_light_rail",
+      "origin": [
+        10.6,
+        14.0,
+        -25.9
+      ],
+      "role": "right vertical rear emergency light rail",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.8,
+        6.5,
+        0.65
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        4.5,
+        19.8,
+        -1.875
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "right_roof_turbine_port",
+      "origin": [
+        4.5,
+        19.8,
+        -1.875
+      ],
+      "role": "right square Minecraft abstraction of roof turbine port",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.2,
+        0.75,
+        4.0
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        6.3,
+        11.25
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "right_front_hover_nozzle",
+      "origin": [
+        14.0,
+        6.3,
+        11.25
+      ],
+      "role": "right front downward hover nozzle",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.4,
+        1.2,
+        4.25
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        5.55,
+        11.25
+      ],
+      "faces": {},
+      "material": "blue_light",
+      "name": "right_front_hover_core",
+      "origin": [
+        14.0,
+        5.55,
+        11.25
+      ],
+      "role": "right front cyan downward hover core",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.1,
+        0.45,
+        2.625
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        6.3,
+        -12.5
+      ],
+      "faces": {},
+      "material": "vent",
+      "name": "right_rear_hover_nozzle",
+      "origin": [
+        14.0,
+        6.3,
+        -12.5
+      ],
+      "role": "right rear downward hover nozzle",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.4,
+        1.2,
+        4.25
+      ]
+    },
+    {
+      "bone": "right_pod",
+      "center": [
+        14.0,
+        5.55,
+        -12.5
+      ],
+      "faces": {},
+      "material": "blue_light",
+      "name": "right_rear_hover_core",
+      "origin": [
+        14.0,
+        5.55,
+        -12.5
+      ],
+      "role": "right rear cyan downward hover core",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.1,
+        0.45,
+        2.625
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        -5,
+        21.800679,
+        -8.75
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "antenna_left",
+      "origin": [
+        -5,
+        19.5,
+        -8.75
+      ],
+      "role": "roof communications aerial",
+      "rotation": [
+        -9.3808,
+        0,
+        7.594643
+      ],
+      "size": [
+        0.38,
+        4.801358,
+        0.38
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        5,
+        22.110825,
+        -8.75
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "antenna_right",
+      "origin": [
+        5,
+        19.5,
+        -8.75
+      ],
+      "role": "roof communications aerial",
+      "rotation": [
+        -9.646655,
+        0,
+        -7.815294
+      ],
+      "size": [
+        0.38,
+        5.42165,
+        0.38
+      ]
+    },
+    {
+      "bone": "roof",
+      "center": [
+        0,
+        21.264405,
+        -12.5
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "antenna_center",
+      "origin": [
+        0,
+        19.5,
+        -12.5
+      ],
+      "role": "roof communications aerial",
+      "rotation": [
+        -20.74608,
+        0,
+        0
+      ],
+      "size": [
+        0.38,
+        3.72881,
+        0.38
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "multi-axis-hard-surface-vehicle-v1",
+    "anatomical_axis": "+Z nose, -Z rear, X width, Y up",
+    "declared_attachments": [
+      {
+        "first": "belly_keel",
+        "joint": [
+          0,
+          9.8,
+          0.0
+        ],
+        "second": "lower_fuselage"
+      },
+      {
+        "first": "lower_fuselage",
+        "joint": [
+          0,
+          12.0,
+          0.0
+        ],
+        "second": "mid_fuselage"
+      },
+      {
+        "first": "mid_fuselage",
+        "joint": [
+          0,
+          15.3,
+          -2.5
+        ],
+        "second": "upper_cabin"
+      },
+      {
+        "first": "upper_cabin",
+        "joint": [
+          0,
+          18.7,
+          -2.5
+        ],
+        "second": "roof_spine"
+      },
+      {
+        "first": "upper_cabin",
+        "joint": [
+          0,
+          17.8,
+          9.75
+        ],
+        "second": "roof_front_slope"
+      },
+      {
+        "first": "mid_fuselage",
+        "joint": [
+          0,
+          14.0,
+          15.625
+        ],
+        "second": "nose_deck"
+      },
+      {
+        "first": "nose_deck",
+        "joint": [
+          0,
+          13.0,
+          21.25
+        ],
+        "second": "nose_mid"
+      },
+      {
+        "first": "nose_mid",
+        "joint": [
+          0,
+          11.2,
+          27.25
+        ],
+        "second": "nose_tip"
+      },
+      {
+        "first": "nose_mid",
+        "joint": [
+          0,
+          9.8,
+          26.0
+        ],
+        "second": "nose_lower"
+      },
+      {
+        "first": "lower_fuselage",
+        "joint": [
+          0,
+          11.8,
+          -19.375
+        ],
+        "second": "rear_cabin"
+      },
+      {
+        "first": "rear_cabin",
+        "joint": [
+          0,
+          16.0,
+          -21.25
+        ],
+        "second": "rear_upper_taper"
+      },
+      {
+        "first": "rear_cabin",
+        "joint": [
+          0,
+          10.5,
+          -24.75
+        ],
+        "second": "rear_bumper"
+      },
+      {
+        "first": "mid_fuselage",
+        "joint": [
+          -10.5,
+          12.0,
+          11.25
+        ],
+        "second": "left_pod_bridge_front"
+      },
+      {
+        "first": "left_pod_bridge_front",
+        "joint": [
+          -11.5,
+          11.8,
+          11.25
+        ],
+        "second": "left_pod_core"
+      },
+      {
+        "first": "lower_fuselage",
+        "joint": [
+          -10.5,
+          11.2,
+          -11.25
+        ],
+        "second": "left_pod_bridge_rear"
+      },
+      {
+        "first": "left_pod_bridge_rear",
+        "joint": [
+          -11.5,
+          11.5,
+          -11.25
+        ],
+        "second": "left_pod_core"
+      },
+      {
+        "first": "left_pod_core",
+        "joint": [
+          -14,
+          12.0,
+          13.75
+        ],
+        "second": "left_front_shoulder"
+      },
+      {
+        "first": "left_pod_core",
+        "joint": [
+          -14,
+          11.7,
+          -15.625
+        ],
+        "second": "left_rear_housing"
+      },
+      {
+        "first": "left_rear_housing",
+        "joint": [
+          -14,
+          11.5,
+          -21.25
+        ],
+        "second": "left_rear_cap"
+      },
+      {
+        "first": "mid_fuselage",
+        "joint": [
+          10.5,
+          12.0,
+          11.25
+        ],
+        "second": "right_pod_bridge_front"
+      },
+      {
+        "first": "right_pod_bridge_front",
+        "joint": [
+          11.5,
+          11.8,
+          11.25
+        ],
+        "second": "right_pod_core"
+      },
+      {
+        "first": "lower_fuselage",
+        "joint": [
+          10.5,
+          11.2,
+          -11.25
+        ],
+        "second": "right_pod_bridge_rear"
+      },
+      {
+        "first": "right_pod_bridge_rear",
+        "joint": [
+          11.5,
+          11.5,
+          -11.25
+        ],
+        "second": "right_pod_core"
+      },
+      {
+        "first": "right_pod_core",
+        "joint": [
+          14,
+          12.0,
+          13.75
+        ],
+        "second": "right_front_shoulder"
+      },
+      {
+        "first": "right_pod_core",
+        "joint": [
+          14,
+          11.7,
+          -15.625
+        ],
+        "second": "right_rear_housing"
+      },
+      {
+        "first": "right_rear_housing",
+        "joint": [
+          14,
+          11.5,
+          -21.25
+        ],
+        "second": "right_rear_cap"
+      },
+      {
+        "first": "left_pod_core",
+        "joint": [
+          -13.5,
+          8.0,
+          11.25
+        ],
+        "second": "front_left_gear_strut"
+      },
+      {
+        "first": "front_left_gear_strut",
+        "joint": [
+          -14.0,
+          5.8,
+          10.75
+        ],
+        "second": "front_left_gear_lower"
+      },
+      {
+        "first": "front_left_gear_lower",
+        "joint": [
+          -15.8,
+          4.5,
+          11.0
+        ],
+        "second": "front_left_gear_armor"
+      },
+      {
+        "first": "front_left_gear_lower",
+        "joint": [
+          -14.0,
+          3.1,
+          11.125
+        ],
+        "second": "front_left_gear_shoe"
+      },
+      {
+        "first": "front_left_gear_shoe",
+        "joint": [
+          -14.0,
+          0.9,
+          16.125
+        ],
+        "second": "front_left_gear_toe"
+      },
+      {
+        "first": "right_pod_core",
+        "joint": [
+          13.5,
+          8.0,
+          11.25
+        ],
+        "second": "front_right_gear_strut"
+      },
+      {
+        "first": "front_right_gear_strut",
+        "joint": [
+          14.0,
+          5.8,
+          10.75
+        ],
+        "second": "front_right_gear_lower"
+      },
+      {
+        "first": "front_right_gear_lower",
+        "joint": [
+          15.8,
+          4.5,
+          11.0
+        ],
+        "second": "front_right_gear_armor"
+      },
+      {
+        "first": "front_right_gear_lower",
+        "joint": [
+          14.0,
+          3.1,
+          11.125
+        ],
+        "second": "front_right_gear_shoe"
+      },
+      {
+        "first": "front_right_gear_shoe",
+        "joint": [
+          14.0,
+          0.9,
+          16.125
+        ],
+        "second": "front_right_gear_toe"
+      },
+      {
+        "first": "left_pod_core",
+        "joint": [
+          -13.5,
+          8.0,
+          -12.5
+        ],
+        "second": "rear_left_gear_strut"
+      },
+      {
+        "first": "rear_left_gear_strut",
+        "joint": [
+          -14.0,
+          5.8,
+          -13.0
+        ],
+        "second": "rear_left_gear_lower"
+      },
+      {
+        "first": "rear_left_gear_lower",
+        "joint": [
+          -15.8,
+          4.5,
+          -12.75
+        ],
+        "second": "rear_left_gear_armor"
+      },
+      {
+        "first": "rear_left_gear_lower",
+        "joint": [
+          -14.0,
+          3.1,
+          -12.625
+        ],
+        "second": "rear_left_gear_shoe"
+      },
+      {
+        "first": "rear_left_gear_shoe",
+        "joint": [
+          -14.0,
+          0.9,
+          -7.625
+        ],
+        "second": "rear_left_gear_toe"
+      },
+      {
+        "first": "right_pod_core",
+        "joint": [
+          13.5,
+          8.0,
+          -12.5
+        ],
+        "second": "rear_right_gear_strut"
+      },
+      {
+        "first": "rear_right_gear_strut",
+        "joint": [
+          14.0,
+          5.8,
+          -13.0
+        ],
+        "second": "rear_right_gear_lower"
+      },
+      {
+        "first": "rear_right_gear_lower",
+        "joint": [
+          15.8,
+          4.5,
+          -12.75
+        ],
+        "second": "rear_right_gear_armor"
+      },
+      {
+        "first": "rear_right_gear_lower",
+        "joint": [
+          14.0,
+          3.1,
+          -12.625
+        ],
+        "second": "rear_right_gear_shoe"
+      },
+      {
+        "first": "rear_right_gear_shoe",
+        "joint": [
+          14.0,
+          0.9,
+          -7.625
+        ],
+        "second": "rear_right_gear_toe"
+      }
+    ],
+    "feature_inventory": {
+      "central_fuselage_cuboids": 20,
+      "landing_gear_cuboids": 20,
+      "landing_gear_modules": 4,
+      "left_side_pod_cuboids": 22,
+      "medical_marking_strokes": 16,
+      "rear_pod_louvers": 8,
+      "rear_thruster_cuboids": 6,
+      "right_side_pod_cuboids": 22,
+      "roof_aerials": 3,
+      "side_detail_cuboids": 98,
+      "under_nose_weapon_barrels": 8,
+      "under_nose_weapon_muzzles": 8,
+      "ventral_machinery_cuboids": 6
+    },
+    "geometry_references": [
+      {
+        "height": 1080,
+        "image": "round3-inputs/atlus-multiview/front-quarter.webp",
+        "sha256": "12c3c09ae7ba0c10efe46411c57a13f1477b695923e05475ce34b07c6ca7e967",
+        "use": "geometry-and-marking-evidence-only",
+        "view": "front-quarter",
+        "width": 1920
+      },
+      {
+        "height": 1080,
+        "image": "round3-inputs/atlus-multiview/front.webp",
+        "sha256": "7bb5a2aebb27c2c4d42343f0ef3b19f993733a596b7187576d22d2623227daa4",
+        "use": "geometry-and-marking-evidence-only",
+        "view": "front",
+        "width": 1920
+      },
+      {
+        "height": 1080,
+        "image": "round3-inputs/atlus-multiview/side.webp",
+        "sha256": "c47b04501de8a59322ae03d6bfb8d2302e5f474f58a3f022bb5cfa22818c0d98",
+        "use": "geometry-and-marking-evidence-only",
+        "view": "side",
+        "width": 1920
+      },
+      {
+        "height": 1080,
+        "image": "round3-inputs/atlus-multiview/rear.webp",
+        "sha256": "6454b749f851f58f77b3d670683855cb020c18d6e61b2642a47b24fb37b2d83d",
+        "use": "geometry-and-marking-evidence-only",
+        "view": "rear",
+        "width": 1920
+      },
+      {
+        "height": 1080,
+        "image": "round3-inputs/atlus-multiview/top.webp",
+        "sha256": "a4a01fa0d23029f3299e493428db8c737fddca533e66e221f464eb10be79a4f0",
+        "use": "geometry-and-marking-evidence-only",
+        "view": "top",
+        "width": 1920
+      }
+    ],
+    "landing_gear": [
+      {
+        "ankle": [
+          -14.0,
+          3.1,
+          11.125
+        ],
+        "knee": [
+          -14.0,
+          5.8,
+          10.75
+        ],
+        "name": "front_left_gear",
+        "root": [
+          -13.5,
+          8.0,
+          11.25
+        ],
+        "shoe": "front_left_gear_shoe"
+      },
+      {
+        "ankle": [
+          14.0,
+          3.1,
+          11.125
+        ],
+        "knee": [
+          14.0,
+          5.8,
+          10.75
+        ],
+        "name": "front_right_gear",
+        "root": [
+          13.5,
+          8.0,
+          11.25
+        ],
+        "shoe": "front_right_gear_shoe"
+      },
+      {
+        "ankle": [
+          -14.0,
+          3.1,
+          -12.625
+        ],
+        "knee": [
+          -14.0,
+          5.8,
+          -13.0
+        ],
+        "name": "rear_left_gear",
+        "root": [
+          -13.5,
+          8.0,
+          -12.5
+        ],
+        "shoe": "rear_left_gear_shoe"
+      },
+      {
+        "ankle": [
+          14.0,
+          3.1,
+          -12.625
+        ],
+        "knee": [
+          14.0,
+          5.8,
+          -13.0
+        ],
+        "name": "rear_right_gear",
+        "root": [
+          13.5,
+          8.0,
+          -12.5
+        ],
+        "shoe": "rear_right_gear_shoe"
+      }
+    ],
+    "lane": "agent-authored-holistic-semantic-volume",
+    "side_pod_feature_names": {
+      "left": [
+        "left_pod_bridge_front",
+        "left_pod_bridge_rear",
+        "left_pod_core",
+        "left_pod_upper",
+        "left_pod_lower",
+        "left_front_shoulder",
+        "left_front_brow",
+        "left_intake_frame",
+        "left_intake",
+        "left_rear_housing",
+        "left_rear_cap",
+        "left_rear_throat",
+        "left_rear_core",
+        "left_outer_door",
+        "left_door_top",
+        "left_door_bottom",
+        "left_door_front",
+        "left_door_rear",
+        "left_top_sensor",
+        "left_bottom_fin",
+        "left_forward_strake",
+        "left_rear_strake"
+      ],
+      "right": [
+        "right_pod_bridge_front",
+        "right_pod_bridge_rear",
+        "right_pod_core",
+        "right_pod_upper",
+        "right_pod_lower",
+        "right_front_shoulder",
+        "right_front_brow",
+        "right_intake_frame",
+        "right_intake",
+        "right_rear_housing",
+        "right_rear_cap",
+        "right_rear_throat",
+        "right_rear_core",
+        "right_outer_door",
+        "right_door_top",
+        "right_door_bottom",
+        "right_door_front",
+        "right_door_rear",
+        "right_top_sensor",
+        "right_bottom_fin",
+        "right_forward_strake",
+        "right_rear_strake"
+      ]
+    },
+    "single_view_hidden_geometry": "Five official exterior views constrain front, side, rear, and roof shape. The inaccessible underside interior remains a conservative bilateral hard-surface inference rather than claimed source-observed truth.",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0,
+    "texture_contract": {
+      "all_material_patterns_solid": true,
+      "name": "bounded-trauma-team-minecraft-panels",
+      "palette_roles": [
+        "white",
+        "gray",
+        "teal",
+        "red",
+        "dark machinery",
+        "cyan light"
+      ],
+      "procedural_noise": false,
+      "source_pixels_embedded_verbatim": false
+    }
+  },
+  "geometry": {
+    "precision": 32
+  },
+  "id": "atlus_trauma_team_aerodyne",
+  "landmarks": [
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.52,
+        0.48
+      ],
+      "color": "#9b1d2a",
+      "cube": "left_outer_door",
+      "face": "west",
+      "name": "left_door_cross_vertical",
+      "size": [
+        3,
+        9
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.52,
+        0.48
+      ],
+      "color": "#9b1d2a",
+      "cube": "left_outer_door",
+      "face": "west",
+      "name": "left_door_cross_horizontal",
+      "size": [
+        9,
+        3
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.43,
+        0.39
+      ],
+      "color": "#9b1d2a",
+      "cube": "left_outer_door",
+      "face": "west",
+      "name": "left_door_cross_diagonal_1",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.61,
+        0.39
+      ],
+      "color": "#9b1d2a",
+      "cube": "left_outer_door",
+      "face": "west",
+      "name": "left_door_cross_diagonal_2",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.43,
+        0.57
+      ],
+      "color": "#9b1d2a",
+      "cube": "left_outer_door",
+      "face": "west",
+      "name": "left_door_cross_diagonal_3",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.61,
+        0.57
+      ],
+      "color": "#9b1d2a",
+      "cube": "left_outer_door",
+      "face": "west",
+      "name": "left_door_cross_diagonal_4",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.52,
+        0.18
+      ],
+      "color": "#a3212c",
+      "cube": "left_outer_door",
+      "face": "west",
+      "name": "left_door_label",
+      "size": [
+        8,
+        1
+      ]
+    },
+    {
+      "center_color": "#0a1116",
+      "center_uv": [
+        0.25,
+        0.3
+      ],
+      "color": "#16242c",
+      "cube": "left_front_shoulder",
+      "face": "west",
+      "name": "left_pod_vent_1",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#0a1116",
+      "center_uv": [
+        0.25,
+        0.38
+      ],
+      "color": "#16242c",
+      "cube": "left_front_shoulder",
+      "face": "west",
+      "name": "left_pod_vent_2",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#0a1116",
+      "center_uv": [
+        0.25,
+        0.46
+      ],
+      "color": "#16242c",
+      "cube": "left_front_shoulder",
+      "face": "west",
+      "name": "left_pod_vent_3",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.52,
+        0.48
+      ],
+      "color": "#9b1d2a",
+      "cube": "right_outer_door",
+      "face": "east",
+      "name": "right_door_cross_vertical",
+      "size": [
+        3,
+        9
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.52,
+        0.48
+      ],
+      "color": "#9b1d2a",
+      "cube": "right_outer_door",
+      "face": "east",
+      "name": "right_door_cross_horizontal",
+      "size": [
+        9,
+        3
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.43,
+        0.39
+      ],
+      "color": "#9b1d2a",
+      "cube": "right_outer_door",
+      "face": "east",
+      "name": "right_door_cross_diagonal_1",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.61,
+        0.39
+      ],
+      "color": "#9b1d2a",
+      "cube": "right_outer_door",
+      "face": "east",
+      "name": "right_door_cross_diagonal_2",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.43,
+        0.57
+      ],
+      "color": "#9b1d2a",
+      "cube": "right_outer_door",
+      "face": "east",
+      "name": "right_door_cross_diagonal_3",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.61,
+        0.57
+      ],
+      "color": "#9b1d2a",
+      "cube": "right_outer_door",
+      "face": "east",
+      "name": "right_door_cross_diagonal_4",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.52,
+        0.18
+      ],
+      "color": "#a3212c",
+      "cube": "right_outer_door",
+      "face": "east",
+      "name": "right_door_label",
+      "size": [
+        8,
+        1
+      ]
+    },
+    {
+      "center_color": "#0a1116",
+      "center_uv": [
+        0.25,
+        0.3
+      ],
+      "color": "#16242c",
+      "cube": "right_front_shoulder",
+      "face": "east",
+      "name": "right_pod_vent_1",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#0a1116",
+      "center_uv": [
+        0.25,
+        0.38
+      ],
+      "color": "#16242c",
+      "cube": "right_front_shoulder",
+      "face": "east",
+      "name": "right_pod_vent_2",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#0a1116",
+      "center_uv": [
+        0.25,
+        0.46
+      ],
+      "color": "#16242c",
+      "cube": "right_front_shoulder",
+      "face": "east",
+      "name": "right_pod_vent_3",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#9b1d2a",
+      "cube": "roof_medical_panel",
+      "face": "up",
+      "name": "roof_cross_vertical",
+      "size": [
+        3,
+        10
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#9b1d2a",
+      "cube": "roof_medical_panel",
+      "face": "up",
+      "name": "roof_cross_horizontal",
+      "size": [
+        10,
+        3
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#9b1d2a",
+      "cube": "rear_service_panel",
+      "face": "north",
+      "name": "rear_cross_vertical",
+      "size": [
+        2,
+        7
+      ]
+    },
+    {
+      "center_color": "#d8373f",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#9b1d2a",
+      "cube": "rear_service_panel",
+      "face": "north",
+      "name": "rear_cross_horizontal",
+      "size": [
+        7,
+        2
+      ]
+    },
+    {
+      "center_color": "#c0c9ca",
+      "center_uv": [
+        0.28,
+        0.5
+      ],
+      "color": "#778690",
+      "cube": "front_grille",
+      "face": "south",
+      "name": "front_grille_slit_1",
+      "size": [
+        1,
+        5
+      ]
+    },
+    {
+      "center_color": "#c0c9ca",
+      "center_uv": [
+        0.42,
+        0.5
+      ],
+      "color": "#778690",
+      "cube": "front_grille",
+      "face": "south",
+      "name": "front_grille_slit_2",
+      "size": [
+        1,
+        5
+      ]
+    },
+    {
+      "center_color": "#c0c9ca",
+      "center_uv": [
+        0.58,
+        0.5
+      ],
+      "color": "#778690",
+      "cube": "front_grille",
+      "face": "south",
+      "name": "front_grille_slit_3",
+      "size": [
+        1,
+        5
+      ]
+    },
+    {
+      "center_color": "#c0c9ca",
+      "center_uv": [
+        0.72,
+        0.5
+      ],
+      "color": "#778690",
+      "cube": "front_grille",
+      "face": "south",
+      "name": "front_grille_slit_4",
+      "size": [
+        1,
+        5
+      ]
+    }
+  ],
+  "materials": {
+    "amber": {
+      "base": "#d69225",
+      "highlight": "#ffd15b",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#6e3a08"
+    },
+    "blue_light": {
+      "base": "#38c2d7",
+      "highlight": "#8ce8ee",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#126071"
+    },
+    "glass": {
+      "base": "#24445d",
+      "highlight": "#6b91a7",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#101e2b"
+    },
+    "gunmetal": {
+      "base": "#313b46",
+      "highlight": "#667481",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#121820"
+    },
+    "red": {
+      "base": "#a3212c",
+      "highlight": "#e2454c",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#4b0d14"
+    },
+    "rubber": {
+      "base": "#20252b",
+      "highlight": "#4b525a",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#090c10"
+    },
+    "teal": {
+      "base": "#2a9da5",
+      "highlight": "#62cbd0",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#15555f"
+    },
+    "teal_dark": {
+      "base": "#17616d",
+      "highlight": "#3599a4",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#0b3039"
+    },
+    "teal_light": {
+      "base": "#55bfc2",
+      "highlight": "#91e1dc",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#277b83"
+    },
+    "vent": {
+      "base": "#17232d",
+      "highlight": "#485865",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#080d12"
+    },
+    "white": {
+      "base": "#d9e0e2",
+      "highlight": "#f5f8f7",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#879198"
+    },
+    "white_bright": {
+      "base": "#eef2ef",
+      "highlight": "#ffffff",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#aeb8bc"
+    },
+    "white_shadow": {
+      "base": "#9ea9ae",
+      "highlight": "#d1d8d9",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#5c6870"
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "low broad white armored fuselage with a faceted prow",
+      "paired full-depth teal side nacelles and white Trauma Team doors",
+      "red medical crosses and bounded emergency markings",
+      "four modeled landing modules and a detailed underside",
+      "rear cyan drive cores, roof beacons, sensors, and aerials"
+    ],
+    "required_views": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "isometric",
+      "reference-angle",
+      "underside",
+      "side-pod-closeup",
+      "rear-closeup",
+      "underside-closeup"
+    ],
+    "review_targets": [
+      "three-axis volume",
+      "front-to-back silhouette",
+      "side-pod depth",
+      "opposite-side completeness",
+      "rear machinery",
+      "underside articulation",
+      "clean Minecraft palette"
+    ],
+    "target_cuboids": [
+      140,
+      170
+    ]
+  },
+  "reference": {
+    "height": 340,
+    "image": "../../../../round3-inputs/atlus.png",
+    "sha256": "5458ba42d698b38ed2a0a3a55e17a4608a2a4579f3bcdfc22a9b3e7018c74a25",
+    "width": 712
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "White and teal Trauma Team Atlus armored aerodyne",
+    "symmetry": "bilateral",
+    "type": "vehicle",
+    "uncertainties": [
+      "Only one three-quarter reference image was supplied.",
+      "The exact rear thruster layout and underside are conservatively inferred.",
+      "The hidden opposite-side graphics mirror the observed side."
+    ]
+  },
+  "texture": {
+    "atlas_size": 512,
+    "density": 2,
+    "gutter": 1,
+    "palette_size": 24,
+    "quantize_source": false
+  }
+}

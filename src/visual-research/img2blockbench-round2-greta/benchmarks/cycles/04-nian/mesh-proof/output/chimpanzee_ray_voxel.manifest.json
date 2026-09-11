@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 46665,
+      "path": "chimpanzee_ray_voxel.model-spec.json",
+      "sha256": "8cf6c2f96420b5944615e651a5786f7741cd45f39c65a17033e847e5396b1394"
+    },
+    {
+      "bytes": 1715,
+      "path": "chimpanzee_ray_voxel.png",
+      "sha256": "e39dca615a8a83a567a76033bf9eb749aa83b5bb7b0103f1b1bc0d752822b39a"
+    },
+    {
+      "bytes": 113342,
+      "path": "chimpanzee_ray_voxel.bbmodel",
+      "sha256": "c1b4c3282268abd5ba2871bd271d6a1340fce2ce1f4bfd61db3eff10f801d92e"
+    },
+    {
+      "bytes": 138497,
+      "path": "chimpanzee_ray_voxel.geo.json",
+      "sha256": "ab75fd3af7e8eee38daf2a1cfebc53a0b68e8fcedfc3de7e3694e284530f55ac"
+    },
+    {
+      "bytes": 211,
+      "path": "chimpanzee_ray_voxel.audit.json",
+      "sha256": "96b11567a16786779bd5ca0848ad14c683286b025e66a63fb0ae16159e37c2e2"
+    },
+    {
+      "bytes": 2513,
+      "path": "chimpanzee_ray_voxel.reference.png",
+      "sha256": "704e00f65d5e88fbf4bebe10585e95f725b79db55bca4e58595ae18831af6547"
+    }
+  ],
+  "collision": {
+    "eye_height": 1.641379,
+    "height": 1.931034,
+    "width": 2.0
+  },
+  "generator": {
+    "lane": "mesh-ray-voxel",
+    "name": "img2blockbench",
+    "version": "0.2.0"
+  },
+  "model_id": "chimpanzee_ray_voxel",
+  "reference": {
+    "height": 252,
+    "image": "chimpanzee_ray_voxel.reference.png",
+    "sha256": "704e00f65d5e88fbf4bebe10585e95f725b79db55bca4e58595ae18831af6547",
+    "width": 207
+  },
+  "schema_version": 1
+}

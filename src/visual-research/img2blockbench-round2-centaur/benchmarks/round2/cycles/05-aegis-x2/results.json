@@ -1,0 +1,33 @@
+{
+  "artifact_sha256": {
+    "audit": "ada2b6e55e9d8c8766f54164ce7932a36c22e8266a1b6523429e8e88254b7220",
+    "bbmodel": "34f296a08d1164503d46c0e1e3ab0ccc7b89bfa3c75f91125386bf8e0c7a2a29",
+    "built_model_spec": "8c248845b03b6ab27ad0ce5a0138593179a5edeefd37a962284d5e3251058819",
+    "comparison_sheet": "0edcce048f32641c8bfc904f5b7f8ae7776b45a7a9396a8c83afac36516328a2",
+    "evaluation": "7c8947a6a1b98f0c462f7f44994363d618d3ffbac8f330fa3f15d8bf6bdefb96",
+    "geo_json": "9a33b4ee0c5de07ae3dfa15065e3ee748973a57f7cd72d43fa0f3e4e3f60adba",
+    "manifest": "fe9eb373399223089b50579fddf72b44d73ff010afaa6309d61f8f724e0d5983",
+    "model_spec": "cc39335d69e852db66cb93e43395bdace84d18b8a10bbbf60ea3da5bebebbcbc",
+    "perspective_cameras": "862a1deaf7b63db89595536a5ad24315435bb3b5fc8bbaadbea583722951b861",
+    "reference": "31bb69536ce0f26540034096402cebc6e006ee9cb7ec56b38deb5bf04afb2e23",
+    "texture": "3f720b455d33c7b543be4744fb6f104dfe3b75aa8058774047302db7d33798f1",
+    "zip": "c7a1be3cbd17c2afa2c90ce170e4eb84e6eb168ba2fc3a47d011b6c4b3dde5af"
+  },
+  "asset": "aegis_x2_turret",
+  "author_checks": {
+    "all_144_declared_attachments_connected": true,
+    "all_four_supports_grounded": true,
+    "all_three_fixed_camera_aspirations_pass": true,
+    "camera_parameters_are_estimated": true,
+    "hidden_geometry_established": false,
+    "source_projection": false,
+    "strict_native_audit": true,
+    "two_builds_byte_identical": true,
+    "visual_hull_used": false,
+    "weapon_axes_opposed": true
+  },
+  "bones": 11,
+  "cuboids": 145,
+  "cycle": "round2-05",
+  "model_id": "aegis_x2_turret"
+}

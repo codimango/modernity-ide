@@ -1,0 +1,15 @@
+{
+  "cycle_id": "round3-03-off-road-truck",
+  "hash_policy": "The first successful reconstruction, seven-view verification, and native build locks SHA-256 and byte length. Every later run must match both before reconstruction starts.",
+  "schema_version": 1,
+  "source": {
+    "byte_length": null,
+    "format": "glb",
+    "license": "unrecorded",
+    "provider": "user-supplied",
+    "provider_model": "unrecorded",
+    "relative_path": "round3-inputs/Minecraft-style off-road truck.glb",
+    "sha256": null
+  },
+  "status": "awaiting-first-successful-reconstruction"
+}

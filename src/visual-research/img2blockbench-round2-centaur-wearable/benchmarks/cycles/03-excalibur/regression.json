@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "release_correction": "replace Cycle 3 image-depthfield slab with a native semantic sword",
+  "scope": {
+    "asset_files": "benchmarks/cycles/03-excalibur/**",
+    "focused_test": "tests/test_cycle03_excalibur.py",
+    "other_cycle_assets_edited_by_this_correction": false,
+    "shared_core_edited_by_this_correction": false
+  },
+  "determinism": {
+    "runs": 2,
+    "model_spec_byte_identical": true,
+    "bbmodel_byte_identical": true,
+    "geo_json_byte_identical": true,
+    "texture_byte_identical": true,
+    "audit_byte_identical": true,
+    "comparison_sheet_byte_identical": true,
+    "evaluation_byte_identical": true
+  },
+  "verification": {
+    "focused_tests_run": 2,
+    "focused_tests_passed": 2,
+    "full_tests_run": 59,
+    "full_tests_passed": 59,
+    "strict_validation": "PASS",
+    "native_build_audit": "PASS"
+  }
+}

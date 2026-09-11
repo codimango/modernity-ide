@@ -1,0 +1,44 @@
+{
+  "asset": "tomato_devil",
+  "author_checks": {
+    "all_121_declared_attachments_connected": true,
+    "all_eight_arm_endpoints_grounded": true,
+    "arm_depth_to_body_depth": 1.133566,
+    "arm_span_to_body_width": 1.374795,
+    "audit_ok": true,
+    "body_depth_to_width": 0.992556,
+    "body_to_full_height": 0.579261,
+    "body_width_to_height": 0.982927,
+    "eye_layout_rms_body_widths": 0.01268,
+    "feature_contract_pass": true,
+    "minimum_compiled_oriented_joint_margin": 0.072155,
+    "mouth_length_to_body_height": 0.526829,
+    "mouth_width_to_body_width": 0.024814,
+    "source_skin_cuboids": 0,
+    "strict_validation": true,
+    "two_builds_byte_identical": true
+  },
+  "artifact_sha256": {
+    "bbmodel": "5763a43615bf39f83f0a211863e8142737ed08a266d752ec458fa8512b4c87f4",
+    "comparison_sheet": "c013f031d4e340846eae2caa0177c4dae53e5a09f264b6b1bf9d56a824bfd754",
+    "model_spec": "246fc4c151e038efa550ff167c19243cebb36698012dc221515c27af53446d63",
+    "texture": "93f3fcc9e0b8f0bdfabe0c97e91642e3dd7120dfa90f6fae91ff3857b2571388"
+  },
+  "bones": 68,
+  "cuboids": 192,
+  "cycle": 5,
+  "general_improvement": {
+    "capabilities": [
+      "exact voxelized ellipsoid and superellipsoid occupancy",
+      "deterministic multi-strategy greedy cuboid merging",
+      "explicit cuboid-budget enforcement",
+      "arbitrary-3D connected cuboid chains",
+      "local-Z flat blade chains with independent width and thickness",
+      "outward face-normal orientation for protruding features",
+      "reviewed complex-model validation up to 192 cuboids",
+      "exact inverse-Euler compiler-snapped joint audit"
+    ],
+    "module": "skill/img2blockbench/scripts/semantic_geometry.py"
+  },
+  "model_id": "tomato_devil"
+}

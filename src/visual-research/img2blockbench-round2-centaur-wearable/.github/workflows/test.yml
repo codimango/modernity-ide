@@ -1,0 +1,23 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e '.[all]'
+      - run: python -m pip wheel . --no-deps --no-build-isolation --wheel-dir /tmp/img2blockbench-wheel
+      - run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - run: img2blockbench validate examples/fox/model-spec.json --strict
+      - run: img2blockbench review examples/fox/model-spec.json --output /tmp/fox-review
+      - run: python tools/build-platform-release.py --output /tmp/img2blockbench-release

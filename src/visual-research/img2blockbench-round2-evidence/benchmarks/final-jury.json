@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "graded_commit": "c7a7556fc26d6ec754c17832ed9f85983354a766",
+  "grader": "fresh_read_only_codex_terminal",
+  "selection": [
+    "american_goldfinch",
+    "porsche_911_turbo_930",
+    "nian_beast",
+    "gamma_full_body"
+  ],
+  "selection_rationale": "Representative animal photograph, vehicle render, quadruped fantasy creature, and complex humanoid horror illustration.",
+  "verdict": "PASS",
+  "all_four_pass": true,
+  "mean": 4.21,
+  "assets": {
+    "american_goldfinch": {
+      "mean": 4.17,
+      "scores": [4, 4, 5, 4, 4, 4]
+    },
+    "porsche_911_turbo_930": {
+      "mean": 4.17,
+      "scores": [4, 4, 5, 4, 4, 4]
+    },
+    "nian_beast": {
+      "mean": 4.33,
+      "scores": [4, 4, 5, 5, 4, 4]
+    },
+    "gamma_full_body": {
+      "mean": 4.17,
+      "scores": [4, 4, 5, 4, 4, 4]
+    }
+  },
+  "score_order": [
+    "silhouette",
+    "proportions",
+    "identity",
+    "materials_color",
+    "attachment_topology",
+    "3d_coherence"
+  ],
+  "cross_domain_verdict": "Recognizable quality generalizes across bird, vehicle, quadruped creature, and abstract horror subject.",
+  "limitations": [
+    "The output is intentionally voxel/cuboid-stylized, not photorealistic surface geometry.",
+    "A single image cannot establish hidden anatomy or concavities; calibrated views, clip frames, or a mesh are required for evidence-backed hidden geometry.",
+    "The benchmark references and comparison sheets are retained locally for evaluation and must not be redistributed without permission."
+  ]
+}

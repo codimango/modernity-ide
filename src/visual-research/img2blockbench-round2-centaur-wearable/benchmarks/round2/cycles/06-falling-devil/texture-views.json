@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "views": [
+    {
+      "camera": {
+        "focal_x": 794.4844979919848,
+        "focal_y": 794.4844979919848,
+        "image_size": [
+          399,
+          501
+        ],
+        "near": 0.1,
+        "principal_point": [
+          199.5,
+          259.0
+        ],
+        "projection": "perspective",
+        "translation": [
+          0.0,
+          -50.0,
+          -175.0
+        ],
+        "world_to_camera": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "id": "front-source",
+      "image": "../../../../image-12.png",
+      "image_sha256": "e2824aa87127cb8922be7e37ae0942f9abfbf8413fbe39ce133edf4ed06c18fb",
+      "mask": "render/reference-mask.png",
+      "mask_sha256": "9edc8e04a52f6fe8c8003b1dfee0f8960828ebf49440259dbe5cb621ba725cd5"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "artifact_sha256": {
+    "audit": "b7dbc048b7cd9c0baabf51ff1d8638ad663fe998c87e8f5d3e2317c868b6f40b",
+    "bbmodel": "79715e96c05485b2cf80f1b0691e8dc676eaed5dfdd4345023ad579d84a8049d",
+    "comparison_sheet": "d3bf8bb5e1a78535738c1ed67b0dc3c8f41d81a7ed6dab6784cf25b3089b8e71",
+    "evaluation": "458ae9e3fc0b651fd1e28fec589a2dfea1692a82a78b40238a508afd240bdde4",
+    "geo_json": "d7ea00cf43214c89a9f87d40f67dfcba9ea4007cd5e7c7881fb07efadb27d71d",
+    "model_spec": "8e9565bc53bb20f67b0253f316e43c361b512e0489ef9fecb2bf7fc0d2c43dd4",
+    "texture": "f41c66b99d9c01b19f7a046001d229c6439510a50c9564b5e526cc8f07ba9e5a"
+  },
+  "author_checks": {
+    "all_16_declared_attachments_connected": true,
+    "audit_ok": true,
+    "authored_livery_only": true,
+    "four_wheel_ground_heights": [
+      0.139942,
+      0.139942,
+      0.131103,
+      0.131103
+    ],
+    "no_source_projection": true,
+    "source_angle_silhouette_iou": 0.71078,
+    "source_skin_cuboids": 0,
+    "strict_validation": true,
+    "two_builds_byte_identical": true
+  },
+  "bones": 13,
+  "cuboids": 97,
+  "cycle": 2,
+  "model_id": "porsche_911_turbo_930",
+  "representation": "complete-hard-surface-semantic-cuboids-v2"
+}

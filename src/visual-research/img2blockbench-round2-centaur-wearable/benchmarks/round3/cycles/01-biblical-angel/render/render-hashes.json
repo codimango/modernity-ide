@@ -1,0 +1,20 @@
+{
+  "algorithm": "sha256",
+  "model_only": true,
+  "required_renders": {
+    "all-angle-sheet.png": "28047cf2ad6a8943ec02d983eb314a447276dd3bcdfde8295209e827fc0f1f02",
+    "back.png": "0753d40f7796ba78ccc69f841625d9b94c18da0b8d2996205b83c035724821c1",
+    "bottom.png": "2426b5418e1e07c8554f0320510174718be4fc2de557aa96b8b6d28f2ed9635d",
+    "crown-wrap-closeup.png": "959b8f37df536b9f6ef1aa61da897a1607664477309c062449fa478a89362f62",
+    "eye-crown-closeup.png": "d97816d00a65cda5484d8e841c633b0e3e8e34663457cf3d7d6f6144c9e9cdcc",
+    "front.png": "1d19ab4213c2e47a349d2ef4361dec673e2e813e7c03a6be4378b429dc8ec522",
+    "isometric.png": "bf3ca62b6d5cfbbd6d9df3f5c237dd00fc3a478d4ecbbeb0666fa09018f2c5f8",
+    "left.png": "e7bb678ce7e66add1afcb02437faf77ad3a97ccebd3d3a44d498c61ec4ed915f",
+    "rear-eyes-closeup.png": "e1f0c7deff6f6d6917e5d481313307eca6628acb7297eefd060a8b935daf33bb",
+    "right.png": "ddd3f3bb73b637e294358eadf2342337f07594df4bd373790894bb064edc2511",
+    "side-depth-closeup.png": "e52dfa78c2b5d1955c71af83741ad8d6d51e99382e3c22d47fc74e3a5c5d8a93",
+    "top.png": "e145a2c3a24bb40dc1cbb4a79f39315079dbc8470fd7f47b9add282e0c22245d",
+    "wing-layers-closeup.png": "ba8418043dc3825ebe178864daef6f40e213eb8315799dff109c8bd3409c01b5",
+    "wing-tip-closeup.png": "e1d7322a6efe822800d568fa9a35bf0daedcb806c2f0e78108a24aa5dbc212ad"
+  }
+}

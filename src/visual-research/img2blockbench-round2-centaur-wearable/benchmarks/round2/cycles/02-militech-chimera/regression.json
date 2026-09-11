@@ -1,0 +1,17 @@
+{
+  "baseline_commit": "fd11a5b98fff00ac1ca03979612e7aacca5e646e",
+  "cycle": "round2-02",
+  "fixed_camera_evidence_deterministic": true,
+  "independently_graded_commit": "decee510a73a0067f0f3b1770bfa064cd7ab7065",
+  "palette_gates": {
+    "alternate_white_reference_is_geometry_only": true,
+    "canonical_texture_reference": "original olive photograph",
+    "fallback_materials_are_olive_khaki_panels": true,
+    "minecraft_style_without_dither": true
+  },
+  "other_benchmark_files_modified_by_this_cycle": false,
+  "suite_status": "139/139 cumulative tests and 10/10 independent focused tests passed",
+  "scope": "Militech Chimera geometry plus canonical camouflage texture correction",
+  "strict_native_validation": true,
+  "two_builds_byte_identical": true
+}

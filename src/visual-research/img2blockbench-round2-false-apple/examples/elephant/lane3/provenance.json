@@ -1,0 +1,43 @@
+{
+  "agent_blueprint": "../../../tools/img2threejs/blueprints/elephant.json",
+  "blockbench_atlas": {
+    "bytes": 8889,
+    "path": "blockbench/elephant-lane3.png",
+    "sha256": "8e9eee6197ba351901e07bf85cd061b11ee63b86cf442c220b4e28890853b4fe",
+    "source": "5 img2threejs MeshPhysicalMaterial base-color maps",
+    "threejs_materials": 5
+  },
+  "blockbench_model": {
+    "bytes": 53138,
+    "path": "blockbench/elephant-lane3.bbmodel",
+    "sha256": "672ca680103662435584a77279037ba8015157556f7ca7a6b4b8524d52054e53"
+  },
+  "generated_factory": {
+    "bytes": 190910,
+    "path": "createMinecraftElephantModel.generated.ts",
+    "sha256": "0388750f40afd9ee8bee4e52399f3f9e83a3bebaf76e8bed88bb83bde0659706"
+  },
+  "reference": "../reference.png",
+  "spec": "img2threejs-spec.json",
+  "texture_transfer": {
+    "algorithm": "img2threejs-native-albedo-transfer",
+    "bytes": 1954,
+    "mapped_material_count": 5,
+    "path": "projection-audit.json",
+    "reference_projection": false,
+    "sha256": "89998d2ad918e19375ce1f3213e4eadd1903978d82ecd938fd0b6a8121c8e32e",
+    "source": "MeshPhysicalMaterial.map"
+  },
+  "threejs_scene": {
+    "bytes": 870292,
+    "path": "elephant.img2threejs.three.json",
+    "sha256": "0a6d1279656e9b6196d59d7ebb8dcfd5aabd7f16e5eb8edb4091b8cac8ecf547"
+  },
+  "upstream": {
+    "commit": "f1ade81d45252ede20323d74a5b269c819f75245",
+    "generated_pass": "optimization-pass",
+    "generator": "forge/stage3_build/generate_threejs_factory.py",
+    "license": "Apache-2.0",
+    "repository": "https://github.com/img2threejs/img2threejs"
+  }
+}

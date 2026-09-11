@@ -1,0 +1,18 @@
+{
+  "cycle_id": "round3-03-off-road-truck",
+  "generator": {
+    "algorithm": "orthographic-six-view-ray-voxel-adaptive-cuboids-v2",
+    "name": "img2blockbench",
+    "route": "provider-neutral textured mesh reconstruction"
+  },
+  "rights": "unrecorded; the private source remains ignored and is not redistributed",
+  "schema_version": 1,
+  "source": {
+    "license": "unrecorded",
+    "provider": "user-supplied",
+    "provider_model": "unrecorded",
+    "relative_path": "round3-inputs/Minecraft-style off-road truck.glb",
+    "sha256": null
+  },
+  "status": "source-not-yet-readable"
+}

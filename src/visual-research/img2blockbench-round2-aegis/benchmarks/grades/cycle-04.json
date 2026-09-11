@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "cycle": 4,
+  "cumulative_verdict": "PASS",
+  "prior_asset_regression": "NONE_DETECTED",
+  "attempts": [
+    {"representation": "depth-field relief", "verdict": "FAIL", "mean": 2.93},
+    {"representation": "semantic volume plus source skin", "verdict": "FAIL", "mean": 3.67},
+    {"representation": "all-semantic native volume", "verdict": "PASS", "mean": 4.1667}
+  ],
+  "assets": {
+    "american_goldfinch": {"verdict": "PASS", "mean": 3.8333},
+    "porsche_911_turbo_930": {"verdict": "PASS", "mean": 4.0},
+    "excalibur": {"verdict": "PASS", "mean": 4.3333},
+    "nian_beast": {
+      "verdict": "PASS",
+      "immediately_recognizable": true,
+      "critical_defect": false,
+      "scores": {
+        "silhouette": 4,
+        "proportions": 4,
+        "identity_features": 5,
+        "materials_color": 4,
+        "attachment_topology": 4,
+        "3d_coherence": 4,
+        "mean": 4.1667
+      }
+    }
+  },
+  "mesh_feature": {
+    "substantiated": true,
+    "triangle_raster_mean_iou": 0.8191,
+    "mean_source_coverage": 0.9992,
+    "surface_f1": 0.935582,
+    "provenance_caveat": "Bundled proof fixture lacks provider model/version and license metadata."
+  },
+  "required_fixes": []
+}

@@ -1,0 +1,2853 @@
+{
+  "all_perspective_aspirations_pass": true,
+  "articulation_audit": {
+    "axes_are_distinct": true,
+    "pitch_axis": {
+      "axis": "+Z",
+      "bone": "pitch_cradle",
+      "pivot": [
+        0,
+        70,
+        0
+      ]
+    },
+    "weapon_axes_opposed": true,
+    "weapon_axis_dot_product": -1.0,
+    "yaw_axis": {
+      "axis": "+Y",
+      "bone": "yaw_ring",
+      "pivot": [
+        0,
+        55,
+        0
+      ]
+    }
+  },
+  "attachments": {
+    "all_connected": true,
+    "attachments": [
+      {
+        "connected": true,
+        "first": "pedestal_lower_core",
+        "first_margin": 0.5,
+        "joint": [
+          0,
+          8,
+          8.5
+        ],
+        "minimum_margin": 0.09375,
+        "second": "pedestal_lower_front",
+        "second_margin": 0.09375
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_core",
+        "first_margin": 0.5,
+        "joint": [
+          0,
+          8,
+          -8.5
+        ],
+        "minimum_margin": 0.09375,
+        "second": "pedestal_lower_back",
+        "second_margin": 0.09375
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_core",
+        "first_margin": 0.5,
+        "joint": [
+          -8.5,
+          8,
+          0
+        ],
+        "minimum_margin": 0.09375,
+        "second": "pedestal_lower_left",
+        "second_margin": 0.09375
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_core",
+        "first_margin": 0.5,
+        "joint": [
+          8.5,
+          8,
+          0
+        ],
+        "minimum_margin": 0.09375,
+        "second": "pedestal_lower_right",
+        "second_margin": 0.09375
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_core",
+        "first_margin": 0.5,
+        "joint": [
+          0,
+          13.5,
+          0
+        ],
+        "minimum_margin": 0.5,
+        "second": "pedestal_lower_cap",
+        "second_margin": 0.5625
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_cap",
+        "first_margin": 0.2375,
+        "joint": [
+          0,
+          15.2,
+          0
+        ],
+        "minimum_margin": 0.2,
+        "second": "pedestal_mid_core",
+        "second_margin": 0.2
+      },
+      {
+        "connected": true,
+        "first": "pedestal_mid_core",
+        "first_margin": 0.25,
+        "joint": [
+          0,
+          23,
+          7.75
+        ],
+        "minimum_margin": 0.1875,
+        "second": "pedestal_mid_front_panel",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "pedestal_mid_core",
+        "first_margin": 0.25,
+        "joint": [
+          0,
+          23,
+          -7.75
+        ],
+        "minimum_margin": 0.1875,
+        "second": "pedestal_mid_back_panel",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "pedestal_mid_core",
+        "first_margin": 0.25,
+        "joint": [
+          -7.75,
+          23,
+          0
+        ],
+        "minimum_margin": 0.1875,
+        "second": "pedestal_mid_left_panel",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "pedestal_mid_core",
+        "first_margin": 0.25,
+        "joint": [
+          7.75,
+          23,
+          0
+        ],
+        "minimum_margin": 0.1875,
+        "second": "pedestal_mid_right_panel",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "pedestal_mid_core",
+        "first_margin": 3.120963,
+        "joint": [
+          4.879037,
+          23,
+          4.879037
+        ],
+        "minimum_margin": 0.251156,
+        "second": "pedestal_mid_corner_chamfer_1",
+        "second_margin": 0.251156
+      },
+      {
+        "connected": true,
+        "first": "pedestal_mid_core",
+        "first_margin": 3.120963,
+        "joint": [
+          4.879037,
+          23,
+          -4.879037
+        ],
+        "minimum_margin": 0.261344,
+        "second": "pedestal_mid_corner_chamfer_2",
+        "second_margin": 0.261344
+      },
+      {
+        "connected": true,
+        "first": "pedestal_mid_core",
+        "first_margin": 3.120963,
+        "joint": [
+          -4.879037,
+          23,
+          -4.879037
+        ],
+        "minimum_margin": 0.261344,
+        "second": "pedestal_mid_corner_chamfer_3",
+        "second_margin": 0.261344
+      },
+      {
+        "connected": true,
+        "first": "pedestal_mid_core",
+        "first_margin": 3.120963,
+        "joint": [
+          -4.879037,
+          23,
+          4.879037
+        ],
+        "minimum_margin": 0.251156,
+        "second": "pedestal_mid_corner_chamfer_4",
+        "second_margin": 0.251156
+      },
+      {
+        "connected": true,
+        "first": "pedestal_mid_core",
+        "first_margin": 0.5,
+        "joint": [
+          0,
+          50.5,
+          0
+        ],
+        "minimum_margin": 0.5,
+        "second": "pedestal_upper_cap",
+        "second_margin": 0.5625
+      },
+      {
+        "connected": true,
+        "first": "pedestal_upper_cap",
+        "first_margin": 0.0875,
+        "joint": [
+          0,
+          52.35,
+          0
+        ],
+        "minimum_margin": 0.0875,
+        "second": "yaw_ring_core",
+        "second_margin": 0.1
+      },
+      {
+        "connected": true,
+        "first": "yaw_ring_core",
+        "first_margin": 0.610913,
+        "joint": [
+          3.889087,
+          55,
+          9.389087
+        ],
+        "minimum_margin": 0.610913,
+        "second": "yaw_ring_segment_1",
+        "second_margin": 1.40625
+      },
+      {
+        "connected": true,
+        "first": "yaw_ring_core",
+        "first_margin": 0.610913,
+        "joint": [
+          9.389087,
+          55,
+          3.889087
+        ],
+        "minimum_margin": 0.610913,
+        "second": "yaw_ring_segment_2",
+        "second_margin": 1.403176
+      },
+      {
+        "connected": true,
+        "first": "yaw_ring_core",
+        "first_margin": 0.610913,
+        "joint": [
+          9.389087,
+          55,
+          -3.889087
+        ],
+        "minimum_margin": 0.610913,
+        "second": "yaw_ring_segment_3",
+        "second_margin": 1.40625
+      },
+      {
+        "connected": true,
+        "first": "yaw_ring_core",
+        "first_margin": 0.610913,
+        "joint": [
+          3.889087,
+          55,
+          -9.389087
+        ],
+        "minimum_margin": 0.610913,
+        "second": "yaw_ring_segment_4",
+        "second_margin": 1.403176
+      },
+      {
+        "connected": true,
+        "first": "yaw_ring_core",
+        "first_margin": 0.610913,
+        "joint": [
+          -3.889087,
+          55,
+          -9.389087
+        ],
+        "minimum_margin": 0.610913,
+        "second": "yaw_ring_segment_5",
+        "second_margin": 1.40625
+      },
+      {
+        "connected": true,
+        "first": "yaw_ring_core",
+        "first_margin": 0.610913,
+        "joint": [
+          -9.389087,
+          55,
+          -3.889087
+        ],
+        "minimum_margin": 0.610913,
+        "second": "yaw_ring_segment_6",
+        "second_margin": 1.403174
+      },
+      {
+        "connected": true,
+        "first": "yaw_ring_core",
+        "first_margin": 0.610913,
+        "joint": [
+          -9.389087,
+          55,
+          3.889087
+        ],
+        "minimum_margin": 0.610913,
+        "second": "yaw_ring_segment_7",
+        "second_margin": 1.40625
+      },
+      {
+        "connected": true,
+        "first": "yaw_ring_core",
+        "first_margin": 0.610913,
+        "joint": [
+          -3.889087,
+          55,
+          9.389087
+        ],
+        "minimum_margin": 0.610913,
+        "second": "yaw_ring_segment_8",
+        "second_margin": 1.403174
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_core",
+        "first_margin": 1.928932,
+        "joint": [
+          7.071068,
+          12,
+          7.071068
+        ],
+        "minimum_margin": 0.696068,
+        "second": "support_1_radial_beam",
+        "second_margin": 0.696068
+      },
+      {
+        "connected": true,
+        "first": "support_1_radial_beam",
+        "first_margin": 0.686092,
+        "joint": [
+          14.849242,
+          10,
+          14.849242
+        ],
+        "minimum_margin": 0.686092,
+        "second": "support_1_outer_brace",
+        "second_margin": 0.692992
+      },
+      {
+        "connected": true,
+        "first": "support_1_outer_brace",
+        "first_margin": 0.712049,
+        "joint": [
+          20.506097,
+          18,
+          20.506097
+        ],
+        "minimum_margin": 0.5,
+        "second": "support_1_outer_piston_casing",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "support_1_outer_piston_casing",
+        "first_margin": 0.5,
+        "joint": [
+          20.506097,
+          9,
+          20.506097
+        ],
+        "minimum_margin": 0.4375,
+        "second": "support_1_outer_piston_rod",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "support_1_outer_piston_rod",
+        "first_margin": 0.4375,
+        "joint": [
+          20.506097,
+          2,
+          20.506097
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_1_ground_foot",
+        "second_margin": 0.09375
+      },
+      {
+        "connected": true,
+        "first": "support_1_ground_foot",
+        "first_margin": 0.09375,
+        "joint": [
+          20.506097,
+          2,
+          20.506097
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_1_outer_toe",
+        "second_margin": 0.506097
+      },
+      {
+        "connected": true,
+        "first": "support_1_ground_foot",
+        "first_margin": 0.09375,
+        "joint": [
+          20.506097,
+          2,
+          20.506097
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_1_inner_heel",
+        "second_margin": 0.506097
+      },
+      {
+        "connected": true,
+        "first": "support_1_ground_foot",
+        "first_margin": 0.09375,
+        "joint": [
+          22.273864,
+          2,
+          22.273864
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_1_foot_bolt",
+        "second_margin": 0.15625
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_core",
+        "first_margin": 2,
+        "joint": [
+          5.656854,
+          12,
+          5.656854
+        ],
+        "minimum_margin": 0.4375,
+        "second": "support_1_inner_piston_casing",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "support_1_inner_piston_casing",
+        "first_margin": 0.441288,
+        "joint": [
+          11.313708,
+          14,
+          11.313708
+        ],
+        "minimum_margin": 0.4375,
+        "second": "support_1_inner_piston_rod",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_cap",
+        "first_margin": 0.9375,
+        "joint": [
+          6.717514,
+          14.5,
+          6.717514
+        ],
+        "minimum_margin": 0.312501,
+        "second": "support_1_red_cable_1",
+        "second_margin": 0.312501
+      },
+      {
+        "connected": true,
+        "first": "support_1_red_cable_1",
+        "first_margin": 0.307875,
+        "joint": [
+          10.960155,
+          15.4,
+          10.960155
+        ],
+        "minimum_margin": 0.30625,
+        "second": "support_1_red_cable_2",
+        "second_margin": 0.30625
+      },
+      {
+        "connected": true,
+        "first": "support_1_outer_brace",
+        "first_margin": 0.712049,
+        "joint": [
+          20.506097,
+          18,
+          20.506097
+        ],
+        "minimum_margin": 0.712049,
+        "second": "support_1_crown_cap",
+        "second_margin": 1.09375
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_core",
+        "first_margin": 1.928932,
+        "joint": [
+          7.071068,
+          12,
+          -7.071068
+        ],
+        "minimum_margin": 0.710182,
+        "second": "support_2_radial_beam",
+        "second_margin": 0.710182
+      },
+      {
+        "connected": true,
+        "first": "support_2_radial_beam",
+        "first_margin": 0.703228,
+        "joint": [
+          14.849242,
+          10,
+          -14.849242
+        ],
+        "minimum_margin": 0.703228,
+        "second": "support_2_outer_brace",
+        "second_margin": 0.713258
+      },
+      {
+        "connected": true,
+        "first": "support_2_outer_brace",
+        "first_margin": 0.691783,
+        "joint": [
+          20.506097,
+          18,
+          -20.506097
+        ],
+        "minimum_margin": 0.5,
+        "second": "support_2_outer_piston_casing",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "support_2_outer_piston_casing",
+        "first_margin": 0.5,
+        "joint": [
+          20.506097,
+          9,
+          -20.506097
+        ],
+        "minimum_margin": 0.4375,
+        "second": "support_2_outer_piston_rod",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "support_2_outer_piston_rod",
+        "first_margin": 0.4375,
+        "joint": [
+          20.506097,
+          2,
+          -20.506097
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_2_ground_foot",
+        "second_margin": 0.09375
+      },
+      {
+        "connected": true,
+        "first": "support_2_ground_foot",
+        "first_margin": 0.09375,
+        "joint": [
+          20.506097,
+          2,
+          -20.506097
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_2_outer_toe",
+        "second_margin": 0.493903
+      },
+      {
+        "connected": true,
+        "first": "support_2_ground_foot",
+        "first_margin": 0.09375,
+        "joint": [
+          20.506097,
+          2,
+          -20.506097
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_2_inner_heel",
+        "second_margin": 0.493903
+      },
+      {
+        "connected": true,
+        "first": "support_2_ground_foot",
+        "first_margin": 0.09375,
+        "joint": [
+          22.273864,
+          2,
+          -22.273864
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_2_foot_bolt",
+        "second_margin": 0.15625
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_core",
+        "first_margin": 2,
+        "joint": [
+          5.656854,
+          12,
+          -5.656854
+        ],
+        "minimum_margin": 0.4375,
+        "second": "support_2_inner_piston_casing",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "support_2_inner_piston_casing",
+        "first_margin": 0.441288,
+        "joint": [
+          11.313708,
+          14,
+          -11.313708
+        ],
+        "minimum_margin": 0.4375,
+        "second": "support_2_inner_piston_rod",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_cap",
+        "first_margin": 0.9375,
+        "joint": [
+          6.717514,
+          14.5,
+          -6.717514
+        ],
+        "minimum_margin": 0.312501,
+        "second": "support_2_red_cable_1",
+        "second_margin": 0.312501
+      },
+      {
+        "connected": true,
+        "first": "support_2_red_cable_1",
+        "first_margin": 0.307875,
+        "joint": [
+          10.960155,
+          15.4,
+          -10.960155
+        ],
+        "minimum_margin": 0.30625,
+        "second": "support_2_red_cable_2",
+        "second_margin": 0.30625
+      },
+      {
+        "connected": true,
+        "first": "support_2_outer_brace",
+        "first_margin": 0.691783,
+        "joint": [
+          20.506097,
+          18,
+          -20.506097
+        ],
+        "minimum_margin": 0.691783,
+        "second": "support_2_crown_cap",
+        "second_margin": 1.09375
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_core",
+        "first_margin": 1.928932,
+        "joint": [
+          -7.071068,
+          12,
+          -7.071068
+        ],
+        "minimum_margin": 0.710182,
+        "second": "support_3_radial_beam",
+        "second_margin": 0.710182
+      },
+      {
+        "connected": true,
+        "first": "support_3_radial_beam",
+        "first_margin": 0.703228,
+        "joint": [
+          -14.849242,
+          10,
+          -14.849242
+        ],
+        "minimum_margin": 0.703228,
+        "second": "support_3_outer_brace",
+        "second_margin": 0.713258
+      },
+      {
+        "connected": true,
+        "first": "support_3_outer_brace",
+        "first_margin": 0.691783,
+        "joint": [
+          -20.506097,
+          18,
+          -20.506097
+        ],
+        "minimum_margin": 0.5,
+        "second": "support_3_outer_piston_casing",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "support_3_outer_piston_casing",
+        "first_margin": 0.5,
+        "joint": [
+          -20.506097,
+          9,
+          -20.506097
+        ],
+        "minimum_margin": 0.4375,
+        "second": "support_3_outer_piston_rod",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "support_3_outer_piston_rod",
+        "first_margin": 0.4375,
+        "joint": [
+          -20.506097,
+          2,
+          -20.506097
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_3_ground_foot",
+        "second_margin": 0.09375
+      },
+      {
+        "connected": true,
+        "first": "support_3_ground_foot",
+        "first_margin": 0.09375,
+        "joint": [
+          -20.506097,
+          2,
+          -20.506097
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_3_outer_toe",
+        "second_margin": 0.493903
+      },
+      {
+        "connected": true,
+        "first": "support_3_ground_foot",
+        "first_margin": 0.09375,
+        "joint": [
+          -20.506097,
+          2,
+          -20.506097
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_3_inner_heel",
+        "second_margin": 0.493903
+      },
+      {
+        "connected": true,
+        "first": "support_3_ground_foot",
+        "first_margin": 0.09375,
+        "joint": [
+          -22.273864,
+          2,
+          -22.273864
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_3_foot_bolt",
+        "second_margin": 0.15625
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_core",
+        "first_margin": 2,
+        "joint": [
+          -5.656854,
+          12,
+          -5.656854
+        ],
+        "minimum_margin": 0.4375,
+        "second": "support_3_inner_piston_casing",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "support_3_inner_piston_casing",
+        "first_margin": 0.441288,
+        "joint": [
+          -11.313708,
+          14,
+          -11.313708
+        ],
+        "minimum_margin": 0.4375,
+        "second": "support_3_inner_piston_rod",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_cap",
+        "first_margin": 0.9375,
+        "joint": [
+          -6.717514,
+          14.5,
+          -6.717514
+        ],
+        "minimum_margin": 0.312501,
+        "second": "support_3_red_cable_1",
+        "second_margin": 0.312501
+      },
+      {
+        "connected": true,
+        "first": "support_3_red_cable_1",
+        "first_margin": 0.307875,
+        "joint": [
+          -10.960155,
+          15.4,
+          -10.960155
+        ],
+        "minimum_margin": 0.30625,
+        "second": "support_3_red_cable_2",
+        "second_margin": 0.30625
+      },
+      {
+        "connected": true,
+        "first": "support_3_outer_brace",
+        "first_margin": 0.691783,
+        "joint": [
+          -20.506097,
+          18,
+          -20.506097
+        ],
+        "minimum_margin": 0.691783,
+        "second": "support_3_crown_cap",
+        "second_margin": 1.09375
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_core",
+        "first_margin": 1.928932,
+        "joint": [
+          -7.071068,
+          12,
+          7.071068
+        ],
+        "minimum_margin": 0.696068,
+        "second": "support_4_radial_beam",
+        "second_margin": 0.696068
+      },
+      {
+        "connected": true,
+        "first": "support_4_radial_beam",
+        "first_margin": 0.686092,
+        "joint": [
+          -14.849242,
+          10,
+          14.849242
+        ],
+        "minimum_margin": 0.686092,
+        "second": "support_4_outer_brace",
+        "second_margin": 0.692992
+      },
+      {
+        "connected": true,
+        "first": "support_4_outer_brace",
+        "first_margin": 0.712049,
+        "joint": [
+          -20.506097,
+          18,
+          20.506097
+        ],
+        "minimum_margin": 0.5,
+        "second": "support_4_outer_piston_casing",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "support_4_outer_piston_casing",
+        "first_margin": 0.5,
+        "joint": [
+          -20.506097,
+          9,
+          20.506097
+        ],
+        "minimum_margin": 0.4375,
+        "second": "support_4_outer_piston_rod",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "support_4_outer_piston_rod",
+        "first_margin": 0.4375,
+        "joint": [
+          -20.506097,
+          2,
+          20.506097
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_4_ground_foot",
+        "second_margin": 0.09375
+      },
+      {
+        "connected": true,
+        "first": "support_4_ground_foot",
+        "first_margin": 0.09375,
+        "joint": [
+          -20.506097,
+          2,
+          20.506097
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_4_outer_toe",
+        "second_margin": 0.506097
+      },
+      {
+        "connected": true,
+        "first": "support_4_ground_foot",
+        "first_margin": 0.09375,
+        "joint": [
+          -20.506097,
+          2,
+          20.506097
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_4_inner_heel",
+        "second_margin": 0.506097
+      },
+      {
+        "connected": true,
+        "first": "support_4_ground_foot",
+        "first_margin": 0.09375,
+        "joint": [
+          -22.273864,
+          2,
+          22.273864
+        ],
+        "minimum_margin": 0.09375,
+        "second": "support_4_foot_bolt",
+        "second_margin": 0.15625
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_core",
+        "first_margin": 2,
+        "joint": [
+          -5.656854,
+          12,
+          5.656854
+        ],
+        "minimum_margin": 0.4375,
+        "second": "support_4_inner_piston_casing",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "support_4_inner_piston_casing",
+        "first_margin": 0.441288,
+        "joint": [
+          -11.313708,
+          14,
+          11.313708
+        ],
+        "minimum_margin": 0.4375,
+        "second": "support_4_inner_piston_rod",
+        "second_margin": 0.4375
+      },
+      {
+        "connected": true,
+        "first": "pedestal_lower_cap",
+        "first_margin": 0.9375,
+        "joint": [
+          -6.717514,
+          14.5,
+          6.717514
+        ],
+        "minimum_margin": 0.312501,
+        "second": "support_4_red_cable_1",
+        "second_margin": 0.312501
+      },
+      {
+        "connected": true,
+        "first": "support_4_red_cable_1",
+        "first_margin": 0.307875,
+        "joint": [
+          -10.960155,
+          15.4,
+          10.960155
+        ],
+        "minimum_margin": 0.30625,
+        "second": "support_4_red_cable_2",
+        "second_margin": 0.30625
+      },
+      {
+        "connected": true,
+        "first": "support_4_outer_brace",
+        "first_margin": 0.712049,
+        "joint": [
+          -20.506097,
+          18,
+          20.506097
+        ],
+        "minimum_margin": 0.712049,
+        "second": "support_4_crown_cap",
+        "second_margin": 1.09375
+      },
+      {
+        "connected": true,
+        "first": "yaw_ring_core",
+        "first_margin": 0.25,
+        "joint": [
+          0,
+          57.5,
+          0
+        ],
+        "minimum_margin": 0.25,
+        "second": "cradle_lower_block",
+        "second_margin": 1
+      },
+      {
+        "connected": true,
+        "first": "cradle_lower_block",
+        "first_margin": 2,
+        "joint": [
+          0,
+          65.5,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "cradle_crossbeam",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "cradle_crossbeam",
+        "first_margin": 0.5,
+        "joint": [
+          0,
+          68.5,
+          6.5
+        ],
+        "minimum_margin": 0.1875,
+        "second": "cradle_front_cheek",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "cradle_crossbeam",
+        "first_margin": 0.5,
+        "joint": [
+          0,
+          68.5,
+          -6.5
+        ],
+        "minimum_margin": 0.1875,
+        "second": "cradle_back_cheek",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "cradle_front_cheek",
+        "first_margin": 0.3125,
+        "joint": [
+          0,
+          65.5,
+          9
+        ],
+        "minimum_margin": 0.3125,
+        "second": "front_drive_drum_slab_1",
+        "second_margin": 0.8125
+      },
+      {
+        "connected": true,
+        "first": "front_drive_drum_slab_1",
+        "first_margin": 0.25,
+        "joint": [
+          0,
+          66.25,
+          9.6
+        ],
+        "minimum_margin": 0.25,
+        "second": "front_drive_drum_slab_2",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "front_drive_drum_slab_2",
+        "first_margin": 0.25,
+        "joint": [
+          0,
+          68.75,
+          9.6
+        ],
+        "minimum_margin": 0.25,
+        "second": "front_drive_drum_slab_3",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "front_drive_drum_slab_3",
+        "first_margin": 0.25,
+        "joint": [
+          0,
+          71.25,
+          9.6
+        ],
+        "minimum_margin": 0.25,
+        "second": "front_drive_drum_slab_4",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "front_drive_drum_slab_4",
+        "first_margin": 0.25,
+        "joint": [
+          0,
+          73.75,
+          9.6
+        ],
+        "minimum_margin": 0.25,
+        "second": "front_drive_drum_slab_5",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "front_drive_drum_slab_3",
+        "first_margin": 0.6,
+        "joint": [
+          0,
+          70,
+          10.4
+        ],
+        "minimum_margin": 0.0875,
+        "second": "front_drive_drum_hub",
+        "second_margin": 0.0875
+      },
+      {
+        "connected": true,
+        "first": "cradle_back_cheek",
+        "first_margin": 0.3125,
+        "joint": [
+          0,
+          65.5,
+          -9
+        ],
+        "minimum_margin": 0.3125,
+        "second": "back_drive_drum_slab_1",
+        "second_margin": 0.8125
+      },
+      {
+        "connected": true,
+        "first": "back_drive_drum_slab_1",
+        "first_margin": 0.25,
+        "joint": [
+          0,
+          66.25,
+          -9.6
+        ],
+        "minimum_margin": 0.25,
+        "second": "back_drive_drum_slab_2",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "back_drive_drum_slab_2",
+        "first_margin": 0.25,
+        "joint": [
+          0,
+          68.75,
+          -9.6
+        ],
+        "minimum_margin": 0.25,
+        "second": "back_drive_drum_slab_3",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "back_drive_drum_slab_3",
+        "first_margin": 0.25,
+        "joint": [
+          0,
+          71.25,
+          -9.6
+        ],
+        "minimum_margin": 0.25,
+        "second": "back_drive_drum_slab_4",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "back_drive_drum_slab_4",
+        "first_margin": 0.25,
+        "joint": [
+          0,
+          73.75,
+          -9.6
+        ],
+        "minimum_margin": 0.25,
+        "second": "back_drive_drum_slab_5",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "back_drive_drum_slab_3",
+        "first_margin": 0.6,
+        "joint": [
+          0,
+          70,
+          -10.4
+        ],
+        "minimum_margin": 0.0875,
+        "second": "back_drive_drum_hub",
+        "second_margin": 0.0875
+      },
+      {
+        "connected": true,
+        "first": "cradle_crossbeam",
+        "first_margin": 1.5,
+        "joint": [
+          1.4,
+          71,
+          0
+        ],
+        "minimum_margin": 1.05625,
+        "second": "cannon_receiver_core",
+        "second_margin": 1.05625
+      },
+      {
+        "connected": true,
+        "first": "cannon_receiver_core",
+        "first_margin": 0.5,
+        "joint": [
+          9.1,
+          78.5,
+          0
+        ],
+        "minimum_margin": 0.5,
+        "second": "cannon_receiver_top",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "cannon_receiver_core",
+        "first_margin": 1,
+        "joint": [
+          9.8,
+          68,
+          0
+        ],
+        "minimum_margin": 0.3125,
+        "second": "cannon_receiver_bottom",
+        "second_margin": 0.3125
+      },
+      {
+        "connected": true,
+        "first": "cannon_receiver_core",
+        "first_margin": 0.69375,
+        "joint": [
+          17.15,
+          73,
+          0
+        ],
+        "minimum_margin": 0.3375,
+        "second": "cannon_front_block",
+        "second_margin": 0.3375
+      },
+      {
+        "connected": true,
+        "first": "cannon_receiver_core",
+        "first_margin": 0.4,
+        "joint": [
+          9.1,
+          73,
+          6.6
+        ],
+        "minimum_margin": 0.00625,
+        "second": "cannon_side_panel_front",
+        "second_margin": 0.00625
+      },
+      {
+        "connected": true,
+        "first": "cannon_receiver_core",
+        "first_margin": 0.4,
+        "joint": [
+          9.1,
+          73,
+          -6.6
+        ],
+        "minimum_margin": 0.00625,
+        "second": "cannon_side_panel_back",
+        "second_margin": 0.00625
+      },
+      {
+        "connected": true,
+        "first": "cannon_front_block",
+        "first_margin": 1.4,
+        "joint": [
+          19.6,
+          73,
+          0
+        ],
+        "minimum_margin": 0.6875,
+        "second": "cannon_barrel_shroud",
+        "second_margin": 0.6875
+      },
+      {
+        "connected": true,
+        "first": "cannon_barrel_shroud",
+        "first_margin": 0.692069,
+        "joint": [
+          31.5,
+          73.2,
+          0
+        ],
+        "minimum_margin": 0.60625,
+        "second": "cannon_barrel",
+        "second_margin": 0.60625
+      },
+      {
+        "connected": true,
+        "first": "cannon_barrel",
+        "first_margin": 0.598214,
+        "joint": [
+          42.7,
+          73.4,
+          0
+        ],
+        "minimum_margin": 0.598214,
+        "second": "cannon_muzzle_brake",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "cannon_muzzle_brake",
+        "first_margin": 0.1275,
+        "joint": [
+          46.06,
+          73.45,
+          0
+        ],
+        "minimum_margin": 0.1275,
+        "second": "cannon_muzzle_bore",
+        "second_margin": 0.15375
+      },
+      {
+        "connected": true,
+        "first": "cannon_muzzle_brake",
+        "first_margin": 0.945,
+        "joint": [
+          44.1,
+          73.45,
+          -2.805
+        ],
+        "minimum_margin": 0.1175,
+        "second": "cannon_muzzle_port_back",
+        "second_margin": 0.1175
+      },
+      {
+        "connected": true,
+        "first": "cannon_muzzle_brake",
+        "first_margin": 0.945,
+        "joint": [
+          44.1,
+          73.45,
+          2.805
+        ],
+        "minimum_margin": 0.1175,
+        "second": "cannon_muzzle_port_front",
+        "second_margin": 0.1175
+      },
+      {
+        "connected": true,
+        "first": "cannon_receiver_top",
+        "first_margin": 0.35,
+        "joint": [
+          9.1,
+          80.9,
+          0
+        ],
+        "minimum_margin": 0.35,
+        "second": "cannon_top_rail",
+        "second_margin": 0.3625
+      },
+      {
+        "connected": true,
+        "first": "cannon_receiver_bottom",
+        "first_margin": 1.4875,
+        "joint": [
+          9.8,
+          66.8,
+          3
+        ],
+        "minimum_margin": 0.082411,
+        "second": "cannon_lower_tube",
+        "second_margin": 0.082411
+      },
+      {
+        "connected": true,
+        "first": "cannon_front_block",
+        "first_margin": 0.35,
+        "joint": [
+          20.65,
+          78.5,
+          0
+        ],
+        "minimum_margin": 0.35,
+        "second": "cannon_front_sight",
+        "second_margin": 1
+      },
+      {
+        "connected": true,
+        "first": "cradle_crossbeam",
+        "first_margin": 1.5,
+        "joint": [
+          -1.4,
+          71,
+          0
+        ],
+        "minimum_margin": 0.3375,
+        "second": "launcher_receiver_core",
+        "second_margin": 0.3375
+      },
+      {
+        "connected": true,
+        "first": "launcher_receiver_core",
+        "first_margin": 0.5,
+        "joint": [
+          -11.2,
+          80.5,
+          0
+        ],
+        "minimum_margin": 0.5,
+        "second": "launcher_upper_housing",
+        "second_margin": 1
+      },
+      {
+        "connected": true,
+        "first": "launcher_receiver_core",
+        "first_margin": 1,
+        "joint": [
+          -10.5,
+          66,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "launcher_lower_housing",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "launcher_receiver_core",
+        "first_margin": 0.1,
+        "joint": [
+          -10.5,
+          73,
+          8.9
+        ],
+        "minimum_margin": 0.1,
+        "second": "launcher_front_panel",
+        "second_margin": 0.2125
+      },
+      {
+        "connected": true,
+        "first": "launcher_receiver_core",
+        "first_margin": 0.1,
+        "joint": [
+          -10.5,
+          73,
+          -8.9
+        ],
+        "minimum_margin": 0.1,
+        "second": "launcher_back_panel",
+        "second_margin": 0.2125
+      },
+      {
+        "connected": true,
+        "first": "launcher_receiver_core",
+        "first_margin": 0.3375,
+        "joint": [
+          -19.6,
+          73,
+          0
+        ],
+        "minimum_margin": 0.3375,
+        "second": "launcher_rear_block",
+        "second_margin": 0.69375
+      },
+      {
+        "connected": true,
+        "first": "launcher_rear_block",
+        "first_margin": 0.35,
+        "joint": [
+          -24.15,
+          76,
+          0
+        ],
+        "minimum_margin": 0.3375,
+        "second": "launcher_tail_upper",
+        "second_margin": 0.3375
+      },
+      {
+        "connected": true,
+        "first": "launcher_rear_block",
+        "first_margin": 0.35,
+        "joint": [
+          -24.15,
+          70,
+          0
+        ],
+        "minimum_margin": 0.3375,
+        "second": "launcher_tail_lower",
+        "second_margin": 0.3375
+      },
+      {
+        "connected": true,
+        "first": "launcher_tail_lower",
+        "first_margin": 0.1975,
+        "joint": [
+          -24.01,
+          68,
+          6
+        ],
+        "minimum_margin": 0.1975,
+        "second": "launcher_grip_segment_1",
+        "second_margin": 0.34375
+      },
+      {
+        "connected": true,
+        "first": "launcher_grip_segment_1",
+        "first_margin": 0.353233,
+        "joint": [
+          -28.7,
+          62,
+          6
+        ],
+        "minimum_margin": 0.34375,
+        "second": "launcher_grip_segment_2",
+        "second_margin": 0.34375
+      },
+      {
+        "connected": true,
+        "first": "launcher_grip_segment_2",
+        "first_margin": 0.343036,
+        "joint": [
+          -33.6,
+          67,
+          6
+        ],
+        "minimum_margin": 0.343036,
+        "second": "launcher_grip_segment_3",
+        "second_margin": 0.34375
+      },
+      {
+        "connected": true,
+        "first": "launcher_grip_segment_3",
+        "first_margin": 0.1875,
+        "joint": [
+          -33.11,
+          71,
+          7
+        ],
+        "minimum_margin": 0.1875,
+        "second": "launcher_grip_pad",
+        "second_margin": 0.503636
+      },
+      {
+        "connected": true,
+        "first": "launcher_upper_housing",
+        "first_margin": 0.5,
+        "joint": [
+          -13.3,
+          86,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "launcher_top_sensor",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "launcher_top_sensor",
+        "first_margin": 0.3,
+        "joint": [
+          -13.3,
+          91.7,
+          0
+        ],
+        "minimum_margin": 0.04375,
+        "second": "launcher_top_sensor_brow",
+        "second_margin": 0.04375
+      },
+      {
+        "connected": true,
+        "first": "launcher_top_sensor",
+        "first_margin": 0.1,
+        "joint": [
+          -13.3,
+          89,
+          4.4
+        ],
+        "minimum_margin": 0.0875,
+        "second": "launcher_hex_sensor",
+        "second_margin": 0.0875
+      },
+      {
+        "connected": true,
+        "first": "launcher_upper_housing",
+        "first_margin": 0.35625,
+        "joint": [
+          -4.2,
+          81.98,
+          -4
+        ],
+        "minimum_margin": 0.26125,
+        "second": "copper_power_cable_1",
+        "second_margin": 0.26125
+      },
+      {
+        "connected": true,
+        "first": "launcher_upper_housing",
+        "first_margin": 0.35625,
+        "joint": [
+          -4.2,
+          81.74,
+          -2
+        ],
+        "minimum_margin": 0.24,
+        "second": "copper_power_cable_2",
+        "second_margin": 0.24
+      },
+      {
+        "connected": true,
+        "first": "launcher_upper_housing",
+        "first_margin": 0.35625,
+        "joint": [
+          -4.2,
+          81.5,
+          0
+        ],
+        "minimum_margin": 0.25,
+        "second": "copper_power_cable_3",
+        "second_margin": 0.25
+      },
+      {
+        "connected": true,
+        "first": "launcher_upper_housing",
+        "first_margin": 0.35625,
+        "joint": [
+          -4.2,
+          81.74,
+          2
+        ],
+        "minimum_margin": 0.24,
+        "second": "copper_power_cable_4",
+        "second_margin": 0.24
+      },
+      {
+        "connected": true,
+        "first": "launcher_upper_housing",
+        "first_margin": 0.35625,
+        "joint": [
+          -4.2,
+          81.98,
+          4
+        ],
+        "minimum_margin": 0.26125,
+        "second": "copper_power_cable_5",
+        "second_margin": 0.26125
+      },
+      {
+        "connected": true,
+        "first": "launcher_receiver_core",
+        "first_margin": 0,
+        "joint": [
+          -4.9,
+          65,
+          -8
+        ],
+        "minimum_margin": 0,
+        "second": "red_weapon_cable_1",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "launcher_receiver_core",
+        "first_margin": 1,
+        "joint": [
+          -4.9,
+          66,
+          8
+        ],
+        "minimum_margin": 0.1875,
+        "second": "red_weapon_cable_2",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "cannon_receiver_core",
+        "first_margin": 0,
+        "joint": [
+          2.8,
+          78,
+          -7
+        ],
+        "minimum_margin": 0,
+        "second": "red_weapon_cable_3",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "cannon_receiver_core",
+        "first_margin": 0,
+        "joint": [
+          2.8,
+          78,
+          7
+        ],
+        "minimum_margin": 0,
+        "second": "red_weapon_cable_4",
+        "second_margin": 0.1875
+      },
+      {
+        "connected": true,
+        "first": "cradle_crossbeam",
+        "first_margin": 0.2,
+        "joint": [
+          -4.5,
+          66.6,
+          -6.8
+        ],
+        "minimum_margin": 0.1125,
+        "second": "ammo_feed_link_1",
+        "second_margin": 0.1125
+      },
+      {
+        "connected": true,
+        "first": "cradle_crossbeam",
+        "first_margin": 0.2,
+        "joint": [
+          -3,
+          66.6,
+          -6.8
+        ],
+        "minimum_margin": 0.1125,
+        "second": "ammo_feed_link_2",
+        "second_margin": 0.1125
+      },
+      {
+        "connected": true,
+        "first": "cradle_crossbeam",
+        "first_margin": 0.2,
+        "joint": [
+          -1.5,
+          66.6,
+          -6.8
+        ],
+        "minimum_margin": 0.1125,
+        "second": "ammo_feed_link_3",
+        "second_margin": 0.1125
+      },
+      {
+        "connected": true,
+        "first": "cradle_crossbeam",
+        "first_margin": 0.2,
+        "joint": [
+          0,
+          66.6,
+          -6.8
+        ],
+        "minimum_margin": 0.1125,
+        "second": "ammo_feed_link_4",
+        "second_margin": 0.1125
+      },
+      {
+        "connected": true,
+        "first": "cradle_crossbeam",
+        "first_margin": 0.2,
+        "joint": [
+          1.5,
+          66.6,
+          -6.8
+        ],
+        "minimum_margin": 0.1125,
+        "second": "ammo_feed_link_5",
+        "second_margin": 0.1125
+      },
+      {
+        "connected": true,
+        "first": "cradle_crossbeam",
+        "first_margin": 0.2,
+        "joint": [
+          3,
+          66.6,
+          -6.8
+        ],
+        "minimum_margin": 0.1125,
+        "second": "ammo_feed_link_6",
+        "second_margin": 0.1125
+      },
+      {
+        "connected": true,
+        "first": "cradle_crossbeam",
+        "first_margin": 0.2,
+        "joint": [
+          4.5,
+          66.6,
+          -6.8
+        ],
+        "minimum_margin": 0.1125,
+        "second": "ammo_feed_link_7",
+        "second_margin": 0.1125
+      },
+      {
+        "connected": true,
+        "first": "cannon_side_panel_front",
+        "first_margin": 0.50625,
+        "joint": [
+          4.9,
+          76,
+          7.1
+        ],
+        "minimum_margin": 0.19375,
+        "second": "cannon_front_panel_bolt_1",
+        "second_margin": 0.19375
+      },
+      {
+        "connected": true,
+        "first": "cannon_side_panel_front",
+        "first_margin": 0.50625,
+        "joint": [
+          9.1,
+          76,
+          7.1
+        ],
+        "minimum_margin": 0.19375,
+        "second": "cannon_front_panel_bolt_2",
+        "second_margin": 0.19375
+      },
+      {
+        "connected": true,
+        "first": "cannon_side_panel_front",
+        "first_margin": 0.50625,
+        "joint": [
+          13.3,
+          76,
+          7.1
+        ],
+        "minimum_margin": 0.19375,
+        "second": "cannon_front_panel_bolt_3",
+        "second_margin": 0.19375
+      },
+      {
+        "connected": true,
+        "first": "cannon_side_panel_back",
+        "first_margin": 0.50625,
+        "joint": [
+          4.9,
+          76,
+          -7.1
+        ],
+        "minimum_margin": 0.19375,
+        "second": "cannon_back_panel_bolt_1",
+        "second_margin": 0.19375
+      },
+      {
+        "connected": true,
+        "first": "cannon_side_panel_back",
+        "first_margin": 0.50625,
+        "joint": [
+          9.1,
+          76,
+          -7.1
+        ],
+        "minimum_margin": 0.19375,
+        "second": "cannon_back_panel_bolt_2",
+        "second_margin": 0.19375
+      },
+      {
+        "connected": true,
+        "first": "cannon_side_panel_back",
+        "first_margin": 0.50625,
+        "joint": [
+          13.3,
+          76,
+          -7.1
+        ],
+        "minimum_margin": 0.19375,
+        "second": "cannon_back_panel_bolt_3",
+        "second_margin": 0.19375
+      }
+    ],
+    "method": "shared-joint-compiled-oriented-cuboid-margin-v2",
+    "minimum_margin": 0.0
+  },
+  "bones": 11,
+  "camera_parameters_are_estimated": true,
+  "contact_constraints": {
+    "all_four_supports_grounded": true,
+    "distinct_xz_quadrants": true,
+    "ground_plane_y": 0.0,
+    "method": "explicit-foot-ground-plane-and-root-quadrant-audit-v1",
+    "root_quadrants": [
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "supports": [
+      {
+        "foot": "support_1_ground_foot",
+        "grounded": true,
+        "maximum_y": 2.09375,
+        "minimum_y": 0.0,
+        "support": "support_1"
+      },
+      {
+        "foot": "support_2_ground_foot",
+        "grounded": true,
+        "maximum_y": 2.09375,
+        "minimum_y": 0.0,
+        "support": "support_2"
+      },
+      {
+        "foot": "support_3_ground_foot",
+        "grounded": true,
+        "maximum_y": 2.09375,
+        "minimum_y": 0.0,
+        "support": "support_3"
+      },
+      {
+        "foot": "support_4_ground_foot",
+        "grounded": true,
+        "maximum_y": 2.09375,
+        "minimum_y": 0.0,
+        "support": "support_4"
+      }
+    ]
+  },
+  "cuboids": 145,
+  "declared_link_tree_covers_every_cube": true,
+  "evidence_files": [
+    "perspective-cameras.json"
+  ],
+  "feature_inventory": {
+    "ammo_feed_links": 7,
+    "cable_cuboids": 17,
+    "cannon_cuboids": 21,
+    "grounded_feet": 4,
+    "launcher_cuboids": 15,
+    "outrigger_assemblies": 4,
+    "outrigger_cuboids": 52,
+    "pedestal_cuboids": 25,
+    "pitch_drive_drum_cuboids": 12,
+    "texture_landmarks": 32,
+    "vertical_outer_pistons": 4
+  },
+  "hidden_geometry_established": false,
+  "model_extents": [
+    81.4375,
+    93.15625,
+    55.861436
+  ],
+  "model_id": "aegis_x2_turret",
+  "part_local_depth_audit": {
+    "method": "selected-oriented-cuboid-world-bounds-v1",
+    "parts": {
+      "cannon": {
+        "effective_world_extents": [
+          46.28125,
+          18.272539,
+          16.375
+        ],
+        "lower": [
+          0.34375,
+          64.227461,
+          -8.1875
+        ],
+        "minimum_to_maximum_extent_ratio": 0.353815,
+        "selection_count": 21,
+        "upper": [
+          46.625,
+          82.5,
+          8.1875
+        ]
+      },
+      "cradle": {
+        "effective_world_extents": [
+          24.0,
+          20.0,
+          24.625
+        ],
+        "lower": [
+          -12.0,
+          56.5,
+          -12.3125
+        ],
+        "minimum_to_maximum_extent_ratio": 0.812183,
+        "selection_count": 16,
+        "upper": [
+          12.0,
+          76.5,
+          12.3125
+        ]
+      },
+      "launcher": {
+        "effective_world_extents": [
+          33.75,
+          32.24605,
+          21.375
+        ],
+        "lower": [
+          -34.8125,
+          60.9102,
+          -10.6875
+        ],
+        "minimum_to_maximum_extent_ratio": 0.633333,
+        "selection_count": 15,
+        "upper": [
+          -1.0625,
+          93.15625,
+          10.6875
+        ]
+      },
+      "outriggers": {
+        "effective_world_extents": [
+          55.882328,
+          20.204971,
+          55.861436
+        ],
+        "lower": [
+          -27.941164,
+          0.0,
+          -27.930718
+        ],
+        "minimum_to_maximum_extent_ratio": 0.361563,
+        "selection_count": 52,
+        "upper": [
+          27.941164,
+          20.204971,
+          27.930718
+        ]
+      },
+      "pedestal": {
+        "effective_world_extents": [
+          24.947392,
+          57.75,
+          24.947392
+        ],
+        "lower": [
+          -12.47536,
+          0.0,
+          -12.469678
+        ],
+        "minimum_to_maximum_extent_ratio": 0.431989,
+        "selection_count": 25,
+        "upper": [
+          12.472032,
+          57.75,
+          12.477714
+        ]
+      }
+    }
+  },
+  "perspective_camera_contract": {
+    "automatic_fit_or_recentering": false,
+    "camera_parameters_are_estimated": true,
+    "cameras": {
+      "source-3": {
+        "orbit_parameters": {
+          "distance": 135.0,
+          "near": 0.1,
+          "pitch_degrees": 4.0,
+          "principal_point": [
+            500.0,
+            468.0
+          ],
+          "roll_degrees": 0.0,
+          "target": [
+            0.0,
+            50.0,
+            0.0
+          ],
+          "vertical_fov_degrees": 46.0,
+          "yaw_degrees": 0.0
+        },
+        "resolved_camera": {
+          "focal_x": 1177.9261829118764,
+          "focal_y": 1177.9261829118764,
+          "image_size": [
+            1000,
+            1000
+          ],
+          "near": 0.1,
+          "principal_point": [
+            500.0,
+            468.0
+          ],
+          "projection": "perspective",
+          "translation": [
+            -0.0,
+            -49.87820251299121,
+            -138.48782368720626
+          ],
+          "world_to_camera": [
+            [
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.9975640502598242,
+              -0.0697564737441253
+            ],
+            [
+              0.0,
+              0.0697564737441253,
+              0.9975640502598242
+            ]
+          ]
+        }
+      },
+      "source-4": {
+        "orbit_parameters": {
+          "distance": 115.0,
+          "near": 0.1,
+          "pitch_degrees": 55.0,
+          "principal_point": [
+            508.0,
+            544.0
+          ],
+          "roll_degrees": 0.0,
+          "target": [
+            0.0,
+            48.0,
+            0.0
+          ],
+          "vertical_fov_degrees": 46.0,
+          "yaw_degrees": -50.0
+        },
+        "resolved_camera": {
+          "focal_x": 1177.9261829118764,
+          "focal_y": 1177.9261829118764,
+          "image_size": [
+            1000,
+            1000
+          ],
+          "near": 0.1,
+          "principal_point": [
+            508.0,
+            544.0
+          ],
+          "projection": "perspective",
+          "translation": [
+            -7.105427357601002e-15,
+            -27.531668944850203,
+            -154.31929812587163
+          ],
+          "world_to_camera": [
+            [
+              0.6427876096865394,
+              0.0,
+              0.766044443118978
+            ],
+            [
+              0.6275068715971331,
+              0.573576436351046,
+              -0.5265407845183633
+            ],
+            [
+              -0.43938504177070503,
+              0.8191520442889918,
+              0.3686878264946124
+            ]
+          ]
+        }
+      },
+      "source-5": {
+        "orbit_parameters": {
+          "distance": 115.0,
+          "near": 0.1,
+          "pitch_degrees": 55.0,
+          "principal_point": [
+            500.0,
+            552.0
+          ],
+          "roll_degrees": 0.0,
+          "target": [
+            0.0,
+            48.0,
+            0.0
+          ],
+          "vertical_fov_degrees": 46.0,
+          "yaw_degrees": -130.0
+        },
+        "resolved_camera": {
+          "focal_x": 1177.9261829118764,
+          "focal_y": 1177.9261829118764,
+          "image_size": [
+            1000,
+            1000
+          ],
+          "near": 0.1,
+          "principal_point": [
+            500.0,
+            552.0
+          ],
+          "projection": "perspective",
+          "translation": [
+            7.105427357601002e-15,
+            -27.531668944850203,
+            -154.31929812587163
+          ],
+          "world_to_camera": [
+            [
+              -0.6427876096865394,
+              0.0,
+              0.766044443118978
+            ],
+            [
+              0.6275068715971331,
+              0.573576436351046,
+              0.5265407845183633
+            ],
+            [
+              -0.43938504177070503,
+              0.8191520442889918,
+              -0.3686878264946124
+            ]
+          ]
+        }
+      }
+    },
+    "geometry_modified_during_evidence": false,
+    "hidden_geometry_established": false,
+    "method": "three-independent-manually-frozen-perspective-cameras-v1",
+    "runtime_camera_fitting": false,
+    "schema_version": 1,
+    "visual_hull_used": false
+  },
+  "perspective_source_evidence": {
+    "source-3": {
+      "alignment": "raw source pixels; no automatic fitting or recentering",
+      "calibration_basis": "manual dominant-axis, roof-plane and frame-occupancy estimate; the reported semantic keypoints were not used by any runtime fitting procedure",
+      "camera": {
+        "focal_x": 1177.9261829118764,
+        "focal_y": 1177.9261829118764,
+        "image_size": [
+          1000,
+          1000
+        ],
+        "near": 0.1,
+        "principal_point": [
+          500.0,
+          468.0
+        ],
+        "projection": "perspective",
+        "translation": [
+          -0.0,
+          -49.87820251299121,
+          -138.48782368720626
+        ],
+        "world_to_camera": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.9975640502598242,
+            -0.0697564737441253
+          ],
+          [
+            0.0,
+            0.0697564737441253,
+            0.9975640502598242
+          ]
+        ]
+      },
+      "camera_parameters_are_estimated": true,
+      "held_out_keypoints": true,
+      "hidden_geometry_established": false,
+      "keypoints": {
+        "alignment": "raw pixels; no crop, fit, scale, translation, or recentering",
+        "count": 5,
+        "image_size": [
+          1000,
+          1000
+        ],
+        "maximum_error_image_heights": 0.056715,
+        "maximum_error_subject_heights": 0.061849,
+        "mean_error_image_heights": 0.035541,
+        "mean_error_subject_heights": 0.038758,
+        "method": "raw-fixed-frame-keypoint-error-v1",
+        "normalization": "raw Euclidean pixel distance divided by reference mask bounding-box height",
+        "points": {
+          "cradle_center": {
+            "delta_pixels": [
+              0.0,
+              -1.018079
+            ],
+            "error_image_heights": 0.001018,
+            "error_pixels": 1.018079,
+            "error_subject_heights": 0.00111,
+            "reference_pixels": [
+              500.0,
+              302.0
+            ],
+            "rendered_pixels": [
+              500.0,
+              300.981921
+            ]
+          },
+          "pedestal_center": {
+            "delta_pixels": [
+              12.0,
+              40.681644
+            ],
+            "error_image_heights": 0.042415,
+            "error_pixels": 42.414575,
+            "error_subject_heights": 0.046254,
+            "reference_pixels": [
+              488.0,
+              574.0
+            ],
+            "rendered_pixels": [
+              500.0,
+              614.681644
+            ]
+          },
+          "pedestal_top": {
+            "delta_pixels": [
+              0.0,
+              -25.45143
+            ],
+            "error_image_heights": 0.025451,
+            "error_pixels": 25.45143,
+            "error_subject_heights": 0.027755,
+            "reference_pixels": [
+              500.0,
+              483.0
+            ],
+            "rendered_pixels": [
+              500.0,
+              457.54857
+            ]
+          },
+          "support_left_contact": {
+            "delta_pixels": [
+              -47.658977,
+              21.062763
+            ],
+            "error_image_heights": 0.052106,
+            "error_pixels": 52.105835,
+            "error_subject_heights": 0.056822,
+            "reference_pixels": [
+              322.0,
+              968.0
+            ],
+            "rendered_pixels": [
+              274.341023,
+              989.062763
+            ]
+          },
+          "support_right_contact": {
+            "delta_pixels": [
+              52.658977,
+              21.062763
+            ],
+            "error_image_heights": 0.056715,
+            "error_pixels": 56.715147,
+            "error_subject_heights": 0.061849,
+            "reference_pixels": [
+              673.0,
+              968.0
+            ],
+            "rendered_pixels": [
+              725.658977,
+              989.062763
+            ]
+          }
+        },
+        "reference_subject_height_pixels": 917.0
+      },
+      "method": "fixed-camera-perspective-evidence-v1",
+      "schema_version": 1,
+      "silhouette": {
+        "alignment": "raw pixels; no crop, fit, scale, translation, or recentering",
+        "image_size": [
+          1000,
+          1000
+        ],
+        "intersection_pixels": 220973,
+        "iou": 0.635555,
+        "method": "raw-fixed-frame-mask-iou-v1",
+        "precision": 0.837657,
+        "recall": 0.724837,
+        "reference_bbox": [
+          176,
+          83,
+          877,
+          1000
+        ],
+        "reference_foreground_pixels": 304859,
+        "reference_may_be_clipped": true,
+        "reference_touches_frame_edges": {
+          "bottom": true,
+          "left": false,
+          "right": false,
+          "top": false
+        },
+        "rendered_foreground_pixels": 263799,
+        "threshold": 128,
+        "union_pixels": 347685
+      },
+      "visual_hull_used": false
+    },
+    "source-4": {
+      "alignment": "raw source pixels; no automatic fitting or recentering",
+      "calibration_basis": "manual dominant-axis, roof-plane and frame-occupancy estimate; the reported semantic keypoints were not used by any runtime fitting procedure",
+      "camera": {
+        "focal_x": 1177.9261829118764,
+        "focal_y": 1177.9261829118764,
+        "image_size": [
+          1000,
+          1000
+        ],
+        "near": 0.1,
+        "principal_point": [
+          508.0,
+          544.0
+        ],
+        "projection": "perspective",
+        "translation": [
+          -7.105427357601002e-15,
+          -27.531668944850203,
+          -154.31929812587163
+        ],
+        "world_to_camera": [
+          [
+            0.6427876096865394,
+            0.0,
+            0.766044443118978
+          ],
+          [
+            0.6275068715971331,
+            0.573576436351046,
+            -0.5265407845183633
+          ],
+          [
+            -0.43938504177070503,
+            0.8191520442889918,
+            0.3686878264946124
+          ]
+        ]
+      },
+      "camera_parameters_are_estimated": true,
+      "held_out_keypoints": true,
+      "hidden_geometry_established": false,
+      "keypoints": {
+        "alignment": "raw pixels; no crop, fit, scale, translation, or recentering",
+        "count": 5,
+        "image_size": [
+          1000,
+          1000
+        ],
+        "maximum_error_image_heights": 0.058174,
+        "maximum_error_subject_heights": 0.066333,
+        "mean_error_image_heights": 0.031844,
+        "mean_error_subject_heights": 0.036311,
+        "method": "raw-fixed-frame-keypoint-error-v1",
+        "normalization": "raw Euclidean pixel distance divided by reference mask bounding-box height",
+        "points": {
+          "cradle_center": {
+            "delta_pixels": [
+              -12.0,
+              56.92267
+            ],
+            "error_image_heights": 0.058174,
+            "error_pixels": 58.173794,
+            "error_subject_heights": 0.066333,
+            "reference_pixels": [
+              520.0,
+              342.0
+            ],
+            "rendered_pixels": [
+              508.0,
+              398.92267
+            ]
+          },
+          "drive_drum_center": {
+            "delta_pixels": [
+              27.861139,
+              33.363543
+            ],
+            "error_image_heights": 0.043467,
+            "error_pixels": 43.466873,
+            "error_subject_heights": 0.049563,
+            "reference_pixels": [
+              590.0,
+              426.0
+            ],
+            "rendered_pixels": [
+              617.861139,
+              459.363543
+            ]
+          },
+          "pedestal_top": {
+            "delta_pixels": [
+              3.0,
+              -10.238681
+            ],
+            "error_image_heights": 0.010669,
+            "error_pixels": 10.669142,
+            "error_subject_heights": 0.012165,
+            "reference_pixels": [
+              505.0,
+              535.0
+            ],
+            "rendered_pixels": [
+              508.0,
+              524.761319
+            ]
+          },
+          "support_left_contact": {
+            "delta_pixels": [
+              -36.995336,
+              -3.340044
+            ],
+            "error_image_heights": 0.037146,
+            "error_pixels": 37.145804,
+            "error_subject_heights": 0.042356,
+            "reference_pixels": [
+              303.0,
+              777.0
+            ],
+            "rendered_pixels": [
+              266.004664,
+              773.659956
+            ]
+          },
+          "support_right_contact": {
+            "delta_pixels": [
+              -8.8935,
+              4.035127
+            ],
+            "error_image_heights": 0.009766,
+            "error_pixels": 9.766094,
+            "error_subject_heights": 0.011136,
+            "reference_pixels": [
+              754.0,
+              731.0
+            ],
+            "rendered_pixels": [
+              745.1065,
+              735.035127
+            ]
+          }
+        },
+        "reference_subject_height_pixels": 877.0
+      },
+      "method": "fixed-camera-perspective-evidence-v1",
+      "schema_version": 1,
+      "silhouette": {
+        "alignment": "raw pixels; no crop, fit, scale, translation, or recentering",
+        "image_size": [
+          1000,
+          1000
+        ],
+        "intersection_pixels": 234279,
+        "iou": 0.665274,
+        "method": "raw-fixed-frame-mask-iou-v1",
+        "precision": 0.785718,
+        "recall": 0.812732,
+        "reference_bbox": [
+          98,
+          85,
+          886,
+          962
+        ],
+        "reference_foreground_pixels": 288261,
+        "reference_may_be_clipped": false,
+        "reference_touches_frame_edges": {
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "top": false
+        },
+        "rendered_foreground_pixels": 298172,
+        "threshold": 128,
+        "union_pixels": 352154
+      },
+      "visual_hull_used": false
+    },
+    "source-5": {
+      "alignment": "raw source pixels; no automatic fitting or recentering",
+      "calibration_basis": "manual dominant-axis, roof-plane and frame-occupancy estimate; the reported semantic keypoints were not used by any runtime fitting procedure",
+      "camera": {
+        "focal_x": 1177.9261829118764,
+        "focal_y": 1177.9261829118764,
+        "image_size": [
+          1000,
+          1000
+        ],
+        "near": 0.1,
+        "principal_point": [
+          500.0,
+          552.0
+        ],
+        "projection": "perspective",
+        "translation": [
+          7.105427357601002e-15,
+          -27.531668944850203,
+          -154.31929812587163
+        ],
+        "world_to_camera": [
+          [
+            -0.6427876096865394,
+            0.0,
+            0.766044443118978
+          ],
+          [
+            0.6275068715971331,
+            0.573576436351046,
+            0.5265407845183633
+          ],
+          [
+            -0.43938504177070503,
+            0.8191520442889918,
+            -0.3686878264946124
+          ]
+        ]
+      },
+      "camera_parameters_are_estimated": true,
+      "held_out_keypoints": true,
+      "hidden_geometry_established": false,
+      "keypoints": {
+        "alignment": "raw pixels; no crop, fit, scale, translation, or recentering",
+        "count": 5,
+        "image_size": [
+          1000,
+          1000
+        ],
+        "maximum_error_image_heights": 0.078792,
+        "maximum_error_subject_heights": 0.089946,
+        "mean_error_image_heights": 0.032917,
+        "mean_error_subject_heights": 0.037577,
+        "method": "raw-fixed-frame-keypoint-error-v1",
+        "normalization": "raw Euclidean pixel distance divided by reference mask bounding-box height",
+        "points": {
+          "cradle_center": {
+            "delta_pixels": [
+              -20.0,
+              -14.07733
+            ],
+            "error_image_heights": 0.024458,
+            "error_pixels": 24.457539,
+            "error_subject_heights": 0.02792,
+            "reference_pixels": [
+              520.0,
+              421.0
+            ],
+            "rendered_pixels": [
+              500.0,
+              406.92267
+            ]
+          },
+          "drive_drum_center": {
+            "delta_pixels": [
+              -0.861139,
+              -9.636457
+            ],
+            "error_image_heights": 0.009675,
+            "error_pixels": 9.674857,
+            "error_subject_heights": 0.011044,
+            "reference_pixels": [
+              391.0,
+              477.0
+            ],
+            "rendered_pixels": [
+              390.138861,
+              467.363543
+            ]
+          },
+          "pedestal_top": {
+            "delta_pixels": [
+              -10.0,
+              -42.238681
+            ],
+            "error_image_heights": 0.043406,
+            "error_pixels": 43.406292,
+            "error_subject_heights": 0.049551,
+            "reference_pixels": [
+              510.0,
+              575.0
+            ],
+            "rendered_pixels": [
+              500.0,
+              532.761319
+            ]
+          },
+          "support_left_contact": {
+            "delta_pixels": [
+              1.8935,
+              8.035127
+            ],
+            "error_image_heights": 0.008255,
+            "error_pixels": 8.255217,
+            "error_subject_heights": 0.009424,
+            "reference_pixels": [
+              261.0,
+              735.0
+            ],
+            "rendered_pixels": [
+              262.8935,
+              743.035127
+            ]
+          },
+          "support_right_contact": {
+            "delta_pixels": [
+              21.995336,
+              75.659956
+            ],
+            "error_image_heights": 0.078792,
+            "error_pixels": 78.792282,
+            "error_subject_heights": 0.089946,
+            "reference_pixels": [
+              720.0,
+              706.0
+            ],
+            "rendered_pixels": [
+              741.995336,
+              781.659956
+            ]
+          }
+        },
+        "reference_subject_height_pixels": 876.0
+      },
+      "method": "fixed-camera-perspective-evidence-v1",
+      "schema_version": 1,
+      "silhouette": {
+        "alignment": "raw pixels; no crop, fit, scale, translation, or recentering",
+        "image_size": [
+          1000,
+          1000
+        ],
+        "intersection_pixels": 232699,
+        "iou": 0.630694,
+        "method": "raw-fixed-frame-mask-iou-v1",
+        "precision": 0.767032,
+        "recall": 0.780136,
+        "reference_bbox": [
+          93,
+          91,
+          970,
+          967
+        ],
+        "reference_foreground_pixels": 298280,
+        "reference_may_be_clipped": false,
+        "reference_touches_frame_edges": {
+          "bottom": false,
+          "left": false,
+          "right": false,
+          "top": false
+        },
+        "rendered_foreground_pixels": 303376,
+        "threshold": 128,
+        "union_pixels": 368957
+      },
+      "visual_hull_used": false
+    }
+  },
+  "perspective_source_gates": {
+    "source-3": {
+      "held_out_keypoint_mean_error_subject_heights": 0.038758,
+      "iou": 0.635555,
+      "iou_pass": true,
+      "keypoint_pass": true,
+      "target_held_out_keypoint_mean_error_subject_heights_at_most": 0.06,
+      "target_iou_at_least": 0.6
+    },
+    "source-4": {
+      "held_out_keypoint_mean_error_subject_heights": 0.036311,
+      "iou": 0.665274,
+      "iou_pass": true,
+      "keypoint_pass": true,
+      "target_held_out_keypoint_mean_error_subject_heights_at_most": 0.06,
+      "target_iou_at_least": 0.6
+    },
+    "source-5": {
+      "held_out_keypoint_mean_error_subject_heights": 0.037577,
+      "iou": 0.630694,
+      "iou_pass": true,
+      "keypoint_pass": true,
+      "target_held_out_keypoint_mean_error_subject_heights_at_most": 0.06,
+      "target_iou_at_least": 0.6
+    }
+  },
+  "recorded_feature_inventory_matches": true,
+  "reference_rights": "unknown; private ignored benchmark references only",
+  "renderer": "deterministic-orthographic-and-three-fixed-perspective-cuboid-zbuffer-v1",
+  "root_cubes": [
+    "pedestal_lower_core"
+  ],
+  "schema_version": 1,
+  "semantic_cuboids": 145,
+  "single_view_hidden_geometry": "Cable routing, undersides, internal weapon mechanisms, and concealed support faces are conservative hard-surface inferences from three uncalibrated views.",
+  "source_projection": false,
+  "source_skin_cuboids": 0,
+  "views": [
+    "source-3-perspective.png",
+    "source-3-silhouette-overlap.png",
+    "source-4-perspective.png",
+    "source-4-silhouette-overlap.png",
+    "source-5-perspective.png",
+    "source-5-silhouette-overlap.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "cannon-closeup.png",
+    "launcher-closeup.png",
+    "outrigger-closeup.png",
+    "cradle-closeup.png",
+    "comparison-sheet.png"
+  ],
+  "visual_hull_used": false
+}

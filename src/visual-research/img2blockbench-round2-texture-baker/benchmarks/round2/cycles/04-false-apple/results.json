@@ -1,0 +1,40 @@
+{
+  "artifact_sha256": {
+    "audit": "6f69ad9fa0bd41af161dd9b679e60a398f66f11570971e937a42368e9bf3da38",
+    "bbmodel": "8fbde1d45c763da9e216c65a1008bf87ae1d6dcdb680008d9069a654bc0c2309",
+    "built_model_spec": "bbf358f88361751de37346f3d3733ab00130981ca26766819f5699e52c3b831f",
+    "comparison_sheet": "fd2ffb99240391004f3a8b4cfb0303c644ca58e9b1291bdca55c71a3378a7ef1",
+    "evaluation": "70d23e4edb0fc8710c655eae17b174395d95d2ac3f0ebca4e52f715bf9296446",
+    "geo_json": "57768d55d5798c13d930d3ac45b602398541edddb60a7a5f271284b6b5d02047",
+    "manifest": "34fd9e92c5bdb35fb63b00578c903d02b736bd1dc20206cdfe5d2932cb22edaa",
+    "model_spec": "e68a35ffc6b350dc6a819d5530cfd84e36017ec10d25fa02893e0a26ce232d88",
+    "silhouette_overlap": "490a9a6457a8f08c23f33373efa65246cebaa1f5778ba8e8954ac8cf42b32031",
+    "texture": "0507886252028929ca235c8f7dc14e377371252dcbd16bfa6a345df3868b9ac6",
+    "zip": "4322f09fe4ec2365f1435109267c4188d98ce5b04d9a6bcec194bd6f651da505"
+  },
+  "asset": "false_apple_root_beast",
+  "author_checks": {
+    "all_188_declared_attachments_connected": true,
+    "all_volume_layer_and_ground_gates_pass": true,
+    "apple_depth_to_width": 0.75,
+    "audit_ok": true,
+    "four_edge_source_clipping_disclosed": true,
+    "head_maw_depth_to_height": 0.583333,
+    "keypoint_mean_error_subject_heights": 0.029835,
+    "maw_is_real_negative_space": true,
+    "near_far_root_layer_center_separation": 28.734837,
+    "no_reference_image_projection": true,
+    "source_alpha_silhouette_iou": 0.638953,
+    "source_skin_cuboids": 0,
+    "strict_validation": true,
+    "two_builds_byte_identical": true
+  },
+  "bones": 79,
+  "cuboids": 189,
+  "cycle": "round2-04",
+  "general_improvement": {
+    "capabilities_added": [],
+    "reason": "Existing carved ellipsoids, branch graphs, oriented attachment audits, and explicit selected-part world extents were sufficient."
+  },
+  "model_id": "false_apple_root_beast"
+}

@@ -1,0 +1,2723 @@
+{
+  "all_view_diversity_gates_pass": true,
+  "attachments": {
+    "all_connected": true,
+    "attachments": [
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 0,
+        "joint": [
+          0,
+          39,
+          7
+        ],
+        "minimum_margin": 0,
+        "second": "front_body_shell",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 0,
+        "joint": [
+          0,
+          39,
+          -7
+        ],
+        "minimum_margin": 0,
+        "second": "back_body_shell",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 0,
+        "joint": [
+          -9,
+          39,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "left_body_shell",
+        "second_margin": 1.5
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 0,
+        "joint": [
+          9,
+          39,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "right_body_shell",
+        "second_margin": 1.5
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 0.5,
+        "joint": [
+          0,
+          45.5,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "body_upper_crown",
+        "second_margin": 0
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 0.2,
+        "joint": [
+          0,
+          32.2,
+          0
+        ],
+        "minimum_margin": 0.2,
+        "second": "body_lower_shroud",
+        "second_margin": 0.8
+      },
+      {
+        "connected": true,
+        "first": "front_body_shell",
+        "first_margin": 0,
+        "joint": [
+          0,
+          44,
+          11
+        ],
+        "minimum_margin": 0,
+        "second": "front_eye_band",
+        "second_margin": 1
+      },
+      {
+        "connected": true,
+        "first": "back_body_shell",
+        "first_margin": 1,
+        "joint": [
+          0,
+          43,
+          -11
+        ],
+        "minimum_margin": 1,
+        "second": "back_eye_band",
+        "second_margin": 1
+      },
+      {
+        "connected": true,
+        "first": "front_body_shell",
+        "first_margin": 0.5,
+        "joint": [
+          -8.5,
+          43.5,
+          9.5
+        ],
+        "minimum_margin": 0.5,
+        "second": "front_left_crown_wrap",
+        "second_margin": 1.172836
+      },
+      {
+        "connected": true,
+        "first": "front_body_shell",
+        "first_margin": 0.5,
+        "joint": [
+          8.5,
+          43.5,
+          9.5
+        ],
+        "minimum_margin": 0.5,
+        "second": "front_right_crown_wrap",
+        "second_margin": 1.172836
+      },
+      {
+        "connected": true,
+        "first": "back_body_shell",
+        "first_margin": 1.5,
+        "joint": [
+          -8.5,
+          42.5,
+          -9.5
+        ],
+        "minimum_margin": 1.172836,
+        "second": "rear_left_crown_wrap",
+        "second_margin": 1.172836
+      },
+      {
+        "connected": true,
+        "first": "back_body_shell",
+        "first_margin": 1.5,
+        "joint": [
+          8.5,
+          42.5,
+          -9.5
+        ],
+        "minimum_margin": 1.172836,
+        "second": "rear_right_crown_wrap",
+        "second_margin": 1.172836
+      },
+      {
+        "connected": true,
+        "first": "left_body_shell",
+        "first_margin": 1.5,
+        "joint": [
+          -12,
+          40.5,
+          0
+        ],
+        "minimum_margin": 0.3,
+        "second": "left_side_temple",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "right_body_shell",
+        "first_margin": 1.5,
+        "joint": [
+          12,
+          40.5,
+          0
+        ],
+        "minimum_margin": 0.3,
+        "second": "right_side_temple",
+        "second_margin": 0.3
+      },
+      {
+        "connected": true,
+        "first": "body_upper_crown",
+        "first_margin": 2.5,
+        "joint": [
+          0,
+          50,
+          0
+        ],
+        "minimum_margin": 0.5,
+        "second": "top_eye_plinth",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "front_left_crown_wrap",
+        "first_margin": 0.312046,
+        "joint": [
+          -13,
+          44.2,
+          12.983
+        ],
+        "minimum_margin": 0.083,
+        "second": "front_eye_1_sclera",
+        "second_margin": 0.083
+      },
+      {
+        "connected": true,
+        "first": "front_eye_1_sclera",
+        "first_margin": 0.22,
+        "joint": [
+          -13,
+          44.2,
+          14.13
+        ],
+        "minimum_margin": 0.08,
+        "second": "front_eye_1_iris",
+        "second_margin": 0.08
+      },
+      {
+        "connected": true,
+        "first": "front_eye_1_iris",
+        "first_margin": 0.231,
+        "joint": [
+          -13,
+          44.2,
+          14.719
+        ],
+        "minimum_margin": 0.019,
+        "second": "front_eye_1_pupil",
+        "second_margin": 0.019
+      },
+      {
+        "connected": true,
+        "first": "front_left_crown_wrap",
+        "first_margin": 1.938387,
+        "joint": [
+          -9,
+          44.2,
+          12.913
+        ],
+        "minimum_margin": 0.063,
+        "second": "front_eye_2_sclera",
+        "second_margin": 0.063
+      },
+      {
+        "connected": true,
+        "first": "front_eye_2_sclera",
+        "first_margin": 0.27,
+        "joint": [
+          -9,
+          44.2,
+          14.43
+        ],
+        "minimum_margin": 0.13,
+        "second": "front_eye_2_iris",
+        "second_margin": 0.13
+      },
+      {
+        "connected": true,
+        "first": "front_eye_2_iris",
+        "first_margin": 0.341,
+        "joint": [
+          -9,
+          44.2,
+          15.209
+        ],
+        "minimum_margin": 0.059,
+        "second": "front_eye_2_pupil",
+        "second_margin": 0.059
+      },
+      {
+        "connected": true,
+        "first": "front_eye_band",
+        "first_margin": 1.087,
+        "joint": [
+          -5.8,
+          44.2,
+          12.913
+        ],
+        "minimum_margin": 0.063,
+        "second": "front_eye_3_sclera",
+        "second_margin": 0.063
+      },
+      {
+        "connected": true,
+        "first": "front_eye_3_sclera",
+        "first_margin": 0.27,
+        "joint": [
+          -5.8,
+          44.2,
+          14.43
+        ],
+        "minimum_margin": 0.13,
+        "second": "front_eye_3_iris",
+        "second_margin": 0.13
+      },
+      {
+        "connected": true,
+        "first": "front_eye_3_iris",
+        "first_margin": 0.341,
+        "joint": [
+          -5.8,
+          44.2,
+          15.209
+        ],
+        "minimum_margin": 0.059,
+        "second": "front_eye_3_pupil",
+        "second_margin": 0.059
+      },
+      {
+        "connected": true,
+        "first": "front_eye_band",
+        "first_margin": 1.4,
+        "joint": [
+          0,
+          45.6,
+          12.4125
+        ],
+        "minimum_margin": 0.2125,
+        "second": "front_eye_4_sclera",
+        "second_margin": 0.2125
+      },
+      {
+        "connected": true,
+        "first": "front_eye_4_sclera",
+        "first_margin": 0.775,
+        "joint": [
+          0,
+          45.6,
+          16.575
+        ],
+        "minimum_margin": 0.325,
+        "second": "front_eye_4_iris",
+        "second_margin": 0.325
+      },
+      {
+        "connected": true,
+        "first": "front_eye_4_iris",
+        "first_margin": 0.8875,
+        "joint": [
+          0,
+          45.6,
+          18.7125
+        ],
+        "minimum_margin": 0.1125,
+        "second": "front_eye_4_pupil",
+        "second_margin": 0.1125
+      },
+      {
+        "connected": true,
+        "first": "front_eye_band",
+        "first_margin": 1.087,
+        "joint": [
+          5.8,
+          44.2,
+          12.913
+        ],
+        "minimum_margin": 0.063,
+        "second": "front_eye_5_sclera",
+        "second_margin": 0.063
+      },
+      {
+        "connected": true,
+        "first": "front_eye_5_sclera",
+        "first_margin": 0.27,
+        "joint": [
+          5.8,
+          44.2,
+          14.43
+        ],
+        "minimum_margin": 0.13,
+        "second": "front_eye_5_iris",
+        "second_margin": 0.13
+      },
+      {
+        "connected": true,
+        "first": "front_eye_5_iris",
+        "first_margin": 0.341,
+        "joint": [
+          5.8,
+          44.2,
+          15.209
+        ],
+        "minimum_margin": 0.059,
+        "second": "front_eye_5_pupil",
+        "second_margin": 0.059
+      },
+      {
+        "connected": true,
+        "first": "front_right_crown_wrap",
+        "first_margin": 1.938387,
+        "joint": [
+          9,
+          44.2,
+          12.913
+        ],
+        "minimum_margin": 0.063,
+        "second": "front_eye_6_sclera",
+        "second_margin": 0.063
+      },
+      {
+        "connected": true,
+        "first": "front_eye_6_sclera",
+        "first_margin": 0.27,
+        "joint": [
+          9,
+          44.2,
+          14.43
+        ],
+        "minimum_margin": 0.13,
+        "second": "front_eye_6_iris",
+        "second_margin": 0.13
+      },
+      {
+        "connected": true,
+        "first": "front_eye_6_iris",
+        "first_margin": 0.341,
+        "joint": [
+          9,
+          44.2,
+          15.209
+        ],
+        "minimum_margin": 0.059,
+        "second": "front_eye_6_pupil",
+        "second_margin": 0.059
+      },
+      {
+        "connected": true,
+        "first": "front_right_crown_wrap",
+        "first_margin": 0.312046,
+        "joint": [
+          13,
+          44.2,
+          12.983
+        ],
+        "minimum_margin": 0.083,
+        "second": "front_eye_7_sclera",
+        "second_margin": 0.083
+      },
+      {
+        "connected": true,
+        "first": "front_eye_7_sclera",
+        "first_margin": 0.22,
+        "joint": [
+          13,
+          44.2,
+          14.13
+        ],
+        "minimum_margin": 0.08,
+        "second": "front_eye_7_iris",
+        "second_margin": 0.08
+      },
+      {
+        "connected": true,
+        "first": "front_eye_7_iris",
+        "first_margin": 0.231,
+        "joint": [
+          13,
+          44.2,
+          14.719
+        ],
+        "minimum_margin": 0.019,
+        "second": "front_eye_7_pupil",
+        "second_margin": 0.019
+      },
+      {
+        "connected": true,
+        "first": "front_eye_4_sclera",
+        "first_margin": 1.05,
+        "joint": [
+          0,
+          49.5,
+          16
+        ],
+        "minimum_margin": 0.75,
+        "second": "central_upper_lid",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "front_eye_4_sclera",
+        "first_margin": 1.15,
+        "joint": [
+          0,
+          41.8,
+          16
+        ],
+        "minimum_margin": 0.75,
+        "second": "central_lower_lid",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "rear_left_crown_wrap",
+        "first_margin": 2.310845,
+        "joint": [
+          -9.5,
+          43.2,
+          -12.948
+        ],
+        "minimum_margin": 0.048,
+        "second": "back_eye_1_sclera",
+        "second_margin": 0.048
+      },
+      {
+        "connected": true,
+        "first": "back_eye_1_sclera",
+        "first_margin": 0.27,
+        "joint": [
+          -9.5,
+          43.2,
+          -14.28
+        ],
+        "minimum_margin": 0.13,
+        "second": "back_eye_1_iris",
+        "second_margin": 0.13
+      },
+      {
+        "connected": true,
+        "first": "back_eye_1_iris",
+        "first_margin": 0.286,
+        "joint": [
+          -9.5,
+          43.2,
+          -14.964
+        ],
+        "minimum_margin": 0.014,
+        "second": "back_eye_1_pupil",
+        "second_margin": 0.014
+      },
+      {
+        "connected": true,
+        "first": "back_eye_band",
+        "first_margin": 1.052,
+        "joint": [
+          -4.8,
+          43.2,
+          -12.948
+        ],
+        "minimum_margin": 0.048,
+        "second": "back_eye_2_sclera",
+        "second_margin": 0.048
+      },
+      {
+        "connected": true,
+        "first": "back_eye_2_sclera",
+        "first_margin": 0.27,
+        "joint": [
+          -4.8,
+          43.2,
+          -14.28
+        ],
+        "minimum_margin": 0.13,
+        "second": "back_eye_2_iris",
+        "second_margin": 0.13
+      },
+      {
+        "connected": true,
+        "first": "back_eye_2_iris",
+        "first_margin": 0.286,
+        "joint": [
+          -4.8,
+          43.2,
+          -14.964
+        ],
+        "minimum_margin": 0.014,
+        "second": "back_eye_2_pupil",
+        "second_margin": 0.014
+      },
+      {
+        "connected": true,
+        "first": "back_eye_band",
+        "first_margin": 1.136,
+        "joint": [
+          0,
+          43.2,
+          -12.864
+        ],
+        "minimum_margin": 0.114,
+        "second": "back_eye_3_sclera",
+        "second_margin": 0.114
+      },
+      {
+        "connected": true,
+        "first": "back_eye_3_sclera",
+        "first_margin": 0.36,
+        "joint": [
+          0,
+          43.2,
+          -14.64
+        ],
+        "minimum_margin": 0.14,
+        "second": "back_eye_3_iris",
+        "second_margin": 0.14
+      },
+      {
+        "connected": true,
+        "first": "back_eye_3_iris",
+        "first_margin": 0.398,
+        "joint": [
+          0,
+          43.2,
+          -15.552
+        ],
+        "minimum_margin": 0.052,
+        "second": "back_eye_3_pupil",
+        "second_margin": 0.052
+      },
+      {
+        "connected": true,
+        "first": "back_eye_band",
+        "first_margin": 1.052,
+        "joint": [
+          4.8,
+          43.2,
+          -12.948
+        ],
+        "minimum_margin": 0.048,
+        "second": "back_eye_4_sclera",
+        "second_margin": 0.048
+      },
+      {
+        "connected": true,
+        "first": "back_eye_4_sclera",
+        "first_margin": 0.27,
+        "joint": [
+          4.8,
+          43.2,
+          -14.28
+        ],
+        "minimum_margin": 0.13,
+        "second": "back_eye_4_iris",
+        "second_margin": 0.13
+      },
+      {
+        "connected": true,
+        "first": "back_eye_4_iris",
+        "first_margin": 0.286,
+        "joint": [
+          4.8,
+          43.2,
+          -14.964
+        ],
+        "minimum_margin": 0.014,
+        "second": "back_eye_4_pupil",
+        "second_margin": 0.014
+      },
+      {
+        "connected": true,
+        "first": "rear_right_crown_wrap",
+        "first_margin": 2.310845,
+        "joint": [
+          9.5,
+          43.2,
+          -12.948
+        ],
+        "minimum_margin": 0.048,
+        "second": "back_eye_5_sclera",
+        "second_margin": 0.048
+      },
+      {
+        "connected": true,
+        "first": "back_eye_5_sclera",
+        "first_margin": 0.27,
+        "joint": [
+          9.5,
+          43.2,
+          -14.28
+        ],
+        "minimum_margin": 0.13,
+        "second": "back_eye_5_iris",
+        "second_margin": 0.13
+      },
+      {
+        "connected": true,
+        "first": "back_eye_5_iris",
+        "first_margin": 0.286,
+        "joint": [
+          9.5,
+          43.2,
+          -14.964
+        ],
+        "minimum_margin": 0.014,
+        "second": "back_eye_5_pupil",
+        "second_margin": 0.014
+      },
+      {
+        "connected": true,
+        "first": "left_side_temple",
+        "first_margin": 1.222,
+        "joint": [
+          -14.478,
+          41,
+          0
+        ],
+        "minimum_margin": 0.428,
+        "second": "left_temple_eye_sclera",
+        "second_margin": 0.428
+      },
+      {
+        "connected": true,
+        "first": "left_temple_eye_sclera",
+        "first_margin": 0.62,
+        "joint": [
+          -16.18,
+          41,
+          0
+        ],
+        "minimum_margin": 0.18,
+        "second": "left_temple_eye_iris",
+        "second_margin": 0.18
+      },
+      {
+        "connected": true,
+        "first": "left_temple_eye_iris",
+        "first_margin": 0.396,
+        "joint": [
+          -17.054,
+          41,
+          0
+        ],
+        "minimum_margin": 0.154,
+        "second": "left_temple_eye_pupil",
+        "second_margin": 0.154
+      },
+      {
+        "connected": true,
+        "first": "right_side_temple",
+        "first_margin": 1.222,
+        "joint": [
+          14.478,
+          41,
+          0
+        ],
+        "minimum_margin": 0.428,
+        "second": "right_temple_eye_sclera",
+        "second_margin": 0.428
+      },
+      {
+        "connected": true,
+        "first": "right_temple_eye_sclera",
+        "first_margin": 0.62,
+        "joint": [
+          16.18,
+          41,
+          0
+        ],
+        "minimum_margin": 0.18,
+        "second": "right_temple_eye_iris",
+        "second_margin": 0.18
+      },
+      {
+        "connected": true,
+        "first": "right_temple_eye_iris",
+        "first_margin": 0.396,
+        "joint": [
+          17.054,
+          41,
+          0
+        ],
+        "minimum_margin": 0.154,
+        "second": "right_temple_eye_pupil",
+        "second_margin": 0.154
+      },
+      {
+        "connected": true,
+        "first": "top_eye_plinth",
+        "first_margin": 1.2325,
+        "joint": [
+          0,
+          52.2675,
+          0
+        ],
+        "minimum_margin": 0.4175,
+        "second": "zenith_eye_sclera",
+        "second_margin": 0.4175
+      },
+      {
+        "connected": true,
+        "first": "zenith_eye_sclera",
+        "first_margin": 0.675,
+        "joint": [
+          0,
+          54.025,
+          0
+        ],
+        "minimum_margin": 0.175,
+        "second": "zenith_eye_iris",
+        "second_margin": 0.175
+      },
+      {
+        "connected": true,
+        "first": "zenith_eye_iris",
+        "first_margin": 0.4225,
+        "joint": [
+          0,
+          54.9275,
+          0
+        ],
+        "minimum_margin": 0.1275,
+        "second": "zenith_eye_pupil",
+        "second_margin": 0.1275
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 1,
+        "joint": [
+          -8,
+          45,
+          -6
+        ],
+        "minimum_margin": 0.7,
+        "second": "left_rear_upper_spar_1",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_spar_1",
+        "first_margin": 0.721612,
+        "joint": [
+          -13,
+          57,
+          -11
+        ],
+        "minimum_margin": 0.7,
+        "second": "left_rear_upper_spar_2",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_spar_2",
+        "first_margin": 0.710249,
+        "joint": [
+          -17.5,
+          71,
+          -15
+        ],
+        "minimum_margin": 0.7,
+        "second": "left_rear_upper_spar_3",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_spar_1",
+        "first_margin": 0.721612,
+        "joint": [
+          -13,
+          57,
+          -11
+        ],
+        "minimum_margin": 0.55,
+        "second": "left_rear_upper_feather_1_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_feather_1_1",
+        "first_margin": 0.56992,
+        "joint": [
+          -21.74,
+          70.2,
+          -17
+        ],
+        "minimum_margin": 0.55,
+        "second": "left_rear_upper_feather_1_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_feather_1_2",
+        "first_margin": 0.548817,
+        "joint": [
+          -29.72,
+          79.7,
+          -20.35
+        ],
+        "minimum_margin": 0.4,
+        "second": "left_rear_upper_feather_1_3",
+        "second_margin": 0.4
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_spar_2",
+        "first_margin": 0.710249,
+        "joint": [
+          -17.5,
+          71,
+          -15
+        ],
+        "minimum_margin": 0.55,
+        "second": "left_rear_upper_feather_2_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_feather_2_1",
+        "first_margin": 0.543092,
+        "joint": [
+          -28.77,
+          69.48,
+          -17.78
+        ],
+        "minimum_margin": 0.543092,
+        "second": "left_rear_upper_feather_2_2",
+        "second_margin": 0.57
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_feather_2_2",
+        "first_margin": 0.553858,
+        "joint": [
+          -39.06,
+          65.54,
+          -18.19
+        ],
+        "minimum_margin": 0.39,
+        "second": "left_rear_upper_feather_2_3",
+        "second_margin": 0.39
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_spar_3",
+        "first_margin": 0.710597,
+        "joint": [
+          -21,
+          85,
+          -18
+        ],
+        "minimum_margin": 0.55,
+        "second": "left_rear_upper_feather_3_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_feather_3_1",
+        "first_margin": 0.552268,
+        "joint": [
+          -29.74,
+          68.76,
+          -17.56
+        ],
+        "minimum_margin": 0.54,
+        "second": "left_rear_upper_feather_3_2",
+        "second_margin": 0.54
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_feather_3_2",
+        "first_margin": 0.568922,
+        "joint": [
+          -37.72,
+          51.38,
+          -15.03
+        ],
+        "minimum_margin": 0.38,
+        "second": "left_rear_upper_feather_3_3",
+        "second_margin": 0.38
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_spar_1",
+        "first_margin": 0.721612,
+        "joint": [
+          -13,
+          57,
+          -11
+        ],
+        "minimum_margin": 0.721612,
+        "second": "left_rear_upper_overlap_vane_1_1",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_overlap_vane_1_1",
+        "first_margin": 0.746219,
+        "joint": [
+          -20.14,
+          66.08,
+          -14.78
+        ],
+        "minimum_margin": 0.746219,
+        "second": "left_rear_upper_overlap_vane_1_2",
+        "second_margin": 0.77
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_overlap_vane_1_2",
+        "first_margin": 0.750479,
+        "joint": [
+          -28.3,
+          74.55,
+          -19.1
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_rear_upper_overlap_vane_1_3",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_spar_3",
+        "first_margin": 0.710597,
+        "joint": [
+          -21,
+          85,
+          -18
+        ],
+        "minimum_margin": 0.710597,
+        "second": "left_rear_upper_overlap_vane_2_1",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_overlap_vane_2_1",
+        "first_margin": 0.737463,
+        "joint": [
+          -27.3,
+          71.82,
+          -16.74
+        ],
+        "minimum_margin": 0.737463,
+        "second": "left_rear_upper_overlap_vane_2_2",
+        "second_margin": 0.76
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_overlap_vane_2_2",
+        "first_margin": 0.749611,
+        "joint": [
+          -34.5,
+          54.85,
+          -15.3
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_rear_upper_overlap_vane_2_3",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_spar_2",
+        "first_margin": 0.474812,
+        "joint": [
+          -17.5,
+          71,
+          -15.897
+        ],
+        "minimum_margin": 0.047,
+        "second": "left_rear_upper_wing_eye_1_sclera",
+        "second_margin": 0.047
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_wing_eye_1_sclera",
+        "first_margin": 0.18,
+        "joint": [
+          -17.5,
+          71,
+          -16.97
+        ],
+        "minimum_margin": 0.07,
+        "second": "left_rear_upper_wing_eye_1_iris",
+        "second_margin": 0.07
+      },
+      {
+        "connected": true,
+        "first": "left_rear_upper_wing_eye_1_iris",
+        "first_margin": 0.229,
+        "joint": [
+          -17.5,
+          71,
+          -17.521
+        ],
+        "minimum_margin": 0.021,
+        "second": "left_rear_upper_wing_eye_1_pupil",
+        "second_margin": 0.021
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 1,
+        "joint": [
+          8,
+          45,
+          -6
+        ],
+        "minimum_margin": 0.7,
+        "second": "right_rear_upper_spar_1",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_spar_1",
+        "first_margin": 0.721612,
+        "joint": [
+          13,
+          57,
+          -11
+        ],
+        "minimum_margin": 0.7,
+        "second": "right_rear_upper_spar_2",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_spar_2",
+        "first_margin": 0.710249,
+        "joint": [
+          17.5,
+          71,
+          -15
+        ],
+        "minimum_margin": 0.7,
+        "second": "right_rear_upper_spar_3",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_spar_1",
+        "first_margin": 0.721612,
+        "joint": [
+          13,
+          57,
+          -11
+        ],
+        "minimum_margin": 0.55,
+        "second": "right_rear_upper_feather_1_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_feather_1_1",
+        "first_margin": 0.56992,
+        "joint": [
+          21.74,
+          70.2,
+          -17
+        ],
+        "minimum_margin": 0.55,
+        "second": "right_rear_upper_feather_1_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_feather_1_2",
+        "first_margin": 0.548817,
+        "joint": [
+          29.72,
+          79.7,
+          -20.35
+        ],
+        "minimum_margin": 0.4,
+        "second": "right_rear_upper_feather_1_3",
+        "second_margin": 0.4
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_spar_2",
+        "first_margin": 0.710249,
+        "joint": [
+          17.5,
+          71,
+          -15
+        ],
+        "minimum_margin": 0.55,
+        "second": "right_rear_upper_feather_2_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_feather_2_1",
+        "first_margin": 0.543092,
+        "joint": [
+          28.77,
+          69.48,
+          -17.78
+        ],
+        "minimum_margin": 0.543092,
+        "second": "right_rear_upper_feather_2_2",
+        "second_margin": 0.57
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_feather_2_2",
+        "first_margin": 0.553858,
+        "joint": [
+          39.06,
+          65.54,
+          -18.19
+        ],
+        "minimum_margin": 0.39,
+        "second": "right_rear_upper_feather_2_3",
+        "second_margin": 0.39
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_spar_3",
+        "first_margin": 0.710597,
+        "joint": [
+          21,
+          85,
+          -18
+        ],
+        "minimum_margin": 0.55,
+        "second": "right_rear_upper_feather_3_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_feather_3_1",
+        "first_margin": 0.552268,
+        "joint": [
+          29.74,
+          68.76,
+          -17.56
+        ],
+        "minimum_margin": 0.54,
+        "second": "right_rear_upper_feather_3_2",
+        "second_margin": 0.54
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_feather_3_2",
+        "first_margin": 0.568922,
+        "joint": [
+          37.72,
+          51.38,
+          -15.03
+        ],
+        "minimum_margin": 0.38,
+        "second": "right_rear_upper_feather_3_3",
+        "second_margin": 0.38
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_spar_1",
+        "first_margin": 0.721612,
+        "joint": [
+          13,
+          57,
+          -11
+        ],
+        "minimum_margin": 0.721612,
+        "second": "right_rear_upper_overlap_vane_1_1",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_overlap_vane_1_1",
+        "first_margin": 0.746219,
+        "joint": [
+          20.14,
+          66.08,
+          -14.78
+        ],
+        "minimum_margin": 0.746219,
+        "second": "right_rear_upper_overlap_vane_1_2",
+        "second_margin": 0.77
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_overlap_vane_1_2",
+        "first_margin": 0.750479,
+        "joint": [
+          28.3,
+          74.55,
+          -19.1
+        ],
+        "minimum_margin": 0.5,
+        "second": "right_rear_upper_overlap_vane_1_3",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_spar_3",
+        "first_margin": 0.710597,
+        "joint": [
+          21,
+          85,
+          -18
+        ],
+        "minimum_margin": 0.710597,
+        "second": "right_rear_upper_overlap_vane_2_1",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_overlap_vane_2_1",
+        "first_margin": 0.737463,
+        "joint": [
+          27.3,
+          71.82,
+          -16.74
+        ],
+        "minimum_margin": 0.737463,
+        "second": "right_rear_upper_overlap_vane_2_2",
+        "second_margin": 0.76
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_overlap_vane_2_2",
+        "first_margin": 0.749611,
+        "joint": [
+          34.5,
+          54.85,
+          -15.3
+        ],
+        "minimum_margin": 0.5,
+        "second": "right_rear_upper_overlap_vane_2_3",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_spar_2",
+        "first_margin": 0.474812,
+        "joint": [
+          17.5,
+          71,
+          -15.897
+        ],
+        "minimum_margin": 0.047,
+        "second": "right_rear_upper_wing_eye_1_sclera",
+        "second_margin": 0.047
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_wing_eye_1_sclera",
+        "first_margin": 0.18,
+        "joint": [
+          17.5,
+          71,
+          -16.97
+        ],
+        "minimum_margin": 0.07,
+        "second": "right_rear_upper_wing_eye_1_iris",
+        "second_margin": 0.07
+      },
+      {
+        "connected": true,
+        "first": "right_rear_upper_wing_eye_1_iris",
+        "first_margin": 0.229,
+        "joint": [
+          17.5,
+          71,
+          -17.521
+        ],
+        "minimum_margin": 0.021,
+        "second": "right_rear_upper_wing_eye_1_pupil",
+        "second_margin": 0.021
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 0,
+        "joint": [
+          -9,
+          43,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "left_middle_spar_1",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "left_middle_spar_1",
+        "first_margin": 0.7,
+        "joint": [
+          -21,
+          49,
+          4
+        ],
+        "minimum_margin": 0.7,
+        "second": "left_middle_spar_2",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "left_middle_spar_2",
+        "first_margin": 0.693168,
+        "joint": [
+          -34,
+          51,
+          10
+        ],
+        "minimum_margin": 0.693168,
+        "second": "left_middle_spar_3",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "left_middle_spar_1",
+        "first_margin": 0.7,
+        "joint": [
+          -21,
+          49,
+          4
+        ],
+        "minimum_margin": 0.55,
+        "second": "left_middle_feather_1_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "left_middle_feather_1_1",
+        "first_margin": 0.555574,
+        "joint": [
+          -31.58,
+          56.22,
+          10
+        ],
+        "minimum_margin": 0.55,
+        "second": "left_middle_feather_1_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "left_middle_feather_1_2",
+        "first_margin": 0.556379,
+        "joint": [
+          -41.24,
+          60.26,
+          13.35
+        ],
+        "minimum_margin": 0.39,
+        "second": "left_middle_feather_1_3",
+        "second_margin": 0.39
+      },
+      {
+        "connected": true,
+        "first": "left_middle_spar_2",
+        "first_margin": 0.693168,
+        "joint": [
+          -34,
+          51,
+          10
+        ],
+        "minimum_margin": 0.55,
+        "second": "left_middle_feather_2_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "left_middle_feather_2_1",
+        "first_margin": 0.5313,
+        "joint": [
+          -43.2,
+          49.48,
+          15.08
+        ],
+        "minimum_margin": 0.53,
+        "second": "left_middle_feather_2_2",
+        "second_margin": 0.53
+      },
+      {
+        "connected": true,
+        "first": "left_middle_feather_2_2",
+        "first_margin": 0.558356,
+        "joint": [
+          -51.6,
+          45.54,
+          17.59
+        ],
+        "minimum_margin": 0.39,
+        "second": "left_middle_feather_2_3",
+        "second_margin": 0.39
+      },
+      {
+        "connected": true,
+        "first": "left_middle_spar_3",
+        "first_margin": 0.705196,
+        "joint": [
+          -48,
+          47,
+          15
+        ],
+        "minimum_margin": 0.55,
+        "second": "left_middle_feather_3_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "left_middle_feather_3_1",
+        "first_margin": 0.534776,
+        "joint": [
+          -46.16,
+          39.96,
+          18.24
+        ],
+        "minimum_margin": 0.534776,
+        "second": "left_middle_feather_3_2",
+        "second_margin": 0.54
+      },
+      {
+        "connected": true,
+        "first": "left_middle_feather_3_2",
+        "first_margin": 0.536576,
+        "joint": [
+          -44.48,
+          30.98,
+          19.07
+        ],
+        "minimum_margin": 0.38,
+        "second": "left_middle_feather_3_3",
+        "second_margin": 0.38
+      },
+      {
+        "connected": true,
+        "first": "left_middle_spar_1",
+        "first_margin": 0.7,
+        "joint": [
+          -21,
+          49,
+          4
+        ],
+        "minimum_margin": 0.7,
+        "second": "left_middle_overlap_vane_1_1",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "left_middle_overlap_vane_1_1",
+        "first_margin": 0.767304,
+        "joint": [
+          -28.14,
+          53.04,
+          7.78
+        ],
+        "minimum_margin": 0.73,
+        "second": "left_middle_overlap_vane_1_2",
+        "second_margin": 0.73
+      },
+      {
+        "connected": true,
+        "first": "left_middle_overlap_vane_1_2",
+        "first_margin": 0.747521,
+        "joint": [
+          -36.3,
+          55.75,
+          12.1
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_middle_overlap_vane_1_3",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "left_middle_spar_3",
+        "first_margin": 0.705196,
+        "joint": [
+          -48,
+          47,
+          15
+        ],
+        "minimum_margin": 0.705196,
+        "second": "left_middle_overlap_vane_2_1",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "left_middle_overlap_vane_2_1",
+        "first_margin": 0.751451,
+        "joint": [
+          -45.48,
+          42.22,
+          16.26
+        ],
+        "minimum_margin": 0.751451,
+        "second": "left_middle_overlap_vane_2_2",
+        "second_margin": 0.76
+      },
+      {
+        "connected": true,
+        "first": "left_middle_overlap_vane_2_2",
+        "first_margin": 0.747308,
+        "joint": [
+          -42.6,
+          34.85,
+          17.7
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_middle_overlap_vane_2_3",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "left_middle_spar_2",
+        "first_margin": 0.320887,
+        "joint": [
+          -34,
+          51,
+          10.897
+        ],
+        "minimum_margin": 0.047,
+        "second": "left_middle_wing_eye_1_sclera",
+        "second_margin": 0.047
+      },
+      {
+        "connected": true,
+        "first": "left_middle_wing_eye_1_sclera",
+        "first_margin": 0.18,
+        "joint": [
+          -34,
+          51,
+          11.97
+        ],
+        "minimum_margin": 0.07,
+        "second": "left_middle_wing_eye_1_iris",
+        "second_margin": 0.07
+      },
+      {
+        "connected": true,
+        "first": "left_middle_wing_eye_1_iris",
+        "first_margin": 0.229,
+        "joint": [
+          -34,
+          51,
+          12.521
+        ],
+        "minimum_margin": 0.021,
+        "second": "left_middle_wing_eye_1_pupil",
+        "second_margin": 0.021
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 0,
+        "joint": [
+          9,
+          43,
+          0
+        ],
+        "minimum_margin": 0,
+        "second": "right_middle_spar_1",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "right_middle_spar_1",
+        "first_margin": 0.7,
+        "joint": [
+          21,
+          49,
+          4
+        ],
+        "minimum_margin": 0.7,
+        "second": "right_middle_spar_2",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "right_middle_spar_2",
+        "first_margin": 0.693168,
+        "joint": [
+          34,
+          51,
+          10
+        ],
+        "minimum_margin": 0.693168,
+        "second": "right_middle_spar_3",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "right_middle_spar_1",
+        "first_margin": 0.7,
+        "joint": [
+          21,
+          49,
+          4
+        ],
+        "minimum_margin": 0.55,
+        "second": "right_middle_feather_1_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "right_middle_feather_1_1",
+        "first_margin": 0.555574,
+        "joint": [
+          31.58,
+          56.22,
+          10
+        ],
+        "minimum_margin": 0.55,
+        "second": "right_middle_feather_1_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "right_middle_feather_1_2",
+        "first_margin": 0.556379,
+        "joint": [
+          41.24,
+          60.26,
+          13.35
+        ],
+        "minimum_margin": 0.39,
+        "second": "right_middle_feather_1_3",
+        "second_margin": 0.39
+      },
+      {
+        "connected": true,
+        "first": "right_middle_spar_2",
+        "first_margin": 0.693168,
+        "joint": [
+          34,
+          51,
+          10
+        ],
+        "minimum_margin": 0.55,
+        "second": "right_middle_feather_2_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "right_middle_feather_2_1",
+        "first_margin": 0.5313,
+        "joint": [
+          43.2,
+          49.48,
+          15.08
+        ],
+        "minimum_margin": 0.53,
+        "second": "right_middle_feather_2_2",
+        "second_margin": 0.53
+      },
+      {
+        "connected": true,
+        "first": "right_middle_feather_2_2",
+        "first_margin": 0.558356,
+        "joint": [
+          51.6,
+          45.54,
+          17.59
+        ],
+        "minimum_margin": 0.39,
+        "second": "right_middle_feather_2_3",
+        "second_margin": 0.39
+      },
+      {
+        "connected": true,
+        "first": "right_middle_spar_3",
+        "first_margin": 0.705196,
+        "joint": [
+          48,
+          47,
+          15
+        ],
+        "minimum_margin": 0.55,
+        "second": "right_middle_feather_3_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "right_middle_feather_3_1",
+        "first_margin": 0.534776,
+        "joint": [
+          46.16,
+          39.96,
+          18.24
+        ],
+        "minimum_margin": 0.534776,
+        "second": "right_middle_feather_3_2",
+        "second_margin": 0.54
+      },
+      {
+        "connected": true,
+        "first": "right_middle_feather_3_2",
+        "first_margin": 0.536576,
+        "joint": [
+          44.48,
+          30.98,
+          19.07
+        ],
+        "minimum_margin": 0.38,
+        "second": "right_middle_feather_3_3",
+        "second_margin": 0.38
+      },
+      {
+        "connected": true,
+        "first": "right_middle_spar_1",
+        "first_margin": 0.7,
+        "joint": [
+          21,
+          49,
+          4
+        ],
+        "minimum_margin": 0.7,
+        "second": "right_middle_overlap_vane_1_1",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "right_middle_overlap_vane_1_1",
+        "first_margin": 0.767304,
+        "joint": [
+          28.14,
+          53.04,
+          7.78
+        ],
+        "minimum_margin": 0.73,
+        "second": "right_middle_overlap_vane_1_2",
+        "second_margin": 0.73
+      },
+      {
+        "connected": true,
+        "first": "right_middle_overlap_vane_1_2",
+        "first_margin": 0.747521,
+        "joint": [
+          36.3,
+          55.75,
+          12.1
+        ],
+        "minimum_margin": 0.5,
+        "second": "right_middle_overlap_vane_1_3",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "right_middle_spar_3",
+        "first_margin": 0.705196,
+        "joint": [
+          48,
+          47,
+          15
+        ],
+        "minimum_margin": 0.705196,
+        "second": "right_middle_overlap_vane_2_1",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "right_middle_overlap_vane_2_1",
+        "first_margin": 0.751451,
+        "joint": [
+          45.48,
+          42.22,
+          16.26
+        ],
+        "minimum_margin": 0.751451,
+        "second": "right_middle_overlap_vane_2_2",
+        "second_margin": 0.76
+      },
+      {
+        "connected": true,
+        "first": "right_middle_overlap_vane_2_2",
+        "first_margin": 0.747308,
+        "joint": [
+          42.6,
+          34.85,
+          17.7
+        ],
+        "minimum_margin": 0.5,
+        "second": "right_middle_overlap_vane_2_3",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "right_middle_spar_2",
+        "first_margin": 0.320887,
+        "joint": [
+          34,
+          51,
+          10.897
+        ],
+        "minimum_margin": 0.047,
+        "second": "right_middle_wing_eye_1_sclera",
+        "second_margin": 0.047
+      },
+      {
+        "connected": true,
+        "first": "right_middle_wing_eye_1_sclera",
+        "first_margin": 0.18,
+        "joint": [
+          34,
+          51,
+          11.97
+        ],
+        "minimum_margin": 0.07,
+        "second": "right_middle_wing_eye_1_iris",
+        "second_margin": 0.07
+      },
+      {
+        "connected": true,
+        "first": "right_middle_wing_eye_1_iris",
+        "first_margin": 0.229,
+        "joint": [
+          34,
+          51,
+          12.521
+        ],
+        "minimum_margin": 0.021,
+        "second": "right_middle_wing_eye_1_pupil",
+        "second_margin": 0.021
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 1,
+        "joint": [
+          -8,
+          40,
+          6
+        ],
+        "minimum_margin": 0.7,
+        "second": "left_front_lower_spar_1",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_spar_1",
+        "first_margin": 0.693752,
+        "joint": [
+          -16,
+          32,
+          12
+        ],
+        "minimum_margin": 0.693752,
+        "second": "left_front_lower_spar_2",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_spar_2",
+        "first_margin": 0.712623,
+        "joint": [
+          -23,
+          19,
+          18
+        ],
+        "minimum_margin": 0.7,
+        "second": "left_front_lower_spar_3",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_spar_1",
+        "first_margin": 0.693752,
+        "joint": [
+          -16,
+          32,
+          12
+        ],
+        "minimum_margin": 0.55,
+        "second": "left_front_lower_feather_1_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_feather_1_1",
+        "first_margin": 0.570949,
+        "joint": [
+          -26.12,
+          34.62,
+          16.62
+        ],
+        "minimum_margin": 0.57,
+        "second": "left_front_lower_feather_1_2",
+        "second_margin": 0.57
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_feather_1_2",
+        "first_margin": 0.555228,
+        "joint": [
+          -35.36,
+          34.46,
+          18.71
+        ],
+        "minimum_margin": 0.39,
+        "second": "left_front_lower_feather_1_3",
+        "second_margin": 0.39
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_spar_2",
+        "first_margin": 0.712623,
+        "joint": [
+          -23,
+          19,
+          18
+        ],
+        "minimum_margin": 0.55,
+        "second": "left_front_lower_feather_2_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_feather_2_1",
+        "first_margin": 0.550701,
+        "joint": [
+          -32.66,
+          19.32,
+          21.7
+        ],
+        "minimum_margin": 0.55,
+        "second": "left_front_lower_feather_2_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_feather_2_2",
+        "first_margin": 0.559652,
+        "joint": [
+          -41.48,
+          17.06,
+          22.95
+        ],
+        "minimum_margin": 0.39,
+        "second": "left_front_lower_feather_2_3",
+        "second_margin": 0.39
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_spar_3",
+        "first_margin": 0.700331,
+        "joint": [
+          -27,
+          5,
+          22
+        ],
+        "minimum_margin": 0.55,
+        "second": "left_front_lower_feather_3_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_feather_3_1",
+        "first_margin": 0.568705,
+        "joint": [
+          -28.84,
+          2.56,
+          24.78
+        ],
+        "minimum_margin": 0.53,
+        "second": "left_front_lower_feather_3_2",
+        "second_margin": 0.53
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_feather_3_2",
+        "first_margin": 0.536802,
+        "joint": [
+          -30.52,
+          -2.22,
+          25.19
+        ],
+        "minimum_margin": 0.38,
+        "second": "left_front_lower_feather_3_3",
+        "second_margin": 0.38
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_spar_1",
+        "first_margin": 0.693752,
+        "joint": [
+          -16,
+          32,
+          12
+        ],
+        "minimum_margin": 0.693752,
+        "second": "left_front_lower_overlap_vane_1_1",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_overlap_vane_1_1",
+        "first_margin": 0.768329,
+        "joint": [
+          -22.72,
+          32.26,
+          14.52
+        ],
+        "minimum_margin": 0.768329,
+        "second": "left_front_lower_overlap_vane_1_2",
+        "second_margin": 0.77
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_overlap_vane_1_2",
+        "first_margin": 0.771238,
+        "joint": [
+          -30.4,
+          30.65,
+          17.4
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_front_lower_overlap_vane_1_3",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_spar_3",
+        "first_margin": 0.700331,
+        "joint": [
+          -27,
+          5,
+          22
+        ],
+        "minimum_margin": 0.700331,
+        "second": "left_front_lower_overlap_vane_2_1",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_overlap_vane_2_1",
+        "first_margin": 0.770467,
+        "joint": [
+          -30.36,
+          5.68,
+          22.84
+        ],
+        "minimum_margin": 0.74,
+        "second": "left_front_lower_overlap_vane_2_2",
+        "second_margin": 0.74
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_overlap_vane_2_2",
+        "first_margin": 0.743679,
+        "joint": [
+          -34.2,
+          4.55,
+          23.8
+        ],
+        "minimum_margin": 0.5,
+        "second": "left_front_lower_overlap_vane_2_3",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_spar_2",
+        "first_margin": 0.374926,
+        "joint": [
+          -23,
+          19,
+          18.897
+        ],
+        "minimum_margin": 0.047,
+        "second": "left_front_lower_wing_eye_1_sclera",
+        "second_margin": 0.047
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_wing_eye_1_sclera",
+        "first_margin": 0.18,
+        "joint": [
+          -23,
+          19,
+          19.97
+        ],
+        "minimum_margin": 0.07,
+        "second": "left_front_lower_wing_eye_1_iris",
+        "second_margin": 0.07
+      },
+      {
+        "connected": true,
+        "first": "left_front_lower_wing_eye_1_iris",
+        "first_margin": 0.229,
+        "joint": [
+          -23,
+          19,
+          20.521
+        ],
+        "minimum_margin": 0.021,
+        "second": "left_front_lower_wing_eye_1_pupil",
+        "second_margin": 0.021
+      },
+      {
+        "connected": true,
+        "first": "body_core",
+        "first_margin": 1,
+        "joint": [
+          8,
+          40,
+          6
+        ],
+        "minimum_margin": 0.7,
+        "second": "right_front_lower_spar_1",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_spar_1",
+        "first_margin": 0.693752,
+        "joint": [
+          16,
+          32,
+          12
+        ],
+        "minimum_margin": 0.693752,
+        "second": "right_front_lower_spar_2",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_spar_2",
+        "first_margin": 0.712623,
+        "joint": [
+          23,
+          19,
+          18
+        ],
+        "minimum_margin": 0.7,
+        "second": "right_front_lower_spar_3",
+        "second_margin": 0.7
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_spar_1",
+        "first_margin": 0.693752,
+        "joint": [
+          16,
+          32,
+          12
+        ],
+        "minimum_margin": 0.55,
+        "second": "right_front_lower_feather_1_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_feather_1_1",
+        "first_margin": 0.570949,
+        "joint": [
+          26.12,
+          34.62,
+          16.62
+        ],
+        "minimum_margin": 0.57,
+        "second": "right_front_lower_feather_1_2",
+        "second_margin": 0.57
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_feather_1_2",
+        "first_margin": 0.555228,
+        "joint": [
+          35.36,
+          34.46,
+          18.71
+        ],
+        "minimum_margin": 0.39,
+        "second": "right_front_lower_feather_1_3",
+        "second_margin": 0.39
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_spar_2",
+        "first_margin": 0.712623,
+        "joint": [
+          23,
+          19,
+          18
+        ],
+        "minimum_margin": 0.55,
+        "second": "right_front_lower_feather_2_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_feather_2_1",
+        "first_margin": 0.550701,
+        "joint": [
+          32.66,
+          19.32,
+          21.7
+        ],
+        "minimum_margin": 0.55,
+        "second": "right_front_lower_feather_2_2",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_feather_2_2",
+        "first_margin": 0.559652,
+        "joint": [
+          41.48,
+          17.06,
+          22.95
+        ],
+        "minimum_margin": 0.39,
+        "second": "right_front_lower_feather_2_3",
+        "second_margin": 0.39
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_spar_3",
+        "first_margin": 0.700331,
+        "joint": [
+          27,
+          5,
+          22
+        ],
+        "minimum_margin": 0.55,
+        "second": "right_front_lower_feather_3_1",
+        "second_margin": 0.55
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_feather_3_1",
+        "first_margin": 0.568705,
+        "joint": [
+          28.84,
+          2.56,
+          24.78
+        ],
+        "minimum_margin": 0.53,
+        "second": "right_front_lower_feather_3_2",
+        "second_margin": 0.53
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_feather_3_2",
+        "first_margin": 0.536802,
+        "joint": [
+          30.52,
+          -2.22,
+          25.19
+        ],
+        "minimum_margin": 0.38,
+        "second": "right_front_lower_feather_3_3",
+        "second_margin": 0.38
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_spar_1",
+        "first_margin": 0.693752,
+        "joint": [
+          16,
+          32,
+          12
+        ],
+        "minimum_margin": 0.693752,
+        "second": "right_front_lower_overlap_vane_1_1",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_overlap_vane_1_1",
+        "first_margin": 0.768329,
+        "joint": [
+          22.72,
+          32.26,
+          14.52
+        ],
+        "minimum_margin": 0.768329,
+        "second": "right_front_lower_overlap_vane_1_2",
+        "second_margin": 0.77
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_overlap_vane_1_2",
+        "first_margin": 0.771238,
+        "joint": [
+          30.4,
+          30.65,
+          17.4
+        ],
+        "minimum_margin": 0.5,
+        "second": "right_front_lower_overlap_vane_1_3",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_spar_3",
+        "first_margin": 0.700331,
+        "joint": [
+          27,
+          5,
+          22
+        ],
+        "minimum_margin": 0.700331,
+        "second": "right_front_lower_overlap_vane_2_1",
+        "second_margin": 0.75
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_overlap_vane_2_1",
+        "first_margin": 0.770467,
+        "joint": [
+          30.36,
+          5.68,
+          22.84
+        ],
+        "minimum_margin": 0.74,
+        "second": "right_front_lower_overlap_vane_2_2",
+        "second_margin": 0.74
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_overlap_vane_2_2",
+        "first_margin": 0.743679,
+        "joint": [
+          34.2,
+          4.55,
+          23.8
+        ],
+        "minimum_margin": 0.5,
+        "second": "right_front_lower_overlap_vane_2_3",
+        "second_margin": 0.5
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_spar_2",
+        "first_margin": 0.374926,
+        "joint": [
+          23,
+          19,
+          18.897
+        ],
+        "minimum_margin": 0.047,
+        "second": "right_front_lower_wing_eye_1_sclera",
+        "second_margin": 0.047
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_wing_eye_1_sclera",
+        "first_margin": 0.18,
+        "joint": [
+          23,
+          19,
+          19.97
+        ],
+        "minimum_margin": 0.07,
+        "second": "right_front_lower_wing_eye_1_iris",
+        "second_margin": 0.07
+      },
+      {
+        "connected": true,
+        "first": "right_front_lower_wing_eye_1_iris",
+        "first_margin": 0.229,
+        "joint": [
+          23,
+          19,
+          20.521
+        ],
+        "minimum_margin": 0.021,
+        "second": "right_front_lower_wing_eye_1_pupil",
+        "second_margin": 0.021
+      }
+    ],
+    "method": "shared-joint-compiled-oriented-cuboid-margin-v2",
+    "minimum_margin": 0.0
+  },
+  "bones": 113,
+  "cuboids": 189,
+  "declared_link_tree_covers_every_cube": true,
+  "depth_occupancy": {
+    "front_band_cuboids_z_at_least_5": 111,
+    "middle_band_cuboids_abs_z_below_5": 25,
+    "rear_band_cuboids_z_at_most_minus_5": 53
+  },
+  "distal_taper": {
+    "all_depths_strictly_decrease": true,
+    "all_profiles_have_three_segments": true,
+    "all_widths_strictly_decrease": true,
+    "distinct_terminal_lengths": 15,
+    "maximum_terminal_depth": 1.0,
+    "maximum_terminal_length": 5.933271,
+    "maximum_terminal_width": 1.4,
+    "minimum_terminal_length": 0.991211,
+    "overlap_vane_profile_count": 12,
+    "primary_profile_count": 18
+  },
+  "eye_crown": {
+    "all_segments_exist": true,
+    "angled_corner_segments": 4,
+    "includes_both_side_temples": true,
+    "segment_count": 8
+  },
+  "eye_orientations": {
+    "east": 1,
+    "north": 7,
+    "south": 11,
+    "up": 1,
+    "west": 1
+  },
+  "feature_inventory": {
+    "back_crown_eyes": 5,
+    "bilateral_wings": 6,
+    "broad_overlap_vane_segments": 36,
+    "broad_overlap_vanes": 12,
+    "feather_segments": 54,
+    "front_back_depth_bands": 3,
+    "front_crown_eyes": 7,
+    "primary_feathers": 18,
+    "side_eyes": 2,
+    "top_eyes": 1,
+    "total_geometric_eyes": 21,
+    "wing_eyes": 6,
+    "wing_layers": 3,
+    "wing_spar_segments": 18
+  },
+  "limitations": [
+    "The supplied reference contains only one frontal view and no mesh; rear and side topology is agent-authored inference, not source-observed geometry.",
+    "Painterly bloom, clouds, and micro-veins are reduced to a crisp bounded Minecraft palette rather than copied as noisy photographic texture.",
+    "The rigid feather rig prioritizes a strong all-angle static silhouette; animation quality requires a separate playback review."
+  ],
+  "local_source_comparison": "round3-inputs/local-review/01-biblical-angel/angel.source-comparison.png",
+  "local_source_comparison_is_ignored": true,
+  "model_id": "biblical_angel_many_eyed_six_wing",
+  "proportions": {
+    "axis_to_front_silhouette_area": {
+      "back": 0.981761,
+      "bottom": 0.750201,
+      "isometric": 0.906871,
+      "left": 0.673758,
+      "right": 0.673758,
+      "top": 0.750201
+    },
+    "body_depth_to_width": 0.955629,
+    "body_extents_xyz": [
+      34.189738,
+      29.5,
+      32.67269
+    ],
+    "depth_to_width": 0.47418,
+    "front_bbox_aspect": 1.173432,
+    "full_extents_xyz": [
+      109.481985,
+      91.585344,
+      51.914175
+    ],
+    "side_bbox_aspects": {
+      "left": 0.54717,
+      "right": 0.54717
+    },
+    "side_to_front_bbox_width": {
+      "left": 0.54717,
+      "right": 0.54717
+    },
+    "side_to_front_silhouette_area": {
+      "left": 0.673758,
+      "right": 0.673758
+    },
+    "wing_depth_centers": [
+      -14.0,
+      7.5,
+      16.0
+    ],
+    "wing_depth_span": 30.0
+  },
+  "reference_rights": "unknown; private ignored benchmark reference only",
+  "render_hash_manifest": "render-hashes.json",
+  "render_sha256": {
+    "all-angle-sheet.png": "28047cf2ad6a8943ec02d983eb314a447276dd3bcdfde8295209e827fc0f1f02",
+    "back.png": "0753d40f7796ba78ccc69f841625d9b94c18da0b8d2996205b83c035724821c1",
+    "bottom.png": "2426b5418e1e07c8554f0320510174718be4fc2de557aa96b8b6d28f2ed9635d",
+    "crown-wrap-closeup.png": "959b8f37df536b9f6ef1aa61da897a1607664477309c062449fa478a89362f62",
+    "eye-crown-closeup.png": "d97816d00a65cda5484d8e841c633b0e3e8e34663457cf3d7d6f6144c9e9cdcc",
+    "front.png": "1d19ab4213c2e47a349d2ef4361dec673e2e813e7c03a6be4378b429dc8ec522",
+    "isometric.png": "bf3ca62b6d5cfbbd6d9df3f5c237dd00fc3a478d4ecbbeb0666fa09018f2c5f8",
+    "left.png": "e7bb678ce7e66add1afcb02437faf77ad3a97ccebd3d3a44d498c61ec4ed915f",
+    "rear-eyes-closeup.png": "e1f0c7deff6f6d6917e5d481313307eca6628acb7297eefd060a8b935daf33bb",
+    "right.png": "ddd3f3bb73b637e294358eadf2342337f07594df4bd373790894bb064edc2511",
+    "side-depth-closeup.png": "e52dfa78c2b5d1955c71af83741ad8d6d51e99382e3c22d47fc74e3a5c5d8a93",
+    "top.png": "e145a2c3a24bb40dc1cbb4a79f39315079dbc8470fd7f47b9add282e0c22245d",
+    "wing-layers-closeup.png": "ba8418043dc3825ebe178864daef6f40e213eb8315799dff109c8bd3409c01b5",
+    "wing-tip-closeup.png": "e1d7322a6efe822800d568fa9a35bf0daedcb806c2f0e78108a24aa5dbc212ad"
+  },
+  "renderer": "deterministic-orthographic-textured-cuboid-zbuffer-v2",
+  "schema_version": 1,
+  "semantic_cuboids": 189,
+  "single_view_hidden_geometry": "inferred_conservatively_not_observed",
+  "source_projection": false,
+  "source_scoring": {
+    "reason": "The source merges white anatomy into cloud and bloom; any automated foreground mask would score background effects as body geometry. Multi-angle structure is therefore gated directly instead of reporting a misleading fitted IoU.",
+    "silhouette_iou_omitted": true
+  },
+  "source_skin_cuboids": 0,
+  "view_diversity_gates": {
+    "all_materials_are_noise_free": true,
+    "all_required_model_only_renders_are_pixel_distinct": true,
+    "all_wing_shape_cubes_have_nonzero_yaw": true,
+    "attachment_tree_is_connected": true,
+    "back_top_and_bottom_silhouettes_are_substantive": true,
+    "body_depth_to_width_at_least_contract": true,
+    "both_side_bbox_widths_meet_contract": true,
+    "both_side_silhouettes_have_minimum_area": true,
+    "every_primary_and_vane_has_three_step_taper": true,
+    "eye_crown_wraps_through_four_angled_corners_and_both_sides": true,
+    "front_back_side_top_eye_surfaces_exist": true,
+    "front_middle_rear_depth_bands_are_populated": true,
+    "full_depth_to_width_at_least_contract": true,
+    "side_aspect_differs_materially_from_front": true,
+    "three_wing_depth_bands_span_at_least_30": true,
+    "wing_sector_angles_match_rear_middle_front_contract": true
+  },
+  "view_metrics": {
+    "back": {
+      "bbox": [
+        42,
+        99,
+        678,
+        621
+      ],
+      "bbox_aspect": 1.218391,
+      "bbox_height": 522,
+      "bbox_width": 636,
+      "foreground_pixels": 119388,
+      "mask_sha256": "835c228a27cb4b2827d6c96a390d1397fa1973ad30b308fbb5cff8e2b88fe9a6"
+    },
+    "bottom": {
+      "bbox": [
+        42,
+        209,
+        678,
+        511
+      ],
+      "bbox_aspect": 2.10596,
+      "bbox_height": 302,
+      "bbox_width": 636,
+      "foreground_pixels": 91229,
+      "mask_sha256": "9a9553e542d8bde52b64867b7be7815fa90712a0847c1d9a7657311956ddff50"
+    },
+    "front": {
+      "bbox": [
+        42,
+        89,
+        678,
+        631
+      ],
+      "bbox_aspect": 1.173432,
+      "bbox_height": 542,
+      "bbox_width": 636,
+      "foreground_pixels": 121606,
+      "mask_sha256": "ea8f1c3685492cf821df92c9aa1e4f3cfa560c1324d6deba914be9f65076ca56"
+    },
+    "isometric": {
+      "bbox": [
+        92,
+        42,
+        628,
+        678
+      ],
+      "bbox_aspect": 0.842767,
+      "bbox_height": 636,
+      "bbox_width": 536,
+      "foreground_pixels": 110281,
+      "mask_sha256": "07a443988f7d32fe74c347eeaf750eaf2f1429c5f23ca3b55d1cd0296223c493"
+    },
+    "left": {
+      "bbox": [
+        186,
+        42,
+        534,
+        678
+      ],
+      "bbox_aspect": 0.54717,
+      "bbox_height": 636,
+      "bbox_width": 348,
+      "foreground_pixels": 81933,
+      "mask_sha256": "e56c9bced94f46d111ef5bd89a4f7898a7d9117b238eb24080e3c7f312ca55d4"
+    },
+    "right": {
+      "bbox": [
+        186,
+        42,
+        534,
+        678
+      ],
+      "bbox_aspect": 0.54717,
+      "bbox_height": 636,
+      "bbox_width": 348,
+      "foreground_pixels": 81933,
+      "mask_sha256": "eeea2dee0f186723eeffd7623ef2e84a11db4f489234b00675ec7286ef5b2ac6"
+    },
+    "top": {
+      "bbox": [
+        42,
+        209,
+        678,
+        511
+      ],
+      "bbox_aspect": 2.10596,
+      "bbox_height": 302,
+      "bbox_width": 636,
+      "foreground_pixels": 91229,
+      "mask_sha256": "9a9553e542d8bde52b64867b7be7815fa90712a0847c1d9a7657311956ddff50"
+    }
+  },
+  "views": [
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "bottom.png",
+    "eye-crown-closeup.png",
+    "rear-eyes-closeup.png",
+    "wing-layers-closeup.png",
+    "side-depth-closeup.png",
+    "wing-tip-closeup.png",
+    "crown-wrap-closeup.png",
+    "all-angle-sheet.png"
+  ],
+  "wing_yaw": {
+    "nonzero_yaw_cuboids": 108,
+    "nonzero_yaw_fraction": 1.0,
+    "sector_sweeps_degrees": {
+      "front_lower": [
+        40.100908
+      ],
+      "middle": [
+        21.037511
+      ],
+      "rear_upper": [
+        42.70939
+      ]
+    },
+    "wing_shape_cuboids": 108
+  }
+}

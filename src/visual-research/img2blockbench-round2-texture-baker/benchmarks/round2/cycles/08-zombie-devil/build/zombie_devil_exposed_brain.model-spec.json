@@ -1,0 +1,7504 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "torso",
+      "parent": "root",
+      "pivot": [
+        0,
+        43,
+        0
+      ]
+    },
+    {
+      "name": "head",
+      "parent": "torso",
+      "pivot": [
+        -10,
+        48,
+        7
+      ]
+    },
+    {
+      "name": "jaw",
+      "parent": "head",
+      "pivot": [
+        -10,
+        37,
+        8
+      ]
+    },
+    {
+      "name": "left_arm",
+      "parent": "torso",
+      "pivot": [
+        -13,
+        54,
+        0
+      ]
+    },
+    {
+      "name": "right_arm",
+      "parent": "torso",
+      "pivot": [
+        12,
+        46,
+        1
+      ]
+    },
+    {
+      "name": "brain_neck",
+      "parent": "torso",
+      "pivot": [
+        7,
+        53,
+        0
+      ]
+    },
+    {
+      "name": "brain",
+      "parent": "brain_neck",
+      "pivot": [
+        15,
+        66,
+        0
+      ]
+    },
+    {
+      "name": "viscera",
+      "parent": "torso",
+      "pivot": [
+        -1,
+        31,
+        1
+      ]
+    },
+    {
+      "name": "left_visceral_continuation_1",
+      "parent": "viscera",
+      "pivot": [
+        -9,
+        -8,
+        8
+      ]
+    },
+    {
+      "name": "left_visceral_continuation_2",
+      "parent": "left_visceral_continuation_1",
+      "pivot": [
+        -19,
+        -23,
+        8
+      ]
+    },
+    {
+      "name": "left_visceral_continuation_3",
+      "parent": "left_visceral_continuation_2",
+      "pivot": [
+        -15,
+        -39,
+        7
+      ]
+    },
+    {
+      "name": "left_visceral_continuation_4",
+      "parent": "left_visceral_continuation_3",
+      "pivot": [
+        -27,
+        -54,
+        7
+      ]
+    },
+    {
+      "name": "left_visceral_continuation_5",
+      "parent": "left_visceral_continuation_4",
+      "pivot": [
+        -22,
+        -72,
+        6
+      ]
+    },
+    {
+      "name": "central_intertwined_loop_1",
+      "parent": "viscera",
+      "pivot": [
+        -14,
+        8,
+        7
+      ]
+    },
+    {
+      "name": "central_intertwined_loop_2",
+      "parent": "central_intertwined_loop_1",
+      "pivot": [
+        -2,
+        -20,
+        13
+      ]
+    },
+    {
+      "name": "central_intertwined_loop_3",
+      "parent": "central_intertwined_loop_2",
+      "pivot": [
+        8,
+        -33,
+        14
+      ]
+    },
+    {
+      "name": "central_intertwined_loop_4",
+      "parent": "central_intertwined_loop_3",
+      "pivot": [
+        19,
+        -25,
+        12
+      ]
+    },
+    {
+      "name": "central_intertwined_loop_5",
+      "parent": "central_intertwined_loop_4",
+      "pivot": [
+        14,
+        -12,
+        10
+      ]
+    },
+    {
+      "name": "right_visceral_continuation_1",
+      "parent": "viscera",
+      "pivot": [
+        2,
+        -10,
+        11
+      ]
+    },
+    {
+      "name": "right_visceral_continuation_2",
+      "parent": "right_visceral_continuation_1",
+      "pivot": [
+        13,
+        -25,
+        13
+      ]
+    },
+    {
+      "name": "right_visceral_continuation_3",
+      "parent": "right_visceral_continuation_2",
+      "pivot": [
+        6,
+        -42,
+        12
+      ]
+    },
+    {
+      "name": "right_visceral_continuation_4",
+      "parent": "right_visceral_continuation_3",
+      "pivot": [
+        20,
+        -57,
+        11
+      ]
+    },
+    {
+      "name": "right_visceral_continuation_5",
+      "parent": "right_visceral_continuation_4",
+      "pivot": [
+        13,
+        -75,
+        9
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 4.0,
+    "height": 5.5,
+    "width": 6.5
+  },
+  "cubes": [
+    {
+      "bone": "torso",
+      "center": [
+        0,
+        44,
+        0
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "torso_core_001",
+      "origin": [
+        0,
+        44,
+        0
+      ],
+      "role": "wide fused shoulder and trunk mass greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        38.4,
+        24,
+        18
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        0,
+        58,
+        0
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "torso_core_002",
+      "origin": [
+        0,
+        58,
+        0
+      ],
+      "role": "wide fused shoulder and trunk mass greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        28.8,
+        4,
+        12
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        0,
+        44,
+        10.5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "torso_core_003",
+      "origin": [
+        0,
+        44,
+        10.5
+      ],
+      "role": "wide fused shoulder and trunk mass greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        28.8,
+        16,
+        3
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        0,
+        44,
+        -10.5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "torso_core_004",
+      "origin": [
+        0,
+        44,
+        -10.5
+      ],
+      "role": "wide fused shoulder and trunk mass greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        28.8,
+        16,
+        3
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        0,
+        30,
+        0
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "torso_core_005",
+      "origin": [
+        0,
+        30,
+        0
+      ],
+      "role": "wide fused shoulder and trunk mass greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        28.8,
+        4,
+        12
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        21.6,
+        44,
+        0
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "torso_core_006",
+      "origin": [
+        21.6,
+        44,
+        0
+      ],
+      "role": "wide fused shoulder and trunk mass greedy volume 6",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.8,
+        16,
+        12
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        -21.6,
+        44,
+        0
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "torso_core_007",
+      "origin": [
+        -21.6,
+        44,
+        0
+      ],
+      "role": "wide fused shoulder and trunk mass greedy volume 7",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.8,
+        16,
+        12
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -37,
+        56.5,
+        -0.5
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "left_arm_mass_001",
+      "origin": [
+        -37,
+        56.5,
+        -0.5
+      ],
+      "role": "foreshortened left shoulder and forearm mass greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6,
+        14,
+        11
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -22,
+        47.75,
+        -0.5
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "left_arm_mass_002",
+      "origin": [
+        -22,
+        47.75,
+        -0.5
+      ],
+      "role": "foreshortened left shoulder and forearm mass greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        24,
+        3.5,
+        11
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -22,
+        56.5,
+        -0.5
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "left_arm_mass_003",
+      "origin": [
+        -22,
+        56.5,
+        -0.5
+      ],
+      "role": "foreshortened left shoulder and forearm mass greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        24,
+        14,
+        22
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -22,
+        65.25,
+        -0.5
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "left_arm_mass_004",
+      "origin": [
+        -22,
+        65.25,
+        -0.5
+      ],
+      "role": "foreshortened left shoulder and forearm mass greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        24,
+        3.5,
+        11
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -7,
+        56.5,
+        -0.5
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "left_arm_mass_005",
+      "origin": [
+        -7,
+        56.5,
+        -0.5
+      ],
+      "role": "foreshortened left shoulder and forearm mass greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6,
+        14,
+        11
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -48.333333,
+        59.5,
+        1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "left_fist_volume_001",
+      "origin": [
+        -48.333333,
+        59.5,
+        1
+      ],
+      "role": "huge end-on left clenched fist greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.333333,
+        10.2,
+        9.5
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -45,
+        52.7,
+        1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "left_fist_volume_002",
+      "origin": [
+        -45,
+        52.7,
+        1
+      ],
+      "role": "huge end-on left clenched fist greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.333333,
+        3.4,
+        9.5
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -45,
+        59.5,
+        1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "left_fist_volume_003",
+      "origin": [
+        -45,
+        59.5,
+        1
+      ],
+      "role": "huge end-on left clenched fist greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.333333,
+        10.2,
+        19
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -45,
+        66.3,
+        1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "left_fist_volume_004",
+      "origin": [
+        -45,
+        66.3,
+        1
+      ],
+      "role": "huge end-on left clenched fist greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.333333,
+        3.4,
+        9.5
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -40,
+        59.5,
+        1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "left_fist_volume_005",
+      "origin": [
+        -40,
+        59.5,
+        1
+      ],
+      "role": "huge end-on left clenched fist greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.666667,
+        17,
+        19
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -35,
+        52.7,
+        1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "left_fist_volume_006",
+      "origin": [
+        -35,
+        52.7,
+        1
+      ],
+      "role": "huge end-on left clenched fist greedy volume 6",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.333333,
+        3.4,
+        9.5
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -35,
+        59.5,
+        1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "left_fist_volume_007",
+      "origin": [
+        -35,
+        59.5,
+        1
+      ],
+      "role": "huge end-on left clenched fist greedy volume 7",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.333333,
+        10.2,
+        19
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -35,
+        66.3,
+        1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "left_fist_volume_008",
+      "origin": [
+        -35,
+        66.3,
+        1
+      ],
+      "role": "huge end-on left clenched fist greedy volume 8",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.333333,
+        3.4,
+        9.5
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -31.666667,
+        59.5,
+        1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "left_fist_volume_009",
+      "origin": [
+        -31.666667,
+        59.5,
+        1
+      ],
+      "role": "huge end-on left clenched fist greedy volume 9",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.333333,
+        10.2,
+        9.5
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        2.833333,
+        41.5,
+        1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "right_arm_upper_mass_001",
+      "origin": [
+        2.833333,
+        41.5,
+        1
+      ],
+      "role": "fused right shoulder and upper arm greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.666667,
+        16.666667,
+        12
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        17,
+        31.083333,
+        1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "right_arm_upper_mass_002",
+      "origin": [
+        17,
+        31.083333,
+        1
+      ],
+      "role": "fused right shoulder and upper arm greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        22.666667,
+        4.166667,
+        12
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        17,
+        41.5,
+        1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "right_arm_upper_mass_003",
+      "origin": [
+        17,
+        41.5,
+        1
+      ],
+      "role": "fused right shoulder and upper arm greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        22.666667,
+        16.666667,
+        24
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        17,
+        51.916667,
+        1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "right_arm_upper_mass_004",
+      "origin": [
+        17,
+        51.916667,
+        1
+      ],
+      "role": "fused right shoulder and upper arm greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        22.666667,
+        4.166667,
+        12
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        31.166667,
+        41.5,
+        1
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "right_arm_upper_mass_005",
+      "origin": [
+        31.166667,
+        41.5,
+        1
+      ],
+      "role": "fused right shoulder and upper arm greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.666667,
+        16.666667,
+        12
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        19.333333,
+        32.5,
+        3
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "right_forearm_mass_001",
+      "origin": [
+        19.333333,
+        32.5,
+        3
+      ],
+      "role": "massive downward-sweeping right forearm greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.666667,
+        14,
+        10.5
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        31,
+        23.75,
+        3
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "right_forearm_mass_002",
+      "origin": [
+        31,
+        23.75,
+        3
+      ],
+      "role": "massive downward-sweeping right forearm greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        18.666667,
+        3.5,
+        10.5
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        31,
+        32.5,
+        3
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "right_forearm_mass_003",
+      "origin": [
+        31,
+        32.5,
+        3
+      ],
+      "role": "massive downward-sweeping right forearm greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        18.666667,
+        14,
+        21
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        31,
+        41.25,
+        3
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "right_forearm_mass_004",
+      "origin": [
+        31,
+        41.25,
+        3
+      ],
+      "role": "massive downward-sweeping right forearm greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        18.666667,
+        3.5,
+        10.5
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        42.666667,
+        32.5,
+        3
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "right_forearm_mass_005",
+      "origin": [
+        42.666667,
+        32.5,
+        3
+      ],
+      "role": "massive downward-sweeping right forearm greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.666667,
+        14,
+        10.5
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        35.083333,
+        25.5,
+        4
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "right_fist_volume_001",
+      "origin": [
+        35.083333,
+        25.5,
+        4
+      ],
+      "role": "huge three-quarter right clenched fist greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.166667,
+        11.4,
+        9.5
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        43,
+        17.9,
+        4
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "right_fist_volume_002",
+      "origin": [
+        43,
+        17.9,
+        4
+      ],
+      "role": "huge three-quarter right clenched fist greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        12.666667,
+        3.8,
+        9.5
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        43,
+        25.5,
+        4
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "right_fist_volume_003",
+      "origin": [
+        43,
+        25.5,
+        4
+      ],
+      "role": "huge three-quarter right clenched fist greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        12.666667,
+        11.4,
+        19
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        43,
+        33.1,
+        4
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "right_fist_volume_004",
+      "origin": [
+        43,
+        33.1,
+        4
+      ],
+      "role": "huge three-quarter right clenched fist greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        12.666667,
+        3.8,
+        9.5
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        50.916667,
+        25.5,
+        4
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "right_fist_volume_005",
+      "origin": [
+        50.916667,
+        25.5,
+        4
+      ],
+      "role": "huge three-quarter right clenched fist greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.166667,
+        11.4,
+        9.5
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -45.0,
+        61.0,
+        10.5
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "left_fist_knuckle_1",
+      "origin": [
+        -45.0,
+        61.0,
+        10.5
+      ],
+      "role": "left fist organic knuckle",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.6,
+        3.8,
+        5.0
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -41.5,
+        59.5,
+        10.5
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "left_fist_knuckle_2",
+      "origin": [
+        -41.5,
+        59.5,
+        10.5
+      ],
+      "role": "left fist organic knuckle",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.6,
+        3.8,
+        5.0
+      ]
+    },
+    {
+      "bone": "left_arm",
+      "center": [
+        -38.0,
+        58.0,
+        10.5
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "left_fist_knuckle_3",
+      "origin": [
+        -38.0,
+        58.0,
+        10.5
+      ],
+      "role": "left fist organic knuckle",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.6,
+        3.8,
+        5.0
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        39.5,
+        27.0,
+        10.5
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "right_fist_knuckle_1",
+      "origin": [
+        39.5,
+        27.0,
+        10.5
+      ],
+      "role": "right fist organic knuckle",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.6,
+        3.8,
+        5.0
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        43.0,
+        25.5,
+        10.5
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "right_fist_knuckle_2",
+      "origin": [
+        43.0,
+        25.5,
+        10.5
+      ],
+      "role": "right fist organic knuckle",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.6,
+        3.8,
+        5.0
+      ]
+    },
+    {
+      "bone": "right_arm",
+      "center": [
+        46.5,
+        24.0,
+        10.5
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "right_fist_knuckle_3",
+      "origin": [
+        46.5,
+        24.0,
+        10.5
+      ],
+      "role": "right fist organic knuckle",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.6,
+        3.8,
+        5.0
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -32,
+        37.5,
+        7
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "face_volume_001",
+      "origin": [
+        -32,
+        37.5,
+        7
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        13.333333,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -28,
+        37.5,
+        7
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "face_volume_002",
+      "origin": [
+        -28,
+        37.5,
+        7
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        31.111111,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -28,
+        37.5,
+        2.6
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "face_volume_003",
+      "origin": [
+        -28,
+        37.5,
+        2.6
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        22.222222,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -28,
+        37.5,
+        11.4
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "face_volume_004",
+      "origin": [
+        -28,
+        37.5,
+        11.4
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        22.222222,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -24,
+        37.5,
+        7
+      ],
+      "faces": {
+        "east": {
+          "material": "flesh_shadow"
+        }
+      },
+      "material": "flesh_light",
+      "name": "face_volume_005",
+      "origin": [
+        -24,
+        37.5,
+        7
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        31.111111,
+        13.2
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -24,
+        37.5,
+        -1.8
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "face_volume_006",
+      "origin": [
+        -24,
+        37.5,
+        -1.8
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 6",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        13.333333,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -24,
+        37.5,
+        15.8
+      ],
+      "faces": {
+        "east": {
+          "material": "flesh_shadow"
+        }
+      },
+      "material": "flesh_light",
+      "name": "face_volume_007",
+      "origin": [
+        -24,
+        37.5,
+        15.8
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 7",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        13.333333,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -16,
+        37.5,
+        7
+      ],
+      "faces": {
+        "south": {
+          "material": "flesh_shadow"
+        }
+      },
+      "material": "flesh_light",
+      "name": "face_volume_008",
+      "origin": [
+        -16,
+        37.5,
+        7
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 8",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        12,
+        40,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -16,
+        37.5,
+        2.6
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "face_volume_009",
+      "origin": [
+        -16,
+        37.5,
+        2.6
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 9",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        12,
+        31.111111,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -16,
+        24.166667,
+        11.4
+      ],
+      "faces": {
+        "up": {
+          "material": "flesh_shadow"
+        }
+      },
+      "material": "flesh_light",
+      "name": "face_volume_010",
+      "origin": [
+        -16,
+        24.166667,
+        11.4
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 10",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        12,
+        4.444444,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -16,
+        37.5,
+        -1.8
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "face_volume_011",
+      "origin": [
+        -16,
+        37.5,
+        -1.8
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 11",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        12,
+        22.222222,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -20,
+        44.166667,
+        11.4
+      ],
+      "faces": {
+        "down": {
+          "material": "flesh_shadow"
+        },
+        "east": {
+          "material": "flesh_shadow"
+        },
+        "south": {
+          "material": "flesh_shadow"
+        }
+      },
+      "material": "flesh_light",
+      "name": "face_volume_012",
+      "origin": [
+        -20,
+        44.166667,
+        11.4
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 12",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        17.777778,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -16,
+        44.166667,
+        15.8
+      ],
+      "faces": {
+        "down": {
+          "material": "flesh_shadow"
+        }
+      },
+      "material": "flesh_light",
+      "name": "face_volume_013",
+      "origin": [
+        -16,
+        44.166667,
+        15.8
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 13",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        12,
+        8.888889,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -16,
+        46.388889,
+        11.4
+      ],
+      "faces": {
+        "down": {
+          "material": "flesh_shadow"
+        }
+      },
+      "material": "flesh_light",
+      "name": "face_volume_014",
+      "origin": [
+        -16,
+        46.388889,
+        11.4
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 14",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        13.333333,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -12,
+        44.166667,
+        11.4
+      ],
+      "faces": {
+        "down": {
+          "material": "flesh_shadow"
+        },
+        "south": {
+          "material": "flesh_shadow"
+        },
+        "west": {
+          "material": "flesh_shadow"
+        }
+      },
+      "material": "flesh_light",
+      "name": "face_volume_015",
+      "origin": [
+        -12,
+        44.166667,
+        11.4
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 15",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        17.777778,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -8,
+        37.5,
+        7
+      ],
+      "faces": {
+        "west": {
+          "material": "flesh_shadow"
+        }
+      },
+      "material": "flesh_light",
+      "name": "face_volume_016",
+      "origin": [
+        -8,
+        37.5,
+        7
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 16",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        31.111111,
+        13.2
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -8,
+        37.5,
+        -1.8
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "face_volume_017",
+      "origin": [
+        -8,
+        37.5,
+        -1.8
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 17",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        13.333333,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -8,
+        37.5,
+        15.8
+      ],
+      "faces": {
+        "west": {
+          "material": "flesh_shadow"
+        }
+      },
+      "material": "flesh_light",
+      "name": "face_volume_018",
+      "origin": [
+        -8,
+        37.5,
+        15.8
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 18",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        13.333333,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -4,
+        37.5,
+        7
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "face_volume_019",
+      "origin": [
+        -4,
+        37.5,
+        7
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 19",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        31.111111,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -4,
+        37.5,
+        2.6
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "face_volume_020",
+      "origin": [
+        -4,
+        37.5,
+        2.6
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 20",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        22.222222,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -4,
+        37.5,
+        11.4
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "face_volume_021",
+      "origin": [
+        -4,
+        37.5,
+        11.4
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 21",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        22.222222,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        37.5,
+        7
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "face_volume_022",
+      "origin": [
+        0,
+        37.5,
+        7
+      ],
+      "role": "embedded screaming face and cheek mass greedy volume 22",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        13.333333,
+        4.4
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -25.166667,
+        21.5,
+        6
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "jaw_mass_001",
+      "origin": [
+        -25.166667,
+        21.5,
+        6
+      ],
+      "role": "wide fleshy lower jaw fused into the trunk greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.666667,
+        9.333333,
+        9.5
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -16,
+        15.666667,
+        6
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "jaw_mass_002",
+      "origin": [
+        -16,
+        15.666667,
+        6
+      ],
+      "role": "wide fleshy lower jaw fused into the trunk greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        14.666667,
+        2.333333,
+        9.5
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -16,
+        21.5,
+        6
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "jaw_mass_003",
+      "origin": [
+        -16,
+        21.5,
+        6
+      ],
+      "role": "wide fleshy lower jaw fused into the trunk greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        14.666667,
+        9.333333,
+        19
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -16,
+        27.333333,
+        6
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "jaw_mass_004",
+      "origin": [
+        -16,
+        27.333333,
+        6
+      ],
+      "role": "wide fleshy lower jaw fused into the trunk greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        14.666667,
+        2.333333,
+        9.5
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -6.833333,
+        21.5,
+        6
+      ],
+      "faces": {},
+      "material": "flesh_light",
+      "name": "jaw_mass_005",
+      "origin": [
+        -6.833333,
+        21.5,
+        6
+      ],
+      "role": "wide fleshy lower jaw fused into the trunk greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.666667,
+        9.333333,
+        9.5
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -21.25,
+        32,
+        10.4
+      ],
+      "faces": {},
+      "material": "mouth",
+      "name": "mouth_cavity_001",
+      "origin": [
+        -21.25,
+        32,
+        10.4
+      ],
+      "role": "deep circular scream cavity greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.1,
+        7.8,
+        1
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -19.15,
+        27.125,
+        10.4
+      ],
+      "faces": {},
+      "material": "mouth",
+      "name": "mouth_cavity_002",
+      "origin": [
+        -19.15,
+        27.125,
+        10.4
+      ],
+      "role": "deep circular scream cavity greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.1,
+        1.95,
+        1
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -19.15,
+        32,
+        10.4
+      ],
+      "faces": {},
+      "material": "mouth",
+      "name": "mouth_cavity_003",
+      "origin": [
+        -19.15,
+        32,
+        10.4
+      ],
+      "role": "deep circular scream cavity greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.1,
+        7.8,
+        3
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -19.15,
+        36.875,
+        10.4
+      ],
+      "faces": {},
+      "material": "mouth",
+      "name": "mouth_cavity_004",
+      "origin": [
+        -19.15,
+        36.875,
+        10.4
+      ],
+      "role": "deep circular scream cavity greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.1,
+        1.95,
+        1
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -16,
+        25.175,
+        10.4
+      ],
+      "faces": {},
+      "material": "mouth",
+      "name": "mouth_cavity_005",
+      "origin": [
+        -16,
+        25.175,
+        10.4
+      ],
+      "role": "deep circular scream cavity greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.2,
+        1.95,
+        1
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -16,
+        32,
+        10.4
+      ],
+      "faces": {},
+      "material": "mouth",
+      "name": "mouth_cavity_006",
+      "origin": [
+        -16,
+        32,
+        10.4
+      ],
+      "role": "deep circular scream cavity greedy volume 6",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.2,
+        11.7,
+        3
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -16,
+        38.825,
+        10.4
+      ],
+      "faces": {},
+      "material": "mouth",
+      "name": "mouth_cavity_007",
+      "origin": [
+        -16,
+        38.825,
+        10.4
+      ],
+      "role": "deep circular scream cavity greedy volume 7",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.2,
+        1.95,
+        1
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -12.85,
+        27.125,
+        10.4
+      ],
+      "faces": {},
+      "material": "mouth",
+      "name": "mouth_cavity_008",
+      "origin": [
+        -12.85,
+        27.125,
+        10.4
+      ],
+      "role": "deep circular scream cavity greedy volume 8",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.1,
+        1.95,
+        1
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -12.85,
+        32,
+        10.4
+      ],
+      "faces": {},
+      "material": "mouth",
+      "name": "mouth_cavity_009",
+      "origin": [
+        -12.85,
+        32,
+        10.4
+      ],
+      "role": "deep circular scream cavity greedy volume 9",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.1,
+        7.8,
+        3
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -12.85,
+        36.875,
+        10.4
+      ],
+      "faces": {},
+      "material": "mouth",
+      "name": "mouth_cavity_010",
+      "origin": [
+        -12.85,
+        36.875,
+        10.4
+      ],
+      "role": "deep circular scream cavity greedy volume 10",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.1,
+        1.95,
+        1
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -10.75,
+        32,
+        10.4
+      ],
+      "faces": {},
+      "material": "mouth",
+      "name": "mouth_cavity_011",
+      "origin": [
+        -10.75,
+        32,
+        10.4
+      ],
+      "role": "deep circular scream cavity greedy volume 11",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.1,
+        7.8,
+        1
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -19.3,
+        37.8,
+        12.0
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "upper_mouth_tooth_1",
+      "origin": [
+        -19.3,
+        37.8,
+        10.8
+      ],
+      "role": "irregular upper tooth in the circular scream",
+      "rotation": [
+        0.0,
+        0.0,
+        -7.0
+      ],
+      "size": [
+        1.6,
+        2.8,
+        2.6
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -16.0,
+        37.8,
+        12.0
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "upper_mouth_tooth_2",
+      "origin": [
+        -16.0,
+        37.8,
+        10.8
+      ],
+      "role": "irregular upper tooth in the circular scream",
+      "rotation": [
+        0.0,
+        0.0,
+        7.0
+      ],
+      "size": [
+        1.6,
+        2.8,
+        2.6
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -12.7,
+        37.8,
+        12.0
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "upper_mouth_tooth_3",
+      "origin": [
+        -12.7,
+        37.8,
+        10.8
+      ],
+      "role": "irregular upper tooth in the circular scream",
+      "rotation": [
+        0.0,
+        0.0,
+        -7.0
+      ],
+      "size": [
+        1.6,
+        2.8,
+        2.6
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -19.3,
+        26.2,
+        12.0
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "lower_mouth_tooth_1",
+      "origin": [
+        -19.3,
+        26.2,
+        10.8
+      ],
+      "role": "irregular lower tooth in the circular scream",
+      "rotation": [
+        0.0,
+        0.0,
+        7.0
+      ],
+      "size": [
+        1.6,
+        2.8,
+        2.6
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -16.0,
+        26.2,
+        12.0
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "lower_mouth_tooth_2",
+      "origin": [
+        -16.0,
+        26.2,
+        10.8
+      ],
+      "role": "irregular lower tooth in the circular scream",
+      "rotation": [
+        0.0,
+        0.0,
+        -7.0
+      ],
+      "size": [
+        1.6,
+        2.8,
+        2.6
+      ]
+    },
+    {
+      "bone": "jaw",
+      "center": [
+        -12.7,
+        26.2,
+        12.0
+      ],
+      "faces": {},
+      "material": "tooth",
+      "name": "lower_mouth_tooth_3",
+      "origin": [
+        -12.7,
+        26.2,
+        10.8
+      ],
+      "role": "irregular lower tooth in the circular scream",
+      "rotation": [
+        0.0,
+        0.0,
+        7.0
+      ],
+      "size": [
+        1.6,
+        2.8,
+        2.6
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -26.15,
+        43,
+        16.3
+      ],
+      "faces": {},
+      "material": "eye",
+      "name": "left_bulging_eye_001",
+      "origin": [
+        -26.15,
+        43,
+        16.3
+      ],
+      "role": "left bulging terrified eye greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.1,
+        4.2,
+        2.3
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -23,
+        39.85,
+        16.3
+      ],
+      "faces": {},
+      "material": "eye",
+      "name": "left_bulging_eye_002",
+      "origin": [
+        -23,
+        39.85,
+        16.3
+      ],
+      "role": "left bulging terrified eye greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.2,
+        2.1,
+        2.3
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -23,
+        43,
+        16.3
+      ],
+      "faces": {},
+      "material": "eye",
+      "name": "left_bulging_eye_003",
+      "origin": [
+        -23,
+        43,
+        16.3
+      ],
+      "role": "left bulging terrified eye greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.2,
+        4.2,
+        4.6
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -23,
+        46.15,
+        16.3
+      ],
+      "faces": {},
+      "material": "eye",
+      "name": "left_bulging_eye_004",
+      "origin": [
+        -23,
+        46.15,
+        16.3
+      ],
+      "role": "left bulging terrified eye greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.2,
+        2.1,
+        2.3
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -19.85,
+        43,
+        16.3
+      ],
+      "faces": {},
+      "material": "eye",
+      "name": "left_bulging_eye_005",
+      "origin": [
+        -19.85,
+        43,
+        16.3
+      ],
+      "role": "left bulging terrified eye greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.1,
+        4.2,
+        2.3
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -23.0,
+        43.0,
+        18.5
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "left_pupil",
+      "origin": [
+        -23.0,
+        43.0,
+        18.5
+      ],
+      "role": "dilated forward pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.0,
+        2.4,
+        1.2
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -12.3,
+        43.5,
+        16.3
+      ],
+      "faces": {},
+      "material": "eye",
+      "name": "right_bulging_eye_001",
+      "origin": [
+        -12.3,
+        43.5,
+        16.3
+      ],
+      "role": "right bulging terrified eye greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        4.4,
+        2.3
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -9,
+        40.2,
+        16.3
+      ],
+      "faces": {},
+      "material": "eye",
+      "name": "right_bulging_eye_002",
+      "origin": [
+        -9,
+        40.2,
+        16.3
+      ],
+      "role": "right bulging terrified eye greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2.2,
+        2.3
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -9,
+        43.5,
+        16.3
+      ],
+      "faces": {},
+      "material": "eye",
+      "name": "right_bulging_eye_003",
+      "origin": [
+        -9,
+        43.5,
+        16.3
+      ],
+      "role": "right bulging terrified eye greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        4.4,
+        4.6
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -9,
+        46.8,
+        16.3
+      ],
+      "faces": {},
+      "material": "eye",
+      "name": "right_bulging_eye_004",
+      "origin": [
+        -9,
+        46.8,
+        16.3
+      ],
+      "role": "right bulging terrified eye greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.4,
+        2.2,
+        2.3
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -5.7,
+        43.5,
+        16.3
+      ],
+      "faces": {},
+      "material": "eye",
+      "name": "right_bulging_eye_005",
+      "origin": [
+        -5.7,
+        43.5,
+        16.3
+      ],
+      "role": "right bulging terrified eye greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.2,
+        4.4,
+        2.3
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -9.0,
+        43.5,
+        18.5
+      ],
+      "faces": {},
+      "material": "pupil",
+      "name": "right_pupil",
+      "origin": [
+        -9.0,
+        43.5,
+        18.5
+      ],
+      "role": "dilated forward pupil",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.0,
+        2.4,
+        1.2
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -27,
+        47.482097,
+        12
+      ],
+      "faces": {},
+      "material": "fold",
+      "name": "left_brow_fold",
+      "origin": [
+        -27,
+        44,
+        12
+      ],
+      "role": "deep expressive face fold",
+      "rotation": [
+        40.25288,
+        0,
+        -48.814075
+      ],
+      "size": [
+        0.9,
+        7.364194,
+        0.7
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -21.5,
+        48.512469,
+        14
+      ],
+      "faces": {},
+      "material": "fold",
+      "name": "left_inner_brow_fold",
+      "origin": [
+        -21.5,
+        46,
+        14
+      ],
+      "role": "deep expressive face fold",
+      "rotation": [
+        23.454137,
+        0,
+        -49.398705
+      ],
+      "size": [
+        0.9,
+        5.424938,
+        0.7
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -10.5,
+        49.03101,
+        14
+      ],
+      "faces": {},
+      "material": "fold",
+      "name": "right_inner_brow_fold",
+      "origin": [
+        -10.5,
+        47,
+        14
+      ],
+      "role": "deep expressive face fold",
+      "rotation": [
+        29.496208,
+        0,
+        45
+      ],
+      "size": [
+        0.9,
+        4.462019,
+        0.7
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -4.5,
+        47.482097,
+        12
+      ],
+      "faces": {},
+      "material": "fold",
+      "name": "right_brow_fold",
+      "origin": [
+        -4.5,
+        44,
+        12
+      ],
+      "role": "deep expressive face fold",
+      "rotation": [
+        40.25288,
+        0,
+        48.814075
+      ],
+      "size": [
+        0.9,
+        7.364194,
+        0.7
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -27,
+        40.566861,
+        13.2
+      ],
+      "faces": {},
+      "material": "fold",
+      "name": "left_cheek_fold",
+      "origin": [
+        -27,
+        37,
+        13.2
+      ],
+      "role": "deep expressive face fold",
+      "rotation": [
+        27.554464,
+        0,
+        -161.565051
+      ],
+      "size": [
+        0.9,
+        7.533723,
+        0.7
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -5,
+        41.46013,
+        13.2
+      ],
+      "faces": {},
+      "material": "fold",
+      "name": "right_cheek_fold",
+      "origin": [
+        -5,
+        38,
+        13.2
+      ],
+      "role": "deep expressive face fold",
+      "rotation": [
+        28.480569,
+        0,
+        170.537678
+      ],
+      "size": [
+        0.9,
+        7.32026,
+        0.7
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -25,
+        43.04579,
+        14
+      ],
+      "faces": {},
+      "material": "fold",
+      "name": "left_nasolabial_fold",
+      "origin": [
+        -25,
+        38,
+        14
+      ],
+      "role": "deep expressive face fold",
+      "rotation": [
+        12.591797,
+        0,
+        -156.037511
+      ],
+      "size": [
+        0.9,
+        10.491581,
+        0.7
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -6,
+        43.264029,
+        14
+      ],
+      "faces": {},
+      "material": "fold",
+      "name": "right_nasolabial_fold",
+      "origin": [
+        -6,
+        38,
+        14
+      ],
+      "role": "deep expressive face fold",
+      "rotation": [
+        12.06173,
+        0,
+        150.945396
+      ],
+      "size": [
+        0.9,
+        10.928058,
+        0.7
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -21,
+        26.105144,
+        10
+      ],
+      "faces": {},
+      "material": "fold",
+      "name": "chin_fold",
+      "origin": [
+        -21,
+        21,
+        10
+      ],
+      "role": "deep expressive face fold",
+      "rotation": [
+        11.296185,
+        0,
+        -87.137595
+      ],
+      "size": [
+        0.9,
+        10.610289,
+        0.7
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -16.0,
+        38.5,
+        15.3
+      ],
+      "faces": {},
+      "material": "flesh_shadow",
+      "name": "broken_nose",
+      "origin": [
+        -16.0,
+        38.5,
+        15.3
+      ],
+      "role": "flattened torn nose",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.2,
+        5.0,
+        4.4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -30,
+        44.870829,
+        9
+      ],
+      "faces": {},
+      "material": "hair",
+      "name": "hair_tuft_1",
+      "origin": [
+        -30,
+        43,
+        9
+      ],
+      "role": "ragged hair spike",
+      "rotation": [
+        15.50136,
+        0,
+        56.309932
+      ],
+      "size": [
+        1.2,
+        4.141657,
+        0.9
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -26,
+        50.836437,
+        8
+      ],
+      "faces": {},
+      "material": "hair",
+      "name": "hair_tuft_2",
+      "origin": [
+        -26,
+        49,
+        8
+      ],
+      "role": "ragged hair spike",
+      "rotation": [
+        10.987012,
+        0,
+        33.690068
+      ],
+      "size": [
+        1.2,
+        4.072874,
+        0.9
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -20,
+        55.091052,
+        7
+      ],
+      "faces": {},
+      "material": "hair",
+      "name": "hair_tuft_3",
+      "origin": [
+        -20,
+        53,
+        7
+      ],
+      "role": "ragged hair spike",
+      "rotation": [
+        9.635512,
+        0,
+        14.036243
+      ],
+      "size": [
+        1.2,
+        4.582105,
+        0.9
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -12,
+        54.173131,
+        8
+      ],
+      "faces": {},
+      "material": "hair",
+      "name": "hair_tuft_4",
+      "origin": [
+        -12,
+        52,
+        8
+      ],
+      "role": "ragged hair spike",
+      "rotation": [
+        10.606694,
+        0,
+        -20.556045
+      ],
+      "size": [
+        1.2,
+        4.746263,
+        0.9
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -4,
+        49.179449,
+        8
+      ],
+      "faces": {},
+      "material": "hair",
+      "name": "hair_tuft_5",
+      "origin": [
+        -4,
+        47,
+        8
+      ],
+      "role": "ragged hair spike",
+      "rotation": [
+        13.262676,
+        0,
+        -45
+      ],
+      "size": [
+        1.2,
+        4.758899,
+        0.9
+      ]
+    },
+    {
+      "bone": "brain_neck",
+      "center": [
+        2.416667,
+        61,
+        -0.5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "brain_neck_mass_001",
+      "origin": [
+        2.416667,
+        61,
+        -0.5
+      ],
+      "role": "thick fused neck supporting the exposed brain greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.833333,
+        21.333333,
+        10.5
+      ]
+    },
+    {
+      "bone": "brain_neck",
+      "center": [
+        12,
+        47.666667,
+        -0.5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "brain_neck_mass_002",
+      "origin": [
+        12,
+        47.666667,
+        -0.5
+      ],
+      "role": "thick fused neck supporting the exposed brain greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        15.333333,
+        5.333333,
+        10.5
+      ]
+    },
+    {
+      "bone": "brain_neck",
+      "center": [
+        12,
+        61,
+        -0.5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "brain_neck_mass_003",
+      "origin": [
+        12,
+        61,
+        -0.5
+      ],
+      "role": "thick fused neck supporting the exposed brain greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        15.333333,
+        21.333333,
+        21
+      ]
+    },
+    {
+      "bone": "brain_neck",
+      "center": [
+        12,
+        74.333333,
+        -0.5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "brain_neck_mass_004",
+      "origin": [
+        12,
+        74.333333,
+        -0.5
+      ],
+      "role": "thick fused neck supporting the exposed brain greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        15.333333,
+        5.333333,
+        10.5
+      ]
+    },
+    {
+      "bone": "brain_neck",
+      "center": [
+        21.583333,
+        61,
+        -0.5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "brain_neck_mass_005",
+      "origin": [
+        21.583333,
+        61,
+        -0.5
+      ],
+      "role": "thick fused neck supporting the exposed brain greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.833333,
+        21.333333,
+        10.5
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        17,
+        76,
+        0.5
+      ],
+      "faces": {},
+      "material": "brain",
+      "name": "brain_volume_001",
+      "origin": [
+        17,
+        76,
+        0.5
+      ],
+      "role": "large exposed brain fused into the neck greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        16,
+        16.5,
+        12
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        17,
+        76,
+        8.5
+      ],
+      "faces": {},
+      "material": "brain",
+      "name": "brain_volume_002",
+      "origin": [
+        17,
+        76,
+        8.5
+      ],
+      "role": "large exposed brain fused into the neck greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8,
+        11,
+        4
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        17,
+        76,
+        -7.5
+      ],
+      "faces": {},
+      "material": "brain",
+      "name": "brain_volume_003",
+      "origin": [
+        17,
+        76,
+        -7.5
+      ],
+      "role": "large exposed brain fused into the neck greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8,
+        11,
+        4
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        27,
+        76,
+        0.5
+      ],
+      "faces": {},
+      "material": "brain",
+      "name": "brain_volume_004",
+      "origin": [
+        27,
+        76,
+        0.5
+      ],
+      "role": "large exposed brain fused into the neck greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        5.5,
+        12
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        7,
+        76,
+        0.5
+      ],
+      "faces": {},
+      "material": "brain",
+      "name": "brain_volume_005",
+      "origin": [
+        7,
+        76,
+        0.5
+      ],
+      "role": "large exposed brain fused into the neck greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        5.5,
+        12
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        17,
+        85.625,
+        0.5
+      ],
+      "faces": {},
+      "material": "brain",
+      "name": "brain_volume_006",
+      "origin": [
+        17,
+        85.625,
+        0.5
+      ],
+      "role": "large exposed brain fused into the neck greedy volume 6",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8,
+        2.75,
+        4
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        17,
+        66.375,
+        0.5
+      ],
+      "faces": {},
+      "material": "brain",
+      "name": "brain_volume_007",
+      "origin": [
+        17,
+        66.375,
+        0.5
+      ],
+      "role": "large exposed brain fused into the neck greedy volume 7",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8,
+        2.75,
+        4
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        27,
+        80.125,
+        0.5
+      ],
+      "faces": {},
+      "material": "brain",
+      "name": "brain_volume_008",
+      "origin": [
+        27,
+        80.125,
+        0.5
+      ],
+      "role": "large exposed brain fused into the neck greedy volume 8",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        2.75,
+        4
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        27,
+        71.875,
+        0.5
+      ],
+      "faces": {},
+      "material": "brain",
+      "name": "brain_volume_009",
+      "origin": [
+        27,
+        71.875,
+        0.5
+      ],
+      "role": "large exposed brain fused into the neck greedy volume 9",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        2.75,
+        4
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        7,
+        80.125,
+        0.5
+      ],
+      "faces": {},
+      "material": "brain",
+      "name": "brain_volume_010",
+      "origin": [
+        7,
+        80.125,
+        0.5
+      ],
+      "role": "large exposed brain fused into the neck greedy volume 10",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        2.75,
+        4
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        7,
+        71.875,
+        0.5
+      ],
+      "faces": {},
+      "material": "brain",
+      "name": "brain_volume_011",
+      "origin": [
+        7,
+        71.875,
+        0.5
+      ],
+      "role": "large exposed brain fused into the neck greedy volume 11",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        2.75,
+        4
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        9.2,
+        80.765863,
+        6.4
+      ],
+      "faces": {},
+      "material": "brain_groove",
+      "name": "brain_groove_1",
+      "origin": [
+        9.2,
+        78,
+        6.4
+      ],
+      "role": "raised cerebral fissure",
+      "rotation": [
+        28.035335,
+        0,
+        -34.99202
+      ],
+      "size": [
+        1.25,
+        5.931727,
+        0.8
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        11.5,
+        86.116889,
+        6.4
+      ],
+      "faces": {},
+      "material": "brain_groove",
+      "name": "brain_groove_2",
+      "origin": [
+        11.5,
+        83,
+        6.4
+      ],
+      "role": "raised cerebral fissure",
+      "rotation": [
+        29.820912,
+        0,
+        -123.690068
+      ],
+      "size": [
+        1.25,
+        6.633779,
+        0.8
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        15.5,
+        83.240756,
+        6.4
+      ],
+      "faces": {},
+      "material": "brain_groove",
+      "name": "brain_groove_3",
+      "origin": [
+        15.5,
+        80,
+        6.4
+      ],
+      "role": "raised cerebral fissure",
+      "rotation": [
+        21.733131,
+        0,
+        -48.366461
+      ],
+      "size": [
+        1.25,
+        6.881512,
+        0.8
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        20,
+        85.624881,
+        6.4
+      ],
+      "faces": {},
+      "material": "brain_groove",
+      "name": "brain_groove_4",
+      "origin": [
+        20,
+        83,
+        6.4
+      ],
+      "role": "raised cerebral fissure",
+      "rotation": [
+        17.744672,
+        0,
+        -126.869898
+      ],
+      "size": [
+        1.25,
+        5.649762,
+        0.8
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        9.2,
+        76.464752,
+        6.4
+      ],
+      "faces": {},
+      "material": "brain_groove",
+      "name": "brain_groove_5",
+      "origin": [
+        9.2,
+        74,
+        6.4
+      ],
+      "role": "raised cerebral fissure",
+      "rotation": [
+        31.832415,
+        0,
+        -146.689369
+      ],
+      "size": [
+        1.25,
+        5.329503,
+        0.8
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        11.5,
+        73.871202,
+        6.4
+      ],
+      "faces": {},
+      "material": "brain_groove",
+      "name": "brain_groove_6",
+      "origin": [
+        11.5,
+        70.5,
+        6.4
+      ],
+      "role": "raised cerebral fissure",
+      "rotation": [
+        32.271664,
+        0,
+        -52.125016
+      ],
+      "size": [
+        1.25,
+        7.142403,
+        0.8
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        16,
+        77.2791,
+        6.4
+      ],
+      "faces": {},
+      "material": "brain_groove",
+      "name": "brain_groove_7",
+      "origin": [
+        16,
+        74,
+        6.4
+      ],
+      "role": "raised cerebral fissure",
+      "rotation": [
+        23.356449,
+        0,
+        -131.633539
+      ],
+      "size": [
+        1.25,
+        6.958201,
+        0.8
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        20.5,
+        73.180409,
+        6.4
+      ],
+      "faces": {},
+      "material": "brain_groove",
+      "name": "brain_groove_8",
+      "origin": [
+        20.5,
+        70,
+        6.4
+      ],
+      "role": "raised cerebral fissure",
+      "rotation": [
+        9.958437,
+        0,
+        -61.38954
+      ],
+      "size": [
+        1.25,
+        6.760818,
+        0.8
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        10,
+        71.561738,
+        5.5
+      ],
+      "faces": {},
+      "material": "brain_groove",
+      "name": "brain_groove_9",
+      "origin": [
+        10,
+        69,
+        5.5
+      ],
+      "role": "raised cerebral fissure",
+      "rotation": [
+        29.205932,
+        0,
+        -63.434949
+      ],
+      "size": [
+        1.25,
+        5.523475,
+        0.8
+      ]
+    },
+    {
+      "bone": "brain",
+      "center": [
+        19.5,
+        71.49299,
+        6.4
+      ],
+      "faces": {},
+      "material": "brain_groove",
+      "name": "brain_groove_10",
+      "origin": [
+        19.5,
+        69,
+        6.4
+      ],
+      "role": "raised cerebral fissure",
+      "rotation": [
+        38.443553,
+        0,
+        39.805571
+      ],
+      "size": [
+        1.25,
+        5.38598,
+        0.8
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -14.333333,
+        28,
+        1.5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "visceral_bridge_001",
+      "origin": [
+        -14.333333,
+        28,
+        1.5
+      ],
+      "role": "torn lower trunk blending into exposed organs greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.333333,
+        14.666667,
+        12
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -1,
+        18.833333,
+        1.5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "visceral_bridge_002",
+      "origin": [
+        -1,
+        18.833333,
+        1.5
+      ],
+      "role": "torn lower trunk blending into exposed organs greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        21.333333,
+        3.666667,
+        12
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -1,
+        28,
+        1.5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "visceral_bridge_003",
+      "origin": [
+        -1,
+        28,
+        1.5
+      ],
+      "role": "torn lower trunk blending into exposed organs greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        21.333333,
+        14.666667,
+        24
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -1,
+        37.166667,
+        1.5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "visceral_bridge_004",
+      "origin": [
+        -1,
+        37.166667,
+        1.5
+      ],
+      "role": "torn lower trunk blending into exposed organs greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        21.333333,
+        3.666667,
+        12
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        12.333333,
+        28,
+        1.5
+      ],
+      "faces": {},
+      "material": "flesh",
+      "name": "visceral_bridge_005",
+      "origin": [
+        12.333333,
+        28,
+        1.5
+      ],
+      "role": "torn lower trunk blending into exposed organs greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.333333,
+        14.666667,
+        12
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -8,
+        28.228416,
+        5
+      ],
+      "faces": {},
+      "material": "organ_light",
+      "name": "organ_lobe_left_upper",
+      "origin": [
+        -8,
+        21,
+        5
+      ],
+      "role": "broad asymmetric organ lobe left upper flesh ribbon",
+      "rotation": [
+        7.951968,
+        0,
+        155.224859
+      ],
+      "size": [
+        14,
+        16.056832,
+        10
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -14,
+        16.396428,
+        7
+      ],
+      "faces": {},
+      "material": "organ_dark",
+      "name": "organ_lobe_left_lower",
+      "origin": [
+        -14,
+        8,
+        7
+      ],
+      "role": "broad asymmetric organ lobe left lower flesh ribbon",
+      "rotation": [
+        3.413934,
+        0,
+        -162.645975
+      ],
+      "size": [
+        12,
+        18.392856,
+        9
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        0,
+        28.889867,
+        8
+      ],
+      "faces": {},
+      "material": "organ_dark",
+      "name": "organ_lobe_right_upper",
+      "origin": [
+        0,
+        21,
+        8
+      ],
+      "role": "broad asymmetric organ lobe right upper flesh ribbon",
+      "rotation": [
+        7.28153,
+        0,
+        -153.434949
+      ],
+      "size": [
+        15,
+        17.379734,
+        11
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        7,
+        15.87412,
+        10
+      ],
+      "faces": {},
+      "material": "organ_light",
+      "name": "organ_lobe_right_lower",
+      "origin": [
+        7,
+        7,
+        10
+      ],
+      "role": "broad asymmetric organ lobe right lower flesh ribbon",
+      "rotation": [
+        3.229962,
+        0,
+        163.61046
+      ],
+      "size": [
+        12,
+        19.348239,
+        9
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -17,
+        14,
+        7
+      ],
+      "faces": {},
+      "material": "organ_light",
+      "name": "organ_bulge_left_upper_001",
+      "origin": [
+        -17,
+        14,
+        7
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        9,
+        4.666667
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -11,
+        7.25,
+        7
+      ],
+      "faces": {},
+      "material": "organ_light",
+      "name": "organ_bulge_left_upper_002",
+      "origin": [
+        -11,
+        7.25,
+        7
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8,
+        4.5,
+        4.666667
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -11,
+        14,
+        7
+      ],
+      "faces": {},
+      "material": "organ_light",
+      "name": "organ_bulge_left_upper_003",
+      "origin": [
+        -11,
+        14,
+        7
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8,
+        9,
+        14
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -11,
+        20.75,
+        7
+      ],
+      "faces": {},
+      "material": "organ_light",
+      "name": "organ_bulge_left_upper_004",
+      "origin": [
+        -11,
+        20.75,
+        7
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        8,
+        4.5,
+        4.666667
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -5,
+        14,
+        7
+      ],
+      "faces": {},
+      "material": "organ_light",
+      "name": "organ_bulge_left_upper_005",
+      "origin": [
+        -5,
+        14,
+        7
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        9,
+        4.666667
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -16.25,
+        0,
+        9
+      ],
+      "faces": {},
+      "material": "organ_dark",
+      "name": "organ_bulge_left_lower_001",
+      "origin": [
+        -16.25,
+        0,
+        9
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.5,
+        8,
+        4.666667
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -11,
+        -6,
+        9
+      ],
+      "faces": {},
+      "material": "organ_dark",
+      "name": "organ_bulge_left_lower_002",
+      "origin": [
+        -11,
+        -6,
+        9
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        7,
+        4,
+        4.666667
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -11,
+        0,
+        9
+      ],
+      "faces": {},
+      "material": "organ_dark",
+      "name": "organ_bulge_left_lower_003",
+      "origin": [
+        -11,
+        0,
+        9
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        7,
+        8,
+        14
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -11,
+        6,
+        9
+      ],
+      "faces": {},
+      "material": "organ_dark",
+      "name": "organ_bulge_left_lower_004",
+      "origin": [
+        -11,
+        6,
+        9
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        7,
+        4,
+        4.666667
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -5.75,
+        0,
+        9
+      ],
+      "faces": {},
+      "material": "organ_dark",
+      "name": "organ_bulge_left_lower_005",
+      "origin": [
+        -5.75,
+        0,
+        9
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.5,
+        8,
+        4.666667
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -3.75,
+        14,
+        10
+      ],
+      "faces": {},
+      "material": "organ_dark",
+      "name": "organ_bulge_right_upper_001",
+      "origin": [
+        -3.75,
+        14,
+        10
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.5,
+        10,
+        4.666667
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        3,
+        6.5,
+        10
+      ],
+      "faces": {},
+      "material": "organ_dark",
+      "name": "organ_bulge_right_upper_002",
+      "origin": [
+        3,
+        6.5,
+        10
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        9,
+        5,
+        4.666667
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        3,
+        14,
+        10
+      ],
+      "faces": {},
+      "material": "organ_dark",
+      "name": "organ_bulge_right_upper_003",
+      "origin": [
+        3,
+        14,
+        10
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        9,
+        10,
+        14
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        3,
+        21.5,
+        10
+      ],
+      "faces": {},
+      "material": "organ_dark",
+      "name": "organ_bulge_right_upper_004",
+      "origin": [
+        3,
+        21.5,
+        10
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        9,
+        5,
+        4.666667
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        9.75,
+        14,
+        10
+      ],
+      "faces": {},
+      "material": "organ_dark",
+      "name": "organ_bulge_right_upper_005",
+      "origin": [
+        9.75,
+        14,
+        10
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.5,
+        10,
+        4.666667
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        -1.25,
+        -3,
+        12
+      ],
+      "faces": {},
+      "material": "organ_light",
+      "name": "organ_bulge_right_lower_001",
+      "origin": [
+        -1.25,
+        -3,
+        12
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.5,
+        9,
+        4
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        4,
+        -9.75,
+        12
+      ],
+      "faces": {},
+      "material": "organ_light",
+      "name": "organ_bulge_right_lower_002",
+      "origin": [
+        4,
+        -9.75,
+        12
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        7,
+        4.5,
+        4
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        4,
+        -3,
+        12
+      ],
+      "faces": {},
+      "material": "organ_light",
+      "name": "organ_bulge_right_lower_003",
+      "origin": [
+        4,
+        -3,
+        12
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        7,
+        9,
+        12
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        4,
+        3.75,
+        12
+      ],
+      "faces": {},
+      "material": "organ_light",
+      "name": "organ_bulge_right_lower_004",
+      "origin": [
+        4,
+        3.75,
+        12
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        7,
+        4.5,
+        4
+      ]
+    },
+    {
+      "bone": "viscera",
+      "center": [
+        9.25,
+        -3,
+        12
+      ],
+      "faces": {},
+      "material": "organ_light",
+      "name": "organ_bulge_right_lower_005",
+      "origin": [
+        9.25,
+        -3,
+        12
+      ],
+      "role": "rounded asymmetric organ swelling over a flesh ribbon greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.5,
+        9,
+        4
+      ]
+    },
+    {
+      "bone": "left_visceral_continuation_1",
+      "center": [
+        -9,
+        1.013878,
+        8
+      ],
+      "faces": {},
+      "material": "intestine_dark",
+      "name": "left_visceral_continuation_1",
+      "origin": [
+        -9,
+        -8,
+        8
+      ],
+      "role": "thick cropped visceral continuation segment 1",
+      "rotation": [
+        0,
+        0,
+        146.309932
+      ],
+      "size": [
+        7.5,
+        19.327756,
+        8
+      ]
+    },
+    {
+      "bone": "left_visceral_continuation_2",
+      "center": [
+        -19,
+        -14.738644,
+        8
+      ],
+      "faces": {},
+      "material": "intestine_dark",
+      "name": "left_visceral_continuation_2",
+      "origin": [
+        -19,
+        -23,
+        8
+      ],
+      "role": "thick cropped visceral continuation segment 2",
+      "rotation": [
+        -3.469819,
+        0,
+        -165.963757
+      ],
+      "size": [
+        7,
+        17.822712,
+        7.5
+      ]
+    },
+    {
+      "bone": "left_visceral_continuation_3",
+      "center": [
+        -15,
+        -29.395314,
+        7
+      ],
+      "faces": {},
+      "material": "intestine_dark",
+      "name": "left_visceral_continuation_3",
+      "origin": [
+        -15,
+        -39,
+        7
+      ],
+      "role": "thick cropped visceral continuation segment 3",
+      "rotation": [
+        0,
+        0,
+        141.340192
+      ],
+      "size": [
+        6.2,
+        20.509373,
+        6.8
+      ]
+    },
+    {
+      "bone": "left_visceral_continuation_4",
+      "center": [
+        -27,
+        -44.645857,
+        7
+      ],
+      "faces": {},
+      "material": "intestine_dark",
+      "name": "left_visceral_continuation_4",
+      "origin": [
+        -27,
+        -54,
+        7
+      ],
+      "role": "thick cropped visceral continuation segment 4",
+      "rotation": [
+        -3.064048,
+        0,
+        -164.475889
+      ],
+      "size": [
+        5.2,
+        20.008287,
+        5.8
+      ]
+    },
+    {
+      "bone": "left_visceral_continuation_5",
+      "center": [
+        -22,
+        -61.218071,
+        6
+      ],
+      "faces": {},
+      "material": "intestine_dark",
+      "name": "left_visceral_continuation_5",
+      "origin": [
+        -22,
+        -72,
+        6
+      ],
+      "role": "thick cropped visceral continuation segment 5",
+      "rotation": [
+        -2.657981,
+        0,
+        158.198591
+      ],
+      "size": [
+        4.5,
+        22.863859,
+        5
+      ]
+    },
+    {
+      "bone": "central_intertwined_loop_1",
+      "center": [
+        -14,
+        23.524175,
+        7
+      ],
+      "faces": {},
+      "material": "intestine",
+      "name": "central_intertwined_loop_1",
+      "origin": [
+        -14,
+        8,
+        7
+      ],
+      "role": "thick cropped visceral continuation segment 1",
+      "rotation": [
+        11.142336,
+        0,
+        -156.801409
+      ],
+      "size": [
+        9,
+        32.348349,
+        9.5
+      ]
+    },
+    {
+      "bone": "central_intertwined_loop_2",
+      "center": [
+        -2,
+        -11.784162,
+        13
+      ],
+      "faces": {},
+      "material": "intestine",
+      "name": "central_intertwined_loop_2",
+      "origin": [
+        -2,
+        -20,
+        13
+      ],
+      "role": "thick cropped visceral continuation segment 2",
+      "rotation": [
+        3.489066,
+        0,
+        -142.431408
+      ],
+      "size": [
+        8.5,
+        17.731677,
+        9
+      ]
+    },
+    {
+      "bone": "central_intertwined_loop_3",
+      "center": [
+        8,
+        -26.126136,
+        14
+      ],
+      "faces": {},
+      "material": "intestine",
+      "name": "central_intertwined_loop_3",
+      "origin": [
+        8,
+        -33,
+        14
+      ],
+      "role": "thick cropped visceral continuation segment 3",
+      "rotation": [
+        -8.364994,
+        0,
+        -53.972627
+      ],
+      "size": [
+        8,
+        15.047727,
+        8.5
+      ]
+    },
+    {
+      "bone": "central_intertwined_loop_4",
+      "center": [
+        19,
+        -17.964376,
+        12
+      ],
+      "faces": {},
+      "material": "intestine",
+      "name": "central_intertwined_loop_4",
+      "origin": [
+        19,
+        -25,
+        12
+      ],
+      "role": "thick cropped visceral continuation segment 4",
+      "rotation": [
+        -8.17134,
+        0,
+        21.037511
+      ],
+      "size": [
+        7.5,
+        15.371247,
+        8
+      ]
+    },
+    {
+      "bone": "central_intertwined_loop_5",
+      "center": [
+        14,
+        -6.661461,
+        10
+      ],
+      "faces": {},
+      "material": "intestine",
+      "name": "central_intertwined_loop_5",
+      "origin": [
+        14,
+        -12,
+        10
+      ],
+      "role": "thick cropped visceral continuation segment 5",
+      "rotation": [
+        -5.374118,
+        0,
+        48.814075
+      ],
+      "size": [
+        7,
+        11.977078,
+        7.5
+      ]
+    },
+    {
+      "bone": "right_visceral_continuation_1",
+      "center": [
+        2,
+        -0.645857,
+        11
+      ],
+      "faces": {},
+      "material": "intestine",
+      "name": "right_visceral_continuation_1",
+      "origin": [
+        2,
+        -10,
+        11
+      ],
+      "role": "thick cropped visceral continuation segment 1",
+      "rotation": [
+        6.136904,
+        0,
+        -143.746162
+      ],
+      "size": [
+        8,
+        20.008287,
+        8.5
+      ]
+    },
+    {
+      "bone": "right_visceral_continuation_2",
+      "center": [
+        13,
+        -15.794024,
+        13
+      ],
+      "faces": {},
+      "material": "intestine",
+      "name": "right_visceral_continuation_2",
+      "origin": [
+        13,
+        -25,
+        13
+      ],
+      "role": "thick cropped visceral continuation segment 2",
+      "rotation": [
+        -3.113412,
+        0,
+        157.619865
+      ],
+      "size": [
+        7.5,
+        19.711953,
+        8
+      ]
+    },
+    {
+      "bone": "right_visceral_continuation_3",
+      "center": [
+        6,
+        -31.728681,
+        12
+      ],
+      "faces": {},
+      "material": "intestine",
+      "name": "right_visceral_continuation_3",
+      "origin": [
+        6,
+        -42,
+        12
+      ],
+      "role": "thick cropped visceral continuation segment 3",
+      "rotation": [
+        -2.790218,
+        0,
+        -136.974934
+      ],
+      "size": [
+        6.5,
+        21.842639,
+        7
+      ]
+    },
+    {
+      "bone": "right_visceral_continuation_4",
+      "center": [
+        20,
+        -47.291756,
+        11
+      ],
+      "faces": {},
+      "material": "intestine",
+      "name": "right_visceral_continuation_4",
+      "origin": [
+        20,
+        -57,
+        11
+      ],
+      "role": "thick cropped visceral continuation segment 4",
+      "rotation": [
+        -5.912252,
+        0,
+        158.749494
+      ],
+      "size": [
+        5.5,
+        20.716488,
+        6
+      ]
+    },
+    {
+      "bone": "right_visceral_continuation_5",
+      "center": [
+        13,
+        -66.253572,
+        9
+      ],
+      "faces": {},
+      "material": "intestine",
+      "name": "right_visceral_continuation_5",
+      "origin": [
+        13,
+        -75,
+        9
+      ],
+      "role": "thick cropped visceral continuation segment 5",
+      "rotation": [
+        -3.277168,
+        0,
+        166.75948
+      ],
+      "size": [
+        4.5,
+        18.792856,
+        5
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        -1,
+        39.5,
+        6
+      ],
+      "faces": {},
+      "material": "fold",
+      "name": "torso_fold_1",
+      "origin": [
+        -1,
+        35,
+        6
+      ],
+      "role": "deep stretched flesh fold",
+      "rotation": [
+        41.810315,
+        0,
+        -116.565051
+      ],
+      "size": [
+        1,
+        9.4,
+        0.75
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        3,
+        44.43396,
+        6
+      ],
+      "faces": {},
+      "material": "fold",
+      "name": "torso_fold_2",
+      "origin": [
+        3,
+        40,
+        6
+      ],
+      "role": "deep stretched flesh fold",
+      "rotation": [
+        40.847118,
+        0,
+        -116.565051
+      ],
+      "size": [
+        1,
+        9.26792,
+        0.75
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        8,
+        50.070934,
+        6
+      ],
+      "faces": {},
+      "material": "fold",
+      "name": "torso_fold_3",
+      "origin": [
+        8,
+        46,
+        6
+      ],
+      "role": "deep stretched flesh fold",
+      "rotation": [
+        39.693025,
+        0,
+        -118.61046
+      ],
+      "size": [
+        1,
+        8.541867,
+        0.75
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        18,
+        44.1833,
+        4
+      ],
+      "faces": {},
+      "material": "fold",
+      "name": "torso_fold_4",
+      "origin": [
+        18,
+        40,
+        4
+      ],
+      "role": "deep stretched flesh fold",
+      "rotation": [
+        45.818623,
+        0,
+        -120.963757
+      ],
+      "size": [
+        1,
+        8.7666,
+        0.75
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        -4,
+        33.031129,
+        6
+      ],
+      "faces": {},
+      "material": "fold",
+      "name": "torso_fold_5",
+      "origin": [
+        -4,
+        29,
+        6
+      ],
+      "role": "deep stretched flesh fold",
+      "rotation": [
+        38.328818,
+        0,
+        -108.434949
+      ],
+      "size": [
+        1,
+        8.462258,
+        0.75
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "duplicate-aware-fused-zombie-anatomy-v2",
+    "anatomical_axis": "+Z front, X width, Y up",
+    "arm_chains": [
+      {
+        "side": "left",
+        "volumes": [
+          "left_arm_mass",
+          "left_fist_volume"
+        ]
+      },
+      {
+        "side": "right",
+        "volumes": [
+          "right_arm_upper_mass",
+          "right_forearm_mass",
+          "right_fist_volume"
+        ]
+      }
+    ],
+    "declared_attachments": [
+      {
+        "first": "torso_core_001",
+        "joint": [
+          0.0,
+          56.0,
+          0.0
+        ],
+        "second": "torso_core_002"
+      },
+      {
+        "first": "torso_core_001",
+        "joint": [
+          0.0,
+          44.0,
+          9.0
+        ],
+        "second": "torso_core_003"
+      },
+      {
+        "first": "torso_core_001",
+        "joint": [
+          0.0,
+          44.0,
+          -9.0
+        ],
+        "second": "torso_core_004"
+      },
+      {
+        "first": "torso_core_001",
+        "joint": [
+          0.0,
+          32.0,
+          0.0
+        ],
+        "second": "torso_core_005"
+      },
+      {
+        "first": "torso_core_001",
+        "joint": [
+          19.200000000000003,
+          44.0,
+          0.0
+        ],
+        "second": "torso_core_006"
+      },
+      {
+        "first": "torso_core_001",
+        "joint": [
+          -19.200000000000003,
+          44.0,
+          0.0
+        ],
+        "second": "torso_core_007"
+      },
+      {
+        "first": "left_arm_mass_001",
+        "joint": [
+          -34.0,
+          49.5,
+          -0.5
+        ],
+        "second": "left_arm_mass_002"
+      },
+      {
+        "first": "left_arm_mass_001",
+        "joint": [
+          -34.0,
+          56.5,
+          -0.5
+        ],
+        "second": "left_arm_mass_003"
+      },
+      {
+        "first": "left_arm_mass_001",
+        "joint": [
+          -34.0,
+          63.5,
+          -0.5
+        ],
+        "second": "left_arm_mass_004"
+      },
+      {
+        "first": "left_arm_mass_002",
+        "joint": [
+          -10.0,
+          49.5,
+          -0.5
+        ],
+        "second": "left_arm_mass_005"
+      },
+      {
+        "first": "torso_core_001",
+        "joint": [
+          -14.6,
+          52.75,
+          0.0
+        ],
+        "second": "left_arm_mass_003"
+      },
+      {
+        "first": "left_fist_volume_001",
+        "joint": [
+          -46.666666500000005,
+          54.400000000000006,
+          1.0
+        ],
+        "second": "left_fist_volume_002"
+      },
+      {
+        "first": "left_fist_volume_001",
+        "joint": [
+          -46.666666500000005,
+          59.5,
+          1.0
+        ],
+        "second": "left_fist_volume_003"
+      },
+      {
+        "first": "left_fist_volume_001",
+        "joint": [
+          -46.666666500000005,
+          64.6,
+          1.0
+        ],
+        "second": "left_fist_volume_004"
+      },
+      {
+        "first": "left_fist_volume_002",
+        "joint": [
+          -43.3333335,
+          52.7,
+          1.0
+        ],
+        "second": "left_fist_volume_005"
+      },
+      {
+        "first": "left_fist_volume_005",
+        "joint": [
+          -36.6666665,
+          52.7,
+          1.0
+        ],
+        "second": "left_fist_volume_006"
+      },
+      {
+        "first": "left_fist_volume_005",
+        "joint": [
+          -36.6666665,
+          59.5,
+          1.0
+        ],
+        "second": "left_fist_volume_007"
+      },
+      {
+        "first": "left_fist_volume_005",
+        "joint": [
+          -36.6666665,
+          66.3,
+          1.0
+        ],
+        "second": "left_fist_volume_008"
+      },
+      {
+        "first": "left_fist_volume_006",
+        "joint": [
+          -33.3333335,
+          54.400000000000006,
+          1.0
+        ],
+        "second": "left_fist_volume_009"
+      },
+      {
+        "first": "left_arm_mass_001",
+        "joint": [
+          -38.333333249999995,
+          57.25,
+          -0.5
+        ],
+        "second": "left_fist_volume_005"
+      },
+      {
+        "first": "right_arm_upper_mass_001",
+        "joint": [
+          5.6666665,
+          33.1666665,
+          1.0
+        ],
+        "second": "right_arm_upper_mass_002"
+      },
+      {
+        "first": "right_arm_upper_mass_001",
+        "joint": [
+          5.6666665,
+          41.5,
+          1.0
+        ],
+        "second": "right_arm_upper_mass_003"
+      },
+      {
+        "first": "right_arm_upper_mass_001",
+        "joint": [
+          5.6666665,
+          49.833333499999995,
+          1.0
+        ],
+        "second": "right_arm_upper_mass_004"
+      },
+      {
+        "first": "right_arm_upper_mass_002",
+        "joint": [
+          28.333333500000002,
+          33.1666665,
+          1.0
+        ],
+        "second": "right_arm_upper_mass_005"
+      },
+      {
+        "first": "torso_core_001",
+        "joint": [
+          12.43333325,
+          41.5,
+          0.0
+        ],
+        "second": "right_arm_upper_mass_003"
+      },
+      {
+        "first": "right_forearm_mass_001",
+        "joint": [
+          21.666666499999998,
+          25.5,
+          3.0
+        ],
+        "second": "right_forearm_mass_002"
+      },
+      {
+        "first": "right_forearm_mass_001",
+        "joint": [
+          21.666666499999998,
+          32.5,
+          3.0
+        ],
+        "second": "right_forearm_mass_003"
+      },
+      {
+        "first": "right_forearm_mass_001",
+        "joint": [
+          21.666666499999998,
+          39.5,
+          3.0
+        ],
+        "second": "right_forearm_mass_004"
+      },
+      {
+        "first": "right_forearm_mass_002",
+        "joint": [
+          40.333333499999995,
+          25.5,
+          3.0
+        ],
+        "second": "right_forearm_mass_005"
+      },
+      {
+        "first": "right_arm_upper_mass_003",
+        "joint": [
+          25.0,
+          36.333333249999995,
+          2.75
+        ],
+        "second": "right_forearm_mass_003"
+      },
+      {
+        "first": "right_fist_volume_001",
+        "joint": [
+          36.666666500000005,
+          19.799999999999997,
+          4.0
+        ],
+        "second": "right_fist_volume_002"
+      },
+      {
+        "first": "right_fist_volume_001",
+        "joint": [
+          36.666666500000005,
+          25.5,
+          4.0
+        ],
+        "second": "right_fist_volume_003"
+      },
+      {
+        "first": "right_fist_volume_001",
+        "joint": [
+          36.666666500000005,
+          31.200000000000003,
+          4.0
+        ],
+        "second": "right_fist_volume_004"
+      },
+      {
+        "first": "right_fist_volume_002",
+        "joint": [
+          49.333333499999995,
+          19.799999999999997,
+          4.0
+        ],
+        "second": "right_fist_volume_005"
+      },
+      {
+        "first": "right_forearm_mass_005",
+        "joint": [
+          42.666667,
+          28.35,
+          3.0
+        ],
+        "second": "right_fist_volume_003"
+      },
+      {
+        "first": "left_fist_volume_003",
+        "joint": [
+          -45.0,
+          61.0,
+          8.2
+        ],
+        "second": "left_fist_knuckle_1"
+      },
+      {
+        "first": "left_fist_volume_005",
+        "joint": [
+          -41.5,
+          59.5,
+          8.2
+        ],
+        "second": "left_fist_knuckle_2"
+      },
+      {
+        "first": "left_fist_volume_005",
+        "joint": [
+          -38.0,
+          58.0,
+          8.2
+        ],
+        "second": "left_fist_knuckle_3"
+      },
+      {
+        "first": "right_fist_volume_003",
+        "joint": [
+          39.5,
+          27.0,
+          8.2
+        ],
+        "second": "right_fist_knuckle_1"
+      },
+      {
+        "first": "right_fist_volume_003",
+        "joint": [
+          43.0,
+          25.5,
+          8.2
+        ],
+        "second": "right_fist_knuckle_2"
+      },
+      {
+        "first": "right_fist_volume_003",
+        "joint": [
+          46.5,
+          24.0,
+          8.2
+        ],
+        "second": "right_fist_knuckle_3"
+      },
+      {
+        "first": "face_volume_001",
+        "joint": [
+          -30.0,
+          37.5,
+          7.0
+        ],
+        "second": "face_volume_002"
+      },
+      {
+        "first": "face_volume_001",
+        "joint": [
+          -30.0,
+          37.5,
+          4.800000000000001
+        ],
+        "second": "face_volume_003"
+      },
+      {
+        "first": "face_volume_001",
+        "joint": [
+          -30.0,
+          37.5,
+          9.2
+        ],
+        "second": "face_volume_004"
+      },
+      {
+        "first": "face_volume_002",
+        "joint": [
+          -26.0,
+          37.5,
+          7.0
+        ],
+        "second": "face_volume_005"
+      },
+      {
+        "first": "face_volume_003",
+        "joint": [
+          -26.0,
+          37.5,
+          0.4
+        ],
+        "second": "face_volume_006"
+      },
+      {
+        "first": "face_volume_004",
+        "joint": [
+          -26.0,
+          37.5,
+          13.600000000000001
+        ],
+        "second": "face_volume_007"
+      },
+      {
+        "first": "face_volume_005",
+        "joint": [
+          -22.0,
+          37.5,
+          7.0
+        ],
+        "second": "face_volume_008"
+      },
+      {
+        "first": "face_volume_005",
+        "joint": [
+          -22.0,
+          37.5,
+          2.6000000000000005
+        ],
+        "second": "face_volume_009"
+      },
+      {
+        "first": "face_volume_005",
+        "joint": [
+          -22.0,
+          24.166667,
+          11.399999999999999
+        ],
+        "second": "face_volume_010"
+      },
+      {
+        "first": "face_volume_005",
+        "joint": [
+          -22.0,
+          37.5,
+          0.40000000000000024
+        ],
+        "second": "face_volume_011"
+      },
+      {
+        "first": "face_volume_005",
+        "joint": [
+          -22.0,
+          44.16666675,
+          11.399999999999999
+        ],
+        "second": "face_volume_012"
+      },
+      {
+        "first": "face_volume_005",
+        "joint": [
+          -22.0,
+          44.166667,
+          13.600000000000001
+        ],
+        "second": "face_volume_013"
+      },
+      {
+        "first": "face_volume_008",
+        "joint": [
+          -16.0,
+          46.388889,
+          9.2
+        ],
+        "second": "face_volume_014"
+      },
+      {
+        "first": "face_volume_008",
+        "joint": [
+          -12.0,
+          44.166667,
+          9.2
+        ],
+        "second": "face_volume_015"
+      },
+      {
+        "first": "face_volume_008",
+        "joint": [
+          -10.0,
+          37.5,
+          7.0
+        ],
+        "second": "face_volume_016"
+      },
+      {
+        "first": "face_volume_009",
+        "joint": [
+          -10.0,
+          37.5,
+          0.4
+        ],
+        "second": "face_volume_017"
+      },
+      {
+        "first": "face_volume_013",
+        "joint": [
+          -10.0,
+          41.944444499999996,
+          15.8
+        ],
+        "second": "face_volume_018"
+      },
+      {
+        "first": "face_volume_016",
+        "joint": [
+          -6.0,
+          37.5,
+          7.0
+        ],
+        "second": "face_volume_019"
+      },
+      {
+        "first": "face_volume_016",
+        "joint": [
+          -6.0,
+          37.5,
+          2.6000000000000005
+        ],
+        "second": "face_volume_020"
+      },
+      {
+        "first": "face_volume_016",
+        "joint": [
+          -6.0,
+          37.5,
+          11.399999999999999
+        ],
+        "second": "face_volume_021"
+      },
+      {
+        "first": "face_volume_019",
+        "joint": [
+          -2.0,
+          37.5,
+          7.0
+        ],
+        "second": "face_volume_022"
+      },
+      {
+        "first": "torso_core_001",
+        "joint": [
+          -14.6,
+          40.3055555,
+          -1.7999999999999998
+        ],
+        "second": "face_volume_011"
+      },
+      {
+        "first": "jaw_mass_001",
+        "joint": [
+          -23.333333500000002,
+          16.833333500000002,
+          6.0
+        ],
+        "second": "jaw_mass_002"
+      },
+      {
+        "first": "jaw_mass_001",
+        "joint": [
+          -23.333333500000002,
+          21.5,
+          6.0
+        ],
+        "second": "jaw_mass_003"
+      },
+      {
+        "first": "jaw_mass_001",
+        "joint": [
+          -23.333333500000002,
+          26.166666499999998,
+          6.0
+        ],
+        "second": "jaw_mass_004"
+      },
+      {
+        "first": "jaw_mass_002",
+        "joint": [
+          -8.6666665,
+          16.833333500000002,
+          6.0
+        ],
+        "second": "jaw_mass_005"
+      },
+      {
+        "first": "face_volume_008",
+        "joint": [
+          -16.0,
+          21.83333325,
+          7.0
+        ],
+        "second": "jaw_mass_003"
+      },
+      {
+        "first": "mouth_cavity_001",
+        "joint": [
+          -20.2,
+          28.1,
+          10.4
+        ],
+        "second": "mouth_cavity_002"
+      },
+      {
+        "first": "mouth_cavity_001",
+        "joint": [
+          -20.2,
+          32.0,
+          10.4
+        ],
+        "second": "mouth_cavity_003"
+      },
+      {
+        "first": "mouth_cavity_001",
+        "joint": [
+          -20.2,
+          35.9,
+          10.4
+        ],
+        "second": "mouth_cavity_004"
+      },
+      {
+        "first": "mouth_cavity_002",
+        "joint": [
+          -18.1,
+          26.15,
+          10.4
+        ],
+        "second": "mouth_cavity_005"
+      },
+      {
+        "first": "mouth_cavity_002",
+        "joint": [
+          -18.1,
+          27.125,
+          10.4
+        ],
+        "second": "mouth_cavity_006"
+      },
+      {
+        "first": "mouth_cavity_004",
+        "joint": [
+          -18.1,
+          37.85,
+          10.4
+        ],
+        "second": "mouth_cavity_007"
+      },
+      {
+        "first": "mouth_cavity_005",
+        "joint": [
+          -13.9,
+          26.15,
+          10.4
+        ],
+        "second": "mouth_cavity_008"
+      },
+      {
+        "first": "mouth_cavity_006",
+        "joint": [
+          -13.9,
+          32.0,
+          10.4
+        ],
+        "second": "mouth_cavity_009"
+      },
+      {
+        "first": "mouth_cavity_006",
+        "joint": [
+          -13.9,
+          36.875,
+          10.4
+        ],
+        "second": "mouth_cavity_010"
+      },
+      {
+        "first": "mouth_cavity_008",
+        "joint": [
+          -11.8,
+          28.1,
+          10.4
+        ],
+        "second": "mouth_cavity_011"
+      },
+      {
+        "first": "jaw_mass_004",
+        "joint": [
+          -16.0,
+          27.333333,
+          9.825
+        ],
+        "second": "mouth_cavity_006"
+      },
+      {
+        "first": "mouth_cavity_004",
+        "joint": [
+          -19.3,
+          37.8,
+          10.8
+        ],
+        "second": "upper_mouth_tooth_1"
+      },
+      {
+        "first": "mouth_cavity_006",
+        "joint": [
+          -16.0,
+          37.8,
+          10.8
+        ],
+        "second": "upper_mouth_tooth_2"
+      },
+      {
+        "first": "mouth_cavity_010",
+        "joint": [
+          -12.7,
+          37.8,
+          10.8
+        ],
+        "second": "upper_mouth_tooth_3"
+      },
+      {
+        "first": "mouth_cavity_002",
+        "joint": [
+          -19.3,
+          26.2,
+          10.8
+        ],
+        "second": "lower_mouth_tooth_1"
+      },
+      {
+        "first": "mouth_cavity_006",
+        "joint": [
+          -16.0,
+          26.2,
+          10.8
+        ],
+        "second": "lower_mouth_tooth_2"
+      },
+      {
+        "first": "mouth_cavity_008",
+        "joint": [
+          -12.7,
+          26.2,
+          10.8
+        ],
+        "second": "lower_mouth_tooth_3"
+      },
+      {
+        "first": "left_bulging_eye_001",
+        "joint": [
+          -25.1,
+          40.9,
+          16.3
+        ],
+        "second": "left_bulging_eye_002"
+      },
+      {
+        "first": "left_bulging_eye_001",
+        "joint": [
+          -25.1,
+          43.0,
+          16.3
+        ],
+        "second": "left_bulging_eye_003"
+      },
+      {
+        "first": "left_bulging_eye_001",
+        "joint": [
+          -25.1,
+          45.1,
+          16.3
+        ],
+        "second": "left_bulging_eye_004"
+      },
+      {
+        "first": "left_bulging_eye_002",
+        "joint": [
+          -20.9,
+          40.9,
+          16.3
+        ],
+        "second": "left_bulging_eye_005"
+      },
+      {
+        "first": "face_volume_007",
+        "joint": [
+          -23.55,
+          42.53333325,
+          16.0
+        ],
+        "second": "left_bulging_eye_003"
+      },
+      {
+        "first": "left_bulging_eye_003",
+        "joint": [
+          -23.0,
+          43.0,
+          17.9
+        ],
+        "second": "left_pupil"
+      },
+      {
+        "first": "right_bulging_eye_001",
+        "joint": [
+          -11.2,
+          41.3,
+          16.3
+        ],
+        "second": "right_bulging_eye_002"
+      },
+      {
+        "first": "right_bulging_eye_001",
+        "joint": [
+          -11.2,
+          43.5,
+          16.3
+        ],
+        "second": "right_bulging_eye_003"
+      },
+      {
+        "first": "right_bulging_eye_001",
+        "joint": [
+          -11.2,
+          45.7,
+          16.3
+        ],
+        "second": "right_bulging_eye_004"
+      },
+      {
+        "first": "right_bulging_eye_002",
+        "joint": [
+          -6.800000000000001,
+          41.3,
+          16.3
+        ],
+        "second": "right_bulging_eye_005"
+      },
+      {
+        "first": "face_volume_018",
+        "joint": [
+          -8.4,
+          42.73333325,
+          16.0
+        ],
+        "second": "right_bulging_eye_003"
+      },
+      {
+        "first": "right_bulging_eye_003",
+        "joint": [
+          -9.0,
+          43.5,
+          17.9
+        ],
+        "second": "right_pupil"
+      },
+      {
+        "first": "face_volume_004",
+        "joint": [
+          -27.0,
+          44.0,
+          12.0
+        ],
+        "second": "left_brow_fold"
+      },
+      {
+        "first": "face_volume_013",
+        "joint": [
+          -21.5,
+          46.0,
+          14.0
+        ],
+        "second": "left_inner_brow_fold"
+      },
+      {
+        "first": "face_volume_013",
+        "joint": [
+          -10.5,
+          47.0,
+          14.0
+        ],
+        "second": "right_inner_brow_fold"
+      },
+      {
+        "first": "face_volume_021",
+        "joint": [
+          -4.5,
+          44.0,
+          12.0
+        ],
+        "second": "right_brow_fold"
+      },
+      {
+        "first": "face_volume_004",
+        "joint": [
+          -27.0,
+          37.0,
+          13.2
+        ],
+        "second": "left_cheek_fold"
+      },
+      {
+        "first": "face_volume_021",
+        "joint": [
+          -5.0,
+          38.0,
+          13.2
+        ],
+        "second": "right_cheek_fold"
+      },
+      {
+        "first": "face_volume_007",
+        "joint": [
+          -25.0,
+          38.0,
+          14.0
+        ],
+        "second": "left_nasolabial_fold"
+      },
+      {
+        "first": "face_volume_018",
+        "joint": [
+          -6.0,
+          38.0,
+          14.0
+        ],
+        "second": "right_nasolabial_fold"
+      },
+      {
+        "first": "jaw_mass_003",
+        "joint": [
+          -21.0,
+          21.0,
+          10.0
+        ],
+        "second": "chin_fold"
+      },
+      {
+        "first": "face_volume_014",
+        "joint": [
+          -16.0,
+          40.0,
+          13.2
+        ],
+        "second": "broken_nose"
+      },
+      {
+        "first": "face_volume_002",
+        "joint": [
+          -30.0,
+          43.0,
+          9.0
+        ],
+        "second": "hair_tuft_1"
+      },
+      {
+        "first": "face_volume_005",
+        "joint": [
+          -26.0,
+          49.0,
+          8.0
+        ],
+        "second": "hair_tuft_2"
+      },
+      {
+        "first": "face_volume_008",
+        "joint": [
+          -20.0,
+          53.0,
+          7.0
+        ],
+        "second": "hair_tuft_3"
+      },
+      {
+        "first": "face_volume_008",
+        "joint": [
+          -12.0,
+          52.0,
+          8.0
+        ],
+        "second": "hair_tuft_4"
+      },
+      {
+        "first": "face_volume_019",
+        "joint": [
+          -4.0,
+          47.0,
+          8.0
+        ],
+        "second": "hair_tuft_5"
+      },
+      {
+        "first": "brain_neck_mass_001",
+        "joint": [
+          4.3333335,
+          50.333333499999995,
+          -0.5
+        ],
+        "second": "brain_neck_mass_002"
+      },
+      {
+        "first": "brain_neck_mass_001",
+        "joint": [
+          4.3333335,
+          61.0,
+          -0.5
+        ],
+        "second": "brain_neck_mass_003"
+      },
+      {
+        "first": "brain_neck_mass_001",
+        "joint": [
+          4.3333335,
+          71.66666649999999,
+          -0.5
+        ],
+        "second": "brain_neck_mass_004"
+      },
+      {
+        "first": "brain_neck_mass_002",
+        "joint": [
+          19.666666499999998,
+          50.333333499999995,
+          -0.5
+        ],
+        "second": "brain_neck_mass_005"
+      },
+      {
+        "first": "torso_core_001",
+        "joint": [
+          11.766666749999999,
+          53.166666750000005,
+          0.0
+        ],
+        "second": "brain_neck_mass_003"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          17.0,
+          76.0,
+          6.5
+        ],
+        "second": "brain_volume_002"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          17.0,
+          76.0,
+          -5.5
+        ],
+        "second": "brain_volume_003"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          25.0,
+          76.0,
+          0.5
+        ],
+        "second": "brain_volume_004"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          9.0,
+          76.0,
+          0.5
+        ],
+        "second": "brain_volume_005"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          17.0,
+          84.25,
+          0.5
+        ],
+        "second": "brain_volume_006"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          17.0,
+          67.75,
+          0.5
+        ],
+        "second": "brain_volume_007"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          25.0,
+          80.125,
+          0.5
+        ],
+        "second": "brain_volume_008"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          25.0,
+          71.875,
+          0.5
+        ],
+        "second": "brain_volume_009"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          9.0,
+          80.125,
+          0.5
+        ],
+        "second": "brain_volume_010"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          9.0,
+          71.875,
+          0.5
+        ],
+        "second": "brain_volume_011"
+      },
+      {
+        "first": "brain_neck_mass_004",
+        "joint": [
+          14.333333249999999,
+          74.333333,
+          -0.375
+        ],
+        "second": "brain_volume_001"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          9.2,
+          78.0,
+          6.4
+        ],
+        "second": "brain_groove_1"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          11.5,
+          83.0,
+          6.4
+        ],
+        "second": "brain_groove_2"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          15.5,
+          80.0,
+          6.4
+        ],
+        "second": "brain_groove_3"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          20.0,
+          83.0,
+          6.4
+        ],
+        "second": "brain_groove_4"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          9.2,
+          74.0,
+          6.4
+        ],
+        "second": "brain_groove_5"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          11.5,
+          70.5,
+          6.4
+        ],
+        "second": "brain_groove_6"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          16.0,
+          74.0,
+          6.4
+        ],
+        "second": "brain_groove_7"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          20.5,
+          70.0,
+          6.4
+        ],
+        "second": "brain_groove_8"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          10.0,
+          69.0,
+          5.5
+        ],
+        "second": "brain_groove_9"
+      },
+      {
+        "first": "brain_volume_001",
+        "joint": [
+          19.5,
+          69.0,
+          6.4
+        ],
+        "second": "brain_groove_10"
+      },
+      {
+        "first": "visceral_bridge_001",
+        "joint": [
+          -11.6666665,
+          20.666666499999998,
+          1.5
+        ],
+        "second": "visceral_bridge_002"
+      },
+      {
+        "first": "visceral_bridge_001",
+        "joint": [
+          -11.6666665,
+          28.0,
+          1.5
+        ],
+        "second": "visceral_bridge_003"
+      },
+      {
+        "first": "visceral_bridge_001",
+        "joint": [
+          -11.6666665,
+          35.333333499999995,
+          1.5
+        ],
+        "second": "visceral_bridge_004"
+      },
+      {
+        "first": "visceral_bridge_002",
+        "joint": [
+          9.6666665,
+          20.666666499999998,
+          1.5
+        ],
+        "second": "visceral_bridge_005"
+      },
+      {
+        "first": "torso_core_005",
+        "joint": [
+          12.03333325,
+          30.0,
+          0.75
+        ],
+        "second": "visceral_bridge_005"
+      },
+      {
+        "first": "visceral_bridge_003",
+        "joint": [
+          -8.0,
+          21.0,
+          5.0
+        ],
+        "second": "organ_lobe_left_upper"
+      },
+      {
+        "first": "organ_lobe_left_upper",
+        "joint": [
+          -14.0,
+          8.0,
+          7.0
+        ],
+        "second": "organ_lobe_left_lower"
+      },
+      {
+        "first": "visceral_bridge_003",
+        "joint": [
+          0.0,
+          21.0,
+          8.0
+        ],
+        "second": "organ_lobe_right_upper"
+      },
+      {
+        "first": "organ_lobe_right_upper",
+        "joint": [
+          7.0,
+          7.0,
+          10.0
+        ],
+        "second": "organ_lobe_right_lower"
+      },
+      {
+        "first": "organ_bulge_left_upper_001",
+        "joint": [
+          -15.0,
+          9.5,
+          7.0
+        ],
+        "second": "organ_bulge_left_upper_002"
+      },
+      {
+        "first": "organ_bulge_left_upper_001",
+        "joint": [
+          -15.0,
+          14.0,
+          7.0
+        ],
+        "second": "organ_bulge_left_upper_003"
+      },
+      {
+        "first": "organ_bulge_left_upper_001",
+        "joint": [
+          -15.0,
+          18.5,
+          7.0
+        ],
+        "second": "organ_bulge_left_upper_004"
+      },
+      {
+        "first": "organ_bulge_left_upper_002",
+        "joint": [
+          -7.0,
+          9.5,
+          7.0
+        ],
+        "second": "organ_bulge_left_upper_005"
+      },
+      {
+        "first": "organ_lobe_left_upper",
+        "joint": [
+          -11.0,
+          14.0,
+          7.0
+        ],
+        "second": "organ_bulge_left_upper_003"
+      },
+      {
+        "first": "organ_bulge_left_lower_001",
+        "joint": [
+          -14.5,
+          -4.0,
+          9.0
+        ],
+        "second": "organ_bulge_left_lower_002"
+      },
+      {
+        "first": "organ_bulge_left_lower_001",
+        "joint": [
+          -14.5,
+          0.0,
+          9.0
+        ],
+        "second": "organ_bulge_left_lower_003"
+      },
+      {
+        "first": "organ_bulge_left_lower_001",
+        "joint": [
+          -14.5,
+          4.0,
+          9.0
+        ],
+        "second": "organ_bulge_left_lower_004"
+      },
+      {
+        "first": "organ_bulge_left_lower_002",
+        "joint": [
+          -7.5,
+          -4.0,
+          9.0
+        ],
+        "second": "organ_bulge_left_lower_005"
+      },
+      {
+        "first": "organ_lobe_left_lower",
+        "joint": [
+          -11.0,
+          0.0,
+          9.0
+        ],
+        "second": "organ_bulge_left_lower_003"
+      },
+      {
+        "first": "organ_bulge_right_upper_001",
+        "joint": [
+          -1.5,
+          9.0,
+          10.0
+        ],
+        "second": "organ_bulge_right_upper_002"
+      },
+      {
+        "first": "organ_bulge_right_upper_001",
+        "joint": [
+          -1.5,
+          14.0,
+          10.0
+        ],
+        "second": "organ_bulge_right_upper_003"
+      },
+      {
+        "first": "organ_bulge_right_upper_001",
+        "joint": [
+          -1.5,
+          19.0,
+          10.0
+        ],
+        "second": "organ_bulge_right_upper_004"
+      },
+      {
+        "first": "organ_bulge_right_upper_002",
+        "joint": [
+          7.5,
+          9.0,
+          10.0
+        ],
+        "second": "organ_bulge_right_upper_005"
+      },
+      {
+        "first": "organ_lobe_right_upper",
+        "joint": [
+          3.0,
+          14.0,
+          10.0
+        ],
+        "second": "organ_bulge_right_upper_003"
+      },
+      {
+        "first": "organ_bulge_right_lower_001",
+        "joint": [
+          0.5,
+          -7.5,
+          12.0
+        ],
+        "second": "organ_bulge_right_lower_002"
+      },
+      {
+        "first": "organ_bulge_right_lower_001",
+        "joint": [
+          0.5,
+          -3.0,
+          12.0
+        ],
+        "second": "organ_bulge_right_lower_003"
+      },
+      {
+        "first": "organ_bulge_right_lower_001",
+        "joint": [
+          0.5,
+          1.5,
+          12.0
+        ],
+        "second": "organ_bulge_right_lower_004"
+      },
+      {
+        "first": "organ_bulge_right_lower_002",
+        "joint": [
+          7.5,
+          -7.5,
+          12.0
+        ],
+        "second": "organ_bulge_right_lower_005"
+      },
+      {
+        "first": "organ_lobe_right_lower",
+        "joint": [
+          4.0,
+          -3.0,
+          12.0
+        ],
+        "second": "organ_bulge_right_lower_003"
+      },
+      {
+        "first": "organ_lobe_left_lower",
+        "joint": [
+          -9.0,
+          -8.0,
+          8.0
+        ],
+        "second": "left_visceral_continuation_1"
+      },
+      {
+        "first": "left_visceral_continuation_1",
+        "joint": [
+          -19.0,
+          -23.0,
+          8.0
+        ],
+        "second": "left_visceral_continuation_2"
+      },
+      {
+        "first": "left_visceral_continuation_2",
+        "joint": [
+          -15.0,
+          -39.0,
+          7.0
+        ],
+        "second": "left_visceral_continuation_3"
+      },
+      {
+        "first": "left_visceral_continuation_3",
+        "joint": [
+          -27.0,
+          -54.0,
+          7.0
+        ],
+        "second": "left_visceral_continuation_4"
+      },
+      {
+        "first": "left_visceral_continuation_4",
+        "joint": [
+          -22.0,
+          -72.0,
+          6.0
+        ],
+        "second": "left_visceral_continuation_5"
+      },
+      {
+        "first": "organ_lobe_left_upper",
+        "joint": [
+          -14.0,
+          8.0,
+          7.0
+        ],
+        "second": "central_intertwined_loop_1"
+      },
+      {
+        "first": "central_intertwined_loop_1",
+        "joint": [
+          -2.0,
+          -20.0,
+          13.0
+        ],
+        "second": "central_intertwined_loop_2"
+      },
+      {
+        "first": "central_intertwined_loop_2",
+        "joint": [
+          8.0,
+          -33.0,
+          14.0
+        ],
+        "second": "central_intertwined_loop_3"
+      },
+      {
+        "first": "central_intertwined_loop_3",
+        "joint": [
+          19.0,
+          -25.0,
+          12.0
+        ],
+        "second": "central_intertwined_loop_4"
+      },
+      {
+        "first": "central_intertwined_loop_4",
+        "joint": [
+          14.0,
+          -12.0,
+          10.0
+        ],
+        "second": "central_intertwined_loop_5"
+      },
+      {
+        "first": "organ_lobe_right_lower",
+        "joint": [
+          2.0,
+          -10.0,
+          11.0
+        ],
+        "second": "right_visceral_continuation_1"
+      },
+      {
+        "first": "right_visceral_continuation_1",
+        "joint": [
+          13.0,
+          -25.0,
+          13.0
+        ],
+        "second": "right_visceral_continuation_2"
+      },
+      {
+        "first": "right_visceral_continuation_2",
+        "joint": [
+          6.0,
+          -42.0,
+          12.0
+        ],
+        "second": "right_visceral_continuation_3"
+      },
+      {
+        "first": "right_visceral_continuation_3",
+        "joint": [
+          20.0,
+          -57.0,
+          11.0
+        ],
+        "second": "right_visceral_continuation_4"
+      },
+      {
+        "first": "right_visceral_continuation_4",
+        "joint": [
+          13.0,
+          -75.0,
+          9.0
+        ],
+        "second": "right_visceral_continuation_5"
+      },
+      {
+        "first": "torso_core_001",
+        "joint": [
+          -1.0,
+          35.0,
+          6.0
+        ],
+        "second": "torso_fold_1"
+      },
+      {
+        "first": "torso_core_001",
+        "joint": [
+          3.0,
+          40.0,
+          6.0
+        ],
+        "second": "torso_fold_2"
+      },
+      {
+        "first": "torso_core_001",
+        "joint": [
+          8.0,
+          46.0,
+          6.0
+        ],
+        "second": "torso_fold_3"
+      },
+      {
+        "first": "torso_core_001",
+        "joint": [
+          18.0,
+          40.0,
+          4.0
+        ],
+        "second": "torso_fold_4"
+      },
+      {
+        "first": "visceral_bridge_003",
+        "joint": [
+          -4.0,
+          29.0,
+          6.0
+        ],
+        "second": "torso_fold_5"
+      }
+    ],
+    "feature_inventory": {
+      "brain_grooves": 10,
+      "carved_screaming_mouths": 1,
+      "exposed_brains": 1,
+      "fist_fingers": 6,
+      "fists": 2,
+      "grounded_feet": 0,
+      "hanging_organ_lobes": 4,
+      "massive_arm_chains": 2,
+      "mouth_teeth": 6,
+      "observed_camera_axes": 1,
+      "visceral_tendrils": 3
+    },
+    "head_cutout": {
+      "carved_faces": [
+        [
+          "face_volume_005",
+          "east"
+        ],
+        [
+          "face_volume_007",
+          "east"
+        ],
+        [
+          "face_volume_008",
+          "south"
+        ],
+        [
+          "face_volume_010",
+          "up"
+        ],
+        [
+          "face_volume_012",
+          "east"
+        ],
+        [
+          "face_volume_012",
+          "down"
+        ],
+        [
+          "face_volume_012",
+          "south"
+        ],
+        [
+          "face_volume_013",
+          "down"
+        ],
+        [
+          "face_volume_014",
+          "down"
+        ],
+        [
+          "face_volume_015",
+          "west"
+        ],
+        [
+          "face_volume_015",
+          "down"
+        ],
+        [
+          "face_volume_015",
+          "south"
+        ],
+        [
+          "face_volume_016",
+          "west"
+        ],
+        [
+          "face_volume_018",
+          "west"
+        ]
+      ],
+      "removed_voxels": 16
+    },
+    "hidden_geometry_established_from_observed_views": false,
+    "independent_observed_camera_axes": 1,
+    "lane": "agent-authored-semantic-volume",
+    "observed_view_count": 2,
+    "source_frame_crop_world_y": -65.0,
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0,
+    "visceral_tendrils": [
+      {
+        "endpoint_is_frame_cropped": true,
+        "forms_closed_visual_loop": false,
+        "joints": [
+          [
+            -9.0,
+            -8.0,
+            8.0
+          ],
+          [
+            -19.0,
+            -23.0,
+            8.0
+          ],
+          [
+            -15.0,
+            -39.0,
+            7.0
+          ],
+          [
+            -27.0,
+            -54.0,
+            7.0
+          ],
+          [
+            -22.0,
+            -72.0,
+            6.0
+          ],
+          [
+            -30.0,
+            -92.0,
+            5.0
+          ]
+        ],
+        "name": "left_visceral_continuation",
+        "segments": [
+          "left_visceral_continuation_1",
+          "left_visceral_continuation_2",
+          "left_visceral_continuation_3",
+          "left_visceral_continuation_4",
+          "left_visceral_continuation_5"
+        ]
+      },
+      {
+        "endpoint_is_frame_cropped": false,
+        "forms_closed_visual_loop": true,
+        "joints": [
+          [
+            -14.0,
+            8.0,
+            7.0
+          ],
+          [
+            -2.0,
+            -20.0,
+            13.0
+          ],
+          [
+            8.0,
+            -33.0,
+            14.0
+          ],
+          [
+            19.0,
+            -25.0,
+            12.0
+          ],
+          [
+            14.0,
+            -12.0,
+            10.0
+          ],
+          [
+            6.0,
+            -5.0,
+            9.0
+          ]
+        ],
+        "name": "central_intertwined_loop",
+        "segments": [
+          "central_intertwined_loop_1",
+          "central_intertwined_loop_2",
+          "central_intertwined_loop_3",
+          "central_intertwined_loop_4",
+          "central_intertwined_loop_5"
+        ]
+      },
+      {
+        "endpoint_is_frame_cropped": true,
+        "forms_closed_visual_loop": false,
+        "joints": [
+          [
+            2.0,
+            -10.0,
+            11.0
+          ],
+          [
+            13.0,
+            -25.0,
+            13.0
+          ],
+          [
+            6.0,
+            -42.0,
+            12.0
+          ],
+          [
+            20.0,
+            -57.0,
+            11.0
+          ],
+          [
+            13.0,
+            -75.0,
+            9.0
+          ],
+          [
+            9.0,
+            -92.0,
+            8.0
+          ]
+        ],
+        "name": "right_visceral_continuation",
+        "segments": [
+          "right_visceral_continuation_1",
+          "right_visceral_continuation_2",
+          "right_visceral_continuation_3",
+          "right_visceral_continuation_4",
+          "right_visceral_continuation_5"
+        ]
+      }
+    ]
+  },
+  "geometry": {
+    "precision": 240
+  },
+  "id": "zombie_devil_exposed_brain",
+  "landmarks": [
+    {
+      "center_color": "#17171a",
+      "center_uv": [
+        0.42,
+        0.38
+      ],
+      "color": "#ffffff",
+      "cube": "left_pupil",
+      "face": "south",
+      "name": "left_eye_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#17171a",
+      "center_uv": [
+        0.42,
+        0.38
+      ],
+      "color": "#ffffff",
+      "cube": "right_pupil",
+      "face": "south",
+      "name": "right_eye_glint",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#19070b",
+      "center_uv": [
+        0.5,
+        0.55
+      ],
+      "color": "#5f1e27",
+      "cube": "broken_nose",
+      "face": "south",
+      "name": "nose_wound",
+      "size": [
+        2,
+        2
+      ]
+    }
+  ],
+  "materials": {
+    "brain": {
+      "base": "#b97f86",
+      "highlight": "#e9b6b3",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#59343b"
+    },
+    "brain_groove": {
+      "base": "#5a3039",
+      "highlight": "#9a5863",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#1d1015"
+    },
+    "eye": {
+      "base": "#fff8d8",
+      "highlight": "#ffffff",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#807b6c"
+    },
+    "flesh": {
+      "base": "#d2cec3",
+      "highlight": "#f5f1e8",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#706e69"
+    },
+    "flesh_light": {
+      "base": "#e5e0d5",
+      "highlight": "#fffdf5",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#918e87"
+    },
+    "flesh_shadow": {
+      "base": "#88837c",
+      "highlight": "#bbb5aa",
+      "pattern": "stripes",
+      "pattern_scale": 3,
+      "shade": "#343333"
+    },
+    "fold": {
+      "base": "#484748",
+      "highlight": "#85817b",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#161619"
+    },
+    "hair": {
+      "base": "#4b4948",
+      "highlight": "#88837d",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#171719"
+    },
+    "intestine": {
+      "base": "#a87b77",
+      "highlight": "#d4aaa0",
+      "pattern": "stripes",
+      "pattern_scale": 3,
+      "shade": "#493532"
+    },
+    "intestine_dark": {
+      "base": "#825a5c",
+      "highlight": "#b88984",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#342427"
+    },
+    "mouth": {
+      "base": "#180d12",
+      "highlight": "#55202a",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#030203"
+    },
+    "organ_dark": {
+      "base": "#8d6567",
+      "highlight": "#c0938f",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#3e2c30"
+    },
+    "organ_light": {
+      "base": "#c1a09a",
+      "highlight": "#e6c7b9",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#69504e"
+    },
+    "pupil": {
+      "base": "#141418",
+      "highlight": "#4b4b50",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#020203"
+    },
+    "tooth": {
+      "base": "#f0e9d5",
+      "highlight": "#ffffff",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#8b8374"
+    },
+    "wound": {
+      "base": "#762a34",
+      "highlight": "#b94b55",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#1e0a0f"
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "deep circular carved scream with bulging eyes, torn nose, six teeth, and face folds",
+      "large exposed brain fused into a broad neck with ten cerebral grooves",
+      "wide shoulder field and two enormous asymmetric clenched fists",
+      "four overlapping organ sacs and three thick intertwined visceral paths",
+      "no invented biped legs or grounded feet",
+      "substantial head, torso, arm, and brain depth"
+    ],
+    "required_views": [
+      "reference-angle",
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "isometric",
+      "face-closeup",
+      "brain-closeup",
+      "viscera-closeup"
+    ],
+    "review_targets": [
+      "duplicate-view disclosure",
+      "fused horizontal silhouette",
+      "circular screaming face",
+      "integrated brain crown",
+      "massive fists",
+      "overlapping viscera",
+      "frame-cropped continuations",
+      "part-local depth",
+      "attachments"
+    ],
+    "target_cuboids": [
+      120,
+      192
+    ]
+  },
+  "reference": {
+    "height": 754,
+    "image": "zombie_devil_exposed_brain.reference.png",
+    "sha256": "e3c594bc2fc60a63fa7f510fd6557e761219b731be2654a599fc751d024c96df",
+    "width": 513
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "A broad fused flesh mass with an embedded screaming face, exposed brain, two immense asymmetric fists, and cropped intertwined viscera",
+    "symmetry": "asymmetric",
+    "type": "creature",
+    "uncertainties": [
+      "The supplied files are near-duplicate crops and establish one camera axis only",
+      "The lower anatomy is cropped and occluded; two continuations extend beyond the evidence frame",
+      "Rear material placement and exact hidden depth are conservative semantic inference"
+    ]
+  },
+  "texture": {
+    "atlas_size": 512,
+    "density": 1,
+    "gutter": 1,
+    "palette_size": 24,
+    "quantize_source": false
+  }
+}

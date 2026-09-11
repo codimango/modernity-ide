@@ -1,0 +1,49 @@
+{
+  "artifact_sha256": {
+    "bbmodel": "c392f0ad8061c46a2ec1f182a30876e228649aa04ed38fdfac008472e1c801f1",
+    "comparison_sheet": "ca2dfc9dc47d905067348e061b0a65467542808339d912622c254ecdb06470b8",
+    "evaluation": "ef8c2e5c6cd79df5a795a67aaa3007311720b61a8fcb2495a720176b8d118b5c",
+    "geo_json": "524e7794979bc8e67c7a8bdba6e9964db731f9490d070828e953c44a067f2a49",
+    "model_spec": "5fd951d1c8fb489135c66d6ece7f24e0b819e5ed0c848b09d8fd5a214d74df43",
+    "texture": "12d9dbdff30ddb65b3e81116711fa3134f81085ee41a56f44f7d80fc2d2e8254",
+    "zip": "9666dc1bc6612e9a3086fd73acb2afb264839c145fad25aeb46a09a2a4cc6e49"
+  },
+  "asset": "gamma_abnormality",
+  "author_checks": {
+    "all_120_declared_attachments_connected": true,
+    "all_proportion_gates_pass": true,
+    "audit_ok": true,
+    "crown_width_to_full_width": 0.615209,
+    "full_width_to_height": 0.701558,
+    "hem_width_to_full_width": 0.795174,
+    "keypoint_mean_error_subject_heights": 0.046625,
+    "mechanical_span_to_full_width": 1.0,
+    "no_reference_image_projection": true,
+    "real_depth_to_full_width": 0.277409,
+    "source_alpha_silhouette_iou": 0.672993,
+    "source_frame_clipping_disclosed": true,
+    "source_skin_cuboids": 0,
+    "strict_validation": true,
+    "torso_width_to_full_width": 0.345328,
+    "two_builds_byte_identical": true
+  },
+  "bones": 67,
+  "cuboids": 111,
+  "cycle": 7,
+  "general_improvement": {
+    "capabilities": [
+      "named deterministic branching trees with canonical node and edge output",
+      "piecewise-cuboid taper approximation with parented bones",
+      "branch-from-joint support and explicit root-to-parent attachments",
+      "atomic rejection of cycles, duplicates, invalid IDs, multiple parents, detached roots, disconnected nodes, degenerate segments, and non-finite dimensions",
+      "alpha-aware aspect-preserving silhouette comparison",
+      "resolution-independent named keypoint error metrics",
+      "explicit source-frame clipping disclosure"
+    ],
+    "modules": [
+      "skill/img2blockbench/scripts/semantic_geometry.py",
+      "skill/img2blockbench/scripts/semantic_evidence.py"
+    ]
+  },
+  "model_id": "gamma_abnormality"
+}

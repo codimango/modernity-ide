@@ -1,0 +1,15 @@
+{
+  "asset": "zombie_devil_exposed_brain",
+  "bones": 24,
+  "cuboids": 188,
+  "fixed_view_diagnostics": {
+    "height_normalized_silhouette_iou": 0.642441,
+    "mean_keypoint_error_subject_heights": 0.069759,
+    "raw_fixed_camera_silhouette_iou": 0.643458
+  },
+  "independent_observed_camera_axes": 1,
+  "near_duplicate_rgb_correlation": 0.999919,
+  "source_camera_has_no_auto_fit_or_recentering": true,
+  "strict_audit": true,
+  "trailing_continuations_clipped_by_fixed_camera": true
+}

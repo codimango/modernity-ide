@@ -1,0 +1,18 @@
+{
+  "asset": "zombie_devil_exposed_brain",
+  "gates": {
+    "all_attachments_connected": true,
+    "duplicate_crops_count_as_one_axis": true,
+    "no_invented_biped_feet": true,
+    "source_iou_minimum": 0.55,
+    "source_keypoint_mean_maximum_subject_heights": 0.08
+  },
+  "required_feature_counts": {
+    "brain_grooves": 10,
+    "exposed_brains": 1,
+    "massive_arm_chains": 2,
+    "hanging_organ_lobes": 4,
+    "mouth_teeth": 6,
+    "visceral_tendrils": 3
+  }
+}

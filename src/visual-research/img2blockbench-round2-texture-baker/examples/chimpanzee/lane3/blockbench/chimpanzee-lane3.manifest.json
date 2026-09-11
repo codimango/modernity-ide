@@ -1,0 +1,52 @@
+{
+  "artifacts": [
+    {
+      "bytes": 259779,
+      "path": "chimpanzee-lane3.model-spec.json",
+      "sha256": "071e2b008d75b5968f3dc27679f451acbf92c68df9050fa2bc26edb52e66e79e"
+    },
+    {
+      "bytes": 6130,
+      "path": "chimpanzee-lane3.png",
+      "sha256": "4c3869b9eb5efc5a96c45f6a36e0578bc285ef6446abc13f0b7aa170f6972eab"
+    },
+    {
+      "bytes": 51166,
+      "path": "chimpanzee-lane3.bbmodel",
+      "sha256": "3ea655a9d24319d5c1af0a40da4fa49121053aa1b8ae8f80d09ba52d562cdd7e"
+    },
+    {
+      "bytes": 46634,
+      "path": "chimpanzee-lane3.geo.json",
+      "sha256": "28a61f56c21344910f51b9dcf07fb8fb16ce31f385e7d8e7fd1fe44516078792"
+    },
+    {
+      "bytes": 155,
+      "path": "chimpanzee-lane3.audit.json",
+      "sha256": "f599675c9d2368342f55dda324ce6b491c425f9529828d7c4f3c3f3ebce0a554"
+    },
+    {
+      "bytes": 1382543,
+      "path": "chimpanzee-lane3.reference.png",
+      "sha256": "b7222c453e41eca310ea7f4b4ebea723af5e2b9aba40a0a60508b058713e1047"
+    }
+  ],
+  "collision": {
+    "eye_height": 0.89,
+    "height": 1.141,
+    "width": 0.881
+  },
+  "generator": {
+    "lane": "threejs",
+    "name": "img2blockbench",
+    "version": "0.1.0"
+  },
+  "model_id": "chimpanzee-lane3",
+  "reference": {
+    "height": 1024,
+    "image": "chimpanzee-lane3.reference.png",
+    "sha256": "b7222c453e41eca310ea7f4b4ebea723af5e2b9aba40a0a60508b058713e1047",
+    "width": 1536
+  },
+  "schema_version": 1
+}

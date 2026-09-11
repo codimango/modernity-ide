@@ -1,0 +1,33 @@
+{
+  "asset": "militech_centaur_piloted_exoskeleton",
+  "cycle": "round2-07",
+  "generator": "agent-authored native cuboid model",
+  "inputs": [
+    {
+      "filename": "image-6.png",
+      "height": 1023,
+      "kind": "front three-quarter RGB studio render",
+      "sha256": "4182ef6f34f6c701322d39b3ca07e5acf824a5b0b2804a48c6e2182c1698bf92",
+      "width": 1000
+    },
+    {
+      "filename": "image-7.png",
+      "height": 1023,
+      "kind": "left three-quarter RGB studio render",
+      "sha256": "c1286f3eb14a6a4642d1c55c73e0edaf3c59f9f3c7b264469d3c8e0d1997f799",
+      "width": 1000
+    },
+    {
+      "filename": "image-8.png",
+      "height": 1023,
+      "kind": "rear three-quarter RGB studio render",
+      "sha256": "fa98828914ac3d04907d2452ff5627511ce877608c8273c007f7ae167723411c",
+      "width": 1000
+    }
+  ],
+  "license": "unknown; private ignored benchmark references only",
+  "mesh_provider": null,
+  "route": "Route 2 agent-authored semantic native-cuboid reconstruction",
+  "source_projection": false,
+  "visual_hull_used": false
+}

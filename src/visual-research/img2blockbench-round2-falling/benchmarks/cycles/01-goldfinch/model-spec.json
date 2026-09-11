@@ -1,0 +1,3604 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "body",
+      "parent": "root",
+      "pivot": [
+        0,
+        10.5,
+        -1
+      ]
+    },
+    {
+      "name": "neck",
+      "parent": "body",
+      "pivot": [
+        0,
+        12.3,
+        3.5
+      ]
+    },
+    {
+      "name": "head",
+      "parent": "neck",
+      "pivot": [
+        0,
+        14.2,
+        5.6
+      ]
+    },
+    {
+      "name": "cap",
+      "parent": "head",
+      "pivot": [
+        0,
+        16.1,
+        6.6
+      ]
+    },
+    {
+      "name": "left_eye",
+      "parent": "head",
+      "pivot": [
+        3.1,
+        15.1,
+        7.35
+      ]
+    },
+    {
+      "name": "right_eye",
+      "parent": "head",
+      "pivot": [
+        -3.1,
+        15.1,
+        7.35
+      ]
+    },
+    {
+      "name": "beak",
+      "parent": "head",
+      "pivot": [
+        0,
+        14.2,
+        8.8
+      ]
+    },
+    {
+      "name": "tail",
+      "parent": "body",
+      "pivot": [
+        0,
+        10.7,
+        -7
+      ]
+    },
+    {
+      "name": "upper_beak_1",
+      "parent": "beak",
+      "pivot": [
+        0,
+        14.25,
+        8.75
+      ]
+    },
+    {
+      "name": "upper_beak_2",
+      "parent": "upper_beak_1",
+      "pivot": [
+        0,
+        14.25,
+        10.75
+      ]
+    },
+    {
+      "name": "lower_beak_1",
+      "parent": "beak",
+      "pivot": [
+        0,
+        13.7,
+        8.75
+      ]
+    },
+    {
+      "name": "lower_beak_2",
+      "parent": "lower_beak_1",
+      "pivot": [
+        0,
+        13.55,
+        10.6
+      ]
+    },
+    {
+      "name": "wing_left_1",
+      "parent": "body",
+      "pivot": [
+        3,
+        12.7,
+        2.5
+      ]
+    },
+    {
+      "name": "wing_left_2",
+      "parent": "wing_left_1",
+      "pivot": [
+        4.38,
+        11.65,
+        -3.8
+      ]
+    },
+    {
+      "name": "wing_left_3",
+      "parent": "wing_left_2",
+      "pivot": [
+        4.05,
+        10.75,
+        -9.2
+      ]
+    },
+    {
+      "name": "wing_right_1",
+      "parent": "body",
+      "pivot": [
+        -3,
+        12.7,
+        2.5
+      ]
+    },
+    {
+      "name": "wing_right_2",
+      "parent": "wing_right_1",
+      "pivot": [
+        -4.38,
+        11.65,
+        -3.8
+      ]
+    },
+    {
+      "name": "wing_right_3",
+      "parent": "wing_right_2",
+      "pivot": [
+        -4.05,
+        10.75,
+        -9.2
+      ]
+    },
+    {
+      "name": "tail_feather_1",
+      "parent": "tail",
+      "pivot": [
+        0,
+        10.7,
+        -7.1
+      ]
+    },
+    {
+      "name": "tail_feather_2",
+      "parent": "tail_feather_1",
+      "pivot": [
+        0,
+        10.5,
+        -12.2
+      ]
+    },
+    {
+      "name": "tail_feather_3",
+      "parent": "tail_feather_2",
+      "pivot": [
+        0,
+        10.25,
+        -16
+      ]
+    },
+    {
+      "name": "left_leg_cuff",
+      "parent": "body",
+      "pivot": [
+        1.55,
+        6.25,
+        -0.3
+      ]
+    },
+    {
+      "name": "leg_left_1",
+      "parent": "left_leg_cuff",
+      "pivot": [
+        1.55,
+        6.25,
+        -0.3
+      ]
+    },
+    {
+      "name": "leg_left_2",
+      "parent": "leg_left_1",
+      "pivot": [
+        1.72,
+        4.55,
+        0.15
+      ]
+    },
+    {
+      "name": "right_leg_cuff",
+      "parent": "body",
+      "pivot": [
+        -1.55,
+        6.25,
+        -2.1
+      ]
+    },
+    {
+      "name": "leg_right_1",
+      "parent": "right_leg_cuff",
+      "pivot": [
+        -1.55,
+        6.25,
+        -2.1
+      ]
+    },
+    {
+      "name": "leg_right_2",
+      "parent": "leg_right_1",
+      "pivot": [
+        -1.72,
+        4.55,
+        -1.65
+      ]
+    },
+    {
+      "name": "toe_left_outer_1",
+      "parent": "leg_left_2",
+      "pivot": [
+        1.35,
+        3.35,
+        0.7
+      ]
+    },
+    {
+      "name": "toe_left_outer_2",
+      "parent": "toe_left_outer_1",
+      "pivot": [
+        1.77,
+        2.85,
+        1.85
+      ]
+    },
+    {
+      "name": "toe_left_inner_1",
+      "parent": "leg_left_2",
+      "pivot": [
+        1.35,
+        3.35,
+        0.7
+      ]
+    },
+    {
+      "name": "toe_left_inner_2",
+      "parent": "toe_left_inner_1",
+      "pivot": [
+        0.97,
+        2.82,
+        1.95
+      ]
+    },
+    {
+      "name": "toe_left_rear_1",
+      "parent": "leg_left_2",
+      "pivot": [
+        1.35,
+        3.35,
+        0.7
+      ]
+    },
+    {
+      "name": "toe_left_rear_2",
+      "parent": "toe_left_rear_1",
+      "pivot": [
+        1.53,
+        2.8,
+        -0.3
+      ]
+    },
+    {
+      "name": "toe_right_outer_1",
+      "parent": "leg_right_2",
+      "pivot": [
+        -1.35,
+        3.35,
+        -0.3
+      ]
+    },
+    {
+      "name": "toe_right_outer_2",
+      "parent": "toe_right_outer_1",
+      "pivot": [
+        -1.77,
+        2.85,
+        0.85
+      ]
+    },
+    {
+      "name": "toe_right_inner_1",
+      "parent": "leg_right_2",
+      "pivot": [
+        -1.35,
+        3.35,
+        -0.3
+      ]
+    },
+    {
+      "name": "toe_right_inner_2",
+      "parent": "toe_right_inner_1",
+      "pivot": [
+        -0.97,
+        2.82,
+        0.95
+      ]
+    },
+    {
+      "name": "toe_right_rear_1",
+      "parent": "leg_right_2",
+      "pivot": [
+        -1.35,
+        3.35,
+        -0.3
+      ]
+    },
+    {
+      "name": "toe_right_rear_2",
+      "parent": "toe_right_rear_1",
+      "pivot": [
+        -1.53,
+        2.8,
+        -1.3
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 1.0,
+    "height": 1.15,
+    "width": 0.75
+  },
+  "cubes": [
+    {
+      "bone": "body",
+      "center": [
+        0,
+        7.875,
+        -1
+      ],
+      "faces": {},
+      "material": "gold_feather",
+      "name": "body_volume_001",
+      "origin": [
+        0,
+        7.875,
+        -1
+      ],
+      "role": "rounded teardrop warm lower breast greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        9.3,
+        1.05,
+        2.7
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        10.5,
+        -1
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_002",
+      "origin": [
+        0,
+        10.5,
+        -1
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        9.3,
+        4.2,
+        8.1
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        13.125,
+        -1
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_003",
+      "origin": [
+        0,
+        13.125,
+        -1
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        9.3,
+        1.05,
+        2.7
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        6.825,
+        -1
+      ],
+      "faces": {},
+      "material": "cream_feather",
+      "name": "body_volume_004",
+      "origin": [
+        0,
+        6.825,
+        -1
+      ],
+      "role": "rounded teardrop cream lower belly greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.975,
+        1.05,
+        8.1
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        7.875,
+        -4.375
+      ],
+      "faces": {},
+      "material": "gold_feather",
+      "name": "body_volume_005",
+      "origin": [
+        0,
+        7.875,
+        -4.375
+      ],
+      "role": "rounded teardrop warm lower breast greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.975,
+        1.05,
+        4.05
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        7.875,
+        2.375
+      ],
+      "faces": {},
+      "material": "gold_feather",
+      "name": "body_volume_006",
+      "origin": [
+        0,
+        7.875,
+        2.375
+      ],
+      "role": "rounded teardrop warm lower breast greedy volume 6",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.975,
+        1.05,
+        4.05
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        10.5,
+        -6.4
+      ],
+      "faces": {},
+      "material": "white_feather",
+      "name": "body_volume_007",
+      "origin": [
+        0,
+        10.5,
+        -6.4
+      ],
+      "role": "rounded teardrop pale rear rump greedy volume 7",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.975,
+        4.2,
+        2.7
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        10.5,
+        4.4
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_008",
+      "origin": [
+        0,
+        10.5,
+        4.4
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 8",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.975,
+        4.2,
+        2.7
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        13.125,
+        -4.375
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_009",
+      "origin": [
+        0,
+        13.125,
+        -4.375
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 9",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.975,
+        1.05,
+        4.05
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        13.125,
+        2.375
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_010",
+      "origin": [
+        0,
+        13.125,
+        2.375
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 10",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.975,
+        1.05,
+        4.05
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        14.175,
+        -1
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_011",
+      "origin": [
+        0,
+        14.175,
+        -1
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 11",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        6.975,
+        1.05,
+        8.1
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        5.775,
+        -1
+      ],
+      "faces": {},
+      "material": "cream_feather",
+      "name": "body_volume_012",
+      "origin": [
+        0,
+        5.775,
+        -1
+      ],
+      "role": "rounded teardrop cream lower belly greedy volume 12",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.65,
+        1.05,
+        5.4
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        6.825,
+        -5.725
+      ],
+      "faces": {},
+      "material": "white_feather",
+      "name": "body_volume_013",
+      "origin": [
+        0,
+        6.825,
+        -5.725
+      ],
+      "role": "rounded teardrop pale rear rump greedy volume 13",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.65,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        6.825,
+        3.725
+      ],
+      "faces": {},
+      "material": "cream_feather",
+      "name": "body_volume_014",
+      "origin": [
+        0,
+        6.825,
+        3.725
+      ],
+      "role": "rounded teardrop cream lower belly greedy volume 14",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.65,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        7.875,
+        -7.075
+      ],
+      "faces": {},
+      "material": "white_feather",
+      "name": "body_volume_015",
+      "origin": [
+        0,
+        7.875,
+        -7.075
+      ],
+      "role": "rounded teardrop pale rear rump greedy volume 15",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.65,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        7.875,
+        5.075
+      ],
+      "faces": {},
+      "material": "gold_feather",
+      "name": "body_volume_016",
+      "origin": [
+        0,
+        7.875,
+        5.075
+      ],
+      "role": "rounded teardrop warm lower breast greedy volume 16",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.65,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        10.5,
+        -8.425
+      ],
+      "faces": {},
+      "material": "white_feather",
+      "name": "body_volume_017",
+      "origin": [
+        0,
+        10.5,
+        -8.425
+      ],
+      "role": "rounded teardrop pale rear rump greedy volume 17",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.65,
+        2.1,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        10.5,
+        6.425
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_018",
+      "origin": [
+        0,
+        10.5,
+        6.425
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 18",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.65,
+        2.1,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        13.125,
+        -7.075
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_019",
+      "origin": [
+        0,
+        13.125,
+        -7.075
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 19",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.65,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        13.125,
+        5.075
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_020",
+      "origin": [
+        0,
+        13.125,
+        5.075
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 20",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.65,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        14.175,
+        -5.725
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_021",
+      "origin": [
+        0,
+        14.175,
+        -5.725
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 21",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.65,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        14.175,
+        3.725
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_022",
+      "origin": [
+        0,
+        14.175,
+        3.725
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 22",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.65,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        15.225,
+        -1
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_023",
+      "origin": [
+        0,
+        15.225,
+        -1
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 23",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.65,
+        1.05,
+        5.4
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        5.775,
+        -4.375
+      ],
+      "faces": {},
+      "material": "cream_feather",
+      "name": "body_volume_024",
+      "origin": [
+        0,
+        5.775,
+        -4.375
+      ],
+      "role": "rounded teardrop cream lower belly greedy volume 24",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.325,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        5.775,
+        2.375
+      ],
+      "faces": {},
+      "material": "cream_feather",
+      "name": "body_volume_025",
+      "origin": [
+        0,
+        5.775,
+        2.375
+      ],
+      "role": "rounded teardrop cream lower belly greedy volume 25",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.325,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        8.925,
+        -8.425
+      ],
+      "faces": {},
+      "material": "white_feather",
+      "name": "body_volume_026",
+      "origin": [
+        0,
+        8.925,
+        -8.425
+      ],
+      "role": "rounded teardrop pale rear rump greedy volume 26",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.325,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        8.925,
+        6.425
+      ],
+      "faces": {},
+      "material": "gold_feather",
+      "name": "body_volume_027",
+      "origin": [
+        0,
+        8.925,
+        6.425
+      ],
+      "role": "rounded teardrop warm lower breast greedy volume 27",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.325,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        12.075,
+        -8.425
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_028",
+      "origin": [
+        0,
+        12.075,
+        -8.425
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 28",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.325,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        12.075,
+        6.425
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_029",
+      "origin": [
+        0,
+        12.075,
+        6.425
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 29",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.325,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        15.225,
+        -4.375
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_030",
+      "origin": [
+        0,
+        15.225,
+        -4.375
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 30",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.325,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "body",
+      "center": [
+        0,
+        15.225,
+        2.375
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "body_volume_031",
+      "origin": [
+        0,
+        15.225,
+        2.375
+      ],
+      "role": "rounded teardrop breast and rump greedy volume 31",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.325,
+        1.05,
+        1.35
+      ]
+    },
+    {
+      "bone": "neck",
+      "center": [
+        0,
+        12.7,
+        3.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "neck_bridge",
+      "origin": [
+        0,
+        12.7,
+        3.7
+      ],
+      "role": "feathered neck joining head to breast",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.0,
+        3.7,
+        4.6
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        14.3,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_001",
+      "origin": [
+        0,
+        14.3,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        3.05,
+        4.725,
+        5.25
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        1.90625,
+        14.3,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_002",
+      "origin": [
+        1.90625,
+        14.3,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        3.15,
+        5.25
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -1.90625,
+        14.3,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_003",
+      "origin": [
+        -1.90625,
+        14.3,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        3.15,
+        5.25
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        2.66875,
+        14.3,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_004",
+      "origin": [
+        2.66875,
+        14.3,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        1.575,
+        3.5
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        17.05625,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_005",
+      "origin": [
+        0,
+        17.05625,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.525,
+        0.7875,
+        3.5
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        14.3,
+        8.7625
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_006",
+      "origin": [
+        0,
+        14.3,
+        8.7625
+      ],
+      "role": "small rounded goldfinch head greedy volume 6",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.525,
+        3.15,
+        0.875
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        14.3,
+        2.6375
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_007",
+      "origin": [
+        0,
+        14.3,
+        2.6375
+      ],
+      "role": "small rounded goldfinch head greedy volume 7",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.525,
+        3.15,
+        0.875
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        11.54375,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_008",
+      "origin": [
+        0,
+        11.54375,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 8",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.525,
+        0.7875,
+        3.5
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -2.66875,
+        14.3,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_009",
+      "origin": [
+        -2.66875,
+        14.3,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 9",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        1.575,
+        3.5
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        1.90625,
+        16.26875,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_010",
+      "origin": [
+        1.90625,
+        16.26875,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 10",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        0.7875,
+        3.5
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        1.90625,
+        12.33125,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_011",
+      "origin": [
+        1.90625,
+        12.33125,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 11",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        0.7875,
+        3.5
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -1.90625,
+        16.26875,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_012",
+      "origin": [
+        -1.90625,
+        16.26875,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 12",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        0.7875,
+        3.5
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -1.90625,
+        12.33125,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_013",
+      "origin": [
+        -1.90625,
+        12.33125,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 13",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        0.7875,
+        3.5
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        2.66875,
+        15.48125,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_014",
+      "origin": [
+        2.66875,
+        15.48125,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 14",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        0.7875,
+        1.75
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        2.66875,
+        13.11875,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_015",
+      "origin": [
+        2.66875,
+        13.11875,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 15",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        0.7875,
+        1.75
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        1.14375,
+        17.05625,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_016",
+      "origin": [
+        1.14375,
+        17.05625,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 16",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        0.7875,
+        1.75
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        1.14375,
+        14.3,
+        8.7625
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_017",
+      "origin": [
+        1.14375,
+        14.3,
+        8.7625
+      ],
+      "role": "small rounded goldfinch head greedy volume 17",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        1.575,
+        0.875
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        1.14375,
+        14.3,
+        2.6375
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_018",
+      "origin": [
+        1.14375,
+        14.3,
+        2.6375
+      ],
+      "role": "small rounded goldfinch head greedy volume 18",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        1.575,
+        0.875
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        1.14375,
+        11.54375,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_019",
+      "origin": [
+        1.14375,
+        11.54375,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 19",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        0.7875,
+        1.75
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -1.14375,
+        17.05625,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_020",
+      "origin": [
+        -1.14375,
+        17.05625,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 20",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        0.7875,
+        1.75
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -1.14375,
+        14.3,
+        8.7625
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_021",
+      "origin": [
+        -1.14375,
+        14.3,
+        8.7625
+      ],
+      "role": "small rounded goldfinch head greedy volume 21",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        1.575,
+        0.875
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -1.14375,
+        14.3,
+        2.6375
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_022",
+      "origin": [
+        -1.14375,
+        14.3,
+        2.6375
+      ],
+      "role": "small rounded goldfinch head greedy volume 22",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        1.575,
+        0.875
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -1.14375,
+        11.54375,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_023",
+      "origin": [
+        -1.14375,
+        11.54375,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 23",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        0.7875,
+        1.75
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -2.66875,
+        15.48125,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_024",
+      "origin": [
+        -2.66875,
+        15.48125,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 24",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        0.7875,
+        1.75
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -2.66875,
+        13.11875,
+        5.7
+      ],
+      "faces": {},
+      "material": "lemon_feather",
+      "name": "head_volume_025",
+      "origin": [
+        -2.66875,
+        13.11875,
+        5.7
+      ],
+      "role": "small rounded goldfinch head greedy volume 25",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.7625,
+        0.7875,
+        1.75
+      ]
+    },
+    {
+      "bone": "cap",
+      "center": [
+        0,
+        17.15,
+        6.45
+      ],
+      "faces": {},
+      "material": "black_feather",
+      "name": "black_cap_crown",
+      "origin": [
+        0,
+        17.15,
+        6.45
+      ],
+      "role": "breeding-plumage black crown",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.15,
+        1.55,
+        3.8
+      ]
+    },
+    {
+      "bone": "cap",
+      "center": [
+        0,
+        15.65,
+        9.05
+      ],
+      "faces": {},
+      "material": "black_feather",
+      "name": "black_cap_forehead",
+      "origin": [
+        0,
+        15.65,
+        9.05
+      ],
+      "role": "black forehead mask above bill",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.3,
+        2.45,
+        1.25
+      ]
+    },
+    {
+      "bone": "left_eye",
+      "center": [
+        2.9,
+        15.05,
+        7.42
+      ],
+      "faces": {},
+      "material": "eye_ring",
+      "name": "left_eye_ring",
+      "origin": [
+        2.9,
+        15.05,
+        7.42
+      ],
+      "role": "left golden eye ring",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.58,
+        1.15,
+        1.15
+      ]
+    },
+    {
+      "bone": "left_eye",
+      "center": [
+        3.16,
+        15.07,
+        7.47
+      ],
+      "faces": {
+        "east": {
+          "material": "eye_black"
+        }
+      },
+      "material": "eye_black",
+      "name": "left_eye",
+      "origin": [
+        3.16,
+        15.07,
+        7.47
+      ],
+      "role": "left glossy black eye",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.32,
+        0.66,
+        0.66
+      ]
+    },
+    {
+      "bone": "right_eye",
+      "center": [
+        -2.9,
+        15.05,
+        7.42
+      ],
+      "faces": {},
+      "material": "eye_ring",
+      "name": "right_eye_ring",
+      "origin": [
+        -2.9,
+        15.05,
+        7.42
+      ],
+      "role": "right golden eye ring",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.58,
+        1.15,
+        1.15
+      ]
+    },
+    {
+      "bone": "right_eye",
+      "center": [
+        -3.16,
+        15.07,
+        7.47
+      ],
+      "faces": {
+        "west": {
+          "material": "eye_black"
+        }
+      },
+      "material": "eye_black",
+      "name": "right_eye",
+      "origin": [
+        -3.16,
+        15.07,
+        7.47
+      ],
+      "role": "right glossy black eye",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.32,
+        0.66,
+        0.66
+      ]
+    },
+    {
+      "bone": "upper_beak_1",
+      "center": [
+        0,
+        14.25,
+        9.75
+      ],
+      "faces": {},
+      "material": "beak_upper",
+      "name": "upper_beak_1",
+      "origin": [
+        0,
+        14.25,
+        8.75
+      ],
+      "role": "tapering pointed upper bill segment 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.9,
+        1.25,
+        2.56
+      ]
+    },
+    {
+      "bone": "upper_beak_2",
+      "center": [
+        0,
+        14.25,
+        11.506637
+      ],
+      "faces": {},
+      "material": "beak_upper",
+      "name": "upper_beak_2",
+      "origin": [
+        0,
+        14.25,
+        10.75
+      ],
+      "role": "tapering pointed upper bill segment 2",
+      "rotation": [
+        7.594643,
+        0,
+        0
+      ],
+      "size": [
+        1.35,
+        0.72,
+        2.073275
+      ]
+    },
+    {
+      "bone": "lower_beak_1",
+      "center": [
+        0,
+        13.7,
+        9.678036
+      ],
+      "faces": {},
+      "material": "beak_lower",
+      "name": "lower_beak_1",
+      "origin": [
+        0,
+        13.7,
+        8.75
+      ],
+      "role": "tapering pointed lower bill segment 1",
+      "rotation": [
+        4.635463,
+        0,
+        0
+      ],
+      "size": [
+        2.55,
+        0.88,
+        2.336071
+      ]
+    },
+    {
+      "bone": "lower_beak_2",
+      "center": [
+        0,
+        13.55,
+        11.321543
+      ],
+      "faces": {},
+      "material": "beak_lower",
+      "name": "lower_beak_2",
+      "origin": [
+        0,
+        13.55,
+        10.6
+      ],
+      "role": "tapering pointed lower bill segment 2",
+      "rotation": [
+        -14.036243,
+        0,
+        0
+      ],
+      "size": [
+        1.05,
+        0.5,
+        1.923087
+      ]
+    },
+    {
+      "bone": "wing_left_1",
+      "center": [
+        3,
+        12.7,
+        5.767143
+      ],
+      "faces": {},
+      "material": "black_feather",
+      "name": "wing_left_1",
+      "origin": [
+        3,
+        12.7,
+        2.5
+      ],
+      "role": "left tapered folded flight wing segment 1",
+      "rotation": [
+        9.246997,
+        167.64464,
+        0
+      ],
+      "size": [
+        0.95,
+        4.7,
+        7.434286
+      ]
+    },
+    {
+      "bone": "wing_left_2",
+      "center": [
+        4.38,
+        11.65,
+        -1.057788
+      ],
+      "faces": {},
+      "material": "black_feather",
+      "name": "wing_left_2",
+      "origin": [
+        4.38,
+        11.65,
+        -3.8
+      ],
+      "role": "left tapered folded flight wing segment 2",
+      "rotation": [
+        9.44502,
+        -176.50294,
+        0
+      ],
+      "size": [
+        0.78,
+        3.4,
+        6.384423
+      ]
+    },
+    {
+      "bone": "wing_left_3",
+      "center": [
+        4.05,
+        10.75,
+        -7.651412
+      ],
+      "faces": {},
+      "material": "black_feather",
+      "name": "wing_left_3",
+      "origin": [
+        4.05,
+        10.75,
+        -9.2
+      ],
+      "role": "left tapered folded flight wing segment 3",
+      "rotation": [
+        3.702448,
+        -170.69006,
+        0
+      ],
+      "size": [
+        0.58,
+        2.25,
+        3.997176
+      ]
+    },
+    {
+      "bone": "wing_left_1",
+      "center": [
+        4.82,
+        12.1,
+        -1.45
+      ],
+      "faces": {},
+      "material": "wing_bar",
+      "name": "white_bar_left_primary",
+      "origin": [
+        4.82,
+        12.1,
+        -1.45
+      ],
+      "role": "left raised white covert-feather bar",
+      "rotation": [
+        -34,
+        0,
+        0
+      ],
+      "size": [
+        0.24,
+        3.15,
+        1.05
+      ]
+    },
+    {
+      "bone": "wing_left_2",
+      "center": [
+        4.45,
+        11.25,
+        -6.45
+      ],
+      "faces": {},
+      "material": "wing_bar",
+      "name": "white_bar_left_secondary",
+      "origin": [
+        4.45,
+        11.25,
+        -6.45
+      ],
+      "role": "left secondary white flight-feather bar",
+      "rotation": [
+        -30,
+        0,
+        0
+      ],
+      "size": [
+        0.22,
+        2.3,
+        0.72
+      ]
+    },
+    {
+      "bone": "wing_right_1",
+      "center": [
+        -3,
+        12.7,
+        5.767143
+      ],
+      "faces": {},
+      "material": "black_feather",
+      "name": "wing_right_1",
+      "origin": [
+        -3,
+        12.7,
+        2.5
+      ],
+      "role": "right tapered folded flight wing segment 1",
+      "rotation": [
+        9.246997,
+        -167.64464,
+        0
+      ],
+      "size": [
+        0.95,
+        4.7,
+        7.434286
+      ]
+    },
+    {
+      "bone": "wing_right_2",
+      "center": [
+        -4.38,
+        11.65,
+        -1.057788
+      ],
+      "faces": {},
+      "material": "black_feather",
+      "name": "wing_right_2",
+      "origin": [
+        -4.38,
+        11.65,
+        -3.8
+      ],
+      "role": "right tapered folded flight wing segment 2",
+      "rotation": [
+        9.44502,
+        176.50294,
+        0
+      ],
+      "size": [
+        0.78,
+        3.4,
+        6.384423
+      ]
+    },
+    {
+      "bone": "wing_right_3",
+      "center": [
+        -4.05,
+        10.75,
+        -7.651412
+      ],
+      "faces": {},
+      "material": "black_feather",
+      "name": "wing_right_3",
+      "origin": [
+        -4.05,
+        10.75,
+        -9.2
+      ],
+      "role": "right tapered folded flight wing segment 3",
+      "rotation": [
+        3.702448,
+        170.69006,
+        0
+      ],
+      "size": [
+        0.58,
+        2.25,
+        3.997176
+      ]
+    },
+    {
+      "bone": "wing_right_1",
+      "center": [
+        -4.82,
+        12.1,
+        -1.45
+      ],
+      "faces": {},
+      "material": "wing_bar",
+      "name": "white_bar_right_primary",
+      "origin": [
+        -4.82,
+        12.1,
+        -1.45
+      ],
+      "role": "right raised white covert-feather bar",
+      "rotation": [
+        -34,
+        0,
+        0
+      ],
+      "size": [
+        0.24,
+        3.15,
+        1.05
+      ]
+    },
+    {
+      "bone": "wing_right_2",
+      "center": [
+        -4.45,
+        11.25,
+        -6.45
+      ],
+      "faces": {},
+      "material": "wing_bar",
+      "name": "white_bar_right_secondary",
+      "origin": [
+        -4.45,
+        11.25,
+        -6.45
+      ],
+      "role": "right secondary white flight-feather bar",
+      "rotation": [
+        -30,
+        0,
+        0
+      ],
+      "size": [
+        0.22,
+        2.3,
+        0.72
+      ]
+    },
+    {
+      "bone": "tail_feather_1",
+      "center": [
+        0,
+        10.7,
+        -4.54804
+      ],
+      "faces": {},
+      "material": "black_feather",
+      "name": "tail_feather_1",
+      "origin": [
+        0,
+        10.7,
+        -7.1
+      ],
+      "role": "tapered black tail fan segment 1",
+      "rotation": [
+        2.245743,
+        180,
+        0
+      ],
+      "size": [
+        5.3,
+        1.15,
+        6.00392
+      ]
+    },
+    {
+      "bone": "tail_feather_2",
+      "center": [
+        0,
+        10.5,
+        -10.295893
+      ],
+      "faces": {},
+      "material": "black_feather",
+      "name": "tail_feather_2",
+      "origin": [
+        0,
+        10.5,
+        -12.2
+      ],
+      "role": "tapered black tail fan segment 2",
+      "rotation": [
+        3.764035,
+        180,
+        0
+      ],
+      "size": [
+        3.75,
+        0.88,
+        4.708215
+      ]
+    },
+    {
+      "bone": "tail_feather_3",
+      "center": [
+        0,
+        10.25,
+        -14.81837
+      ],
+      "faces": {},
+      "material": "black_feather",
+      "name": "tail_feather_3",
+      "origin": [
+        0,
+        10.25,
+        -16
+      ],
+      "role": "tapered black tail fan segment 3",
+      "rotation": [
+        6.072456,
+        180,
+        0
+      ],
+      "size": [
+        2.15,
+        0.62,
+        3.26326
+      ]
+    },
+    {
+      "bone": "left_leg_cuff",
+      "center": [
+        1.55,
+        6.0,
+        -0.3
+      ],
+      "faces": {},
+      "material": "cream_feather",
+      "name": "left_thigh_fluff",
+      "origin": [
+        1.55,
+        6.0,
+        -0.3
+      ],
+      "role": "left pale feathered thigh cuff",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.75,
+        2.0,
+        1.7
+      ]
+    },
+    {
+      "bone": "leg_left_1",
+      "center": [
+        1.55,
+        7.133374,
+        -0.3
+      ],
+      "faces": {},
+      "material": "leg_pink",
+      "name": "leg_left_1",
+      "origin": [
+        1.55,
+        6.25,
+        -0.3
+      ],
+      "role": "left connected perching leg segment 1",
+      "rotation": [
+        14.756117,
+        0,
+        -174.289407
+      ],
+      "size": [
+        0.72,
+        2.326748,
+        0.72
+      ]
+    },
+    {
+      "bone": "leg_left_2",
+      "center": [
+        1.72,
+        5.235456,
+        0.15
+      ],
+      "faces": {},
+      "material": "leg_pink",
+      "name": "leg_left_2",
+      "origin": [
+        1.72,
+        4.55,
+        0.15
+      ],
+      "role": "left connected perching leg segment 2",
+      "rotation": [
+        23.652764,
+        0,
+        162.863725
+      ],
+      "size": [
+        0.54,
+        1.930912,
+        0.54
+      ]
+    },
+    {
+      "bone": "right_leg_cuff",
+      "center": [
+        -1.55,
+        6.0,
+        -2.1
+      ],
+      "faces": {},
+      "material": "cream_feather",
+      "name": "right_thigh_fluff",
+      "origin": [
+        -1.55,
+        6.0,
+        -2.1
+      ],
+      "role": "right pale feathered thigh cuff",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1.75,
+        2.0,
+        1.7
+      ]
+    },
+    {
+      "bone": "leg_right_1",
+      "center": [
+        -1.55,
+        7.133374,
+        -2.1
+      ],
+      "faces": {},
+      "material": "leg_pink",
+      "name": "leg_right_1",
+      "origin": [
+        -1.55,
+        6.25,
+        -2.1
+      ],
+      "role": "right connected perching leg segment 1",
+      "rotation": [
+        14.756117,
+        0,
+        174.289407
+      ],
+      "size": [
+        0.72,
+        2.326748,
+        0.72
+      ]
+    },
+    {
+      "bone": "leg_right_2",
+      "center": [
+        -1.72,
+        5.471873,
+        -1.65
+      ],
+      "faces": {},
+      "material": "leg_pink",
+      "name": "leg_right_2",
+      "origin": [
+        -1.72,
+        4.55,
+        -1.65
+      ],
+      "role": "right connected perching leg segment 2",
+      "rotation": [
+        47.071559,
+        0,
+        -162.863725
+      ],
+      "size": [
+        0.54,
+        2.403746,
+        0.54
+      ]
+    },
+    {
+      "bone": "toe_left_outer_1",
+      "center": [
+        1.35,
+        3.35,
+        1.36123
+      ],
+      "faces": {},
+      "material": "leg_pink",
+      "name": "toe_left_outer_1",
+      "origin": [
+        1.35,
+        3.35,
+        0.7
+      ],
+      "role": "left outer gripping toe and claw segment 1",
+      "rotation": [
+        22.215009,
+        20.063073,
+        0
+      ],
+      "size": [
+        0.44,
+        0.42,
+        1.72246
+      ]
+    },
+    {
+      "bone": "toe_left_outer_2",
+      "center": [
+        1.77,
+        2.85,
+        2.347494
+      ],
+      "faces": {},
+      "material": "claw_dark",
+      "name": "toe_left_outer_2",
+      "origin": [
+        1.77,
+        2.85,
+        1.85
+      ],
+      "role": "left outer gripping toe and claw segment 2",
+      "rotation": [
+        17.548401,
+        18.434949,
+        0
+      ],
+      "size": [
+        0.29,
+        0.26,
+        1.394987
+      ]
+    },
+    {
+      "bone": "toe_left_inner_1",
+      "center": [
+        1.35,
+        3.35,
+        1.404947
+      ],
+      "faces": {},
+      "material": "leg_pink",
+      "name": "toe_left_inner_1",
+      "origin": [
+        1.35,
+        3.35,
+        0.7
+      ],
+      "role": "left inner gripping toe and claw segment 1",
+      "rotation": [
+        22.08087,
+        -16.909272,
+        0
+      ],
+      "size": [
+        0.44,
+        0.42,
+        1.809894
+      ]
+    },
+    {
+      "bone": "toe_left_inner_2",
+      "center": [
+        0.97,
+        2.82,
+        2.445328
+      ],
+      "faces": {},
+      "material": "claw_dark",
+      "name": "toe_left_inner_2",
+      "origin": [
+        0.97,
+        2.82,
+        1.95
+      ],
+      "role": "left inner gripping toe and claw segment 2",
+      "rotation": [
+        17.021781,
+        -10.954063,
+        0
+      ],
+      "size": [
+        0.29,
+        0.26,
+        1.390656
+      ]
+    },
+    {
+      "bone": "toe_left_rear_1",
+      "center": [
+        1.35,
+        3.35,
+        1.277689
+      ],
+      "faces": {},
+      "material": "leg_pink",
+      "name": "toe_left_rear_1",
+      "origin": [
+        1.35,
+        3.35,
+        0.7
+      ],
+      "role": "left rear gripping toe and claw segment 1",
+      "rotation": [
+        28.42672,
+        169.796026,
+        0
+      ],
+      "size": [
+        0.44,
+        0.42,
+        1.555379
+      ]
+    },
+    {
+      "bone": "toe_left_rear_2",
+      "center": [
+        1.53,
+        2.8,
+        0.14713
+      ],
+      "faces": {},
+      "material": "claw_dark",
+      "name": "toe_left_rear_2",
+      "origin": [
+        1.53,
+        2.8,
+        -0.3
+      ],
+      "role": "left rear gripping toe and claw segment 2",
+      "rotation": [
+        15.5678,
+        170.647021,
+        0
+      ],
+      "size": [
+        0.29,
+        0.26,
+        1.294259
+      ]
+    },
+    {
+      "bone": "toe_right_outer_1",
+      "center": [
+        -1.35,
+        3.35,
+        0.36123
+      ],
+      "faces": {},
+      "material": "leg_pink",
+      "name": "toe_right_outer_1",
+      "origin": [
+        -1.35,
+        3.35,
+        -0.3
+      ],
+      "role": "right outer gripping toe and claw segment 1",
+      "rotation": [
+        22.215009,
+        -20.063073,
+        0
+      ],
+      "size": [
+        0.44,
+        0.42,
+        1.72246
+      ]
+    },
+    {
+      "bone": "toe_right_outer_2",
+      "center": [
+        -1.77,
+        2.85,
+        1.347494
+      ],
+      "faces": {},
+      "material": "claw_dark",
+      "name": "toe_right_outer_2",
+      "origin": [
+        -1.77,
+        2.85,
+        0.85
+      ],
+      "role": "right outer gripping toe and claw segment 2",
+      "rotation": [
+        17.548401,
+        -18.434949,
+        0
+      ],
+      "size": [
+        0.29,
+        0.26,
+        1.394987
+      ]
+    },
+    {
+      "bone": "toe_right_inner_1",
+      "center": [
+        -1.35,
+        3.35,
+        0.404947
+      ],
+      "faces": {},
+      "material": "leg_pink",
+      "name": "toe_right_inner_1",
+      "origin": [
+        -1.35,
+        3.35,
+        -0.3
+      ],
+      "role": "right inner gripping toe and claw segment 1",
+      "rotation": [
+        22.08087,
+        16.909272,
+        0
+      ],
+      "size": [
+        0.44,
+        0.42,
+        1.809894
+      ]
+    },
+    {
+      "bone": "toe_right_inner_2",
+      "center": [
+        -0.97,
+        2.82,
+        1.445328
+      ],
+      "faces": {},
+      "material": "claw_dark",
+      "name": "toe_right_inner_2",
+      "origin": [
+        -0.97,
+        2.82,
+        0.95
+      ],
+      "role": "right inner gripping toe and claw segment 2",
+      "rotation": [
+        17.021781,
+        10.954063,
+        0
+      ],
+      "size": [
+        0.29,
+        0.26,
+        1.390656
+      ]
+    },
+    {
+      "bone": "toe_right_rear_1",
+      "center": [
+        -1.35,
+        3.35,
+        0.277689
+      ],
+      "faces": {},
+      "material": "leg_pink",
+      "name": "toe_right_rear_1",
+      "origin": [
+        -1.35,
+        3.35,
+        -0.3
+      ],
+      "role": "right rear gripping toe and claw segment 1",
+      "rotation": [
+        28.42672,
+        -169.796026,
+        0
+      ],
+      "size": [
+        0.44,
+        0.42,
+        1.555379
+      ]
+    },
+    {
+      "bone": "toe_right_rear_2",
+      "center": [
+        -1.53,
+        2.8,
+        -0.85287
+      ],
+      "faces": {},
+      "material": "claw_dark",
+      "name": "toe_right_rear_2",
+      "origin": [
+        -1.53,
+        2.8,
+        -1.3
+      ],
+      "role": "right rear gripping toe and claw segment 2",
+      "rotation": [
+        15.5678,
+        -170.647021,
+        0
+      ],
+      "size": [
+        0.29,
+        0.26,
+        1.294259
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "greedy-ellipsoid-articulated-bird-v1",
+    "anatomical_axis": "+Z bill/front, X bilateral width, Y up",
+    "attachment_contract": {
+      "endpoint_overlap": 0.2,
+      "method": "declared-shared-joints-tested-against-oriented-cuboids"
+    },
+    "body_ellipsoid": {
+      "center": [
+        0,
+        10.5,
+        -1.0
+      ],
+      "exponent": 2.15,
+      "greedy_cuboids": 31,
+      "occupied_voxels": 560,
+      "radii": [
+        4.65,
+        5.25,
+        8.1
+      ],
+      "subdivisions": [
+        8,
+        10,
+        12
+      ]
+    },
+    "declared_attachments": [
+      {
+        "first": "body_volume_008",
+        "joint": [
+          0,
+          12.0,
+          3.2
+        ],
+        "second": "neck_bridge"
+      },
+      {
+        "first": "neck_bridge",
+        "joint": [
+          0,
+          13.2,
+          4.7
+        ],
+        "second": "head_volume_001"
+      },
+      {
+        "first": "head_volume_006",
+        "joint": [
+          0.0,
+          14.25,
+          8.75
+        ],
+        "second": "upper_beak_1"
+      },
+      {
+        "first": "head_volume_006",
+        "joint": [
+          0.0,
+          13.7,
+          8.75
+        ],
+        "second": "lower_beak_1"
+      },
+      {
+        "first": "body_volume_007",
+        "joint": [
+          0.0,
+          10.7,
+          -7.1
+        ],
+        "second": "tail_feather_1"
+      },
+      {
+        "first": "upper_beak_1",
+        "joint": [
+          0.0,
+          14.25,
+          10.75
+        ],
+        "second": "upper_beak_2"
+      },
+      {
+        "first": "lower_beak_1",
+        "joint": [
+          0.0,
+          13.55,
+          10.6
+        ],
+        "second": "lower_beak_2"
+      },
+      {
+        "first": "tail_feather_1",
+        "joint": [
+          0.0,
+          10.5,
+          -12.2
+        ],
+        "second": "tail_feather_2"
+      },
+      {
+        "first": "tail_feather_2",
+        "joint": [
+          0.0,
+          10.25,
+          -16.0
+        ],
+        "second": "tail_feather_3"
+      },
+      {
+        "first": "body_volume_010",
+        "joint": [
+          3.0,
+          12.7,
+          2.5
+        ],
+        "second": "wing_left_1"
+      },
+      {
+        "first": "wing_left_1",
+        "joint": [
+          4.38,
+          11.65,
+          -3.8
+        ],
+        "second": "wing_left_2"
+      },
+      {
+        "first": "wing_left_2",
+        "joint": [
+          4.05,
+          10.75,
+          -9.2
+        ],
+        "second": "wing_left_3"
+      },
+      {
+        "first": "body_volume_010",
+        "joint": [
+          -3.0,
+          12.7,
+          2.5
+        ],
+        "second": "wing_right_1"
+      },
+      {
+        "first": "wing_right_1",
+        "joint": [
+          -4.38,
+          11.65,
+          -3.8
+        ],
+        "second": "wing_right_2"
+      },
+      {
+        "first": "wing_right_2",
+        "joint": [
+          -4.05,
+          10.75,
+          -9.2
+        ],
+        "second": "wing_right_3"
+      },
+      {
+        "first": "body_volume_012",
+        "joint": [
+          1.55,
+          6.25,
+          -0.3
+        ],
+        "second": "left_thigh_fluff"
+      },
+      {
+        "first": "left_thigh_fluff",
+        "joint": [
+          1.55,
+          6.25,
+          -0.3
+        ],
+        "second": "leg_left_1"
+      },
+      {
+        "first": "leg_left_1",
+        "joint": [
+          1.72,
+          4.55,
+          0.15000000000000002
+        ],
+        "second": "leg_left_2"
+      },
+      {
+        "first": "body_volume_012",
+        "joint": [
+          -1.55,
+          6.25,
+          -2.1
+        ],
+        "second": "right_thigh_fluff"
+      },
+      {
+        "first": "right_thigh_fluff",
+        "joint": [
+          -1.55,
+          6.25,
+          -2.1
+        ],
+        "second": "leg_right_1"
+      },
+      {
+        "first": "leg_right_1",
+        "joint": [
+          -1.72,
+          4.55,
+          -1.6500000000000001
+        ],
+        "second": "leg_right_2"
+      },
+      {
+        "first": "leg_left_2",
+        "joint": [
+          1.35,
+          3.35,
+          0.7
+        ],
+        "second": "toe_left_outer_1"
+      },
+      {
+        "first": "toe_left_outer_1",
+        "joint": [
+          1.77,
+          2.85,
+          1.8499999999999999
+        ],
+        "second": "toe_left_outer_2"
+      },
+      {
+        "first": "leg_left_2",
+        "joint": [
+          1.35,
+          3.35,
+          0.7
+        ],
+        "second": "toe_left_inner_1"
+      },
+      {
+        "first": "toe_left_inner_1",
+        "joint": [
+          0.9700000000000001,
+          2.82,
+          1.95
+        ],
+        "second": "toe_left_inner_2"
+      },
+      {
+        "first": "leg_left_2",
+        "joint": [
+          1.35,
+          3.35,
+          0.7
+        ],
+        "second": "toe_left_rear_1"
+      },
+      {
+        "first": "toe_left_rear_1",
+        "joint": [
+          1.53,
+          2.8,
+          -0.30000000000000004
+        ],
+        "second": "toe_left_rear_2"
+      },
+      {
+        "first": "leg_right_2",
+        "joint": [
+          -1.35,
+          3.35,
+          -0.3
+        ],
+        "second": "toe_right_outer_1"
+      },
+      {
+        "first": "toe_right_outer_1",
+        "joint": [
+          -1.77,
+          2.85,
+          0.8499999999999999
+        ],
+        "second": "toe_right_outer_2"
+      },
+      {
+        "first": "leg_right_2",
+        "joint": [
+          -1.35,
+          3.35,
+          -0.3
+        ],
+        "second": "toe_right_inner_1"
+      },
+      {
+        "first": "toe_right_inner_1",
+        "joint": [
+          -0.9700000000000001,
+          2.82,
+          0.95
+        ],
+        "second": "toe_right_inner_2"
+      },
+      {
+        "first": "leg_right_2",
+        "joint": [
+          -1.35,
+          3.35,
+          -0.3
+        ],
+        "second": "toe_right_rear_1"
+      },
+      {
+        "first": "toe_right_rear_1",
+        "joint": [
+          -1.53,
+          2.8,
+          -1.3
+        ],
+        "second": "toe_right_rear_2"
+      }
+    ],
+    "feature_inventory": {
+      "beak_segments": 4,
+      "body_volumes": 31,
+      "cap_volumes": 2,
+      "eyes": 2,
+      "head_volumes": 25,
+      "leg_chains": 2,
+      "leg_segments": 4,
+      "raised_white_wing_patches": 4,
+      "tail_segments": 3,
+      "toe_and_claw_segments": 12,
+      "toe_chains": 6,
+      "wing_bar_landmarks": 4,
+      "wing_chains": 2,
+      "wing_segments": 6
+    },
+    "head_ellipsoid": {
+      "center": [
+        0,
+        14.3,
+        5.7
+      ],
+      "exponent": 2.1,
+      "greedy_cuboids": 25,
+      "occupied_voxels": 280,
+      "radii": [
+        3.05,
+        3.15,
+        3.5
+      ],
+      "subdivisions": [
+        8,
+        8,
+        8
+      ]
+    },
+    "lane": "agent-authored-semantic-volume",
+    "single_view_hidden_geometry": "bilateral_semantic_inference_not_observed",
+    "source_mesh": null,
+    "source_skin_cuboids": 0
+  },
+  "geometry": {
+    "precision": 16
+  },
+  "id": "american_goldfinch",
+  "landmarks": [
+    {
+      "center_color": "#ffffff",
+      "center_uv": [
+        0.38,
+        0.48
+      ],
+      "color": "#f2efda",
+      "cube": "wing_left_1",
+      "face": "east",
+      "name": "left_wing_bar_primary",
+      "size": [
+        18,
+        6
+      ]
+    },
+    {
+      "center_color": "#f8f6e5",
+      "center_uv": [
+        0.32,
+        0.52
+      ],
+      "color": "#d7d3be",
+      "cube": "wing_left_2",
+      "face": "east",
+      "name": "left_wing_bar_secondary",
+      "size": [
+        13,
+        4
+      ]
+    },
+    {
+      "center_color": "#ffffff",
+      "center_uv": [
+        0.38,
+        0.48
+      ],
+      "color": "#f2efda",
+      "cube": "wing_right_1",
+      "face": "west",
+      "name": "right_wing_bar_primary",
+      "size": [
+        18,
+        6
+      ]
+    },
+    {
+      "center_color": "#f8f6e5",
+      "center_uv": [
+        0.32,
+        0.52
+      ],
+      "color": "#d7d3be",
+      "cube": "wing_right_2",
+      "face": "west",
+      "name": "right_wing_bar_secondary",
+      "size": [
+        13,
+        4
+      ]
+    }
+  ],
+  "materials": {
+    "beak_lower": {
+      "base": "#e1a64d",
+      "highlight": "#ffd277",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#8e5626"
+    },
+    "beak_upper": {
+      "base": "#d68b51",
+      "highlight": "#f3ba72",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#7d3f2e"
+    },
+    "black_feather": {
+      "base": "#151b20",
+      "highlight": "#424b51",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#07090c"
+    },
+    "claw_dark": {
+      "base": "#59443d",
+      "highlight": "#8f7165",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#241c1a"
+    },
+    "cream_feather": {
+      "base": "#ded7a6",
+      "highlight": "#fff7ca",
+      "pattern": "dither",
+      "pattern_scale": 3,
+      "shade": "#918b68"
+    },
+    "eye_black": {
+      "base": "#11141a",
+      "highlight": "#59636c",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#020305"
+    },
+    "eye_ring": {
+      "base": "#d6b33f",
+      "highlight": "#f6db69",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#6b5722"
+    },
+    "gold_feather": {
+      "base": "#cfad19",
+      "highlight": "#f5d93e",
+      "pattern": "gradient",
+      "pattern_scale": 3,
+      "shade": "#7b6913"
+    },
+    "leg_pink": {
+      "base": "#b97865",
+      "highlight": "#db9b80",
+      "pattern": "dither",
+      "pattern_scale": 2,
+      "shade": "#704238"
+    },
+    "lemon_feather": {
+      "base": "#e8d92b",
+      "highlight": "#fff04b",
+      "pattern": "dither",
+      "pattern_scale": 3,
+      "shade": "#9c8c16"
+    },
+    "white_feather": {
+      "base": "#e6e1c7",
+      "highlight": "#fffce8",
+      "pattern": "gradient",
+      "pattern_scale": 2,
+      "shade": "#999477"
+    },
+    "wing_bar": {
+      "base": "#e5e1ca",
+      "highlight": "#fffceb",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#8e8a72"
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "rounded lemon-yellow breast and pale rump",
+      "small head with black breeding cap and paired dark eyes",
+      "short pointed peach-and-gold conical bill",
+      "separate bilateral black folded wings with white bars",
+      "connected tapered black tail fan",
+      "two thin pink legs with six gripping toes and dark claws"
+    ],
+    "required_views": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "isometric",
+      "left-head-closeup",
+      "right-head-closeup",
+      "wing-joints",
+      "feet-joints"
+    ],
+    "review_targets": [
+      "bird profile",
+      "head-to-body ratio",
+      "cap and bill",
+      "wing bars",
+      "bilateral depth",
+      "wing attachment",
+      "leg and toe attachment"
+    ],
+    "target_cuboids": [
+      60,
+      100
+    ]
+  },
+  "reference": {
+    "height": 3072,
+    "image": "../../references/01-american-goldfinch.jpg",
+    "sha256": "094818044cf5373d674e42dcff666a7a37063e940b252aa841028e9ac2dcab8d",
+    "width": 3072
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "Native volumetric male American goldfinch with rounded yellow body, black cap and barred folded wings, pointed bill, tapered tail, and gripping feet",
+    "symmetry": "bilateral",
+    "type": "bird",
+    "uncertainties": [
+      "The supplied photograph is one cropped side view; far-side markings and tail length are conservative bilateral inference",
+      "The source-facing silhouette metric excludes legs because the reference foot is occluded by a branch and the tail is cropped",
+      "No projected photograph skin is used; hidden surfaces use semantic pixel materials"
+    ]
+  },
+  "texture": {
+    "atlas_size": 512,
+    "density": 4,
+    "gutter": 1,
+    "palette_size": 24,
+    "quantize_source": false
+  }
+}

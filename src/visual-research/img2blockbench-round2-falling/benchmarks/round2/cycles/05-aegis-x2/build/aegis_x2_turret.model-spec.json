@@ -1,0 +1,6157 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "pedestal",
+      "parent": "root",
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "yaw_ring",
+      "parent": "pedestal",
+      "pivot": [
+        0,
+        55.0,
+        0
+      ]
+    },
+    {
+      "name": "pitch_cradle",
+      "parent": "yaw_ring",
+      "pivot": [
+        0,
+        70.0,
+        0
+      ]
+    },
+    {
+      "name": "cannon",
+      "parent": "pitch_cradle",
+      "pivot": [
+        0,
+        72.0,
+        0
+      ]
+    },
+    {
+      "name": "launcher",
+      "parent": "pitch_cradle",
+      "pivot": [
+        0,
+        72.0,
+        0
+      ]
+    },
+    {
+      "name": "sensors",
+      "parent": "pitch_cradle",
+      "pivot": [
+        0,
+        72.0,
+        0
+      ]
+    },
+    {
+      "name": "support_1",
+      "parent": "pedestal",
+      "pivot": [
+        5.656854,
+        12,
+        5.656854
+      ]
+    },
+    {
+      "name": "support_2",
+      "parent": "pedestal",
+      "pivot": [
+        5.656854,
+        12,
+        -5.656854
+      ]
+    },
+    {
+      "name": "support_3",
+      "parent": "pedestal",
+      "pivot": [
+        -5.656854,
+        12,
+        -5.656854
+      ]
+    },
+    {
+      "name": "support_4",
+      "parent": "pedestal",
+      "pivot": [
+        -5.656854,
+        12,
+        5.656854
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 4.7,
+    "height": 5.8,
+    "width": 4.5
+  },
+  "cubes": [
+    {
+      "bone": "pedestal",
+      "center": [
+        0.0,
+        7.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "pedestal_lower_core",
+      "origin": [
+        0.0,
+        7.0,
+        0.0
+      ],
+      "role": "load-bearing lower pedestal",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        18.0,
+        14.0,
+        18.0
+      ]
+    },
+    {
+      "bone": "pedestal",
+      "center": [
+        0.0,
+        8.0,
+        9.4
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "pedestal_lower_front",
+      "origin": [
+        0.0,
+        8.0,
+        9.4
+      ],
+      "role": "front lower pedestal service panel",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        13.0,
+        10.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "pedestal",
+      "center": [
+        0.0,
+        8.0,
+        -9.4
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "pedestal_lower_back",
+      "origin": [
+        0.0,
+        8.0,
+        -9.4
+      ],
+      "role": "rear lower pedestal service panel",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        13.0,
+        10.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "pedestal",
+      "center": [
+        -9.4,
+        8.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "pedestal_lower_left",
+      "origin": [
+        -9.4,
+        8.0,
+        0.0
+      ],
+      "role": "left lower pedestal service panel",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.0,
+        10.0,
+        13.0
+      ]
+    },
+    {
+      "bone": "pedestal",
+      "center": [
+        9.4,
+        8.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "pedestal_lower_right",
+      "origin": [
+        9.4,
+        8.0,
+        0.0
+      ],
+      "role": "right lower pedestal service panel",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.0,
+        10.0,
+        13.0
+      ]
+    },
+    {
+      "bone": "pedestal",
+      "center": [
+        0.0,
+        14.2,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "pedestal_lower_cap",
+      "origin": [
+        0.0,
+        14.2,
+        0.0
+      ],
+      "role": "wide lower outrigger mounting collar",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        20.0,
+        2.5,
+        20.0
+      ]
+    },
+    {
+      "bone": "pedestal",
+      "center": [
+        0.0,
+        33.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "pedestal_mid_core",
+      "origin": [
+        0.0,
+        23.0,
+        0.0
+      ],
+      "role": "segmented cylindrical-equivalent pedestal column",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        16.0,
+        36.0,
+        16.0
+      ]
+    },
+    {
+      "bone": "pedestal",
+      "center": [
+        0.0,
+        33.0,
+        8.3
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "pedestal_mid_front_panel",
+      "origin": [
+        0.0,
+        23.0,
+        8.3
+      ],
+      "role": "front recessed pedestal access panel",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        11.0,
+        31.0,
+        1.5
+      ]
+    },
+    {
+      "bone": "pedestal",
+      "center": [
+        0.0,
+        33.0,
+        -8.3
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "pedestal_mid_back_panel",
+      "origin": [
+        0.0,
+        23.0,
+        -8.3
+      ],
+      "role": "back recessed pedestal access panel",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        11.0,
+        31.0,
+        1.5
+      ]
+    },
+    {
+      "bone": "pedestal",
+      "center": [
+        -8.3,
+        33.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "pedestal_mid_left_panel",
+      "origin": [
+        -8.3,
+        23.0,
+        0.0
+      ],
+      "role": "left recessed pedestal access panel",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.5,
+        31.0,
+        11.0
+      ]
+    },
+    {
+      "bone": "pedestal",
+      "center": [
+        8.3,
+        33.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "pedestal_mid_right_panel",
+      "origin": [
+        8.3,
+        23.0,
+        0.0
+      ],
+      "role": "right recessed pedestal access panel",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.5,
+        31.0,
+        11.0
+      ]
+    },
+    {
+      "bone": "pedestal",
+      "center": [
+        5.338656197958433,
+        33.0,
+        5.338656197958434
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "pedestal_mid_corner_chamfer_1",
+      "origin": [
+        5.338656197958433,
+        23.0,
+        5.338656197958434
+      ],
+      "role": "vertical chamfer panel forming a segmented cylindrical pedestal",
+      "rotation": [
+        0.0,
+        45.0,
+        0.0
+      ],
+      "size": [
+        5.0,
+        31.0,
+        1.8
+      ]
+    },
+    {
+      "bone": "pedestal",
+      "center": [
+        5.338656197958434,
+        33.0,
+        -5.338656197958433
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "pedestal_mid_corner_chamfer_2",
+      "origin": [
+        5.338656197958434,
+        23.0,
+        -5.338656197958433
+      ],
+      "role": "vertical chamfer panel forming a segmented cylindrical pedestal",
+      "rotation": [
+        0.0,
+        135.0,
+        0.0
+      ],
+      "size": [
+        5.0,
+        31.0,
+        1.8
+      ]
+    },
+    {
+      "bone": "pedestal",
+      "center": [
+        -5.338656197958433,
+        33.0,
+        -5.338656197958435
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "pedestal_mid_corner_chamfer_3",
+      "origin": [
+        -5.338656197958433,
+        23.0,
+        -5.338656197958435
+      ],
+      "role": "vertical chamfer panel forming a segmented cylindrical pedestal",
+      "rotation": [
+        0.0,
+        225.0,
+        0.0
+      ],
+      "size": [
+        5.0,
+        31.0,
+        1.8
+      ]
+    },
+    {
+      "bone": "pedestal",
+      "center": [
+        -5.338656197958435,
+        33.0,
+        5.338656197958432
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "pedestal_mid_corner_chamfer_4",
+      "origin": [
+        -5.338656197958435,
+        23.0,
+        5.338656197958432
+      ],
+      "role": "vertical chamfer panel forming a segmented cylindrical pedestal",
+      "rotation": [
+        0.0,
+        315.0,
+        0.0
+      ],
+      "size": [
+        5.0,
+        31.0,
+        1.8
+      ]
+    },
+    {
+      "bone": "pedestal",
+      "center": [
+        0.0,
+        51.2,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "pedestal_upper_cap",
+      "origin": [
+        0.0,
+        51.2,
+        0.0
+      ],
+      "role": "upper pedestal bearing collar",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        18.5,
+        2.5,
+        18.5
+      ]
+    },
+    {
+      "bone": "yaw_ring",
+      "center": [
+        0.0,
+        55.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "edge_black",
+      "name": "yaw_ring_core",
+      "origin": [
+        0.0,
+        55.0,
+        0.0
+      ],
+      "role": "rotating yaw bearing core",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        20.0,
+        5.5,
+        20.0
+      ]
+    },
+    {
+      "bone": "yaw_ring",
+      "center": [
+        0,
+        55.0,
+        15.209518
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "yaw_ring_segment_1",
+      "origin": [
+        0,
+        55.0,
+        11
+      ],
+      "role": "segmented octagonal yaw collar",
+      "rotation": [
+        0,
+        112.5,
+        0
+      ],
+      "size": [
+        2.8,
+        3,
+        9.319036
+      ]
+    },
+    {
+      "bone": "yaw_ring",
+      "center": [
+        7.778175,
+        55.0,
+        11.987692
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "yaw_ring_segment_2",
+      "origin": [
+        7.778175,
+        55.0,
+        7.778175
+      ],
+      "role": "segmented octagonal yaw collar",
+      "rotation": [
+        0,
+        157.5,
+        0
+      ],
+      "size": [
+        2.8,
+        3,
+        9.319036
+      ]
+    },
+    {
+      "bone": "yaw_ring",
+      "center": [
+        11,
+        55.0,
+        4.209518
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "yaw_ring_segment_3",
+      "origin": [
+        11,
+        55.0,
+        0
+      ],
+      "role": "segmented octagonal yaw collar",
+      "rotation": [
+        0,
+        -157.5,
+        0
+      ],
+      "size": [
+        2.8,
+        3,
+        9.319036
+      ]
+    },
+    {
+      "bone": "yaw_ring",
+      "center": [
+        7.778175,
+        55.0,
+        -3.568657
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "yaw_ring_segment_4",
+      "origin": [
+        7.778175,
+        55.0,
+        -7.778175
+      ],
+      "role": "segmented octagonal yaw collar",
+      "rotation": [
+        0,
+        -112.5,
+        0
+      ],
+      "size": [
+        2.8,
+        3,
+        9.319036
+      ]
+    },
+    {
+      "bone": "yaw_ring",
+      "center": [
+        0,
+        55.0,
+        -6.790482
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "yaw_ring_segment_5",
+      "origin": [
+        0,
+        55.0,
+        -11
+      ],
+      "role": "segmented octagonal yaw collar",
+      "rotation": [
+        0,
+        -67.5,
+        0
+      ],
+      "size": [
+        2.8,
+        3,
+        9.319036
+      ]
+    },
+    {
+      "bone": "yaw_ring",
+      "center": [
+        -7.778175,
+        55.0,
+        -3.568657
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "yaw_ring_segment_6",
+      "origin": [
+        -7.778175,
+        55.0,
+        -7.778175
+      ],
+      "role": "segmented octagonal yaw collar",
+      "rotation": [
+        0,
+        -22.5,
+        0
+      ],
+      "size": [
+        2.8,
+        3,
+        9.319036
+      ]
+    },
+    {
+      "bone": "yaw_ring",
+      "center": [
+        -11,
+        55.0,
+        4.209518
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "yaw_ring_segment_7",
+      "origin": [
+        -11,
+        55.0,
+        0
+      ],
+      "role": "segmented octagonal yaw collar",
+      "rotation": [
+        0,
+        22.5,
+        0
+      ],
+      "size": [
+        2.8,
+        3,
+        9.319036
+      ]
+    },
+    {
+      "bone": "yaw_ring",
+      "center": [
+        -7.778175,
+        55.0,
+        11.987692
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "yaw_ring_segment_8",
+      "origin": [
+        -7.778175,
+        55.0,
+        7.778175
+      ],
+      "role": "segmented octagonal yaw collar",
+      "rotation": [
+        0,
+        67.5,
+        0
+      ],
+      "size": [
+        2.8,
+        3,
+        9.319036
+      ]
+    },
+    {
+      "bone": "support_1",
+      "center": [
+        7.071068,
+        12,
+        12.661238
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "support_1_radial_beam",
+      "origin": [
+        7.071068,
+        12,
+        7.071068
+      ],
+      "role": "radial armored outrigger beam",
+      "rotation": [
+        10.304846,
+        45,
+        0
+      ],
+      "size": [
+        4.6,
+        5.2,
+        12.58034
+      ]
+    },
+    {
+      "bone": "support_1",
+      "center": [
+        14.849242,
+        10,
+        20.506097
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "support_1_outer_brace",
+      "origin": [
+        14.849242,
+        10,
+        14.849242
+      ],
+      "role": "rising outer support bracket",
+      "rotation": [
+        -45,
+        45,
+        0
+      ],
+      "size": [
+        4.2,
+        4.8,
+        12.713708
+      ]
+    },
+    {
+      "bone": "support_1",
+      "center": [
+        20.506097,
+        22.5,
+        20.506097
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "support_1_outer_piston_casing",
+      "origin": [
+        20.506097,
+        18,
+        20.506097
+      ],
+      "role": "vertical piston casing",
+      "rotation": [
+        0,
+        0,
+        -180
+      ],
+      "size": [
+        4.2,
+        10,
+        4.2
+      ]
+    },
+    {
+      "bone": "support_1",
+      "center": [
+        20.506097,
+        12.5,
+        20.506097
+      ],
+      "faces": {},
+      "material": "piston",
+      "name": "support_1_outer_piston_rod",
+      "origin": [
+        20.506097,
+        9,
+        20.506097
+      ],
+      "role": "exposed vertical piston rod",
+      "rotation": [
+        0,
+        0,
+        -180
+      ],
+      "size": [
+        2,
+        7.9,
+        2
+      ]
+    },
+    {
+      "bone": "support_1",
+      "center": [
+        22.273863607376246,
+        1.05,
+        22.27386360737625
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "support_1_ground_foot",
+      "origin": [
+        22.273863607376246,
+        1.05,
+        22.27386360737625
+      ],
+      "role": "broad radial grounded stabilizer foot",
+      "rotation": [
+        0.0,
+        45.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        2.1,
+        10.0
+      ]
+    },
+    {
+      "bone": "support_1",
+      "center": [
+        20.506097,
+        2,
+        23.532646
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "support_1_outer_toe",
+      "origin": [
+        20.506097,
+        2,
+        20.506097
+      ],
+      "role": "forward gripping foot extension",
+      "rotation": [
+        7.594643,
+        45,
+        0
+      ],
+      "size": [
+        2.4,
+        2,
+        7.053098
+      ]
+    },
+    {
+      "bone": "support_1",
+      "center": [
+        20.506097,
+        2,
+        21.58313
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "support_1_inner_heel",
+      "origin": [
+        20.506097,
+        2,
+        20.506097
+      ],
+      "role": "rear gripping foot extension",
+      "rotation": [
+        21.801409,
+        -135,
+        0
+      ],
+      "size": [
+        2.4,
+        2,
+        3.154066
+      ]
+    },
+    {
+      "bone": "support_1",
+      "center": [
+        22.273863607376246,
+        2.35,
+        22.27386360737625
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "support_1_foot_bolt",
+      "origin": [
+        22.273863607376246,
+        2.35,
+        22.27386360737625
+      ],
+      "role": "bright foot anchor bolt",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.0,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "support_1",
+      "center": [
+        5.656854,
+        16.123106,
+        5.656854
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "support_1_inner_piston_casing",
+      "origin": [
+        5.656854,
+        12,
+        5.656854
+      ],
+      "role": "inner hydraulic piston housing",
+      "rotation": [
+        43.313857,
+        0,
+        -70.528779
+      ],
+      "size": [
+        3.2,
+        9.146211,
+        3.2
+      ]
+    },
+    {
+      "bone": "support_1",
+      "center": [
+        11.313708,
+        19.942432,
+        11.313708
+      ],
+      "faces": {},
+      "material": "piston",
+      "name": "support_1_inner_piston_rod",
+      "origin": [
+        11.313708,
+        14,
+        11.313708
+      ],
+      "role": "inner exposed hydraulic rod",
+      "rotation": [
+        15.529462,
+        0,
+        -163.866379
+      ],
+      "size": [
+        1.45,
+        12.784864,
+        1.45
+      ]
+    },
+    {
+      "bone": "support_1",
+      "center": [
+        6.717514,
+        17.533562,
+        6.717514
+      ],
+      "faces": {},
+      "material": "cable_red",
+      "name": "support_1_red_cable_1",
+      "origin": [
+        6.717514,
+        14.5,
+        6.717514
+      ],
+      "role": "red outrigger hydraulic line",
+      "rotation": [
+        44.369555,
+        0,
+        -78.023274
+      ],
+      "size": [
+        1,
+        6.667125,
+        1
+      ]
+    },
+    {
+      "bone": "support_1",
+      "center": [
+        10.960155,
+        18.217801,
+        10.960155
+      ],
+      "faces": {},
+      "material": "cable_red",
+      "name": "support_1_red_cable_2",
+      "origin": [
+        10.960155,
+        15.4,
+        10.960155
+      ],
+      "role": "red outrigger hydraulic line return",
+      "rotation": [
+        38.855396,
+        0,
+        -126.330431
+      ],
+      "size": [
+        1,
+        6.235601,
+        1
+      ]
+    },
+    {
+      "bone": "support_1",
+      "center": [
+        20.506096654409877,
+        18.0,
+        20.50609665440988
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "support_1_crown_cap",
+      "origin": [
+        20.506096654409877,
+        18.0,
+        20.50609665440988
+      ],
+      "role": "outer piston hinge cap",
+      "rotation": [
+        0.0,
+        45.0,
+        0.0
+      ],
+      "size": [
+        5.0,
+        2.2,
+        5.0
+      ]
+    },
+    {
+      "bone": "support_2",
+      "center": [
+        7.071068,
+        12,
+        -1.480898
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "support_2_radial_beam",
+      "origin": [
+        7.071068,
+        12,
+        -7.071068
+      ],
+      "role": "radial armored outrigger beam",
+      "rotation": [
+        10.304846,
+        135,
+        0
+      ],
+      "size": [
+        4.6,
+        5.2,
+        12.58034
+      ]
+    },
+    {
+      "bone": "support_2",
+      "center": [
+        14.849242,
+        10,
+        -9.192388
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "support_2_outer_brace",
+      "origin": [
+        14.849242,
+        10,
+        -14.849242
+      ],
+      "role": "rising outer support bracket",
+      "rotation": [
+        -45,
+        135,
+        0
+      ],
+      "size": [
+        4.2,
+        4.8,
+        12.713708
+      ]
+    },
+    {
+      "bone": "support_2",
+      "center": [
+        20.506097,
+        22.5,
+        -20.506097
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "support_2_outer_piston_casing",
+      "origin": [
+        20.506097,
+        18,
+        -20.506097
+      ],
+      "role": "vertical piston casing",
+      "rotation": [
+        0,
+        0,
+        -180
+      ],
+      "size": [
+        4.2,
+        10,
+        4.2
+      ]
+    },
+    {
+      "bone": "support_2",
+      "center": [
+        20.506097,
+        12.5,
+        -20.506097
+      ],
+      "faces": {},
+      "material": "piston",
+      "name": "support_2_outer_piston_rod",
+      "origin": [
+        20.506097,
+        9,
+        -20.506097
+      ],
+      "role": "exposed vertical piston rod",
+      "rotation": [
+        0,
+        0,
+        -180
+      ],
+      "size": [
+        2,
+        7.9,
+        2
+      ]
+    },
+    {
+      "bone": "support_2",
+      "center": [
+        22.27386360737625,
+        1.05,
+        -22.273863607376246
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "support_2_ground_foot",
+      "origin": [
+        22.27386360737625,
+        1.05,
+        -22.273863607376246
+      ],
+      "role": "broad radial grounded stabilizer foot",
+      "rotation": [
+        0.0,
+        135.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        2.1,
+        10.0
+      ]
+    },
+    {
+      "bone": "support_2",
+      "center": [
+        20.506097,
+        2,
+        -17.479547
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "support_2_outer_toe",
+      "origin": [
+        20.506097,
+        2,
+        -20.506097
+      ],
+      "role": "forward gripping foot extension",
+      "rotation": [
+        7.594643,
+        135,
+        0
+      ],
+      "size": [
+        2.4,
+        2,
+        7.053098
+      ]
+    },
+    {
+      "bone": "support_2",
+      "center": [
+        20.506097,
+        2,
+        -19.429064
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "support_2_inner_heel",
+      "origin": [
+        20.506097,
+        2,
+        -20.506097
+      ],
+      "role": "rear gripping foot extension",
+      "rotation": [
+        21.801409,
+        -45,
+        0
+      ],
+      "size": [
+        2.4,
+        2,
+        3.154066
+      ]
+    },
+    {
+      "bone": "support_2",
+      "center": [
+        22.27386360737625,
+        2.35,
+        -22.273863607376246
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "support_2_foot_bolt",
+      "origin": [
+        22.27386360737625,
+        2.35,
+        -22.273863607376246
+      ],
+      "role": "bright foot anchor bolt",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.0,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "support_2",
+      "center": [
+        5.656854,
+        16.123106,
+        -5.656854
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "support_2_inner_piston_casing",
+      "origin": [
+        5.656854,
+        12,
+        -5.656854
+      ],
+      "role": "inner hydraulic piston housing",
+      "rotation": [
+        -43.313857,
+        0,
+        -70.528779
+      ],
+      "size": [
+        3.2,
+        9.146211,
+        3.2
+      ]
+    },
+    {
+      "bone": "support_2",
+      "center": [
+        11.313708,
+        19.942432,
+        -11.313708
+      ],
+      "faces": {},
+      "material": "piston",
+      "name": "support_2_inner_piston_rod",
+      "origin": [
+        11.313708,
+        14,
+        -11.313708
+      ],
+      "role": "inner exposed hydraulic rod",
+      "rotation": [
+        -15.529462,
+        0,
+        -163.866379
+      ],
+      "size": [
+        1.45,
+        12.784864,
+        1.45
+      ]
+    },
+    {
+      "bone": "support_2",
+      "center": [
+        6.717514,
+        17.533562,
+        -6.717514
+      ],
+      "faces": {},
+      "material": "cable_red",
+      "name": "support_2_red_cable_1",
+      "origin": [
+        6.717514,
+        14.5,
+        -6.717514
+      ],
+      "role": "red outrigger hydraulic line",
+      "rotation": [
+        -44.369555,
+        0,
+        -78.023274
+      ],
+      "size": [
+        1,
+        6.667125,
+        1
+      ]
+    },
+    {
+      "bone": "support_2",
+      "center": [
+        10.960155,
+        18.217801,
+        -10.960155
+      ],
+      "faces": {},
+      "material": "cable_red",
+      "name": "support_2_red_cable_2",
+      "origin": [
+        10.960155,
+        15.4,
+        -10.960155
+      ],
+      "role": "red outrigger hydraulic line return",
+      "rotation": [
+        -38.855396,
+        0,
+        -126.330431
+      ],
+      "size": [
+        1,
+        6.235601,
+        1
+      ]
+    },
+    {
+      "bone": "support_2",
+      "center": [
+        20.50609665440988,
+        18.0,
+        -20.506096654409877
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "support_2_crown_cap",
+      "origin": [
+        20.50609665440988,
+        18.0,
+        -20.506096654409877
+      ],
+      "role": "outer piston hinge cap",
+      "rotation": [
+        0.0,
+        135.0,
+        0.0
+      ],
+      "size": [
+        5.0,
+        2.2,
+        5.0
+      ]
+    },
+    {
+      "bone": "support_3",
+      "center": [
+        -7.071068,
+        12,
+        -1.480898
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "support_3_radial_beam",
+      "origin": [
+        -7.071068,
+        12,
+        -7.071068
+      ],
+      "role": "radial armored outrigger beam",
+      "rotation": [
+        10.304846,
+        -135,
+        0
+      ],
+      "size": [
+        4.6,
+        5.2,
+        12.58034
+      ]
+    },
+    {
+      "bone": "support_3",
+      "center": [
+        -14.849242,
+        10,
+        -9.192388
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "support_3_outer_brace",
+      "origin": [
+        -14.849242,
+        10,
+        -14.849242
+      ],
+      "role": "rising outer support bracket",
+      "rotation": [
+        -45,
+        -135,
+        0
+      ],
+      "size": [
+        4.2,
+        4.8,
+        12.713708
+      ]
+    },
+    {
+      "bone": "support_3",
+      "center": [
+        -20.506097,
+        22.5,
+        -20.506097
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "support_3_outer_piston_casing",
+      "origin": [
+        -20.506097,
+        18,
+        -20.506097
+      ],
+      "role": "vertical piston casing",
+      "rotation": [
+        0,
+        0,
+        -180
+      ],
+      "size": [
+        4.2,
+        10,
+        4.2
+      ]
+    },
+    {
+      "bone": "support_3",
+      "center": [
+        -20.506097,
+        12.5,
+        -20.506097
+      ],
+      "faces": {},
+      "material": "piston",
+      "name": "support_3_outer_piston_rod",
+      "origin": [
+        -20.506097,
+        9,
+        -20.506097
+      ],
+      "role": "exposed vertical piston rod",
+      "rotation": [
+        0,
+        0,
+        -180
+      ],
+      "size": [
+        2,
+        7.9,
+        2
+      ]
+    },
+    {
+      "bone": "support_3",
+      "center": [
+        -22.273863607376246,
+        1.05,
+        -22.273863607376253
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "support_3_ground_foot",
+      "origin": [
+        -22.273863607376246,
+        1.05,
+        -22.273863607376253
+      ],
+      "role": "broad radial grounded stabilizer foot",
+      "rotation": [
+        0.0,
+        225.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        2.1,
+        10.0
+      ]
+    },
+    {
+      "bone": "support_3",
+      "center": [
+        -20.506097,
+        2,
+        -17.479547
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "support_3_outer_toe",
+      "origin": [
+        -20.506097,
+        2,
+        -20.506097
+      ],
+      "role": "forward gripping foot extension",
+      "rotation": [
+        7.594643,
+        -135,
+        0
+      ],
+      "size": [
+        2.4,
+        2,
+        7.053098
+      ]
+    },
+    {
+      "bone": "support_3",
+      "center": [
+        -20.506097,
+        2,
+        -19.429064
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "support_3_inner_heel",
+      "origin": [
+        -20.506097,
+        2,
+        -20.506097
+      ],
+      "role": "rear gripping foot extension",
+      "rotation": [
+        21.801409,
+        45,
+        0
+      ],
+      "size": [
+        2.4,
+        2,
+        3.154066
+      ]
+    },
+    {
+      "bone": "support_3",
+      "center": [
+        -22.273863607376246,
+        2.35,
+        -22.273863607376253
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "support_3_foot_bolt",
+      "origin": [
+        -22.273863607376246,
+        2.35,
+        -22.273863607376253
+      ],
+      "role": "bright foot anchor bolt",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.0,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "support_3",
+      "center": [
+        -5.656854,
+        16.123106,
+        -5.656854
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "support_3_inner_piston_casing",
+      "origin": [
+        -5.656854,
+        12,
+        -5.656854
+      ],
+      "role": "inner hydraulic piston housing",
+      "rotation": [
+        -43.313857,
+        0,
+        70.528779
+      ],
+      "size": [
+        3.2,
+        9.146211,
+        3.2
+      ]
+    },
+    {
+      "bone": "support_3",
+      "center": [
+        -11.313708,
+        19.942432,
+        -11.313708
+      ],
+      "faces": {},
+      "material": "piston",
+      "name": "support_3_inner_piston_rod",
+      "origin": [
+        -11.313708,
+        14,
+        -11.313708
+      ],
+      "role": "inner exposed hydraulic rod",
+      "rotation": [
+        -15.529462,
+        0,
+        163.866379
+      ],
+      "size": [
+        1.45,
+        12.784864,
+        1.45
+      ]
+    },
+    {
+      "bone": "support_3",
+      "center": [
+        -6.717514,
+        17.533562,
+        -6.717514
+      ],
+      "faces": {},
+      "material": "cable_red",
+      "name": "support_3_red_cable_1",
+      "origin": [
+        -6.717514,
+        14.5,
+        -6.717514
+      ],
+      "role": "red outrigger hydraulic line",
+      "rotation": [
+        -44.369555,
+        0,
+        78.023274
+      ],
+      "size": [
+        1,
+        6.667125,
+        1
+      ]
+    },
+    {
+      "bone": "support_3",
+      "center": [
+        -10.960155,
+        18.217801,
+        -10.960155
+      ],
+      "faces": {},
+      "material": "cable_red",
+      "name": "support_3_red_cable_2",
+      "origin": [
+        -10.960155,
+        15.4,
+        -10.960155
+      ],
+      "role": "red outrigger hydraulic line return",
+      "rotation": [
+        -38.855396,
+        0,
+        126.330431
+      ],
+      "size": [
+        1,
+        6.235601,
+        1
+      ]
+    },
+    {
+      "bone": "support_3",
+      "center": [
+        -20.506096654409877,
+        18.0,
+        -20.506096654409884
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "support_3_crown_cap",
+      "origin": [
+        -20.506096654409877,
+        18.0,
+        -20.506096654409884
+      ],
+      "role": "outer piston hinge cap",
+      "rotation": [
+        0.0,
+        225.0,
+        0.0
+      ],
+      "size": [
+        5.0,
+        2.2,
+        5.0
+      ]
+    },
+    {
+      "bone": "support_4",
+      "center": [
+        -7.071068,
+        12,
+        12.661238
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "support_4_radial_beam",
+      "origin": [
+        -7.071068,
+        12,
+        7.071068
+      ],
+      "role": "radial armored outrigger beam",
+      "rotation": [
+        10.304846,
+        -45,
+        0
+      ],
+      "size": [
+        4.6,
+        5.2,
+        12.58034
+      ]
+    },
+    {
+      "bone": "support_4",
+      "center": [
+        -14.849242,
+        10,
+        20.506097
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "support_4_outer_brace",
+      "origin": [
+        -14.849242,
+        10,
+        14.849242
+      ],
+      "role": "rising outer support bracket",
+      "rotation": [
+        -45,
+        -45,
+        0
+      ],
+      "size": [
+        4.2,
+        4.8,
+        12.713708
+      ]
+    },
+    {
+      "bone": "support_4",
+      "center": [
+        -20.506097,
+        22.5,
+        20.506097
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "support_4_outer_piston_casing",
+      "origin": [
+        -20.506097,
+        18,
+        20.506097
+      ],
+      "role": "vertical piston casing",
+      "rotation": [
+        0,
+        0,
+        -180
+      ],
+      "size": [
+        4.2,
+        10,
+        4.2
+      ]
+    },
+    {
+      "bone": "support_4",
+      "center": [
+        -20.506097,
+        12.5,
+        20.506097
+      ],
+      "faces": {},
+      "material": "piston",
+      "name": "support_4_outer_piston_rod",
+      "origin": [
+        -20.506097,
+        9,
+        20.506097
+      ],
+      "role": "exposed vertical piston rod",
+      "rotation": [
+        0,
+        0,
+        -180
+      ],
+      "size": [
+        2,
+        7.9,
+        2
+      ]
+    },
+    {
+      "bone": "support_4",
+      "center": [
+        -22.273863607376253,
+        1.05,
+        22.273863607376242
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "support_4_ground_foot",
+      "origin": [
+        -22.273863607376253,
+        1.05,
+        22.273863607376242
+      ],
+      "role": "broad radial grounded stabilizer foot",
+      "rotation": [
+        0.0,
+        315.0,
+        0.0
+      ],
+      "size": [
+        6.0,
+        2.1,
+        10.0
+      ]
+    },
+    {
+      "bone": "support_4",
+      "center": [
+        -20.506097,
+        2,
+        23.532646
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "support_4_outer_toe",
+      "origin": [
+        -20.506097,
+        2,
+        20.506097
+      ],
+      "role": "forward gripping foot extension",
+      "rotation": [
+        7.594643,
+        -45,
+        0
+      ],
+      "size": [
+        2.4,
+        2,
+        7.053098
+      ]
+    },
+    {
+      "bone": "support_4",
+      "center": [
+        -20.506097,
+        2,
+        21.58313
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "support_4_inner_heel",
+      "origin": [
+        -20.506097,
+        2,
+        20.506097
+      ],
+      "role": "rear gripping foot extension",
+      "rotation": [
+        21.801409,
+        135,
+        0
+      ],
+      "size": [
+        2.4,
+        2,
+        3.154066
+      ]
+    },
+    {
+      "bone": "support_4",
+      "center": [
+        -22.273863607376253,
+        2.35,
+        22.273863607376242
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "support_4_foot_bolt",
+      "origin": [
+        -22.273863607376253,
+        2.35,
+        22.273863607376242
+      ],
+      "role": "bright foot anchor bolt",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        2.0,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "support_4",
+      "center": [
+        -5.656854,
+        16.123106,
+        5.656854
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "support_4_inner_piston_casing",
+      "origin": [
+        -5.656854,
+        12,
+        5.656854
+      ],
+      "role": "inner hydraulic piston housing",
+      "rotation": [
+        43.313857,
+        0,
+        70.528779
+      ],
+      "size": [
+        3.2,
+        9.146211,
+        3.2
+      ]
+    },
+    {
+      "bone": "support_4",
+      "center": [
+        -11.313708,
+        19.942432,
+        11.313708
+      ],
+      "faces": {},
+      "material": "piston",
+      "name": "support_4_inner_piston_rod",
+      "origin": [
+        -11.313708,
+        14,
+        11.313708
+      ],
+      "role": "inner exposed hydraulic rod",
+      "rotation": [
+        15.529462,
+        0,
+        163.866379
+      ],
+      "size": [
+        1.45,
+        12.784864,
+        1.45
+      ]
+    },
+    {
+      "bone": "support_4",
+      "center": [
+        -6.717514,
+        17.533562,
+        6.717514
+      ],
+      "faces": {},
+      "material": "cable_red",
+      "name": "support_4_red_cable_1",
+      "origin": [
+        -6.717514,
+        14.5,
+        6.717514
+      ],
+      "role": "red outrigger hydraulic line",
+      "rotation": [
+        44.369555,
+        0,
+        78.023274
+      ],
+      "size": [
+        1,
+        6.667125,
+        1
+      ]
+    },
+    {
+      "bone": "support_4",
+      "center": [
+        -10.960155,
+        18.217801,
+        10.960155
+      ],
+      "faces": {},
+      "material": "cable_red",
+      "name": "support_4_red_cable_2",
+      "origin": [
+        -10.960155,
+        15.4,
+        10.960155
+      ],
+      "role": "red outrigger hydraulic line return",
+      "rotation": [
+        38.855396,
+        0,
+        126.330431
+      ],
+      "size": [
+        1,
+        6.235601,
+        1
+      ]
+    },
+    {
+      "bone": "support_4",
+      "center": [
+        -20.506096654409884,
+        18.0,
+        20.506096654409873
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "support_4_crown_cap",
+      "origin": [
+        -20.506096654409884,
+        18.0,
+        20.506096654409873
+      ],
+      "role": "outer piston hinge cap",
+      "rotation": [
+        0.0,
+        315.0,
+        0.0
+      ],
+      "size": [
+        5.0,
+        2.2,
+        5.0
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        62.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "cradle_lower_block",
+      "origin": [
+        0.0,
+        62.0,
+        0.0
+      ],
+      "role": "armored lower pitch cradle",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        16.0,
+        11.0,
+        15.0
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        69.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "cradle_crossbeam",
+      "origin": [
+        0.0,
+        69.0,
+        0.0
+      ],
+      "role": "cross-axis pitch cradle beam",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        24.0,
+        7.0,
+        14.0
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        68.5,
+        7.8
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "cradle_front_cheek",
+      "origin": [
+        0.0,
+        68.5,
+        7.8
+      ],
+      "role": "front cradle armor cheek",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        16.0,
+        8.0,
+        3.0
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        68.5,
+        -7.8
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "cradle_back_cheek",
+      "origin": [
+        0.0,
+        68.5,
+        -7.8
+      ],
+      "role": "rear cradle armor cheek",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        16.0,
+        8.0,
+        3.0
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        65.0,
+        9.6
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "front_drive_drum_slab_1",
+      "origin": [
+        0.0,
+        65.0,
+        9.6
+      ],
+      "role": "segmented circular pitch drive drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        2.8
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        67.5,
+        9.6
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "front_drive_drum_slab_2",
+      "origin": [
+        0.0,
+        67.5,
+        9.6
+      ],
+      "role": "segmented circular pitch drive drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        11.0,
+        3.0,
+        2.8
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        70.0,
+        9.6
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "front_drive_drum_slab_3",
+      "origin": [
+        0.0,
+        70.0,
+        9.6
+      ],
+      "role": "segmented circular pitch drive drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        13.0,
+        3.0,
+        2.8
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        72.5,
+        9.6
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "front_drive_drum_slab_4",
+      "origin": [
+        0.0,
+        72.5,
+        9.6
+      ],
+      "role": "segmented circular pitch drive drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        11.0,
+        3.0,
+        2.8
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        75.0,
+        9.6
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "front_drive_drum_slab_5",
+      "origin": [
+        0.0,
+        75.0,
+        9.6
+      ],
+      "role": "segmented circular pitch drive drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        2.8
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        70.0,
+        11.299999999999999
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "front_drive_drum_hub",
+      "origin": [
+        0.0,
+        70.0,
+        11.299999999999999
+      ],
+      "role": "exposed pitch drive axle hub",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.2,
+        3.2,
+        2.0
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        65.0,
+        -9.6
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "back_drive_drum_slab_1",
+      "origin": [
+        0.0,
+        65.0,
+        -9.6
+      ],
+      "role": "segmented circular pitch drive drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        2.8
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        67.5,
+        -9.6
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "back_drive_drum_slab_2",
+      "origin": [
+        0.0,
+        67.5,
+        -9.6
+      ],
+      "role": "segmented circular pitch drive drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        11.0,
+        3.0,
+        2.8
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        70.0,
+        -9.6
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "back_drive_drum_slab_3",
+      "origin": [
+        0.0,
+        70.0,
+        -9.6
+      ],
+      "role": "segmented circular pitch drive drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        13.0,
+        3.0,
+        2.8
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        72.5,
+        -9.6
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "back_drive_drum_slab_4",
+      "origin": [
+        0.0,
+        72.5,
+        -9.6
+      ],
+      "role": "segmented circular pitch drive drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        11.0,
+        3.0,
+        2.8
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        75.0,
+        -9.6
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "back_drive_drum_slab_5",
+      "origin": [
+        0.0,
+        75.0,
+        -9.6
+      ],
+      "role": "segmented circular pitch drive drum",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        3.0,
+        2.8
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        70.0,
+        -11.299999999999999
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "back_drive_drum_hub",
+      "origin": [
+        0.0,
+        70.0,
+        -11.299999999999999
+      ],
+      "role": "exposed pitch drive axle hub",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.2,
+        3.2,
+        2.0
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        9.1,
+        73.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "cannon_receiver_core",
+      "origin": [
+        9.1,
+        73.0,
+        0.0
+      ],
+      "role": "long cannon receiver body",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        17.5,
+        12.0,
+        14.0
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        9.1,
+        79.5,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "cannon_receiver_top",
+      "origin": [
+        9.1,
+        79.5,
+        0.0
+      ],
+      "role": "raised cannon receiver top cover",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        16.099999999999998,
+        3.5,
+        12.0
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        9.799999999999999,
+        66.8,
+        0.0
+      ],
+      "faces": {},
+      "material": "edge_black",
+      "name": "cannon_receiver_bottom",
+      "origin": [
+        9.799999999999999,
+        66.8,
+        0.0
+      ],
+      "role": "lower recoil housing",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        12.6,
+        3.0,
+        10.0
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        18.9,
+        73.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "cannon_front_block",
+      "origin": [
+        18.9,
+        73.0,
+        0.0
+      ],
+      "role": "armored cannon trunnion block",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.199999999999999,
+        13.0,
+        13.0
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        9.1,
+        73.0,
+        7.4
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "cannon_side_panel_front",
+      "origin": [
+        9.1,
+        73.0,
+        7.4
+      ],
+      "role": "front-facing cannon service panel",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        11.2,
+        8.0,
+        1.6
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        9.1,
+        73.0,
+        -7.4
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "cannon_side_panel_back",
+      "origin": [
+        9.1,
+        73.0,
+        -7.4
+      ],
+      "role": "rear-facing cannon service panel",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        11.2,
+        8.0,
+        1.6
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        19.6,
+        78.95084,
+        0
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "cannon_barrel_shroud",
+      "origin": [
+        19.6,
+        73.0,
+        0
+      ],
+      "role": "thick cannon barrel shroud",
+      "rotation": [
+        0,
+        0,
+        -89.037136
+      ],
+      "size": [
+        6.2,
+        13.301681,
+        6.2
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        31.5,
+        78.800893,
+        0
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "cannon_barrel",
+      "origin": [
+        31.5,
+        73.2,
+        0
+      ],
+      "role": "long exposed cannon barrel",
+      "rotation": [
+        0,
+        0,
+        -88.97697
+      ],
+      "size": [
+        3.8,
+        12.401786,
+        3.8
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        44.099999999999994,
+        73.45,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "cannon_muzzle_brake",
+      "origin": [
+        44.099999999999994,
+        73.45,
+        0.0
+      ],
+      "role": "large rectangular muzzle brake",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.199999999999999,
+        7.5,
+        7.5
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        46.269999999999996,
+        73.45,
+        0.0
+      ],
+      "faces": {},
+      "material": "muzzle",
+      "name": "cannon_muzzle_bore",
+      "origin": [
+        46.269999999999996,
+        73.45,
+        0.0
+      ],
+      "role": "dark cannon bore opening",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.7,
+        3.2,
+        3.2
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        44.099999999999994,
+        73.45,
+        -3.3
+      ],
+      "faces": {},
+      "material": "muzzle",
+      "name": "cannon_muzzle_port_back",
+      "origin": [
+        44.099999999999994,
+        73.45,
+        -3.3
+      ],
+      "role": "muzzle brake side vent",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.9599999999999997,
+        2.6,
+        1.2
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        44.099999999999994,
+        73.45,
+        3.3
+      ],
+      "faces": {},
+      "material": "muzzle",
+      "name": "cannon_muzzle_port_front",
+      "origin": [
+        44.099999999999994,
+        73.45,
+        3.3
+      ],
+      "role": "muzzle brake side vent",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        1.9599999999999997,
+        2.6,
+        1.2
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        3.5,
+        90.2,
+        0
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "cannon_top_rail",
+      "origin": [
+        3.5,
+        81.1,
+        0
+      ],
+      "role": "long top accessory rail",
+      "rotation": [
+        0,
+        0,
+        -90
+      ],
+      "size": [
+        1.1,
+        18.6,
+        2
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        9.1,
+        74.475662,
+        3
+      ],
+      "faces": {},
+      "material": "edge_black",
+      "name": "cannon_lower_tube",
+      "origin": [
+        9.1,
+        65.5,
+        3
+      ],
+      "role": "under-barrel recoil cylinder",
+      "rotation": [
+        0,
+        0,
+        -77.124998
+      ],
+      "size": [
+        2.4,
+        18.751323,
+        2.4
+      ]
+    },
+    {
+      "bone": "sensors",
+      "center": [
+        21.349999999999998,
+        80.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "sensor",
+      "name": "cannon_front_sight",
+      "origin": [
+        21.349999999999998,
+        80.0,
+        0.0
+      ],
+      "role": "forward cannon sight box",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        3.5,
+        5.0,
+        4.0
+      ]
+    },
+    {
+      "bone": "launcher",
+      "center": [
+        -10.5,
+        73.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "launcher_receiver_core",
+      "origin": [
+        -10.5,
+        73.0,
+        0.0
+      ],
+      "role": "bulky opposed launcher receiver",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        18.9,
+        16.0,
+        18.0
+      ]
+    },
+    {
+      "bone": "launcher",
+      "center": [
+        -11.2,
+        83.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "launcher_upper_housing",
+      "origin": [
+        -11.2,
+        83.0,
+        0.0
+      ],
+      "role": "high launcher electronics housing",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        14.7,
+        7.0,
+        15.0
+      ]
+    },
+    {
+      "bone": "launcher",
+      "center": [
+        -10.5,
+        63.5,
+        0.0
+      ],
+      "faces": {},
+      "material": "edge_black",
+      "name": "launcher_lower_housing",
+      "origin": [
+        -10.5,
+        63.5,
+        0.0
+      ],
+      "role": "heavy launcher lower grip block",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        14.0,
+        5.0,
+        13.0
+      ]
+    },
+    {
+      "bone": "launcher",
+      "center": [
+        -10.5,
+        73.0,
+        9.7
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "launcher_front_panel",
+      "origin": [
+        -10.5,
+        73.0,
+        9.7
+      ],
+      "role": "front launcher hex-panel equivalent",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        12.6,
+        10.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "launcher",
+      "center": [
+        -10.5,
+        73.0,
+        -9.7
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "launcher_back_panel",
+      "origin": [
+        -10.5,
+        73.0,
+        -9.7
+      ],
+      "role": "rear launcher access panel",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        12.6,
+        10.0,
+        2.0
+      ]
+    },
+    {
+      "bone": "launcher",
+      "center": [
+        -21.7,
+        73.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "launcher_rear_block",
+      "origin": [
+        -21.7,
+        73.0,
+        0.0
+      ],
+      "role": "launcher rear breech block",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        5.6,
+        15.0,
+        16.0
+      ]
+    },
+    {
+      "bone": "launcher",
+      "center": [
+        -27.299999999999997,
+        78.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal",
+      "name": "launcher_tail_upper",
+      "origin": [
+        -27.299999999999997,
+        78.0,
+        0.0
+      ],
+      "role": "upper opposed weapon tail",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        7.0,
+        13.0
+      ]
+    },
+    {
+      "bone": "launcher",
+      "center": [
+        -27.299999999999997,
+        68.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal_dark",
+      "name": "launcher_tail_lower",
+      "origin": [
+        -27.299999999999997,
+        68.0,
+        0.0
+      ],
+      "role": "lower opposed weapon tail",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        7.0,
+        7.0,
+        13.0
+      ]
+    },
+    {
+      "bone": "launcher",
+      "center": [
+        -24.01,
+        71.807759,
+        6
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "launcher_grip_segment_1",
+      "origin": [
+        -24.01,
+        68.0,
+        6
+      ],
+      "role": "angular operator/service grip cage",
+      "rotation": [
+        0,
+        0,
+        141.986446
+      ],
+      "size": [
+        2.4,
+        8.315517,
+        2.4
+      ]
+    },
+    {
+      "bone": "launcher",
+      "center": [
+        -28.7,
+        65.500357,
+        6
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "launcher_grip_segment_2",
+      "origin": [
+        -28.7,
+        62.0,
+        6
+      ],
+      "role": "angular operator/service grip cage",
+      "rotation": [
+        0,
+        0,
+        44.421274
+      ],
+      "size": [
+        2.4,
+        7.700714,
+        2.4
+      ]
+    },
+    {
+      "bone": "launcher",
+      "center": [
+        -33.6,
+        71.0,
+        6
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "launcher_grip_segment_3",
+      "origin": [
+        -33.6,
+        67.0,
+        6
+      ],
+      "role": "angular operator/service grip cage",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.4,
+        8.7,
+        2.4
+      ]
+    },
+    {
+      "bone": "launcher",
+      "center": [
+        -32.199999999999996,
+        71.0,
+        7.0
+      ],
+      "faces": {},
+      "material": "rubber",
+      "name": "launcher_grip_pad",
+      "origin": [
+        -32.199999999999996,
+        71.0,
+        7.0
+      ],
+      "role": "dark inset launcher hand grip",
+      "rotation": [
+        0.0,
+        0.0,
+        -12.0
+      ],
+      "size": [
+        2.8,
+        8.0,
+        3.5
+      ]
+    },
+    {
+      "bone": "sensors",
+      "center": [
+        -13.299999999999999,
+        89.0,
+        0.0
+      ],
+      "faces": {},
+      "material": "sensor",
+      "name": "launcher_top_sensor",
+      "origin": [
+        -13.299999999999999,
+        89.0,
+        0.0
+      ],
+      "role": "raised launcher targeting sensor",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        8.399999999999999,
+        6.0,
+        9.0
+      ]
+    },
+    {
+      "bone": "sensors",
+      "center": [
+        -13.299999999999999,
+        92.4,
+        0.0
+      ],
+      "faces": {},
+      "material": "gunmetal_light",
+      "name": "launcher_top_sensor_brow",
+      "origin": [
+        -13.299999999999999,
+        92.4,
+        0.0
+      ],
+      "role": "sensor rain brow",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        9.799999999999999,
+        1.5,
+        10.0
+      ]
+    },
+    {
+      "bone": "sensors",
+      "center": [
+        -13.299999999999999,
+        89.0,
+        4.9
+      ],
+      "faces": {},
+      "material": "sensor",
+      "name": "launcher_hex_sensor",
+      "origin": [
+        -13.299999999999999,
+        89.0,
+        4.9
+      ],
+      "role": "six-cell launcher sensor plate",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        4.8999999999999995,
+        4.0,
+        1.2
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        -4.2,
+        85.175559,
+        -4
+      ],
+      "faces": {},
+      "material": "copper",
+      "name": "copper_power_cable_1",
+      "origin": [
+        -4.2,
+        81.98,
+        -4
+      ],
+      "role": "parallel copper weapon power bundle",
+      "rotation": [
+        0,
+        0,
+        -118.810794
+      ],
+      "size": [
+        1,
+        6.891119,
+        1
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        -4.2,
+        84.925969,
+        -2
+      ],
+      "faces": {},
+      "material": "copper",
+      "name": "copper_power_cable_2",
+      "origin": [
+        -4.2,
+        81.74,
+        -2
+      ],
+      "role": "parallel copper weapon power bundle",
+      "rotation": [
+        0,
+        0,
+        -118.495639
+      ],
+      "size": [
+        1,
+        6.871938,
+        1
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        -4.2,
+        84.676476,
+        0
+      ],
+      "faces": {},
+      "material": "copper",
+      "name": "copper_power_cable_3",
+      "origin": [
+        -4.2,
+        81.5,
+        0
+      ],
+      "role": "parallel copper weapon power bundle",
+      "rotation": [
+        0,
+        0,
+        -118.17859
+      ],
+      "size": [
+        1,
+        6.852952,
+        1
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        -4.2,
+        84.925969,
+        2
+      ],
+      "faces": {},
+      "material": "copper",
+      "name": "copper_power_cable_4",
+      "origin": [
+        -4.2,
+        81.74,
+        2
+      ],
+      "role": "parallel copper weapon power bundle",
+      "rotation": [
+        0,
+        0,
+        -118.495639
+      ],
+      "size": [
+        1,
+        6.871938,
+        1
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        -4.2,
+        85.175559,
+        4
+      ],
+      "faces": {},
+      "material": "copper",
+      "name": "copper_power_cable_5",
+      "origin": [
+        -4.2,
+        81.98,
+        4
+      ],
+      "role": "parallel copper weapon power bundle",
+      "rotation": [
+        0,
+        0,
+        -118.810794
+      ],
+      "size": [
+        1,
+        6.891119,
+        1
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        -4.9,
+        67.915905,
+        -8
+      ],
+      "faces": {},
+      "material": "cable_red",
+      "name": "red_weapon_cable_1",
+      "origin": [
+        -4.9,
+        65.0,
+        -8
+      ],
+      "role": "red weapon signal cable",
+      "rotation": [
+        9.873495,
+        0,
+        -121.476839
+      ],
+      "size": [
+        0.8,
+        6.231809,
+        0.8
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        -4.9,
+        68.915905,
+        8
+      ],
+      "faces": {},
+      "material": "cable_red",
+      "name": "red_weapon_cable_2",
+      "origin": [
+        -4.9,
+        66.0,
+        8
+      ],
+      "role": "red weapon signal cable",
+      "rotation": [
+        -9.873495,
+        0,
+        -121.476839
+      ],
+      "size": [
+        0.8,
+        6.231809,
+        0.8
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        2.8,
+        81.176476,
+        -7
+      ],
+      "faces": {},
+      "material": "cable_red",
+      "name": "red_weapon_cable_3",
+      "origin": [
+        2.8,
+        78.0,
+        -7
+      ],
+      "role": "red weapon signal cable",
+      "rotation": [
+        0,
+        0,
+        -61.82141
+      ],
+      "size": [
+        0.8,
+        6.752952,
+        0.8
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        2.8,
+        81.176476,
+        7
+      ],
+      "faces": {},
+      "material": "cable_red",
+      "name": "red_weapon_cable_4",
+      "origin": [
+        2.8,
+        78.0,
+        7
+      ],
+      "role": "red weapon signal cable",
+      "rotation": [
+        0,
+        0,
+        -61.82141
+      ],
+      "size": [
+        0.8,
+        6.752952,
+        0.8
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        -4.5,
+        65.5,
+        -7.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "ammo_feed_link_1",
+      "origin": [
+        -4.5,
+        65.5,
+        -7.4
+      ],
+      "role": "individual exposed ammunition feed link",
+      "rotation": [
+        0.0,
+        0.0,
+        -8.0
+      ],
+      "size": [
+        1.0,
+        3.0,
+        1.4
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        -3.0,
+        65.5,
+        -7.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "ammo_feed_link_2",
+      "origin": [
+        -3.0,
+        65.5,
+        -7.4
+      ],
+      "role": "individual exposed ammunition feed link",
+      "rotation": [
+        0.0,
+        0.0,
+        -8.0
+      ],
+      "size": [
+        1.0,
+        3.0,
+        1.4
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        -1.5,
+        65.5,
+        -7.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "ammo_feed_link_3",
+      "origin": [
+        -1.5,
+        65.5,
+        -7.4
+      ],
+      "role": "individual exposed ammunition feed link",
+      "rotation": [
+        0.0,
+        0.0,
+        -8.0
+      ],
+      "size": [
+        1.0,
+        3.0,
+        1.4
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        0.0,
+        65.5,
+        -7.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "ammo_feed_link_4",
+      "origin": [
+        0.0,
+        65.5,
+        -7.4
+      ],
+      "role": "individual exposed ammunition feed link",
+      "rotation": [
+        0.0,
+        0.0,
+        -8.0
+      ],
+      "size": [
+        1.0,
+        3.0,
+        1.4
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        1.5,
+        65.5,
+        -7.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "ammo_feed_link_5",
+      "origin": [
+        1.5,
+        65.5,
+        -7.4
+      ],
+      "role": "individual exposed ammunition feed link",
+      "rotation": [
+        0.0,
+        0.0,
+        -8.0
+      ],
+      "size": [
+        1.0,
+        3.0,
+        1.4
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        3.0,
+        65.5,
+        -7.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "ammo_feed_link_6",
+      "origin": [
+        3.0,
+        65.5,
+        -7.4
+      ],
+      "role": "individual exposed ammunition feed link",
+      "rotation": [
+        0.0,
+        0.0,
+        -8.0
+      ],
+      "size": [
+        1.0,
+        3.0,
+        1.4
+      ]
+    },
+    {
+      "bone": "pitch_cradle",
+      "center": [
+        4.5,
+        65.5,
+        -7.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "ammo_feed_link_7",
+      "origin": [
+        4.5,
+        65.5,
+        -7.4
+      ],
+      "role": "individual exposed ammunition feed link",
+      "rotation": [
+        0.0,
+        0.0,
+        -8.0
+      ],
+      "size": [
+        1.0,
+        3.0,
+        1.4
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        4.8999999999999995,
+        76.0,
+        7.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "cannon_front_panel_bolt_1",
+      "origin": [
+        4.8999999999999995,
+        76.0,
+        7.4
+      ],
+      "role": "raised cannon service-panel bolt",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.7,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        9.1,
+        76.0,
+        7.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "cannon_front_panel_bolt_2",
+      "origin": [
+        9.1,
+        76.0,
+        7.4
+      ],
+      "role": "raised cannon service-panel bolt",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.7,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        13.299999999999999,
+        76.0,
+        7.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "cannon_front_panel_bolt_3",
+      "origin": [
+        13.299999999999999,
+        76.0,
+        7.4
+      ],
+      "role": "raised cannon service-panel bolt",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.7,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        4.8999999999999995,
+        76.0,
+        -7.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "cannon_back_panel_bolt_1",
+      "origin": [
+        4.8999999999999995,
+        76.0,
+        -7.4
+      ],
+      "role": "raised cannon service-panel bolt",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.7,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        9.1,
+        76.0,
+        -7.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "cannon_back_panel_bolt_2",
+      "origin": [
+        9.1,
+        76.0,
+        -7.4
+      ],
+      "role": "raised cannon service-panel bolt",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.7,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "bone": "cannon",
+      "center": [
+        13.299999999999999,
+        76.0,
+        -7.4
+      ],
+      "faces": {},
+      "material": "steel",
+      "name": "cannon_back_panel_bolt_3",
+      "origin": [
+        13.299999999999999,
+        76.0,
+        -7.4
+      ],
+      "role": "raised cannon service-panel bolt",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "size": [
+        0.7,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "multi-view-aegis-hard-surface-semantic-cuboids-v1",
+    "anatomical_axis": "+X cannon, -X launcher, Y up, Z drum/pitch axis",
+    "authored_texture_sources": [],
+    "cable_cuboids": [
+      "copper_power_cable_1",
+      "copper_power_cable_2",
+      "copper_power_cable_3",
+      "copper_power_cable_4",
+      "copper_power_cable_5",
+      "red_weapon_cable_1",
+      "red_weapon_cable_2",
+      "red_weapon_cable_3",
+      "red_weapon_cable_4"
+    ],
+    "camera_parameters_are_estimated": true,
+    "declared_attachments": [
+      {
+        "first": "pedestal_lower_core",
+        "joint": [
+          0.0,
+          8.0,
+          8.5
+        ],
+        "second": "pedestal_lower_front"
+      },
+      {
+        "first": "pedestal_lower_core",
+        "joint": [
+          0.0,
+          8.0,
+          -8.5
+        ],
+        "second": "pedestal_lower_back"
+      },
+      {
+        "first": "pedestal_lower_core",
+        "joint": [
+          -8.5,
+          8.0,
+          0.0
+        ],
+        "second": "pedestal_lower_left"
+      },
+      {
+        "first": "pedestal_lower_core",
+        "joint": [
+          8.5,
+          8.0,
+          0.0
+        ],
+        "second": "pedestal_lower_right"
+      },
+      {
+        "first": "pedestal_lower_core",
+        "joint": [
+          0.0,
+          13.5,
+          0.0
+        ],
+        "second": "pedestal_lower_cap"
+      },
+      {
+        "first": "pedestal_lower_cap",
+        "joint": [
+          0.0,
+          15.2,
+          0.0
+        ],
+        "second": "pedestal_mid_core"
+      },
+      {
+        "first": "pedestal_mid_core",
+        "joint": [
+          0.0,
+          23.0,
+          7.75
+        ],
+        "second": "pedestal_mid_front_panel"
+      },
+      {
+        "first": "pedestal_mid_core",
+        "joint": [
+          0.0,
+          23.0,
+          -7.75
+        ],
+        "second": "pedestal_mid_back_panel"
+      },
+      {
+        "first": "pedestal_mid_core",
+        "joint": [
+          -7.75,
+          23.0,
+          0.0
+        ],
+        "second": "pedestal_mid_left_panel"
+      },
+      {
+        "first": "pedestal_mid_core",
+        "joint": [
+          7.75,
+          23.0,
+          0.0
+        ],
+        "second": "pedestal_mid_right_panel"
+      },
+      {
+        "first": "pedestal_mid_core",
+        "joint": [
+          4.879036790187178,
+          23.0,
+          4.879036790187178
+        ],
+        "second": "pedestal_mid_corner_chamfer_1"
+      },
+      {
+        "first": "pedestal_mid_core",
+        "joint": [
+          4.879036790187178,
+          23.0,
+          -4.879036790187178
+        ],
+        "second": "pedestal_mid_corner_chamfer_2"
+      },
+      {
+        "first": "pedestal_mid_core",
+        "joint": [
+          -4.879036790187178,
+          23.0,
+          -4.879036790187179
+        ],
+        "second": "pedestal_mid_corner_chamfer_3"
+      },
+      {
+        "first": "pedestal_mid_core",
+        "joint": [
+          -4.879036790187179,
+          23.0,
+          4.879036790187177
+        ],
+        "second": "pedestal_mid_corner_chamfer_4"
+      },
+      {
+        "first": "pedestal_mid_core",
+        "joint": [
+          0.0,
+          50.5,
+          0.0
+        ],
+        "second": "pedestal_upper_cap"
+      },
+      {
+        "first": "pedestal_upper_cap",
+        "joint": [
+          0.0,
+          52.35,
+          0.0
+        ],
+        "second": "yaw_ring_core"
+      },
+      {
+        "first": "yaw_ring_core",
+        "joint": [
+          3.889087296526011,
+          55.0,
+          9.38908729652601
+        ],
+        "second": "yaw_ring_segment_1"
+      },
+      {
+        "first": "yaw_ring_core",
+        "joint": [
+          9.38908729652601,
+          55.0,
+          3.889087296526012
+        ],
+        "second": "yaw_ring_segment_2"
+      },
+      {
+        "first": "yaw_ring_core",
+        "joint": [
+          9.38908729652601,
+          55.0,
+          -3.8890872965260104
+        ],
+        "second": "yaw_ring_segment_3"
+      },
+      {
+        "first": "yaw_ring_core",
+        "joint": [
+          3.8890872965260126,
+          55.0,
+          -9.38908729652601
+        ],
+        "second": "yaw_ring_segment_4"
+      },
+      {
+        "first": "yaw_ring_core",
+        "joint": [
+          -3.88908729652601,
+          55.0,
+          -9.389087296526013
+        ],
+        "second": "yaw_ring_segment_5"
+      },
+      {
+        "first": "yaw_ring_core",
+        "joint": [
+          -9.38908729652601,
+          55.0,
+          -3.889087296526013
+        ],
+        "second": "yaw_ring_segment_6"
+      },
+      {
+        "first": "yaw_ring_core",
+        "joint": [
+          -9.389087296526013,
+          55.0,
+          3.8890872965260095
+        ],
+        "second": "yaw_ring_segment_7"
+      },
+      {
+        "first": "yaw_ring_core",
+        "joint": [
+          -3.8890872965260135,
+          55.0,
+          9.38908729652601
+        ],
+        "second": "yaw_ring_segment_8"
+      },
+      {
+        "first": "pedestal_lower_core",
+        "joint": [
+          7.071067811865475,
+          12.0,
+          7.0710678118654755
+        ],
+        "second": "support_1_radial_beam"
+      },
+      {
+        "first": "support_1_radial_beam",
+        "joint": [
+          14.849242404917497,
+          10.0,
+          14.849242404917499
+        ],
+        "second": "support_1_outer_brace"
+      },
+      {
+        "first": "support_1_outer_brace",
+        "joint": [
+          20.506096654409877,
+          18.0,
+          20.50609665440988
+        ],
+        "second": "support_1_outer_piston_casing"
+      },
+      {
+        "first": "support_1_outer_piston_casing",
+        "joint": [
+          20.506096654409877,
+          9.0,
+          20.50609665440988
+        ],
+        "second": "support_1_outer_piston_rod"
+      },
+      {
+        "first": "support_1_outer_piston_rod",
+        "joint": [
+          20.506096654409877,
+          2.0,
+          20.50609665440988
+        ],
+        "second": "support_1_ground_foot"
+      },
+      {
+        "first": "support_1_ground_foot",
+        "joint": [
+          20.506096654409877,
+          2.0,
+          20.50609665440988
+        ],
+        "second": "support_1_outer_toe"
+      },
+      {
+        "first": "support_1_ground_foot",
+        "joint": [
+          20.506096654409877,
+          2.0,
+          20.50609665440988
+        ],
+        "second": "support_1_inner_heel"
+      },
+      {
+        "first": "support_1_ground_foot",
+        "joint": [
+          22.273863607376246,
+          2.0,
+          22.27386360737625
+        ],
+        "second": "support_1_foot_bolt"
+      },
+      {
+        "first": "pedestal_lower_core",
+        "joint": [
+          5.65685424949238,
+          12.0,
+          5.656854249492381
+        ],
+        "second": "support_1_inner_piston_casing"
+      },
+      {
+        "first": "support_1_inner_piston_casing",
+        "joint": [
+          11.31370849898476,
+          14.0,
+          11.313708498984761
+        ],
+        "second": "support_1_inner_piston_rod"
+      },
+      {
+        "first": "pedestal_lower_cap",
+        "joint": [
+          6.717514421272201,
+          14.5,
+          6.7175144212722016
+        ],
+        "second": "support_1_red_cable_1"
+      },
+      {
+        "first": "support_1_red_cable_1",
+        "joint": [
+          10.960155108391486,
+          15.4,
+          10.960155108391488
+        ],
+        "second": "support_1_red_cable_2"
+      },
+      {
+        "first": "support_1_outer_brace",
+        "joint": [
+          20.506096654409877,
+          18.0,
+          20.50609665440988
+        ],
+        "second": "support_1_crown_cap"
+      },
+      {
+        "first": "pedestal_lower_core",
+        "joint": [
+          7.0710678118654755,
+          12.0,
+          -7.071067811865475
+        ],
+        "second": "support_2_radial_beam"
+      },
+      {
+        "first": "support_2_radial_beam",
+        "joint": [
+          14.849242404917499,
+          10.0,
+          -14.849242404917497
+        ],
+        "second": "support_2_outer_brace"
+      },
+      {
+        "first": "support_2_outer_brace",
+        "joint": [
+          20.50609665440988,
+          18.0,
+          -20.506096654409877
+        ],
+        "second": "support_2_outer_piston_casing"
+      },
+      {
+        "first": "support_2_outer_piston_casing",
+        "joint": [
+          20.50609665440988,
+          9.0,
+          -20.506096654409877
+        ],
+        "second": "support_2_outer_piston_rod"
+      },
+      {
+        "first": "support_2_outer_piston_rod",
+        "joint": [
+          20.50609665440988,
+          2.0,
+          -20.506096654409877
+        ],
+        "second": "support_2_ground_foot"
+      },
+      {
+        "first": "support_2_ground_foot",
+        "joint": [
+          20.50609665440988,
+          2.0,
+          -20.506096654409877
+        ],
+        "second": "support_2_outer_toe"
+      },
+      {
+        "first": "support_2_ground_foot",
+        "joint": [
+          20.50609665440988,
+          2.0,
+          -20.506096654409877
+        ],
+        "second": "support_2_inner_heel"
+      },
+      {
+        "first": "support_2_ground_foot",
+        "joint": [
+          22.27386360737625,
+          2.0,
+          -22.273863607376246
+        ],
+        "second": "support_2_foot_bolt"
+      },
+      {
+        "first": "pedestal_lower_core",
+        "joint": [
+          5.656854249492381,
+          12.0,
+          -5.65685424949238
+        ],
+        "second": "support_2_inner_piston_casing"
+      },
+      {
+        "first": "support_2_inner_piston_casing",
+        "joint": [
+          11.313708498984761,
+          14.0,
+          -11.31370849898476
+        ],
+        "second": "support_2_inner_piston_rod"
+      },
+      {
+        "first": "pedestal_lower_cap",
+        "joint": [
+          6.7175144212722016,
+          14.5,
+          -6.717514421272201
+        ],
+        "second": "support_2_red_cable_1"
+      },
+      {
+        "first": "support_2_red_cable_1",
+        "joint": [
+          10.960155108391488,
+          15.4,
+          -10.960155108391486
+        ],
+        "second": "support_2_red_cable_2"
+      },
+      {
+        "first": "support_2_outer_brace",
+        "joint": [
+          20.50609665440988,
+          18.0,
+          -20.506096654409877
+        ],
+        "second": "support_2_crown_cap"
+      },
+      {
+        "first": "pedestal_lower_core",
+        "joint": [
+          -7.071067811865475,
+          12.0,
+          -7.071067811865477
+        ],
+        "second": "support_3_radial_beam"
+      },
+      {
+        "first": "support_3_radial_beam",
+        "joint": [
+          -14.849242404917497,
+          10.0,
+          -14.8492424049175
+        ],
+        "second": "support_3_outer_brace"
+      },
+      {
+        "first": "support_3_outer_brace",
+        "joint": [
+          -20.506096654409877,
+          18.0,
+          -20.506096654409884
+        ],
+        "second": "support_3_outer_piston_casing"
+      },
+      {
+        "first": "support_3_outer_piston_casing",
+        "joint": [
+          -20.506096654409877,
+          9.0,
+          -20.506096654409884
+        ],
+        "second": "support_3_outer_piston_rod"
+      },
+      {
+        "first": "support_3_outer_piston_rod",
+        "joint": [
+          -20.506096654409877,
+          2.0,
+          -20.506096654409884
+        ],
+        "second": "support_3_ground_foot"
+      },
+      {
+        "first": "support_3_ground_foot",
+        "joint": [
+          -20.506096654409877,
+          2.0,
+          -20.506096654409884
+        ],
+        "second": "support_3_outer_toe"
+      },
+      {
+        "first": "support_3_ground_foot",
+        "joint": [
+          -20.506096654409877,
+          2.0,
+          -20.506096654409884
+        ],
+        "second": "support_3_inner_heel"
+      },
+      {
+        "first": "support_3_ground_foot",
+        "joint": [
+          -22.273863607376246,
+          2.0,
+          -22.273863607376253
+        ],
+        "second": "support_3_foot_bolt"
+      },
+      {
+        "first": "pedestal_lower_core",
+        "joint": [
+          -5.65685424949238,
+          12.0,
+          -5.6568542494923815
+        ],
+        "second": "support_3_inner_piston_casing"
+      },
+      {
+        "first": "support_3_inner_piston_casing",
+        "joint": [
+          -11.31370849898476,
+          14.0,
+          -11.313708498984763
+        ],
+        "second": "support_3_inner_piston_rod"
+      },
+      {
+        "first": "pedestal_lower_cap",
+        "joint": [
+          -6.717514421272201,
+          14.5,
+          -6.717514421272203
+        ],
+        "second": "support_3_red_cable_1"
+      },
+      {
+        "first": "support_3_red_cable_1",
+        "joint": [
+          -10.960155108391486,
+          15.4,
+          -10.96015510839149
+        ],
+        "second": "support_3_red_cable_2"
+      },
+      {
+        "first": "support_3_outer_brace",
+        "joint": [
+          -20.506096654409877,
+          18.0,
+          -20.506096654409884
+        ],
+        "second": "support_3_crown_cap"
+      },
+      {
+        "first": "pedestal_lower_core",
+        "joint": [
+          -7.071067811865477,
+          12.0,
+          7.071067811865474
+        ],
+        "second": "support_4_radial_beam"
+      },
+      {
+        "first": "support_4_radial_beam",
+        "joint": [
+          -14.8492424049175,
+          10.0,
+          14.849242404917494
+        ],
+        "second": "support_4_outer_brace"
+      },
+      {
+        "first": "support_4_outer_brace",
+        "joint": [
+          -20.506096654409884,
+          18.0,
+          20.506096654409873
+        ],
+        "second": "support_4_outer_piston_casing"
+      },
+      {
+        "first": "support_4_outer_piston_casing",
+        "joint": [
+          -20.506096654409884,
+          9.0,
+          20.506096654409873
+        ],
+        "second": "support_4_outer_piston_rod"
+      },
+      {
+        "first": "support_4_outer_piston_rod",
+        "joint": [
+          -20.506096654409884,
+          2.0,
+          20.506096654409873
+        ],
+        "second": "support_4_ground_foot"
+      },
+      {
+        "first": "support_4_ground_foot",
+        "joint": [
+          -20.506096654409884,
+          2.0,
+          20.506096654409873
+        ],
+        "second": "support_4_outer_toe"
+      },
+      {
+        "first": "support_4_ground_foot",
+        "joint": [
+          -20.506096654409884,
+          2.0,
+          20.506096654409873
+        ],
+        "second": "support_4_inner_heel"
+      },
+      {
+        "first": "support_4_ground_foot",
+        "joint": [
+          -22.273863607376253,
+          2.0,
+          22.273863607376242
+        ],
+        "second": "support_4_foot_bolt"
+      },
+      {
+        "first": "pedestal_lower_core",
+        "joint": [
+          -5.6568542494923815,
+          12.0,
+          5.656854249492379
+        ],
+        "second": "support_4_inner_piston_casing"
+      },
+      {
+        "first": "support_4_inner_piston_casing",
+        "joint": [
+          -11.313708498984763,
+          14.0,
+          11.313708498984758
+        ],
+        "second": "support_4_inner_piston_rod"
+      },
+      {
+        "first": "pedestal_lower_cap",
+        "joint": [
+          -6.717514421272203,
+          14.5,
+          6.7175144212722
+        ],
+        "second": "support_4_red_cable_1"
+      },
+      {
+        "first": "support_4_red_cable_1",
+        "joint": [
+          -10.96015510839149,
+          15.4,
+          10.960155108391485
+        ],
+        "second": "support_4_red_cable_2"
+      },
+      {
+        "first": "support_4_outer_brace",
+        "joint": [
+          -20.506096654409884,
+          18.0,
+          20.506096654409873
+        ],
+        "second": "support_4_crown_cap"
+      },
+      {
+        "first": "yaw_ring_core",
+        "joint": [
+          0.0,
+          57.5,
+          0.0
+        ],
+        "second": "cradle_lower_block"
+      },
+      {
+        "first": "cradle_lower_block",
+        "joint": [
+          0.0,
+          65.5,
+          0.0
+        ],
+        "second": "cradle_crossbeam"
+      },
+      {
+        "first": "cradle_crossbeam",
+        "joint": [
+          0.0,
+          68.5,
+          6.5
+        ],
+        "second": "cradle_front_cheek"
+      },
+      {
+        "first": "cradle_crossbeam",
+        "joint": [
+          0.0,
+          68.5,
+          -6.5
+        ],
+        "second": "cradle_back_cheek"
+      },
+      {
+        "first": "cradle_front_cheek",
+        "joint": [
+          0.0,
+          65.5,
+          9.0
+        ],
+        "second": "front_drive_drum_slab_1"
+      },
+      {
+        "first": "front_drive_drum_slab_1",
+        "joint": [
+          0.0,
+          66.25,
+          9.6
+        ],
+        "second": "front_drive_drum_slab_2"
+      },
+      {
+        "first": "front_drive_drum_slab_2",
+        "joint": [
+          0.0,
+          68.75,
+          9.6
+        ],
+        "second": "front_drive_drum_slab_3"
+      },
+      {
+        "first": "front_drive_drum_slab_3",
+        "joint": [
+          0.0,
+          71.25,
+          9.6
+        ],
+        "second": "front_drive_drum_slab_4"
+      },
+      {
+        "first": "front_drive_drum_slab_4",
+        "joint": [
+          0.0,
+          73.75,
+          9.6
+        ],
+        "second": "front_drive_drum_slab_5"
+      },
+      {
+        "first": "front_drive_drum_slab_3",
+        "joint": [
+          0.0,
+          70.0,
+          10.4
+        ],
+        "second": "front_drive_drum_hub"
+      },
+      {
+        "first": "cradle_back_cheek",
+        "joint": [
+          0.0,
+          65.5,
+          -9.0
+        ],
+        "second": "back_drive_drum_slab_1"
+      },
+      {
+        "first": "back_drive_drum_slab_1",
+        "joint": [
+          0.0,
+          66.25,
+          -9.6
+        ],
+        "second": "back_drive_drum_slab_2"
+      },
+      {
+        "first": "back_drive_drum_slab_2",
+        "joint": [
+          0.0,
+          68.75,
+          -9.6
+        ],
+        "second": "back_drive_drum_slab_3"
+      },
+      {
+        "first": "back_drive_drum_slab_3",
+        "joint": [
+          0.0,
+          71.25,
+          -9.6
+        ],
+        "second": "back_drive_drum_slab_4"
+      },
+      {
+        "first": "back_drive_drum_slab_4",
+        "joint": [
+          0.0,
+          73.75,
+          -9.6
+        ],
+        "second": "back_drive_drum_slab_5"
+      },
+      {
+        "first": "back_drive_drum_slab_3",
+        "joint": [
+          0.0,
+          70.0,
+          -10.4
+        ],
+        "second": "back_drive_drum_hub"
+      },
+      {
+        "first": "cradle_crossbeam",
+        "joint": [
+          1.4,
+          71.0,
+          0.0
+        ],
+        "second": "cannon_receiver_core"
+      },
+      {
+        "first": "cannon_receiver_core",
+        "joint": [
+          9.1,
+          78.5,
+          0.0
+        ],
+        "second": "cannon_receiver_top"
+      },
+      {
+        "first": "cannon_receiver_core",
+        "joint": [
+          9.799999999999999,
+          68.0,
+          0.0
+        ],
+        "second": "cannon_receiver_bottom"
+      },
+      {
+        "first": "cannon_receiver_core",
+        "joint": [
+          17.15,
+          73.0,
+          0.0
+        ],
+        "second": "cannon_front_block"
+      },
+      {
+        "first": "cannon_receiver_core",
+        "joint": [
+          9.1,
+          73.0,
+          6.6
+        ],
+        "second": "cannon_side_panel_front"
+      },
+      {
+        "first": "cannon_receiver_core",
+        "joint": [
+          9.1,
+          73.0,
+          -6.6
+        ],
+        "second": "cannon_side_panel_back"
+      },
+      {
+        "first": "cannon_front_block",
+        "joint": [
+          19.599999999999998,
+          73.0,
+          0.0
+        ],
+        "second": "cannon_barrel_shroud"
+      },
+      {
+        "first": "cannon_barrel_shroud",
+        "joint": [
+          31.499999999999996,
+          73.2,
+          0.0
+        ],
+        "second": "cannon_barrel"
+      },
+      {
+        "first": "cannon_barrel",
+        "joint": [
+          42.699999999999996,
+          73.4,
+          0.0
+        ],
+        "second": "cannon_muzzle_brake"
+      },
+      {
+        "first": "cannon_muzzle_brake",
+        "joint": [
+          46.059999999999995,
+          73.45,
+          0.0
+        ],
+        "second": "cannon_muzzle_bore"
+      },
+      {
+        "first": "cannon_muzzle_brake",
+        "joint": [
+          44.099999999999994,
+          73.45,
+          -2.8049999999999997
+        ],
+        "second": "cannon_muzzle_port_back"
+      },
+      {
+        "first": "cannon_muzzle_brake",
+        "joint": [
+          44.099999999999994,
+          73.45,
+          2.8049999999999997
+        ],
+        "second": "cannon_muzzle_port_front"
+      },
+      {
+        "first": "cannon_receiver_top",
+        "joint": [
+          9.1,
+          80.9,
+          0.0
+        ],
+        "second": "cannon_top_rail"
+      },
+      {
+        "first": "cannon_receiver_bottom",
+        "joint": [
+          9.799999999999999,
+          66.8,
+          3.0
+        ],
+        "second": "cannon_lower_tube"
+      },
+      {
+        "first": "cannon_front_block",
+        "joint": [
+          20.65,
+          78.5,
+          0.0
+        ],
+        "second": "cannon_front_sight"
+      },
+      {
+        "first": "cradle_crossbeam",
+        "joint": [
+          -1.4,
+          71.0,
+          0.0
+        ],
+        "second": "launcher_receiver_core"
+      },
+      {
+        "first": "launcher_receiver_core",
+        "joint": [
+          -11.2,
+          80.5,
+          0.0
+        ],
+        "second": "launcher_upper_housing"
+      },
+      {
+        "first": "launcher_receiver_core",
+        "joint": [
+          -10.5,
+          66.0,
+          0.0
+        ],
+        "second": "launcher_lower_housing"
+      },
+      {
+        "first": "launcher_receiver_core",
+        "joint": [
+          -10.5,
+          73.0,
+          8.9
+        ],
+        "second": "launcher_front_panel"
+      },
+      {
+        "first": "launcher_receiver_core",
+        "joint": [
+          -10.5,
+          73.0,
+          -8.9
+        ],
+        "second": "launcher_back_panel"
+      },
+      {
+        "first": "launcher_receiver_core",
+        "joint": [
+          -19.599999999999998,
+          73.0,
+          0.0
+        ],
+        "second": "launcher_rear_block"
+      },
+      {
+        "first": "launcher_rear_block",
+        "joint": [
+          -24.15,
+          76.0,
+          0.0
+        ],
+        "second": "launcher_tail_upper"
+      },
+      {
+        "first": "launcher_rear_block",
+        "joint": [
+          -24.15,
+          70.0,
+          0.0
+        ],
+        "second": "launcher_tail_lower"
+      },
+      {
+        "first": "launcher_tail_lower",
+        "joint": [
+          -24.009999999999998,
+          68.0,
+          6.0
+        ],
+        "second": "launcher_grip_segment_1"
+      },
+      {
+        "first": "launcher_grip_segment_1",
+        "joint": [
+          -28.7,
+          62.0,
+          6.0
+        ],
+        "second": "launcher_grip_segment_2"
+      },
+      {
+        "first": "launcher_grip_segment_2",
+        "joint": [
+          -33.599999999999994,
+          67.0,
+          6.0
+        ],
+        "second": "launcher_grip_segment_3"
+      },
+      {
+        "first": "launcher_grip_segment_3",
+        "joint": [
+          -33.11,
+          71.0,
+          7.0
+        ],
+        "second": "launcher_grip_pad"
+      },
+      {
+        "first": "launcher_upper_housing",
+        "joint": [
+          -13.299999999999999,
+          86.0,
+          0.0
+        ],
+        "second": "launcher_top_sensor"
+      },
+      {
+        "first": "launcher_top_sensor",
+        "joint": [
+          -13.299999999999999,
+          91.7,
+          0.0
+        ],
+        "second": "launcher_top_sensor_brow"
+      },
+      {
+        "first": "launcher_top_sensor",
+        "joint": [
+          -13.299999999999999,
+          89.0,
+          4.4
+        ],
+        "second": "launcher_hex_sensor"
+      },
+      {
+        "first": "launcher_upper_housing",
+        "joint": [
+          -4.199999999999999,
+          81.97999999999999,
+          -4.0
+        ],
+        "second": "copper_power_cable_1"
+      },
+      {
+        "first": "launcher_upper_housing",
+        "joint": [
+          -4.199999999999999,
+          81.74000000000001,
+          -2.0
+        ],
+        "second": "copper_power_cable_2"
+      },
+      {
+        "first": "launcher_upper_housing",
+        "joint": [
+          -4.199999999999999,
+          81.5,
+          0.0
+        ],
+        "second": "copper_power_cable_3"
+      },
+      {
+        "first": "launcher_upper_housing",
+        "joint": [
+          -4.199999999999999,
+          81.74000000000001,
+          2.0
+        ],
+        "second": "copper_power_cable_4"
+      },
+      {
+        "first": "launcher_upper_housing",
+        "joint": [
+          -4.199999999999999,
+          81.97999999999999,
+          4.0
+        ],
+        "second": "copper_power_cable_5"
+      },
+      {
+        "first": "launcher_receiver_core",
+        "joint": [
+          -4.8999999999999995,
+          65.0,
+          -8.0
+        ],
+        "second": "red_weapon_cable_1"
+      },
+      {
+        "first": "launcher_receiver_core",
+        "joint": [
+          -4.8999999999999995,
+          66.0,
+          8.0
+        ],
+        "second": "red_weapon_cable_2"
+      },
+      {
+        "first": "cannon_receiver_core",
+        "joint": [
+          2.8,
+          78.0,
+          -7.0
+        ],
+        "second": "red_weapon_cable_3"
+      },
+      {
+        "first": "cannon_receiver_core",
+        "joint": [
+          2.8,
+          78.0,
+          7.0
+        ],
+        "second": "red_weapon_cable_4"
+      },
+      {
+        "first": "cradle_crossbeam",
+        "joint": [
+          -4.5,
+          66.6,
+          -6.8
+        ],
+        "second": "ammo_feed_link_1"
+      },
+      {
+        "first": "cradle_crossbeam",
+        "joint": [
+          -3.0,
+          66.6,
+          -6.8
+        ],
+        "second": "ammo_feed_link_2"
+      },
+      {
+        "first": "cradle_crossbeam",
+        "joint": [
+          -1.5,
+          66.6,
+          -6.8
+        ],
+        "second": "ammo_feed_link_3"
+      },
+      {
+        "first": "cradle_crossbeam",
+        "joint": [
+          0.0,
+          66.6,
+          -6.8
+        ],
+        "second": "ammo_feed_link_4"
+      },
+      {
+        "first": "cradle_crossbeam",
+        "joint": [
+          1.5,
+          66.6,
+          -6.8
+        ],
+        "second": "ammo_feed_link_5"
+      },
+      {
+        "first": "cradle_crossbeam",
+        "joint": [
+          3.0,
+          66.6,
+          -6.8
+        ],
+        "second": "ammo_feed_link_6"
+      },
+      {
+        "first": "cradle_crossbeam",
+        "joint": [
+          4.5,
+          66.6,
+          -6.8
+        ],
+        "second": "ammo_feed_link_7"
+      },
+      {
+        "first": "cannon_side_panel_front",
+        "joint": [
+          4.8999999999999995,
+          76.0,
+          7.1000000000000005
+        ],
+        "second": "cannon_front_panel_bolt_1"
+      },
+      {
+        "first": "cannon_side_panel_front",
+        "joint": [
+          9.1,
+          76.0,
+          7.1000000000000005
+        ],
+        "second": "cannon_front_panel_bolt_2"
+      },
+      {
+        "first": "cannon_side_panel_front",
+        "joint": [
+          13.299999999999999,
+          76.0,
+          7.1000000000000005
+        ],
+        "second": "cannon_front_panel_bolt_3"
+      },
+      {
+        "first": "cannon_side_panel_back",
+        "joint": [
+          4.8999999999999995,
+          76.0,
+          -7.1000000000000005
+        ],
+        "second": "cannon_back_panel_bolt_1"
+      },
+      {
+        "first": "cannon_side_panel_back",
+        "joint": [
+          9.1,
+          76.0,
+          -7.1000000000000005
+        ],
+        "second": "cannon_back_panel_bolt_2"
+      },
+      {
+        "first": "cannon_side_panel_back",
+        "joint": [
+          13.299999999999999,
+          76.0,
+          -7.1000000000000005
+        ],
+        "second": "cannon_back_panel_bolt_3"
+      }
+    ],
+    "feature_inventory": {
+      "ammo_feed_links": 7,
+      "cable_cuboids": 17,
+      "cannon_cuboids": 21,
+      "grounded_feet": 4,
+      "launcher_cuboids": 15,
+      "outrigger_assemblies": 4,
+      "outrigger_cuboids": 52,
+      "pedestal_cuboids": 25,
+      "pitch_drive_drum_cuboids": 12,
+      "texture_landmarks": 32,
+      "vertical_outer_pistons": 4
+    },
+    "hidden_geometry_established": false,
+    "lane": "agent-authored-semantic-volume",
+    "outriggers": [
+      {
+        "azimuth_degrees": 45.0,
+        "foot": "support_1_ground_foot",
+        "ground_contact": [
+          22.273863607376246,
+          0.0,
+          22.27386360737625
+        ],
+        "inner_piston": [
+          "support_1_inner_piston_casing",
+          "support_1_inner_piston_rod"
+        ],
+        "name": "support_1",
+        "outer_piston": [
+          "support_1_outer_piston_casing",
+          "support_1_outer_piston_rod"
+        ],
+        "root": [
+          5.65685424949238,
+          12.0,
+          5.656854249492381
+        ]
+      },
+      {
+        "azimuth_degrees": 135.0,
+        "foot": "support_2_ground_foot",
+        "ground_contact": [
+          22.27386360737625,
+          0.0,
+          -22.273863607376246
+        ],
+        "inner_piston": [
+          "support_2_inner_piston_casing",
+          "support_2_inner_piston_rod"
+        ],
+        "name": "support_2",
+        "outer_piston": [
+          "support_2_outer_piston_casing",
+          "support_2_outer_piston_rod"
+        ],
+        "root": [
+          5.656854249492381,
+          12.0,
+          -5.65685424949238
+        ]
+      },
+      {
+        "azimuth_degrees": 225.0,
+        "foot": "support_3_ground_foot",
+        "ground_contact": [
+          -22.273863607376246,
+          0.0,
+          -22.273863607376253
+        ],
+        "inner_piston": [
+          "support_3_inner_piston_casing",
+          "support_3_inner_piston_rod"
+        ],
+        "name": "support_3",
+        "outer_piston": [
+          "support_3_outer_piston_casing",
+          "support_3_outer_piston_rod"
+        ],
+        "root": [
+          -5.65685424949238,
+          12.0,
+          -5.6568542494923815
+        ]
+      },
+      {
+        "azimuth_degrees": 315.0,
+        "foot": "support_4_ground_foot",
+        "ground_contact": [
+          -22.273863607376253,
+          0.0,
+          22.273863607376242
+        ],
+        "inner_piston": [
+          "support_4_inner_piston_casing",
+          "support_4_inner_piston_rod"
+        ],
+        "name": "support_4",
+        "outer_piston": [
+          "support_4_outer_piston_casing",
+          "support_4_outer_piston_rod"
+        ],
+        "root": [
+          -5.6568542494923815,
+          12.0,
+          5.656854249492379
+        ]
+      }
+    ],
+    "pitch_axis": {
+      "axis": "+Z",
+      "bone": "pitch_cradle",
+      "pivot": [
+        0,
+        70,
+        0
+      ]
+    },
+    "reference_views": [
+      {
+        "camera": "uncalibrated elevated perspective",
+        "height": 1000,
+        "image": "/Users/derekwang1/aai-labs-modernity/img2blockbench-round2-aegis/image-3.png",
+        "sha256": "31bb69536ce0f26540034096402cebc6e006ee9cb7ec56b38deb5bf04afb2e23",
+        "width": 1000
+      },
+      {
+        "camera": "uncalibrated elevated perspective",
+        "height": 1000,
+        "image": "/Users/derekwang1/aai-labs-modernity/img2blockbench-round2-aegis/image-4.png",
+        "sha256": "d53b51bd62a7f64f1a4c792f1bd1005de204ed1ba0475ca4fb527784163ade4b",
+        "width": 1000
+      },
+      {
+        "camera": "uncalibrated elevated perspective",
+        "height": 1000,
+        "image": "/Users/derekwang1/aai-labs-modernity/img2blockbench-round2-aegis/image-5.png",
+        "sha256": "83f83385de5d68c3b4b1f8bc7d371dc086780f4388754a8414b07f0294cfe7a6",
+        "width": 1000
+      }
+    ],
+    "single_view_hidden_geometry": "Cable routing, undersides, internal weapon mechanisms, and concealed support faces are conservative hard-surface inferences from three uncalibrated views.",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0,
+    "visual_hull_used": false,
+    "weapon_axes": {
+      "cannon": {
+        "bone": "cannon",
+        "direction": [
+          1,
+          0,
+          0
+        ]
+      },
+      "launcher": {
+        "bone": "launcher",
+        "direction": [
+          -1,
+          0,
+          0
+        ]
+      }
+    },
+    "yaw_axis": {
+      "axis": "+Y",
+      "bone": "yaw_ring",
+      "pivot": [
+        0,
+        55,
+        0
+      ]
+    }
+  },
+  "geometry": {
+    "precision": 32
+  },
+  "id": "aegis_x2_turret",
+  "landmarks": [
+    {
+      "center_color": "#f5f7f3",
+      "center_uv": [
+        0.5,
+        0.38
+      ],
+      "color": "#737b79",
+      "cube": "pedestal_mid_front_panel",
+      "face": "south",
+      "name": "front_pedestal_label",
+      "size": [
+        7,
+        2
+      ]
+    },
+    {
+      "center_color": "#d5dad8",
+      "center_uv": [
+        0.18,
+        0.78
+      ],
+      "color": "#495156",
+      "cube": "pedestal_mid_front_panel",
+      "face": "south",
+      "name": "front_pedestal_bolt_1",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#d5dad8",
+      "center_uv": [
+        0.82,
+        0.78
+      ],
+      "color": "#495156",
+      "cube": "pedestal_mid_front_panel",
+      "face": "south",
+      "name": "front_pedestal_bolt_2",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5f7f3",
+      "center_uv": [
+        0.5,
+        0.38
+      ],
+      "color": "#737b79",
+      "cube": "pedestal_mid_back_panel",
+      "face": "north",
+      "name": "back_pedestal_label",
+      "size": [
+        7,
+        2
+      ]
+    },
+    {
+      "center_color": "#d5dad8",
+      "center_uv": [
+        0.18,
+        0.78
+      ],
+      "color": "#495156",
+      "cube": "pedestal_mid_back_panel",
+      "face": "north",
+      "name": "back_pedestal_bolt_1",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#d5dad8",
+      "center_uv": [
+        0.82,
+        0.78
+      ],
+      "color": "#495156",
+      "cube": "pedestal_mid_back_panel",
+      "face": "north",
+      "name": "back_pedestal_bolt_2",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5f7f3",
+      "center_uv": [
+        0.5,
+        0.38
+      ],
+      "color": "#737b79",
+      "cube": "pedestal_mid_left_panel",
+      "face": "west",
+      "name": "left_pedestal_label",
+      "size": [
+        7,
+        2
+      ]
+    },
+    {
+      "center_color": "#d5dad8",
+      "center_uv": [
+        0.18,
+        0.78
+      ],
+      "color": "#495156",
+      "cube": "pedestal_mid_left_panel",
+      "face": "west",
+      "name": "left_pedestal_bolt_1",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#d5dad8",
+      "center_uv": [
+        0.82,
+        0.78
+      ],
+      "color": "#495156",
+      "cube": "pedestal_mid_left_panel",
+      "face": "west",
+      "name": "left_pedestal_bolt_2",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#f5f7f3",
+      "center_uv": [
+        0.5,
+        0.38
+      ],
+      "color": "#737b79",
+      "cube": "pedestal_mid_right_panel",
+      "face": "east",
+      "name": "right_pedestal_label",
+      "size": [
+        7,
+        2
+      ]
+    },
+    {
+      "center_color": "#d5dad8",
+      "center_uv": [
+        0.18,
+        0.78
+      ],
+      "color": "#495156",
+      "cube": "pedestal_mid_right_panel",
+      "face": "east",
+      "name": "right_pedestal_bolt_1",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#d5dad8",
+      "center_uv": [
+        0.82,
+        0.78
+      ],
+      "color": "#495156",
+      "cube": "pedestal_mid_right_panel",
+      "face": "east",
+      "name": "right_pedestal_bolt_2",
+      "size": [
+        1,
+        1
+      ]
+    },
+    {
+      "center_color": "#65717a",
+      "center_uv": [
+        0.5,
+        0.62
+      ],
+      "color": "#171b1f",
+      "cube": "cannon_side_panel_front",
+      "face": "south",
+      "name": "front_cannon_seam",
+      "size": [
+        10,
+        1
+      ]
+    },
+    {
+      "center_color": "#f6dd67",
+      "center_uv": [
+        0.28,
+        0.28
+      ],
+      "color": "#654a08",
+      "cube": "cannon_side_panel_front",
+      "face": "south",
+      "name": "front_cannon_warning",
+      "size": [
+        5,
+        2
+      ]
+    },
+    {
+      "center_color": "#f5f7f3",
+      "center_uv": [
+        0.68,
+        0.28
+      ],
+      "color": "#737b79",
+      "cube": "cannon_side_panel_front",
+      "face": "south",
+      "name": "front_cannon_label",
+      "size": [
+        7,
+        2
+      ]
+    },
+    {
+      "center_color": "#65717a",
+      "center_uv": [
+        0.5,
+        0.62
+      ],
+      "color": "#171b1f",
+      "cube": "cannon_side_panel_back",
+      "face": "north",
+      "name": "back_cannon_seam",
+      "size": [
+        10,
+        1
+      ]
+    },
+    {
+      "center_color": "#f6dd67",
+      "center_uv": [
+        0.28,
+        0.28
+      ],
+      "color": "#654a08",
+      "cube": "cannon_side_panel_back",
+      "face": "north",
+      "name": "back_cannon_warning",
+      "size": [
+        5,
+        2
+      ]
+    },
+    {
+      "center_color": "#f5f7f3",
+      "center_uv": [
+        0.68,
+        0.28
+      ],
+      "color": "#737b79",
+      "cube": "cannon_side_panel_back",
+      "face": "north",
+      "name": "back_cannon_label",
+      "size": [
+        7,
+        2
+      ]
+    },
+    {
+      "center_color": "#6d8f95",
+      "center_uv": [
+        0.32,
+        0.35
+      ],
+      "color": "#0b1519",
+      "cube": "launcher_front_panel",
+      "face": "south",
+      "name": "front_launcher_cell_1_1",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#6d8f95",
+      "center_uv": [
+        0.5,
+        0.35
+      ],
+      "color": "#0b1519",
+      "cube": "launcher_front_panel",
+      "face": "south",
+      "name": "front_launcher_cell_1_2",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#6d8f95",
+      "center_uv": [
+        0.6799999999999999,
+        0.35
+      ],
+      "color": "#0b1519",
+      "cube": "launcher_front_panel",
+      "face": "south",
+      "name": "front_launcher_cell_1_3",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#6d8f95",
+      "center_uv": [
+        0.32,
+        0.63
+      ],
+      "color": "#0b1519",
+      "cube": "launcher_front_panel",
+      "face": "south",
+      "name": "front_launcher_cell_2_1",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#6d8f95",
+      "center_uv": [
+        0.5,
+        0.63
+      ],
+      "color": "#0b1519",
+      "cube": "launcher_front_panel",
+      "face": "south",
+      "name": "front_launcher_cell_2_2",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#6d8f95",
+      "center_uv": [
+        0.6799999999999999,
+        0.63
+      ],
+      "color": "#0b1519",
+      "cube": "launcher_front_panel",
+      "face": "south",
+      "name": "front_launcher_cell_2_3",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#6d8f95",
+      "center_uv": [
+        0.32,
+        0.35
+      ],
+      "color": "#0b1519",
+      "cube": "launcher_back_panel",
+      "face": "north",
+      "name": "back_launcher_cell_1_1",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#6d8f95",
+      "center_uv": [
+        0.5,
+        0.35
+      ],
+      "color": "#0b1519",
+      "cube": "launcher_back_panel",
+      "face": "north",
+      "name": "back_launcher_cell_1_2",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#6d8f95",
+      "center_uv": [
+        0.6799999999999999,
+        0.35
+      ],
+      "color": "#0b1519",
+      "cube": "launcher_back_panel",
+      "face": "north",
+      "name": "back_launcher_cell_1_3",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#6d8f95",
+      "center_uv": [
+        0.32,
+        0.63
+      ],
+      "color": "#0b1519",
+      "cube": "launcher_back_panel",
+      "face": "north",
+      "name": "back_launcher_cell_2_1",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#6d8f95",
+      "center_uv": [
+        0.5,
+        0.63
+      ],
+      "color": "#0b1519",
+      "cube": "launcher_back_panel",
+      "face": "north",
+      "name": "back_launcher_cell_2_2",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#6d8f95",
+      "center_uv": [
+        0.6799999999999999,
+        0.63
+      ],
+      "color": "#0b1519",
+      "cube": "launcher_back_panel",
+      "face": "north",
+      "name": "back_launcher_cell_2_3",
+      "size": [
+        2,
+        2
+      ]
+    },
+    {
+      "center_color": "#d4a723",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#0b1519",
+      "cube": "launcher_top_sensor",
+      "face": "up",
+      "name": "top_sensor_crosshair",
+      "size": [
+        4,
+        4
+      ]
+    },
+    {
+      "center_color": "#f6dd67",
+      "center_uv": [
+        0.5,
+        0.5
+      ],
+      "color": "#654a08",
+      "cube": "cannon_muzzle_brake",
+      "face": "up",
+      "name": "muzzle_warning_band",
+      "size": [
+        6,
+        2
+      ]
+    }
+  ],
+  "materials": {
+    "cable_red": {
+      "base": "#a72d31",
+      "highlight": "#e35e5d",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#4f1218"
+    },
+    "copper": {
+      "base": "#9f5d46",
+      "highlight": "#d59170",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#4e281f"
+    },
+    "edge_black": {
+      "base": "#171b1f",
+      "highlight": "#3a4147",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#090b0d"
+    },
+    "gunmetal": {
+      "base": "#424950",
+      "highlight": "#737d85",
+      "pattern": "dither",
+      "pattern_scale": 5,
+      "shade": "#20252a"
+    },
+    "gunmetal_dark": {
+      "base": "#262c31",
+      "highlight": "#4a535a",
+      "pattern": "dither",
+      "pattern_scale": 4,
+      "shade": "#101417"
+    },
+    "gunmetal_light": {
+      "base": "#65717a",
+      "highlight": "#a1adb4",
+      "pattern": "dither",
+      "pattern_scale": 4,
+      "shade": "#353d43"
+    },
+    "label": {
+      "base": "#d5dad8",
+      "highlight": "#f5f7f3",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#737b79"
+    },
+    "muzzle": {
+      "base": "#0d1012",
+      "highlight": "#30373b",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#030405"
+    },
+    "piston": {
+      "base": "#b8c1c3",
+      "highlight": "#e5e9e9",
+      "pattern": "gradient",
+      "pattern_scale": 4,
+      "shade": "#61696c"
+    },
+    "rubber": {
+      "base": "#25272a",
+      "highlight": "#494d51",
+      "pattern": "dither",
+      "pattern_scale": 5,
+      "shade": "#0b0d0f"
+    },
+    "sensor": {
+      "base": "#20343a",
+      "highlight": "#6d8f95",
+      "pattern": "gradient",
+      "pattern_scale": 3,
+      "shade": "#0b1519"
+    },
+    "steel": {
+      "base": "#899398",
+      "highlight": "#c9d0d2",
+      "pattern": "stripes",
+      "pattern_scale": 3,
+      "shade": "#495156"
+    },
+    "warning": {
+      "base": "#d4a723",
+      "highlight": "#f6dd67",
+      "pattern": "stripes",
+      "pattern_scale": 2,
+      "shade": "#654a08"
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "tall segmented pedestal with a distinct yaw bearing",
+      "four radial grounded outriggers with vertical pistons and broad feet",
+      "pitch cradle with paired segmented drive drums",
+      "long +X cannon with exposed barrel and muzzle brake",
+      "opposed bulky -X launcher and angular service grip",
+      "copper and red cable bundles plus textured seams bolts warnings and labels"
+    ],
+    "required_views": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "isometric",
+      "source-3-perspective",
+      "source-4-perspective",
+      "source-5-perspective",
+      "cannon-closeup",
+      "launcher-closeup",
+      "outrigger-closeup",
+      "cradle-closeup"
+    ],
+    "review_targets": [
+      "three source silhouettes",
+      "opposed weapon axes",
+      "pedestal segmentation",
+      "four support contacts",
+      "yaw and pitch pivots",
+      "part-local depth",
+      "attachment continuity",
+      "texture identity details"
+    ],
+    "target_cuboids": [
+      120,
+      180
+    ]
+  },
+  "reference": {
+    "height": 1000,
+    "image": "aegis_x2_turret.reference.png",
+    "sha256": "31bb69536ce0f26540034096402cebc6e006ee9cb7ec56b38deb5bf04afb2e23",
+    "width": 1000
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "Aegis X2 autonomous hard-surface turret on four piston outriggers",
+    "symmetry": "asymmetric",
+    "type": "prop",
+    "uncertainties": [
+      "The three supplied views are uncalibrated perspective renders rather than camera metadata.",
+      "Several cable routes and the pedestal underside are occluded and inferred conservatively.",
+      "The exact profile of round housings is translated into Minecraft-native stepped cuboids.",
+      "The three images do not establish hidden interior geometry or a visual hull."
+    ]
+  },
+  "texture": {
+    "atlas_size": 512,
+    "density": 1,
+    "gutter": 1,
+    "palette_size": 32,
+    "quantize_source": false
+  }
+}

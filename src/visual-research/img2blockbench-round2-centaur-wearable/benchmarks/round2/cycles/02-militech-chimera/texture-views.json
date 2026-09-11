@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "views": [
+    {
+      "id": "original-camouflage",
+      "image": "../../../../image.png",
+      "image_sha256": "55ed303da9e7484812f0827922fceb0b07a8bac68ccc1a9c03e39702419eada2",
+      "mask": "inputs/foreground-mask.png",
+      "mask_sha256": "8905f69990541593579b5043120c65ba078b82e2afc36709536169bd9e8b19b3",
+      "camera": {
+        "projection": "perspective",
+        "image_size": [600, 900],
+        "focal_x": 1210.0135352561717,
+        "focal_y": 1210.0135352561717,
+        "principal_point": [325.0, 367.0],
+        "world_to_camera": [
+          [0.882947592858927, 0.0, -0.4694715627858908],
+          [-0.0815228813442158, 0.9848077530122082, -0.15332224047535542],
+          [0.46233923485030287, 0.17364817766693033, 0.8695336349509378]
+        ],
+        "translation": [-0.0, -12.80250078915871, -112.25742630967011],
+        "near": 0.1
+      }
+    }
+  ]
+}

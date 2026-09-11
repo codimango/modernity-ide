@@ -1,0 +1,3026 @@
+{
+  "bones": [
+    {
+      "name": "root",
+      "parent": null,
+      "pivot": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "torso",
+      "parent": "root",
+      "pivot": [
+        0,
+        21,
+        0
+      ]
+    },
+    {
+      "name": "neck",
+      "parent": "torso",
+      "pivot": [
+        0,
+        31,
+        0
+      ]
+    },
+    {
+      "name": "head",
+      "parent": "neck",
+      "pivot": [
+        0,
+        40.2,
+        0
+      ]
+    },
+    {
+      "name": "left_leg_1",
+      "parent": "torso",
+      "pivot": [
+        -2,
+        12.35,
+        0
+      ]
+    },
+    {
+      "name": "left_leg_2",
+      "parent": "left_leg_1",
+      "pivot": [
+        -2.1,
+        6.1,
+        0.1
+      ]
+    },
+    {
+      "name": "right_leg_1",
+      "parent": "torso",
+      "pivot": [
+        2,
+        12.35,
+        0
+      ]
+    },
+    {
+      "name": "right_leg_2",
+      "parent": "right_leg_1",
+      "pivot": [
+        2.1,
+        6.1,
+        -0.1
+      ]
+    },
+    {
+      "name": "viewer_left_arm_1",
+      "parent": "torso",
+      "pivot": [
+        -2.78,
+        29.8,
+        0.1
+      ]
+    },
+    {
+      "name": "viewer_left_arm_2",
+      "parent": "viewer_left_arm_1",
+      "pivot": [
+        -4.65,
+        26.4,
+        0.7
+      ]
+    },
+    {
+      "name": "viewer_left_arm_fist",
+      "parent": "viewer_left_arm_2",
+      "pivot": [
+        -3.85,
+        27.55,
+        2.1
+      ]
+    },
+    {
+      "name": "viewer_right_arm_1",
+      "parent": "torso",
+      "pivot": [
+        2.78,
+        29.8,
+        0
+      ]
+    },
+    {
+      "name": "viewer_right_arm_2",
+      "parent": "viewer_right_arm_1",
+      "pivot": [
+        5.35,
+        26.8,
+        0.7
+      ]
+    },
+    {
+      "name": "viewer_right_arm_fist",
+      "parent": "viewer_right_arm_2",
+      "pivot": [
+        6.55,
+        28.45,
+        2.1
+      ]
+    }
+  ],
+  "collision": {
+    "eye_height": 2.65,
+    "height": 3.1,
+    "width": 0.95
+  },
+  "cubes": [
+    {
+      "bone": "torso",
+      "center": [
+        0,
+        21,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_001",
+      "origin": [
+        0,
+        21,
+        0
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.92,
+        14.266667,
+        7
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        0,
+        29.322222,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_002",
+      "origin": [
+        0,
+        29.322222,
+        0
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.92,
+        2.377778,
+        5.25
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        0,
+        12.677778,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_003",
+      "origin": [
+        0,
+        12.677778,
+        0
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.92,
+        2.377778,
+        5.25
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        3.33,
+        21,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_004",
+      "origin": [
+        3.33,
+        21,
+        0
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.74,
+        14.266667,
+        5.25
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        -3.33,
+        21,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_005",
+      "origin": [
+        -3.33,
+        21,
+        0
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.74,
+        14.266667,
+        5.25
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        0,
+        31.105556,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_006",
+      "origin": [
+        0,
+        31.105556,
+        0
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 6",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.96,
+        1.188889,
+        5.25
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        0,
+        10.894444,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_007",
+      "origin": [
+        0,
+        10.894444,
+        0
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 7",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2.96,
+        1.188889,
+        5.25
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        0,
+        28.727778,
+        3.0625
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_008",
+      "origin": [
+        0,
+        28.727778,
+        3.0625
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 8",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.44,
+        1.188889,
+        0.875
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        0,
+        28.727778,
+        -3.0625
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_009",
+      "origin": [
+        0,
+        28.727778,
+        -3.0625
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 9",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.44,
+        1.188889,
+        0.875
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        0,
+        13.272222,
+        3.0625
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_010",
+      "origin": [
+        0,
+        13.272222,
+        3.0625
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 10",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.44,
+        1.188889,
+        0.875
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        0,
+        13.272222,
+        -3.0625
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_011",
+      "origin": [
+        0,
+        13.272222,
+        -3.0625
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 11",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4.44,
+        1.188889,
+        0.875
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        3.33,
+        28.727778,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_012",
+      "origin": [
+        3.33,
+        28.727778,
+        0
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 12",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.74,
+        1.188889,
+        3.5
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        3.33,
+        13.272222,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_013",
+      "origin": [
+        3.33,
+        13.272222,
+        0
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 13",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.74,
+        1.188889,
+        3.5
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        1.85,
+        31.105556,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_014",
+      "origin": [
+        1.85,
+        31.105556,
+        0
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 14",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.74,
+        1.188889,
+        3.5
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        1.85,
+        10.894444,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_015",
+      "origin": [
+        1.85,
+        10.894444,
+        0
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 15",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.74,
+        1.188889,
+        3.5
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        -1.85,
+        31.105556,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_016",
+      "origin": [
+        -1.85,
+        31.105556,
+        0
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 16",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.74,
+        1.188889,
+        3.5
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        -1.85,
+        10.894444,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_017",
+      "origin": [
+        -1.85,
+        10.894444,
+        0
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 17",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.74,
+        1.188889,
+        3.5
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        -3.33,
+        28.727778,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_018",
+      "origin": [
+        -3.33,
+        28.727778,
+        0
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 18",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.74,
+        1.188889,
+        3.5
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        -3.33,
+        13.272222,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "torso_volume_019",
+      "origin": [
+        -3.33,
+        13.272222,
+        0
+      ],
+      "role": "long rounded dirty concrete pillar torso greedy volume 19",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        0.74,
+        1.188889,
+        3.5
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -4.5,
+        37.414286,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.0,
+            0.6428571153846153,
+            0.1,
+            0.7142857051282056
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_001",
+      "origin": [
+        -4.5,
+        37.414286,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 1",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        2
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -4.5,
+        40.2,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.0,
+            0.35714285256410233,
+            0.1,
+            0.6428571474358973
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_002",
+      "origin": [
+        -4.5,
+        40.2,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 2",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        4.457143,
+        4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -4.5,
+        42.985714,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.0,
+            0.28571429487179456,
+            0.1,
+            0.35714288461538474
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_003",
+      "origin": [
+        -4.5,
+        42.985714,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 3",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        2
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -3.5,
+        35.185714,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.1,
+            0.7857142948717949,
+            0.2,
+            0.857142884615385
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_004",
+      "origin": [
+        -3.5,
+        35.185714,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 4",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -3.5,
+        37.414286,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.1,
+            0.571428557692308,
+            0.2,
+            0.7857142628205128
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_005",
+      "origin": [
+        -3.5,
+        37.414286,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 5",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        3.342857,
+        6
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -3.5,
+        40.2,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.1,
+            0.42857144230769206,
+            0.2,
+            0.5714285576923076
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_006",
+      "origin": [
+        -3.5,
+        40.2,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 6",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        2.228571,
+        8
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -3.5,
+        42.985714,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.1,
+            0.21428573717948723,
+            0.2,
+            0.42857144230769206
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_007",
+      "origin": [
+        -3.5,
+        42.985714,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 7",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        3.342857,
+        6
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -3.5,
+        45.214286,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.1,
+            0.14285711538461507,
+            0.2,
+            0.21428570512820527
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_008",
+      "origin": [
+        -3.5,
+        45.214286,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 8",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -2.5,
+        34.071429,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.2,
+            0.8571428205128202,
+            0.3,
+            0.9285714102564103
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_009",
+      "origin": [
+        -2.5,
+        34.071429,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 9",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -2.5,
+        35.185714,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.2,
+            0.7857142948717949,
+            0.3,
+            0.857142884615385
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_010",
+      "origin": [
+        -2.5,
+        35.185714,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 10",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        6
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -2.5,
+        40.2,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.2,
+            0.21428570512820483,
+            0.3,
+            0.7857142948717949
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_011",
+      "origin": [
+        -2.5,
+        40.2,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 11",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        8.914286,
+        8
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -2.5,
+        45.214286,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.2,
+            0.14285711538461507,
+            0.3,
+            0.21428570512820527
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_012",
+      "origin": [
+        -2.5,
+        45.214286,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 12",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        6
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -2.5,
+        46.328571,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.2,
+            0.07142858974358973,
+            0.3,
+            0.14285717948717994
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_013",
+      "origin": [
+        -2.5,
+        46.328571,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 13",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -1.5,
+        32.957143,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.3,
+            0.9285714102564099,
+            0.4,
+            1.0
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_014",
+      "origin": [
+        -1.5,
+        32.957143,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 14",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        2
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        34.071429,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.3,
+            0.8571428205128202,
+            0.7,
+            0.9285714102564103
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_015",
+      "origin": [
+        0,
+        34.071429,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 15",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        1.114286,
+        6
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -1.5,
+        36.3,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.3,
+            0.6428571474358978,
+            0.4,
+            0.8571428525641026
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_016",
+      "origin": [
+        -1.5,
+        36.3,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 16",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        3.342857,
+        8
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -1.5,
+        40.2,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.3,
+            0.35714285256410233,
+            0.4,
+            0.6428571474358973
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_017",
+      "origin": [
+        -1.5,
+        40.2,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 17",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        4.457143,
+        10
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -1.5,
+        44.1,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.3,
+            0.1428571474358975,
+            0.4,
+            0.35714285256410233
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_018",
+      "origin": [
+        -1.5,
+        44.1,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 18",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        3.342857,
+        8
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        46.328571,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.3,
+            0.07142858974358973,
+            0.7,
+            0.14285717948717994
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_019",
+      "origin": [
+        0,
+        46.328571,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 19",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        4,
+        1.114286,
+        6
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        -1.5,
+        47.442857,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.3,
+            0.0,
+            0.4,
+            0.07142858974359019
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_020",
+      "origin": [
+        -1.5,
+        47.442857,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 20",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        2
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        32.957143,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.4,
+            0.9285714102564099,
+            0.6,
+            1.0
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_021",
+      "origin": [
+        0,
+        32.957143,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 21",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2,
+        1.114286,
+        4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        35.742857,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.4,
+            0.7142857371794871,
+            0.6,
+            0.8571428525641026
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_022",
+      "origin": [
+        0,
+        35.742857,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 22",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2,
+        2.228571,
+        8
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        40.2,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.4,
+            0.28571429487179456,
+            0.6,
+            0.7142857051282051
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_023",
+      "origin": [
+        0,
+        40.2,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 23",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2,
+        6.685714,
+        10
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        44.657143,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.4,
+            0.1428571474358975,
+            0.6,
+            0.28571426282051304
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_024",
+      "origin": [
+        0,
+        44.657143,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 24",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2,
+        2.228571,
+        8
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        0,
+        47.442857,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.4,
+            0.0,
+            0.6,
+            0.07142858974359019
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_025",
+      "origin": [
+        0,
+        47.442857,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 25",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        2,
+        1.114286,
+        4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        1.5,
+        32.957143,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.6,
+            0.9285714102564099,
+            0.7,
+            1.0
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_026",
+      "origin": [
+        1.5,
+        32.957143,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 26",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        2
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        1.5,
+        36.3,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.6,
+            0.6428571474358978,
+            0.7,
+            0.8571428525641026
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_027",
+      "origin": [
+        1.5,
+        36.3,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 27",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        3.342857,
+        8
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        1.5,
+        40.2,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.6,
+            0.35714285256410233,
+            0.7,
+            0.6428571474358973
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_028",
+      "origin": [
+        1.5,
+        40.2,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 28",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        4.457143,
+        10
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        1.5,
+        44.1,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.6,
+            0.1428571474358975,
+            0.7,
+            0.35714285256410233
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_029",
+      "origin": [
+        1.5,
+        44.1,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 29",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        3.342857,
+        8
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        1.5,
+        47.442857,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.6,
+            0.0,
+            0.7,
+            0.07142858974359019
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_030",
+      "origin": [
+        1.5,
+        47.442857,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 30",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        2
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        2.5,
+        34.071429,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.7,
+            0.8571428205128202,
+            0.8,
+            0.9285714102564103
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_031",
+      "origin": [
+        2.5,
+        34.071429,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 31",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        2.5,
+        35.185714,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.7,
+            0.7857142948717949,
+            0.8,
+            0.857142884615385
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_032",
+      "origin": [
+        2.5,
+        35.185714,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 32",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        6
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        2.5,
+        40.2,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.7,
+            0.21428570512820483,
+            0.8,
+            0.7857142948717949
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_033",
+      "origin": [
+        2.5,
+        40.2,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 33",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        8.914286,
+        8
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        2.5,
+        45.214286,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.7,
+            0.14285711538461507,
+            0.8,
+            0.21428570512820527
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_034",
+      "origin": [
+        2.5,
+        45.214286,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 34",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        6
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        2.5,
+        46.328571,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.7,
+            0.07142858974358973,
+            0.8,
+            0.14285717948717994
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_035",
+      "origin": [
+        2.5,
+        46.328571,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 35",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        3.5,
+        35.185714,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.8,
+            0.7857142948717949,
+            0.9,
+            0.857142884615385
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_036",
+      "origin": [
+        3.5,
+        35.185714,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 36",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        3.5,
+        37.414286,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.8,
+            0.571428557692308,
+            0.9,
+            0.7857142628205128
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_037",
+      "origin": [
+        3.5,
+        37.414286,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 37",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        3.342857,
+        6
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        3.5,
+        40.2,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.8,
+            0.42857144230769206,
+            0.9,
+            0.5714285576923076
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_038",
+      "origin": [
+        3.5,
+        40.2,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 38",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        2.228571,
+        8
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        3.5,
+        42.985714,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.8,
+            0.21428573717948723,
+            0.9,
+            0.42857144230769206
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_039",
+      "origin": [
+        3.5,
+        42.985714,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 39",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        3.342857,
+        6
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        3.5,
+        45.214286,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.8,
+            0.14285711538461507,
+            0.9,
+            0.21428570512820527
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_040",
+      "origin": [
+        3.5,
+        45.214286,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 40",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        4.5,
+        37.414286,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.9,
+            0.6428571153846153,
+            1.0,
+            0.7142857051282056
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_041",
+      "origin": [
+        4.5,
+        37.414286,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 41",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        2
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        4.5,
+        40.2,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.9,
+            0.35714285256410233,
+            1.0,
+            0.6428571474358973
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_042",
+      "origin": [
+        4.5,
+        40.2,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 42",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        4.457143,
+        4
+      ]
+    },
+    {
+      "bone": "head",
+      "center": [
+        4.5,
+        42.985714,
+        0
+      ],
+      "faces": {
+        "south": {
+          "material": "face_decal",
+          "source_region": [
+            0.9,
+            0.28571429487179456,
+            1.0,
+            0.35714288461538474
+          ]
+        }
+      },
+      "material": "concrete",
+      "name": "head_volume_043",
+      "origin": [
+        4.5,
+        42.985714,
+        0
+      ],
+      "role": "large smooth oval concrete head greedy volume 43",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        1,
+        1.114286,
+        2
+      ]
+    },
+    {
+      "bone": "neck",
+      "center": [
+        0,
+        31.0,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "neck_core",
+      "origin": [
+        0,
+        31.0,
+        0
+      ],
+      "role": "narrow neck joining head and pillar torso",
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "size": [
+        5.2,
+        5.2,
+        5.2
+      ]
+    },
+    {
+      "bone": "left_leg_1",
+      "center": [
+        -2,
+        15.4758,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "left_leg_1",
+      "origin": [
+        -2,
+        12.35,
+        0
+      ],
+      "role": "straight separated concrete leg segment 1",
+      "rotation": [
+        0.916537,
+        0,
+        179.083346
+      ],
+      "size": [
+        2.85,
+        7.2116,
+        3.25
+      ]
+    },
+    {
+      "bone": "left_leg_2",
+      "center": [
+        -2.1,
+        9.025534,
+        0.1
+      ],
+      "faces": {},
+      "material": "concrete_dark",
+      "name": "left_leg_2",
+      "origin": [
+        -2.1,
+        6.1,
+        0.1
+      ],
+      "role": "straight separated concrete leg segment 2",
+      "rotation": [
+        0.979284,
+        0,
+        179.510304
+      ],
+      "size": [
+        2.65,
+        6.811068,
+        3
+      ]
+    },
+    {
+      "bone": "right_leg_1",
+      "center": [
+        2,
+        15.4758,
+        0
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "right_leg_1",
+      "origin": [
+        2,
+        12.35,
+        0
+      ],
+      "role": "straight separated concrete leg segment 1",
+      "rotation": [
+        -0.916537,
+        0,
+        -179.083346
+      ],
+      "size": [
+        2.85,
+        7.2116,
+        3.25
+      ]
+    },
+    {
+      "bone": "right_leg_2",
+      "center": [
+        2.1,
+        9.02895,
+        -0.1
+      ],
+      "faces": {},
+      "material": "concrete_dark",
+      "name": "right_leg_2",
+      "origin": [
+        2.1,
+        6.1,
+        -0.1
+      ],
+      "role": "straight separated concrete leg segment 2",
+      "rotation": [
+        2.935566,
+        0,
+        -179.510304
+      ],
+      "size": [
+        2.65,
+        6.817901,
+        3
+      ]
+    },
+    {
+      "bone": "viewer_left_arm_1",
+      "center": [
+        -2.78,
+        31.763218,
+        0.1
+      ],
+      "faces": {},
+      "material": "concrete_dark",
+      "name": "viewer_left_arm_1",
+      "origin": [
+        -2.78,
+        29.8,
+        0.1
+      ],
+      "role": "short asymmetric raised concrete arm segment 1",
+      "rotation": [
+        8.789825,
+        0,
+        151.189206
+      ],
+      "size": [
+        2.55,
+        4.966436,
+        2.9
+      ]
+    },
+    {
+      "bone": "viewer_left_arm_2",
+      "center": [
+        -4.65,
+        27.390265,
+        0.7
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "viewer_left_arm_2",
+      "origin": [
+        -4.65,
+        26.4,
+        0.7
+      ],
+      "role": "short asymmetric raised concrete arm segment 2",
+      "rotation": [
+        44.981741,
+        0,
+        -34.824489
+      ],
+      "size": [
+        2.3,
+        3.02053,
+        2.65
+      ]
+    },
+    {
+      "bone": "viewer_left_arm_fist",
+      "center": [
+        -3.85,
+        27.55,
+        2.1
+      ],
+      "faces": {},
+      "material": "concrete_dark",
+      "name": "viewer_left_arm_fist",
+      "origin": [
+        -3.85,
+        27.55,
+        2.1
+      ],
+      "role": "blocky clenched concrete fist",
+      "rotation": [
+        4,
+        -8,
+        12
+      ],
+      "size": [
+        2.85,
+        2.7,
+        2.85
+      ]
+    },
+    {
+      "bone": "viewer_left_arm_fist",
+      "center": [
+        -3.85,
+        27.93,
+        2.8200000000000003
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "viewer_left_arm_knuckles",
+      "origin": [
+        -3.85,
+        27.55,
+        2.1
+      ],
+      "role": "forward clenched knuckle ridge",
+      "rotation": [
+        4,
+        -8,
+        12
+      ],
+      "size": [
+        2.5,
+        1.75,
+        1.7
+      ]
+    },
+    {
+      "bone": "viewer_right_arm_1",
+      "center": [
+        2.78,
+        31.805922,
+        0
+      ],
+      "faces": {},
+      "material": "concrete_dark",
+      "name": "viewer_right_arm_1",
+      "origin": [
+        2.78,
+        29.8,
+        0
+      ],
+      "role": "short asymmetric raised concrete arm segment 1",
+      "rotation": [
+        10.048592,
+        0,
+        -139.414437
+      ],
+      "size": [
+        2.55,
+        5.051845,
+        2.9
+      ]
+    },
+    {
+      "bone": "viewer_right_arm_2",
+      "center": [
+        5.35,
+        28.037184,
+        0.7
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "viewer_right_arm_2",
+      "origin": [
+        5.35,
+        26.8,
+        0.7
+      ],
+      "role": "short asymmetric raised concrete arm segment 2",
+      "rotation": [
+        34.457926,
+        0,
+        -36.027373
+      ],
+      "size": [
+        2.3,
+        3.514369,
+        2.65
+      ]
+    },
+    {
+      "bone": "viewer_right_arm_fist",
+      "center": [
+        6.55,
+        28.45,
+        2.1
+      ],
+      "faces": {},
+      "material": "concrete_dark",
+      "name": "viewer_right_arm_fist",
+      "origin": [
+        6.55,
+        28.45,
+        2.1
+      ],
+      "role": "blocky clenched concrete fist",
+      "rotation": [
+        4,
+        8,
+        -10
+      ],
+      "size": [
+        2.85,
+        2.7,
+        2.85
+      ]
+    },
+    {
+      "bone": "viewer_right_arm_fist",
+      "center": [
+        6.55,
+        28.83,
+        2.8200000000000003
+      ],
+      "faces": {},
+      "material": "concrete",
+      "name": "viewer_right_arm_knuckles",
+      "origin": [
+        6.55,
+        28.45,
+        2.1
+      ],
+      "role": "forward clenched knuckle ridge",
+      "rotation": [
+        4,
+        8,
+        -10
+      ],
+      "size": [
+        2.5,
+        1.75,
+        1.7
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        -1.7,
+        26.677565,
+        3.35
+      ],
+      "faces": {},
+      "material": "crack",
+      "name": "torso_crack_1",
+      "origin": [
+        -1.7,
+        25,
+        3.35
+      ],
+      "role": "shallow concrete crack",
+      "rotation": [
+        2.220574,
+        0,
+        -162.645975
+      ],
+      "size": [
+        0.28,
+        3.51513,
+        0.36
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        -0.7,
+        23.226972,
+        3.48
+      ],
+      "faces": {},
+      "material": "crack",
+      "name": "torso_crack_2",
+      "origin": [
+        -0.7,
+        21.8,
+        3.48
+      ],
+      "role": "shallow concrete crack",
+      "rotation": [
+        -1.003851,
+        0,
+        168.886959
+      ],
+      "size": [
+        0.28,
+        3.013945,
+        0.36
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        1.8,
+        21.8081,
+        3.35
+      ],
+      "faces": {},
+      "material": "crack",
+      "name": "torso_crack_3",
+      "origin": [
+        1.8,
+        20,
+        3.35
+      ],
+      "role": "shallow concrete crack",
+      "rotation": [
+        2.06019,
+        0,
+        165.579227
+      ],
+      "size": [
+        0.28,
+        3.7762,
+        0.36
+      ]
+    },
+    {
+      "bone": "torso",
+      "center": [
+        -2,
+        16.275382,
+        3.2
+      ],
+      "faces": {},
+      "material": "crack",
+      "name": "torso_crack_4",
+      "origin": [
+        -2,
+        15,
+        3.2
+      ],
+      "role": "shallow concrete crack",
+      "rotation": [
+        -1.797271,
+        0,
+        -168.690068
+      ],
+      "size": [
+        0.28,
+        2.710765,
+        0.36
+      ]
+    }
+  ],
+  "generation": {
+    "algorithm": "greedy-superellipsoid-flush-decal-statue-v2",
+    "anatomical_axis": "+Z front, X width, Y up",
+    "attachment_contract": {
+      "endpoint_overlap": 0.48,
+      "method": "declared-shared-joints-tested-against-oriented-cuboids"
+    },
+    "declared_attachments": [
+      {
+        "first": "torso_volume_002",
+        "joint": [
+          0,
+          30.2,
+          0
+        ],
+        "second": "neck_core"
+      },
+      {
+        "first": "neck_core",
+        "joint": [
+          0,
+          32.7,
+          0
+        ],
+        "second": "head_volume_021"
+      },
+      {
+        "first": "torso_volume_003",
+        "joint": [
+          -2.0,
+          12.35,
+          0.0
+        ],
+        "second": "left_leg_1"
+      },
+      {
+        "first": "left_leg_1",
+        "joint": [
+          -2.1,
+          6.1,
+          0.1
+        ],
+        "second": "left_leg_2"
+      },
+      {
+        "first": "torso_volume_003",
+        "joint": [
+          2.0,
+          12.35,
+          0.0
+        ],
+        "second": "right_leg_1"
+      },
+      {
+        "first": "right_leg_1",
+        "joint": [
+          2.1,
+          6.1,
+          -0.1
+        ],
+        "second": "right_leg_2"
+      },
+      {
+        "first": "torso_volume_002",
+        "joint": [
+          -2.78,
+          29.8,
+          0.1
+        ],
+        "second": "viewer_left_arm_1"
+      },
+      {
+        "first": "viewer_left_arm_1",
+        "joint": [
+          -4.65,
+          26.4,
+          0.7
+        ],
+        "second": "viewer_left_arm_2"
+      },
+      {
+        "first": "viewer_left_arm_2",
+        "joint": [
+          -3.85,
+          27.55,
+          2.1
+        ],
+        "second": "viewer_left_arm_fist"
+      },
+      {
+        "first": "viewer_left_arm_fist",
+        "joint": [
+          -3.85,
+          27.55,
+          2.1
+        ],
+        "second": "viewer_left_arm_knuckles"
+      },
+      {
+        "first": "torso_volume_002",
+        "joint": [
+          2.78,
+          29.8,
+          0.0
+        ],
+        "second": "viewer_right_arm_1"
+      },
+      {
+        "first": "viewer_right_arm_1",
+        "joint": [
+          5.35,
+          26.8,
+          0.7
+        ],
+        "second": "viewer_right_arm_2"
+      },
+      {
+        "first": "viewer_right_arm_2",
+        "joint": [
+          6.55,
+          28.45,
+          2.1
+        ],
+        "second": "viewer_right_arm_fist"
+      },
+      {
+        "first": "viewer_right_arm_fist",
+        "joint": [
+          6.55,
+          28.45,
+          2.1
+        ],
+        "second": "viewer_right_arm_knuckles"
+      }
+    ],
+    "feature_inventory": {
+      "arm_segments": 4,
+      "decal_mapped_front_faces": 43,
+      "fist_volumes": 4,
+      "geometric_face_pads": 0,
+      "head_volumes": 43,
+      "leg_segments": 4,
+      "procedural_face_decal_images": 1,
+      "surface_cracks": 4,
+      "torso_volumes": 19
+    },
+    "head_ellipsoid": {
+      "center": [
+        0,
+        40.2,
+        0
+      ],
+      "greedy_cuboids": 43,
+      "occupied_voxels": 760,
+      "radii": [
+        5.0,
+        7.8,
+        5.0
+      ],
+      "subdivisions": [
+        10,
+        14,
+        10
+      ]
+    },
+    "lane": "agent-authored-semantic-volume",
+    "procedural_face_decal": {
+      "dimensions": [
+        80,
+        124
+      ],
+      "features": {
+        "central_black_slit": true,
+        "jagged_mouth_teeth": 4,
+        "left_edge_red_smear": true,
+        "lower_black_sockets": 2,
+        "red_forehead_flame": true,
+        "triangular_nose": true,
+        "upper_green_discs": 2
+      },
+      "geometric_protrusion": 0,
+      "method": "one generated opaque PNG sliced across stepped south faces",
+      "painted_surface": "south/front only",
+      "source_reference_pixels": false
+    },
+    "single_view_hidden_geometry": "inferred_conservatively_not_observed",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0,
+    "torso_superellipsoid": {
+      "center": [
+        0,
+        21.0,
+        0
+      ],
+      "exponent": 4.0,
+      "greedy_cuboids": 19,
+      "occupied_voxels": 1208,
+      "radii": [
+        3.7,
+        10.7,
+        3.5
+      ],
+      "subdivisions": [
+        10,
+        18,
+        8
+      ]
+    }
+  },
+  "geometry": {
+    "precision": 16
+  },
+  "id": "scp_173",
+  "landmarks": [],
+  "materials": {
+    "concrete": {
+      "base": "#b49a69",
+      "highlight": "#d8c391",
+      "pattern": "dither",
+      "pattern_scale": 10,
+      "shade": "#756044"
+    },
+    "concrete_dark": {
+      "base": "#8d744e",
+      "highlight": "#b99b69",
+      "pattern": "dither",
+      "pattern_scale": 6,
+      "shade": "#493923"
+    },
+    "crack": {
+      "base": "#483a29",
+      "highlight": "#705c40",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#211a12"
+    },
+    "face_decal": {
+      "base": "#b49a69",
+      "highlight": "#d8c391",
+      "pattern": "solid",
+      "pattern_scale": 1,
+      "shade": "#756044",
+      "source_texture": {
+        "center": [
+          0,
+          0
+        ],
+        "data_uri": "data:image/png;base64,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",
+        "flip_y": true,
+        "offset": [
+          0,
+          0
+        ],
+        "repeat": [
+          1,
+          1
+        ],
+        "rotation": 0,
+        "wrap": [
+          1001,
+          1001
+        ]
+      }
+    }
+  },
+  "quality_contract": {
+    "complexity": "complex",
+    "identity_features": [
+      "giant smooth egg-shaped head narrowing into neck",
+      "long dirty beige concrete pillar torso",
+      "two straight visibly separated legs",
+      "short asymmetric bent raised arms with fists",
+      "red forehead flame around a central black slit",
+      "paired green upper discs and red-rimmed black lower sockets",
+      "small triangular nose and rusty jagged mouth"
+    ],
+    "required_views": [
+      "front",
+      "back",
+      "left",
+      "right",
+      "top",
+      "isometric",
+      "face-closeup",
+      "left-head-closeup",
+      "right-head-closeup",
+      "arm-joints"
+    ],
+    "review_targets": [
+      "egg silhouette",
+      "head-to-body ratio",
+      "canonical painted face",
+      "leg separation",
+      "arm attachment",
+      "true depth"
+    ],
+    "target_cuboids": [
+      75,
+      100
+    ]
+  },
+  "reference": {
+    "height": 1000,
+    "image": "scp_173.reference.jpg",
+    "sha256": "85d698e25b04dbfc4009a05e1cdbb7dc13c5675d2f7c76e5af8cb5e13f0bd93f",
+    "width": 750
+  },
+  "schema_version": 1,
+  "subject": {
+    "description": "Volumetric dirty concrete SCP-173 statue with oval head, pillar body, asymmetric raised arms, split legs, and canonical painted face",
+    "symmetry": "asymmetric",
+    "type": "character",
+    "uncertainties": [
+      "The supplied reference is one frontal product-style image; profile and back depth are conservative semantic inference",
+      "The user called the subject SCP-174, but the linked image depicts the legacy SCP-173 sculpture artwork",
+      "No claim is made that synthetic proxy views establish hidden source geometry"
+    ]
+  },
+  "texture": {
+    "atlas_size": 512,
+    "density": 4,
+    "gutter": 1,
+    "palette_size": 24,
+    "quantize_source": false
+  }
+}

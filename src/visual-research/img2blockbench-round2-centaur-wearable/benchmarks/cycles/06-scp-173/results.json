@@ -1,0 +1,55 @@
+{
+  "asset": "scp_173",
+  "author_checks": {
+    "all_14_declared_attachments_connected": true,
+    "audit_ok": true,
+    "face_contract_pass": true,
+    "face_decal_geometric_protrusion": 0,
+    "front_reference_angle_silhouette_iou": 0.814957,
+    "ground_gap": 0.0,
+    "head_depth_to_width": 1.0,
+    "head_width_to_height": 0.20696,
+    "leg_height_to_height": 0.273029,
+    "minimum_compiled_oriented_joint_margin": 0.1,
+    "no_reference_image_projection": true,
+    "overall_width_to_height": 0.304826,
+    "source_skin_cuboids": 0,
+    "strict_validation": true,
+    "torso_depth_to_width": 0.949153,
+    "torso_width_to_height": 0.152633,
+    "two_builds_byte_identical": true
+  },
+  "artifact_sha256": {
+    "bbmodel": "e215e1ab89099505331935a25a9ad5c34d9dbdae49ff42bfed94af0f5bd86693",
+    "comparison_sheet": "9e897a461dd08ad798e6a8ae9d32a8a7383904976b0d847ec2d1abe1dacb0fa2",
+    "model_spec": "7b2f5d58c451bf88960cb1b294df94e83b050ebc7a865074f59787c44377cfa6",
+    "texture": "cfad3b4322687f4b2e5a2e978bb3e6713d14131a4e0b666eedf95d9964143006",
+    "view_proof_evidence": "05e5bf17d24c9b1987dea8115193b0b79e1f86b554339e7d064ad4ec66d78486",
+    "view_proof_spec": "5433f2d8fa1aa64b585928a50ceb3ab8ef6bfcdf7b4f75142d8cf88258d9f2aa"
+  },
+  "bones": 14,
+  "cuboids": 79,
+  "cycle": 6,
+  "general_improvement": {
+    "capabilities": [
+      "explicit calibrated orthographic-yaw multi-picture input",
+      "order-independent silhouette visual-hull carving",
+      "six-connected component cleanup and adaptive native-cuboid fitting",
+      "visible-surface multi-view color fusion with hidden-color disclosure",
+      "per-view carved and fitted silhouette metrics",
+      "separate all-view and observed-only horizontal constraint rank",
+      "mandatory observed versus synthetic-proxy evidence labels",
+      "caller-timestamped ffmpeg clip frame extraction without inferred camera motion"
+    ],
+    "module": "skill/img2blockbench/scripts/view_reconstruction.py"
+  },
+  "model_id": "scp_173",
+  "view_proof": {
+    "cuboids": 72,
+    "front_observed_fitted_iou": 0.885125,
+    "hidden_geometry_established_from_observed_views": false,
+    "horizontal_constraint_rank_all": 2,
+    "horizontal_constraint_rank_observed": 1,
+    "side_synthetic_proxy_fitted_iou": 0.868913
+  }
+}

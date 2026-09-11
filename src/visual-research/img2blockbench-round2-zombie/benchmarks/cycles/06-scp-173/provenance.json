@@ -1,0 +1,36 @@
+{
+  "cycle": 6,
+  "generator": {
+    "algorithm": "greedy-superellipsoid-flush-decal-statue-v2",
+    "name": "img2blockbench",
+    "route": "agent-authored semantic volume plus calibrated multiview proof"
+  },
+  "model_id": "scp_173",
+  "naming_correction": "The request called the subject SCP-174; the linked image depicts the legacy SCP-173 sculpture.",
+  "reference": {
+    "height": 1000,
+    "local_path": "../../references/06-scp-173.jpg",
+    "redistribution": "not authorized; excluded by .gitignore and never projected into the deliverable texture",
+    "retrieved": "2026-09-06",
+    "sha256": "85d698e25b04dbfc4009a05e1cdbb7dc13c5675d2f7c76e5af8cb5e13f0bd93f",
+    "url": "https://ih1.redbubble.net/image.966205334.5539/flat,750x,075,f-pad,750x1000,f8f8f8.jpg",
+    "width": 750
+  },
+  "rights_note": "The pictured Izumi Kato artwork was never licensed under the SCP Wiki Creative Commons terms and is retained only as private evaluation input.",
+  "source_mesh": null,
+  "source_projection": false,
+  "procedural_face_decal": {
+    "geometric_protrusion": 0,
+    "mapped_front_faces": 43,
+    "source_reference_pixels": false
+  },
+  "view_proof": {
+    "front_observed": "source photograph with thresholded background mask",
+    "side_synthetic_proxy": "authored semantic depth proxy, explicitly not observed evidence",
+    "hidden_geometry_established_from_observed_views": false
+  },
+  "uncertainties": [
+    "The single observed front view cannot establish hidden profile or back geometry.",
+    "The side proxy constrains a conservative volume but does not count as a second observation."
+  ]
+}

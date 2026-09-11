@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "round": 2,
+  "cycle": 4,
+  "asset": "false_apple",
+  "verdict": "PASS",
+  "grader": "independent_read_only_codex_terminal",
+  "mean": 4.0,
+  "scores": {
+    "silhouette": 4,
+    "proportions": 4,
+    "identity": 4,
+    "materials_color": 4,
+    "attachment_topology": 4,
+    "3d_coherence": 4
+  },
+  "quantitative": {
+    "alpha_silhouette_iou": 0.638953,
+    "keypoint_mean_error_subject_heights": 0.029835,
+    "apple_depth_to_width": 0.75,
+    "head_maw_depth_to_height": 0.583333,
+    "near_far_root_separation": 28.734837,
+    "declared_links_connected": "188/188",
+    "unit_tests": "90/90 PASS"
+  },
+  "evidence_policy": {
+    "source_touches_all_four_edges": true,
+    "hidden_geometry": "inferred_conservatively_not_observed",
+    "normal_biped_assumed": false
+  },
+  "critical_defects": []
+}

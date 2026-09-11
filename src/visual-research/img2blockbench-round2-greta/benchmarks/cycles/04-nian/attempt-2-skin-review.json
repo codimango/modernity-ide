@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "FAILED_AND_SUPERSEDED",
+  "representation": "55 semantic cuboids plus 38 attached source-side skin cuboids",
+  "scores": {
+    "silhouette": 4.0,
+    "proportions": 3.0,
+    "identity": 4.0,
+    "materials_color": 3.0,
+    "attachment_topology": 4.0,
+    "3d_coherence": 4.0,
+    "mean": 3.67
+  },
+  "critical_defect": "The skin restored the source silhouette but remained a fragmented photographic treatment and hid boxy torso, mane, horn, and muzzle proportions.",
+  "correction": "Removed every skin cuboid and rebuilt the visible result from 65 semantic volumes, clean source-derived materials, and bilateral landmarks.",
+  "superseding_spec": "model-spec.json"
+}

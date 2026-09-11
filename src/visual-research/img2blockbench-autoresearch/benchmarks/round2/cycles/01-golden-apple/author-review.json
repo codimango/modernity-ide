@@ -1,0 +1,44 @@
+{
+  "asset": "golden_apple_rooted",
+  "author_decision": "READY_FOR_INDEPENDENT_REVIEW",
+  "critical_defect_observed": false,
+  "cycle": 1,
+  "identity_review": {
+    "four_gnarled_roots_visible": true,
+    "gold_highlight_and_bruise_patches_visible": true,
+    "left_bite_recess_visible": true,
+    "near_spherical_body_visible_in_all_axes": true,
+    "top_dimple_and_crooked_stem_visible": true
+  },
+  "limitations": [
+    "The single transparent source does not observe the back surface or exact root depth.",
+    "The source alpha touches the left, right, and bottom edges, so IoU cannot establish continuation outside the frame.",
+    "The native stepped ellipsoid is intentionally coarser than the smooth painted source.",
+    "Static geometry was reviewed; no animation was authored or approved."
+  ],
+  "quantitative_checks": {
+    "all_154_declared_links_connected": true,
+    "alpha_silhouette_iou": 0.705691,
+    "apple_depth_to_width": 1.060606,
+    "four_roots_in_four_xz_quadrants": true,
+    "keypoint_mean_error_subject_heights": 0.022501,
+    "removed_voxels": 382,
+    "black_proxy_solids": 0,
+    "strict_audit_ok": true
+  },
+  "reviewed_views": [
+    "reference-angle.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "bite-closeup.png",
+    "stem-closeup.png",
+    "root-joints-closeup.png",
+    "silhouette-overlap.png",
+    "comparison-sheet.png"
+  ],
+  "round": 2
+}

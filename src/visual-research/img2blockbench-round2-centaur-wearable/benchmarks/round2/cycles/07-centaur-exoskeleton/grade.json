@@ -1,0 +1,29 @@
+{
+  "asset": "militech_centaur_piloted_exoskeleton",
+  "blockers": [],
+  "caveat": "The static wearable shell is verified, but runtime animation, controller, and item registration remain integration work; the shield skin and backpack are simplified at Minecraft scale.",
+  "cycle": 7,
+  "graded_commit": "df4ad06",
+  "grader": "independent_read_only_codex_terminal_exact_archive",
+  "mean": 3.333333,
+  "round": 2,
+  "schema_version": 1,
+  "scores": {
+    "3d_coherence": 3,
+    "attachment_topology": 4,
+    "identity": 4,
+    "materials_color": 3,
+    "proportions": 3,
+    "silhouette": 3
+  },
+  "verdict": "PASS",
+  "verified": {
+    "minecraft_texture_has_no_random_dither": true,
+    "player_anchor_maps_to_origin": true,
+    "powered_leg_mass_gate": "2/2",
+    "shell_contains_no_pilot_bones": true,
+    "shield_contacts": "2/2",
+    "static_wearable_attachment_points": "6/6",
+    "wearable_shell": "168 cuboids / 21 bones / 0 audit errors"
+  }
+}

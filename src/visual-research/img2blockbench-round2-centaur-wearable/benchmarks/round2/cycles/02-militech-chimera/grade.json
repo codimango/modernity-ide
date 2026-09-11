@@ -1,0 +1,41 @@
+{
+  "asset": "militech_chimera",
+  "cycle": "round2-02",
+  "graded_commit": "decee510a73a0067f0f3b1770bfa064cd7ab7065",
+  "grader": "independent_read_only_codex_terminal_palette_regrade",
+  "previous_grade_invalidated": true,
+  "independent_visual_verdict": "PASS",
+  "independent_visual_mean": 4.0,
+  "scores": {
+    "silhouette": 4,
+    "proportions": 4,
+    "identity": 4,
+    "materials_color": 4,
+    "attachment_topology": 4,
+    "3d_coherence": 4
+  },
+  "quantitative_diagnostics": {
+    "alternate": {
+      "keypoint_mean_error_subject_heights": 0.070894,
+      "raw_fixed_frame_silhouette_iou": 0.632529
+    },
+    "original": {
+      "keypoint_mean_error_subject_heights": 0.066869,
+      "raw_fixed_frame_silhouette_iou": 0.605818
+    },
+    "provisional_aspirations": {
+      "keypoint_mean_error_subject_heights_at_most": 0.06,
+      "silhouette_iou_at_least": 0.65
+    }
+  },
+  "reason": "The six-leg geometry remains intact and the canonical finish now follows the original olive/khaki source. The white reference is retained only as topology evidence; fixed-camera scores remain disclosed diagnostics rather than hard acceptance gates.",
+  "required_review_checks": [
+    "six distinct front, middle, and rear bilateral leg chains",
+    "broad layered rectangular armor shields on all six lower legs",
+    "low deep chassis and compact crouched stance",
+    "wide faceted sloped turret, circular collar, and flat radar pod",
+    "olive, khaki, and dark-green Minecraft camouflage from the original source",
+    "both retained reference comparison sheets"
+  ],
+  "status": "PASS"
+}

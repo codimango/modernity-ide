@@ -1,0 +1,366 @@
+{
+  "all_required_chains_connected": true,
+  "anatomy_metrics": {
+    "front_chain_pitch_degrees": [
+      10.0,
+      8.0,
+      12.0
+    ],
+    "front_pad_depth": 1.8,
+    "front_paw_depth": 3.2,
+    "front_to_rear_upper_limb_width_ratio": 1.789474,
+    "green_face_y_span": 8.0,
+    "horn_span": 24.4,
+    "horn_tip_forward_z": 22.15,
+    "main_trunk_z_span": 16.5,
+    "measurement_basis": "authored cuboid centers and sizes before rotation",
+    "rear_ankle_vertical_overlap": {
+      "far": 0.696333,
+      "near": 0.689163
+    },
+    "rear_toe_vertical_overlap": {
+      "far": 1.094648,
+      "near": 1.094648
+    },
+    "reference_view_direction": [
+      -1.0,
+      0.32,
+      0.6
+    ],
+    "shoulder_to_rump_width_ratio": 2.066667,
+    "shoulder_top_minus_rump_top": 13.8
+  },
+  "attachment_chains": {
+    "front_far": {
+      "chain": [
+        "shoulder_mass",
+        "front_far_upper",
+        "front_far_lower",
+        "front_far_paw"
+      ],
+      "connected_with_tolerance": true,
+      "joint_axis_overlaps": [
+        [
+          6.832101,
+          9.49794,
+          8.31138
+        ],
+        [
+          6.160292,
+          3.892801,
+          6.629446
+        ],
+        [
+          6.160292,
+          2.131277,
+          3.894524
+        ]
+      ],
+      "joint_gaps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_gap": 0.0
+    },
+    "front_near": {
+      "chain": [
+        "shoulder_mass",
+        "front_near_upper",
+        "front_near_lower",
+        "front_near_paw"
+      ],
+      "connected_with_tolerance": true,
+      "joint_axis_overlaps": [
+        [
+          6.832101,
+          9.49794,
+          8.31138
+        ],
+        [
+          6.160292,
+          3.891064,
+          6.629446
+        ],
+        [
+          6.160292,
+          2.133014,
+          2.589104
+        ]
+      ],
+      "joint_gaps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_gap": 0.0
+    },
+    "horn_far": {
+      "chain": [
+        "head_cranium",
+        "horn_far_base",
+        "horn_far_mid",
+        "horn_far_curve",
+        "horn_far_return",
+        "horn_far_tip"
+      ],
+      "connected_with_tolerance": true,
+      "joint_axis_overlaps": [
+        [
+          0.465772,
+          1.982333,
+          3.75
+        ],
+        [
+          2.392114,
+          2.855826,
+          3.36816
+        ],
+        [
+          2.161966,
+          2.792372,
+          2.330128
+        ],
+        [
+          2.9315,
+          2.515016,
+          1.307179
+        ],
+        [
+          1.986039,
+          2.480979,
+          0.978495
+        ]
+      ],
+      "joint_gaps": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_gap": 0.0
+    },
+    "horn_near": {
+      "chain": [
+        "head_cranium",
+        "horn_near_base",
+        "horn_near_mid",
+        "horn_near_curve",
+        "horn_near_return",
+        "horn_near_tip"
+      ],
+      "connected_with_tolerance": true,
+      "joint_axis_overlaps": [
+        [
+          0.465772,
+          1.982333,
+          3.75
+        ],
+        [
+          2.392114,
+          2.855826,
+          3.36816
+        ],
+        [
+          2.161966,
+          2.792372,
+          2.330128
+        ],
+        [
+          2.9315,
+          2.515016,
+          1.307179
+        ],
+        [
+          1.986039,
+          2.480979,
+          0.978495
+        ]
+      ],
+      "joint_gaps": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_gap": 0.0
+    },
+    "rear_far": {
+      "chain": [
+        "pelvis_mass",
+        "rear_far_upper",
+        "rear_far_lower",
+        "rear_far_paw"
+      ],
+      "connected_with_tolerance": true,
+      "joint_axis_overlaps": [
+        [
+          2.0625,
+          6.200839,
+          6.197066
+        ],
+        [
+          3.1875,
+          1.790986,
+          5.068331
+        ],
+        [
+          3.1875,
+          0.696333,
+          3.0
+        ]
+      ],
+      "joint_gaps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_gap": 0.0
+    },
+    "rear_near": {
+      "chain": [
+        "pelvis_mass",
+        "rear_near_upper",
+        "rear_near_lower",
+        "rear_near_paw"
+      ],
+      "connected_with_tolerance": true,
+      "joint_axis_overlaps": [
+        [
+          2.0625,
+          6.224313,
+          4.989892
+        ],
+        [
+          3.1875,
+          1.804025,
+          5.122718
+        ],
+        [
+          3.1875,
+          0.689163,
+          3.0
+        ]
+      ],
+      "joint_gaps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_gap": 0.0
+    },
+    "tail": {
+      "chain": [
+        "pelvis_mass",
+        "tail_base",
+        "tail_mid",
+        "tail_tip"
+      ],
+      "connected_with_tolerance": true,
+      "joint_axis_overlaps": [
+        [
+          3.25,
+          3.905371,
+          2.678767
+        ],
+        [
+          2.83564,
+          2.781529,
+          2.523248
+        ],
+        [
+          2.41475,
+          2.442076,
+          2.071991
+        ]
+      ],
+      "joint_gaps": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maximum_gap": 0.0
+    }
+  },
+  "bilateral_consistency": {
+    "full_body": {
+      "overlap_rgb_mae": 19.3651,
+      "silhouette_iou": 0.972976
+    },
+    "head": {
+      "overlap_rgb_mae": 17.5401,
+      "silhouette_iou": 1.0
+    }
+  },
+  "bones": 32,
+  "cuboids": 80,
+  "model_extents": [
+    25.394019,
+    34.097337,
+    33.750871
+  ],
+  "model_id": "nian_beast",
+  "reference_view_fidelity": {
+    "alignment": {
+      "aligned_iou_objective": 0.75329,
+      "method": "uniform-scale-translation-grid-search-no-warp",
+      "offset": [
+        147,
+        37
+      ],
+      "scale": 0.730216
+    },
+    "mean_absolute_error": 58.101,
+    "reprojected_fraction": 0.294144,
+    "sampled_channels": 271083,
+    "silhouette_iou": 0.75329,
+    "silhouette_precision": 0.849493,
+    "silhouette_recall": 0.869311,
+    "texture_psnr_db": 10.6634
+  },
+  "renderer": "deterministic-orthographic-textured-cuboid-zbuffer-v1",
+  "schema_version": 1,
+  "semantic_cuboids": 80,
+  "semantic_profile_fidelity": {
+    "alignment": {
+      "aligned_iou_objective": 0.661169,
+      "method": "uniform-scale-translation-grid-search-no-warp",
+      "offset": [
+        129,
+        15
+      ],
+      "scale": 0.76
+    },
+    "mean_absolute_error": 61.9657,
+    "reprojected_fraction": 0.288942,
+    "sampled_channels": 266289,
+    "silhouette_iou": 0.661169,
+    "silhouette_precision": 0.793957,
+    "silhouette_recall": 0.798111,
+    "texture_psnr_db": 10.3246
+  },
+  "source_skin_cuboids": 0,
+  "views": [
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "profile.png",
+    "top.png",
+    "isometric.png",
+    "head-near.png",
+    "head-far.png",
+    "joint-closeup.png",
+    "rear-joint-source.png",
+    "rear-joint-profile.png",
+    "comparison-sheet.png",
+    "semantic-profile-reprojection.png",
+    "semantic-profile-overlap.png",
+    "reference_angle.png",
+    "semantic-reference-reprojection.png",
+    "semantic-reference-overlap.png"
+  ],
+  "width_to_length_ratio": 0.752396
+}

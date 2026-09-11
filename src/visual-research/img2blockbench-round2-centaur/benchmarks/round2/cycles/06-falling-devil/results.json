@@ -1,0 +1,13 @@
+{
+  "asset": "falling_devil",
+  "cycle": 6,
+  "metrics": {
+    "arm_pairs": 6,
+    "cuboids": 78,
+    "fixed_camera_iou": 0.700233,
+    "head_support_contacts": 4,
+    "keypoint_mean_subject_heights": 0.018635
+  },
+  "status": "ready_for_independent_review",
+  "visual_review_required": true
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "subject": "Cyberpunk 2077 Zetatech Atlus Trauma Team aerodyne",
+  "primary_reference": {
+    "image": "round3-inputs/atlus.png",
+    "sha256": "5458ba42d698b38ed2a0a3a55e17a4608a2a4579f3bcdfc22a9b3e7018c74a25",
+    "size": [712, 340],
+    "origin": "user-supplied benchmark image"
+  },
+  "geometry_references": [
+    {"view": "front-quarter", "sha256": "12c3c09ae7ba0c10efe46411c57a13f1477b695923e05475ce34b07c6ca7e967", "size": [1920, 1080]},
+    {"view": "front", "sha256": "7bb5a2aebb27c2c4d42343f0ef3b19f993733a596b7187576d22d2623227daa4", "size": [1920, 1080]},
+    {"view": "side", "sha256": "c47b04501de8a59322ae03d6bfb8d2302e5f474f58a3f022bb5cfa22818c0d98", "size": [1920, 1080]},
+    {"view": "rear", "sha256": "6454b749f851f58f77b3d670683855cb020c18d6e61b2642a47b24fb37b2d83d", "size": [1920, 1080]},
+    {"view": "top", "sha256": "a4a01fa0d23029f3299e493428db8c737fddca533e66e221f464eb10be79a4f0", "size": [1920, 1080]}
+  ],
+  "reference_use": "private ignored geometry and marking evidence; not embedded as a texture",
+  "rights": "unknown; benchmark references remain local and ignored",
+  "source_mesh": null,
+  "method": "agent-authored semantic volume constrained independently from five exterior directions"
+}

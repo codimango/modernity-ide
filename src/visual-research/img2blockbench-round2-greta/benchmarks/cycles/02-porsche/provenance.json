@@ -1,0 +1,18 @@
+{
+  "cycle": 2,
+  "distribution": "local-private-evaluation-only",
+  "reference": {
+    "credit": "Cyberpunk 2077 vehicle render, retrieved from Cyberpunk Wiki",
+    "license": "No redistribution license identified",
+    "sha256": "3b161a5f5e5c4a1ab3aa1034ceb5e6f0f727e51f6f7d0135ed4bae0e67c3f1d1",
+    "url": "https://static.wikia.nocookie.net/cyberpunk/images/4/48/Porsche_911_Turbo_%28930%29_Database_CP2077.png/revision/latest?cb=20210222110630"
+  },
+  "route": "agent-authored-semantic-volume",
+  "schema_version": 1,
+  "texture_evidence": {
+    "authored_materials_only": true,
+    "reference_pixel_projection": false,
+    "side_livery": "deterministic 32x16 silver/red/white pixel motif"
+  },
+  "unseen_geometry": "Opposite side mirrors observed side geometry; front, rear, roof, underbody, and exact wheel depth are conservative Porsche 930 priors."
+}

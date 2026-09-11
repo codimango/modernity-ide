@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "img2blockbench"
+version = "0.2.0"
+description = "Turn images into native Blockbench models with deterministic reconstruction tools."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "img2blockbench contributors" }]
+dependencies = ["Pillow>=10,<13"]
+keywords = ["blockbench", "minecraft", "image-to-3d", "ai-agent", "pixel-art"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Multimedia :: Graphics :: 3D Modeling",
+]
+
+[project.optional-dependencies]
+overlap-audit = ["numpy>=1.26,<3", "trimesh>=4.10,<5"]
+mesh-reconstruction = ["numpy>=1.26,<3", "trimesh>=4.10,<5"]
+reference-projection = ["numpy>=1.26,<3", "scipy>=1.12,<2"]
+semantic-evidence = ["numpy>=1.26,<3"]
+multi-view = ["numpy>=1.26,<3", "trimesh>=4.10,<5"]
+
+[project.scripts]
+img2blockbench = "img2blockbench:main"
+img2blockbench-overlap = "audit_source_overlap:main"
+
+[tool.setuptools]
+py-modules = ["img2blockbench", "audit_source_overlap", "mesh_reconstruction", "photo_reconstruction", "semantic_geometry", "semantic_evidence", "view_reconstruction"]
+package-dir = { "" = "skill/img2blockbench/scripts" }

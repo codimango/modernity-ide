@@ -1,0 +1,22 @@
+{
+  "asset": "greta_shark_chef",
+  "cycle": "round2-03",
+  "generation": {
+    "algorithm": "anatomy-rigged-shark-chef-v1",
+    "source_mesh": null,
+    "source_projection": false,
+    "source_skin_cuboids": 0
+  },
+  "reference": {
+    "alpha_bbox": [3, 8, 597, 763],
+    "height": 766,
+    "mode": "RGBA",
+    "redistribution": "not authorized; private ignored benchmark input",
+    "rights": "unknown",
+    "sha256": "a0519be7ef788e3ea2d01b3fa1dcd310912c5489a58b3cb675fa8b4962626178",
+    "source": "local user-supplied image-9.png",
+    "touches_frame_edges": false,
+    "width": 600
+  },
+  "single_view_hidden_geometry": "rear materials, hidden tail root, and exact appendage depth are conservative semantic inference"
+}

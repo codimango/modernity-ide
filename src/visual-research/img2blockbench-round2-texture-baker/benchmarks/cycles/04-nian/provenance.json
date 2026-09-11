@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "cycle": 4,
+  "subject": "Nian beast",
+  "source": {
+    "url": "https://img.cadnav.com/allimg/170525/cadnav-1F525195118.jpg",
+    "source_page": "https://www.cadnav.com/3d-models/model-40150.html",
+    "local_path": "../../references/04-nian.jpg",
+    "sha256": "644faf9b0d58763d91daa70a6819c269451fa0e021852356556453758fc23d99",
+    "dimensions": [640, 480],
+    "license_status": "Source page labels the downloadable model non-commercial; benchmark reference use only"
+  },
+  "source_mesh_availability": {
+    "usable_glb_or_gltf": false,
+    "advertised_format": "3ds Max (.max)",
+    "advertised_polygons": 868,
+    "advertised_vertices": 647,
+    "reason_not_used": "The proprietary .max download is not a provider-exported GLB/GLTF and carries a non-commercial restriction"
+  },
+  "nian_inputs": {
+    "generator": "prepare-inputs.py",
+    "contract": "inputs/input-contract.json",
+    "foreground_mask_sha256": "318a379a94a63e0faea5570ecd20d4ee4e75ff13b76ccfa6eb5910983202a721",
+    "depth_map_sha256": "14f91283cba58fb6dcbba8aaf7fdde22d2e71f5baefcb23d0606b6130b413fb1",
+    "method": "reviewed shadow-rejecting silhouette; depth proxy retained only as failed-attempt evidence"
+  },
+  "nian_reconstruction": {
+    "generator": "prepare-semantic-model.py",
+    "algorithm": "reviewed-semantic-volume-with-flush-pixel-motifs-v8",
+    "output_cuboids": 80,
+    "semantic_anatomy_cuboids": 79,
+    "flush_surface_decal_cuboids": 1,
+    "source_skin_cuboids": 0,
+    "source_color_use": "source-derived procedural palette plus opaque embedded C-curl and three-prong-flame pixel motifs; no bitmap shell",
+    "renderer": "render-semantic-evidence.py",
+    "model_claim": "agent-authored static semantic reconstruction; not automatic mesh inference",
+    "correction_basis": "three cumulative failures followed by attachment, massing, and delivered-texel material corrections with separate exact-sheet review",
+    "latest_specialist_gate": {
+      "verdict": "GO",
+      "comparison_sheet_sha256": "36d07e366a345e70668457ceb627cbeefdbd6fdb469cf86cb134cb110bb8a087",
+      "scores": [4.0, 4.0, 4.0, 4.0, 3.0, 3.0]
+    },
+    "strict_cumulative_gate": "pending"
+  },
+  "generic_mesh_proof": {
+    "source": "../../../examples/chimpanzee/lane2/source.glb",
+    "sha256": "5f4f30207e68102ac83585eac940ff1acaf1d45c2c3d5446cabbb34a9b256d90",
+    "provider": "Trellis",
+    "provider_model": "unrecorded",
+    "license": "unrecorded",
+    "algorithm": "orthographic-ray-voxel-adaptive-cuboids-v1",
+    "evidence": "mesh-proof/mesh-evidence.json"
+  }
+}

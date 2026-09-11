@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "calibration": {
+    "projection": "orthographic-yaw",
+    "volume_bounds": [
+      [
+        -1,
+        0,
+        -1
+      ],
+      [
+        1,
+        2,
+        1
+      ]
+    ]
+  },
+  "reference_view": "front",
+  "samples": [
+    {
+      "id": "front",
+      "timestamp_seconds": 0,
+      "azimuth_degrees": 0,
+      "center_px": [
+        48,
+        80
+      ],
+      "pixels_per_unit": 28,
+      "mask": "front-mask.png",
+      "evidence_kind": "observed"
+    },
+    {
+      "id": "side",
+      "timestamp_seconds": 1,
+      "azimuth_degrees": 90,
+      "center_px": [
+        48,
+        80
+      ],
+      "pixels_per_unit": 28,
+      "mask": "side-mask.png",
+      "evidence_kind": "observed"
+    }
+  ]
+}

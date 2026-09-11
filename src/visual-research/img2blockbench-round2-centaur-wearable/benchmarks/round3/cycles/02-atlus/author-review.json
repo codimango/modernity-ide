@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "PASS_AUTHOR_REVIEW",
+  "independently_graded_commit": "640b8e7fe4e1179d2ce58fc16c9bb9935e6f4feb",
+  "reviewed_views": [
+    "reference-angle.png",
+    "front.png",
+    "back.png",
+    "left.png",
+    "right.png",
+    "top.png",
+    "isometric.png",
+    "underside.png",
+    "side-pod-closeup.png",
+    "rear-closeup.png",
+    "underside-closeup.png",
+    "all-angle-sheet.png"
+  ],
+  "ignored_local_source_reviewed": [
+    "round3-inputs/local-review/02-atlus/user-source-comparison.png",
+    "round3-inputs/local-review/02-atlus/multiview-source-comparison.png"
+  ],
+  "findings": [
+    "The long central body and paired hover pods remain substantial from front, side, rear, top, and isometric views.",
+    "Front identity includes a layered grille, two separately clustered four-barrel weapons, and ribbed outer pods.",
+    "Side identity includes the large bordered rescue door, teal nacelle volume, canopy, and front/rear pod transitions.",
+    "Rear identity includes a service panel, red rails, three central drive cores, and layered outer exhaust louvers.",
+    "The underside is populated by a broad equipment bay, gimbal, tanks, hover cores, and four support modules.",
+    "The white, gray, teal, red, and cyan materials are crisp Minecraft panels without stochastic noise.",
+    "The release manifest and deterministic ZIP contain only the five retained native artifacts; the private reference is optional and unbundled."
+  ],
+  "known_limitations": [
+    "Minecraft cuboids deliberately simplify the source's continuous bevels and circular turbine ports.",
+    "The references do not expose internal underside surfaces, so those remain explicitly inferred.",
+    "A separate read-only grader passed the exact implementation commit recorded above."
+  ]
+}
