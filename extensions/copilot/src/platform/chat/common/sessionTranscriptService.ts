@@ -134,12 +134,22 @@ export interface ModelRequestStartedEntry extends TranscriptEntryBase {
 
 export interface ModelResponseCompletedEntry extends TranscriptEntryBase {
 	readonly type: 'model.response.completed';
-	readonly data: {
+	readonly data: ModelResponseTokenUsage & {
 		readonly durationMs: number;
-		readonly inputTokens?: number;
-		readonly outputTokens?: number;
 		readonly traceContext: ITraceInvocationContext;
 	};
+}
+
+/** Token usage reported for one model response. Cache counters are breakdowns of inputTokens. */
+export interface ModelResponseTokenUsage {
+	readonly inputTokens?: number;
+	readonly outputTokens?: number;
+	readonly totalTokens?: number;
+	readonly cacheReadInputTokens?: number;
+	readonly cacheCreationInputTokens?: number;
+	readonly cacheCreationInputTokens1h?: number;
+	readonly cacheCreationInputTokens5m?: number;
+	readonly reasoningOutputTokens?: number;
 }
 
 export interface ModelResponseFailedEntry extends TranscriptEntryBase {
@@ -259,7 +269,7 @@ export interface ISessionTranscriptService {
 
 	logModelRequestStarted(sessionId: string, provider: 'copilot' | 'openai_compatible', model: string, traceContext: ITraceInvocationContext, entryId: string, parentEventId?: string): void;
 
-	logModelResponseCompleted(sessionId: string, durationMs: number, traceContext: ITraceInvocationContext, usage?: { readonly inputTokens?: number; readonly outputTokens?: number }): void;
+	logModelResponseCompleted(sessionId: string, durationMs: number, traceContext: ITraceInvocationContext, usage?: ModelResponseTokenUsage): void;
 
 	logModelResponseFailed(sessionId: string, code: string, retryable: boolean, cancelled: boolean, durationMs: number, traceContext: ITraceInvocationContext): void;
 
@@ -315,7 +325,7 @@ export class NullSessionTranscriptService implements ISessionTranscriptService {
 	logToolExecutionStart(_sessionId: string, _toolCallId: string, _toolName: string, _args: unknown, _traceContext?: ITraceInvocationContext): void { }
 	logToolExecutionComplete(_sessionId: string, _toolCallId: string, _success: boolean, _resultContent?: string, _traceContext?: ITraceInvocationContext): void { }
 	logModelRequestStarted(_sessionId: string, _provider: 'copilot' | 'openai_compatible', _model: string, _traceContext: ITraceInvocationContext, _entryId: string, _parentEventId?: string): void { }
-	logModelResponseCompleted(_sessionId: string, _durationMs: number, _traceContext: ITraceInvocationContext, _usage?: { readonly inputTokens?: number; readonly outputTokens?: number }): void { }
+	logModelResponseCompleted(_sessionId: string, _durationMs: number, _traceContext: ITraceInvocationContext, _usage?: ModelResponseTokenUsage): void { }
 	logModelResponseFailed(_sessionId: string, _code: string, _retryable: boolean, _cancelled: boolean, _durationMs: number, _traceContext: ITraceInvocationContext): void { }
 	logAssistantTurnEnd(): void { }
 	async flush(): Promise<void> { }

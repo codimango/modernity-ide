@@ -1785,6 +1785,12 @@ export abstract class ToolCallingLoop<TOptions extends IToolCallingLoopOptions =
 				usage: response.usage ? {
 					inputTokens: response.usage.prompt_tokens,
 					outputTokens: response.usage.completion_tokens,
+					totalTokens: response.usage.total_tokens,
+					cacheReadInputTokens: response.usage.prompt_tokens_details?.cached_tokens,
+					cacheCreationInputTokens: response.usage.prompt_tokens_details?.cache_creation_input_tokens,
+					cacheCreationInputTokens1h: response.usage.prompt_tokens_details?.anthropic_cache_creation?.ephemeral_1h_input_tokens,
+					cacheCreationInputTokens5m: response.usage.prompt_tokens_details?.anthropic_cache_creation?.ephemeral_5m_input_tokens,
+					reasoningOutputTokens: response.usage.completion_tokens_details?.reasoning_tokens,
 				} : undefined,
 			});
 		} else if (response.type === ChatFetchResponseType.Canceled) {

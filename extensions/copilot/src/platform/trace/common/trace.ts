@@ -3,7 +3,7 @@
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-import { TranscriptEntry } from '../../chat/common/sessionTranscriptService';
+import { ModelResponseTokenUsage, TranscriptEntry } from '../../chat/common/sessionTranscriptService';
 import { createServiceIdentifier } from '../../../util/common/services';
 import { URI } from '../../../util/vs/base/common/uri';
 
@@ -74,7 +74,7 @@ export interface IModelRequestTraceHandle {
 	readonly modelRequestId: string;
 	readonly startedEventId: string;
 	bindToolCall(nativeToolCallId: string): ITraceInvocationContext;
-	complete(result: { readonly usage?: { readonly inputTokens?: number; readonly outputTokens?: number }; readonly durationMs: number }): void;
+	complete(result: { readonly usage?: ModelResponseTokenUsage; readonly durationMs: number }): void;
 	fail(result: { readonly code: string; readonly retryable: boolean; readonly durationMs: number }): void;
 	cancel(result: { readonly durationMs: number }): void;
 }
@@ -164,6 +164,12 @@ export function mapTranscriptEntryToTraceEvent(sessionId: string, entry: Transcr
 				duration_ms: nonNegative(entry.data.durationMs),
 				...(entry.data.inputTokens !== undefined ? { input_tokens: nonNegative(entry.data.inputTokens) } : {}),
 				...(entry.data.outputTokens !== undefined ? { output_tokens: nonNegative(entry.data.outputTokens) } : {}),
+				...(entry.data.totalTokens !== undefined ? { total_tokens: nonNegative(entry.data.totalTokens) } : {}),
+				...(entry.data.cacheReadInputTokens !== undefined ? { cache_read_input_tokens: nonNegative(entry.data.cacheReadInputTokens) } : {}),
+				...(entry.data.cacheCreationInputTokens !== undefined ? { cache_creation_input_tokens: nonNegative(entry.data.cacheCreationInputTokens) } : {}),
+				...(entry.data.cacheCreationInputTokens1h !== undefined ? { cache_creation_1h_input_tokens: nonNegative(entry.data.cacheCreationInputTokens1h) } : {}),
+				...(entry.data.cacheCreationInputTokens5m !== undefined ? { cache_creation_5m_input_tokens: nonNegative(entry.data.cacheCreationInputTokens5m) } : {}),
+				...(entry.data.reasoningOutputTokens !== undefined ? { reasoning_output_tokens: nonNegative(entry.data.reasoningOutputTokens) } : {}),
 			};
 			break;
 		case 'model.response.failed':
