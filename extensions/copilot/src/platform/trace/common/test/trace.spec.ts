@@ -4,7 +4,7 @@
  *--------------------------------------------------------------------------------------------*/
 
 import { describe, expect, it } from 'vitest';
-import { NullSessionTranscriptService } from '../../../chat/common/sessionTranscriptService';
+import { ModelResponseTokenUsage, NullSessionTranscriptService } from '../../../chat/common/sessionTranscriptService';
 import type { ILogTarget, ILogger } from '../../../log/common/logService';
 import { mapTranscriptEntryToTraceEvent, type ITraceInvocationContext } from '../trace';
 import { ModelRequestTraceService } from '../../../../extension/trace/vscode-node/modelRequestTraceService';
@@ -19,8 +19,21 @@ class RecordingTranscriptService extends NullSessionTranscriptService {
 		this.entries.push({ type: 'started', values: [sessionId, provider, model, traceContext.modelRequestId, entryId, parentEventId] });
 	}
 
-	override logModelResponseCompleted(sessionId: string, durationMs: number, traceContext: ITraceInvocationContext, usage?: { readonly inputTokens?: number; readonly outputTokens?: number }): void {
-		this.entries.push({ type: 'completed', values: [sessionId, durationMs, traceContext.modelRequestId, usage?.inputTokens, usage?.outputTokens] });
+	override logModelResponseCompleted(sessionId: string, durationMs: number, traceContext: ITraceInvocationContext, usage?: ModelResponseTokenUsage): void {
+		this.entries.push({
+			type: 'completed',
+			values: [
+				sessionId,
+				durationMs,
+				traceContext.modelRequestId,
+				usage?.inputTokens,
+				usage?.outputTokens,
+				usage?.totalTokens,
+				usage?.cacheReadInputTokens,
+				usage?.cacheCreationInputTokens,
+				usage?.reasoningOutputTokens,
+			],
+		});
 	}
 
 	override logModelResponseFailed(sessionId: string, code: string, retryable: boolean, cancelled: boolean, durationMs: number, traceContext: ITraceInvocationContext): void {
@@ -136,12 +149,23 @@ describe('Modernity canonical IDE tracing', () => {
 		});
 		const first = handle.bindToolCall('call-a__vscode-1');
 		const second = handle.bindToolCall('call-b__vscode-2');
-		handle.complete({ durationMs: 25, usage: { inputTokens: 10, outputTokens: 5 } });
+		handle.complete({
+			durationMs: 25,
+			usage: {
+				inputTokens: 100,
+				outputTokens: 30,
+				totalTokens: 130,
+				cacheReadInputTokens: 80,
+				cacheCreationInputTokens: 10,
+				reasoningOutputTokens: 20,
+			},
+		});
 		handle.fail({ code: 'late', retryable: false, durationMs: 30 });
 
 		expect({
 			entryTypes: transcript.entries.map(entry => entry.type),
 			startedValues: transcript.entries[0].values,
+			completedValues: transcript.entries[1].values,
 			first,
 			second,
 			lookupA: service.getToolCallContext(SESSION_ID, 'call-a'),
@@ -150,11 +174,49 @@ describe('Modernity canonical IDE tracing', () => {
 		}).toEqual({
 			entryTypes: ['started', 'completed'],
 			startedValues: [SESSION_ID, 'copilot', 'model-a', handle.modelRequestId, handle.startedEventId, '10000000-0000-4000-8000-000000000003'],
+			completedValues: [SESSION_ID, 25, handle.modelRequestId, 100, 30, 130, 80, 10, 20],
 			first: { sessionId: SESSION_ID, turnId: '2', modelRequestId: handle.modelRequestId, projectId: undefined, checkoutId: undefined, machineId: undefined, toolCallId: 'call-a' },
 			second: { sessionId: SESSION_ID, turnId: '2', modelRequestId: handle.modelRequestId, projectId: undefined, checkoutId: undefined, machineId: undefined, toolCallId: 'call-b' },
 			lookupA: first,
 			lookupB: second,
 			diagnosticCount: 1,
+		});
+	});
+
+	it('maps complete model token usage into the canonical payload', () => {
+		const event = mapTranscriptEntryToTraceEvent(SESSION_ID, {
+			type: 'model.response.completed',
+			id: '10000000-0000-4000-8000-000000000004',
+			timestamp: '2026-07-27T12:00:02.000Z',
+			parentId: null,
+			data: {
+				durationMs: 250,
+				traceContext: {
+					sessionId: SESSION_ID,
+					turnId: '2',
+					modelRequestId: MODEL_REQUEST_ID,
+				},
+				inputTokens: 100,
+				outputTokens: 30,
+				totalTokens: 130,
+				cacheReadInputTokens: 80,
+				cacheCreationInputTokens: 10,
+				cacheCreationInputTokens1h: 6,
+				cacheCreationInputTokens5m: 4,
+				reasoningOutputTokens: 20,
+			},
+		}, 4);
+
+		expect(event?.payload).toEqual({
+			duration_ms: 250,
+			input_tokens: 100,
+			output_tokens: 30,
+			total_tokens: 130,
+			cache_read_input_tokens: 80,
+			cache_creation_input_tokens: 10,
+			cache_creation_1h_input_tokens: 6,
+			cache_creation_5m_input_tokens: 4,
+			reasoning_output_tokens: 20,
 		});
 	});
 });

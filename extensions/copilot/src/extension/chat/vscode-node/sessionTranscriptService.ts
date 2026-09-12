@@ -7,6 +7,7 @@ import * as fs from 'fs';
 import {
 	IHistoricalTurn,
 	ISessionTranscriptService,
+	ModelResponseTokenUsage,
 	ToolRequest,
 	TranscriptEntry,
 } from '../../../platform/chat/common/sessionTranscriptService';
@@ -209,7 +210,7 @@ export class SessionTranscriptService implements ISessionTranscriptService {
 		}, undefined, entryId, parentEventId);
 	}
 
-	logModelResponseCompleted(sessionId: string, durationMs: number, traceContext: ITraceInvocationContext, usage?: { readonly inputTokens?: number; readonly outputTokens?: number }): void {
+	logModelResponseCompleted(sessionId: string, durationMs: number, traceContext: ITraceInvocationContext, usage?: ModelResponseTokenUsage): void {
 		this._bufferEntry(sessionId, {
 			type: 'model.response.completed',
 			data: { durationMs, traceContext, ...usage },
